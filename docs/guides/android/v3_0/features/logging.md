@@ -1,12 +1,13 @@
 ---
-layout: feature
-title: Stickers # title as shown in the menu and 
+layout: guide
+title: Serialization # title as shown in the menu and 
 order: 1
 category: 
-  - feature # One of the categories
+  - android # One of the categories
+  - guide
+  - feature
 tags: &tags # tags that are necessary
   - photo editor 
 published: true # Either published or not 
 ---
 
-# Stickers

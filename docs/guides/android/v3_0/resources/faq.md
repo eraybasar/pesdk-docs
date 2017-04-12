@@ -1,17 +1,15 @@
 ---
 layout: guide
-title: Android Guides # title as shown in the menu and 
+title: Frequently Asked Questions
 order: 1
 category: 
   - android # One of the categories
+  - guide
+  - resource
 tags: &tags # tags that are necessary
   - photo editor 
 
 published: true # Either published or not 
 ---
 
-- [Introduction](/introduction)
-- [Features/Components](/features)
-- [User Interface](/ui)
-- [Resources](/resources)
-  
+# Frequently Asked Questions
