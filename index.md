@@ -3,13 +3,6 @@ layout: index
 title: &title Documentation  
 ---
 
-# Search and Select (see layer)
-- Searchbar 
-- Platform select
-- Version select 
-
-# PhotoEditor SDK Index
-
 - [Guides](guides)
    - [Html5](guides/html5/latest)
    - [iOs](guides/ios/latest)
