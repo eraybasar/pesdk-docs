@@ -17,6 +17,9 @@ url: "https://docs.photoeditorsdk.com" # the base hostname & protocol for your s
 twitter_username: imgly
 github_username:  imgly
 
+sass:
+  sass_dir: _sass
+
 gems:
   - jekyll-sitemap
 

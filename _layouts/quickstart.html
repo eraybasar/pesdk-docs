@@ -2,27 +2,11 @@
 layout: default
 ---
 
-
-
-<!--<aside>
-	<div class="container">
-		<nav>
-      <ul>
-        <il>
-          Guides
-        </il>
-        <il>
-          Features
-        </il>
-        <il>
-          Quickstarts
-        </il>
-      </ul>
-		</nav>
-	</div>
-</aside>-->
-
-<article>
-<h2>{{ page.title }}</h2>
-{{ content }}
+<article class="documentation">
+  <div class="container">
+    <div class="documentation-content markdown-body"> 
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+  </div>
 </article>
