@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Getting Started</title>
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="canonical" href="https://docs.photoeditorsdk.com/guides/ios/v6_5/introduction/getting_started">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+</head> 
+
+<body>
+  <nav>
+  <ul>
+    <il>
+      
+    </il>
+    <il>
+      Features
+    </il>
+    <il>
+      Quickstarts
+    </il>
+  </ul>
+</nav>
+	<header>
+	This is a header
+</header>
+
+	<main>
+		<!--<aside>
+	<div class="container">
+		<nav>
+      <ul>
+        <il>
+          Guides
+        </il>
+        <il>
+          Features
+        </il>
+        <il>
+          Quickstarts
+        </il>
+      </ul>
+		</nav>
+	</div>
+</aside>-->
+
+<article>
+<h1>Getting Started</h1>
+<h1 id="gettings-started-with-the-photoeditorsdk-for-html5">Gettings Started with the PhotoEditorSDK for HTML5</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>A text editor</li>
+  <li>Basic HTML / JavaScript knowledge</li>
+  <li>A web server</li>
+</ul>
+
+<h2 id="integrating-the-editor-into-your-website">Integrating the editor into your website</h2>
+
+<p>Integrating our editor into your web application is easy as pie:</p>
+
+<ul>
+  <li>
+    <p>Download the <a href="https://github.com/imgly/pesdk-html5-build/releases/latest">latest release</a> from
+our public GitHub repository, extract it and copy the folders <code class="highlighter-rouge">assets</code>, <code class="highlighter-rouge">css</code> and <code class="highlighter-rouge">js</code> into your
+project folder.</p>
+  </li>
+  <li>
+    <p>In your HTML file, include the SDK and the UI JavaScript files as well as the editor’s CSS files
+inside your <code class="highlighter-rouge">&lt;head&gt;</code> tag</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/vendor/react.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/vendor/react-dom.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/PhotoEditorSDK.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/PhotoEditorReactUI.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/PhotoEditorReactUI.min.css"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Now create a <code class="highlighter-rouge">&lt;div&gt;</code> that should contain the editor and give it a unique <code class="highlighter-rouge">id</code> so we can access
+it using JavaScript. The editor will take the size of the containing <code class="highlighter-rouge">&lt;div&gt;</code>. We’re gonna specify
+the dimensions using inline styles, for the sake of simplicity:</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"editor"</span> <span class="na">style=</span><span class="s">"width: 640px; height: 480px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>To initialize the editor, instantiate the UI using JavaScript. Add the following code
+right below our containing <code class="highlighter-rouge">&lt;div&gt;</code> element:</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+  <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'editor'</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">UI</span><span class="p">.</span><span class="nx">ReactUI</span><span class="p">({</span>
+      <span class="na">container</span><span class="p">:</span> <span class="nx">container</span><span class="p">,</span>
+      <span class="na">apiKey</span><span class="p">:</span> <span class="s1">'YOUR_API_KEY, // &lt;-- Please replace this with your API key
+      assets: {
+        baseUrl: '</span><span class="o">/</span><span class="nx">assets</span><span class="err">'</span> <span class="c1">// &lt;-- This should be the absolute path to your `assets` directory</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Now run your webserver and open up your HTML file. You should see something like this:</p>
+
+    <p><img src="http://static.photoeditorsdk.com/editor.png" alt="The Editor" /></p>
+  </li>
+</ul>
+
+<p>You can find a working demo integration <a href="http://static.photoeditorsdk.com/demo/">here</a>.</p>
+
+</article>
+	</main>
+  <footer>
+	This is a Footer
+</footer>
+</body>
+
+</html>

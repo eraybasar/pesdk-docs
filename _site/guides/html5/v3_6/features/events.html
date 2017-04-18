@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Events</title>
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="canonical" href="https://docs.photoeditorsdk.com/guides/html5/v3_6/features/events">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+</head> 
+
+<body>
+  <nav>
+  <ul>
+    <il>
+      
+    </il>
+    <il>
+      Features
+    </il>
+    <il>
+      Quickstarts
+    </il>
+  </ul>
+</nav>
+	<header>
+	This is a header
+</header>
+
+	<main>
+		<!--<aside>
+	<div class="container">
+		<nav>
+      <ul>
+        <il>
+          Guides
+        </il>
+        <il>
+          Features
+        </il>
+        <il>
+          Quickstarts
+        </il>
+      </ul>
+		</nav>
+	</div>
+</aside>-->
+
+<article>
+<h1>Events</h1>
+<h1 id="events">Events</h1>
+
+<p>The UI emits events that let you know what happens inside the editor. Most users use these events
+for monitoring and analytics. You can listen to them by calling the UI’s <code class="highlighter-rouge">on</code> method:</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">UI</span><span class="p">.</span><span class="nx">NightReact</span><span class="p">(</span><span class="cm">/* ... */</span><span class="p">)</span>
+<span class="nx">editor</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'export'</span><span class="p">,</span> <span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'User clicked export, resulting image / dataurl:'</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre>
+</div>
+
+<p>See the <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.UI.NightReact.html#$subsection:events">documentation</a> for available UI events.</p>
+
+<p>Some people use the <code class="highlighter-rouge">export</code> event to find out which operations the user has applied to the image:</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">UI</span><span class="p">.</span><span class="nx">NightReact</span><span class="p">(</span><span class="cm">/* ... */</span><span class="p">)</span>
+<span class="nx">editor</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'export'</span><span class="p">,</span> <span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="nx">editor</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// User has clicked export, find out what operations he used</span>
+  <span class="kr">const</span> <span class="nx">stack</span> <span class="o">=</span> <span class="nx">editor</span><span class="p">.</span><span class="nx">getOperationsStack</span><span class="p">()</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'User used operations:'</span><span class="p">)</span>
+  <span class="nx">stack</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">operation</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">operation</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">identifier</span><span class="p">)</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+</code></pre>
+</div>
+
+<p>Example output:</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>User used operations:
+orientation
+crop
+filter
+border
+sprite
+</code></pre>
+</div>
+
+</article>
+	</main>
+  <footer>
+	This is a Footer
+</footer>
+</body>
+
+</html>

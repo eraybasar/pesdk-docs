@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Operations</title>
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="canonical" href="https://docs.photoeditorsdk.com/guides/android/v3_0/features/operations">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+</head> 
+
+<body>
+  <nav>
+  <ul>
+    <il>
+      
+    </il>
+    <il>
+      Features
+    </il>
+    <il>
+      Quickstarts
+    </il>
+  </ul>
+</nav>
+	<header>
+	This is a header
+</header>
+
+	<main>
+		<!--<aside>
+	<div class="container">
+		<nav>
+      <ul>
+        <il>
+          Guides
+        </il>
+        <il>
+          Features
+        </il>
+        <il>
+          Quickstarts
+        </il>
+      </ul>
+		</nav>
+	</div>
+</aside>-->
+
+<article>
+<h1>Operations</h1>
+<h1 id="custom-operations">Custom Operations</h1>
+
+<h2 id="adding-operations">Adding operations</h2>
+
+<p>Per default, the SDK just renders the plain image. To modify the rendered image you need to add
+“operations” to it. There are <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Operations.html">a bunch of operations</a>
+that you can use.</p>
+
+<p>Operations can be configured by passing an options hash to them. Let’s create a <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Operations.FilterOperation.html"><code class="highlighter-rouge">FilterOperation</code></a>
+and pass the <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Filters.FridgeFilter.html"><code class="highlighter-rouge">FridgeFilter</code></a> to it.</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">sdk</span> <span class="o">=</span> <span class="cm">/* ... (see previous section) */</span>
+<span class="kr">const</span> <span class="nx">filterOperation</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">Operations</span><span class="p">.</span><span class="nx">FilterOperation</span><span class="p">(</span><span class="nx">sdk</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">filter</span><span class="p">:</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">Filters</span><span class="p">.</span><span class="nx">FridgeFilter</span><span class="p">()</span>
+<span class="p">})</span>
+<span class="nx">sdk</span><span class="p">.</span><span class="nx">addOperation</span><span class="p">(</span><span class="nx">filterOperation</span><span class="p">)</span>
+<span class="nx">sdk</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>The canvas should now display your image with a filter on it.</p>
+
+<p>The available options of each operation are documented in our <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Operations.html">API Documentation</a>.
+We also created [a lot of beautiful filters](<a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Filters.html">API Documentation: PhotoEditorSDK.Filters</a> that you can use.</p>
+
+<h2 id="extending-operations">Extending operations</h2>
+
+<p>By extending the <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Operation.html"><code class="highlighter-rouge">Operation class</code></a>
+you can add custom image modifications to the SDK.</p>
+
+<h2 id="rendering-workflow">Rendering workflow</h2>
+
+<p>The SDK draws the image to the output canvas by rendering a <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Engine.Sprite.html"><code class="highlighter-rouge">Sprite</code></a>
+instance. Before that, it applies all existing operations to that sprite.</p>
+
+<p>An operation has an internal sprite which it uses to render the modified image to an internal
+texture. This texture is then added to the output sprite so that the SDK can render the resulting
+image to the output.</p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>The Operation class implements two protected methods that handle the rendering: <code class="highlighter-rouge">_renderWebGL</code>, which
+is called whenever the operation is applied using the <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Engine.WebGLRenderer.html"><code class="highlighter-rouge">WebGLRenderer</code></a>,
+and <code class="highlighter-rouge">_renderCanvas</code> which is called when it’s applied using the <a href="http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Engine.CanvasRenderer.html"><code class="highlighter-rouge">CanvasRenderer</code></a>.
+If those two methods are doing the same, you can just override the generic <code class="highlighter-rouge">_render</code> method.</p>
+
+<p>Let’s create a <code class="highlighter-rouge">FlipOperation</code> which flips the image on the X axis.</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">class</span> <span class="nx">FlipOperation</span> <span class="kr">extends</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">Operation</span> <span class="p">{</span>
+  <span class="cm">/**
+   * Renders this operation
+   */</span>
+  <span class="nx">_render</span> <span class="p">(</span><span class="nx">inputTexture</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Flip the sprite on the X-axis</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_sprite</span><span class="p">.</span><span class="nx">setScale</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1">// Make sure we flip around the center</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_sprite</span><span class="p">.</span><span class="nx">setAnchor</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_sprite</span><span class="p">.</span><span class="nx">setPosition</span><span class="p">(</span><span class="nx">renderTexture</span><span class="p">.</span><span class="nx">getWidth</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">renderTexture</span><span class="p">.</span><span class="nx">getHeight</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1">// Render the flipped image to the render texture</span>
+    <span class="nx">renderTexture</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_container</span><span class="p">)</span>
+
+    <span class="c1">// Let the SDK render the flipped image (or let the next</span>
+    <span class="c1">// operation use the flipped image as input). You can't</span>
+    <span class="c1">// render Sprite instances directly, so we're gonna use</span>
+    <span class="c1">// the container instead.</span>
+    <span class="nx">outputSprite</span><span class="p">.</span><span class="nx">setTexture</span><span class="p">(</span><span class="nx">renderTexture</span><span class="p">)</span>
+
+    <span class="c1">// Since we're not doing anything asynchronous, let's just</span>
+    <span class="c1">// return an already resolved Promise</span>
+    <span class="k">return</span> <span class="nx">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/**
+ * A unique string that identifies this operation
+ */</span>
+<span class="nx">FlipOperation</span><span class="p">.</span><span class="nx">identifier</span> <span class="o">=</span> <span class="s1">'flip'</span>
+</code></pre>
+</div>
+
+<p>Now you can instantiate and add the operation as mentioned above. (“Adding operations”)</p>
+
+<h2 id="adding-options">Adding options</h2>
+
+<p>To make your operation configurable, you can add an <code class="highlighter-rouge">availableOptions</code> object:</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="nx">FlipOperation</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">availableOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">flipHorizontally</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">OptionTypes</span><span class="p">.</span><span class="nx">BOOLEAN</span><span class="p">,</span> <span class="na">default</span><span class="p">:</span> <span class="kc">false</span> <span class="p">},</span>
+  <span class="na">flipVertically</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">OptionTypes</span><span class="p">.</span><span class="nx">BOOLEAN</span><span class="p">,</span> <span class="na">default</span><span class="p">:</span> <span class="kc">false</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>You can now access the options using <code class="highlighter-rouge">this._options</code>:</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="nx">tempSprite</span><span class="p">.</span><span class="nx">setScale</span><span class="p">(</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">_options</span><span class="p">.</span><span class="nx">flipHorizontally</span> <span class="p">?</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">_options</span><span class="p">.</span><span class="nx">flipVertically</span> <span class="p">?</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span>
+<span class="p">)</span>
+</code></pre>
+</div>
+
+<p>This also adds the <code class="highlighter-rouge">getFlipHorizontally()/setFlipHorizontally()</code> and <code class="highlighter-rouge">getFlipVertically()/setFlipVertically()</code>
+methods to your operation.</p>
+
+</article>
+	</main>
+  <footer>
+	This is a Footer
+</footer>
+</body>
+
+</html>

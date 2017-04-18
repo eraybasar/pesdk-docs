@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Frequently Asked Questions</title>
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="canonical" href="https://docs.photoeditorsdk.com/guides/html5/v3_6/resources/faq">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+</head> 
+
+<body>
+  <nav>
+  <ul>
+    <il>
+      
+    </il>
+    <il>
+      Features
+    </il>
+    <il>
+      Quickstarts
+    </il>
+  </ul>
+</nav>
+	<header>
+	This is a header
+</header>
+
+	<main>
+		<!--<aside>
+	<div class="container">
+		<nav>
+      <ul>
+        <il>
+          Guides
+        </il>
+        <il>
+          Features
+        </il>
+        <il>
+          Quickstarts
+        </il>
+      </ul>
+		</nav>
+	</div>
+</aside>-->
+
+<article>
+<h1>Frequently Asked Questions</h1>
+<h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
+
+<h2 id="browser-support">Browser Support</h2>
+
+<p>WebGL Renderer:</p>
+
+<ul>
+  <li>IE 11+</li>
+  <li>FF 15+</li>
+  <li>Chrome 11+</li>
+  <li>Safari 5.1+</li>
+  <li>Opera 19+</li>
+  <li>iOS Safari 8+</li>
+  <li>Firefox for Android 45+</li>
+  <li>Android Browser 47+</li>
+  <li>Opera Mobile 36+</li>
+</ul>
+
+<p>Canvas Renderer (slower than WebGL):</p>
+
+<ul>
+  <li>IE 9+</li>
+  <li>FF 10+</li>
+  <li>Chrome 11+</li>
+  <li>Safari 2.0+</li>
+  <li>Opera 12+</li>
+  <li>iOS Safari 3.2+</li>
+  <li>Firefox for Android 45+</li>
+  <li>Android Browser 3+</li>
+  <li>Opera Mobile 12+</li>
+</ul>
+
+<h2 id="cors-issues">CORS issues</h2>
+
+<p>The following error messages indicate that the image you have passed to the SDK could not be loaded
+due to Cross-Origin Resource Sharing (CORS):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Failed to execute 'texImage2D' on 'WebGLRenderingContext': The cross-origin image at [...] may not be loaded.</code></li>
+  <li><code class="highlighter-rouge">SECURITY_ERR: DOM Exception 18</code></li>
+  <li><code class="highlighter-rouge">Unable to get image data from canvas because the canvas as been tainted by cross-origin data.</code></li>
+</ul>
+
+<p>In this case:</p>
+
+<ul>
+  <li>If you’re loading images from S3, make sure you created a CORS policy for your S3 bucket (More information <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html">here</a>)</li>
+  <li>If you’re loading images from your own server, make sure the CORS header is set (More information <a href="http://enable-cors.org/server.html">here</a>)</li>
+  <li>Make sure you enable CORS for the loaded image (More information <a href="http://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html">here</a>)</li>
+</ul>
+
+</article>
+	</main>
+  <footer>
+	This is a Footer
+</footer>
+</body>
+
+</html>

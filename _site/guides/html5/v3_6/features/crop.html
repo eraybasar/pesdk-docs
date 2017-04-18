@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Crop</title>
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="canonical" href="https://docs.photoeditorsdk.com/guides/html5/v3_6/features/crop">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+</head> 
+
+<body>
+  <nav>
+  <ul>
+    <il>
+      
+    </il>
+    <il>
+      Features
+    </il>
+    <il>
+      Quickstarts
+    </il>
+  </ul>
+</nav>
+	<header>
+	This is a header
+</header>
+
+	<main>
+		<!--<aside>
+	<div class="container">
+		<nav>
+      <ul>
+        <il>
+          Guides
+        </il>
+        <il>
+          Features
+        </il>
+        <il>
+          Quickstarts
+        </il>
+      </ul>
+		</nav>
+	</div>
+</aside>-->
+
+<article>
+<h1>Crop</h1>
+<h1 id="crop-controls">Crop controls</h1>
+
+<h2 id="adding-custom-crop-ratios">Adding custom crop ratios</h2>
+
+<p>To add custom crop ratios, pass them using the <code class="highlighter-rouge">ratios</code> option.</p>
+
+<p>If <code class="highlighter-rouge">replaceRatios</code> is set to true, all default ratios are removed. If it is set to <code class="highlighter-rouge">false</code>,
+your additional ratios are appended.</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">UI</span><span class="p">.</span><span class="nx">NightReact</span><span class="p">({</span>
+  <span class="na">controlsOptions</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">crop</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">ratios</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="na">name</span><span class="p">:</span> <span class="s1">'some-custom-ratio'</span><span class="p">,</span> <span class="c1">// A unique name for this ratio</span>
+          <span class="na">ratio</span><span class="p">:</span> <span class="mi">5</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span> <span class="c1">// The image ratio (a floating point number)</span>
+          <span class="na">dimensions</span><span class="p">:</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nb">Math</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span> <span class="c1">// Optional fixed dimensions</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+      <span class="na">replaceRatios</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+</div>
+
+<p>You will also need to add an icon to the <code class="highlighter-rouge">assets/ui/night-react/controls/crop</code> directory with
+the same name (<code class="highlighter-rouge">some-custom-ratio</code>) and a <code class="highlighter-rouge">@2x.png</code> suffix.</p>
+
+<h2 id="specifying-the-available-ratios">Specifying the available ratios</h2>
+
+<p>Per default, all existing ratios (including your own) are available to the user. To make only
+specific ratios available to the user, use the <code class="highlighter-rouge">selectableRatios</code> option.</p>
+
+<p>The default ratio names are <code class="highlighter-rouge">custom</code> (no fixed ratio), <code class="highlighter-rouge">square</code> (1:1 ratio), <code class="highlighter-rouge">4-3</code>
+(4:3 ratio) and <code class="highlighter-rouge">16-9</code> (16:9 ratio).</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PhotoEditorSDK</span><span class="p">.</span><span class="nx">UI</span><span class="p">.</span><span class="nx">NightReact</span><span class="p">({</span>
+  <span class="na">controlsOptions</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">crop</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">selectableRatios</span><span class="p">:</span> <span class="p">[</span><span class="s1">'custom'</span><span class="p">,</span> <span class="s1">'square'</span><span class="p">,</span> <span class="s1">'4-3'</span><span class="p">,</span> <span class="s1">'16-9'</span><span class="p">,</span> <span class="s1">'some-custom-ratio'</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+</div>
+
+</article>
+	</main>
+  <footer>
+	This is a Footer
+</footer>
+</body>
+
+</html>
