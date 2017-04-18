@@ -1,9 +1,11 @@
 ---
 layout: guide
-title: Api Documentation # title as shown in the menu and 
+title: Support # title as shown in the menu and 
 order: 1
 category: 
   - html5 # One of the categories
+  - guide
+  - resource
 tags: &tags # tags that are necessary
   - photo editor 
 

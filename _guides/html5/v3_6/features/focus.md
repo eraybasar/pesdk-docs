@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Filter # title as shown in the menu and 
+title: Focus # title as shown in the menu and 
 order: 1
 category: 
   - html5 # One of the categories

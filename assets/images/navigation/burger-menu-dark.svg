@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="21px" viewBox="0 0 25 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>burger-dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-330.000000, -21.000000)" fill="#555558">
+            <path d="M330,22.5 C330,21.6715729 330.66869,21 331.507562,21 L353.492438,21 C354.325042,21 355,21.6657972 355,22.5 C355,23.3284271 354.33131,24 353.492438,24 L331.507562,24 C330.674958,24 330,23.3342028 330,22.5 Z M330,31.5 C330,30.6715729 330.66869,30 331.507562,30 L353.492438,30 C354.325042,30 355,30.6657972 355,31.5 C355,32.3284271 354.33131,33 353.492438,33 L331.507562,33 C330.674958,33 330,32.3342028 330,31.5 Z M330,40.5 C330,39.6715729 330.66869,39 331.507562,39 L353.492438,39 C354.325042,39 355,39.6657972 355,40.5 C355,41.3284271 354.33131,42 353.492438,42 L331.507562,42 C330.674958,42 330,41.3342028 330,40.5 Z" id="burger-dark"></path>
+        </g>
+    </g>
+</svg>

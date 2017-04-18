@@ -3,7 +3,7 @@ layout: guide
 title: Controls # title as shown in the menu and 
 order: 1
 category: 
-  - html5 # One of the categories
+  - ios # One of the categories
   - guide
   - ui
 tags: &tags # tags that are necessary

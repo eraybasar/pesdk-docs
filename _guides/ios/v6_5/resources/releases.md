@@ -3,7 +3,11 @@ layout: guide
 title: Releases # title as shown in the menu and 
 order: 1
 category: 
-  - html5 # One of the categories
+  - ios # One of the categories
+  - guide
+  - resource
+tags: &tags # tags that are necessary
+  - photo editor 
 tags: &tags # tags that are necessary
   - photo editor 
 

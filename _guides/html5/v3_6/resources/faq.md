@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Frequently Asked Questions
+title: FAQ
 order: 1
 category: 
   - html5 # One of the categories

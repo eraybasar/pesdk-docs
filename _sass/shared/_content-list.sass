@@ -1,0 +1,89 @@
++block(content-list)
+  counter-reset: li
+  margin-left: 0
+  padding-left: 0
+
+  +element(item)
+    position: relative
+    margin-bottom: 20px
+    margin-left: 28px
+    list-style: none
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.07)
+    padding: 42px 30px 30px 50px
+    background: $white-color
+
+    +screen-min-small
+      padding: 50px 65px
+
+    &:before
+      position: absolute
+      top: 42px
+      left: -27.5px
+      border-radius: 28px
+      width: 56px
+      height: 56px
+      background: $blue-gradient
+      line-height: 5.6rem
+      content: counter(li)
+      counter-increment: li
+      font-size: 30px
+      text-align: center
+      color: $white-color
+
+      +screen-min-small
+        top: 50px
+
+    &:last-child
+      margin-bottom: 0
+
+    +element(title)
+      margin-top: 14px
+      margin-bottom: 20px
+      line-height: 2.8rem
+
+      +modifier(single)
+        margin: 0
+
+    p
+      margin-bottom: 20px
+      line-height: 2.6rem
+
+      &:last-child
+        margin-bottom: 0px
+
+    +modifier(personal)
+      &:before
+        background: url("/assets/images/new/dashboard/icon_personal.svg") center no-repeat, $blue-gradient
+        content: ""
+
+    +modifier(billing)
+      &:before
+        background: url("/assets/images/new/dashboard/icon_billing.svg") center no-repeat, $blue-gradient
+        content: ""
+
+    +modifier(address)
+      &:before
+        background: url("/assets/images/new/dashboard/icon_address.svg") center no-repeat, $blue-gradient
+        content: ""
+
+  +element(footer)
+    position: relative
+    margin-bottom: 20px
+    margin-left: 28px
+    list-style: none
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.07)
+    padding: 30px 30px 30px 50px
+    background: #fafafa
+    text-align: right
+
+    p
+      margin-bottom: 20px
+      line-height: 2.6rem
+      float: left
+      line-height: 50px
+      font-size: 12px
+      font-style: regular
+      color: $text-color
+
+    a
+      font-size: 12px

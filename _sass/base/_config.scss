@@ -1,0 +1,40 @@
+$susy: (columns: 12, global-box-sizing: border-box, container: 1010px);
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$text-color: #555558;
+
+$blue-gradient: linear-gradient(to right top, #68E7FE, #367AD7);
+$pink-gradient: linear-gradient(to right top, #FC7394, #9B207F);
+
+$white-color: #FFFFFF;
+$primary-color: #4DADE9;
+
+$red-color: #C24288;
+$green-color: #42C24B;
+$blue-color: #4DADE9;
+
+
+$background-color: $white-color;
+$light-gray-background-color: #F5F5F5;
+$brand-color:      #9B207F;
+
+
+// Colors from Website
+
+// Z-Index
+$layers: default, page, pageOverlays, topbar, overlay;
+
+

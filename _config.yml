@@ -22,11 +22,13 @@ sass:
 
 gems:
   - jekyll-sitemap
-
+  - jekyll-redirect-from
+  - jekyll-gist
 # include: ['_pages']
 
 # Build settings
 markdown: kramdown
+
 kramdown:
   input: GFM
 

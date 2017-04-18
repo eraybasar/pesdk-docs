@@ -1,0 +1,51 @@
+@mixin arrow($direction: top, $size: 10px, $color: #ccc, $position: 50%, $oppositePosition: 100%, $margin: -1px, $pseudo: before)
+  position: absolute
+  border-color: $color
+
+  &:#{$pseudo}
+    position: absolute
+    border-color: $color
+    width: 0
+    height: 0
+    content: ""
+
+    @if $direction == "right"
+      top: $position
+      left: $oppositePosition
+      margin-top: $size * -1
+      margin-left: $margin
+      border-top: $size solid transparent
+      border-bottom: $size solid transparent
+      border-left: $size solid $color
+      border-left-color: inherit
+
+    @else if $direction == "down"
+      top: $oppositePosition
+      left: $position
+      margin-top: $margin
+      margin-left: $size * -1
+      border-top: $size solid $color
+      border-right: $size solid transparent
+      border-left: $size solid transparent
+      border-top-color: inherit
+
+    @else if $direction == "left"
+      top: $position
+      right: $oppositePosition
+      margin-top: $size * -1
+      margin-right: $margin
+      border-top: $size solid transparent
+      border-right: $size solid $color
+      border-bottom: $size solid transparent
+
+      border-right-color: inherit
+
+    @else
+      bottom: $oppositePosition
+      left: $position
+      margin-bottom: $margin
+      margin-left: $size * -1
+      border-right: $size solid transparent
+      border-bottom: $size solid $color
+      border-left: $size solid transparent
+      border-bottom-color: inherit

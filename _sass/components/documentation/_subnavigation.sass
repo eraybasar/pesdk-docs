@@ -1,0 +1,34 @@
++block(documentation-subnavigation)
+  +screen-min-small
+    float: left
+    margin-top: 0
+    width: 200px
+
+  +element(container)
+    position: relative
+    padding: 0px
+
+  +element(list)
+    display: block
+    list-style: none
+    padding: 0px
+    line-height: 36px
+    text-transform: uppercase
+    +element(header)
+      clear: left
+      > a
+        
+        @extend .bold-font
+        cursor: pointer 
+        font-size: 18px
+        color: #555558
+    +element(item)
+      clear: left
+      > a
+        @extend .bold-font
+        cursor: pointer
+        font-size: 14px
+        color: #A7A7A8
+        margin-left: 30px
+        +flag(active)
+          color: $primary-color

@@ -1,0 +1,83 @@
+
+{% assign platform = "html5 "%}
+<div class="documentation-subnavigation">
+  <div class="documentation-subnavigation__container">
+      {% include documentation/picker.html %}
+      {% include documentation/spacer.html %}
+      <ul class="documentation-subnavigation__list">
+        <il class="documentation-subnavigation__list__header">
+          <a href="what">Introduction</a>
+          <ul>
+            {% assign sites = site.guides | where: "category", "introduction" | where: "category", "html5" %}
+            {% for p in sites %}
+              {% if p.url != sites.first.url %}
+              <br>
+              {% endif %}
+              <il class="documentation-subnavigation__list__item">
+              {% if p.url == page.url %}
+                <a class="is-active" href="{{p.url}}"> {{p.title}} </a>
+              {% else %}
+                <a href="{{p.url}}"> {{p.title}} </a>
+              {% endif %}
+              </il>              
+            {% endfor %}
+          </ul>
+        </il>
+        
+        <il class="documentation-subnavigation__list__header">
+          <a href="what">Features</a>
+          {% assign sites = site.guides | where: "category", "feature" | where: "category", "html5" %}
+          {% for p in sites %}
+            {% if p.url != sites.first.url %}
+            <br>
+            {% endif %}
+            <il class="documentation-subnavigation__list__item">
+              {% if p.url == page.url %}
+                <a class="is-active" href="{{p.url}}"> {{p.title}} </a>
+              {% else %}
+                <a href="{{p.url}}"> {{p.title}} </a>
+              {% endif %}
+            </il>   
+          {% endfor %}
+        </il>
+        
+        <il class="documentation-subnavigation__list__header">
+          <a href="what">UserInterface </a>
+           <ul>
+            {% assign sites = site.guides | where: "category", "ui" | where: "category", "html5" %}
+            {% for p in sites %}
+            {% if p.url != sites.first.url %}
+            <br>
+            {% endif %}
+            <il class="documentation-subnavigation__list__item">
+              {% if p.url == page.url %}
+                <a class="is-active" href="{{p.url}}"> {{p.title}} </a>
+              {% else %}
+                <a href="{{p.url}}"> {{p.title}} </a>
+              {% endif %}
+            </il>   
+            {% endfor %}
+          </ul>
+        </il>
+        
+        <il class="documentation-subnavigation__list__header">
+          <a href="what">Resources</a>
+          <ul>
+            {% assign sites = site.guides | where: "category", "resource" | where: "category", "html5" %}
+            {% for p in sites %}
+            {% if p.url != sites.first.url %}
+            <br>
+            {% endif %}
+            <il class="documentation-subnavigation__list__item">
+              {% if p.url == page.url %}
+                <a class="is-active" href="{{p.url}}"> {{p.title}} </a>
+              {% else %}
+                <a href="{{p.url}}"> {{p.title}} </a>
+              {% endif %}
+            </il>   
+            {% endfor %}
+          </ul>
+        </il>
+      </ul>
+  </div> 
+</div> 

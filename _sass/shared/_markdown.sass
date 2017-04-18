@@ -1,0 +1,19 @@
+.markdown-body
+  color: $text-color
+
+  h1
+    @extend .bold-italic-font
+    font-size: 32px !important
+
+    +screen-small
+      font-size: 28px !important
+
+  h2, h3
+    @extend .semibold-italic-font
+    font-size: 22px
+
+  a
+    @extend .semibold-italic-font
+
+  p
+    font-size: 17px

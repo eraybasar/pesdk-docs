@@ -1,0 +1,28 @@
+$screen-small-min: 768px
+$screen-small-max: 991px
+$screen-medium-min: 992px
+$screen-medium-max: 1199px
+$screen-large-min: 1200px
+$screen-xsmall-max: $screen-small-min - 1
+$screen-small-max: $screen-medium-min - 1
+$screen-medium-max: $screen-large-min - 1
+
+@mixin screen-min-small()
+  @media only screen and (min-width: $screen-small-min)
+    @content
+
+@mixin screen-min-medium()
+  @media only screen and (min-width: $screen-medium-min)
+    @content
+
+@mixin screen-min-large()
+  @media only screen and (min-width: $screen-large-min)
+    @content
+
+@mixin screen-small()
+  @media only screen and (min-width: 0) and (max-width: $screen-small-min)
+    @content
+
+@mixin retina()
+  @media all and (-webkit-min-device-pixel-ratio: 2)
+    @content

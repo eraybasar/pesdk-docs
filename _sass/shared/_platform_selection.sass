@@ -1,0 +1,22 @@
++block(platform-selection)
+  text-align: left
+  color: $white-color
+  margin-bottom: 40px
+
+  +element(hint)
+    @extend .semibold-italic-font
+    color: $text-color
+    font-size: 14px
+    margin-bottom: 20px
+
+  +element(item)
+    display: inline-block
+    margin-right: 35px
+
+    &:last-child
+      margin-right: 0px
+
+    label
+      @extend .semibold-italic-font
+      color: $text-color
+      padding-left: 38px

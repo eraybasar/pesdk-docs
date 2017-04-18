@@ -3,7 +3,7 @@ layout: guide
 title: Frequently Asked Questions
 order: 1
 category: 
-  - html5 # One of the categories
+  - ios # One of the categories
   - guide
   - resource
 tags: &tags # tags that are necessary

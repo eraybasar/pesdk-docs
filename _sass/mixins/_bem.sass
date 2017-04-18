@@ -1,0 +1,59 @@
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+// Prefix all block names with this
+$blockPrefix: ''
+
+$elementSeparator: '__'
+$modifierSeparator: '--'
+
+// BEM mixins
+// See https://css-tricks.com/snippets/sass/bem-mixins/
+
+@mixin block($name)
+  .#{$blockPrefix}#{$name}
+    @content
+
+@mixin element($name)
+  &#{$elementSeparator}#{$name}
+    @content
+
+@mixin elementsWithBaseSelector($baseSelector, $names...)
+  $selector: ()
+  @each $name in $names
+    $selector: append($selector, unquote('#{$baseSelector}#{$elementSeparator}#{$name}'), comma)
+  #{$selector}
+    @content
+
+@mixin elements($names...)
+  $selector: ()
+  @each $name in $names
+    $selector: append($selector, unquote('&#{$elementSeparator}#{$name}'), comma)
+  #{$selector}
+    @content
+
+@mixin modifier($name)
+  &#{$modifierSeparator}#{$name}
+    @content
+
+@mixin modifiers($names...)
+  $selector: ()
+  @each $name in $names
+    $selector: append($selector, unquote('&#{$modifierSeparator}#{$name}'), comma)
+  #{$selector}
+    @content
+
+@mixin flag($name)
+  &.is-#{$name}
+    @content

@@ -1,0 +1,44 @@
+.font
+  font-family: "Open Sans"
+  font-style: inherit
+
+.light-font
+  @extend .font
+  font-weight: 100
+
+.light-italic-font
+  @extend .light-font
+  font-style: italic
+
+.regular-font
+  @extend .font
+  font-weight: 300
+
+.italic-font
+  @extend .font
+  font-weight: 300
+  font-style: italic
+
+.bold-font
+  @extend .font
+  font-weight: 700
+
+.semibold-font
+  @extend .font
+  font-weight: 600
+
+.semibold-italic-font
+  @extend .semibold-font
+  font-style: italic
+
+.bold-italic-font
+  @extend .bold-font
+  font-style: italic
+
+.small-section-font
+  margin-bottom: 6px
+  font-family: "Roboto", "sans-serif"
+  font-size: 20px
+  line-height: 22px
+  font-weight: bold
+  color: $text-color

@@ -1,0 +1,49 @@
++block(features)
+  padding: 40px 0
+  background: $grey-color
+
+  +element(item)
+    @include span(12 last)
+    padding: 40px 20px
+    text-align: center
+    color: $text-color
+
+    h4
+      padding: 10px 0
+
+    @media all and (min-width: 600px)
+      @include span(4)
+      &:nth-of-type(3)
+      margin-right: 0
+
+    +modifier(long)
+      padding: 40px 40px
+      p, a
+        font-size: 1.4rem
+
+      p
+        margin-bottom: 10px
+
+    +element(icon)
+      margin: auto
+      width: 88px
+      height: 88px
+
+      background: no-repeat center center
+
+      $icons: custom effects code devices license whiteLabel
+
+      @each $icon in $icons
+        +modifier($icon)
+          background-size: contain
+          background-image: url('/assets/images/new/features/#{$icon}.png')
+          +retina
+            background-image: url('/assets/images/new/features/#{$icon}@2x.png')
+
+
+  +element(seperator)
+    margin: 15px auto
+    width: 30%
+    max-width: 800px
+    height: 1px
+    background: #c8c8c8

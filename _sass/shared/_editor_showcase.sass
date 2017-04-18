@@ -1,0 +1,89 @@
++block(editor-showcase)
+  width: 100%
+  margin-top: 300px
+  margin-bottom: 100px
+
+  +element(title)
+    text-align: center
+
+  +element(container)
+    position: relative
+    z-index: index($layers, default)
+    margin: auto
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.07)
+    max-width: 1000px
+    background: white
+    text-align: center
+    color: $text-color
+
+  +element(hero)
+    position: relative
+    height: 150px
+
+    +screen-small
+      height: 60px
+
+    +element(item)
+      @include animation(slideIn 0.5s ease-out)
+      @include animation-fill-mode(forwards)
+      position: absolute
+      bottom: 0
+      opacity: 0
+
+      +modifier(android)
+        @include animation-delay(0.25s)
+        bottom: 20px
+        right: 50%
+        margin-right: 190px
+        width: 185px
+        height: 350px
+        background: url('/assets/images/new/landingpage/hero/android.png') no-repeat center center
+        background-size: contain
+
+        +screen-small
+          bottom: 10px
+          margin-right: 80px
+          width: 80px
+          height: 151px
+
+      +modifier(ios)
+        @include animation-delay(0.1s)
+        bottom: 20px
+        left: 50%
+        margin-left: 190px
+        width: 181px
+        height: 350px
+        background: url('/assets/images/new/landingpage/hero/ios.png') no-repeat center center
+        background-size: contain
+
+        +screen-small
+          bottom: 10px
+          margin-left: 80px
+          width: 78px
+          height: 150px
+
+      +modifier(html5)
+        left: 50%
+        margin-left: -250px
+        width: 500px
+        height: 400px
+        background: url('/assets/images/new/landingpage/hero/html5.png') no-repeat center center
+        background-size: contain
+        cursor: pointer
+
+        +screen-small
+          margin-left: -125px
+          width: 251px
+          height: 172px
+
+  +element(tryDemo)
+    padding: 0 0 17px
+
+    +element(link)
+      margin-top: 20px
+      width: 180px
+      font-size: 1.2rem
+
+    +element(learnMore)
+      margin-top: 10px
+      font-size: 1.2rem
