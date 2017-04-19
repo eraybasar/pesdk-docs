@@ -1,6 +1,6 @@
 ---
-layout: quickstart
-title: Getting Started with Angular JS # title as shown in the menu and 
+layout: quickstarts/content
+title: Angular JS # title as shown in the menu and 
 order: 1
 category: 
   - html5 # One of the categories

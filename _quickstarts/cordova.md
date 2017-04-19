@@ -1,6 +1,6 @@
 ---
-layout: quickstart
-title: Getting Started with Cordova # title as shown in the menu and 
+layout: quickstarts/content
+title: Cordova # title as shown in the menu and 
 order: 1
 category: 
   - ios # One of the categories

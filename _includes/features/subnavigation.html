@@ -1,0 +1,32 @@
+
+{% assign platform = "html5" %}
+{% assign version = "v3_6" %}
+
+{% assign subpages = site.features %}
+
+<div class="documentation-subnavigation">
+  <div class="documentation-subnavigation__container">
+      {% include documentation/picker.html %}
+      {% include documentation/spacer.html %}
+      <ul class="documentation-subnavigation__list">
+        <il class="documentation-subnavigation__list__header">
+          <a href="what">Features</a>
+          <ul>
+            {% for p in subpages %}
+              {% if p.url != sites.first.url %}
+              <br>
+              {% endif %}
+              <il class="documentation-subnavigation__list__item">
+              {% if p.url == page.url %}
+                <a class="is-active" href="{{p.url}}"> {{p.title}} </a>
+              {% else %}
+                <a href="{{p.url}}"> {{p.title}} </a>
+              {% endif %}
+              </il>              
+            {% endfor %}
+          </ul>
+        </il>
+        
+      </ul>
+  </div> 
+</div> 

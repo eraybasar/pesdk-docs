@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: guides/content
 title: Frequently Asked Questions
 order: 1
 category: 

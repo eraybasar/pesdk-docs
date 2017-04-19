@@ -1,9 +1,14 @@
 ---
-layout: guide
-title: Export # title as shown in the menu and 
-order: 1
+layout: guides/content
+title: &title Photo Roll # title as shown in the menu and 
+
+menuitem: *title
+order: 0
+platform:
+  - html5
+version:
+  - v3_6
 category: 
-  - html5 # One of the categories
   - guide
   - ui
 tags: &tags # tags that are necessary
@@ -11,7 +16,6 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-
 # Photo Roll
 
 Since version `3.4.0`, our Editor provides a Photo Roll screen the user can pick photos from.

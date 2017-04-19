@@ -1,5 +1,5 @@
 ---
-layout: feature
+layout: features/content
 title: Text # title as shown in the menu and 
 order: 1
 category: 

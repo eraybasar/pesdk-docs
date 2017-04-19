@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: guides/content
 title: Getting Started # title as shown in the menu and 
 order: 1
 category: 

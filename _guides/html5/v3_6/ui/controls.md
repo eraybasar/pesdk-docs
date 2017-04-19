@@ -1,9 +1,14 @@
 ---
-layout: guide
-title: Controls # title as shown in the menu and 
-order: 1
+layout: guides/content
+title: &title Controls # title as shown in the menu and 
+
+menuitem: *title
+order: 0
+platform:
+  - html5
+version:
+  - v3_6
 category: 
-  - html5 # One of the categories
   - guide
   - ui
 tags: &tags # tags that are necessary

@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: guides/content
 title: Overview # title as shown in the menu and 
 order: 1
 category: 

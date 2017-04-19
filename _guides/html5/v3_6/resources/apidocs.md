@@ -1,17 +1,20 @@
 ---
-layout: guide
-title: Api Docs # title as shown in the menu and 
-order: 1
+layout: guides/content
+title: &title Api Docs # title as shown in the menu and 
+
+menuitem: *title
+order: 0
+platform:
+  - html5
+version:
+  - v3_6
 category: 
-  - html5 # One of the categories
   - guide
   - resource
 tags: &tags # tags that are necessary
   - photo editor 
 
-redirect_to: 
-  code: 302 
-  url: https://static.photoeditorsdk.com/docs/html5/v3_6
-
 published: true # Either published or not 
 ---
+
+# {{page.title}}

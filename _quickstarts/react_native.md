@@ -1,8 +1,9 @@
 ---
-layout: quickstart
-title: Getting Started with React-Native # title as shown in the menu and 
+layout: quickstarts/content
+title: React-Native # title as shown in the menu and 
 order: 1
 category: 
+  - quickstsart
   - ios # One of the categories
   - android
 tags: &tags # tags that are necessary

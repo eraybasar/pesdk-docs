@@ -1,8 +1,9 @@
 ---
-layout: quickstart
-title: Getting Started with Ionic # title as shown in the menu and 
+layout: quickstarts/content
+title: Ionic # title as shown in the menu and 
 order: 1
 category: 
+  - category
   - ios # One of the categories
   - android # One of the categories
 tags: &tags # tags that are necessary

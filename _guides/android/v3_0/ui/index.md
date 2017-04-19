@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: guides/content
 title: HTML5 Guides # title as shown in the menu and 
 order: 1
 category: 

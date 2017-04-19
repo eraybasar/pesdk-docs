@@ -1,12 +1,16 @@
 ---
-layout: guide
-title: Crop # title as shown in the menu and 
-order: 1
+layout: guides/content
+title: &title Crop # title as shown in the menu and 
+
+menuitem: *title
+order: 0
+platform:
+  - html5
+version:
+  - v3_6
 category: 
-  - html5 # One of the categories
   - guide
   - feature
-  
 tags: &tags # tags that are necessary
   - photo editor 
 

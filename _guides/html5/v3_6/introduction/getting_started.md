@@ -1,11 +1,16 @@
 ---
-layout: guide
-title: Getting Started # title as shown in the menu and 
+layout: guides/content
+title: &title Getting Started # title as shown in the menu and 
 order: 1
+menuitem: *title
+platform:
+  - html5
+version:
+  - v3_6
 category: 
-  - html5 # One of the categories
   - guide
   - introduction
+
 tags: &tags # tags that are necessary
   - photo editor 
 
