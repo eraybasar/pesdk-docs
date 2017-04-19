@@ -1,16 +1,15 @@
 ---
 layout: quickstarts/content
-title: React-Native # title as shown in the menu and 
-order: 1
+title: &title React Native # title as shown in the menu and 
+
+menuitem: *title
+order: 0
 category: 
-  - quickstsart
-  - ios # One of the categories
-  - android
+  - quickstart
 tags: &tags # tags that are necessary
   - photo editor 
-  - react
-  - 'react-native'
-published: true # Either published or not 
+  - ios
+  - android
 ---
 
-#Getting Started with Ruby on Rails
+#Getting Started with React Native

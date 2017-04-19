@@ -1,9 +1,9 @@
 ---
-layout: guides/content
+layout: guides/html5/v3_6/content
 title: &title Api Docs # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 1
 platform:
   - html5
 version:
@@ -15,6 +15,7 @@ tags: &tags # tags that are necessary
   - photo editor 
 
 published: true # Either published or not 
----
 
-# {{page.title}}
+redirect_to: 
+  - https://static.photoeditorsdk.com/docs/html5/
+---

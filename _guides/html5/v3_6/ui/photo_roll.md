@@ -1,5 +1,5 @@
 ---
-layout: guides/content
+layout: guides/html5/v3_6/content
 title: &title Photo Roll # title as shown in the menu and 
 
 menuitem: *title

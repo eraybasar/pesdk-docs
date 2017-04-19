@@ -1,17 +1,17 @@
 ---
-layout: guides/content
-title: iOS Guides # title as shown in the menu and 
+layout: guides/android/v3_6/content
+title: &title Getting Started # title as shown in the menu and 
 order: 1
+menuitem: *title
+platform:
+  - android
 category: 
-  - ios # One of the categories
+  - guide
+
 tags: &tags # tags that are necessary
   - photo editor 
 
 published: true # Either published or not 
+redirect_to:
+  - '/guides/android/v3_6'
 ---
-
-# Versions
-- [upcoming](v4_0)
-- [latest](v3_0)
-- [3.0](v3_0)
-- [4.0](v4_0)

@@ -1,16 +1,15 @@
 ---
 layout: quickstarts/content
-title: Ionic # title as shown in the menu and 
-order: 1
+title: &title Ionic # title as shown in the menu and 
+
+menuitem: *title
+order: 0
 category: 
-  - category
-  - ios # One of the categories
-  - android # One of the categories
+  - quickstart
 tags: &tags # tags that are necessary
   - photo editor 
-  - cordova
-  - ionic
-published: true # Either published or not 
+  - ios
+  - android
 ---
 
 #Getting Started with Ionic

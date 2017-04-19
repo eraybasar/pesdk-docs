@@ -1,15 +1,14 @@
 ---
 layout: quickstarts/content
-title: React 
-order: 1
+title: &title React # title as shown in the menu and 
+
+menuitem: *title
+order: 0
 category: 
   - quickstart
-  - html5 # One of the categories
 tags: &tags # tags that are necessary
   - photo editor 
-  - react
-  - javascript
-published: false # Either published or not 
+  - html5
 ---
 
-#Getting Started with Ruby on Rails
+# Getting Started with React

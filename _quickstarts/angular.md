@@ -1,13 +1,14 @@
 ---
 layout: quickstarts/content
-title: Angular JS # title as shown in the menu and 
-order: 1
+title: &title Angular JS # title as shown in the menu and 
+
+menuitem: *title
+order: 0
 category: 
-  - html5 # One of the categories
+  - quickstart
 tags: &tags # tags that are necessary
   - photo editor 
-published: false # Either published or not 
+  - html5
 ---
-
 
 #Getting Started with Angular JS

@@ -1,24 +1,23 @@
-{% assign subpages = site.quickstarts% }
 
+
+{% assign subpages = site.quickstarts | where: "category", "quickstart" | sort: "order" %}
+{% assign quickstart_pages = subpages %}
 
 <div class="documentation-subnavigation">
   <div class="documentation-subnavigation__container">
-      {% include documentation/picker.html %}
+      {% include documentation/search.html %}
       {% include documentation/spacer.html %}
       <ul class="documentation-subnavigation__list">
         <il class="documentation-subnavigation__list__header">
-          <a href="what">Quickstarts</a>
+          Quickstarts
           <ul>
-            {% for p in subpages %}
-              {% if p.url != sites.first.url %}
-              <br>
-              {% endif %}
+            {% for p in quickstart_pages %}
               <il class="documentation-subnavigation__list__item">
-              {% if p.url == page.url %}
-                <a class="is-active" href="{{p.url}}"> {{p.title}} </a>
-              {% else %}
-                <a href="{{p.url}}"> {{p.title}} </a>
-              {% endif %}
+                {% if p.url == page.url %}
+                  <a class="is-active" href="{{p.url}}">{{p.menuitem}}</a>
+                {% else %}
+                  <a href="{{p.url}}"> {{p.menuitem}} </a>
+                {% endif %}
               </il>              
             {% endfor %}
           </ul>

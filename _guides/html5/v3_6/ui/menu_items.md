@@ -1,5 +1,5 @@
 ---
-layout: guides/content
+layout: guides/html5/v3_6/content
 title: &title Menu Items # title as shown in the menu and 
 
 menuitem: *title

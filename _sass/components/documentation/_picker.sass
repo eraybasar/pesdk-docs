@@ -3,13 +3,14 @@
   margin-bottom: 4px
   margin-left: 0px
   margin-right: 24px
-  
-  border: 1px solid #eee
   +element(item)
+    display: block
+    margin-top: 4px
+    margin-bottom: 4px
     padding-left: 12px
     padding-top: 6px
     padding-bottom: 6px
-    margin: 0px
+    
     border: 1px solid #eee
     clear: left
     > a
@@ -17,3 +18,5 @@
       cursor: pointer
       font-size: 18px
       color: #555558
+      +flag(active)
+        color: $primary-color

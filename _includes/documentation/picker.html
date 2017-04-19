@@ -1,30 +1,26 @@
+{% assign platform= include.platform %}
 <div class="documentation-picker">
+  
   <div class="documentation-picker__item" >
-    <a> 
-      Html5
-    </a>
+    {% if platform == "html5" %}
+     <a class="is-active" href="/guides/html5">Html5</a>
+    {% else %}
+      <a href="/guides/html5">Html5</a>
+    {% endif %}
   </div>
   <div class="documentation-picker__item" >
-    <a> 
-      iOs
-    </a>
+    {% if platform == "ios" %}
+     <a class="is-active" href="/guides/ios">iOS</a>
+    {% else %}
+      <a href="/guides/ios">iOS</a>
+    {% endif %}
   </div>
   <div class="documentation-picker__item" >
-    <a> 
-      Android
-    </a>
+    {% if platform == "android" %}
+     <a class="is-active" href="/guides/android">Android</a>
+    {% else %}
+      <a href="/guides/android">Android</a>
+    {% endif %}
   </div>
-</div>
-
-<div class="documentation-picker">
-  <div class="documentation-picker__item" >
-    <a> 
-      v4.0
-    </a>
-  </div>
-  <div class="documentation-picker__item" >
-    <a> 
-      v3.0
-    </a>
-  </div>
+  
 </div>

@@ -1,17 +1,17 @@
 ---
-layout: guides/index
-title: HTML5 Guides # title as shown in the menu and 
+layout: guides/html5/v3_6/content
+title: &title Getting Started # title as shown in the menu and 
 order: 1
+menuitem: *title
+platform:
+  - html5
 category: 
-  - html5 # One of the categories
+  - guide
+
 tags: &tags # tags that are necessary
   - photo editor 
 
 published: true # Either published or not 
+redirect_to:
+  - '/guides/html5/v3_6'
 ---
-
-# Versions
-- [upcoming](v4_0)
-- [latest](v3_6)
-- [3.6](v3_6)
-- [4.0](v4_0)

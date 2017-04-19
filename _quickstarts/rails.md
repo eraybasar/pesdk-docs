@@ -1,15 +1,15 @@
 ---
 layout: quickstarts/content
-title: Ruby on Rails # title as shown in the menu and 
-order: 1
+title: &title Ruby on Rails # title as shown in the menu and 
+
+menuitem: *title
+order: 0
 category: 
   - quickstart
-  - html5 # One of the categories
 tags: &tags # tags that are necessary
   - photo editor 
-  - rails 
-  - ruby
-published: true # Either published or not 
+  - ios
+  - android
 ---
 
 #Getting Started with Ruby on Rails

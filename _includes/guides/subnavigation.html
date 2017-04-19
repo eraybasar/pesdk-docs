@@ -1,6 +1,6 @@
 
-{% assign platform = "html5" %}
-{% assign version = "v3_6" %}
+{% assign platform = include.platform %}
+{% assign version = include.version %}
 
 {% assign subpages = site.guides | where: "platform", platform | where: "version", version | sort: "order" %}
 
@@ -12,20 +12,17 @@
 
 <div class="documentation-subnavigation">
   <div class="documentation-subnavigation__container">
-      {{base_url}}
-      {% include documentation/picker.html %}
+      {% include documentation/search.html %}
+      {% include documentation/picker.html platform=platform %}
       {% include documentation/spacer.html %}
       <ul class="documentation-subnavigation__list">
         <il class="documentation-subnavigation__list__header">
-          <a href="what">Introduction</a>
+          Introduction
           <ul>
             {% for p in intropages %}
-              {% if p.url != intropages.first.url %}
-                <br>
-              {% endif %}
               <il class="documentation-subnavigation__list__item">
                 {% if p.url == page.url %}
-                  <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
+                  <a class="is-active" href="{{p.url}}">{{p.menuitem}}</a>
                 {% else %}
                   <a href="{{p.url}}"> {{p.menuitem}} </a>
                 {% endif %}
@@ -35,11 +32,8 @@
         </il>
         
         <il class="documentation-subnavigation__list__header">
-          <a href="what">Features</a>
+          Features
           {% for p in feature_pages %}
-            {% if p.url != feature_pages.first.url %}
-              <br>
-            {% endif %}
             <il class="documentation-subnavigation__list__item">
               {% if p.url == page.url %}
                 <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
@@ -51,37 +45,31 @@
         </il>
         
         <il class="documentation-subnavigation__list__header">
-          <a href="what">User-Interface </a>
+          User Interface
            <ul>
             {% for p in ui_pages %}
-            {% if p.url != ui_pages.first.url %}
-            <br>
-            {% endif %}
-            <il class="documentation-subnavigation__list__item">
-              {% if p.url == page.url %}
-                <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
-              {% else %}
-                <a href="{{p.url}}"> {{p.menuitem}} </a>
-              {% endif %}
-            </il>   
+              <il class="documentation-subnavigation__list__item">
+                {% if p.url == page.url %}
+                  <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
+                {% else %}
+                  <a href="{{p.url}}"> {{p.menuitem}} </a>
+                {% endif %}
+              </il>   
             {% endfor %}
           </ul>
         </il>
         
         <il class="documentation-subnavigation__list__header">
-          <a href="what">Resources</a>
+          Resources
           <ul>
             {% for p in resource_pages %}
-            {% if p.url != resource_pages.first.url %}
-            <br>
-            {% endif %}
-            <il class="documentation-subnavigation__list__item">
-              {% if p.url == page.url %}
-                <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
-              {% else %}
-                <a href="{{p.url}}"> {{p.menuitem}} </a>
-              {% endif %}
-            </il>   
+              <il class="documentation-subnavigation__list__item">
+                {% if p.url == page.url %}
+                  <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
+                {% else %}
+                  <a href="{{p.url}}"> {{p.menuitem}} </a>
+                {% endif %}
+              </il>   
             {% endfor %}
           </ul>
         </il>
