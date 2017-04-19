@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 redirect_to:
-  - '/guides/ios/v6_5'
+  - '/guides/ios/v6_5/introduction/overview'
 ---
