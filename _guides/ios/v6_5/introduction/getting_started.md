@@ -17,62 +17,59 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Gettings Started with the PhotoEditorSDK for ios
+# Getting Started with the PhotoEditorSDK for iOS
 
-## Prerequisites
+## Requirements
 
-  * A text editor
-  * Basic HTML / JavaScript knowledge
-  * A web server
+| SDK | Swift      | iOS   | Xcode     |
+|-----|------------|-------+-----------|
+| 3   | 2.2        | iOS 8 | Xcode 7.x |
+| 4   | 2.3        | iOS 8 | Xcode 8.x |
+| 5   | 3.0        | iOS 8 | Xcode 8.x |
+| 6   | 3.0        | iOS 8 | Xcode 8.x |
 
-## Integrating the editor into your website
+* Major Version 3 of the SDK is compatible with Xcode 7.x and Swift 2.2 and iOS 8 and above.
+* Major Version 4 of the SDK is compatible with Xcode 8.x and Swift 2.3 and iOS 8 and above.
+* Major Version 5 of the SDK is compatible with Xcode 8.x and Swift 3.0 and iOS 8 and above.
+* Major Version 6 of the SDK is compatible with Xcode 8.x and Swift 3.0 and iOS 9 and above.
 
-Integrating our editor into your web application is easy as pie:
+The major version number change from 3.x to 4.x and 5.x was required to provide a release for each Swift version. Version 3.3.12, 4.0.7 and 5.0.7 all have the same features and only differ in the version of Swift used. Major version 6 is the first version with new and updated features and is written in Swift 3.0.
 
-  * Download the [latest release](https://github.com/imgly/pesdk-ios-build/releases/latest) from
-    our public GitHub repository, extract it and copy the folders `assets`, `css` and `js` into your
-    project folder.
+## CocoaPods
 
-  * In your HTML file, include the SDK and the UI JavaScript files as well as the editor's CSS files
-    inside your `<head>` tag
+PhotoEditorSDK is available via CocoaPods. If you're new to CocoaPods, [this Getting Started Guide will help you](https://guides.cocoapods.org/using/getting-started.html). CocoaPods is the preferred and simplest way to use the PhotoEditorSDK.
 
-    ```html
-    <head>
-      <script src="js/vendor/react.min.js"></script>
-      <script src="js/vendor/react-dom.min.js"></script>
-      <script src="js/PhotoEditorSDK.min.js"></script>
-      <script src="js/PhotoEditorReactUI.min.js"></script>
-      <link rel="stylesheet" href="css/PhotoEditorReactUI.min.css" />
-    </head>
-    ```
+**Important:** Please make sure that you have a CocoaPods version >= 0.39.0 installed. You can check your version of CocoaPods with `pod --version`.
 
-  * Now create a `<div>` that should contain the editor and give it a unique `id` so we can access
-    it using JavaScript. The editor will take the size of the containing `<div>`. We're gonna specify
-    the dimensions using inline styles, for the sake of simplicity:
+Here's what you have to add to your `Podfile`:
 
-    ```html
-    <div id="editor" style="width: 640px; height: 480px;"></div>
-    ```
+```
+use_frameworks!
 
-  * To initialize the editor, instantiate the UI using JavaScript. Add the following code
-    right below our containing `<div>` element:
+pod 'imglyKit', '~> 6.5'
+```
 
-    ```html
-    <script>
-      window.onload = function () {
-        var container = document.getElementById('editor')
-        var editor = new PhotoEditorSDK.UI.ReactUI({
-          container: container,
-          apiKey: 'YOUR_API_KEY, // <-- Please replace this with your API key
-          assets: {
-            baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
-          }
-        })
-      }
-    </script>
-    ```
-  * Now run your webserver and open up your HTML file. You should see something like this:
+Then run `pod install`.
 
-    ![The Editor](http://static.photoeditorsdk.com/editor.png)
+## Manually
 
-You can find a working demo integration [here](http://static.photoeditorsdk.com/demo/).
+If you prefer not to use either of the aforementioned dependency manager, you can integrate
+PhotoEditorSDK into your project manually via a dynamic framework.
+
+1) Download the SDK [here](https://github.com/imgly/pesdk-ios-build/releases/latest), then just drag `imglyKit.framework` into the `Embedded Binaries` section of your target:
+
+![Embedded Binaries](/assets/images/ios/embedded-binaries.png)
+
+2) Add a new `Run Script Phase` in your target’s `Build Phases`.
+
+**IMPORTANT:** Make sure this `Run Script Phase` is below the `Embed Frameworks` build phase.
+You can drag and drop build phases to rearrange them.
+Paste the following line in this `Run Script Phase`'s script text field:
+
+```
+bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/imglyKit.framework/strip-framework.sh"
+```
+
+This script works around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) triggered by universal binaries.
+
+![Run Script Phase](/assets/images/ios/run-script-phase.png)

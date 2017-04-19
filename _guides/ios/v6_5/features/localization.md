@@ -20,189 +20,68 @@ published: true # Either published or not
 
 # Localization
 
-International web applications have international users. That's why we allow you to easily add custom
-languages to our UI by passing them using the `extensions.languages` object. The `language` option
-specifies the language that the UI should use.
+The Photo Editor SDK is fully localizable. We provide an english fallback localization, that will be used when no matching localization is found. To determine the matching language Photo Editor SDK uses `NSLocale.preferredLanguages`.
+To add support for a language, please refer to Apple's localization guidelines.
+We also provide two properties to customize your localization, `PESDK.localizationDictionary` and `PESDK.localizationBlock`.
 
-```js
-const editor = new PhotoEditorSDK.UI.NightReact({
-  extensions: {
-    languages: {
-      es: spanishLanguageObject
-    }
-  },
-  language: 'es'
-})
+## Add further localization to the Photo Editor SDK
+
+You can either set new localization programmatically or add further localization via adding the corresponding folders.
+To get an overview of all available strings that need to be localized, look inside /imglyKit.bundle/en.lproj/Localizable.strings.
+As mentioned above, there are two ways to add localization programmatically. The first is to set a localization dictionary like so:
+
+```swift
+PESDK.localizationDictionary = [
+    "en": [
+      "No permission" : "No permission",
+      "Top left cropping area" : "Top left cropping area",
+      "Settings" : "Settings"
+    ]
+]
 ```
 
-The language objects should have the same structure as our default languages. Here is the English
-language object as an example:
+The `en` string indicates, that this translation should be used when english language is needed.
+You can chain multiple translations like this. The second option is, to use a block, allowing you to easily use your
+default bundle, or a customized bundle with `NSLocalizedStringFromTableInBundle`.
 
-```json
-{
-  "controls": {
-    "overview": {
-      "filters": "Filters",
-      "orientation": "Orientation",
-      "adjustments": "Adjust",
-      "crop": "Crop",
-      "focus": "Focus",
-      "border": "Border",
-      "sticker": "Sticker",
-      "text": "Text",
-      "brush": "Brush"
-    },
-    "border": {
-      "color": "Color",
-      "thickness": "Thickness"
-    },
-    "text": {
-      "foreground": "Foreground",
-      "background": "Background",
-      "size": "Size",
-      "font": "Font",
-      "alignment": "Alignment",
-      "takeToFront": "To Front"
-    },
-    "orientation": {
-      "rotate-l": "Rotate -90°",
-      "rotate-r": "Rotate +90°",
-      "flip-h": "Flip (H)",
-      "flip-v": "Flip (V)"
-    },
-    "adjustments": {
-      "brightness": "Brightness",
-      "contrast": "Contrast",
-      "saturation": "Saturation",
-      "exposure": "Exposure",
-      "shadows": "Shadows",
-      "highlights": "Highlights",
-      "clarity" : "Clarity"
-    },
-    "crop": {
-      "custom": "Custom",
-      "square": "Square",
-      "4-3": "4:3",
-      "16-9": "16:9"
-    },
-    "focus": {
-      "radial": "Radial",
-      "linear": "Linear",
-      "blurRadius": "Blur radius"
-    },
-    "filters": {
-      "intensity": "Intensity",
-      "categories": {
-        "all": "All",
-        "retro": "Retro",
-        "bw": "Black & White",
-        "summer": "Summer",
-        "winter": "Winter",
-        "special": "Special"
-      }
-    },
-    "sticker": {
-      "brightness": "Brightness",
-      "contrast": "Contrast",
-      "saturation": "Saturation",
-      "blur": "Blur",
-      "flip": "Flip",
-      "flip-v": "Flip (V)",
-      "flip-h": "Flip (H)",
-      "takeToFront": "To Front",
-      "categories": {
-        "all": "All",
-        "glasses": "Glasses",
-        "hats": "Hats",
-        "beards": "Beards",
-        "misc": "Misc"
-      }
-    },
-    "brush": {
-      "thickness": "Thickness",
-      "color": "Color"
-    }
-  },
-  "webcam": {
-    "headline": "Take a photo!"
-  },
-  "editor": {
-    "headline": "Edit Photo",
-    "new": "New",
-    "photo-roll": "Photo Roll",
-    "undo": "Undo",
-    "export": "Export"
-  },
-  "splash": {
-    "upload": {
-      "button": "Upload your image",
-      "description": "Upload a picture from your library or just drag and drop"
-    },
-    "webcam": {
-      "headline": "Webcam",
-      "description": "Take a picture with your webcam or phone"
-    },
-    "photo-roll": {
-      "headline": "Free stock footage",
-      "description": "Select from thousands of Free Stock Photos"
-    }
-  },
-  "photo-roll": {
-    "search": {
-      "placeholder": "Search for photos",
-      "results": {
-        "headline": "Search results for ${query}"
-      }
-    }
-  },
-  "generic": {
-    "back": "Back",
-    "cancel": "Cancel",
-    "color": "Color"
-  },
-  "loading": {
-    "resizing": "Resizing...",
-    "exporting": "Exporting...",
-    "loading": "Loading..."
-  },
-  "warnings": {
-    "imageResized_maxMegaPixels": {
-      "title": "Image resized",
-      "text": "Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels."
-    },
-    "imageResized_maxDimensions": {
-      "title": "Image resized",
-      "text": "Due to hardware limitations your image has been resized to ${width}x${height} pixels."
-    }
-  },
-  "errors": {
-    "imageLoadFail": {
-      "title": "Failed to load image",
-      "text": "Failed to load the image at ${path}"
-    },
-    "webcamUnavailable": {
-      "title": "Webcam unavailable",
-      "text": "Unable to display webcam image (Error: ${error})"
-    },
-    "webcamNotSupported": {
-      "title": "Webcam not supported",
-      "text": "The webcam feature is not supported by your browser."
-    },
-    "renderingError": {
-      "title": "Error while rendering",
-      "text": "An error has occurred while rendering the image."
-    },
-    "context_lost": {
-      "title": "An error has occurred",
-      "text": "Your browser took too long to render the image. Please try applying less operations."
-    },
-    "context_lost_limit": {
-      "title": "An error has occurred",
-      "text": "Your browser failed multiple times while rendering the image."
-    },
-    "loadingStickersFailed": {
-      "title": "Failed to load stickers"
-    }
-  }
-}
+```
+[PESDK setLocalizationBlock:^NSString * _Nullable(NSString * _Nonnull stringToLocalize) {
+    // This will look up strings in Localizable.strings inside your resource folder.
+    return NSLocalizedStringFromTable(stringToLocalize, @"Localizable", nil);
+
+    // You can also route your default localization:
+    return NSLocalizedString(stringToLocalize, nil);
+
+    // Or use a custom variant, for example to test if everything is localized:
+    // Please keep in mind that several strings like "Edit" are provided by the system and automatically translated, provided that you have the correct localization resources set.
+    return [NSString stringWithFormat:@"_____%@_____", stringToLocalize];
+}];
+```
+
+## Plurals
+
+To have plurals handled correctly, we use a [.stringsdict](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/StringsdictFileFormat/StringsdictFileFormat.html) file. These define plural rules of a language. Some languages have more plural rules than others.
+
+Here is an example for croatian:
+```
+<key>%tu match(es) found</key>
+<dict>
+    <key>NSStringLocalizedFormatKey</key>
+    <string>%#@tu_matches_found@</string>
+    <key>tu_matches_found</key>
+    <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>tu</string>
+        <key>zero</key>
+        <string>Nema pronađenih rezultata</string>
+        <key>one</key>
+        <string>%tu pronađen rezultat</string>
+        <key>two</key>
+        <string>%tu pronađena rezultata</string>
+        <key>other</key>
+        <string>%tu pronađenih rezultata</string>
+    </dict>
+</dict>
 ```
