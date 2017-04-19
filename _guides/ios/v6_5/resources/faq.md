@@ -19,19 +19,6 @@ published: true # Either published or not
 
 # Frequently Asked Questions
 
-## EXIF
-
-With version 6 of our SDK we introduced EXIF handling, meaning that the EXIF data of the input image is preserved.
-The reason why the EXIF data got lost in the first place, is that the `UIImage` class strips the EXIF data down to a minimal set.
-Therefore the input image must be passed in as a `Data` object. The following code sample demonstrates the process,
-
-```swift
-let sampleImage = Data(contentsOf: Bundle.main.url(forResource: "exifSample", withExtension: "jpg")!)
-let photoEditViewController = PhotoEditViewController(data: sampleImage!)
-```
-
-As stated above, to get the edited image with all EXIF informations, use the `data` argument, passed by the `func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data)` method defined in the `PhotoEditViewControllerDelegate` protocol.
-
 ## Library not loaded
 If you see an issue like this one:
 ```

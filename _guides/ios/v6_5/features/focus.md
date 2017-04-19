@@ -19,6 +19,4 @@ published: true # Either published or not
 
 # Focus
 
-## Radial Blur 
-
-## Tile Shift 
+TODO
