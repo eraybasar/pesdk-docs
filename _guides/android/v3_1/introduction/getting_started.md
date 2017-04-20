@@ -19,7 +19,7 @@ published: true # Either published or not
 
 # Getting started with our PhotoEditor SDK for Android
 
-This document guides you through the process of integrating the PhotoEditorSDK into you Android
+This document guides you through the process of integrating the PhotoEditor SDK into you Android
 application.
 
 ## Prerequisites
@@ -37,7 +37,7 @@ You will need a **valid license file** in order to use the PhotoEditor SDK in yo
 
 ## Supported Android versions
 
-The PhotoEditorSDK supports **Android 4.0.3+ (API Level 15)** as the `minSdkVersion`, but it must be
+The PhotoEditor SDK supports **Android 4.0.3+ (API Level 15)** as the `minSdkVersion`, but it must be
 compiled with `Build-API` and `targetSdkVersion` Level 25+ to support Android 7.1 and above.
 
 ## Setting up the workspace
