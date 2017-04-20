@@ -10,23 +10,23 @@
       {% include documentation/picker.html %}
       {% include documentation/spacer.html %}
       <ul class="documentation-subnavigation__list">
-        <il class="documentation-subnavigation__list__header">
+        <li class="documentation-subnavigation__list__header">
           <a href="what">Features</a>
           <ul>
             {% for p in subpages %}
               {% if p.url != sites.first.url %}
               <br>
               {% endif %}
-              <il class="documentation-subnavigation__list__item">
+              <li class="documentation-subnavigation__list__item">
               {% if p.url == page.url %}
                 <a class="is-active" href="{{p.url}}"> {{p.title}} </a>
               {% else %}
                 <a href="{{p.url}}"> {{p.title}} </a>
               {% endif %}
-              </il>              
+              </li>              
             {% endfor %}
           </ul>
-        </il>
+        </li>
         
       </ul>
   </div> 

@@ -16,63 +16,63 @@
       {% include documentation/picker.html platform=platform %}
       {% include documentation/spacer.html %}
       <ul class="documentation-subnavigation__list">
-        <il class="documentation-subnavigation__list__header">
+        <li class="documentation-subnavigation__list__header">
           Introduction
           <ul>
             {% for p in intropages %}
-              <il class="documentation-subnavigation__list__item">
+              <li class="documentation-subnavigation__list__item">
                 {% if p.url == page.url %}
                   <a class="is-active" href="{{p.url}}">{{p.menuitem}}</a>
                 {% else %}
                   <a href="{{p.url}}"> {{p.menuitem}} </a>
                 {% endif %}
-              </il>              
+              </li>              
             {% endfor %}
           </ul>
-        </il>
+        </li>
         
-        <il class="documentation-subnavigation__list__header">
+        <li class="documentation-subnavigation__list__header">
           Features
           {% for p in feature_pages %}
-            <il class="documentation-subnavigation__list__item">
+            <li class="documentation-subnavigation__list__item">
               {% if p.url == page.url %}
                 <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
               {% else %}
                 <a href="{{p.url}}"> {{p.menuitem}} </a>
               {% endif %}
-            </il>   
+            </li>   
           {% endfor %}
-        </il>
+        </li>
         
-        <il class="documentation-subnavigation__list__header">
+        <li class="documentation-subnavigation__list__header">
           User Interface
            <ul>
             {% for p in ui_pages %}
-              <il class="documentation-subnavigation__list__item">
+              <li class="documentation-subnavigation__list__item">
                 {% if p.url == page.url %}
                   <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
                 {% else %}
                   <a href="{{p.url}}"> {{p.menuitem}} </a>
                 {% endif %}
-              </il>   
+              </li>   
             {% endfor %}
           </ul>
-        </il>
+        </li>
         
-        <il class="documentation-subnavigation__list__header">
+        <li class="documentation-subnavigation__list__header">
           Resources
           <ul>
             {% for p in resource_pages %}
-              <il class="documentation-subnavigation__list__item">
+              <li class="documentation-subnavigation__list__item">
                 {% if p.url == page.url %}
                   <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>
                 {% else %}
                   <a href="{{p.url}}"> {{p.menuitem}} </a>
                 {% endif %}
-              </il>   
+              </li>   
             {% endfor %}
           </ul>
-        </il>
+        </li>
       </ul>
   </div> 
 </div> 
