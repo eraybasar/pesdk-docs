@@ -17,7 +17,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Getting Started with the PhotoEditorSDK for iOS
+# Getting Started with the PhotoEditor SDK for iOS
 
 ## Requirements
 
@@ -30,7 +30,7 @@ The major version number change from 3.x to 4.x and 5.x was required to provide 
 
 ## CocoaPods
 
-PhotoEditorSDK is available via CocoaPods. If you're new to CocoaPods, [this Getting Started Guide will help you](https://guides.cocoapods.org/using/getting-started.html). CocoaPods is the preferred and simplest way to use the PhotoEditorSDK.
+PhotoEditor SDK is available via CocoaPods. If you're new to CocoaPods, [this Getting Started Guide will help you](https://guides.cocoapods.org/using/getting-started.html). CocoaPods is the preferred and simplest way to use the PhotoEditor SDK.
 
 **Important:** Please make sure that you have a CocoaPods version >= 0.39.0 installed. You can check your version of CocoaPods with `pod --version`.
 
@@ -47,7 +47,7 @@ Then run `pod install`.
 ## Manually
 
 If you prefer not to use either of the aforementioned dependency manager, you can integrate
-PhotoEditorSDK into your project manually via a dynamic framework.
+PhotoEditor SDK into your project manually via a dynamic framework.
 
 1) Download the SDK [here](https://github.com/imgly/pesdk-ios-build/releases/latest), then just drag `imglyKit.framework` into the `Embedded Binaries` section of your target:
 
