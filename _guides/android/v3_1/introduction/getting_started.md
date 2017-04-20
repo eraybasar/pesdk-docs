@@ -33,14 +33,16 @@ The following software is required:
 * Android Build Tools 25.0.2+
 * Android Support Repository 25.1.1+
 
+You will need a **valid license file** in order to use the PhotoEditor SDK in your own application. You can request a trial license at [here](https://www.photoeditorsdk.com/users/new). As our [demo application](https://github.com/imgly/imgly-sdk-android-demo) comes bundled with its own license, you can use this right away, if you just want to take a quick look.
+
 ## Supported Android versions
 
-The PhotoEditorSDK supports Android 4.0.3+ (API Level 15) as the `minSdkVersion`, but it must be
+The PhotoEditorSDK supports **Android 4.0.3+ (API Level 15)** as the `minSdkVersion`, but it must be
 compiled with `Build-API` and `targetSdkVersion` Level 25+ to support Android 7.1 and above.
 
 ## Setting up the workspace
 
-Please make sure to have jCenter listed in your repositories in your `build.gradle` file:
+Please make sure to have jCenter and our artifactory repository listed in your repositories in your `build.gradle` file:
 
 ```groovy
 buildscript {
@@ -111,9 +113,7 @@ dependencies {
 }
 ```
 
-Sync your project with the Gradle files after every edit.
-
-For more information about Gradle, please take a look at the [Android Developer Documentation](http://developer.android.com/tools/building/configuring-gradle.html)
+Sync your project with the Gradle files after every edit. For more information about Gradle, please take a look at the [Android Developer Documentation](http://developer.android.com/tools/building/configuring-gradle.html)
 
 ## Setting up the application
 
@@ -145,18 +145,18 @@ public class Application extends android.app.Application {
 }
 ```
 
-## Add the License file
+## Add your license file
 
-Before using any components of the Photo Editor SDK, you have to add your license key file to your application assets folder.
-The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`  
+Before using any components of the PhotoEditor SDK, you have to add your license file to your applications assets folder.
+The expected default name of the license file is "LICENSE". In order to change this, call `PESDK.init(this, "YOUR_FILENAME")` instead of `PESDK.init(this)`  
 
-The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can request a demo license at https://www.photoeditorsdk.com/pricing.
+The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license thats bound to your bundle identifier. You can start a trial [here](https://www.photoeditorsdk.com/users/new) and download your license file from your [dashboard](https://www.photoeditorsdk.com/dashboard).
 
-Once you have the license file it can be used to unlock the view controller. The following example demonstrates the unlock the SDK.
+Once the license file has been added the application will validate its presence upon launch.
 
 ## Android Permissions
 
-The PhotoEditor SDK requires two permissions: The "Write access to external storage" and the "Camera" permission. The SDK will automatically grant these permissions using manifest merging. No further action is required.
+The PhotoEditor SDK requires two permissions: The "_Write access to external storage_" and the "_Camera_" permission. The SDK will automatically grant these permissions using manifest merging. No further action is required.
 
 Please take a look at the hint in the next step in order to integrate the Android 6.0 permission request.
 
@@ -166,9 +166,7 @@ In order to open the camera preview and pass the resulting image to the editor, 
 `CameraPreviewBuilder` and start with `startActivityForResult(activity, custom_id)`.
 
 __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
-as demonstrated in the following example.__
-
-This is the minimum implementation.
+as demonstrated in the following example. This ensures correct behaviour on Android 6.0 and above.__
 
 ```java
 public class MainActivity extends Activity implements PermissionRequest.Response{
@@ -252,6 +250,8 @@ public class MainActivity extends Activity implements PermissionRequest.Response
 
 ### Start Editor standalone (without camera).
 
+You can directly open the editor for an existing image by modifying the example above:
+
 ```java
 String myPicture = "PATH_TO_THE_IMAGE"
 settingsList
@@ -272,4 +272,4 @@ settingsList
 
 ## Sample Application
 
-Get the source for our demo application from our [public GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).
+You can access the source code for our demo application from our [public GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).

@@ -16,6 +16,7 @@ tags: &tags # tags that are necessary
   - photo editor 
 
 status: draft
+published: false
 ---
 
 # Architecture

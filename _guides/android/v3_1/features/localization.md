@@ -28,9 +28,9 @@ For more information take a look at the [Developer Guides](http://developer.andr
 
 ## Using the localization editor
 
-Copy and paste the downloaded files (only the files, not the folder) into the `res` folder of your own app. Afterwards, open your project in Android Studio.
+Copy and paste the downloaded files (just the files, not the folder) into the `res` folder of your own app. Afterwards, open your project in Android Studio.
 
-Open `res/values/string.xml` (if the file doesn't exist, please create it) and click `Edit translations for all locales in the translations editor.` -> `Open editor`
+Open `res/values/string.xml` (if the file doesn't exist, you will have to create it) and click `Edit translations for all locales in the translations editor.` -> `Open editor`.
 
 ![Strings](/assets/images/android/imgly_strings.png){: width="675px"}
 

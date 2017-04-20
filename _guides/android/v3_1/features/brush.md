@@ -14,6 +14,6 @@ category:
 tags: &tags # tags that are necessary
   - photo editor 
 
-published: true # Either published or not 
+published: false # Either published or not 
 ---
 # Brush

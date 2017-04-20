@@ -19,14 +19,14 @@ published: true # Either published or not
 # Configuration
 
 The `ImgLyConfig` provides a lot of functions for customizing the Editor.
-To modify this config you need to create a new SettingsList() an set it to the `CameraPreviewBuilder`or the `PhotoEditorBuilder`
+To modify this configuration you need to generate a default object using a new `SettingsList` object. You can then configure the SDK using the `ImglyConfig` object returned from `getConfig()`. Afterwards you add the modified `settingsList` to the `CameraPreviewBuilder` or the `PhotoEditorBuilder`.
 
 ```java
 SettingsList settingsList = new SettingsList();
 ImgLyConfig config = settingsList.getConfig()
 
 /********************************
- * Do you config modifications. *
+ * Do your configuration modifications. *
  ********************************/
 
  new CameraPreviewBuilder(this)
@@ -38,16 +38,16 @@ ImgLyConfig config = settingsList.getConfig()
 
 ![Editor Tools](/assets/images/android/imgly_editor_tools.png){: width="360px"}
 
-In order to change the tools or rearrange them, use the `setTools()` method. Before this you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and re-fill it with the tools you like in any order you prefer or you can set direcly. You can also add custom tools by extending
+In order to change the tools or rearrange them, use the `setTools()` method of the `ImgLyConfig` object. Before this you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
 the `AbstractEditorTool` class.
+
+A single `EditorTool` object takes two parameters:
+
+1. A resource identifier of the tool name
+2. A drawable resource identifier of the icon
 
 ```java
 ArrayList<AbstractEditorTool> tools = new ArrayList<>();
-
-/*  All tools need the following parameters:
- *   Parameter 1: Resource identifier of the tool name (String)
- *   Parameter 2: Drawable resource identifier of the icon (String)
- */
 
 /* This is the default configuration: */
 
@@ -76,6 +76,10 @@ There are two types of crop configurations:
 * Fixed aspect ratio while keeping the resolution
 * Fixed aspect ratio with fixed resolution
 
+<div class="todo">
+Ask Sven about details and extract comment from code block.
+</div>
+
 ```java
 
 ArrayList<CropAspectConfig> cropConfig = new ArrayList<>();
@@ -101,7 +105,7 @@ cropConfig.add(new CropAspectConfig(R.string.my_4_3_crop_name, 4, 3));
 config.setAspectConfig(cropConfig);
 ```
 
-## ​Fonts configuration
+## Further configurations
 
 Take a look at the [text documentation](/guides/android/v3_1/features/text).
 

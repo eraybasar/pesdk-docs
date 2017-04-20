@@ -19,9 +19,7 @@ published: true # Either published or not
 
 # Overview
 
-PhotoEditor SDK for Android is a framework for creating stunning images with a nice selection of premium filters.
-
-PhotoEditor SDK provides tools for creating photo applications for Android with a big variety of filters that can be previewed in high quality and realtime. Unlike other Android apps, the PhotoEditor Android SDK allow a fast live preview of filters even when using high-resolution images up to the hardware limitations. It is written in high level Java with Renderscript and allows for easy customization with your own XML based Layouts, Styles and Drawables.
+The PhotoEditor SDK for Android provides tools for creating high fidelity photo editing applications with a big variety of filters that can be previewed in high quality and realtime. Unlike other Android apps, the PhotoEditor Android SDK allows a fast live preview of filters even when using high-resolution images up to the hardware limitations. It is written in high level Java with Renderscript and allows for easy customization with your own XML based Layouts, Styles and Drawables.
 
 <div class="documentation__disclaimer">
 <h4>License Terms</h4>
@@ -45,7 +43,6 @@ editing tools. Export and integrate them in minutes!
 * __Live Preview__. Filters can be previewed in high quality at realtime.
 * __Low memory footprint__ even with high resolution images.
 * __Extensible and customizable toolset interface__. Add your own customized filters with [Renderscript](https://developer.android.com/guide/topics/renderscript/index.html) and modify tool properties yourself.
-
 
 ### Demo App
 

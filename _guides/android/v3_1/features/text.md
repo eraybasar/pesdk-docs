@@ -24,6 +24,8 @@ The text tool allows users to add text to an image and customize the label to ma
 
 ## Fonts
 
+The SDK comes with a predefined set of fonts, which you can examine in our demo app. You can download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app) or clone from the [GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).
+
 ![Editor Fonts](/assets/images/android/imgly_editor_fonts.jpg){: width="360px"}
 
 In order to change the available fonts or rearrange them, start with a default `ImglyConfig` as described in the [Configuration](/guides/android/v3_1/features/configuration) section and use the `getFontConfig()` method. This method returns

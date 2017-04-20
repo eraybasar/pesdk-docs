@@ -19,10 +19,10 @@ published: true # Either published or not
 
 # Frequently Asked Questions
 
-### I am only using the editor, why does the app require permission to use the camera?
+### I just use the editor, why does the app request permission to use the camera?
 
-For an easier integration, our SDK has got his own AndroidManifest.xml which enables the camera
-permission. This file will be merged with your AndroidManifest.xml where you can remove the
+For an easier integration, our SDK has got its own `AndroidManifest.xml` which enables the camera
+permission. This file will be merged with your `AndroidManifest.xml` where you can remove the
 permission:
 
 ```xml
@@ -39,7 +39,7 @@ permission:
 ### The App crashes with "Exception Renderscript V8 Class not found"
 
 You probably forgot to enable RenderScript support (`renderscriptSupportModeEnabled true`). Please
-read the [integration guide](/documentation/android/integration) for more information.
+take a look at the [getting started guide](/guides/android/v3_1/introduction/getting_started) for more information.
 
 ### The App crashes with a "Permission Exception"
 
