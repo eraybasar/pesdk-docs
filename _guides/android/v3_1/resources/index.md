@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 redirect_to:
-  - '/guides/android/v3_1'
+  - '/guides/android/v3_1/resources/faq'
 ---
