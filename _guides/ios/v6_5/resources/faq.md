@@ -21,7 +21,7 @@ published: true # Either published or not
 
 ## Library not loaded
 If you see an issue like this one:
-```
+```bash
 dyld: Library not loaded: @rpath/libswiftAVFoundation.dylib
   Referenced from: /Users/newmetl/Library/Developer/CoreSimulator/Devices/E2DE480D-05E4-47F7-9266-9598C787AA1F/data/Containers/Bundle/Application/7CA0CE63-7952-4EE5-92A4-81E85FCB7695/Test Integration.app/Frameworks/imglyKit.framework/imglyKit
   Reason: image not found

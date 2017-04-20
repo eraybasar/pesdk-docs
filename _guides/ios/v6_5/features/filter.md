@@ -40,7 +40,7 @@ Typically those operations use surrounding the pixels to determine the color of 
 Every filter is realized by an instance of the `PhotoEffect` class. That class also holds the `allEffects` array.
 The following example shows how a custom selection of filters can be set.
 
-```
+```swift
 private let effects: [PhotoEffect] = [
     PhotoEffect(identifier: "None", CIFilterName: nil, lutURL: nil, displayName: "None", options: nil),
     PhotoEffect(identifier: "K1", lutURL: NSBundle(forClass: PhotoEffect.self).URLForResource("K1", withExtension: "png"), displayName: "K1"),

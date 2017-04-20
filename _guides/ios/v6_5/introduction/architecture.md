@@ -56,7 +56,7 @@ import imglyKit
 
 The `CameraViewController` class is responsible for displaying an interface to interact with the camera. It provides user interface elements among others to enable the flash, toggle the camera and choose a filter. All you have to do is the following:
 
-```
+```swift
 let cameraViewController = CameraViewController()
 present(cameraViewController, animated: true, completion: nil)
 ```
@@ -69,7 +69,7 @@ The `PhotoEditViewController` class is responsible for presenting and rendering 
 
 To present an `PhotoEditViewController` just add these few lines:
 
-```
+```swift
 let sampleImage = UIImage(named: "sample_image")
 
 let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
@@ -93,7 +93,7 @@ It provides the resulting image as an `UIImage` and a `Data` object. Please note
 
 The controllers provided with the SDK can be embedded in an `UINavigationController`. The following code demonstrates how.
 
-```
+```swift
 let sampleImage = UIImage(named: "sample_image")
         
 let photoEditViewController = PhotoEditViewController(photo: sampleImage!)

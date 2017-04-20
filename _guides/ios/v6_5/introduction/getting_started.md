@@ -21,13 +21,6 @@ published: true # Either published or not
 
 ## Requirements
 
-| SDK | Swift      | iOS   | Xcode     |
-|-----|------------|-------+-----------|
-| 3   | 2.2        | iOS 8 | Xcode 7.x |
-| 4   | 2.3        | iOS 8 | Xcode 8.x |
-| 5   | 3.0        | iOS 8 | Xcode 8.x |
-| 6   | 3.0        | iOS 8 | Xcode 8.x |
-
 * Major Version 3 of the SDK is compatible with Xcode 7.x and Swift 2.2 and iOS 8 and above.
 * Major Version 4 of the SDK is compatible with Xcode 8.x and Swift 2.3 and iOS 8 and above.
 * Major Version 5 of the SDK is compatible with Xcode 8.x and Swift 3.0 and iOS 8 and above.
@@ -43,7 +36,7 @@ PhotoEditorSDK is available via CocoaPods. If you're new to CocoaPods, [this Get
 
 Here's what you have to add to your `Podfile`:
 
-```
+```ruby
 use_frameworks!
 
 pod 'imglyKit', '~> 6.5'
@@ -66,7 +59,7 @@ PhotoEditorSDK into your project manually via a dynamic framework.
 You can drag and drop build phases to rearrange them.
 Paste the following line in this `Run Script Phase`'s script text field:
 
-```
+```bash
 bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/imglyKit.framework/strip-framework.sh"
 ```
 

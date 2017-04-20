@@ -21,8 +21,8 @@ published: true # Either published or not
 
 All public classes, methods and enums can be mixed and matched with Objective-C. If you installed imglyKit with CocoaPods or embedded the framework directly all you have to do is import the framework:
 
-```
-    @import imglyKit;
+```objc
+@import imglyKit;
 ```
 
 For more information about Swift and Objective-C interoperability please refer to [Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html).

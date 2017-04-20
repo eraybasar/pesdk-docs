@@ -44,7 +44,7 @@ The `en` string indicates, that this translation should be used when english lan
 You can chain multiple translations like this. The second option is, to use a block, allowing you to easily use your
 default bundle, or a customized bundle with `NSLocalizedStringFromTableInBundle`.
 
-```
+```objc
 [PESDK setLocalizationBlock:^NSString * _Nullable(NSString * _Nonnull stringToLocalize) {
     // This will look up strings in Localizable.strings inside your resource folder.
     return NSLocalizedStringFromTable(stringToLocalize, @"Localizable", nil);
@@ -63,7 +63,7 @@ default bundle, or a customized bundle with `NSLocalizedStringFromTableInBundle`
 To have plurals handled correctly, we use a [.stringsdict](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/StringsdictFileFormat/StringsdictFileFormat.html) file. These define plural rules of a language. Some languages have more plural rules than others.
 
 Here is an example for croatian:
-```
+```xml
 <key>%tu match(es) found</key>
 <dict>
     <key>NSStringLocalizedFormatKey</key>
