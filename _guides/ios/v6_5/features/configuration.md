@@ -33,8 +33,7 @@ The following image annotates the most common configuration members.
 Please note that the background color of tool bar,
 which sits on the bottom, is set through a property of the `toolbarController`.
 
-TODO: Get image from kastor
-<%=md_image("/assets/images/documentation/ios/commonMembers.png") %>
+![Common members](/assets/images/ios/commonMembers.png)
 
 ## Configuration class
 The `Configuration` class contains all global settings and nested configurations for each submodule.
