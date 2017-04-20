@@ -19,45 +19,41 @@ published: true # Either published or not
 
 # Frequently Asked Questions
 
-## Browser Support
+### I am only using the editor, why does the app require permission to use the camera?
 
-WebGL Renderer:
+For an easier integration, our SDK has got his own AndroidManifest.xml which enables the camera
+permission. This file will be merged with your AndroidManifest.xml where you can remove the
+permission:
 
-  * IE 11+
-  * FF 15+
-  * Chrome 11+
-  * Safari 5.1+
-  * Opera 19+
-  * iOS Safari 8+
-  * Firefox for Android 45+
-  * Android Browser 47+
-  * Opera Mobile 36+
+```xml
+<manifest
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   ...>
+    <uses-permission tools:node="remove" android:name="android.permission.CAMERA"/>
+    <uses-feature tools:node="remove" android:name="android.hardware.camera"/>
+    <uses-feature tools:node="remove" android:name="android.hardware.camera.autofocus"/>
+    ...
+```
 
-Canvas Renderer (slower than WebGL):
+### The App crashes with "Exception Renderscript V8 Class not found"
 
-  * IE 9+
-  * FF 10+
-  * Chrome 11+
-  * Safari 2.0+
-  * Opera 12+
-  * iOS Safari 3.2+
-  * Firefox for Android 45+
-  * Android Browser 3+
-  * Opera Mobile 12+
+You probably forgot to enable RenderScript support (`renderscriptSupportModeEnabled true`). Please
+read the [integration guide](/documentation/android/integration) for more information.
 
+### The App crashes with a "Permission Exception"
 
+Please make sure that you delegate `onRequestPermissionsResult` to
+`PermissionRequest.onRequestPermissionsResult`:
 
-## CORS issues
+```java
+@Override
+public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+   PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults);
+   super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+}
+```
 
-The following error messages indicate that the image you have passed to the SDK could not be loaded
-due to Cross-Origin Resource Sharing (CORS):
+### App crashed on Android 6.0
 
-* `Failed to execute 'texImage2D' on 'WebGLRenderingContext': The cross-origin image at [...] may not be loaded.`
-* `SECURITY_ERR: DOM Exception 18`
-* `Unable to get image data from canvas because the canvas as been tainted by cross-origin data.`
-
-In this case:
-
-* If you're loading images from S3, make sure you created a CORS policy for your S3 bucket (More information [here](http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html))
-* If you're loading images from your own server, make sure the CORS header is set (More information [here](http://enable-cors.org/server.html))
-* Make sure you enable CORS for the loaded image (More information [here](http://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html))
+This is probably happening due to a `Permission Exception` as explained above.

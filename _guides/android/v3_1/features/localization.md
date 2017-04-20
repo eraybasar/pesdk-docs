@@ -20,189 +20,165 @@ published: true # Either published or not
 
 # Localization
 
-International web applications have international users. That's why we allow you to easily add custom
-languages to our UI by passing them using the `extensions.languages` object. The `language` option
-specifies the language that the UI should use.
+You can easily add more languages by adding/overwriting string resources.
 
-```js
-const editor = new PhotoEditorSDK.UI.NightReact({
-  extensions: {
-    languages: {
-      es: spanishLanguageObject
-    }
-  },
-  language: 'es'
-})
-```
+> __HINT__: This is not only true for strings. You can exchange all localized resources (e.g. add icons for different languages).
 
-The language objects should have the same structure as our default languages. Here is the English
-language object as an example:
+For more information take a look at the [Developer Guides](http://developer.android.com/guide/topics/resources/localization.html).
 
-```json
-{
-  "controls": {
-    "overview": {
-      "filters": "Filters",
-      "orientation": "Orientation",
-      "adjustments": "Adjust",
-      "crop": "Crop",
-      "focus": "Focus",
-      "border": "Border",
-      "sticker": "Sticker",
-      "text": "Text",
-      "brush": "Brush"
-    },
-    "border": {
-      "color": "Color",
-      "thickness": "Thickness"
-    },
-    "text": {
-      "foreground": "Foreground",
-      "background": "Background",
-      "size": "Size",
-      "font": "Font",
-      "alignment": "Alignment",
-      "takeToFront": "To Front"
-    },
-    "orientation": {
-      "rotate-l": "Rotate -90°",
-      "rotate-r": "Rotate +90°",
-      "flip-h": "Flip (H)",
-      "flip-v": "Flip (V)"
-    },
-    "adjustments": {
-      "brightness": "Brightness",
-      "contrast": "Contrast",
-      "saturation": "Saturation",
-      "exposure": "Exposure",
-      "shadows": "Shadows",
-      "highlights": "Highlights",
-      "clarity" : "Clarity"
-    },
-    "crop": {
-      "custom": "Custom",
-      "square": "Square",
-      "4-3": "4:3",
-      "16-9": "16:9"
-    },
-    "focus": {
-      "radial": "Radial",
-      "linear": "Linear",
-      "blurRadius": "Blur radius"
-    },
-    "filters": {
-      "intensity": "Intensity",
-      "categories": {
-        "all": "All",
-        "retro": "Retro",
-        "bw": "Black & White",
-        "summer": "Summer",
-        "winter": "Winter",
-        "special": "Special"
-      }
-    },
-    "sticker": {
-      "brightness": "Brightness",
-      "contrast": "Contrast",
-      "saturation": "Saturation",
-      "blur": "Blur",
-      "flip": "Flip",
-      "flip-v": "Flip (V)",
-      "flip-h": "Flip (H)",
-      "takeToFront": "To Front",
-      "categories": {
-        "all": "All",
-        "glasses": "Glasses",
-        "hats": "Hats",
-        "beards": "Beards",
-        "misc": "Misc"
-      }
-    },
-    "brush": {
-      "thickness": "Thickness",
-      "color": "Color"
-    }
-  },
-  "webcam": {
-    "headline": "Take a photo!"
-  },
-  "editor": {
-    "headline": "Edit Photo",
-    "new": "New",
-    "photo-roll": "Photo Roll",
-    "undo": "Undo",
-    "export": "Export"
-  },
-  "splash": {
-    "upload": {
-      "button": "Upload your image",
-      "description": "Upload a picture from your library or just drag and drop"
-    },
-    "webcam": {
-      "headline": "Webcam",
-      "description": "Take a picture with your webcam or phone"
-    },
-    "photo-roll": {
-      "headline": "Free stock footage",
-      "description": "Select from thousands of Free Stock Photos"
-    }
-  },
-  "photo-roll": {
-    "search": {
-      "placeholder": "Search for photos",
-      "results": {
-        "headline": "Search results for ${query}"
-      }
-    }
-  },
-  "generic": {
-    "back": "Back",
-    "cancel": "Cancel",
-    "color": "Color"
-  },
-  "loading": {
-    "resizing": "Resizing...",
-    "exporting": "Exporting...",
-    "loading": "Loading..."
-  },
-  "warnings": {
-    "imageResized_maxMegaPixels": {
-      "title": "Image resized",
-      "text": "Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels."
-    },
-    "imageResized_maxDimensions": {
-      "title": "Image resized",
-      "text": "Due to hardware limitations your image has been resized to ${width}x${height} pixels."
-    }
-  },
-  "errors": {
-    "imageLoadFail": {
-      "title": "Failed to load image",
-      "text": "Failed to load the image at ${path}"
-    },
-    "webcamUnavailable": {
-      "title": "Webcam unavailable",
-      "text": "Unable to display webcam image (Error: ${error})"
-    },
-    "webcamNotSupported": {
-      "title": "Webcam not supported",
-      "text": "The webcam feature is not supported by your browser."
-    },
-    "renderingError": {
-      "title": "Error while rendering",
-      "text": "An error has occurred while rendering the image."
-    },
-    "context_lost": {
-      "title": "An error has occurred",
-      "text": "Your browser took too long to render the image. Please try applying less operations."
-    },
-    "context_lost_limit": {
-      "title": "An error has occurred",
-      "text": "Your browser failed multiple times while rendering the image."
-    },
-    "loadingStickersFailed": {
-      "title": "Failed to load stickers"
-    }
-  }
-}
-```
+## Using the localization editor
+
+Copy and paste the downloaded files (only the files, not the folder) into the `res` folder of your own app. Afterwards, open your project in Android Studio.
+
+Open `res/values/string.xml` (if the file doesn't exist, please create it) and click `Edit translations for all locales in the translations editor.` -> `Open editor`
+
+![Strings](/assets/images/android/imgly_strings.png){: width="675px"}
+
+Now you're able to edit all texts and translate them into other languages.
+
+![Editor](/assets/images/android/imgly_string_editor.png){: width="675px"}
+
+
+## Localization identifiers
+
+###### Filter names
+
+| String Identifier | English Value |
+|------------------:|:---------------|
+|`imgly_color_filter_name_default`|NONE|
+|`imgly_color_filter_name_ad1920`|1920|
+|`imgly_color_filter_name_ancient`|Ancient|
+|`imgly_color_filter_name_bleached`|Bleached|
+|`imgly_color_filter_name_bleachedblue`|Bleached Blue|
+|`imgly_color_filter_name_blues`|Blues|
+|`imgly_color_filter_name_blueshadows`|Blue Shadows|
+|`imgly_color_filter_name_breeze`|Breeze|
+|`imgly_color_filter_name_bw`|B & W|
+|`imgly_color_filter_name_celsius`|Celsius|
+|`imgly_color_filter_name_chest`|Chest|
+|`imgly_color_filter_name_classic`|Classic|
+|`imgly_color_filter_name_colorful`|Colorful|
+|`imgly_color_filter_name_cool`|Cool|
+|`imgly_color_filter_name_cottoncandy`|Cotton Candy|
+|`imgly_color_filter_name_creamy`|Creamy|
+|`imgly_color_filter_name_eighties`|Eighties|
+|`imgly_color_filter_name_elder`|Elder|
+|`imgly_color_filter_name_evening`|Evening|
+|`imgly_color_filter_name_fall`|Fall|
+|`imgly_color_filter_name_fixie`|Fixie|
+|`imgly_color_filter_name_food`|Food|
+|`imgly_color_filter_name_fridge`|Fridge|
+|`imgly_color_filter_name_front`|Front|
+|`imgly_color_filter_name_glam`|Glam|
+|`imgly_color_filter_name_gobblin`|Gobblin|
+|`imgly_color_filter_name_highcarb`|High Carp|
+|`imgly_color_filter_name_highcontrast`|High Contrast|
+|`imgly_color_filter_name_identity`|Identiy|
+|`imgly_color_filter_name_k1`|K1|
+|`imgly_color_filter_name_k2`|K2|
+|`imgly_color_filter_name_k6`|K6|
+|`imgly_color_filter_name_kdynamic`|K Dynamic|
+|`imgly_color_filter_name_keen`|Keen|
+|`imgly_color_filter_name_lenin`|Lenin|
+|`imgly_color_filter_name_litho`|Litho|
+|`imgly_color_filter_name_lomo`|Lomo|
+|`imgly_color_filter_name_lomo100`|Lomo 100|
+|`imgly_color_filter_name_lucid`|Lucid|
+|`imgly_color_filter_name_mellow`|Mellow|
+|`imgly_color_filter_name_neat`|Neat|
+|`imgly_color_filter_name_nogreen`|No Green|
+|`imgly_color_filter_name_orchid`|Orchid|
+|`imgly_color_filter_name_pale`|Pale|
+|`imgly_color_filter_name_pitched`|Pitched|
+|`imgly_color_filter_name_plate`|Plate|
+|`imgly_color_filter_name_pola669`|Pola 669|
+|`imgly_color_filter_name_polasx`|Pola SX|
+|`imgly_color_filter_name_pro400`|Pro 400|
+|`imgly_color_filter_name_quozi`|Quozi|
+|`imgly_color_filter_name_sepiahigh`|Sepiahigh|
+|`imgly_color_filter_name_settled`|Settled|
+|`imgly_color_filter_name_seventies`|Seventies|
+|`imgly_color_filter_name_sin`|Sin|
+|`imgly_color_filter_name_soft`|Soft|
+|`imgly_color_filter_name_steel`|Steel|
+|`imgly_color_filter_name_summer`|Summer|
+|`imgly_color_filter_name_sunset`|Sunset|
+|`imgly_color_filter_name_tender`|Tender|
+|`imgly_color_filter_name_texas`|Texas|
+|`imgly_color_filter_name_twilight`|Twilight|
+|`imgly_color_filter_name_winter`|Winter|
+|`imgly_color_filter_name_x400`|X400|
+
+###### Crop Panel
+
+| String Identifier | English Value |
+|------------------:|:---------------|
+|`imgly_crop_name_custom`|Custom|
+|`imgly_crop_name_square`|1:1|
+|`imgly_crop_name_16_9`|16:9|
+|`imgly_crop_name_4_3`|4:3|
+|`imgly_crop_name_9_16`|9:16|
+|`imgly_crop_name_3_4`|3:4|
+
+###### Rotation Panel
+
+| String Identifier | English Value |
+|------------------:|:---------------|
+|`imgly_rotation_name_cw`|Rotate L|
+|`imgly_rotation_name_ccw`|Rotate R|
+|`imgly_rotation_name_flip_h`|Flip H|
+|`imgly_rotation_name_flip_v`|Flip V|
+
+###### Sticker Names
+
+| String Identifier | English Value |
+|------------------:|:---------------|
+|`imgly_sticker_name_sticker`|Sticker|
+|`imgly_sticker_name_glasses_normal`|Glasses|
+|`imgly_sticker_name_glasses_nerd`|Nerd Glasses|
+|`imgly_sticker_name_glasses_shutter_green`|Shutter Glasses|
+|`imgly_sticker_name_glasses_shutter_yellow`|Shutter Glasses|
+|`imgly_sticker_name_glasses_sun`|Sun Glasses|
+|`imgly_sticker_name_hat_cap`|Cape|
+|`imgly_sticker_name_hat_sherrif`|Sherrif|
+|`imgly_sticker_name_hat_party`|Pary Hat|
+|`imgly_sticker_name_hat_zylinder`|Zylinder|
+|`imgly_sticker_name_mustache1`|Mustage|
+|`imgly_sticker_name_mustache2`|Mustage|
+|`imgly_sticker_name_mustache3`|Mustage|
+|`imgly_sticker_name_mustache_long`|Mustage|
+|`imgly_sticker_name_snowflake`|Snowflake|
+|`imgly_sticker_name_heart`|Heart|
+|`imgly_sticker_name_pipe`|Pipe|
+|`imgly_sticker_name_star`|Star|
+
+###### Text Panel
+
+| String Identifier | English Value |
+|------------------:|:---------------|
+|`imgly_text_edit_ok_button`|OK|
+|`imgly_text_panel_add_button`|Add|
+|`imgly_text_panel_font_button`|Font|
+|`imgly_text_panel_update_button`|Edit Text|
+|`imgly_text_panel_color_button`|Color|
+|`imgly_text_panel_background_color_button`|BG Color|
+|`imgly_text_panel_add_text_dialog`|Write Text|
+|`imgly_text_panel_update_text_dialog`|Change Text|
+|`imgly_text_panel_change_font_dialog`|Select Font|
+|`imgly_text_panel_change_color_dialog`|Select Color|
+|`imgly_color_picker_hint`|Color Value|
+
+###### Tool Names
+
+| String Identifier | English Value |
+|------------------:|:---------------|
+|`imgly_tool_name_magic`|Magic|
+|`imgly_tool_name_filter`|Filter|
+|`imgly_tool_name_orientation`|Orientation|
+|`imgly_tool_name_focus`|Focus|
+|`imgly_tool_name_crop`|Crop|
+|`imgly_tool_name_brightness`|Brightness|
+|`imgly_tool_name_contrast`|Contrast|
+|`imgly_tool_name_saturation`|Saturation|
+|`imgly_tool_name_sticker`|Sticker|
+|`imgly_tool_name_text`|Text|

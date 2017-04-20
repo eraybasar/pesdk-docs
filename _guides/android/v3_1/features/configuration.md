@@ -18,59 +18,99 @@ published: true # Either published or not
 ---
 # Configuration
 
-You can easily configure the editor to disable specific tools, hide buttons etc. by adding properties
-to the `options` object passed to the UI:
+The `ImgLyConfig` provides a lot of functions for customizing the Editor.
+To modify this config you need to create a new SettingsList() an set it to the `CameraPreviewBuilder`or the `PhotoEditorBuilder`
 
-  * `container` DOMElement - The element the editor should be rendered to.
-  * `apiKey` String - Your API key (Required)
-  * `title` String - The text in the title bar. Can only be changed by licensed developers.
-  * `language` String - The UI language. Defaults to `en`. Available are `en` and `de`.
-  * `logLevel` String - `trace`, `info`, `warn`, `error` or `log`. Defaults to `warn`.
-  * `enableUpload` Boolean - Enables photo upload. Defaults to `true`.
-  * `enableWebcam` Boolean - Enables webcam support. Defaults to `true` on desktop devices, `false` on mobile devices (mobile devices handle camera upload via the default upload functionality)
-  * `showCloseButton` Boolean - Should the close button be displayed? Defaults to `false`. If set to
-    true, the editor will emit a `close` event when the user clicks the close button.
-  * `showHeader` Boolean - Should the header be displayed? Defaults to true. Can only be changed by licensed developers.
-  * `showTopBar` Boolean - Should the top bar (new / zoom / undo / export) be displayed? Defaults to `true`.
-  * `preloader` Boolean - Enables the preloader. Defaults to `true`.
+```java
+SettingsList settingsList = new SettingsList();
+ImgLyConfig config = settingsList.getConfig()
 
-  * `photoRoll` Object
-    * `provider` PhotoEditorSDK.UI.ReactUI.PhotoRoll.Provider - The class providing all data for the photo roll.
+/********************************
+ * Do you config modifications. *
+ ********************************/
 
-  * `editor` Object
-    * `image` Image - The image that should be loaded and displayed initially.
-    * `preferredRenderer` String - Defaults to `webgl`. Available are `webgl` and `canvas`.
-    * `pixelRatio` Number - If none is given, the SDK automatically detects the current device's
-        pixel ratio.
-    * `responsive` Boolean - Should the editor re-render on window resize? Defaults to `false`.
-    * `enableDrag` Boolean - Should the image be draggable? Defaults to `true`.
-    * `enableZoom` Boolean - Should the image be zoomable? Defaults to `true`.
-    * `smoothDownscaling` Boolean - Toggles smooth downscaling of images and sprites. Might have
-      a negative impact on performance, therefor default is `false`.
-    * `smoothUpscaling` Boolean - Toggles smooth upscaling
-    * `tools` Array - The enabled tools. Available are: `crop`, `filter`,
-      `brightness`, `saturation`, `contrast`, `gamma`, `clarity`, `exposure`, `shadows`, `highlights`,
-      `text`, `sticker`, `brush`, `selective-blur`, `radial-blur`, `tilt-shift` and `border`
-    * `controlsOrder` Array - The order in which the controls are displayed. Available are `crop`,
-        `orientation`, `filter`, `adjustments`, `text`, `sticker`, `brush`, `focus`, `selective-blur`, `border`. Can
-        be grouped in arrays which will be displayed with separators.
-    * `operationsOrder` Array - The order in which operations are added to the stack. Changing
-        this may have a negative impact on performance.
-    * `controlsOptions` Object - Objects passed to the controls. See [the documentation](http://static.photoeditorsdk.com/docs/android/PhotoEditorSDK.UI.NightReact.Controls.html) for available controls and their options.
-    * `maxMegaPixels` Object - Specifies the maximum amount of megapixels per device type
-      * `desktop` Number - Defaults to 10
-      * `mobile` Number - Defaults to 5
-    * `export` Object
-      * `showButton` Boolean - Should the export button be visible? Defaults to `true`.
-      * `format` String - The mime type of the exported image. Defaults to `image/png`. Available
-        formats vary by browser.
-      * `type` PhotoEditorSDK.RenderType - Specifies the export type (image or data url)
-      * `download` Boolean - Should a download dialog be displayed on export?
-  * `assets` Object
-    * `baseUrl` String - The base URL for all assets. Should be the absolute path to your
-        `assets` directory. Defaults to `assets`
-    * `resolver` Function - A function that gets called for every asset. Can turn an asset
-      path into another path. Useful for stuff like Rails' asset pipeline.
+ new CameraPreviewBuilder(this)
+    .setSettingsList(settingsList)
+    .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+```
 
+## Toolset configuration
+
+![Editor Tools](/assets/images/android/imgly_editor_tools.png){: width="360px"}
+
+In order to change the tools or rearrange them, use the `setTools()` method. Before this you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and re-fill it with the tools you like in any order you prefer or you can set direcly. You can also add custom tools by extending
+the `AbstractEditorTool` class.
+
+```java
+ArrayList<AbstractEditorTool> tools = new ArrayList<>();
+
+/*  All tools need the following parameters:
+ *   Parameter 1: Resource identifier of the tool name (String)
+ *   Parameter 2: Drawable resource identifier of the icon (String)
+ */
+
+/* This is the default configuration: */
+
+tools.add(new CropTool(R.string.imgly_tool_name_crop,               R.drawable.imgly_icon_tool_crop));
+tools.add(new OrientationTool(R.string.imgly_tool_name_orientation, R.drawable.imgly_icon_tool_orientation));
+tools.add(new Divider());
+tools.add(new FilterTool(R.string.imgly_tool_name_filter,           R.drawable.imgly_icon_tool_filters));
+tools.add(new ColorMatrixTool(R.string.imgly_tool_name_adjust,      R.drawable.imgly_icon_tool_adjust));
+tools.add(new Divider());
+tools.add(new TextTool(R.string.imgly_tool_name_text,               R.drawable.imgly_icon_tool_text));
+tools.add(new StickerTool(R.string.imgly_tool_name_sticker,         R.drawable.imgly_icon_tool_sticker));
+tools.add(new Divider());
+tools.add(new FocusTool(R.string.imgly_tool_name_focus,             R.drawable.imgly_icon_tool_focus));
+
+config.setTools(tools);
+```
+
+## Crop configuration
+
+![Editor Crop](/assets/images/android/imgly_editor_crop.png){: width="360px"}
+
+You can set your own crop configuration using the `getCropConfig()` method.
+
+There are two types of crop configurations:
+
+* Fixed aspect ratio while keeping the resolution
+* Fixed aspect ratio with fixed resolution
+
+```java
+
+ArrayList<CropAspectConfig> cropConfig = new ArrayList<>();
+
+/*
+ * For a crop configuration with a fixed aspect ratio, create a new CropAspectConfig with the
+ * following parameters:
+ *
+ *  Parameter 1 (Optional): Resource identifier of the crop name.
+ *  Parameter 2: Width
+ *  Parameter 3: Height
+ */
+
+/* Add a the custom crop configuration (optional) */
+cropConfig.add(CropAspectConfig.FREE_CROP);
+
+/* Add a 16:9 crop configuration */
+cropConfig.add(new CropAspectConfig(16, 9));
+
+/* Add a 4:3 crop configuration with name */
+cropConfig.add(new CropAspectConfig(R.string.my_4_3_crop_name, 4, 3));
+
+config.setAspectConfig(cropConfig);
+```
+
+## ​Fonts configuration
+
+Take a look at the [text documentation](/guides/android/v3_1/features/text).
+
+## ​Set stickers
+
+Take a look at the [stickers documentation](/guides/android/v3_1/features/stickers).
+
+## Adding or removing filters
+
+Take a look at the [filters documentation](/documentation/android/filters).
 
 
