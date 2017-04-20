@@ -1,7 +1,7 @@
 ---
 layout: guides/html5/v3_6/content
 title: &title Getting Started # title as shown in the menu and 
-order: 1
+order: 2
 menuitem: *title
 platform:
   - html5
@@ -17,62 +17,103 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Gettings Started with the PhotoEditorSDK for HTML5
+# Install PhotoEditor SDK
 
-## Prerequisites
+Integrating our editor into your web application is easy as pie. However, if you can't wait  to see the editor in action you can find a working demo integration [here](http://static.photoeditorsdk.com/demo/).
 
-  * A text editor
-  * Basic HTML / JavaScript knowledge
-  * A web server
 
-## Integrating the editor into your website
+First, download the [latest release](https://github.com/imgly/pesdk-html5-build/releases/latest) from our public GitHub repository and extract it.
+Afterwards, you will be left with the following folder structure
 
-Integrating our editor into your web application is easy as pie:
+```bash
+├── assets
+│   ├── frames
+│   ├── stickers
+│   └── ui
+├── css
+└── js
+    └── vendor
+```
 
-  * Download the [latest release](https://github.com/imgly/pesdk-html5-build/releases/latest) from
-    our public GitHub repository, extract it and copy the folders `assets`, `css` and `js` into your
-    project folder.
+The package contains three folders that you need to integrate to your project. The
+`assets` folder contains all assets required for the photoeditor, this includes for examples assets for *frames*, *stickers* and the *ui*.
+Furthermore, The `css` folder containts all *stylesheets* for the PhotoEditor SDK UI. Last, the `js` folder contains all *javascript* sources of the editor and its dependencies.
 
-  * In your HTML file, include the SDK and the UI JavaScript files as well as the editor's CSS files
-    inside your `<head>` tag
+In order to get started, copy the folders `assets`, `css` and `js` into your project. 
+Then include the SDK and the UI JavaScript files in your as well as the CSS files inside your `<head>` tag:
 
-    ```html
-    <head>
-      <script src="js/vendor/react.min.js"></script>
-      <script src="js/vendor/react-dom.min.js"></script>
-      <script src="js/PhotoEditorSDK.min.js"></script>
-      <script src="js/PhotoEditorReactUI.min.js"></script>
-      <link rel="stylesheet" href="css/PhotoEditorReactUI.min.css" />
-    </head>
-    ```
+```html
+<head>
+  <!-- React Dependencies for the SDK UI --> 
+  <script src="js/vendor/react.min.js"></script>
+  <script src="js/vendor/react-dom.min.js"></script>
+  <!-- PhotoEditor SDK-->
+  <script src="js/PhotoEditorSDK.min.js"></script>
+  <!-- PhotoEditor SDK UI --> 
+  <script src="js/PhotoEditorReactUI.min.js"></script>
+  <link rel="stylesheet" href="css/PhotoEditorReactUI.min.css" />
+</head>
+```
 
-  * Now create a `<div>` that should contain the editor and give it a unique `id` so we can access
-    it using JavaScript. The editor will take the size of the containing `<div>`. We're gonna specify
-    the dimensions using inline styles, for the sake of simplicity:
+Now, create a `<div>` tag as a container for the editor. The editor will adapt its size according to the dimensions of the container.
+For the sake of simplicity, specify the dimensions using inline styles: 
+    
+```html
+<div id="editor" style="width: 100vw; height: 100vh;"></div>
+```
 
-    ```html
-    <div id="editor" style="width: 640px; height: 480px;"></div>
-    ```
+Finally, in order to initialize the editor, instantiate the UI using JavaScript. Add the following code right below our containing `<div>` element:
 
-  * To initialize the editor, instantiate the UI using JavaScript. Add the following code
-    right below our containing `<div>` element:
+```html
+<script>
+  window.onload = function () {
+    var container = document.getElementById('editor')
+    var editor = new PhotoEditorSDK.UI.ReactUI({
+      container: container,
+      apiKey: 'YOUR_API_KEY', // <-- Please replace this with your API key
+      assets: {
+        baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
+      }
+    })
+  }
+</script>
+```
 
-    ```html
+This was all required to get the PhotoEditor SDK up and running. For simplicity here is the whole source code of  the *html* file:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- React Dependencies for the SDK UI --> 
+    <script src="js/vendor/react.min.js"></script>
+    <script src="js/vendor/react-dom.min.js"></script>
+    <!-- PhotoEditor SDK-->
+    <script src="js/PhotoEditorSDK.min.js"></script>
+    <!-- PhotoEditor SDK UI --> 
+    <script src="js/PhotoEditorReactUI.min.js"></script>
+    <link rel="stylesheet" href="css/PhotoEditorReactUI.min.css" />
+  </head>
+
+  <body>
+    <div id="editor" style="width: 100vw; height: 100vh;"></div>
     <script>
       window.onload = function () {
         var container = document.getElementById('editor')
         var editor = new PhotoEditorSDK.UI.ReactUI({
           container: container,
-          apiKey: 'YOUR_API_KEY, // <-- Please replace this with your API key
+          apiKey: 'YOUR_API_KEY', // <-- Please replace this with your API key
           assets: {
             baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
           }
         })
       }
     </script>
-    ```
-  * Now run your webserver and open up your HTML file. You should see something like this:
+  </body>
+</html>
+```
 
-    ![The Editor](http://static.photoeditorsdk.com/editor.png)
+Launch your favorite webserver and enjoy our editor. If you don't know which webserver to use, give `python -m SimpleHTTPServer 8000`` a try.
 
-You can find a working demo integration [here](http://static.photoeditorsdk.com/demo/).
+
+In any case, you can find a working demo integration [here](http://static.photoeditorsdk.com/demo/).

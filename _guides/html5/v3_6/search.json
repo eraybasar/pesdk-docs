@@ -1,0 +1,27 @@
+---
+
+---
+{% assign platform = include.platform %}
+{% assign version = include.version %}
+{% assign version = "v3_6" %}
+{% assign platform = "html5" %}
+{% assign pages = site.guides | where: "platform", platform | where: "version", version | sort: "order" %}
+
+[
+{% for page in pages %}
+  {
+  "title": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "url": "{{ page.url }}",
+  "tags": {{ page.tags | jsonify }},
+  "platform": {{page.platform | jsonify }},
+  "category": {{page.category | jsonify }},
+  "version": "{{page.version}}",
+  "date": "{{ page.date | date: '%D' }}",
+  "date_iso": "{{ page.date | date: '%F' }}",
+  "id": "{{ page.id }}",
+  "content": {{ page.content | jsonify }}
+  },
+{% endfor %}
+false
+]

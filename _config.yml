@@ -24,6 +24,11 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-gist
+
+whitelist:
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-sitemap
 # include: ['_pages']
 
 # Build settings
