@@ -26,7 +26,7 @@ and then how the basic view controllers are set up. We will also demonstrate how
 
 ## License file
 
-Before using any components of the Photo Editor SDK, you have to unlock the SDK using your license key file. It is important that you set the license key before using any of the SDK classes.
+Before using any components of the PhotoEditor SDK, you have to unlock the SDK using your license key file. It is important that you set the license key before using any of the SDK classes.
 
 ```swift
 func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {

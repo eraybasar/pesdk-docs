@@ -20,11 +20,11 @@ published: true # Either published or not
 
 # Localization
 
-The Photo Editor SDK is fully localizable. We provide an english fallback localization, that will be used when no matching localization is found. To determine the matching language Photo Editor SDK uses `NSLocale.preferredLanguages`.
+The PhotoEditor SDK is fully localizable. We provide an english fallback localization, that will be used when no matching localization is found. To determine the matching language PhotoEditor SDK uses `NSLocale.preferredLanguages`.
 To add support for a language, please refer to Apple's localization guidelines.
 We also provide two properties to customize your localization, `PESDK.localizationDictionary` and `PESDK.localizationBlock`.
 
-## Add further localization to the Photo Editor SDK
+## Add further localization to the PhotoEditor SDK
 
 You can either set new localization programmatically or add further localization via adding the corresponding folders.
 To get an overview of all available strings that need to be localized, look inside /imglyKit.bundle/en.lproj/Localizable.strings.

@@ -19,4 +19,10 @@ published: true # Either published or not
 
 # {{page.title}}
 
-TODO
+## Adding frames
+
+Similar to [stickers](/guides/ios/v6_5/features/stickers), frames are inserted into the SDK using a data source. We provide a ready to use data source, the `FrameDataSource`.
+It takes an array of `Frame` objects, and handles the rest for you. A `Frame` object usually holds multiple versions of the same image, each matching
+a different crop ratio. That is to prevent distorted results. So if you app supports three different crop ratios, each frame should have an asset for each individual
+crop ratio. To add an asset to a `Frame` object, use the `addImage(_ imageURL: URL, thumbnailURL: URL?, forRatio ratio: CGFloat)` function.
+Just as the sticker data source, this data source supports local and remote sources.
