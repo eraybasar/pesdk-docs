@@ -22,7 +22,7 @@ status: draft
 
 Our SDK provides two main view controllers. One to work with the camera and one to edit an image.
 In the following section we will first explain how the licensing works 
-and then how the basic view controllers are setup. Also we will demonstrate how they can be embedded into an `UINavigationController`.
+and then how the basic view controllers are set up. We will also demonstrate how they can be embedded into a `UINavigationController`.
 
 ## License file
 
