@@ -17,6 +17,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Crop controls
+![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
 
-TODO
+# Crop controls

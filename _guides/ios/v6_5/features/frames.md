@@ -17,6 +17,8 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
+![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+
 # {{page.title}}
 
 ## Adding frames

@@ -17,6 +17,8 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
+![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+
 # Filters
 Our SDK features more than 60 high quality filters. The processing is lightning fast, and its easy to add your own filters.
 You might think that adding your own filters requires super math skills, or is complicated.

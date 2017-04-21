@@ -16,6 +16,7 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-# Brush
 
-TODO
+![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+
+# Brush

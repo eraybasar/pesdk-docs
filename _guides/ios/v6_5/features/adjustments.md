@@ -18,6 +18,8 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
+![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+
 # Adjustments 
 
 Our Adjustment tool is our swiss army knife for image optimization. Essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
