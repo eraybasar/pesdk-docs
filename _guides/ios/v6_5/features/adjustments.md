@@ -20,4 +20,18 @@ published: true # Either published or not
 
 # Adjustments 
 
-TODO
+Our Adjustment tool is our swiss army knife for image optimization. Essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
+
+The tool is implemented in the `AdjustToolController`. For your app, you can choose which functionality you'd like to make available by modifiying the [`AdjustToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/AdjustToolControllerOptions.html). Using these options you can configure the slider and buttons and react to changes to the slider.
+
+The default tool set consists of:
+
+1. Brightness
+2. Contrast
+3. Saturation
+4. Clarity
+5. Shadows
+6. Highlights
+7. Exposure
+
+In order to change the available tools or their order, you need to set an array of [`AdjustTool`](https://static.photoeditorsdk.com/docs/ios/Enums/AdjustTool.html) values to the `allowedAdjustTools` property.
