@@ -3,11 +3,11 @@ layout: guides/html5/v3_6/content
 title: &title Architecture # title as shown in the menu and 
 
 menuitem: *title
-order: 1
 platform:
   - html5
 version:
   - v3_6
+order: 1
 category: 
   - guide
   - introduction

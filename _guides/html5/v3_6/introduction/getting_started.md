@@ -10,7 +10,6 @@ version:
 category: 
   - guide
   - introduction
-
 tags: &tags # tags that are necessary
   - photo editor 
 
