@@ -25,22 +25,10 @@ You might think that adding your own filters requires super math skills, or is c
 Well, not at all. The way we realize filters, makes it super easy. Actually you don't need to code filters,
 you just need a program like gimp of photoshop. The only thing that needs to be done in code, is to add the filter you created.
 
-## Response filters
-We are using a technology we call response filters.
-The main idea is, that colors response to operations that are done during the filtering process. We 'record' that
-very response. We do that by applying the filter to the image shown below:
-
-![Identity LUT](/assets/images/shared/identity.png){: width="30%"}
-
-The resulting image then can be used within our SDK. The recorded changes can be applied to any image.
-So if you want to create a filter, you load the image above into your software, apply the operations, save it and add it to your app. The last step is to add the filter to
-the list of available filters. Please note that not all operations can be translated into a response filter.
-Typically those operations use surrounding the pixels to determine the color of pixel, such as blur.
-
 ## Setting available filters
 
-Every filter is realized by an instance of the `PhotoEffect` class. That class also holds the `allEffects` array.
-The following example shows how a custom selection of filters can be set.
+Every filter is represented by an instance of the `PhotoEffect` class. That class also holds the `allEffects` array that allows you to access all available filters that are shipped with the SDK.
+The following example shows how a custom selection of filters can be set:
 
 ```swift
 private let effects: [PhotoEffect] = [
@@ -56,3 +44,15 @@ PhotoEffect.allEffects = effects
 ```
 
 To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array.
+
+## Response filters
+We are using a technology we call response filters.
+The main idea is, that colors respond to operations that are done during the filtering process and we are able to 'record' that
+very response. We do that by applying the filter to the image shown below:
+
+![Identity LUT](/assets/images/shared/identity.png){: width="30%"}
+
+The resulting image can then be used to create a new filter within the SDK and the recorded changes can be applied to any image.
+So if you want to create a filter, you load the image above into your software, apply the operations, save it and add it to your app. The last step is to add the filter to
+the list of available filters. Please note that not all operations can be translated into a response filter.
+Typically those operations use surrounding the pixels to determine the color of the pixel, such as blur.

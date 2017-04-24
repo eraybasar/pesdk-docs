@@ -27,7 +27,7 @@ The SDK comes with a predefined set of filters, which you can examine in our dem
 
 ## Add or remove predefined filters
 
-In order to change the available filters or rearrange them, start with a default `ImglyConfig` as described in the [Configuration](/guides/android/v3_1/features/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
+In order to change the available filters or rearrange them, start with a default `ImglyConfig` as described in the [configuration](/guides/android/v3_1/features/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
 
 ```java
     ArrayList<<ColorFilter>> filter = new ArrayList<>();

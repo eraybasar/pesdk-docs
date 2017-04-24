@@ -39,8 +39,8 @@ For more configuration examples, please refer to the examples shown below. To fi
 
 ## Selecting menu items
 
-With version 6 we changed to way, menu items are picked. Now there is a constructor overload for the `PhotoEditViewController`,
-that takes an array of `MenuItem`'s. We recommend having a separate function to setup the menu items like so,
+With version 6 we changed the way, menu items are configured. Now there is a constructor overload for the `PhotoEditViewController`,
+that takes an array of `MenuItem`'s. We recommend having a separate function to setup the menu items:
 
 ```swift
 func menuItems(with configuration: Configuration) -> [MenuItem] {
@@ -52,7 +52,7 @@ func menuItems(with configuration: Configuration) -> [MenuItem] {
 
 We added the `.tool` method for convenience. Also note, that it is now possible to map to any subclass of `PhotoEditToolController`.
 That makes it easier to add your very own custom tool controller to the SDK.
-Here is the code for the default menu items.
+Here is the code for the default set of menu items:
 
 ```swift
 /// The default items that will be used for the main menu.
