@@ -22,9 +22,9 @@ published: true # Either published or not
 
 # Adjustments 
 
-Our Adjustment tool is our swiss army knife for image optimization. Essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
+Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
 
-The tool is implemented in the `AdjustToolController`. For your app, you can choose which functionality you'd like to make available by modifiying the [`AdjustToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/AdjustToolControllerOptions.html). Using these options you can configure the slider and buttons and react to changes to the slider.
+The tool is implemented in the `AdjustToolController` class. For your app, you can choose which functionality you'd like to make available by modifiying the [`AdjustToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/AdjustToolControllerOptions.html). Using these options you can configure the slider and buttons and react to changes to the slider.
 
 The default tool set consists of:
 
