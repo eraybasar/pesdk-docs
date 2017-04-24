@@ -1,6 +1,6 @@
 ---
 layout: guides/ios/v6_5/content
-title: &title Crop # title as shown in the menu and 
+title: &title Transform # title as shown in the menu and 
 
 menuitem: *title
 order: 0
@@ -19,4 +19,4 @@ published: true # Either published or not
 
 ![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
 
-# Crop controls
+# Transform controls
