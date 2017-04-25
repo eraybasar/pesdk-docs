@@ -23,4 +23,4 @@ published: true # Either published or not
 
 The focus tool allows your users to add a radial or linear blur to their images which lets them mimic _Tilt Shift_ or _Bokeh_ effects.
 
-The tool is implemented in the `FocusToolController` class and can be configured by modifying the [`FocusToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FocusToolControllerOptions.html) as described in the [configuration](/guides/android/v3_1/features/configuration) section.
+The tool is implemented in the `FocusToolController` class and can be configured by modifying the [`FocusToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FocusToolControllerOptions.html) as described in the [configuration](/guides/ios/v3_1/concepts/configuration) section.

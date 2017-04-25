@@ -17,9 +17,12 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+![{{page.title}} tool](/assets/images/ios/features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
 
 # Text
+A picture says more than a thousand words, however sometimes it still takes a few more. The robust text feature of the PhotoEditor SDK provides all necessary functions for quickly adding text to any picture or creative. The corresponding font library can easily be exchanged, reduced, or expanded.
+
+The tool is implemented in the `TextToolController` class and can be configured using the [`TextToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/TextToolControllerOptions.html). In order to adjust the available colors, change their names or the default color you need to modify the [`TextColorToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/TextColorToolControllerOptions.html). For more details take a look at the [configuration](/guides/ios/v6_5/introduction/configuration) section.
 
 ## Adding fonts
 With version 6 of our SDK, we added an easy way to use your own fonts.

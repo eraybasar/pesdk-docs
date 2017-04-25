@@ -23,7 +23,7 @@ published: true # Either published or not
 
 The high performant brush engine of the PhotoEditor SDK is optimized for touch screen interaction and supports different brush strokes that can be edited in terms of thickness and color.
 
-The tool is implemented in the `BrushToolController` class and can be configured using the [`BrushToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/BrushColorToolControllerOptions.html) as described in the [configuration](/guides/ios/v6_5/features/configuration) section. Using these options you can configure the available tools, their order, the allowed overlay actions, the brush size and hardness values (minimum, maximum and default), the default color and whether the brush opacity should vary by the size of the brush.
+The tool is implemented in the `BrushToolController` class and can be configured using the [`BrushToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/BrushColorToolControllerOptions.html) as described in the [configuration](/guides/ios/v6_5/introduction/configuration) section. Using these options you can configure the available tools, their order, the allowed overlay actions, the brush size and hardness values (minimum, maximum and default), the default color and whether the brush opacity should vary by the size of the brush.
 
 # Brush color
 
