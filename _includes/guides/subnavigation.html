@@ -6,7 +6,7 @@
 
 {% assign intropages = subpages | where: "category", "introduction" %}
 {% assign feature_pages = subpages | where: "category", "feature" %}
-{% assign ui_pages = subpages | where: "category", "ui" %}
+{% assign concept_pages = subpages | where: "category", "concept" %}
 
 {% assign resource_pages = subpages | where: "category", "resource" %}
 
@@ -45,9 +45,9 @@
         </li>
         
         <li class="documentation-subnavigation__list__header">
-          User Interface
+          Concepts
            <ul>
-            {% for p in ui_pages %}
+            {% for p in concept_pages %}
               <li class="documentation-subnavigation__list__item">
                 {% if p.url == page.url %}
                   <a class="is-active" href="{{p.url}}"> {{p.menuitem}} </a>

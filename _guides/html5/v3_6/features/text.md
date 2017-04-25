@@ -3,7 +3,7 @@ layout: guides/html5/v3_6/content
 title: &title Text # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 4
 platform:
   - html5
 version:

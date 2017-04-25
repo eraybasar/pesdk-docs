@@ -9,14 +9,8 @@ category:
 tags: &tags # tags that are necessary
   - photo editor 
   - html5
+published: true
 ---
-
-
 
 #Getting Started with Cordova
 
-```javascript 
-function hello_world () {
-  console.log('Hello World!')
-}
-```

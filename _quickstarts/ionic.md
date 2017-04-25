@@ -10,6 +10,7 @@ tags: &tags # tags that are necessary
   - photo editor 
   - ios
   - android
+published: true
 ---
 
 #Getting Started with Ionic

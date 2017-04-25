@@ -3,7 +3,7 @@ layout: guides/android/v3_1/content
 title: &title Text # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 5
 platform:
   - android
 version:

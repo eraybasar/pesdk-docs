@@ -2,10 +2,12 @@
 layout: features/content
 title: Focus # title as shown in the menu and 
 order: 1
-category: 
-  - 
+menuitem: Focus
 tags: &tags # tags that are necessary
   - photo editor 
 
-published: true # Either published or not 
+published: false # Either published or not 
 ---
+# Focus 
+
+....

@@ -3,7 +3,7 @@ layout: guides/html5/v3_6/content
 title: &title PhotoEditor SDK | Demos # title as shown in the menu and 
 
 menuitem: Demos
-order: 4
+order: 3
 platform:
   - html5
 version:

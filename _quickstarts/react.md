@@ -9,6 +9,7 @@ category:
 tags: &tags # tags that are necessary
   - photo editor 
   - html5
+published: false
 ---
 
 # Getting Started with React

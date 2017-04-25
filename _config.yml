@@ -49,15 +49,3 @@ collections:
     permalink: /:collection/:path
 
 
-defaults:
-  -
-    scope:
-      path: ""
-      #type: "guides" # a collection in your site, in plural form
-    values:
-      layout: "guides/html5/v3_6/content"
-      platform: 
-        - html5 
-      version:
-        - v3_6 
-

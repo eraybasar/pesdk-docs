@@ -3,7 +3,7 @@ layout: guides/html5/v3_6/content
 title: &title Frames # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 6
 platform:
   - html5
 version:

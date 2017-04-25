@@ -6,6 +6,9 @@ order: 0
 tags: &tags # tags that are necessary
   - photo editor 
   - html5
+published: true
 ---
 
-#Quickstart Tutorials
+
+# TO BE DONE
+
