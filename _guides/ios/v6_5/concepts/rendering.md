@@ -1,6 +1,6 @@
 ---
 layout: guides/ios/v6_5/content
-title: &title Serialization # title as shown in the menu and 
+title: &title Rendering # title as shown in the menu and 
 
 menuitem: *title
 order: 0
@@ -10,11 +10,11 @@ version:
   - v6_5
 category: 
   - guide
-  - feature
+  - concept
 tags: &tags # tags that are necessary
   - photo editor 
 
-published: false # Either published or not 
+published: true # Either published or not 
 ---
 
 TODO

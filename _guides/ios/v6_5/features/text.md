@@ -3,7 +3,7 @@ layout: guides/ios/v6_5/content
 title: &title Text # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 4
 platform:
   - ios
 version:

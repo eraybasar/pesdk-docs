@@ -1,23 +1,18 @@
 ---
 layout: guides/ios/v6_5/content
-title: &title Architecture # title as shown in the menu and 
+title: &title Overlays # title as shown in the menu and 
 
 menuitem: *title
-order: 2
+order: 1
 platform:
   - ios
 version:
   - v6_5
 category: 
   - guide
-  - introduction
-
+  - feature
 tags: &tags # tags that are necessary
   - photo editor 
 
-status: draft
+published: false # Either published or not 
 ---
-
-# Architecture
-
-

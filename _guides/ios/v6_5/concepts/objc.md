@@ -10,7 +10,7 @@ version:
   - v6_5
 category: 
   - guide
-  - feature
+  - concept
 tags: &tags # tags that are necessary
   - photo editor 
 

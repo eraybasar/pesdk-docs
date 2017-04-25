@@ -3,14 +3,14 @@ layout: guides/ios/v6_5/content
 title: &title Configuration # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 2
 platform:
   - ios
 version:
   - v6_5
 category: 
   - guide
-  - feature
+  - introduction
 tags: &tags # tags that are necessary
   - photo editor 
 

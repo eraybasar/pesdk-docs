@@ -1,20 +1,23 @@
 ---
 layout: guides/ios/v6_5/content
-title: &title Logging # title as shown in the menu and 
+title: &title Demos # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 4
 platform:
   - ios
 version:
   - v6_5
 category: 
   - guide
-  - feature
+  - introduction
+
 tags: &tags # tags that are necessary
   - photo editor 
 
-published: true # Either published or not 
+published: true
 ---
 
-TODO
+# Demos
+
+

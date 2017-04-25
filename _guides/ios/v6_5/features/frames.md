@@ -3,7 +3,7 @@ layout: guides/ios/v6_5/content
 title: &title Frames # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 7
 platform:
   - ios
 version:
