@@ -9,5 +9,5 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 redirect_to:
-  - /features/filter
+  - /features/filters
 ---

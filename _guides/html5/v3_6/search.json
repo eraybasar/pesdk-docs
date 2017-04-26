@@ -1,10 +1,9 @@
 ---
 
+platform: html5
+version: v3_6
 ---
-{% assign platform = include.platform %}
-{% assign version = include.version %}
-{% assign version = "v3_6" %}
-{% assign platform = "html5" %}
+
 {% assign pages = site.guides | where: "platform", platform | where: "version", version | sort: "order" %}
 
 [

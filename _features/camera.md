@@ -8,7 +8,6 @@ tags: &tags # tags that are necessary
 
 published: false # Either published or not 
 ---
-
-# Camera
+# {{page.title}}
 
 A lightening fast camera implementation for iOS and Android to complement your editor, featuring all essential camera components as well as live filters.

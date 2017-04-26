@@ -10,7 +10,7 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
+# {{page.title}}
 
-# Brush
 
 The high performant brush engine of the PhotoEditor SDK is optimized for touch screen interaction and supports different brush strokes that can be edited in terms of thickness and color.

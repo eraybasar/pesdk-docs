@@ -4,10 +4,8 @@ title: &title Photo Roll # title as shown in the menu and
 
 menuitem: *title
 order: 8
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - feature
@@ -16,9 +14,13 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-# Photo Roll
+![{{page.title}} tool](/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/photo_roll_framed.png){: height="400px" .center-image}
 
-Since version `3.4.0`, our Editor provides a Photo Roll screen the user can pick photos from.
+# {{ page.title }}
+The PhotoEditor SDK comes with a photo roll equipped with a wide range of stock photographies and templates that are presorted in categories. On top of that, the API of the SDK enables you to rearrange the creatives, exchange, reduce or expand the library and provide your users with the most appropriate set of assets for your use-case.
+
+
+Since version `3.4.0`, our HTML5 editor provides a Photo Roll screen the user can pick photos from.
 The photos shown in the Photo Roll can be controlled using a `Provider`. The Provider implements a
 couple of methods that the Editor will call in order to display Libraries, Suggested
 Search Queries and Photos.

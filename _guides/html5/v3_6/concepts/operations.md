@@ -4,10 +4,8 @@ title: &title Operations # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - concept
@@ -16,10 +14,8 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-
-# Custom Operations
-
-## Adding operations
+# {{ page.title }}
+## Adding Custom Operations
 
 Per default, the SDK just renders the plain image. To modify the rendered image you need to add
 "operations" to it. There are [a bunch of operations](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Operations.html)

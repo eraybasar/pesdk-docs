@@ -4,10 +4,8 @@ title: &title Configuration # title as shown in the menu and
 
 menuitem: *title
 order: 2
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - introduction
@@ -16,13 +14,15 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
+
+<!--Check PhotoEditorReactUI.js in the sourcecode -->
 # Configuration
 
 You can easily configure the editor to disable specific tools, hide buttons etc. by adding properties
 to the `options` object passed to the UI:
 
-  * `container` DOMElement - The element the editor should be rendered to.
   * `apiKey` String - Your API key (Required)
+  * `container` DOMElement - The element the editor should be rendered to.
   * `title` String - The text in the title bar. Can only be changed by licensed developers.
   * `language` String - The UI language. Defaults to `en`. Available are `en` and `de`.
   * `logLevel` String - `trace`, `info`, `warn`, `error` or `log`. Defaults to `warn`.
@@ -33,6 +33,10 @@ to the `options` object passed to the UI:
   * `showHeader` Boolean - Should the header be displayed? Defaults to true. Can only be changed by licensed developers.
   * `showTopBar` Boolean - Should the top bar (new / zoom / undo / export) be displayed? Defaults to `true`.
   * `preloader` Boolean - Enables the preloader. Defaults to `true`.
+  * `watermarkImage` Image - An image that should be placed on top as a watermark. Defaults to `undefined`.
+  * `image` Image - The image that the user can edit. Defaults to `undefined`.
+  * `displayResizeMessage` Boolean - Should a message be displayed when the image has been scaled down for perforamcen. Defaults to `true`.
+
 
   * `photoRoll` Object
     * `provider` PhotoEditorSDK.UI.ReactUI.PhotoRoll.Provider - The class providing all data for the photo roll.
@@ -50,7 +54,7 @@ to the `options` object passed to the UI:
     * `smoothUpscaling` Boolean - Toggles smooth upscaling
     * `tools` Array - The enabled tools. Available are: `crop`, `filter`,
       `brightness`, `saturation`, `contrast`, `gamma`, `clarity`, `exposure`, `shadows`, `highlights`,
-      `text`, `sticker`, `brush`, `selective-blur`, `radial-blur`, `tilt-shift` and `border`
+      `text`, `sticker`, `brush`, `radial-focus`, `linear-focus`, `border` and `frame`
     * `controlsOrder` Array - The order in which the controls are displayed. Available are `crop`,
         `orientation`, `filter`, `adjustments`, `text`, `sticker`, `brush`, `focus`, `selective-blur`, `border`. Can
         be grouped in arrays which will be displayed with separators.

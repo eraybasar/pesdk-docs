@@ -4,6 +4,8 @@ title: &title FAQ # title as shown in the menu and
 
 menuitem: *title
 order: 0
+platform: html5
+version: v3_6
 category: 
   - guide
   - resource

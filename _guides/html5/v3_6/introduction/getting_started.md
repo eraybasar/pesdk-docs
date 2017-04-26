@@ -3,10 +3,8 @@ layout: guides/html5/v3_6/content
 title: &title Getting Started # title as shown in the menu and 
 order: 1
 menuitem: *title
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - introduction
@@ -16,7 +14,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Install PhotoEditor SDK
+# Getting Started
 
 Integrating our editor into your web application is easy as pie. However, if you can't wait  to see the editor in action you can find a working demo integration [here](http://static.photoeditorsdk.com/demo/).
 

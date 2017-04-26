@@ -31,6 +31,8 @@ whitelist:
   - jekyll-sitemap
 # include: ['_pages']
 
+Include: ['_features', 'quickstarts', 'guides']
+
 # Build settings
 markdown: kramdown
 
