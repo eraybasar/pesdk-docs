@@ -21,11 +21,11 @@ published: true # Either published or not
 
 The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames. For the flexible frames tool that works perfectly for creatives with repeatable or stretchable areas, we abandoned the 9-patch standard and replaced it with a novel and even more flexible 12-patch layout. The static frames tool can be used for complex and irregular creatives.
 
-The tool is implemented in the `FrameToolController` class and can be customized using the [`FrameToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FrameToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration](/guides/ios/v6_5/introduction/configuration) section
+The tool is implemented in the `FrameToolController` class and can be customized using the [`FrameToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FrameToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration](/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section
 
 ## Adding and removing frames
 
-Similar to [stickers](/guides/ios/v6_5/features/stickers), frames are inserted into the SDK using a data source. We provide a ready to use data source, the `FrameDataSource`.
+Similar to [stickers](/guides/{{page.platform}}/{{page.version}}/features/stickers), frames are inserted into the SDK using a data source. We provide a ready to use data source, the `FrameDataSource`.
 It takes an array of `Frame` objects, and handles the rest for you. A `Frame` object usually holds multiple versions of the same image, each matching
 a different crop ratio. That is to prevent distorted results. So if you app supports three different crop ratios, each frame should have an asset for each individual
 crop ratio. To add an asset to a `Frame` object, use the `addImage(_ imageURL: URL, thumbnailURL: URL?, forRatio ratio: CGFloat)` function.

@@ -13,7 +13,6 @@
 
 # TODO MALTE
 
-- Docs camera
-- Assets sortieren
 - iOS customization sample code in demo app migrieren
 - imgly/imgly-sdk-ios -> imgly/pesdk-ios-demo + verlinken im QuickStart guide
+- Quickstarts für Cordova & Ionic

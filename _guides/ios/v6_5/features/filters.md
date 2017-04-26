@@ -23,7 +23,7 @@ You might think that adding your own filters requires super math skills, or is c
 Well, not at all. The way we realize filters, makes it super easy. Actually you don't need to code filters,
 you just need a program like gimp of photoshop. The only thing that needs to be done in code, is to add the filter you created.
 
-The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration](/guides/ios/v6_5/introduction/configuration) section. 
+The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration](/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. 
 
 ## Setting available filters
 
@@ -43,7 +43,7 @@ private let effects: [PhotoEffect] = [
 PhotoEffect.allEffects = effects
 ```
 
-To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as the filter tool. For more details on the filter preview when using the camera, take a look at the [camera](/guides/ios/v6_5/features/camera) section.
+To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as the filter tool. For more details on the filter preview when using the camera, take a look at the [camera](/guides/{{page.platform}}/{{page.version}}/features/camera) section.
 
 ## Response filters
 We are using a technology we call response filters.
