@@ -4,10 +4,8 @@ title: &title Serialization # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - concept
@@ -17,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Serialization and Deserialization
+# {{ page.title }}
 
 Since version 3.4.2, PhotoEditorSDK's Editor UI supports serialization and deserialization of
 application states. This means that you can export the current state of the editor and import

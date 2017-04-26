@@ -4,10 +4,8 @@ title: &title Rendering # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - concept
@@ -17,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Rendering
+# {{page.title}}
 
 The SDK is the "back end" of the editor. It handles image rendering and image modification. If
 you're interested in building your own UI, or not using a UI at all, this is the way to go.
