@@ -13,7 +13,7 @@ tags: &tags # tags that are necessary
 published: true
 ---
 
-![React Native Demo](/assets/images/react-native/react-native.png)
+![React Native Demo]({{ site.baseurl }}/assets/images/react-native/react-native.png)
 
 # Getting Started with React Native
 
@@ -23,7 +23,7 @@ We start with the basic react setup, add the native SDKs to the corresponding pl
 
 ## Setup
 
-Create a demo project using `react-native init <PROJECT_NAME>` and add follow the [manual installation](/guides/ios/v6_5/introduction/getting_started) steps from the iOS documentation. Once the PhotoEditor SDK has been set up in your iOS app, repeat the same for Android by following the corresponding [getting started steps](/guides/android/v3_1/introduction/getting_started) from our docs.
+Create a demo project using `react-native init <PROJECT_NAME>` and add follow the [manual installation]({{ site.baseurl }}/guides/ios/v6_5/introduction/getting_started) steps from the iOS documentation. Once the PhotoEditor SDK has been set up in your iOS app, repeat the same for Android by following the corresponding [getting started steps]({{ site.baseurl }}/guides/android/v3_1/introduction/getting_started) from our docs.
 
 ## Bridging between React Native and the native SDKs
 
@@ -61,7 +61,7 @@ RCT_EXPORT_METHOD(present) {
 }
 ```
 
-This creates a new `ToolbarController` and pushes a `PhotoEditController` that loads a sample image, just like our [documentation](/guides/android/v3_1/introduction/getting_started) suggests.
+This creates a new `ToolbarController` and pushes a `PhotoEditController` that loads a sample image, just like our [documentation]({{ site.baseurl }}/guides/android/v3_1/introduction/getting_started) suggests.
 
 As you'll probably won't want to load the same image over and over again, modify the method to take a path argument and load the image at the given path:
 ```objc
@@ -98,7 +98,7 @@ onOpenEditorPress () {
 
 #### Android Module
 
-As you have seen, opening the PhotoEditor SDK from React Native can easily be done on iOS. Adding the same functionality to Android requires repeating the same steps in Java. First, create a native module that opens the PhotoEditor SDK, just as documented in our [docs](/guides/android/v3_1/introduction/getting_started):
+As you have seen, opening the PhotoEditor SDK from React Native can easily be done on iOS. Adding the same functionality to Android requires repeating the same steps in Java. First, create a native module that opens the PhotoEditor SDK, just as documented in our [docs]({{ site.baseurl }}/guides/android/v3_1/introduction/getting_started):
 
 ```java
 public class PESDKModule extends ReactContextBaseJavaModule {
@@ -172,6 +172,6 @@ Thanks to React Native and the matching iOS/Android interfaces, thats all! Just 
 
 ## Moving on
 
-Now you've got the SDKs wired in your React Native application and can customize them to your needs. You could try to bridge the configuration settings for iOS and Android, but we recommend to do any customization within the native modules. Just take a look at the corresponding docs for [iOS](/guides/ios/v6_5/features/configuration) and [Android](/guides/android/v3_1/features/configuration) and you'll be able to create an end to end photo editing experience within your React Native app in no time.
+Now you've got the SDKs wired in your React Native application and can customize them to your needs. You could try to bridge the configuration settings for iOS and Android, but we recommend to do any customization within the native modules. Just take a look at the corresponding docs for [iOS]({{ site.baseurl }}/guides/ios/v6_5/features/configuration) and [Android]({{ site.baseurl }}/guides/android/v3_1/features/configuration) and you'll be able to create an end to end photo editing experience within your React Native app in no time.
 
 If you need more details, take a look at our corresponding [blog post](https://blog.photoeditorsdk.com/photoeditor-sdk-react-native-15179c589a55) or head to our [demo repository](https://github.com/imgly/pesdk-react-native-demo) on GitHub. Feel free to adapt our code and add the PhotoEditor SDK to your React Native app. We’re looking forward to your feedback and any pull requests, that further optimize our implementation.

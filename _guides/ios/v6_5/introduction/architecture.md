@@ -27,4 +27,4 @@ The SDKs backend takes care of all image processing and rendering. This includes
 
 The frontend contains all UI elements including the `StackLayoutToolController`, responsible for layouting all editors and the `CameraViewController` and `PhotoEditViewController` classes, which represent the root view controllers.
 
-All tools described in the `Features` section are implemented as `ToolController` subclasses and are managed by the `StackLayoutToolController`. The UI configuration is implemented using the `Configuration` class and their subclasses, as described in the [configuration](/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.
+All tools described in the `Features` section are implemented as `ToolController` subclasses and are managed by the `StackLayoutToolController`. The UI configuration is implemented using the `Configuration` class and their subclasses, as described in the [configuration]({{ site.baseurl }}/assets/{{page.platform}}/{{page.version}}/introduction/configuration) section.

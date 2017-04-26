@@ -2,7 +2,7 @@
 
 <div class="documentation-subnavigation">
   <div class="documentation-subnavigation__container">
-      {% include documentation/search.html %}
+      <!--{% include documentation/search.html %}-->
       {% include documentation/spacer.html %}
       <ul class="documentation-subnavigation__list">
         <li class="documentation-subnavigation__list__header">
@@ -11,9 +11,9 @@
             {% for p in feature_pages %}
               <li class="documentation-subnavigation__list__item">
                 {% if p.url == page.url %}
-                  <a class="is-active" href="{{p.url}}">{{p.menuitem}}</a>
+                  <a class="is-active" href="{{site.baseurl}}{{p.url}}">{{p.menuitem}}</a>
                 {% else %}
-                  <a href="{{p.url}}"> {{p.menuitem}} </a>
+                  <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
                 {% endif %}
               </li>              
             {% endfor %}

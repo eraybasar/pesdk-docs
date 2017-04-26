@@ -13,7 +13,7 @@ tags: &tags # tags that are necessary
   - photo editor 
 published: true # Either published or not 
 ---
-![{{page.title}} tool](/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
 
 # {{ page.title }}
 

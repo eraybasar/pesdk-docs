@@ -15,18 +15,18 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # Controls 
 
-The SDK offers controls for all available tools. The default toolset consists of tools for [Transform](/guides/{{page.platform}}/{{page.version}}/features/transform), [Filters](/guides/{{page.platform}}/{{page.version}}/features/filter), [Adjustments](/guides/{{page.platform}}/{{page.version}}/features/adjustments), [Text](/guides/{{page.platform}}/{{page.version}}/features/text), [Stickers](/guides/{{page.platform}}/{{page.version}}/features/stickers), [Frames](/guides/{{page.platform}}/{{page.version}}/features/frames), [Brush](/guides/{{page.platform}}/{{page.version}}/features/brush), [Focus](/guides/{{page.platform}}/{{page.version}}/features/focus) and [Magic](/guides/{{page.platform}}/{{page.version}}/features/magic).
+The SDK offers controls for all available tools. The default toolset consists of tools for [Transform]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/transform), [Filters]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/filter), [Adjustments]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/adjustments), [Text]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/text), [Stickers]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/stickers), [Frames]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/frames), [Brush]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/brush), [Focus]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/focus) and [Magic]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/magic).
 
 All available tools are implemented as [`PhotoEditToolController`](https://static.photoeditorsdk.com/docs/ios/Classes/PhotoEditToolController.html) subclasses and
-get presented in a stacked layout, starting from the [`PhotoEditViewController`](https://static.photoeditorsdk.com/docs/ios/Classes/PhotoEditViewController.html) as root, which is embedded in a [`ToolbarController`](https://static.photoeditorsdk.com/docs/ios/Classes/ToolbarController.html) for hierarchy and toolbar management. Each tool controller can be configured using its corresponding [`ToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/ToolControllerOptions.html) subclass as described in the [configuration](/guides/{{page.platform}}/{{page.version}}/features/configuration) and [customization](/guides/{{page.platform}}/{{page.version}}/ui/customization) sections.
+get presented in a stacked layout, starting from the [`PhotoEditViewController`](https://static.photoeditorsdk.com/docs/ios/Classes/PhotoEditViewController.html) as root, which is embedded in a [`ToolbarController`](https://static.photoeditorsdk.com/docs/ios/Classes/ToolbarController.html) for hierarchy and toolbar management. Each tool controller can be configured using its corresponding [`ToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/ToolControllerOptions.html) subclass as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/configuration) and [customization]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/ui/customization) sections.
 
 # View hierarchy
 
-![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/frames_annotated.png){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/frames_annotated.png){: height="400px" .center-image}
 
 A single tool controller consists of four main views:
 

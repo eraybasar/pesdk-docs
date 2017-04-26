@@ -15,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # Stickers
 
@@ -23,7 +23,7 @@ The PhotoEditor SDK ships with a categorized sticker library whose UI is optimiz
 
 The tool allows placing, rotating, scaling and ordering stickers on your image. Once a sticker has been placed the user can reselect it by tapping the sticker again.
 
-The tool is implemented in the `StickerToolController` class and can be customized using the [`StickerToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/StickerToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration](/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section
+The tool is implemented in the `StickerToolController` class and can be customized using the [`StickerToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/StickerToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section
 
 ## Adding stickers
 

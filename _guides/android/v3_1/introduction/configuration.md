@@ -36,7 +36,7 @@ ImgLyConfig config = settingsList.getConfig()
 
 ## Toolset configuration
 
-![Editor Tools](/assets/images/android/imgly_editor_tools.png){: width="360px"}
+![Editor Tools]({{ site.baseurl }}/assets/images/android/imgly_editor_tools.png){: width="360px"}
 
 In order to change the tools or rearrange them, use the `setTools()` method of the `ImgLyConfig` object. Before this you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
 the `AbstractEditorTool` class.
@@ -67,7 +67,7 @@ config.setTools(tools);
 
 ## Crop configuration
 
-![Editor Crop](/assets/images/android/imgly_editor_crop.png){: width="360px"}
+![Editor Crop]({{ site.baseurl }}/assets/images/android/imgly_editor_crop.png){: width="360px"}
 
 You can set your own crop configuration using the `getCropConfig()` method.
 
@@ -107,11 +107,11 @@ config.setAspectConfig(cropConfig);
 
 ## Further configurations
 
-Take a look at the [text documentation](/guides/android/v3_1/features/text).
+Take a look at the [text documentation]({{ site.baseurl }}/guides/android/v3_1/features/text).
 
 ## ​Set stickers
 
-Take a look at the [stickers documentation](/guides/android/v3_1/features/stickers).
+Take a look at the [stickers documentation]({{ site.baseurl }}/guides/android/v3_1/features/stickers).
 
 ## Adding or removing filters
 

@@ -33,7 +33,8 @@ whitelist:
   - jekyll-sitemap
 # include: ['_pages']
 
-Include: ['_features', 'quickstarts', 'guides']
+
+Include: ['_features', '_quickstarts', '_guides']
 
 # Build settings
 markdown: kramdown
@@ -53,3 +54,11 @@ collections:
     permalink: /:collection/:path
 
 
+
+defaults:
+  - scope:
+      path: "guides/html5/v3_6"
+    values:
+      platform: html5
+      version: v3_6
+      layout: guides/html5/v3_6/content

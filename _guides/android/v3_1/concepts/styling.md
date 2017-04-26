@@ -30,13 +30,13 @@ Copy and paste the downloaded files (only the files, not the folder) into the re
 
 Open your project in Android Studio:
 
-![Res Folder](/assets/images/android/imgly_res_files.png){: width="400px"}
+![Res Folder]({{ site.baseurl }}/assets/images/android/imgly_res_files.png){: width="400px"}
 
 ### Change default icons
 
 You can add your own icons:
 
-![Icon size](/assets/images/android/imgly_icon_size.png){: width="400px"}
+![Icon size]({{ site.baseurl }}/assets/images/android/imgly_icon_size.png){: width="400px"}
 
 Please make sure, that you overwrite the icon in all densities.
 
@@ -57,7 +57,7 @@ The white color values from `imgly_icon_option_selected_color.png` replaces and 
 
 Open the res/values/imgly_color.xml in your project and edit the specific ARGB Hex value or double tap the color rect on the left side of the line to open the color picker
 
-![Colors](/assets/images/android/imgly_colors.png){: width="600px"}
+![Colors]({{ site.baseurl }}/assets/images/android/imgly_colors.png){: width="600px"}
 
 ### Change Layout
 
@@ -69,7 +69,7 @@ If you want to change the ActionBar Button Style go to the specific Element, hol
 The Editor now jumps in the specific Style element in the `imgly_style.xml` file.
 Now you can edit all style attributes. It's also possible to override the style attributes directly in the element node.
 
-![Edit style](/assets/images/android/imgly_edit_style.png){: width="800px"}
+![Edit style]({{ site.baseurl }}/assets/images/android/imgly_edit_style.png){: width="800px"}
 
 ### Declaring layout guides
 

@@ -39,7 +39,7 @@ permission:
 ### The App crashes with "Exception Renderscript V8 Class not found"
 
 You probably forgot to enable RenderScript support (`renderscriptSupportModeEnabled true`). Please
-take a look at the [getting started guide](/guides/android/v3_1/introduction/getting_started) for more information.
+take a look at the [getting started guide]({{ site.baseurl }}/assets/android/v3_1/introduction/getting_started) for more information.
 
 ### The App crashes with a "Permission Exception"
 

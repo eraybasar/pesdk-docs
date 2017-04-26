@@ -16,13 +16,13 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # Adjustments 
 
 Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
 
-The tool is implemented in the `AdjustToolController` class. For your app, you can choose which functionality you'd like to make available by modifiying the [`AdjustToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/AdjustToolControllerOptions.html) as described in the [configuration](/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Using these options you can configure the slider and buttons and react to changes to the slider.
+The tool is implemented in the `AdjustToolController` class. For your app, you can choose which functionality you'd like to make available by modifiying the [`AdjustToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/AdjustToolControllerOptions.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Using these options you can configure the slider and buttons and react to changes to the slider.
 
 The default tool set consists of:
 

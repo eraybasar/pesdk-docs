@@ -32,11 +32,11 @@ Copy and paste the downloaded files (just the files, not the folder) into the `r
 
 Open `res/values/string.xml` (if the file doesn't exist, you will have to create it) and click `Edit translations for all locales in the translations editor.` -> `Open editor`.
 
-![Strings](/assets/images/android/imgly_strings.png){: width="675px"}
+![Strings]({{ site.baseurl }}/assets/images/android/imgly_strings.png){: width="675px"}
 
 Now you're able to edit all texts and translate them into other languages.
 
-![Editor](/assets/images/android/imgly_string_editor.png){: width="675px"}
+![Editor]({{ site.baseurl }}/assets/images/android/imgly_string_editor.png){: width="675px"}
 
 
 ## Localization identifiers
