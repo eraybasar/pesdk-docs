@@ -4,10 +4,8 @@ title: &title Brushes # title as shown in the menu and
 
 menuitem: *title
 order: 7
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - feature
@@ -16,7 +14,10 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-# Brush
+![{{page.title}} tool](/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+
+# {{ page.title }}
+The high performant brush engine of the PhotoEditor SDK is optimized for touch screen interaction and supports different brush strokes that can be edited in terms of thickness and color.
 
 ## Specifying brush presets
 

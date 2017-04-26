@@ -16,48 +16,6 @@ tags: &tags # tags that are necessary
 
 published: false # Either published or not 
 ---
+![{{page.title}} tool](/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
 
-# Filter
-
-## Overview
-
-
-
-## Custom Filters 
-
-You can create custom filters by extending the [`Filter` class](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Filter.html).
-A filter has a [`PrimitivesStack`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.Filter.PrimitivesStack.html)
-which holds a list of [`FilterPrimitives`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.FilterPrimitives.html).
-
-
-```js
-const { Filter, FilterPrimitives } = PhotoEditorSDK
-class BWHardFilter extends Filter {
-  constructor (...args) {
-    super(...args)
-    this._stack.push(new FilterPrimitives.Grayscale())
-    this._stack.push(new FilterPrimitives.Contrast({
-      contrast: 1.5
-    }))
-  }
-}
-
-/**
- * A unique string that identifies this filter
- */
-BWHardFilter.identifier = 'bwhard'
-
-/**
- * This string is used in the UI
- */
-BWHardFilter.displayName = 'B&W Hard'
-```
-
-You can now pass the filter to the `FilterOperation`:
-
-```js
-const filterOperation = new PhotoEditorSDK.Operations.FilterOperation(sdk, {
-  filter: new BWHardFilter()
-})
-```
-
+# {{ page.title }}

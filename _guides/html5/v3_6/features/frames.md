@@ -4,17 +4,15 @@ title: &title Frames # title as shown in the menu and
 
 menuitem: *title
 order: 6
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
-  - feature
-tags: &tags # tags that are necessary
-  - photo editor 
-
+  - feature 
 published: true # Either published or not 
 ---
+![{{page.title}} tool](/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
 
-# {{page.title}}
+# {{ page.title }}
+
+Good frames might not save bad paintings, however they may very well complete and enhance good photography. The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames. For the flexible frames tool that works perfectly for creatives with repeatable or stretchable areas, we abandoned the 9-patch standard and replaced it with a novel and even more flexible 12-patch layout. The static frames tool can be used for complex and irregular creatives.
