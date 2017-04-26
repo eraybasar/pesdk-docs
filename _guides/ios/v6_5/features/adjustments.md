@@ -4,8 +4,7 @@ title: &title Adjustments # title as shown in the menu and
 
 menuitem: *title
 order: 2
-platform:
-  - ios
+platform: ios
 version:
   - v6_5
 category: 
@@ -18,7 +17,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/ios/features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+![{{page.title}} tool](/assets/images/guides/ios/v6_5/features/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # Adjustments 
 

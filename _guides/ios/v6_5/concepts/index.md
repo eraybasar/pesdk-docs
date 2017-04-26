@@ -3,8 +3,7 @@ layout: guides/ios/v6_5/content
 title: &title Getting Started # title as shown in the menu and 
 order: 1
 menuitem: *title
-platform:
-  - ios
+platform: ios
 category: 
   - guide
 

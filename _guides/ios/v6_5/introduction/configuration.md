@@ -4,8 +4,7 @@ title: &title Configuration # title as shown in the menu and
 
 menuitem: *title
 order: 2
-platform:
-  - ios
+platform: ios
 version:
   - v6_5
 category: 
@@ -19,7 +18,12 @@ published: true # Either published or not
 
 # Configuration
 
-In order to configure the PhotoEditor SDK to match your needs, you modify the default configuration. The `Configuration` class contains all global settings and nested configurations for each submodule.
+The PhotoEditor SDK can be customized to fit your needs. There are global settings to set things like
+the background color of the app, but also closures that allow a in-depth customization.
+Please note that by default the tint color determines the color of the icons.
+Of course you are free to override that behaviour.
+
+In order to configure the PhotoEditor SDK you modify the default configuration. The `Configuration` class contains all global settings and nested configurations for each submodule.
 We decided to use a builder-pattern, meaning the properties of any configuration object are read-only.
 The constructor of each configuration class has a parameter for its dedicated builder.
 Hence all default settings of our SDK are set in the default builder classes.
@@ -28,16 +32,65 @@ To change the configuration of any module, you need to set up your own builder, 
 ```swift
 ...
 let configuration = Configuration() { builder in
-    builder.backgroundColor = UIColor.redColor()
+    builder.backgroundColor = .red
 }
 
 let cameraViewController = CameraViewController(configuration: configuration)
 ...
 ```
 
-For more configuration examples, please refer to the examples shown below. To find out how to customize the UI of the PhotoEditor SDK, take a look at the [customization](/guides/ios/v6_5/ui/customization) documentation. And to see our default configuration in action, check out our [example app](https://itunes.apple.com/de/app/img.ly-camera-pro-photo-sharing/id589839231?mt=8).
+In order to modify the options of any specific tool, you need to modify the corresponding options using the same pattern. As an example, changing the background color of the transform tool can be done using the following code:
 
-## Selecting menu items
+```swift
+let configuration = Configuration { builder in
+    builder.configureTransformToolController { options in
+        options.backgroundColor = .darkGray
+}
+```
+
+For more configuration examples, please refer to the examples shown below or take a look at the {% include guides/ios/demo-repository.md %}. And to see our default configuration in action, check out our {% include guides/ios/example-app.md %}.
+
+## Interface
+
+The editor UI is divided in different sections. Some members like `backgroundColor` can be set globally, and if needed locally.
+That means, that if you set the `backgroundColor` of the `Configuration` to black, all tools have that `backgroundColor`,
+unless you set another `backgroundColor` in the specific tool configuration.
+The following image annotates the most common configuration members.
+Please note that the background color of the toolbar,
+which sits on the bottom, is set through a property of the `toolbarController`.
+
+![Common members](/assets/images/ios/commonMembers.png)
+
+### Using the closures
+
+Most configuration objects offer closures to setup UI elements individually.
+In that case they usually come with an array of actions that determines the available actions.
+These closures will also have a `cell` and an `action` as parameters.
+This is due that fact that most of our controllers use `UICollectionViews`.
+For example, the main tool bar, presents all available actions, like filters, crop, orientation.
+The closure is than called for each of these actions. So if you wish to change the crop button icon
+you check the action type and set the image accordingly.
+
+```swift
+builder.configurePhotoEditorViewController { options in
+    options.actionButtonConfigurationClosure = { cell, action in
+        if action == .Crop {
+            cell.imageView.image = ...
+        }
+    }
+
+    options.actionButtonConfigurationClosure = { cell, action in
+      cell.captionTintColor = UIColor.red
+    }
+}
+```
+
+### Changing icons
+
+You can register a block using the `PESDK.bundleImageBlock` property which gets called once for each icon that is used by the SDK. The block is passed the name of the image and within the block you should return your desired icon for the given name. Please note that the icons that you return should have the same dimensions as the default icons to ensure the best user experience.
+
+
+### Selecting menu items
 
 With version 6 we changed the way, menu items are configured. Now there is a constructor overload for the `PhotoEditViewController`,
 that takes an array of `MenuItem`'s. We recommend having a separate function to setup the menu items:

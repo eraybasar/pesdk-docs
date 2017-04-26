@@ -4,8 +4,7 @@ title: &title Events # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - ios
+platform: ios
 version:
   - v6_5
 category: 

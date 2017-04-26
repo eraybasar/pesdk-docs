@@ -4,8 +4,7 @@ title: &title Frames # title as shown in the menu and
 
 menuitem: *title
 order: 7
-platform:
-  - ios
+platform: ios
 version:
   - v6_5
 category: 
@@ -17,11 +16,15 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/ios//features/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+![{{page.title}} tool](/assets/images/guides/ios/v6_5/features/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # {{page.title}}
 
-## Adding frames
+The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames. For the flexible frames tool that works perfectly for creatives with repeatable or stretchable areas, we abandoned the 9-patch standard and replaced it with a novel and even more flexible 12-patch layout. The static frames tool can be used for complex and irregular creatives.
+
+The tool is implemented in the `FrameToolController` class and can be customized using the [`FrameToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FrameToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration](/guides/ios/v6_5/introduction/configuration) section
+
+## Adding and removing frames
 
 Similar to [stickers](/guides/ios/v6_5/features/stickers), frames are inserted into the SDK using a data source. We provide a ready to use data source, the `FrameDataSource`.
 It takes an array of `Frame` objects, and handles the rest for you. A `Frame` object usually holds multiple versions of the same image, each matching
