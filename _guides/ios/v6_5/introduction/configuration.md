@@ -5,8 +5,7 @@ title: &title Configuration # title as shown in the menu and
 menuitem: *title
 order: 2
 platform: ios
-version:
-  - v6_5
+version: v6_5
 category: 
   - guide
   - introduction
@@ -59,7 +58,7 @@ The following image annotates the most common configuration members.
 Please note that the background color of the toolbar,
 which sits on the bottom, is set through a property of the `toolbarController`.
 
-![Common members](/assets/images/ios/commonMembers.png)
+![Common members](/assets/images/guides/{{page.platform}}/{{page.version}}/commonMembers.png)
 
 ### Using the closures
 

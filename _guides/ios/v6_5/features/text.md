@@ -5,8 +5,7 @@ title: &title Text # title as shown in the menu and
 menuitem: *title
 order: 4
 platform: ios
-version:
-  - v6_5
+version: v6_5
 category: 
   - guide
   - feature
@@ -16,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/guides/ios/v6_5/features/{{page.title | downcase}}.png){: height="400px" .center-image}
+![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # Text
 A picture says more than a thousand words, however sometimes it still takes a few more. The robust text feature of the PhotoEditor SDK provides all necessary functions for quickly adding text to any picture or creative. The corresponding font library can easily be exchanged, reduced, or expanded.

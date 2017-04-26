@@ -5,8 +5,7 @@ title: &title Overview # title as shown in the menu and
 menuitem: *title
 order: 0
 platform: ios
-version:
-  - v6_5
+version: v6_5
 category: 
   - guide
   - introduction
@@ -49,4 +48,4 @@ A commercial license is required for any app or service that has any form of mon
 * Updated Focus Tool: You can finally adjust the gradient and we've moved from a gaussian blur to a box blur for an even better result.
 * Transform Tool: We've completely redesigned and rewritten our crop tool. You can now not only crop your image, but also straighten it.
 
-![Product](/assets/images/ios/product.png)
+![Product](/assets/images/guides/{{page.platform}}/{{page.version}}/product.png)

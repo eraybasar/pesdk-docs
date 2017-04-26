@@ -5,8 +5,7 @@ title: &title Frames # title as shown in the menu and
 menuitem: *title
 order: 7
 platform: ios
-version:
-  - v6_5
+version: v6_5
 category: 
   - guide
   - feature
@@ -16,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/guides/ios/v6_5/features/{{page.title | downcase}}.png){: height="400px" .center-image}
+![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # {{page.title}}
 

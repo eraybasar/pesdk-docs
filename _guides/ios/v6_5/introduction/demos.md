@@ -5,8 +5,7 @@ title: &title Demos # title as shown in the menu and
 menuitem: *title
 order: 4
 platform: ios
-version:
-  - v6_5
+version: v6_5
 category: 
   - guide
   - introduction

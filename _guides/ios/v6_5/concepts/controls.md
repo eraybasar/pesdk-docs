@@ -5,8 +5,7 @@ title: &title Controls # title as shown in the menu and
 menuitem: *title
 order: 0
 platform: ios
-version:
-  - v6_5
+version: v6_5
 category: 
   - guide
   - concept
@@ -16,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool](/assets/images/ios/ui/{{page.title | downcase}}_framed.png){: height="400px" .center-image}
+![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
 
 # Controls 
 
@@ -27,7 +26,7 @@ get presented in a stacked layout, starting from the [`PhotoEditViewController`]
 
 # View hierarchy
 
-![{{page.title}} tool](/assets/images/ios/ui/frames_annotated.png){: height="400px" .center-image}
+![{{page.title}} tool](/assets/images/guides/{{page.platform}}/{{page.version}}/frames_annotated.png){: height="400px" .center-image}
 
 A single tool controller consists of four main views:
 
