@@ -4,13 +4,11 @@ title: &title Objective-C # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - ios
-version:
-  - v6_5
+platform: ios
+version: v6_5
 category: 
   - guide
-  - feature
+  - concept
 tags: &tags # tags that are necessary
   - photo editor 
 

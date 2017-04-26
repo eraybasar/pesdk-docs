@@ -4,10 +4,8 @@ title: &title FAQ # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - ios
-version:
-  - v6_5
+platform: ios
+version: v6_5
 category: 
   - guide
   - resource
