@@ -4,10 +4,8 @@ title: &title Filters # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - android
-version:
-  - v3_1
+platform: android
+version: v3_1
 category: 
   - guide
   - feature
@@ -21,13 +19,13 @@ published: true # Either published or not
 
 Our PhotoEditor SDK features more than 60 high quality filters and enables you to add custom filters with ease. The processing of the images is lightning fast and adding your own filters neither requires super math nor high level coding skills.
 
-![Filters]({{ site.baseurl }}/assets/images/android/imgly_editor_filter.png){: width="360px"}
+![Filters]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_editor_filter.png){: width="360px"}
 
 The SDK comes with a predefined set of filters, which you can examine in our demo app. You can download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app) or clone from the [GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).
 
 ## Add or remove predefined filters
 
-In order to change the available filters or rearrange them, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/android/v3_1/features/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
+In order to change the available filters or rearrange them, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
 
 ```java
     ArrayList<<ColorFilter>> filter = new ArrayList<>();

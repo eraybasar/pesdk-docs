@@ -3,10 +3,8 @@ layout: guides/android/v3_1/content
 title: &title Getting Started # title as shown in the menu and 
 order: 1
 menuitem: *title
-platform:
-  - android
-version:
-  - v3_1
+platform: android
+version: v3_1
 category: 
   - guide
   - introduction

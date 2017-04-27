@@ -4,10 +4,8 @@ title: &title Frames # title as shown in the menu and
 
 menuitem: *title
 order: 7
-platform:
-  - android
-version:
-  - v3_1
+platform: android
+version: v3_1
 category: 
   - guide
   - feature

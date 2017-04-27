@@ -1,16 +1,14 @@
 ---
 layout: guides/android/v3_1/content
-title: &title Configuration # title as shown in the menu and 
+title: &title Demos # title as shown in the menu and 
 
 menuitem: *title
-order: 0
-platform:
-  - android
-version:
-  - v3_1
+order: 4
+platform: android
+version: v3_1
 category: 
   - guide
-  - feature
+  - introduction
 tags: &tags # tags that are necessary
   - photo editor 
 
