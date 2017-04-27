@@ -102,7 +102,10 @@ The main idea is that colors respond to operations that are carried out during t
 
 The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
-If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. The last step step is to add the filter to
+If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. Please note that not all operations can be translated into a response filter.
+Typically those operations use surrounding the pixels to determine the color of the pixel, such as blur.
+
+The last step step is to add the filter to
 the list of available filters by creating a `LutColorFilter` object just as described above. The object takes the following three parameters:
 
 1. String resource identifier of the filters name, which will not be displayed in the default layout, but is used for Accessibility.
@@ -112,10 +115,10 @@ the list of available filters by creating a `LutColorFilter` object just as desc
 > __WARNING:__ Be sure to put the PNG LUT to the 'res/raw' **OR** the 'res/drawable-nodpi' folder. Otherwise the LUT will be scaled by the Android system.
 > Use the 'raw' folder if you want to optimize the PNG file size yourself or add the file to the 'drawable-nodpi' folder in order to let the Android compiler optimize it for you.
 
-This is a code example for adding a custom filter:
+Adding the custom filter to the available filters then looks like this:
 
 ```java
     ArrayList<<ColorFilter>> filters = config.getFilterConfig();
-    filters.add(new LutColorFilter(R.string.imgly_color_filter_name_ad1920, R.drawable.imgly_filter_preview_photo, R.drawable.my_color_lut));
+    filters.add(new LutColorFilter(R.string.my_filter_name, R.drawable.imgly_filter_preview_photo, R.drawable.my_filter_lut));
     config.setFilter(filters);
 ```

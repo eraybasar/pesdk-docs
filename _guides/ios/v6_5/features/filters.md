@@ -46,13 +46,12 @@ PhotoEffect.allEffects = effects
 To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as the filter tool. For more details on the filter preview when using the camera, take a look at the [camera]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/camera) section.
 
 ## Response filters
-We are using a technology we call response filters.
-The main idea is, that colors respond to operations that are done during the filtering process and we are able to 'record' that
-very response. We do that by applying the filter to the image shown below:
+We use a technology called LUTs in order to add new filters to our SDK.
+The main idea is that colors respond to operations that are carried out during the filtering process. We 'record' that very response by applying the filter to the identity image shown below.
 
-![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.jpg){: width="30%"}
+![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.png){: width="30%" .center-image}
 
-The resulting image can then be used to create a new filter within the SDK and the recorded changes can be applied to any image.
-So if you want to create a filter, you load the image above into your software, apply the operations, save it and add it to your app. The last step is to add the filter to
-the list of available filters. Please note that not all operations can be translated into a response filter.
+The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
+
+If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. The last step is described above, but you need to pass the path to your own LUT file instead of pointing to our bundle. Please note that not all operations can be translated into a response filter.
 Typically those operations use surrounding the pixels to determine the color of the pixel, such as blur.
