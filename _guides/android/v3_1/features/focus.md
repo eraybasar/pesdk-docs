@@ -19,6 +19,6 @@ published: true # Either published or not
 
 # Focus
 
-## Radial Blur 
+The focus tool allows your users to add a radial or linear blur to their images which lets them mimic _Tilt Shift_ or _Bokeh_ effects.
 
-## Tile Shift 
+The tool is implemented in the [`FocusEditorTool`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/sdk/tools/FocusEditorTool.html) and displayed using the [`FocusToolPanel`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/ui/panels/FocusToolPanel.html).
