@@ -63,46 +63,15 @@ tools.add(new FocusTool(R.string.imgly_tool_name_focus,             R.drawable.i
 config.setTools(tools);
 ```
 
-## Crop configuration
+## Select available crop ratios
 
-![Editor Crop]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_editor_crop.png){: width="360px"}
+Check out our [transform documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/transform).
 
-You can set your own crop configuration using the `getCropConfig()` method.
-
-There are two types of crop configurations:
-
-* Fixed aspect ratio while keeping the resolution
-* Fixed aspect ratio with fixed resolution
-
-You can create a fixed aspect ratio by creating a new `CropAspectConfig` with the following parameters:
-
-1. A resource identifier for the crop configurations name (optional)
-2. The width (e.g. 16)
-3. The height (e.g. 9)
-
-As an example, you could create the following configuration:
-
-```java
-
-ArrayList<CropAspectConfig> cropConfig = new ArrayList<>();
-
-/* Add a the custom crop configuration (optional) */
-cropConfig.add(CropAspectConfig.FREE_CROP);
-
-/* Add a 16:9 crop configuration */
-cropConfig.add(new CropAspectConfig(16, 9));
-
-/* Add a 4:3 crop configuration with name */
-cropConfig.add(new CropAspectConfig(R.string.my_4_3_crop_name, 4, 3));
-
-config.setAspectConfig(cropConfig);
-```
-
-## Further configurations
+## Configuring available fonts
 
 Take a look at the [text documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/text).
 
-## ​Set stickers
+## Adding or removing stickers
 
 Take a look at the [stickers documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/stickers).
 

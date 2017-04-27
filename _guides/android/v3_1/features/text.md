@@ -24,7 +24,7 @@ The tool is implemented in the [`TextEditorTool`](https://static.photoeditorsdk.
 
 ## Adding and removing fonts
 
-The SDK comes with a predefined set of fonts, which you can examine in our demo app. You can download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app) or clone from the [GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).
+The SDK comes with a predefined set of fonts, which you can examine in our demo app. You can download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app) or clone from the {% include guides/android/demo-repository.md %}.
 
 ![Editor Fonts]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_editor_fonts.jpg){: height="400px" .center-image}
 

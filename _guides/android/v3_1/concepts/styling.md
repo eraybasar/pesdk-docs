@@ -21,7 +21,7 @@ It's easy to customize the PhotoEditor Android SDK's style.
 ​All resource and style identifier can be overwritten. They have the prefix: `imgly_` e.g. `Imgly.`
 ​
 ### Download the Default Layout as Reference
-For an easy creation of a new interface design simply [download](https://github.com/imgly/imgly-sdk-android-demo/archive/master.zip) our [demo repository](https://github.com/imgly/imgly-sdk-android-demo) and extract the `res` subfolder from the `default_res_files` folder.
+For an easy creation of a new interface design simply download our {% include guides/android/demo-repository.md %} and extract the `res` subfolder from the `default_res_files` folder.
 
 ### Prepare your Project
 Copy and paste the downloaded files (only the files, not the folder) into the res folder of your own app module.
@@ -75,4 +75,4 @@ For more information look at the [Google Developer Guides]( http://developer.and
 
 ### See an example
 
-You can find a finished example with a customized design in our [GitHub repository](https://github.com/imgly/imgly-sdk-android-demo). Just take a look at the `CustomizeLayoutExample` folder.
+You can find a finished example with a customized design in our {% include guides/android/demo-repository.md %}. Just take a look at the `CustomizeLayoutExample` folder.

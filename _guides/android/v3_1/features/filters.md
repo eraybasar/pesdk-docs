@@ -95,16 +95,15 @@ In order to change the available filters or rearrange them, start with a default
 ```
 
 ## Response filters
-We use a technology called response filters in order to add new filters to our SDK.
-The main idea is that colors respond to operations that are carried out during the filtering process. We 'record' that very response. We do that by applying the filter to the identity image shown below.
+We use a technology called LUTs in order to add new filters to our SDK.
+The main idea is that colors respond to operations that are carried out during the filtering process. We 'record' that very response by applying the filter to the identity image shown below.
 
-![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.png){: width="30%"}
+![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.png){: width="30%" .center-image}
 
-The resulting image can be used within our SDK and the recorded changes can then be applied to any image.
-If you want to create a new filter, you'll need to upload the image shown above into an image editing software of your choice, apply your operations, save it and add it to your app. In a last step you need to add the filter to
-the list of available filters.
+The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
-In order to make a custom 3D LUT available as a new filter, you create a `LutColorFilter` object and add it to your list of filters. The object takes the following three parameters:
+If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. The last step step is to add the filter to
+the list of available filters by creating a `LutColorFilter` object just as described above. The object takes the following three parameters:
 
 1. String resource identifier of the filters name, which will not be displayed in the default layout, but is used for Accessibility.
 2. Preview image resource for the `CameraPreview` activity. This image is replaced with a filtered version within the editor.

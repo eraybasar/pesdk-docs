@@ -10,7 +10,7 @@
 - [ ] Overlays
 - [ ] Logging
 - [ ] Serialisation
-- [ ] Move customization code to public iOS sample
+- [ ] Move customization code to public iOS sample (Malte)
 
 ### Android
 - [ ] Document EXIF data handling / export
