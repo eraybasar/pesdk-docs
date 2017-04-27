@@ -3,10 +3,8 @@ layout: guides/android/v3_1/content
 title: &title Getting Started # title as shown in the menu and 
 order: 1
 menuitem: *title
-platform:
-  - android
-version:
-  - v3_1
+platform: android
+version: v3_1
 category: 
   - guide
   - introduction
@@ -33,7 +31,7 @@ The following software is required:
 * Android Build Tools 25.0.2+
 * Android Support Repository 25.1.1+
 
-You will need a **valid license file** in order to use the PhotoEditor SDK in your own application. You can request a trial license at [here](https://www.photoeditorsdk.com/users/new). As our [demo application](https://github.com/imgly/imgly-sdk-android-demo) comes bundled with its own license, you can use this right away, if you just want to take a quick look.
+You will need a **valid license file** in order to use the PhotoEditor SDK in your own application. You can request a trial license at [here](https://www.photoeditorsdk.com/users/new). As our {% include guides/android/example-app.md %} comes bundled with its own license, you can use this right away, if you just want to take a quick look.
 
 ## Supported Android versions
 
@@ -165,7 +163,7 @@ Please take a look at the hint in the next step in order to integrate the Androi
 In order to open the camera preview and pass the resulting image to the editor, create a
 `CameraPreviewBuilder` and start with `startActivityForResult(activity, custom_id)`.
 
-__Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
+> __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
 as demonstrated in the following example. This ensures correct behaviour on Android 6.0 and above.__
 
 ```java
@@ -272,4 +270,5 @@ settingsList
 
 ## Sample Application
 
-You can access the source code for our demo application from our [public GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).
+You can access the source code for our demo application from our {% include guides/android/demo-repository.md %}.
+

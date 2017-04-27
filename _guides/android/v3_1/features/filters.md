@@ -3,11 +3,9 @@ layout: guides/android/v3_1/content
 title: &title Filters # title as shown in the menu and 
 
 menuitem: *title
-order: 0
-platform:
-  - android
-version:
-  - v3_1
+order: 1
+platform: android
+version: v3_1
 category: 
   - guide
   - feature
@@ -17,17 +15,19 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
+
 # Filters
 
 Our PhotoEditor SDK features more than 60 high quality filters and enables you to add custom filters with ease. The processing of the images is lightning fast and adding your own filters neither requires super math nor high level coding skills.
 
-![Filters]({{ site.baseurl }}/assets/images/android/imgly_editor_filter.png){: width="360px"}
+To examine the included filters, you can download the {% include guides/android/example-app.md %} from the Play Store or clone our {% include guides/android/demo-repository.md %}.
 
-The SDK comes with a predefined set of filters, which you can examine in our demo app. You can download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app) or clone from the [GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).
+The tool is implemented in the [`FilterEditorTool`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/sdk/tools/FilterEditorTool.html) class and displayed using the [`FilterToolPanel`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/ui/panels/FilterToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.
 
 ## Add or remove predefined filters
 
-In order to change the available filters or rearrange them, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/android/v3_1/features/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
+In order to change the available filters or rearrange them, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
 
 ```java
     ArrayList<<ColorFilter>> filter = new ArrayList<>();
@@ -95,20 +95,15 @@ In order to change the available filters or rearrange them, start with a default
 ```
 
 ## Response filters
-We use a technology called response filters in order to add new filters to our SDK.
-The main idea is that colors respond to operations that are carried out during the filtering process. We 'record' that very response. We do that by applying the filter to the identity image shown below.
+We use a technology called LUTs in order to add new filters to our SDK.
+The main idea is that colors respond to operations that are carried out during the filtering process. We 'record' that very response by applying the filter to the identity image shown below.
 
-![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.png){: width="30%"}
+![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.png){: width="30%" .center-image}
 
-The resulting image can be used within our SDK and the recorded changes can then be applied to any image.
-If you want to create a new filter, you'll need to upload the image shown above into an image editing software of your choice, apply your operations, save it and add it to your app. In a last step you need to add the filter to
-the list of available filters.
+The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
-<div class="todo">
-Ask Sven if this is the right code snippet and why it was called ImageStickerConfig. Make sure point 2 is right. LUT, response filter or 3D LUT?
-</div>
-
-In order to make a custom LUT available as a new filter, you create a `LutColorFilter` object and add it to your list of filters. The object takes the following three parameters:
+If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. The last step step is to add the filter to
+the list of available filters by creating a `LutColorFilter` object just as described above. The object takes the following three parameters:
 
 1. String resource identifier of the filters name, which will not be displayed in the default layout, but is used for Accessibility.
 2. Preview image resource for the `CameraPreview` activity. This image is replaced with a filtered version within the editor.

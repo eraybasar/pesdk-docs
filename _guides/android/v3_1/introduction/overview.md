@@ -4,10 +4,8 @@ title: &title Overview # title as shown in the menu and
 
 menuitem: *title
 order: 0
-platform:
-  - android
-version:
-  - v3_1
+platform: android
+version: v3_1
 category: 
   - guide
   - introduction
@@ -31,8 +29,8 @@ A commercial license is required for any app or service that has any form of mon
 
 * __Android API Level 15+__. Covers nearly 95% of all Android devices.
 * __Default UI__ for camera preview and editing. Based on Intents and Activities.
-* __Fast image export up to 4294 MegaPixel__. Even with large images and slow devices with low memory the export is done in adequate time with a intelligent unrivaled background processing technology.
-* __Generic camera support__. Integrated and featureful on the most Android phones.
+* __Fast image export up to 4294 Megapixels__. Even with large images and slow devices with low memory, the export is done in adequate time with an intelligent unrivaled background processing technology.
+* __Generic camera support__. Integrated and featureful on most Android phones.
 * __Crop__, __Rotate__, __Stickers__, __Text Placement__, and __Colorize__. All essential photo editing functions wrapped into a simple, beautiful and customizable UI.
 * __57 Stunning filters__ which are builtin and work out of the box.
 * __No native code__. Our backend is Renderscript based with highlevel OpenGL support, therefore we dodge all the nasty native library problems other frameworks face.
@@ -47,3 +45,17 @@ editing tools. Export and integrate them in minutes!
 ### Demo App
 
 <a href="https://github.com/imgly/imgly-sdk-android-demo">Get the source for our demo application from our public GitHub reposity.</a>
+
+
+## Architecture
+
+The PhotoEditor SDK for Android is structured into three main components:
+
+### SDK
+The SDKs backend takes care of all image processing and rendering. This includes live filters, any adjustments made by the user and the final image export. All image modifications, that have currently been applied to the image, are stored in a model and then used to determine if a new rendering pass is neccessary. The processing engine is able to handle high resolution images and may be extended with more filters and other assets.
+
+### UI
+The UI package holds all classes needed to create the editors UI. These are constructed around the two main activities, which act as the root building blocks for all our UI. Each tool's user interface is implemented in its corresponding panel and is responsible for displaying the specific UI elements on screen. You can adjust and tweak the UI to match your needs, by disabling specific elements or changing colors and styles, as described in our [configuration]({{site.baseurl}}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) and [styling]({{site.baseurl}}/guides/{{page.platform}}/{{page.version}}/concepts/styling) sections.
+
+### Camera
+All camera functionality is wrapped into a separate package to ensure a clean API.

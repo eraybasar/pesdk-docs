@@ -3,14 +3,12 @@ layout: guides/android/v3_1/content
 title: &title Configuration # title as shown in the menu and 
 
 menuitem: *title
-order: 0
-platform:
-  - android
-version:
-  - v3_1
+order: 2
+platform: android
+version: v3_1
 category: 
   - guide
-  - feature
+  - introduction
 tags: &tags # tags that are necessary
   - photo editor 
 
@@ -36,7 +34,7 @@ ImgLyConfig config = settingsList.getConfig()
 
 ## Toolset configuration
 
-![Editor Tools]({{ site.baseurl }}/assets/images/android/imgly_editor_tools.png){: width="360px"}
+![Editor Tools]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_editor_tools.png){: width="360px"}
 
 In order to change the tools or rearrange them, use the `setTools()` method of the `ImgLyConfig` object. Before this you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
 the `AbstractEditorTool` class.
@@ -65,56 +63,20 @@ tools.add(new FocusTool(R.string.imgly_tool_name_focus,             R.drawable.i
 config.setTools(tools);
 ```
 
-## Crop configuration
+## Select available crop ratios
 
-![Editor Crop]({{ site.baseurl }}/assets/images/android/imgly_editor_crop.png){: width="360px"}
+Check out our [transform documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/transform).
 
-You can set your own crop configuration using the `getCropConfig()` method.
+## Configuring available fonts
 
-There are two types of crop configurations:
+Take a look at the [text documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/text).
 
-* Fixed aspect ratio while keeping the resolution
-* Fixed aspect ratio with fixed resolution
+## Adding or removing stickers
 
-<div class="todo">
-Ask Sven about details and extract comment from code block.
-</div>
-
-```java
-
-ArrayList<CropAspectConfig> cropConfig = new ArrayList<>();
-
-/*
- * For a crop configuration with a fixed aspect ratio, create a new CropAspectConfig with the
- * following parameters:
- *
- *  Parameter 1 (Optional): Resource identifier of the crop name.
- *  Parameter 2: Width
- *  Parameter 3: Height
- */
-
-/* Add a the custom crop configuration (optional) */
-cropConfig.add(CropAspectConfig.FREE_CROP);
-
-/* Add a 16:9 crop configuration */
-cropConfig.add(new CropAspectConfig(16, 9));
-
-/* Add a 4:3 crop configuration with name */
-cropConfig.add(new CropAspectConfig(R.string.my_4_3_crop_name, 4, 3));
-
-config.setAspectConfig(cropConfig);
-```
-
-## Further configurations
-
-Take a look at the [text documentation]({{ site.baseurl }}/guides/android/v3_1/features/text).
-
-## ​Set stickers
-
-Take a look at the [stickers documentation]({{ site.baseurl }}/guides/android/v3_1/features/stickers).
+Take a look at the [stickers documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/stickers).
 
 ## Adding or removing filters
 
-Take a look at the [filters documentation](/documentation/android/filters).
+Take a look at the [filters documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/filters).
 
 

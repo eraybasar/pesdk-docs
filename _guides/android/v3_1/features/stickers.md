@@ -4,10 +4,8 @@ title: &title Stickers # title as shown in the menu and
 
 menuitem: *title
 order: 6
-platform:
-  - android
-version:
-  - v3_1
+platform: android
+version: v3_1
 category: 
   - guide
   - feature
@@ -17,13 +15,17 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
+
 # Stickers
 
-The PhotoEditor SDK comes with a predefined set of stickers, which you can examine in our demo app. You can download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app) or clone from the [GitHub repository](https://github.com/imgly/imgly-sdk-android-demo).
+The PhotoEditor SDK comes with a predefined set of stickers, which you can examine in our demo app. You can download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app) or clone from the {% include guides/android/demo-repository.md %}.
 
-![Editor Stickers]({{ site.baseurl }}/assets/images/android/imgly_editor_sticker.png){: width="360px"}
+The tool is implemented in the [`StickerEditorTool`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/sdk/tools/StickerEditorTool.html) class and displayed using the [`StickerToolPanel`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/ui/panels/StickerToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.
 
-In order to change the available stickers, rearrange or add new stickers, start with a default `ImglyConfig` as described in the [Configuration]({{ site.baseurl }}/guides/android/v3_1/features/configuration) section. Then use the `setStickerConfig()` method to update the configuration. The stickers are partitioned into categories, therefore the `ImglyConfig` expects a list of `StickerCategoryConfig` objects. Each of these objects represents a single sticker category and takes three parameters:
+## Managing stickers
+
+In order to change the available stickers, rearrange or add new stickers, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Then use the `setStickerConfig()` method to update the configuration. The stickers are partitioned into categories, therefore the `ImglyConfig` expects a list of `StickerCategoryConfig` objects. Each of these objects represents a single sticker category and takes three parameters:
 
 1. The resource identifier of the sticker name. Will not be displayed in the default layout but, is used for accessibility
 2. A drawable resource or ImageSource of the icon
