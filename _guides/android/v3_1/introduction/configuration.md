@@ -74,22 +74,17 @@ There are two types of crop configurations:
 * Fixed aspect ratio while keeping the resolution
 * Fixed aspect ratio with fixed resolution
 
-<div class="todo">
-Ask Sven about details and extract comment from code block.
-</div>
+You can create a fixed aspect ratio by creating a new `CropAspectConfig` with the following parameters:
+
+1. A resource identifier for the crop configurations name (optional)
+2. The width (e.g. 16)
+3. The height (e.g. 9)
+
+As an example, you could create the following configuration:
 
 ```java
 
 ArrayList<CropAspectConfig> cropConfig = new ArrayList<>();
-
-/*
- * For a crop configuration with a fixed aspect ratio, create a new CropAspectConfig with the
- * following parameters:
- *
- *  Parameter 1 (Optional): Resource identifier of the crop name.
- *  Parameter 2: Width
- *  Parameter 3: Height
- */
 
 /* Add a the custom crop configuration (optional) */
 cropConfig.add(CropAspectConfig.FREE_CROP);

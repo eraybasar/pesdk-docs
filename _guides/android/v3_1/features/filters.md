@@ -102,11 +102,7 @@ The resulting image can be used within our SDK and the recorded changes can then
 If you want to create a new filter, you'll need to upload the image shown above into an image editing software of your choice, apply your operations, save it and add it to your app. In a last step you need to add the filter to
 the list of available filters.
 
-<div class="todo">
-Ask Sven if this is the right code snippet and why it was called ImageStickerConfig. Make sure point 2 is right. LUT, response filter or 3D LUT?
-</div>
-
-In order to make a custom LUT available as a new filter, you create a `LutColorFilter` object and add it to your list of filters. The object takes the following three parameters:
+In order to make a custom 3D LUT available as a new filter, you create a `LutColorFilter` object and add it to your list of filters. The object takes the following three parameters:
 
 1. String resource identifier of the filters name, which will not be displayed in the default layout, but is used for Accessibility.
 2. Preview image resource for the `CameraPreview` activity. This image is replaced with a filtered version within the editor.
