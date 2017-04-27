@@ -113,6 +113,6 @@ Take a look at the [stickers documentation]({{ site.baseurl }}/guides/{{page.pla
 
 ## Adding or removing filters
 
-Take a look at the [filters documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/filters).
+Take a look at the [filters documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/filters).
 
 
