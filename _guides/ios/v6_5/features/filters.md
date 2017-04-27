@@ -53,5 +53,9 @@ The main idea is that colors respond to operations that are carried out during t
 
 The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
-If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. The last step is described above, but you need to pass the path to your own LUT file instead of pointing to our bundle. Please note that not all operations can be translated into a response filter.
+If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app.
+
+> __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you need to save your LUT as a PNG file.
+
+The last step is described above, but you need to pass the path to your own LUT file instead of pointing to our bundle. Please note that not all operations can be translated into a response filter.
 Typically those operations use surrounding the pixels to determine the color of the pixel, such as blur.

@@ -105,6 +105,8 @@ The resulting image can be used within our SDK and the recorded changes can then
 If you want to create a new filter, you'll need to [download]({{ site.baseurl }}/assets/images/shared/identity.png){: download="pesdk_identity_lut" } the identity LUT shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. Please note that not all operations can be translated into a response filter.
 Typically those operations use surrounding the pixels to determine the color of the pixel, such as blur.
 
+> __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you need to save your LUT as a PNG file.
+ 
 The last step step is to add the filter to
 the list of available filters by creating a `LutColorFilter` object just as described above. The object takes the following three parameters:
 
