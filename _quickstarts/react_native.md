@@ -13,7 +13,7 @@ tags: &tags # tags that are necessary
 published: true
 ---
 
-![React Native Demo]({{ site.baseurl }}/assets/images/react-native/react-native.png)
+![React Native Demo]({{ site.baseurl }}/assets/images/quickstarts/react-native/react-native.png)
 
 # Getting Started with React Native
 

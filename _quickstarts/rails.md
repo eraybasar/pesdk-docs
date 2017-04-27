@@ -10,7 +10,7 @@ tags: &tags # tags that are necessary
   - photo editor 
   - ios
   - android
-published: true
+published: false
 ---
 
 #Getting Started with Ruby on Rails
