@@ -50,7 +50,7 @@ We are using a technology we call response filters.
 The main idea is, that colors respond to operations that are done during the filtering process and we are able to 'record' that
 very response. We do that by applying the filter to the image shown below:
 
-![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.png){: width="30%"}
+![Identity LUT]({{ site.baseurl }}/assets/images/shared/identity.jpg){: width="30%"}
 
 The resulting image can then be used to create a new filter within the SDK and the recorded changes can be applied to any image.
 So if you want to create a filter, you load the image above into your software, apply the operations, save it and add it to your app. The last step is to add the filter to

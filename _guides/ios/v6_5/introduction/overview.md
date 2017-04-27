@@ -48,4 +48,4 @@ A commercial license is required for any app or service that has any form of mon
 * Updated Focus Tool: You can finally adjust the gradient and we've moved from a gaussian blur to a box blur for an even better result.
 * Transform Tool: We've completely redesigned and rewritten our crop tool. You can now not only crop your image, but also straighten it.
 
-![Product]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/product.png)
+![Product]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/product.jpg)

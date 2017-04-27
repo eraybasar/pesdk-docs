@@ -15,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.png){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
 # Controls 
 
@@ -26,7 +26,7 @@ get presented in a stacked layout, starting from the [`PhotoEditViewController`]
 
 # View hierarchy
 
-![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/frames_annotated.png){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/frames_annotated.jpg){: height="400px" .center-image}
 
 A single tool controller consists of four main views:
 

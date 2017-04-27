@@ -58,7 +58,7 @@ The following image annotates the most common configuration members.
 Please note that the background color of the toolbar,
 which sits on the bottom, is set through a property of the `toolbarController`.
 
-![Common members]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/commonMembers.png)
+![Common members]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/commonMembers.jpg)
 
 ### Using the closures
 

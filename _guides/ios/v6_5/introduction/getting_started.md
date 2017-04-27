@@ -49,7 +49,7 @@ PhotoEditor SDK into your project manually via a dynamic framework.
 
 1) Download the SDK [here](https://github.com/imgly/pesdk-ios-build/releases/latest), then just drag `imglyKit.framework` into the `Embedded Binaries` section of your target:
 
-![Embedded Binaries]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/embedded-binaries.png)
+![Embedded Binaries]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/embedded-binaries.jpg)
 
 2) Add a new `Run Script Phase` in your target’s `Build Phases`.
 
@@ -63,7 +63,7 @@ bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/imglyKit.framework/strip-frame
 
 This script works around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) triggered by universal binaries.
 
-![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/run-script-phase.png)
+![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/run-script-phase.jpg)
 
 # Setup
 
