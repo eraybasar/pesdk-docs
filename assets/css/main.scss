@@ -30,13 +30,13 @@
 
 @import "github-markdown-overrides";
 
-
 @import "components/header",
         "components/main",
         "components/footer",
         "components/topbar",
         "components/container",
-        "components/navigation";
+        "components/navigation",
+        "components/redirect";
 
 @import "components/documentation",
         "components/documentation/content",
