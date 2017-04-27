@@ -3,7 +3,7 @@ layout: guides/android/v3_1/content
 title: &title Filters # title as shown in the menu and 
 
 menuitem: *title
-order: 0
+order: 1
 platform: android
 version: v3_1
 category: 
@@ -14,6 +14,8 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
+
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
 # Filters
 
