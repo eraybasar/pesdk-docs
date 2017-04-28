@@ -25,8 +25,6 @@ The tool is implemented in the [`TransformEditorTool`](https://static.photoedito
 
 # Managing the available crop ratios
 
-![Editor Crop]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_editor_crop.png){: width="360px" .center-image}
-
 You can set your own crop configuration using the `getCropConfig()` method.
 
 There are two types of crop configurations:
