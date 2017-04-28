@@ -1,18 +1,18 @@
 ---
 layout: guides/ios/v6_5/content
-title: &title Camera # title as shown in the menu and 
+title: &title Camera # title as shown in the menu and
 
 menuitem: *title
 order: 0
 platform: ios
 version: v6_5
-category: 
+category:
   - guide
   - feature
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
@@ -21,7 +21,7 @@ published: true # Either published or not
 
 The PhotoEditor SDK offers a lightning fast camera implementation for iOS to complement your editor, featuring all essential camera components as well as live filters.
 
-In order to use our camera, you need to instantiate a `CameraViewController` and present it. You can configure the camera to fit your needs using the `CameraViewControllerOptions`. To do so, you need to pass a `Configuration` object to the `CameraViewControllers` initializer. If no configuration is passed, the default setup is passed.
+In order to use our camera, you need to instantiate a `CameraViewController` and present it. You can configure the camera to fit your needs using the `CameraViewControllerOptions`. To do so, you need to pass a `Configuration` object to the `CameraViewControllers` initializer. If no configuration is passed, the default configuration is used.
 
 > __Warning__: When adding a camera to your app, don't forget to set the required `NSCameraUsageDescription` in the `info.plist` file of your app. This is forced by iOS and allows your app to access the devices camera. If you want to allow photo roll access, you need to set the `NSPhotoLibraryUsageDescription` as well.
 

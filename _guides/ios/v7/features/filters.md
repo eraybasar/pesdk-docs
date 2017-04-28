@@ -1,18 +1,18 @@
 ---
 layout: guides/ios/v7/content
-title: &title Filters # title as shown in the menu and 
+title: &title Filters # title as shown in the menu and
 
 menuitem: *title
 order: 0
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - feature
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
@@ -23,7 +23,7 @@ You might think that adding your own filters requires super math skills, or is c
 Well, not at all. The way we realize filters, makes it super easy. Actually you don't need to code filters,
 you just need a program like gimp of photoshop. The only thing that needs to be done in code, is to add the filter you created.
 
-The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. 
+The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.
 
 ## Setting available filters
 
@@ -32,12 +32,11 @@ The following example shows how a custom selection of filters can be set:
 
 ```swift
 private let effects: [PhotoEffect] = [
-    PhotoEffect(identifier: "None", CIFilterName: nil, lutURL: nil, displayName: "None", options: nil),
-    PhotoEffect(identifier: "K1", lutURL: NSBundle(forClass: PhotoEffect.self).URLForResource("K1", withExtension: "png"), displayName: "K1"),
-    PhotoEffect(identifier: "K2", lutURL: NSBundle(forClass: PhotoEffect.self).URLForResource("K2", withExtension: "png"), displayName: "K2"),
-    PhotoEffect(identifier: "K6", lutURL: NSBundle(forClass: PhotoEffect.self).URLForResource("K6", withExtension: "png"), displayName: "K6"),
-    PhotoEffect(identifier: "Dynamic", lutURL: NSBundle(forClass: PhotoEffect.self).URLForResource("Dynamic", withExtension: "png"), displayName: "Dynamic"),
-    PhotoEffect(identifier: "Fridge", lutURL: NSBundle(forClass: PhotoEffect.self).URLForResource("Fridge", withExtension: "png"), displayName: "Fridge")
+  PhotoEffect(identifier: "K1", lutURL: Bundle.imglyKitBundle.url(forResource: "K1", withExtension: "png"), displayName: "K1"),
+  PhotoEffect(identifier: "K2", lutURL: Bundle.imglyKitBundle.url(forResource: "K2", withExtension: "png"), displayName: "K2"),
+  PhotoEffect(identifier: "K6", lutURL: Bundle.imglyKitBundle.url(forResource: "K6", withExtension: "png"), displayName: "K6"),
+  PhotoEffect(identifier: "Dynamic", lutURL: Bundle.imglyKitBundle.url(forResource: "Dynamic", withExtension: "png"), displayName: "Dynamic"),
+  PhotoEffect(identifier: "Fridge", lutURL: Bundle.imglyKitBundle.url(forResource: "Fridge", withExtension: "png"), displayName: "Fridge")
 ]
 
 PhotoEffect.allEffects = effects

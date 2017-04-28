@@ -1,26 +1,26 @@
 ---
 layout: guides/ios/v6_5/content
-title: &title Configuration # title as shown in the menu and 
+title: &title Configuration # title as shown in the menu and
 
 menuitem: *title
 order: 2
 platform: ios
 version: v6_5
-category: 
+category:
   - guide
   - introduction
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 # Configuration
 
 The PhotoEditor SDK can be customized to fit your needs. There are global settings to set things like
-the background color of the app, but also closures that allow a in-depth customization.
+the background color of the app, but also closures that allow an in-depth customization.
 Please note that by default the tint color determines the color of the icons.
-Of course you are free to override that behaviour.
+Of course you are free to override that behavior.
 
 In order to configure the PhotoEditor SDK you modify the default configuration. The `Configuration` class contains all global settings and nested configurations for each submodule.
 We decided to use a builder-pattern, meaning the properties of any configuration object are read-only.
@@ -91,20 +91,24 @@ You can register a block using the `PESDK.bundleImageBlock` property which gets 
 
 ### Selecting menu items
 
-With version 6 we changed the way, menu items are configured. Now there is a constructor overload for the `PhotoEditViewController`,
+With version 6 we changed the way menu items are configured. Now there is a new constructor for the `PhotoEditViewController`,
 that takes an array of `MenuItem`'s. We recommend having a separate function to setup the menu items:
 
 ```swift
 func menuItems(with configuration: Configuration) -> [MenuItem] {
     return [
-        .tool("Transform", UIImage(named: "ic_crop_48pt", in:  Bundle.imglyKitBundle, compatibleWith: nil)!, TransformToolController(configuration: configuration))
+        .tool("Transform", UIImage(named: "ic_crop_48pt", in: Bundle.imglyKitBundle, compatibleWith: nil)!, TransformToolController(configuration: configuration))
     ]
 }
 ```
 
-We added the `.tool` method for convenience. Also note, that it is now possible to map to any subclass of `PhotoEditToolController`.
-That makes it easier to add your very own custom tool controller to the SDK.
-Here is the code for the default set of menu items:
+`MenuItem` is an enum with three possible cases.
+1. `case tool(String, UIImage, PhotoEditToolController)` represents a tool that can be pushed onto the stack. It has a title, an icon and the instantiated tool as associated values.
+2. `case action(String, UIImage, (inout PhotoEditModel) -> Void, ((PhotoEditModel) -> Bool)?)` represents an action that should be run when this menu item is selected. It has a title, an icon, the closure that should be run and which can update the current photo edit model, and a state closure that is used to query the active state of the action as associated values.
+3. `case separator` represents a visual separator in the menu. It has no associated values.
+
+The `.tool` case can be used to present any subclass of `PhotoEditToolController`, making it easier to add your very own custom tool controllers to the SDK.
+Here is the code for the current default set of menu items:
 
 ```swift
 /// The default items that will be used for the main menu.
@@ -112,20 +116,29 @@ Here is the code for the default set of menu items:
 /// - Parameter configuration: A configuration instance to use to configure the tools.
 /// - Returns: An array with the default menu items.
 public static func defaultItems(with configuration: Configuration) -> [MenuItem] {
-    return [
-        .tool("Transform".localized, UIImage.bundledTemplateImage(named: "ic_crop_48pt"), TransformToolController(configuration: configuration)),
-        .tool("Filter".localized, UIImage.bundledTemplateImage(named: "ic_filter_48pt"), FilterToolController(configuration: configuration)),
-        .tool("Adjust".localized, UIImage.bundledTemplateImage(named: "ic_adjust_48pt"), AdjustToolController(configuration: configuration)),
-        .tool("Text".localized, UIImage.bundledTemplateImage(named: "ic_text_48pt"), TextToolController(configuration: configuration)),
-        .tool("Sticker".localized, UIImage.bundledTemplateImage(named: "ic_sticker_48pt"), StickerToolController(configuration: configuration)),
-        .tool("Frame".localized, UIImage.bundledTemplateImage(named: "ic_frame_48pt"), FrameToolController(configuration: configuration)),
-        .tool("Brush".localized, UIImage.bundledTemplateImage(named: "ic_brush_48pt"), BrushToolController(configuration: configuration)),
-        .tool("Focus".localized, UIImage.bundledTemplateImage(named: "ic_focus_48pt"), FocusToolController(configuration: configuration)),
-        .action("Magic".localized, UIImage.bundledTemplateImage(named: "ic_magic_48pt"), { photoEditModel in
-            var updatedPhotoEditModel = photoEditModel
-            updatedPhotoEditModel.isAutoEnhancementEnabled = !updatedPhotoEditModel.isAutoEnhancementEnabled
-            photoEditModel = updatedPhotoEditModel
-        })
-    ]
+  return [
+    .tool("Transform".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_transform_48pt"), TransformToolController(configuration: configuration)),
+    .tool("Overlay".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_overlay_48pt"), OverlayToolController(configuration: configuration)),
+    .tool("Filter".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_filter_48pt"), FilterToolController(configuration: configuration)),
+    .tool("Adjust".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_adjust_48pt"), AdjustToolController(configuration: configuration)),
+    .tool("Text".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_text_48pt"), TextToolController(configuration: configuration)),
+    .tool("Sticker".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_sticker_48pt"), StickerToolController(configuration: configuration)),
+    .tool("Frame".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_frame_48pt"), FrameToolController(configuration: configuration)),
+    .tool("Brush".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_brush_48pt"), BrushToolController(configuration: configuration)),
+    .tool("Focus".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_focus_48pt"), FocusToolController(configuration: configuration)),
+    .action("Magic".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_magic_48pt"), { photoEditModel in
+      var updatedPhotoEditModel = photoEditModel
+      updatedPhotoEditModel.isAutoEnhancementEnabled = !updatedPhotoEditModel.isAutoEnhancementEnabled
+      photoEditModel = updatedPhotoEditModel
+
+      if updatedPhotoEditModel.isAutoEnhancementEnabled {
+        PESDK.analytics.logEvent(.autoEnhancementOn)
+      } else {
+        PESDK.analytics.logEvent(.autoEnhancementOff)
+      }
+    }, { photoEditModel in
+      photoEditModel.isAutoEnhancementEnabled
+    })
+  ]
 }
 ```
