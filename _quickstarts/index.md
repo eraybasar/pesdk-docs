@@ -24,4 +24,10 @@ Want to integrate the PhotoEditor SDK into your app and need a place to start th
 <a href="{{ site.baseurl }}/quickstarts/ionic">
 ![Logo]({{ site.baseurl }}/assets/images/quickstarts/ionic/logo.png){: height="100px"  style="padding: 20px"}
 </a>
+<a href="{{ site.baseurl }}/quickstarts/ruby_gem">
+![Logo]({{ site.baseurl }}/assets/images/quickstarts/ruby_gem/logo.png){: height="100px"  style="padding: 20px"}
+</a>
+<a href="{{ site.baseurl }}/quickstarts/rails">
+![Logo]({{ site.baseurl }}/assets/images/quickstarts/rails/logo.png){: height="100px"  style="padding: 20px"}
+</a>
 {:center}
