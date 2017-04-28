@@ -67,12 +67,8 @@ defaults:
   - scope:
       path: "guides/html5/v3_6"
     values:
-      platform: html5
+      version: v3_6
 
-  - scope:
-      path: "guides/html5/v3_6/features"
-    values:
-      platform: html5
 
 # IOS
   - scope:
@@ -98,3 +94,16 @@ defaults:
     values:
       version: v3_1
       
+# quickstarts
+  - scope:
+      path: "quickstarts"
+    values:
+      layout: quickstarts/content
+      prefix: "PhotoEditor SDK | Quickstart "
+
+# features
+  - scope:
+      path: "features"
+    values:
+      layout: features/content
+      prefix: "PhotoEditor SDK | Feature "
