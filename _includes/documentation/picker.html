@@ -23,7 +23,7 @@
   {% for guide in guides_by_version %}
     <div class="documentation-picker__item" >
       {% if guide.name == include.version %}
-        <a class="is-active" href="{{site.baseurl}}/guides/android/{{guide.name}}">{{ guide.name | replace: '_', '.' }}</a>
+        <a class="is-active" href="{{site.baseurl}}/guides/{{platform}}/{{guide.name}}">{{ guide.name | replace: '_', '.' }}</a>
       {% else %}
         <a href="{{site.baseurl}}/guides/{{platform}}/{{guide.name}}">{{ guide.name | replace: '_', '.' }}</a>
       {% endif %}
