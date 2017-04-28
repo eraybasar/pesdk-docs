@@ -1,5 +1,5 @@
 ---
-layout: guides/ios/v6_5/content
+layout: guides/content
 title: &title Getting Started # title as shown in the menu and 
 order: 1
 menuitem: *title

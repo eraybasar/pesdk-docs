@@ -1,5 +1,5 @@
 ---
-layout: guides/ios/v7/content
+layout: guides/content
 title: &title FAQ # title as shown in the menu and 
 
 menuitem: *title

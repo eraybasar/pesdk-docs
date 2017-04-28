@@ -1,5 +1,5 @@
 ---
-layout: guides/android/v3_1/content
+layout: guides/content
 title: &title Transform # title as shown in the menu and 
 
 menuitem: *title

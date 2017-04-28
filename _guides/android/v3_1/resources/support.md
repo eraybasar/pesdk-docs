@@ -1,6 +1,6 @@
 ---
 published: true # Either published or not 
-layout: guides/android/v3_1/content
+layout: guides/content
 title: &title Support # title as shown in the menu and 
 
 menuitem: *title

@@ -1,5 +1,5 @@
 ---
-layout: guides/ios/v7/content
+layout: guides/content
 title: &title Logging # title as shown in the menu and 
 
 menuitem: *title

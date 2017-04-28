@@ -1,5 +1,5 @@
 ---
-layout: guides/html5/v3_6/content
+layout: guides/content
 title: HTML5 Events
 description: Understanding how users engage with a product is critical to every business. Learn how to track your user's interactions with the PhotoEditor SDK for HTML5. 
 

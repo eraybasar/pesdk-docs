@@ -1,5 +1,5 @@
 ---
-layout: guides/ios/v6_5/content
+layout: guides/content
 title: &title Photo Roll # title as shown in the menu and 
 
 menuitem: *title

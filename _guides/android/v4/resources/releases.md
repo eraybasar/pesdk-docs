@@ -1,6 +1,6 @@
 ---
 published: true # Either published or not 
-layout: guides/android/v4/content
+layout: guides/content
 title: &title Releases # title as shown in the menu and 
 
 menuitem: *title

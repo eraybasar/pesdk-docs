@@ -1,5 +1,5 @@
 ---
-layout: guides/html5/v3_6/content
+layout: guides/content
 title: &title Third Party # title as shown in the menu and 
 
 menuitem: *title

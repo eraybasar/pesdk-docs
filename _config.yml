@@ -56,9 +56,37 @@ collections:
 
 
 defaults:
+# HTML5
+  - scope:
+      path: "guides/html5"
+    values:
+      platform: html5
+      layout: guides/content
+
   - scope:
       path: "guides/html5/v3_6"
     values:
       platform: html5
-      version: v3_6
-      layout: guides/html5/v3_6/content
+
+# IOS
+  - scope:
+      path: "guides/ios"
+    values:
+      platform: ios
+      layout: guides/content
+  - scope:
+      path: "guides/ios/v6_5"
+    values:
+      version: v6_5
+
+# Android
+  - scope:
+      path: "guides/android"
+    values:
+      platform: android
+      layout: guides/content
+  - scope:
+      path: "guides/android/v3_1"
+    values:
+      version: v3_1
+      

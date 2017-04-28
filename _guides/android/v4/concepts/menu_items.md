@@ -1,5 +1,5 @@
 ---
-layout: guides/android/v4/content
+layout: guides/content
 title: &title Menu Items # title as shown in the menu and 
 
 menuitem: *title

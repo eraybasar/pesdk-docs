@@ -1,5 +1,5 @@
 ---
-layout: guides/html5/v3_6/content
+layout: guides/content
 title: HTML5 Configuration
 description: The PhotoEditor SDK for HTML5 can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires. 
 

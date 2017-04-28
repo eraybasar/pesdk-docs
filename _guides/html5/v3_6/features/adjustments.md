@@ -1,5 +1,5 @@
 ---
-layout: guides/html5/v3_6/content
+layout: guides/content
 title: Adjustments # title as shown in the menu and 
 menuitem: Adjustments
 order: 2
