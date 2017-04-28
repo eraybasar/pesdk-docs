@@ -1,8 +1,8 @@
-<div class="header header--medium">
+}<div class="header header--medium">
    <div class="header__container">
       <h1>{{ include.title }}</h1>
       <h2>
-         Choose your platform to get started
+        {% if include.subtitle %}{{include.subtitle}}{% else %}{{"Choose your platform to get started"}}{%endif%}
       </h2>
    </div>
 </div>
