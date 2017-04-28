@@ -1,4 +1,57 @@
+$headerHeight: 685px
+$mobileHeaderHeight: 550px
+$mediumHeaderHeight: 449px
+$mobileMediumHeaderHeight: 340px
+$smallHeaderHeight: 350px
+$mobileSmallHeaderHeight: 300px
+$dashboardHeaderHeight: 265px
+$mobileDashboardHeaderHeight: 200px
+$featuresHeaderHeight: 920px
+
+$topbarHeight: 80px
+$mobileTopbarHeight: 64px
+
 +block(header)
   $base: &
-  height: 80px
-  
+
+  height: $mobileHeaderHeight
+  background: url($baseurl + "/assets/images/shared/hero_background_tile.png") repeat, $pink-gradient
+
+  +screen-min-small
+    height: $headerHeight
+
+  +modifier(medium)
+    height: $mobileMediumHeaderHeight
+
+    +screen-min-small
+      height: $mediumHeaderHeight
+
+  +element(container)
+    @extend .container
+    padding: 60px 10px 0 10px
+    text-align: center
+    color: $white-color
+
+    +screen-min-small
+      padding-top: 160px
+
+    h1
+      @extend .semibold-italic-font
+      font-size: 28px
+      line-height: 35px
+      letter-spacing: -0.4
+
+      +screen-min-small
+        font-size: 38px
+        line-height: 45px
+
+    h2
+      @extend .light-font
+      margin-top: 10px
+      font-size: 17px
+      line-height: 25px
+      letter-spacing: -0.37px
+
+      +screen-min-small
+        font-size: 22px
+        line-height: 30px

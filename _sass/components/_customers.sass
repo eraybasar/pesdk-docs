@@ -1,0 +1,78 @@
++block(customers)
+  padding: 40px 15px
+  background: $light-gray-background-color
+  text-align: center
+
+  h3
+    @extend .italic-font
+    margin-bottom: 30px
+    font-size: 1.4rem
+
+  +element(seperator)
+    margin: 0 auto
+    width: 100%
+    max-width: 90%
+    height: 1px
+    background: #c8c8c8
+
+  +element(list)
+    display: block
+    list-style: none
+    margin: 0 auto
+    width: 100%
+    padding: 35px 0 30px 0
+    text-align: center
+
+    +element(item)
+      @include opacity(0.5)
+      display: inline-block
+      margin: 0 20px 10px
+      width: 160px
+      height: 50px
+      background: no-repeat center center
+      background-size: contain
+
+      a
+        display: block
+        height: 100%
+
+      +modifier(hp)
+        background-image: url($baseurl + "/assets/images/shared/companies/hp.png")
+        width: 50px
+
+      +modifier(shutterstock)
+        background-image: url($baseurl + "/assets/images/shared/companies/shutterstock.png")
+
+      +modifier(newscred)
+        background-image: url($baseurl + "/assets/images/shared/companies/newscred.png")
+
+      +modifier(reuters)
+        background-image: url($baseurl + "/assets/images/shared/companies/reuters.png")
+      
+      +modifier(vapiano)
+        background-image: url($baseurl + "/assets/images/shared/companies/vapiano.png")
+
+      &:hover
+        @include opacity(0.8)
+
+      +screen-small
+        &:last-child
+          margin-bottom: 0px
+
+  +modifier(vertical)
+    padding: 80px 0 0
+    text-align: left
+
+    +block(customers)
+      +element(list)
+        padding-top: 0
+        text-align: left
+
+        +element(item)
+          margin: 25px 0
+          background-position: left
+
+      +element(seperator)
+        display: none
+
+
