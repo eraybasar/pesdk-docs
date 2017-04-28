@@ -72,6 +72,8 @@ defaults:
       path: "guides/html5/v3_6"
     values:
       version: v3_6
+      prefix: "PhotoEditor SDK | HTML5 "
+      description: "A quick guide on how to easily get started with the PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities."
 
 # IOS
   - scope:
