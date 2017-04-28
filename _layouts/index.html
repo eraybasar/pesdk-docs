@@ -1,8 +1,20 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+{% include head.html %}
 
-<div class="documentation documentation--light-gray-background">
-{% include hero.html %}
-{% include guide_selection.html %}
-</div>
+<body>
+  {% include header.html %}
+  <div class="main main--grey">
+    {% include hero.html %}
+    {% include guide_selection.html %}
+    <div class="documentation documentation--light-gray-background documentation__preview-blocks">
+      {% include preview_block.html title="Features" text="Learn how to set up your own photo editor within minutes" link="/features" link_title="Show Features" %}
+      {% include preview_block.html class="preview-block--right" title="Quickstarts" text="Start using the SDK with your favorite Framework" link="/quickstarts" link_title="Show Quickstarts" %}
+    </div>
+    {% include customers.html %}
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>
+

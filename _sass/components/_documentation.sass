@@ -3,10 +3,6 @@
   padding-bottom: 60px
   background: $white-color
 
-  +modifier(light-gray-background)
-    padding: 0
-    background: $light-gray-background-color
-
   +element(disclaimer)
     margin-bottom: 10px
     border: 1px solid $primary-color
@@ -14,7 +10,12 @@
 
     h4
       margin-top: 0 !important
- 
+
+  +element(preview-blocks)
+    @include container(1000px)
+    margin: 40px auto
+    background: $light-gray-background-color
+
 +block(todo)
   background: yellow
   border: 4px solid red

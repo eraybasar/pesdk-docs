@@ -1,5 +1,5 @@
 +block(footer)
-  padding: 110px 0 20px
+  padding: 0 0 20px
   background: $pink-gradient
 
   +element(logo)
@@ -21,11 +21,16 @@
     padding: 25px 45px 45px
     background: rgba(255, 255, 255, 0.15)
     text-align: left
-    color: $white-color
+
+    a
+      font-size: 1.2rem
+      color: $white-color
+
 
   +elements(groups, list)
     display: inline-block
     list-style: none
+    color: $white-color
 
   +element(groups)
     display: table
@@ -52,7 +57,3 @@
 
         +screen-small
           margin-bottom: 10px
-
-  a
-    font-size: 1.2rem
-    color: $white-color

@@ -50,14 +50,14 @@
 
       background: no-repeat center center
 
-      $icons: html5 ios android
+      $icons: html5 ios android star
 
       @each $icon in $icons
         +modifier($icon)
           background-size: contain
-          background-image: url($baseurl + "/assets/images/shared/guide-selection/#{$icon}.png")
+          background-image: url($baseurl + "/assets/images/shared/icons/#{$icon}.png")
           +retina
-            background-image: url($baseurl + "/assets/images/shared/guide-selection/#{$icon}@2x.png")
+            background-image: url($baseurl + "/assets/images/shared/icons/#{$icon}@2x.png")
 
   +element(seperator)
     margin: 15px auto
