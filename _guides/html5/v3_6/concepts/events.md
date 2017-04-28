@@ -1,6 +1,7 @@
 ---
 layout: guides/html5/v3_6/content
-title: &title Events # title as shown in the menu and 
+title: HTML5 Events
+description: Understanding how users engage with a product is critical to every business. Learn how to track your user's interactions with the PhotoEditor SDK for HTML5. 
 
 menuitem: *title
 order: 0
