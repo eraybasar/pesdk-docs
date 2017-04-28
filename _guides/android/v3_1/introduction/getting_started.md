@@ -161,13 +161,13 @@ Please take a look at the hint in the next step in order to integrate the Androi
 ## Integration
 
 In order to open the camera preview and pass the resulting image to the editor, create a
-`CameraPreviewBuilder` and start with `startActivityForResult(activity, custom_id)`.
+`CameraPreviewBuilder` and start the `CameraPreviewActivity` with `startActivityForResult(activity, custom_id)`:
 
 > __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
 as demonstrated in the following example. This ensures correct behaviour on Android 6.0 and above.__
 
 ```java
-public class MainActivity extends Activity implements PermissionRequest.Response{
+public class MainActivity extends Activity implements PermissionRequest.Response {
 
     public static int CAMERA_PREVIEW_RESULT = 1;
 
@@ -226,7 +226,7 @@ public class MainActivity extends Activity implements PermissionRequest.Response
         }
     }
 
-    //Important for Android 6.0 and above permisstion request, don't forget this!
+    // Important permission request for Android 6.0 and above, don't forget this!
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -240,7 +240,7 @@ public class MainActivity extends Activity implements PermissionRequest.Response
 
     @Override
     public void permissionDenied() {
-        // The Permission was rejected by the user, so the Editor was not opened because it can not save the result image.
+        // The Permission was rejected by the user. The Editor was not opened, as it could not save the result image.
         // TODO for you: Show a Hint to the User
     }
 }
@@ -248,24 +248,85 @@ public class MainActivity extends Activity implements PermissionRequest.Response
 
 ### Start Editor standalone (without camera).
 
-You can directly open the editor for an existing image by modifying the example above:
+You may directly open the editor for an existing image by modifying the example above:
 
 ```java
-String myPicture = "PATH_TO_THE_IMAGE"
-settingsList
-    .getSettingsModel(EditorLoadSettings.class)
-    .setImageSourcePath(myPicture, true) // Load with delete protection true!
-    
-    .getSettingsModel(EditorSaveSettings.class)
-    .setExportDir(Directory.DCIM, FOLDER)
-    .setExportPrefix("result_")
-    .setSavePolicy(
-        EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT
-    );
+public class MainActivity extends Activity implements PermissionRequest.Response{
 
-    new PhotoEditorBuilder(this)
-        .setSettingsList(settingsList)
-        .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+    public static int CAMERA_PREVIEW_RESULT = 1;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        SettingsList settingsList = new SettingsList();
+        String myPicture = "PATH_TO_THE_IMAGE"
+        settingsList
+            .getSettingsModel(EditorLoadSettings.class)
+            .setImageSourcePath(myPicture, true) // Load with delete protection true!
+            
+            .getSettingsModel(EditorSaveSettings.class)
+            .setExportDir(Directory.DCIM, FOLDER)
+            .setExportPrefix("result_")
+            .setSavePolicy(
+                EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT
+            );
+
+            new PhotoEditorBuilder(this)
+                .setSettingsList(settingsList)
+                .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+            }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == CAMERA_PREVIEW_RESULT) {
+            String resultPath = 
+                   data.getStringExtra(CameraPreviewActivity.RESULT_IMAGE_PATH);
+            String sourcePath =
+                   data.getStringExtra(CameraPreviewActivity.SOURCE_IMAGE_PATH);
+
+            if (resultPath != null) {
+                // Scan result file
+                File file =  new File(resultPath);
+                Intent scanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+                Uri co"tentUri = Uri.f"omFile(file);
+                scanIntent.setData(contentUri);
+                sendBroadcast(scanIntent);
+            }
+
+           if (sourcePath != null) {
+                // Scan camera file
+                File file =  new File(sourcePath);
+                Intent scanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+                Uri contentUri = Uri.fromFile(file);
+                scanIntent.setData(contentUri);
+                sendBroadcast(scanIntent);
+            }
+
+            Toast.makeText(this, "Image Save on: " + resultPath, Toast.LENGTH_LONG).show();
+        }
+    }
+
+    // Important permission request for Android 6.0 and above, don't forget this!
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    @Override
+    public void permissionGranted() {
+
+    }
+
+    @Override
+    public void permissionDenied() {
+        // The Permission was rejected by the user. The Editor was not opened, as it could not save the result image.
+        // TODO for you: Show a Hint to the User
+    }
+}
 ```
 
 ## Sample Application
