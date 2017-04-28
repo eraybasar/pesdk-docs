@@ -27,7 +27,7 @@ A commercial license is required for any app or service that has any form of mon
 
 ### Features
 
-* __Android API Level 15+__. Covers nearly 95% of all Android devices.
+* __Android API Level 16+__. Covers nearly 95% of all Android devices.
 * __Default UI__ for camera preview and editing. Based on Intents and Activities.
 * __Fast image export up to 4294 Megapixels__. Even with large images and slow devices with low memory, the export is done in adequate time with an intelligent unrivaled background processing technology.
 * __Generic camera support__. Integrated and featureful on most Android phones.

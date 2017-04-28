@@ -26,7 +26,7 @@ The following software is required:
 
 * Mac OS X, Windows, or Linux
 * Android Studio 2.2+
-* Android SDK 15+
+* Android SDK 16+
 * Gradle 2.14+
 * Android Build Tools 25.0.2+
 * Android Support Repository 25.1.1+
@@ -35,7 +35,7 @@ You will need a **valid license file** in order to use the PhotoEditor SDK in yo
 
 ## Supported Android versions
 
-The PhotoEditor SDK supports **Android 4.0.3+ (API Level 15)** as the `minSdkVersion`, but it must be
+The PhotoEditor SDK supports **Android 4.1.0+  API 16** as the `minSdkVersion`, but it must be
 compiled with `Build-API` and `targetSdkVersion` Level 25+ to support Android 7.1 and above.
 
 ## Setting up the workspace
