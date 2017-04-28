@@ -25,7 +25,7 @@ Wether you just want to learn to use the PhotoEditor SDK or just see what can be
 We offer an {% include guides/ios/example-app.md %} on the App Store, that shows off the PhotoEditor SDKs interface and our default configuration.
 
 ## Demo repository
-For code examples take a look at the {% include guides/ios/demo-repository.md %}. This demonstrates how to integrate the SDK from Swift and Objective-C and shows how to configure it to match your needs.
+For code examples take a look at the {% include guides/ios/demo-repository.md %}. This demonstrates how to integrate the SDK from Swift and Objective-C and shows how to configure it to match your needs. There are examples for Swift and Objective-C, presenting the camera and editor, and extensive customization.
 
 ## Example Integrations
 
