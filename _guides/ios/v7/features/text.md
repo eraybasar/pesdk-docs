@@ -1,18 +1,18 @@
 ---
 layout: guides/ios/v7/content
-title: &title Text # title as shown in the menu and 
+title: &title Text # title as shown in the menu and
 
 menuitem: *title
 order: 4
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - feature
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
@@ -24,8 +24,9 @@ The tool is implemented in the `TextToolController` class and can be configured 
 
 ## Adding and removing fonts
 With version 6 of our SDK, we added an easy way to use your own fonts.
-The `TextToolControllerOptions` now has a `fonts` property that holds an array of `Font` objects.
-The default is an empty array. In that case the SDK loads a default set of fonts.
+The `FontImporter` class now has a static `fonts` property that holds an array of `Font` objects.
+By default this array contains all fonts that we ship with the SDK.
+
 A `Font` object is a simple collection of the metadata of a font, the `fontName`, the `displayName`
 and the `path`. The `path` points to the font file, or is empty if a system font should be added.
 Since font names or their family names can get quite long or ugly, the string stored in the `displayName` property
@@ -36,17 +37,16 @@ to understand how the name must be constructed.
 
 Here is an example font array that adds system fonts:
 ```swift
-private func customizeTextTool(_ builder: ConfigurationBuilder) {
-    builder.configureTextToolController { options in
-        let fonts = [Font(displayName: "Arial", fontName: "ArialMT"),
-                        Font(displayName: "Helvetica", fontName: "Helvetica"),
-                        Font(displayName: "Avenir", fontName: "Avenir-Heavy"),
-                        Font(displayName: "Chalk", fontName: "Chalkduster"),
-                        Font(displayName: "Copperplate", fontName: "Copperplate"),
-                        Font(displayName: "Noteworthy", fontName: "Noteworthy-Bold")
-        ]
-        options.fonts = fonts
-    }
+private func customizeFonts() {
+  FontImporter.fonts = [
+    Font(displayName: "Arial", fontName: "ArialMT"),
+    Font(displayName: "Helvetica", fontName: "Helvetica"),
+    Font(displayName: "Avenir", fontName: "Avenir-Heavy"),
+    Font(displayName: "Chalk", fontName: "Chalkduster"),
+    Font(displayName: "Copperplate", fontName: "Copperplate"),
+    Font(displayName: "Noteworthy", fontName: "Noteworthy-Bold")
+  ]
 }
 ```
+
 Supported types are **ttf** and **otf**.

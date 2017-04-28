@@ -37,7 +37,7 @@ to understand how the name must be constructed.
 
 Here is an example font array that adds system fonts:
 ```swift
-private func customizeTextTool() {
+private func customizeFonts() {
   FontImporter.fonts = [
     Font(displayName: "Arial", fontName: "ArialMT"),
     Font(displayName: "Helvetica", fontName: "Helvetica"),
