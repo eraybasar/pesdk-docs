@@ -1,6 +1,8 @@
 {% assign platform= include.platform %}
+{% assign android_guides = site.guides | where: "platform", platform %}
+{% assign guides_by_version = android_guides | group_by: "version" | sort: "name" | reverse %}
+
 <div class="documentation-picker">
-  
   <div class="documentation-picker__item" >
     {% if platform == "html5" %}
      <a class="is-active" href="{{site.baseurl}}/guides/html5">Html5</a>
@@ -22,5 +24,15 @@
       <a href="{{site.baseurl}}/guides/android">Android</a>
     {% endif %}
   </div>
-  
+  <div class="documentation-picker__spacer"></div>
+
+  {% for guide in guides_by_version %}
+    <div class="documentation-picker__item" >
+      {% if guide.name == include.version %}
+        <a class="is-active" href="{{site.baseurl}}/guides/android/{{guide.name}}">{{ guide.name | replace: 'v', '' | replace: '_', '.' }}</a>
+      {% else %}
+        <a href="{{site.baseurl}}/guides/{{platform}}/{{guide.name}}">{{ guide.name | replace: 'v', '' | replace: '_', '.' }}</a>
+      {% endif %}
+    </div>
+  {% endfor %}
 </div>
