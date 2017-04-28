@@ -67,6 +67,7 @@ defaults:
       platform: html5
       layout: guides/content
       prefix: "PhotoEditor SDK | HTML5 "
+      description: "A quick guide on how to easily get started with the PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
       path: "guides/html5/v3_6"
     values:
@@ -79,6 +80,7 @@ defaults:
       platform: ios
       layout: guides/content
       prefix: "PhotoEditor SDK | iOS "
+      description: "A quick guide on how to easily get started with the PhotoEditor SDK for iOS. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
       path: "guides/ios/v6_5"
     values:
@@ -91,6 +93,7 @@ defaults:
       platform: android
       layout: guides/content
       prefix: "PhotoEditor SDK | Android "
+      description: "A quick guide on how to easily get started with the PhotoEditor SDK for Android. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
       path: "guides/android/v3_1"
     values:
@@ -102,6 +105,7 @@ defaults:
     values:
       layout: quickstarts/content
       prefix: "PhotoEditor SDK | Quickstart "
+      description: "View our Quickstarts Guides for integrating the PhotoEditor SDK for specific framesworks such as Ionic, React Native, Cordova, Rails or Ruby Gem"
 
 # features
   - scope:
@@ -109,3 +113,4 @@ defaults:
     values:
       layout: features/content
       prefix: "PhotoEditor SDK | Feature "
+      description: "Learn more about the key features of the PhotoEditor SDK such as Filters, Transform, Text, Stickers, Adjustements or Brush"
