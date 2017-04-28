@@ -4,6 +4,7 @@ title: &title Getting Started # title as shown in the menu and
 order: 1
 menuitem: *title
 platform: android
+version: v4
 category: 
   - guide
 
