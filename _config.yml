@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The PhotoEditor SDK is a fully customizable mean machine. Start your free trial and integrate the versatile editor into your own HTML5, iOS or Android app
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://docs.photoeditorsdk.com" # the base hostname & protocol for you
-name: "Photo Editor SDK Docs"
+name: "PhotoEditor SDK Docs"
 keywords: "photo, editor, android, ios, html5, image, editing, canvas, javascript"
 prefix: "PhotoEditor SDK | "
 
@@ -53,6 +53,9 @@ collections:
   guides: 
     output: true
     permalink: /:collection/:path
+  apidocs: 
+    output: true
+    permalink: /:collection/:path
 
 
 
@@ -68,7 +71,6 @@ defaults:
       path: "guides/html5/v3_6"
     values:
       version: v3_6
-
 
 # IOS
   - scope:

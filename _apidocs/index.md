@@ -1,6 +1,6 @@
 ---
-layout: guides/index
-title: Guides # title as shown in the menu and 
+layout: apidocs/index
+title: Api Docs #  
 order: 1
 category: 
 tags: &tags # tags that are necessary
