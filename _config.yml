@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://docs.photoeditorsdk.com" # the base hostname & protocol for you
 name: "Photo Editor SDK Docs"
 keywords: "photo, editor, android, ios, html5, image, editing, canvas, javascript"
+prefix: "PhotoEditor SDK | "
 
 image: https://www.photoeditorsdk.com/assets/images/meta-image.jpg
 twitter_username: imgly
@@ -62,9 +63,14 @@ defaults:
     values:
       platform: html5
       layout: guides/content
-
+      prefix: "PhotoEditor SDK | HTML5 "
   - scope:
       path: "guides/html5/v3_6"
+    values:
+      platform: html5
+
+  - scope:
+      path: "guides/html5/v3_6/features"
     values:
       platform: html5
 
@@ -74,6 +80,7 @@ defaults:
     values:
       platform: ios
       layout: guides/content
+      prefix: "PhotoEditor SDK | iOS "
   - scope:
       path: "guides/ios/v6_5"
     values:
@@ -85,6 +92,7 @@ defaults:
     values:
       platform: android
       layout: guides/content
+      prefix: "PhotoEditor SDK | Android "
   - scope:
       path: "guides/android/v3_1"
     values:
