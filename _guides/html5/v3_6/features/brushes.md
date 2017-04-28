@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title Brushes # title as shown in the menu and 
+title: &title Brush # title as shown in the menu and 
 
 menuitem: *title
 order: 7
