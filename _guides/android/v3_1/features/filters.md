@@ -114,8 +114,7 @@ the list of available filters by creating a `LutColorFilter` object just as desc
 2. Preview image resource for the `CameraPreview` activity. This image is replaced with a filtered version within the editor.
 3. Drawable-nodpi or Raw resource identifier of the PNG LUT.
 
-> __WARNING:__ Be sure to put the PNG LUT to the 'res/raw' **OR** the 'res/drawable-nodpi' folder. Otherwise the LUT will be scaled by the Android system.
-> Use the 'raw' folder if you want to optimize the PNG file size yourself or add the file to the 'drawable-nodpi' folder in order to let the Android compiler optimize it for you.
+> __WARNING:__ Be sure to put the LUT PNG file in the 'res/drawable-nodpi' folder. Otherwise the LUT will be scaled by the Android system. 
 
 Adding the custom filter to the available filters then looks like this:
 
