@@ -1,26 +1,32 @@
-{% assign platform= include.platform %}
+{% assign current_platform= include.platform %}
+{% assign android_guides = site.guides | where: "platform", platform %}
+{% assign guides_by_version = android_guides | group_by: "version" | sort: "name" | reverse %}
+{% assign platforms = "Html5|iOS|Android" | split: "|" %}
+
 <div class="documentation-picker">
-  
-  <div class="documentation-picker__item" >
-    {% if platform == "html5" %}
-     <a class="is-active" href="{{site.baseurl}}/guides/html5">Html5</a>
+  {% for platform in platforms %}
+    {% assign platform_downcase = platform | downcase %}
+    {% if platform_downcase == current_platform %}
+      <div class="documentation-picker__item documentation-picker__item--{{platform_downcase}} documentation-picker__item--{{platform_downcase}}--active">
+        <a class="is-active" href="{{site.baseurl}}/guides/{{platform_downcase}}">{{platform}}</a>
+      </div>
     {% else %}
-      <a href="{{site.baseurl}}/guides/html5">Html5</a>
+      <div class="documentation-picker__item documentation-picker__item--{{platform_downcase}}">
+        <a href="{{site.baseurl}}/guides/{{platform_downcase}}">{{platform}}</a>
+      </div>
     {% endif %}
-  </div>
-  <div class="documentation-picker__item" >
-    {% if platform == "ios" %}
-     <a class="is-active" href="{{site.baseurl}}/guides/ios">iOS</a>
-    {% else %}
-      <a href="{{site.baseurl}}/guides/ios">iOS</a>
-    {% endif %}
-  </div>
-  <div class="documentation-picker__item" >
-    {% if platform == "android" %}
-     <a class="is-active" href="{{site.baseurl}}/guides/android">Android</a>
-    {% else %}
-      <a href="{{site.baseurl}}/guides/android">Android</a>
-    {% endif %}
-  </div>
-  
+      
+  {% endfor %}  
+
+  <div class="documentation-picker__spacer"></div>
+
+  {% for guide in guides_by_version %}
+    <div class="documentation-picker__item" >
+      {% if guide.name == include.version %}
+        <a class="is-active" href="{{site.baseurl}}/guides/android/{{guide.name}}">{{ guide.name | replace: '_', '.' }}</a>
+      {% else %}
+        <a href="{{site.baseurl}}/guides/{{platform}}/{{guide.name}}">{{ guide.name | replace: '_', '.' }}</a>
+      {% endif %}
+    </div>
+  {% endfor %}
 </div>

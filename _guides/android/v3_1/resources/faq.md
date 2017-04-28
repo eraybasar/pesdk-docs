@@ -8,8 +8,6 @@ platform: android
 version: v3_1
 platform:
   - android
-version:
-  - v3_1
 category: 
   - guide
   - resource

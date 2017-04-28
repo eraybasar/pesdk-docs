@@ -4,10 +4,8 @@ title: &title Overlays # title as shown in the menu and
 
 menuitem: *title
 order: 1
-platform:
-  - html5
-version:
-  - v3_6
+platform: html5
+version: v3_6
 category: 
   - guide
   - feature

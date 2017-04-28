@@ -8,8 +8,6 @@ platform: android
 version: v4
 platform:
   - android
-version:
-  - v4
 category: 
   - guide
   - resource
