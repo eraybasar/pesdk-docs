@@ -1,10 +1,14 @@
----
-layout: default
----
-<div class="container">
-  <div class="documentation">
-    <article class="documentation-content markdown-body"> 
-      {{ content }}
-    </article>
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  <div class="main main--grey">
+    {% include hero.html title="Guides" %}
+    {% include guide_selection.html %}
   </div>
-</div>
+  {% include footer.html %}
+</body>
+
+</html>
