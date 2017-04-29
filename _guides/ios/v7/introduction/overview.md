@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Overview # title as shown in the menu and 
+title: &title Overview # title as shown in the menu and
 
 menuitem: *title
 order: 0
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - introduction
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 # Overview
@@ -39,6 +39,15 @@ A commercial license is required for any app or service that has any form of mon
 * Highly customizable: Style the UI as you wish to match your needs.
 * Objective-C support: All of our public API is Objective-C compatible.
 * Fast: Our renderer uses hardware acceleration and the GPU, which makes it lightning fast.
+
+### New in Version 7.0
+
+* New stickers, frames and fonts.
+* The SDK has been rebranded to `PhotoEditorSDK`.
+* We now include the dSYM and bcsymbolmap files in the SDK for better debugging.
+* Faster and better looking adjustments.
+* Faster and better looking filters.
+* The frame tool has been updated to look better than ever before.
 
 ### New in Version 6.0
 

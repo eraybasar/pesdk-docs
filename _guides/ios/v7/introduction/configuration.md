@@ -97,7 +97,7 @@ that takes an array of `MenuItem`'s. We recommend having a separate function to 
 ```swift
 func menuItems(with configuration: Configuration) -> [MenuItem] {
     return [
-        .tool("Transform", UIImage(named: "ic_crop_48pt", in: Bundle.imglyKitBundle, compatibleWith: nil)!, TransformToolController(configuration: configuration))
+        .tool("Transform", UIImage(named: "ic_crop_48pt", in: Bundle.pesdkBundle, compatibleWith: nil)!, TransformToolController(configuration: configuration))
     ]
 }
 ```
@@ -117,28 +117,28 @@ Here is the code for the current default set of menu items:
 /// - Returns: An array with the default menu items.
 public static func defaultItems(with configuration: Configuration) -> [MenuItem] {
   return [
-      .tool("Transform".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_transform_48pt"), TransformToolController(configuration: configuration)),
-      .tool("Overlay".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_overlay_48pt"), OverlayToolController(configuration: configuration)),
-      .tool("Filter".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_filter_48pt"), FilterToolController(configuration: configuration)),
-      .tool("Adjust".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_adjust_48pt"), AdjustToolController(configuration: configuration)),
-      .tool("Text".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_text_48pt"), TextToolController(configuration: configuration)),
-      .tool("Sticker".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_sticker_48pt"), StickerToolController(configuration: configuration)),
-      .tool("Frame".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_frame_48pt"), FrameToolController(configuration: configuration)),
-      .tool("Brush".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_brush_48pt"), BrushToolController(configuration: configuration)),
-      .tool("Focus".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_focus_48pt"), FocusToolController(configuration: configuration)),
-      .action("Magic".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_magic_48pt"), { photoEditModel in
-        var updatedPhotoEditModel = photoEditModel
-        updatedPhotoEditModel.isAutoEnhancementEnabled = !updatedPhotoEditModel.isAutoEnhancementEnabled
-        photoEditModel = updatedPhotoEditModel
+    .tool("Transform".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_transform_48pt"), TransformToolController(configuration: configuration)),
+    .tool("Filter".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_filter_48pt"), FilterToolController(configuration: configuration)),
+    .tool("Adjust".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_adjust_48pt"), AdjustToolController(configuration: configuration)),
+    .tool("Sticker".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_sticker_48pt"), StickerToolController(configuration: configuration)),
+    .tool("Text".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_text_48pt"), TextToolController(configuration: configuration)),
+    .tool("Overlay".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_overlay_48pt"), OverlayToolController(configuration: configuration)),
+    .tool("Frame".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_frame_48pt"), FrameToolController(configuration: configuration)),
+    .tool("Brush".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_brush_48pt"), BrushToolController(configuration: configuration)),
+    .tool("Focus".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_focus_48pt"), FocusToolController(configuration: configuration)),
+    .action("Magic".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_magic_48pt"), { photoEditModel in
+      var updatedPhotoEditModel = photoEditModel
+      updatedPhotoEditModel.isAutoEnhancementEnabled = !updatedPhotoEditModel.isAutoEnhancementEnabled
+      photoEditModel = updatedPhotoEditModel
 
-        if updatedPhotoEditModel.isAutoEnhancementEnabled {
-          PESDK.analytics.logEvent(.autoEnhancementOn)
-        } else {
-          PESDK.analytics.logEvent(.autoEnhancementOff)
-        }
-      }, { photoEditModel in
-        photoEditModel.isAutoEnhancementEnabled
-      })
-    ]
+      if updatedPhotoEditModel.isAutoEnhancementEnabled {
+        PESDK.analytics.logEvent(.autoEnhancementOn)
+      } else {
+        PESDK.analytics.logEvent(.autoEnhancementOff)
+      }
+    }, { photoEditModel in
+      photoEditModel.isAutoEnhancementEnabled
+    })
+  ]
 }
 ```

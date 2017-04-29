@@ -1,19 +1,19 @@
 ---
 layout: guides/content
-title: &title Localization # title as shown in the menu and 
+title: &title Localization # title as shown in the menu and
 
 menuitem: *title
 order: 0
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - concept
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
----ished: true # Either published or not 
+published: true # Either published or not
+---ished: true # Either published or not
 ---
 
 # Localization
@@ -25,7 +25,7 @@ We also provide two properties to customize your localization, `PESDK.localizati
 ## Add further localization to the PhotoEditor SDK
 
 You can either set new localization programmatically or add further localization via adding the corresponding folders.
-To get an overview of all available strings that need to be localized, look inside /imglyKit.bundle/en.lproj/Localizable.strings.
+To get an overview of all available strings that need to be localized, look inside /PhotoEditorSDK.bundle/en.lproj/Localizable.strings.
 As mentioned above, there are two ways to add localization programmatically. The first is to set a localization dictionary like so:
 
 ```swift

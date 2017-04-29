@@ -118,7 +118,6 @@ Here is the code for the current default set of menu items:
 public static func defaultItems(with configuration: Configuration) -> [MenuItem] {
   return [
     .tool("Transform".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_transform_48pt"), TransformToolController(configuration: configuration)),
-    .tool("Overlay".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_overlay_48pt"), OverlayToolController(configuration: configuration)),
     .tool("Filter".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_filter_48pt"), FilterToolController(configuration: configuration)),
     .tool("Adjust".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_adjust_48pt"), AdjustToolController(configuration: configuration)),
     .tool("Text".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_text_48pt"), TextToolController(configuration: configuration)),

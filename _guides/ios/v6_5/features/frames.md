@@ -21,7 +21,7 @@ published: true # Either published or not
 
 The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames. For the flexible frames tool that works perfectly for creatives with repeatable or stretchable areas, we abandoned the 9-patch standard and replaced it with a novel and even more flexible 12-patch layout. The static frames tool can be used for complex and irregular creatives.
 
-The tool is implemented in the `FrameToolController` class and can be customized using the [`FrameToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FrameToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section
+The tool is implemented in the `FrameToolController` class and can be customized using the [`FrameToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/FrameToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section
 
 ## Adding and removing frames
 

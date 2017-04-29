@@ -23,7 +23,7 @@ You might think that adding your own filters requires super math skills, or is c
 Well, not at all. The way we realize filters, makes it super easy. Actually you don't need to code filters,
 you just need a program like gimp of photoshop. The only thing that needs to be done in code, is to add the filter you created.
 
-The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`](https://static.photoeditorsdk.com/docs/ios/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.
+The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.
 
 ## Setting available filters
 
