@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title FAQ # title as shown in the menu and 
+title: &title FAQ # title as shown in the menu and
 
 menuitem: *title
 order: 0
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - resource
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 # Frequently Asked Questions
@@ -21,7 +21,7 @@ published: true # Either published or not
 If you see an issue like this one:
 ```bash
 dyld: Library not loaded: @rpath/libswiftAVFoundation.dylib
-  Referenced from: /Users/newmetl/Library/Developer/CoreSimulator/Devices/E2DE480D-05E4-47F7-9266-9598C787AA1F/data/Containers/Bundle/Application/7CA0CE63-7952-4EE5-92A4-81E85FCB7695/Test Integration.app/Frameworks/imglyKit.framework/imglyKit
+  Referenced from: /Users/newmetl/Library/Developer/CoreSimulator/Devices/E2DE480D-05E4-47F7-9266-9598C787AA1F/data/Containers/Bundle/Application/7CA0CE63-7952-4EE5-92A4-81E85FCB7695/Test Integration.app/Frameworks/PhotoEditorSDK.framework/PhotoEditorSDK
   Reason: image not found
 ```
 Then make sure, that the build setting `Embedded Content Contains Swift Code` is set to `YES`.
@@ -32,7 +32,7 @@ We have a full-source license. Please [contact us](https://www.photoeditorsdk.co
 
 ## Framework Size
 
-You might be wondering why the `imglyKit.framework` folder is over 60 MB large. This can be irritating at first, however this is not the size that your users will get.
+You might be wondering why the `PhotoEditorSDK.framework` folder is almost 100 MB large. This can be irritating at first, however this is not the size that your users will get.
 
 The PhotoEditor SDK includes many UI components, lookup tables and fonts. This results in a lot of code and thus a sizable binary, although there are certain factors that make it appear larger than it actually is. We’re working hard to ensure the framework size stays as low as possible.
 
@@ -46,11 +46,9 @@ Bitcode is a large size contributor. As bitcode is unoptimized code in a generic
 
 Apple also actively works on reducing app binary size, and added [App Thinning](https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html) in iOS 9. This creates optimized versions of your app and the user only downloads the architecture that is required for the current device. This also strips away bitcode, resulting in a total SDK footprint of about 10-20 MB.
 
-Caveat: This only works for iOS 9. Your iOS 8 users will get the binary with both architectures and bitcode. This is a temporary problem that will go away once iOS 8 is no longer supported. We can provide a variant of the framework without bitcode on request.
+### PhotoEditorSDK.bundle
 
-### imglyKit.bundle
-
-The PhotoEditor SDK needs various images and localization files, which are distributed in the imglyKit.bundle folder. This adds about 10 MB to your application. Images are highly optimized to take up as little space as possible. You could remove images that are not needed, but there is a risk you might delete too much.
+The PhotoEditor SDK needs various images and localization files, which are distributed in the PhotoEditorSDK.bundle folder. This adds about 8 MB to your application. Images are highly optimized to take up as little space as possible. You could remove images that are not needed, but there is a risk you might delete too much.
 
 ### Swift
 
@@ -82,23 +80,23 @@ Bitcode is an intermediate representation of a compiled binary. Including bitcod
 
 ### Checking for Bitcode
 
-Open a terminal and navigate into the `imglyKit.framework` folder.
+Open a terminal and navigate into the `PhotoEditorSDK.framework` folder.
 
 Here is how to check what architectures are available:
 
 ```bash
-$ lipo -info imglyKit
-Architectures in the fat file: imglyKit are: x86_64 i386 armv7 arm64
+$ lipo -info PhotoEditorSDK
+Architectures in the fat file: PhotoEditorSDK are: x86_64 i386 armv7 arm64
 ```
 
 Check if bitcode exists for a particular slice:
 
 ```bash
-$ otool -arch arm64 -l imglyKit | grep LLVM
+$ otool -arch arm64 -l PhotoEditorSDK | grep LLVM
   segname __LLVM
   segname __LLVM
 
-$ otool -arch armv7 -l imglyKit | grep LLVM
+$ otool -arch armv7 -l PhotoEditorSDK | grep LLVM
   segname __LLVM
   segname __LLVM
 ```
@@ -108,7 +106,7 @@ Some articles will recommend searching for `bitcode`. However, LLVM is a much be
 Xcode 7.2 added a new tool called `bitcode_strip` that allows to remove bitcode chunks from binaries:
 
 ```bash
-$ xcrun bitcode_strip -r imglyKit -o imglyKit
+$ xcrun bitcode_strip -r PhotoEditorSDK -o PhotoEditorSDK
 ```
 
 Removing bitcode will disallow Apple to run binary optimizations on your behalf. You can verify that it worked by checking the file size, which should be significantly smaller than the original file, or use `otool` as listed above.

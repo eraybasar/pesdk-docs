@@ -1,1 +1,1 @@
-[demo repository](https://github.com/imgly/pesdk-ios-demo)
+[demo repository](https://github.com/imgly/pesdk-ios-examples)
