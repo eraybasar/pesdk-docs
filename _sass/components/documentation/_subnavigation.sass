@@ -1,9 +1,10 @@
 +block(documentation-subnavigation)
+  text-align: center
   +screen-min-small
     float: left
     margin-top: 0
     width: 200px
-
+    text-align: left
 
   +element(section)
     margin-bottom: 24px
@@ -33,7 +34,8 @@
       clear: left
       margin-right: auto  
       width: 100%
-      padding-left: 20px
+      +screen-min-small
+        padding-left: 20px
       > a
         line-height: 36px
         font-size: 14px
