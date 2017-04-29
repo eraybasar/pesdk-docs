@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title PhotoEditor SDK | Demos # title as shown in the menu and 
+title: &title Demos # title as shown in the menu and 
 
 menuitem: Demos
 order: 3

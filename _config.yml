@@ -12,9 +12,9 @@ description: > # this means to ignore newlines until "baseurl:"
   The PhotoEditor SDK is a fully customizable mean machine. Start your free trial and integrate the versatile editor into your own HTML5, iOS or Android app
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://docs.photoeditorsdk.com" # the base hostname & protocol for you
-name: "PhotoEditor SDK Docs"
+name: "PhotoEditor SDK Documentation"
 keywords: "photo, editor, android, ios, html5, image, editing, canvas, javascript"
-prefix: "PhotoEditor SDK | "
+prefix: "PhotoEditor SDK"
 
 image: https://www.photoeditorsdk.com/assets/images/meta-image.jpg
 twitter_username: imgly
@@ -67,8 +67,8 @@ defaults:
     values:
       platform: html5
       layout: guides/content
-      prefix: "PhotoEditor SDK | HTML5 "
       description: "A quick guide on how to easily get started with the PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities."
+
   - scope:
       path: "guides/html5/v3_6"
     values:
@@ -96,7 +96,6 @@ defaults:
     values:
       platform: android
       layout: guides/content
-      prefix: "PhotoEditor SDK | Android "
       description: "A quick guide on how to easily get started with the PhotoEditor SDK for Android. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
       path: "guides/android/v3_1"
@@ -110,7 +109,6 @@ defaults:
       collection: quickstarts
     values:
       layout: quickstarts/content
-      prefix: "PhotoEditor SDK | Quickstart "
       description: "View our Quickstarts Guides for integrating the PhotoEditor SDK for specific framesworks such as Ionic, React Native, Cordova, Rails or Ruby Gem"
 
 # features
@@ -119,5 +117,4 @@ defaults:
       collection: features
     values:
       layout: features/content
-      prefix: "PhotoEditor SDK | Feature "
       description: "Learn more about the key features of the PhotoEditor SDK such as Filters, Transform, Text, Stickers, Adjustements or Brush"
