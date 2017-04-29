@@ -6,8 +6,7 @@ menuitem: *title
 order: 0
 platform: android
 version: v3_1
-platform:
-  - android
+platform: android
 category: 
   - guide
   - resource

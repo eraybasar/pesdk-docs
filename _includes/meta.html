@@ -1,15 +1,15 @@
 {% capture title %}
   {{site.prefix}} 
+  {% if page.categories %}
+    {{page.categories.first | capitalize}} 
+  {% endif %}
   {% if page.platform %}
-    {{page.platform | uppercase }} 
+    {{page.platform | upcase }} 
   {% endif %}
   {% if page.version %}
     {{page.version}} 
   {% endif %}
-  {% if page.categories %}
-    {{page.categories | reverse | join: " "}} | 
-  {% endif %}
-    | 
+   | 
   {{page.title}}
 {% endcapture %}
 

@@ -41,6 +41,6 @@ All example intergrations repositories are tagged with the suffix `-demo`. In ge
   * [Ionic](https://github.com/imgly/pesdk-ionic-demo)
   * [Cordova](https://github.com/imgly/pesdk-cordova-demo)
 
-We are also providing the corresponding tutorials in our quickstart section [here]({{ site.baseurl }}/assets/{{page.platform}}/{{page.version}}/quickstarts), if you want to learn to integrate the SDK yourself. This includes:
+We are also providing the corresponding tutorials in our quickstart section [here]({{ site.baseurl }}/quickstarts), if you want to learn to integrate the SDK yourself. This includes:
 
   * [React Native]({{ site.baseurl }}/quickstarts/react_native)
