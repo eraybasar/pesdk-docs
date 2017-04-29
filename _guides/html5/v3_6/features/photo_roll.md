@@ -58,9 +58,7 @@ class UnsplashProvider extends PhotoRoll {
 ```
 
 The library will now be presented to the user like this:
-
-<%=md_image("/assets/images/documentation/html5/photoroll-library.png") %>
-
+![Photoroll Library]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/photoroll-library.png){: .center-image style="padding: 20px; max-height: 400px;"}
 ## getPhotosForLibrary(library)
 
 This method returns a Promise that should be resolved with an Array of `PhotoEditorSDK.UI.ReactUI.PhotoRoll.Photo`
@@ -94,7 +92,7 @@ class UnsplashProvider extends PhotoRoll {
 
 The photo will now be presented to the user like this:
 
-<%=md_image("/assets/images/documentation/html5/photoroll-photo.png") %>
+![Photoroll Photo]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/photoroll-photo.png){: .center-image style="padding: 20px; max-height: 400px;"}
 
 ## getSearchSuggestions()
 
@@ -121,7 +119,8 @@ class UnsplashProvider extends PhotoRoll {
 
 The search suggestion will now be presented to the user like this:
 
-<%=md_image("/assets/images/documentation/html5/photoroll-searchsuggestion.png") %>
+![Photoroll Searchsuggestion]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/photoroll-searchsuggestion.png){: .center-image style="padding: 20px; max-height: 400px;"}
+
 
 Clicking the search suggestion will result in the search input field being pre-filled with the search
 term (`Nature`), which will trigger a search.
