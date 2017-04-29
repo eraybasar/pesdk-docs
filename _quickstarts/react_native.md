@@ -76,6 +76,7 @@ RCT_EXPORT_METHOD(present:(NSString *)path) {
 
 Now you're ready to launch the PhotoEditor SDK from your React Native code. Just load the PESDK` module from React Natives `NativeModules` and call the `present(...)` method, we defined above:
 
+{% raw %}
 ```javascript
 const PESDK = NativeModules.PESDK
  
@@ -95,6 +96,7 @@ onOpenEditorPress () {
   PESDK.present(imagePath)
 }
 ```
+{% endraw %}
 
 #### Android Module
 
