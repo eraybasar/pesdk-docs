@@ -36,7 +36,7 @@ All example intergrations repositories are tagged with the suffix `-demo`. In ge
   * [Ruby on Rails Engine/Gem](https://github.com/imgly/pesdk-ruby-gem-demo)
   * ...
 
-We are also providing the corresponding tutorials in our quickstart section [here]({{ site.baseurl }}/assets/html5/v3_6/quickstarts), if you want to learn to integrate the SDK yourself. This includes:
+We are also providing the corresponding tutorials in our quickstart section [here]({{ site.baseurl }}/quickstarts), if you want to learn to integrate the SDK yourself. This includes:
 
-  * [Ruby on Rails]({{ site.baseurl }}/assets/html5/v3_6/quickstarts/rails) 
+  * [Ruby on Rails]({{ site.baseurl }}/quickstarts/rails) 
   * ...

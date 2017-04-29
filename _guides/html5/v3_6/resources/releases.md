@@ -7,6 +7,5 @@ category:
   - guide
   - resource
 redirect_to:
-  - '/guides/{{page.platform}}/{{page.version}}/resources/faq/'
-  - https://github.com/imgly/pesdk-{{page.platform}}-build/releases
+  - https://github.com/imgly/pesdk-html5-build/releases
 ---

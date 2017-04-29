@@ -7,5 +7,5 @@ category:
   - guide
   - resource
 redirect_to: 
-  - https://static.photoeditorsdk.com/docs/{{page.platform}}/{{page.version}}
+  - /apidocs/html5/v3_6
 ---

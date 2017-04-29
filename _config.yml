@@ -63,6 +63,7 @@ defaults:
 # HTML5
   - scope:
       path: "guides/html5"
+      collection: guides
     values:
       platform: html5
       layout: guides/content
@@ -72,12 +73,11 @@ defaults:
       path: "guides/html5/v3_6"
     values:
       version: v3_6
-      prefix: "PhotoEditor SDK | HTML5 "
-      description: "A quick guide on how to easily get started with the PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities."
 
 # IOS
   - scope:
       path: "guides/ios"
+      collection: guides
     values:
       platform: ios
       layout: guides/content
@@ -85,12 +85,14 @@ defaults:
       description: "A quick guide on how to easily get started with the PhotoEditor SDK for iOS. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
       path: "guides/ios/v6_5"
+      collection: guides
     values:
       version: v6_5
 
 # Android
   - scope:
       path: "guides/android"
+      collection: guides
     values:
       platform: android
       layout: guides/content
@@ -98,12 +100,14 @@ defaults:
       description: "A quick guide on how to easily get started with the PhotoEditor SDK for Android. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
       path: "guides/android/v3_1"
+      collection: guides
     values:
       version: v3_1
       
 # quickstarts
   - scope:
       path: "quickstarts"
+      collection: quickstarts
     values:
       layout: quickstarts/content
       prefix: "PhotoEditor SDK | Quickstart "
@@ -112,6 +116,7 @@ defaults:
 # features
   - scope:
       path: "features"
+      collection: features
     values:
       layout: features/content
       prefix: "PhotoEditor SDK | Feature "

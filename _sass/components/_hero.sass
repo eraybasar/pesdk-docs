@@ -1,36 +1,36 @@
 $headerHeight: 685px
-$mobileHeaderHeight: 550px
-$mediumHeaderHeight: 449px
-$mobileMediumHeaderHeight: 340px
-$smallHeaderHeight: 350px
-$mobileSmallHeaderHeight: 300px
-$dashboardHeaderHeight: 265px
-$mobileDashboardHeaderHeight: 200px
-$featuresHeaderHeight: 920px
+$mobileHeroHeight: 550px
+$mediumHeroHeight: 449px
+$mobileMediumHeroHeight: 340px
+$smallHeroHeight: 350px
+$mobileSmallHeroHeight: 300px
+$dashboardHeroHeight: 265px
+$mobileDashboardHeroHeight: 200px
+$featuresHeroHeight: 920px
 
 $topbarHeight: 80px
 $mobileTopbarHeight: 64px
 
-+block(header)
++block(hero)
   $base: &
 
-  height: $mobileHeaderHeight
+  height: $mobileHeroHeight
   background: url($baseurl + "/assets/images/shared/hero_background_tile.png") repeat, $pink-gradient
 
   +screen-min-small
     height: $headerHeight
 
   +modifier(small)
-    height: $mobileSmallHeaderHeight
+    height: $mobileSmallHeroHeight
 
     +screen-min-small
-      height: $mobileSmallHeaderHeight
+      height: $mobileSmallHeroHeight
 
   +modifier(medium)
-    height: $mobileMediumHeaderHeight
+    height: $mobileMediumHeroHeight
 
     +screen-min-small
-      height: $mediumHeaderHeight
+      height: $mediumHeroHeight
 
   +element(container)
     @extend .container
