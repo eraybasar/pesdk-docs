@@ -28,7 +28,7 @@
     right: 20px
     width: 25px
     height: 25px
-    background: url($baseurl + '/assets/images/navigation/burger-menu.svg') no-repeat center center
+    background: url($baseurl + '/assets/images/navigation/burger-menu-dark.svg') no-repeat center center
     cursor: pointer
 
     +screen-min-small
@@ -128,6 +128,10 @@
     &:hover
       background-color: rgba(0,0,0,0.1)
 
+    +modifier(button)
+      a
+        color: $white-color
+
     +modifiers(login, startTrial)
       display: block
 
@@ -150,7 +154,7 @@
         right: 20px
         width: 12px
         height: 12px
-        background: url('/assets/images/navigation/login.svg') no-repeat center center
+        background: url($baseurl + '/assets/images/navigation/login.svg') no-repeat center center
 
         +screen-min-small
           display: none
@@ -176,4 +180,4 @@
 
         a
           width: 100%
-          color: #FFFFFF
+          color: #000000
