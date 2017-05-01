@@ -18,6 +18,9 @@ published: true
 
 This quickstart demonstrates how to add our PhotoEditor SDK for HTML to a Ruby on Rails application in no time. Just follow the steps and you'll get a fully fledged photo editor in your rails app.
 
+>**WARNING**: The repository is not meant as a fully fledged Rails application, but as a base for further development instead. 
+
+
 ## Integration
 
 1. Init Rails 

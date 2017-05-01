@@ -18,6 +18,8 @@ published: true
 
 We created a Ruby gem for easily integrating the PhotoEditor SDK for HTML5 in any Ruby on Rails project. Just follow the steps and you'll get a fully fledged photo editor in your rails app.
 
+>**WARNING**: The repository is not meant as a fully fledged Ruby Gem, but as a base for further development instead. 
+
 ### Setup the Rails asset pipeline
 
 1. Reference Gem in your bundlers Gemfile. Open your `Gemfile` and insert

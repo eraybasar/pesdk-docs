@@ -19,6 +19,9 @@ published: true
 
 Often our users ask whether it’s possible to use the SDK with React Native. Although we do not offer a fully fledged solution, we created a demo app and put together a guide on how to easily set up the PhotoEditor SDK with React Native and how to avoid eventual pitfalls.
 
+>**WARNING**: The repository is not meant as a fully fledged React Native binding, but as a base for further development instead. 
+
+
 We start with the basic react setup, add the native SDKs to the corresponding platforms, create an iOS and Android plugin and wire it all together using JavaScript. If you want to jump ahead you can always take a look at our [demo repository](https://github.com/imgly/pesdk-react-native-demo).
 
 ## Setup
