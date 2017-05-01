@@ -1,20 +1,7 @@
 {% capture title %}
-  {{site.prefix}} 
-  {% if page.categories %}
-    {{page.categories.first | capitalize}} 
-  {% endif %}
-  {% if page.platform %}
-    {{page.platform | upcase }} 
-  {% endif %}
-  {% if page.version %}
-    {{page.version}} 
-  {% endif %}
-   | 
-  {{page.title}}
+  {{site.prefix}}{% if page.categories %} {{page.categories.first | capitalize}} {% endif %}{% if page.platform %} {{page.platform | upcase }} {% endif %}{% if page.version %} {{page.version}} {% endif %} | {{page.title}}
 {% endcapture %}
-
 <title>{{title}}</title>
-
 
 <meta name="twitter:site_name" content="{{ site.name }}" />
 <meta name="twitter:site" content="@PhotoEditorSDK" />

@@ -1,8 +1,9 @@
 <div class="preview-block {{ include.class }} guide-selection__item guide-selection__item--long">
 	<div class="guide-selection__item__icon guide-selection__item__icon--star"></div>
-	<h4>{{ include.title }}</h4>
-	<p>{{ include.text }}</p>
-	<p>{{include.link_title }}</p>
+	<h4 class="guide-selection__item__title">{{ include.title }}</h4>
+	<p class="guide-selection__item__text">{{ include.text }}</p>
+	<!--<a class="guide-selection__item__link" href="{{include.link}}">{{include.link_title }}</a>-->
+  <p class="guide-selection__item__link">{{ include.link_title }}</p>
 </div>
 
 
