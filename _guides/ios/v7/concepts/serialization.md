@@ -17,16 +17,15 @@ published: true # Either published or not
 
 # {{page.title}}
 
-Our serialization functionality empowers you to save the current settings of the UI and recover it the next time 
-when the editor is opened again. The settings will be stored as json.
-For details on the json structure you can [download]({{ site.baseurl }}/assets/downloads/schema.json){: download="pesdk_schema.json" } our schema.
+Our serialization functionality empowers you to save the current settings of the UI and recover it the next time the editor is opened again. The settings will be stored in a plain JSON file.
+For details on the JSON structure you can [download]({{ site.baseurl }}/assets/downloads/schema.json){: download="pesdk_schema.json" } our schema.
 
 ## Saving the UI settings
 When the editor is about to be closed, the according delegate method will be called.
 In that method you can retrieve the serialized settings by calling the `serializedSettings` method on the `PhotoEditViewController` class,
 and save these to a file. Here is some example code to get you started:
 
-```
+```swift
 func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data) {
     if ViewController.writeSettings {
         let data = photoEditViewController.serializedSettings
@@ -46,7 +45,7 @@ func photoEditViewController(_ photoEditViewController: PhotoEditViewController,
 To set the initial editor settings, load the saved settings as `NSData` object, and set them via the `initialSerializedSettings` property of
 the `PhotoEditViewController`. This has to be done **before** the editor is presented. Here is an example, to demonstrate the process:
 
-```
+```swift
 let photoEditViewController = PhotoEditViewController(photo: UIImage(named: "sample_image")!)
 photoEditViewController.delegate = self
 if let serializedData = NSData(contentsOf: dataFileURL) {
