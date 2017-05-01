@@ -29,7 +29,7 @@ and save these to a file. Here is some example code to get you started:
 ```
 func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data) {
     if ViewController.writeSettings {
-        let data = photoEditViewController.serializedSettings()
+        let data = photoEditViewController.serializedSettings
         do {
             try data?.write(to: dataFileURL, options: .atomic)
         } catch {
