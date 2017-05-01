@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: HTML5 Export to Server
+title: Export to Server
 description: By default, the PhotoEditor SDK for HTML5 exports to your user's device. Learn how to disable the automatic download and export to a server instead.
 
 menuitem: *title
