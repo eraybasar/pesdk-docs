@@ -6,7 +6,7 @@
     background: white
 
     +elementsWithBaseSelector($base, logo)
-      background-image: url($baseurl + '/assets/images/shared/pesdk_navbar_logo.svg')
+      background-image: url($baseurl + '/assets/images/shared/pesdk_logo.png')
 
   +screen-min-small
     position: fixed
@@ -22,15 +22,35 @@
     +screen-min-small
       height: 80px
 
+  
+  +element(title)
+    @extend .italic-font
+    float: left
+    display: block
+    margin-left: 10px
+    padding: 0 10px
+    cursor: pointer
+    font-size: 18px
+    text-transform: uppercase
+    text-decoration: none
+    letter-spacing: 1px
+    color: $text-color
+    border-left: 1px solid rgba($text-color, 0.5)
+
+    +screen-min-small 
+      line-height: 45px  
+    &:hover
+      text-decoration: none
+
   +element(logo)
     float: left
     display: block
-    width: 128px
+    width: 25px
     height: 25px
-    background: url($baseurl + '/assets/images/shared/pesdk_white_logo.svg') no-repeat center center
+    background: url($baseurl + '/assets/images/shared/pesdk_logo.png') no-repeat center center
     background-size: contain
 
     +screen-min-small
       height: 42px
-      background-image: url($baseurl + '/assets/images/shared/pesdk_navbar_logo.svg')
-      width: 220px
+      background-image: url($baseurl + '/assets/images/shared/pesdk_logo.png')
+      width: 42px
