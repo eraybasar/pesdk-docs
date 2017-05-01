@@ -13,7 +13,6 @@ tags: &tags # tags that are necessary
   - photo editor 
 
 published: true # Either published or not 
----ished: true # Either published or not 
 ---
 
 # Localization

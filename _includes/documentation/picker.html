@@ -1,5 +1,5 @@
 {% assign current_platform= include.platform %}
-{% assign android_guides = site.guides | where: "platform", platform %}
+{% assign android_guides = site.guides | where: "published", true | where: "platform", platform %}
 {% assign guides_by_version = android_guides | group_by: "version" | sort: "name" | reverse %}
 {% assign platforms = "Html5|iOS|Android" | split: "|" %}
 

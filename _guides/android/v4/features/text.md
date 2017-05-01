@@ -12,7 +12,7 @@ category:
 tags: &tags # tags that are necessary
   - photo editor 
 
-published: true # Either published or not 
+published: false # Either published or not 
 ---
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
