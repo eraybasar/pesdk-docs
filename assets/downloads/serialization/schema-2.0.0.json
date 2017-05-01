@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "name": "PESDK Serialization 1.0.2",
+  "name": "PESDK Serialization 2.0.0",
   "type": "object",
   "properties": {
     "version": {
       "type": "string",
       "enum": [
-        "1.0.2"
+        "2.0.0"
       ]
     },
     "inputImage": {
