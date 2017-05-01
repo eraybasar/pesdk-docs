@@ -1,5 +1,5 @@
 {% capture title %}
-  {{site.prefix}}{% if page.categories %} {{page.categories.first | capitalize}} {% endif %}{% if page.platform %} {{page.platform | upcase }} {% endif %}{% if page.version %} {{page.version}} {% endif %} | {{page.title}}
+  {{site.prefix}}{% if page.categories %} {{page.categories.first | capitalize}}{% endif %}{% if page.platform %} {{page.platform | upcase }}{% endif %}{% if page.version %} {{page.version}}{% endif %} | {{page.title}}
 {% endcapture %}
 <title>{{title}}</title>
 
