@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Adjustments # title as shown in the menu and 
 
 menuitem: *title
-order: 2
+order: 3
 platform: android
 version: v3_1
 category: 

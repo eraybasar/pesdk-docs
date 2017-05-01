@@ -17,5 +17,16 @@ published: true # Either published or not
 
 # {{ page.title }}
 
-The adjustment section of the PhotoEditor SDK is as versatile as a swiss army knife and holds both essential and advanced photo editing features. Its powerful yet intuitive tools like brightness, contrast or clarity invite for exploration and experimentation and enable novices and experts to tweak and fine-tune their images to produce stunning creatives. The non-destructive operations also allow for fast and uncomplicated revision of the visuals and further amplify our visceral approach to photo editing and content creation. 
+Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
 
+<!--The tool is implemented in the [`ColorAdjustmentTool`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/sdk/tools/ColorAdjustmentTool.html) class and displayed using the [`AdjustmentToolPanel`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/ui/panels/AdjustmentToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.-->
+
+The available tool set consists of:
+
+1. Brightness
+2. Contrast
+3. Saturation
+4. Clarity
+5. Shadows
+6. Highlights
+7. Exposure
