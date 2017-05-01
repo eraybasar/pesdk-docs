@@ -17,4 +17,4 @@ published: false # Either published or not
 
 ...Serialization...
 
-...you can [download]({{ site.baseurl }}/assets/downloads/schema.json){: download="pesdk_schema.json" } our schema.
+...you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-1.0.2.json){: download="schema-1.0.2.json" } our schema.

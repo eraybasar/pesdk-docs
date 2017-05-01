@@ -21,7 +21,8 @@ Since version 3.4.2, PhotoEditorSDK's Editor UI supports serialization and deser
 application states. This means that you can export the current state of the editor and import
 it later on.
 
-The serialization schema is specified [here](https://static.photoeditorsdk.com/serialization/schema-1.0.1.json).
+The serialization schema is specified 
+[here]({{ site.baseurl }}/assets/downloads/serialization/schema-1.0.1.json){: download="schema-1.0.1.json" }.
 
 ## Serialization
 
