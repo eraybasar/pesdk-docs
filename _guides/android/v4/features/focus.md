@@ -21,4 +21,4 @@ published: true # Either published or not
 
 The focus tool allows your users to add a radial or linear blur to their images which lets them mimic _Tilt Shift_ or _Bokeh_ effects.
 
-The tool is implemented in the [`FocusEditorTool`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/sdk/tools/FocusEditorTool.html) class and displayed using the [`FocusToolPanel`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/ui/panels/FocusToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.
+The tool is implemented in the [`FocusEditorTool`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/sdk/tools/FocusEditorTool.html) class and displayed using the [`FocusToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/panels/FocusToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.

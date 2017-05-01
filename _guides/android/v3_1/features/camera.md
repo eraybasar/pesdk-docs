@@ -21,7 +21,7 @@ published: true # Either published or not
 
 The PhotoEditor SDK offers a lightning fast camera implementation for iOS to complement your editor, featuring all essential camera components as well as live filters.
 
-In order to use our camera, you need to instantiate a [`CameraPreviewActivity`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/ui/activities/CameraPreviewActivity.html) using a [`CameraPreviewBuilder`](https://static.photoeditorsdk.com/docs/android-v3/ly/img/android/ui/activities/CameraPreviewBuilder.html) and present it. You can configure the camera to fit your needs by passing a `SettingsList` object to the builder. If no configuration is passed, the default setup is passed:
+In order to use our camera, you need to instantiate a [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/activities/CameraPreviewActivity.html) using a [`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/activities/CameraPreviewBuilder.html) and present it. You can configure the camera to fit your needs by passing a `SettingsList` object to the builder. If no configuration is passed, the default setup is passed:
 
 ```java
 SettingsList settingsList = new SettingsList();
