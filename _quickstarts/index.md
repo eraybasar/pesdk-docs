@@ -15,19 +15,19 @@ published: true
 Want to integrate the PhotoEditor SDK into your app and need a place to start thats specialized for your specific framework? Check out our quickstart guides for the most popular web and hybrid frameworks and we'll help you get started. Just select your framework below:
 
 {:center: style="text-align: center"}
-<a href="{{ site.baseurl }}/quickstarts/react_native">
+<a class='no-underline' href="{{ site.baseurl }}/quickstarts/react_native">
 ![Logo]({{ site.baseurl }}/assets/images/quickstarts/react-native/logo.png){: height="100px" style="padding: 20px"}
 </a>
-<a href="{{ site.baseurl }}/quickstarts/cordova">
+<a class='no-underline' href="{{ site.baseurl }}/quickstarts/cordova">
 ![Logo]({{ site.baseurl }}/assets/images/quickstarts/cordova/logo.png){: height="100px" style="padding: 20px"}
 </a>
-<a href="{{ site.baseurl }}/quickstarts/ionic">
+<a class='no-underline' href="{{ site.baseurl }}/quickstarts/ionic">
 ![Logo]({{ site.baseurl }}/assets/images/quickstarts/ionic/logo.png){: height="100px"  style="padding: 20px"}
 </a>
-<a href="{{ site.baseurl }}/quickstarts/ruby_gem">
+<a class='no-underline' href="{{ site.baseurl }}/quickstarts/ruby_gem">
 ![Logo]({{ site.baseurl }}/assets/images/quickstarts/ruby_gem/logo.png){: height="100px"  style="padding: 20px"}
 </a>
-<a href="{{ site.baseurl }}/quickstarts/rails">
+<a class='no-underline' href="{{ site.baseurl }}/quickstarts/rails">
 ![Logo]({{ site.baseurl }}/assets/images/quickstarts/rails/logo.png){: height="100px"  style="padding: 20px"}
 </a>
 {:center}
