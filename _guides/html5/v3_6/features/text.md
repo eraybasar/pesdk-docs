@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Text # title as shown in the menu and 
+title: &title Text # title as shown in the menu and
 
 menuitem: *title
 order: 4
 platform: html5
 version: v3_6
-category: 
+category:
   - guide
   - feature
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg){: .center-image style="padding: 20px; max-height: 400px;"}
 
@@ -30,7 +30,7 @@ If `replaceFonts` is set to true, all default fonts are removed. If it is set to
 additional fonts are appended.
 
 ```js
-const editor = new PhotoEditorSDK.UI.NightReact({
+const editor = new PhotoEditorSDK.UI.ReactUI({
   controlsOptions: {
     text: {
       additionalFonts: [
@@ -51,7 +51,7 @@ const editor = new PhotoEditorSDK.UI.NightReact({
 The `additionalFonts` option also allows you to add custom fonts from Google Fonts:
 
 ```js
-const editor = new PhotoEditorSDK.UI.NightReact({
+const editor = new PhotoEditorSDK.UI.ReactUI({
   controlsOptions: {
     text: {
       additionalFonts: [
@@ -73,7 +73,7 @@ Per default, all existing fonts (including your own) are available to the user. 
 specific fonts available to the user, use the `selectableFonts` option.
 
 ```js
-const editor = new PhotoEditorSDK.UI.NightReact({
+const editor = new PhotoEditorSDK.UI.ReactUI({
   controlsOptions: {
     text: {
       selectableFonts: [

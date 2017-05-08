@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Brush # title as shown in the menu and 
+title: &title Brush # title as shown in the menu and
 
 menuitem: *title
 order: 7
 platform: html5
 version: v3_6
-category: 
+category:
   - guide
   - feature
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg){: .center-image style="padding: 20px; max-height: 400px;"}
 
@@ -24,7 +24,7 @@ The high performant brush engine of the PhotoEditor SDK is optimized for touch s
 In order to specify brush size presets, use the `thicknessPresets` option:
 
 ```js
-const editor = new PhotoEditorSDK.UI.NightReact({
+const editor = new PhotoEditorSDK.UI.ReactUI({
   controlsOptions: {
     brush: {
       thicknessPresets: [

@@ -1,19 +1,19 @@
 ---
 layout: guides/content
 title: Configuration
-description: The PhotoEditor SDK for HTML5 can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires. 
+description: The PhotoEditor SDK for HTML5 can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires.
 
 menuitem: Configuration
 order: 2
 platform: html5
 version: v3_6
-category: 
+category:
   - guide
   - introduction
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 <!--Check PhotoEditorReactUI.js in the sourcecode -->
@@ -61,7 +61,7 @@ to the `options` object passed to the UI:
         be grouped in arrays which will be displayed with separators.
     * `operationsOrder` Array - The order in which operations are added to the stack. Changing
         this may have a negative impact on performance.
-    * `controlsOptions` Object - Objects passed to the controls. See [the documentation](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.UI.NightReact.Controls.html) for available controls and their options.
+    * `controlsOptions` Object - Objects passed to the controls. See [the documentation](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.UI.ReactUI.Controls.html) for available controls and their options.
     * `maxMegaPixels` Object - Specifies the maximum amount of megapixels per device type
       * `desktop` Number - Defaults to 10
       * `mobile` Number - Defaults to 5

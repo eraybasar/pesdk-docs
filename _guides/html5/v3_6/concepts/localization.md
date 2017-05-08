@@ -7,13 +7,13 @@ menuitem: *title
 order: 0
 platform: html5
 version: v3_6
-category: 
+category:
   - guide
   - concept
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 # Localization
@@ -23,7 +23,7 @@ languages to our UI by passing them using the `extensions.languages` object. The
 specifies the language that the UI should use.
 
 ```js
-const editor = new PhotoEditorSDK.UI.NightReact({
+const editor = new PhotoEditorSDK.UI.ReactUI({
   extensions: {
     languages: {
       es: spanishLanguageObject
