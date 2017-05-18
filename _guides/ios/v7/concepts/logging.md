@@ -22,8 +22,8 @@ We created the `MasterLogger` class, which will take care of managing child logg
 The PhotoEditor SDK will use the logger to provide important information. It is up to you whether these information will be shown
 to the user or handled by your code.
 
-There are four types of log-events. These are, ordered from high to low priority: `error`, `warn`, `info`, and `debug`. 
-The `MasterLogger` has a property called `logLevel`, which will determine the lowest level of log-event that should be dispatched.
+There are four types of log-events that are, ordered from high to low priority: `error`, `warn`, `info`, and `debug`. 
+The `MasterLogger` has a property called `logLevel`, that will determine the lowest level of log-event that should be dispatched.
 The default log-level is `warn`, meaning that only warnings and errors will be logged. To disable logging, set the log level to `none`.
 Each logger must implement the `LoggerProtocol`,
 that contains a method for each of these types. We provide a default logger, that will simply log to the debug console.
