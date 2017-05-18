@@ -17,7 +17,7 @@ published: true # Either published or not
 
 # Third Party Libraries
 
-To bring you the best PhotoEditor SDK possible, we rely on some third party libraries. These are attributed below:
+To provide you with the best PhotoEditor SDK possible, we rely on some third party libraries. Said libraries are attributed below:
 
 [Kingfisher](https://github.com/onevcat/Kingfisher)
 
