@@ -21,11 +21,11 @@ published: true # Either published or not
 
 The PhotoEditor SDK offers a lightning fast camera implementation for iOS to complement your editor, featuring all essential camera components as well as live filters.
 
-In order to use our camera, you need to instantiate a `CameraViewController` and present it. You can configure the camera to fit your needs using the `CameraViewControllerOptions`. To do so, you need to pass a `Configuration` object to the `CameraViewControllers` initializer. If no configuration is passed, the default configuration is used.
+In order to use the camera, you have to instantiate a `CameraViewController` and present it. You can configure the camera to suit your needs using the `CameraViewControllerOptions`. To do so, you have to pass a `Configuration` object to the `CameraViewControllers` initializer. If no configuration is passed, the default configuration will be used.
 
-> __Warning__: When adding a camera to your app, don't forget to set the required `NSCameraUsageDescription` in the `info.plist` file of your app. This is forced by iOS and allows your app to access the devices camera. If you want to allow photo roll access, you need to set the `NSPhotoLibraryUsageDescription` as well.
+> __Warning__: When adding a camera to your app, don't forget to set the required `NSCameraUsageDescription` in the `info.plist` file of your app. This is forced by iOS and allows your app to access the device's camera. If you want to allow photo roll access, you'll have to set the `NSPhotoLibraryUsageDescription` as well.
 
-The options allow you to configure the available flash modes, a forced square crop, tap to focus, allowed flash modes and much more. Furthermore you may disable camera roll access or live filters. Presenting the default camera editor can be done using the following code:
+The options allow you to configure the available flash modes, a forced square crop, tap to focus, allowed flash modes and a bunch of other stuff. Furthermore, you may disable camera roll access or live filters. Presenting the default camera editor can be done using the following code:
 
 ```swift
 let cameraViewController = CameraViewController()
@@ -49,7 +49,7 @@ let configuration = Configuration { builder in
 }
 ```
 
-To see an example implementation take a look at the {% include guides/ios/demo-repository.md %} and to see our camera in action, check out our {% include guides/ios/example-app.md %}.
+To have a look at an example implementation please refer to {% include guides/ios/demo-repository.md %} and to see our camera in action, check out our {% include guides/ios/example-app.md %}.
 
 ## Live filter preview
 
