@@ -22,7 +22,7 @@ For details on the JSON structure you can [download]({{ site.baseurl }}/assets/d
 
 ## Saving the UI settings
 When the editor is about to be closed, the according delegate method will be called.
-In that method you can retrieve the serialized settings by calling the `serializedSettings` method on the `PhotoEditViewController` class,
+In that method you can retrieve the serialized settings by calling the `serializedSettings` method on the `PhotoEditViewController` class
 and save these to a file. Here is some example code to get you started:
 
 ```swift
@@ -42,7 +42,7 @@ func photoEditViewController(_ photoEditViewController: PhotoEditViewController,
 
 ## Restoring the UI settings
 
-To set the initial editor settings, load the saved settings as `NSData` object, and set them via the `initialSerializedSettings` property of
+To set the initial editor settings, load the saved settings as `NSData` object and set them via the `initialSerializedSettings` property of
 the `PhotoEditViewController`. This has to be done **before** the editor is presented. Here is an example, to demonstrate the process:
 
 ```swift
