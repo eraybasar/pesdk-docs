@@ -18,16 +18,16 @@ published: true # Either published or not
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
 # Filters
-Our SDK features more than 60 high quality filters. The processing is lightning fast, and its easy to add your own filters.
-You might think that adding your own filters requires super math skills, or is complicated.
-Well, not at all. The way we realize filters, makes it super easy. Actually you don't need to code filters,
-you just need a program like gimp of photoshop. The only thing that needs to be done in code, is to add the filter you created.
+Our SDK features more than 60 high quality filters. The processing is lightning fast, and it's easy to add your own filters.
+You might think that adding your own filters is complicated or requires super math skills.
+Well, not at all. The way we realize filters makes it super easy. Actually, you don't have to code filters,
+you just need a program like Gimp of Photoshop. The only thing that needs to be done in code, is to add the filter you created.
 
 The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.
 
 ## Setting available filters
 
-Every filter is represented by an instance of the `PhotoEffect` class. That class also holds the `allEffects` array that allows you to access all available filters that are shipped with the SDK.
+Every filter is represented by an instance of the `PhotoEffect` class. Said class also holds the `allEffects` array that allows you to access all available filters that ship with the SDK.
 The following example shows how a custom selection of filters can be set:
 
 ```swift
@@ -42,13 +42,13 @@ private let effects: [PhotoEffect] = [
 PhotoEffect.allEffects = effects
 ```
 
-To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as the filter tool. For more details on the filter preview when using the camera, take a look at the [camera]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/camera) section.
+To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as in the filter tool. For more details on the filter preview when using the camera, take a look at the [camera]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/camera) section.
 
 ## Response filters
 We use a technology called LUTs in order to add new filters to our SDK.
 The main idea is that colors respond to operations that are carried out during the filtering process. We 'record' that very response by applying the filter to the identity image shown below.
 
-Starting with version 7.0, we support lower resolution LUT files in order to further reduce your apps deployment size and speed up live filters and filter previews. The supported formats are:
+Starting with version 7.0, we support lower resolution LUT files in order to further reduce your app's deployment size and speed up live filters and filter previews. The supported formats are:
 
 - 512x512 LUT with 8 columns and 8 rows (default) ([download ]({{ site.baseurl }}/assets/images/shared/identity_8_8_512.png){: download="identity_8_8_512" })
 - 256x256 LUT with 7 columns and 7 rows ([download ]({{ site.baseurl }}/assets/images/shared/identity_7_7_256.png){: download="identity_7_7_256" })
@@ -64,14 +64,13 @@ Using a smaller LUT file may lead to issues when applying your filter, as our pr
 ![Identity 128x128 5x5 LUT]({{ site.baseurl }}/assets/images/shared/identity_5_5_128.png){: width="64px" style="padding: 10px"}
 {:center}
 
-The black borders are required in order to optimize performance and the number of rows translates to the resolution for the green channel, the number of columns translates to the resolution of the red channel and the number of tiles translates to the blue channels resolution. And larger LUTs naturally garantuee a larger resolution across all channels.
+The black borders are required in order to optimize performance and the number of rows translates to the resolution for the green channel, the number of columns translates to the resolution of the red channel and the number of tiles translates to the blue channels resolution. And larger LUTs naturally guarantuee a larger resolution across all channels.
 
 The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
-If you want to create a new filter, you'll need to download one of the identity LUTs shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. Please note that not all operations can be translated into a response filter.
-Typically those operations use surrounding the pixels to determine the color of the pixel, such as blur.
+If you want to create a new filter, you'll have to download one of the identity LUTs shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. 
 
-> __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you need to save your LUT as a PNG file.
+> __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you have to save your LUT as a PNG file.
 
-The last step is described above, but you need to pass the path to your own LUT file instead of pointing to our bundle. Please note that not all operations can be translated into a response filter.
+The last step is described above, but you have to pass the path to your own LUT file instead of pointing to our bundle. Please note that not all operations can be translated into a response filter.
 Typically those operations use surrounding the pixels to determine the color of the pixel, such as blur.
