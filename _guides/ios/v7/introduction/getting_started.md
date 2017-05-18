@@ -19,7 +19,7 @@ published: true # Either published or not
 
 ## Requirements
 
-PhotoEditor SDK 7 requires Xcode 8.3, Swift 3.1 and iOS 9 and above. If you need to use older versions of Swift or need to support older versions of iOS, please have a look at previous versions.
+PhotoEditor SDK 7 requires Xcode 8.3, Swift 3.1 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
 
 ## CocoaPods
 
@@ -41,7 +41,7 @@ Then run `pod install`.
 
 If you prefer not to use CocoaPods, you can integrate PhotoEditor SDK into your project manually via a dynamic framework.
 
-1) Download the SDK [here](https://github.com/imgly/pesdk-ios-build/releases/latest), then just drag `PhotoEditorSDK.framework` into the `Embedded Binaries` section of your target:
+1) Download the SDK [here](https://github.com/imgly/pesdk-ios-build/releases/latest), then simply drag `PhotoEditorSDK.framework` into the `Embedded Binaries` section of your target:
 
 ![Embedded Binaries]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/embedded-binaries.jpg)
 
@@ -57,17 +57,17 @@ Paste the following line in this `Run Script Phase`'s script text field:
 bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/PhotoEditorSDK.framework/strip-framework.sh"
 ```
 
-This script works around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) triggered by universal binaries. It also copies PhotoEditor SDK's bcsymbolmap files into your target's xcarchive. These bcsymbolmap files are needed if you want to include app symbols for your application to receive symbolicated crash logs from Apple when you upload your app to the App Store.
+The script works around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) triggered by universal binaries. It also copies PhotoEditor SDK's bcsymbolmap files into your target's xcarchive. These bcsymbolmap files are required if you want to include app symbols for your application to receive symbolicated crash logs from Apple when you upload your app to the App Store.
 
 ![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/run-script-phase.jpg)
 
-3) (Optional but recommended) You may want to copy debug symbols for debugging and crash reporting: Add PhotoEditorSDK.framework.dSYM to your Xcode project (do not add it to any targets - just add it to the tree) and add this folder as input file to the Run Script Phase of step 2). The script will copy the debug symbols into the products directory and strip it from unneeded architectures. The dSYM file is part of the dmg download available [here](https://github.com/imgly/pesdk-ios-build/releases/latest).
+3) (Optional but recommended) You may want to copy debug symbols for debugging and crash reporting: Add PhotoEditorSDK.framework.dSYM to your Xcode project (do not add it to any targets - just add it to the tree) and add this folder as input file to the Run Script Phase of step 2). The script will copy the debug symbols into the product's directory and strip it from unneeded architectures. The dSYM file is part of the dmg download available [here](https://github.com/imgly/pesdk-ios-build/releases/latest).
 
 ![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/copy-dsym.jpg)
 
 # Setup
 
-Our SDK provides two main view controllers. One to work with the camera and one to edit an image.
+Our SDK provides two main view controllers. One to work with the camera and the other to edit an image.
 In the following section we will first explain how the licensing works
 and then how the basic view controllers are set up. We will also demonstrate how they can be embedded into a `UINavigationController`.
 
@@ -87,13 +87,13 @@ func application(_ application: UIApplication, willFinishLaunchingWithOptions la
 
 The license is digitally signed so it can not be altered without becoming invalid.
 Our sample app comes with its own license, so you can try that right away.
-To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can request a demo license at [https://www.photoeditorsdk.com/pricing](https://www.photoeditorsdk.com/pricing).
+To try our SDK in your own app, you'll have to request a trial license because a license is bound to a bundle identifier. You can request a demo license at [https://www.photoeditorsdk.com/pricing](https://www.photoeditorsdk.com/pricing).
 
-Once you have the license file it can be used to unlock the view controller.
-The following example demonstrates the unlock the SDK.
+Once you retrieved the license file it can be used to unlock the view controller.
+The following example demonstrates how to unlock the SDK.
 
 ## Add Import Statement
-You need to add an import statement like this:
+You have to add an import statement like this:
 
 ```swift
 import PhotoEditorSDK
@@ -108,11 +108,11 @@ let cameraViewController = CameraViewController()
 present(cameraViewController, animated: true, completion: nil)
 ```
 
-The `CameraViewController` has a `completionBlock` property. When it is set to `nil`, the taken photo is passed to the `PhotoEditViewController`, which is then presented modally.
+The `CameraViewController` has a `completionBlock` property. When it is set to `nil`, the photo is passed to the `PhotoEditViewController`, which is then presented modally.
 
 ## Add a PhotoEditViewController
 
-The `PhotoEditViewController` class is responsible for presenting and rendering an image. It is designed to work together with a `ToolbarController`, which is responsible to presenting and dismissing the various tool controllers.
+The `PhotoEditViewController` class is responsible for presenting and rendering an image. It is designed to work together with a `ToolbarController`, which is responsible for presenting and dismissing the various tool controllers.
 
 To present an `PhotoEditViewController` just add these few lines:
 
@@ -128,7 +128,7 @@ toolbarController.push(photoEditViewController, animated: false)
 present(toolbarController, animated: true, completion: nil)
 ```
 
-Here we set the `delegate` of the `photoEditViewController` instance to `self`.
+Here, we set the `delegate` of the `photoEditViewController` instance to `self`.
 That means that the presenting view controller must implement the `PhotoEditViewControllerDelegate` protocol.
 The methods of the `PhotoEditViewControllerDelegate` protocol are designed to inform the delegate about the result of the editing process (for example cancelation).
 
