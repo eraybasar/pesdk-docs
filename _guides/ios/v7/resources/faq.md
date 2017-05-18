@@ -24,7 +24,7 @@ dyld: Library not loaded: @rpath/libswiftAVFoundation.dylib
   Referenced from: /Users/newmetl/Library/Developer/CoreSimulator/Devices/E2DE480D-05E4-47F7-9266-9598C787AA1F/data/Containers/Bundle/Application/7CA0CE63-7952-4EE5-92A4-81E85FCB7695/Test Integration.app/Frameworks/PhotoEditorSDK.framework/PhotoEditorSDK
   Reason: image not found
 ```
-Then make sure, that the build setting `Embedded Content Contains Swift Code` is set to `YES`.
+Please make sure, that the build setting `Embedded Content Contains Swift Code` is set to `YES`.
 
 
 ## How do I get the source-code ?
@@ -34,13 +34,13 @@ We have a full-source license. Please [contact us](https://www.photoeditorsdk.co
 
 You might be wondering why the `PhotoEditorSDK.framework` folder is almost 100 MB large. This can be irritating at first, however this is not the size that your users will get.
 
-The PhotoEditor SDK includes many UI components, lookup tables and fonts. This results in a lot of code and thus a sizable binary, although there are certain factors that make it appear larger than it actually is. We’re working hard to ensure the framework size stays as low as possible.
+The PhotoEditor SDK includes many UI components, lookup tables and fonts. This results in a lot of code and thus a sizeable binary, although there are certain factors that make it appear larger than it actually is. We’re working hard to ensure the framework size stays as low as possible.
 
 ### Architectures
 
-The SDK binary includes slices for i386, x64, armv7 and arm64. For armv7 and arm64, bitcode is included as well — which basically results in 6 different slices. ([Learn more about bitcode here](https://www.photoeditorsdk.com/documentation/ios/faq#bitcode)) Each slice is a full and complete copy of the SDK, and only one slice is required for your users. During archiving Xcode ensures that the Simulator slices (i386, x64) are stripped away from our SDK, resulting in a significant size reduction.
+The SDK binary includes slices for i386, x64, armv7 and arm64. For armv7 and arm64, bitcode is included as well — which basically results in 6 different slices. ([Learn more about bitcode here](https://www.photoeditorsdk.com/documentation/ios/faq#bitcode)) Each slice is a full and complete copy of the SDK, and only one slice is required for your users. During archiving Xcode ensures that the Simulator slices (i386, x64) are stripped away from our SDK, which will result in a significant size reduction.
 
-Bitcode is a large size contributor. As bitcode is unoptimized code in a generic format, it takes up a lot of space. Since Bitcode is not architecture independent, slices are emitted for both armv7 and arm64. These slices are rather large, more than 8MB per slice, so support for bitcode alone is about 16 MB.
+Bitcode is a large size contributor. As bitcode is unoptimized code in a generic format, it takes up a lot of space. Since Bitcode is not architecture independent, slices are emitted for both armv7 and arm64. These slices are rather large, more than 8MB per slice, so support for Bitcode alone is about 16 MB of space.
 
 ### App Thinning
 
@@ -48,15 +48,15 @@ Apple also actively works on reducing app binary size, and added [App Thinning](
 
 ### PhotoEditorSDK.bundle
 
-The PhotoEditor SDK needs various images and localization files, which are distributed in the PhotoEditorSDK.bundle folder. This adds about 8 MB to your application. Images are highly optimized to take up as little space as possible. You could remove images that are not needed, but there is a risk you might delete too much.
+The PhotoEditor SDK needs various images and localization files, which are distributed in the PhotoEditorSDK.bundle folder. This adds about 8 MB to your application. Images are highly optimized to take up as little space as possible. You could remove images you deem unnecessary, but there is a risk you might delete too much.
 
 ### Swift
 
-Because the Swift ABI is not yet stable, each app that includes Swift bundles a version of the current Swift runtime. The PhotoEditor SDK is written in Swift and thus requires said Swift runtime to be included, even if you only use Objective-C in your own code. Unfortunately the runtime adds roughly another 10 MB to the App Store size. When the Swift binary interface stabilizes, the Swift runtime will become part of the host OS and this size increase of apps will no longer exist.
+Because the Swift ABI is not yet stable, each app that includes Swift bundles a version of the current Swift runtime. The PhotoEditor SDK is written in Swift and thus requires said Swift runtime to be included, even if you only use Objective-C in your own code. Unfortunately, the runtime adds roughly another 10 MB to the App Store size. When the Swift binary interface stabilizes, the Swift runtime will become part of the host OS and this size increase of apps will no longer exist.
 
 ### Delta Updates
 
-Since iOS 7, Apple has been using [delta updates on the App Store](https://developer.apple.com/library/ios/qa/qa1779/_index.html) so updates don’t download files in the application bundle that have not changed. The PhotoEditor SDK is a dynamic framework, which means our framework will not be downloaded again if your app update does not update the PhotoEditor SDK itself.
+Since iOS 7, Apple has been using [delta updates on the App Store](https://developer.apple.com/library/ios/qa/qa1779/_index.html) so updates don’t download files in the application bundle that have not changed. The PhotoEditor SDK is a dynamic framework, which means that our framework will not be downloaded again if your app update does not update the PhotoEditor SDK itself.
 
 ### Reducing the Size of Your App
 
@@ -89,7 +89,7 @@ $ lipo -info PhotoEditorSDK
 Architectures in the fat file: PhotoEditorSDK are: x86_64 i386 armv7 arm64
 ```
 
-Check if bitcode exists for a particular slice:
+Check if Bitcode exists for a particular slice:
 
 ```bash
 $ otool -arch arm64 -l PhotoEditorSDK | grep LLVM
@@ -100,16 +100,16 @@ $ otool -arch armv7 -l PhotoEditorSDK | grep LLVM
   segname __LLVM
   segname __LLVM
 ```
-Some articles will recommend searching for `bitcode`. However, LLVM is a much better indicator for the existance of bitcode.
+Some articles will recommend searching for `bitcode`. However, LLVM is a much better indicator for the existence of Bitcode.
 
 ### Stripping Bitcode
-Xcode 7.2 added a new tool called `bitcode_strip` that allows to remove bitcode chunks from binaries:
+Xcode 7.2 added a new tool called `bitcode_strip` that allows for the removal of Bitcode chunks from binaries:
 
 ```bash
 $ xcrun bitcode_strip -r PhotoEditorSDK -o PhotoEditorSDK
 ```
 
-Removing bitcode will disallow Apple to run binary optimizations on your behalf. You can verify that it worked by checking the file size, which should be significantly smaller than the original file, or use `otool` as listed above.
+Removing Bitcode will disallow Apple to run binary optimizations on your behalf. You can verify that it worked by checking the file size, which should be significantly smaller than the original file, or use `otool` as listed above.
 
 ### Learn More
 * [Apple Documentation on App Thinning and Bitcode](https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html)
