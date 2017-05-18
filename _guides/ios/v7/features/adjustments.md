@@ -22,7 +22,7 @@ published: true # Either published or not
 
 Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
 
-The tool is implemented in the `AdjustToolController` class. For your app, you can choose which functionality you'd like to make available by modifiying the [`AdjustToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/AdjustToolControllerOptions.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Using these options you can configure the slider and buttons and react to changes to the slider.
+The tool is implemented in the `AdjustToolController` class. For your app, you can choose which functionality you'd like to make available by modifiying the [`AdjustToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/AdjustToolControllerOptions.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Using these options you can configure the sliders and buttons and react to changes to the sliders.
 
 The default tool set consists of:
 
@@ -34,4 +34,4 @@ The default tool set consists of:
 6. Highlights
 7. Exposure
 
-In order to change the available tools or their order, you need to set an array of [`AdjustTool`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Enums/AdjustTool.html) values to the `allowedAdjustTools` property.
+In order to change the available tools or their order, you have to set an array of [`AdjustTool`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Enums/AdjustTool.html) values to the `allowedAdjustTools` property.
