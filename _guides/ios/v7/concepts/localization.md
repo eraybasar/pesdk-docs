@@ -58,7 +58,7 @@ default bundle, or a customized bundle with `NSLocalizedStringFromTableInBundle`
 
 ## Plurals
 
-To have plurals handled correctly, we use a [.stringsdict](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/StringsdictFileFormat/StringsdictFileFormat.html) file. These define plural rules of a language. Some languages have more plural rules than others.
+To have plurals handled correctly, we use a [.stringsdict](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/StringsdictFileFormat/StringsdictFileFormat.html) file that defines plural rules of a language. Some languages have more plural rules than others.
 
 Here is an example for croatian:
 ```xml
