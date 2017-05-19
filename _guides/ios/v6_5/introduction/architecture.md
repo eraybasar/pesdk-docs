@@ -9,6 +9,8 @@ version: v6_5
 category:
   - guide
   - introduction
+  
+description: The PhotoEditor SDK for iOS provides a fully customizable UI, a versatile image processing section as well as a powerful rendering engine.
 
 tags: &tags # tags that are necessary
   - photo editor
