@@ -8,6 +8,8 @@ version: v4
 category: 
   - guide
   - introduction
+  
+description: A quick guide on how to easily get started with the PhotoEditor SDK for Android. Your kick-off to delight your users with top-notch editing capabilities.
 
 tags: &tags # tags that are necessary
   - photo editor 
