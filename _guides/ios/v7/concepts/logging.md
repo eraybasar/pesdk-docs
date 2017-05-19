@@ -29,3 +29,7 @@ Each logger must implement the `LoggerProtocol`,
 that contains a method for each of these types. We provide a default logger, that will simply log to the debug console.
 In case you want to add a custom logger, create a new class, implement the `LoggerProtocol` and call the `add` method of the `MasterLogger`.
 For more details, take a look at the [`MasterLogger`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/MasterLogger.html) documentation.
+
+Here is an example for a simple log with warning as log level.
+
+```MasterLogger.warn("This is my important warning !")```
