@@ -9,6 +9,9 @@ version: v3_1
 category: 
   - guide
   - introduction
+  
+description: The PhotoEditor SDK for Android can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires.
+  
 tags: &tags # tags that are necessary
   - photo editor 
 
