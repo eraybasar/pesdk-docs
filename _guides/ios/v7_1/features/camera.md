@@ -23,7 +23,7 @@ The PhotoEditor SDK offers a lightning fast camera implementation for iOS to com
 
 In order to use the camera, you have to instantiate a `CameraViewController` and present it. You can configure the camera to suit your needs using the `CameraViewControllerOptions`. To do so, you have to pass a `Configuration` object to the `CameraViewControllers` initializer. If no configuration is passed, the default configuration will be used.
 
-> __Warning__: When adding a camera to your app, don't forget to set the required `NSCameraUsageDescription` in the `Info.plist` file of your app. This is forced by iOS and allows your app to access the device's camera. If you want to allow photo roll access, you'll have to set the `NSPhotoLibraryUsageDescription` as well.
+> __Warning__: When adding a camera to your app, don't forget to set the required `NSCameraUsageDescription` and `NSLocationWhenInUseUsageDescription` keys in the `Info.plist` file of your app. This is forced by iOS and allows your app to access the device's camera and location, which is needed to tag photos with their location. If you want to allow photo roll access, you'll have to set the `NSPhotoLibraryUsageDescription` as well.
 
 The options allow you to configure the available flash modes, a forced square crop, tap to focus, allowed flash modes and a bunch of other stuff. Furthermore, you may disable camera roll access or live filters. Presenting the default camera editor can be done using the following code:
 
