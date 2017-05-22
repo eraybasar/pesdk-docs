@@ -21,6 +21,7 @@ For version 7 we added overlays to our PhotoEditor SDK. Said overlays are an eas
 To put it simply, overlays are images put on top of the input image.
 We provide several blend modes, that determine how exactly the overlay is applied.
 Each mode has its own characteristics and will add a unique flavour to the final composition.
+Supported asset formats are jpeg and png.
 
 ## Adding and removing overlays
 

@@ -26,6 +26,7 @@ ratio. Setting a higher tolerance can lead to a deformation of the frame asset, 
 In the frame tool UI, only static frames with a matching asset for the current image ratio will be listed. The static frames can be used for complex and irregular creatives.
 
 The second option is to use the all new dynamic frames. They work perfectly for creatives with repeatable or stretchable areas. To realize these, we abandoned the 9-patch standard and replaced it with a novel and even more flexible 12-patch layout.
+Supported asset formats are jpeg and png.
 
 ## Adding static frames
 

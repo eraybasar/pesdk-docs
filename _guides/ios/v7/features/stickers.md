@@ -30,3 +30,4 @@ The tool is implemented in the `StickerToolController` class and can be customiz
 Stickers are inserted into the SDK using the static property `StickerCategory.all`, which is an array of `StickerCategory` objects.
 A `StickerCategory` object holds the metadata of a sticker category, such as its preview image or the title and has an array of `Sticker` objects,
 which again hold the metadata for a `Sticker`, such as its `imageURL` and `thumbnailURL`. The `Sticker` class can handle local and remote resources.
+Supported formats are jpeg and png.

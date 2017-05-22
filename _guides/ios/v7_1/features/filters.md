@@ -55,6 +55,9 @@ Starting with version 7.0, we support lower resolution LUT files in order to fur
 - 256x256 LUT with 6 columns and 6 rows ([download ]({{ site.baseurl }}/assets/images/shared/identity_6_6_256.png){: download="identity_6_6_256" })
 - 128x128 LUT with 5 columns and 5 rows ([download ]({{ site.baseurl }}/assets/images/shared/identity_5_5_128.png){: download="identity_5_5_128" })
 
+The end of the assets name, holds information about structure of the data it contains. The ending `8_8_512` tells the SDK that the LUT image contains 8 times 8 tiles, and has a resolution of 512 pixel.
+When you create your own filters you must name your assets accordingly.
+
 Using a smaller LUT file may lead to issues when applying your filter, as our processing engine needs to interpolate missing values. We recommend starting with the smallest possible LUT file and falling back to larger files, if you notice that your filter can’t be fully reproduced:
 
 {:center: style="text-align: center"}
