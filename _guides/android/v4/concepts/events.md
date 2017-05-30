@@ -98,7 +98,7 @@ public class CustomEventTracker extends EventTracker {
 Now you have to add your `CustomEventTracker` and the build time created `your.package.PESDKEvents.class` to the settings class.<br>
 *If this class does exist: do a "clean build" and a "rebuild" and after this the Build Processor will create these classes.*
 ```java
-    settingsList.setEventProcessor(com.photoeditorsdk.android.app.http://0.0.0.0:5000/guides/android/v4/features/overlay.class);
+    settingsList.setEventProcessor(your.packagename.PESDKEvents.class);
     settingsList.setEventTracker(new CustomEventTracker(Application.ANALYTICS_TRACK_ID));
 ```
 If you do not receive trackings, please verify that you have added `your.package.PESDKEvents` and not `ly.img.android.PESDKEvents`!
