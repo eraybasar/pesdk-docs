@@ -1,5 +1,5 @@
 ---
-published: false # Either published or not 
+published: true # Either published or not 
 layout: guides/content
 title: &title Support # title as shown in the menu and 
 

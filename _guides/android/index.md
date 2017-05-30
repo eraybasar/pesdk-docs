@@ -4,7 +4,7 @@ title: &title Getting Started # title as shown in the menu and
 order: 1
 menuitem: *title
 platform: android
-version: v3_1
+version: v4
 category: 
   - guide
 
@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 redirect_to:
-  - '/guides/android/v3_1'
+  - '/guides/android/v4'
 ---

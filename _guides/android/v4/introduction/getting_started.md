@@ -14,7 +14,7 @@ description: A quick guide on how to easily get started with the PhotoEditor SDK
 tags: &tags # tags that are necessary
   - photo editor 
 
-published: false # Either published or not 
+published: true # Either published or not 
 ---
 
 # Getting started with our PhotoEditor SDK for Android
@@ -69,8 +69,11 @@ You will also have to add a few more things to your module's `build.gradle` file
 ```groovy
 apply plugin: 'com.android.application'
 
+/* Optional if you do not use the build-processor see below */
+apply plugin: 'com.neenbedankt.android-apt' 
+
 android {
-    /* Set the compile SDK and the Build SDK min. at SDK 23 or grater. */
+    /* Set the compile SDK and the Build SDK min. at SDK 25 or grater. */
     compileSdkVersion 25
     buildToolsVersion '25.0.2'
 
@@ -109,7 +112,12 @@ android {
 
 dependencies {
     /* Make sure that you are importing the latest SDK version */
-    compile 'ly.img.android:photo-editor-sdk:3.0.7'
+    compile 'ly.img.android:photo-editor-sdk:4.0.0'
+
+    /* This is optional if you do not want use an `EventTracker` and do not extend our SDK, otherwise it is required. 
+     * don't forget to apply the APT plugin see above
+     */
+    apt 'ly.img.android:build-processor:4.0.0' 
 }
 ```
 
