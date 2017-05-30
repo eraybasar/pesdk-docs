@@ -17,7 +17,7 @@ published: true # Either published or not
 
 # Overview
 
-Our SDK provides all the tools necessary for adding photo editing capabilities to your iOS application with a large variety of filters that can be previewed in realtime. Unlike other apps that allow a live preview of filters, the PhotoEditor SDK provides a live preview even when using high-resolution images. We do not have any resolution limits, the framework is written in Swift and allows for easy customization.
+Our SDK provides all the tools necessary for adding photo editing capabilities to your iOS application with a large variety of filters that can be previewed in realtime. Unlike other apps that allow a live preview of filters, the PhotoEditor SDK provides a live preview even when using high-resolution images. The framework is written in Swift and allows for easy customization.
 Additionally we support adding stickers and text in a non-destructive manner, which means that you can change the position, size, scale and order at any given time, even after applying other effects or cropping the photo.
 
 <div class="documentation__disclaimer">
