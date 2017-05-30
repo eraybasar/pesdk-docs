@@ -44,16 +44,16 @@ kramdown:
   input: GFM
 
 collections:
-  features: 
+  features:
     output: true
     permalink: /:collection/:path
-  quickstarts: 
+  quickstarts:
     output: true
     permalink: /:collection/:path
-  guides: 
+  guides:
     output: true
     permalink: /:collection/:path
-  apidocs: 
+  apidocs:
     output: true
     permalink: /:collection/:path
 
@@ -84,10 +84,10 @@ defaults:
       prefix: "PhotoEditor SDK | iOS "
       description: "A quick guide on how to easily get started with the PhotoEditor SDK for iOS. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
-      path: "guides/ios/v6_5"
+      path: "guides/ios/v7_1"
       collection: guides
     values:
-      version: v6_5
+      version: v7_1
 
 # Android
   - scope:
@@ -102,7 +102,7 @@ defaults:
       collection: guides
     values:
       version: v3_1
-      
+
 # quickstarts
   - scope:
       path: "quickstarts"
