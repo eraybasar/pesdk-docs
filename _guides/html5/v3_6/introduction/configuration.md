@@ -36,7 +36,7 @@ to the `options` object passed to the UI:
   * `preloader` Boolean - Enables the preloader. Defaults to `true`.
   * `watermarkImage` Image - An image that should be placed on top as a watermark. Defaults to `undefined`.
   * `image` Image - The image that the user can edit. Defaults to `undefined`.
-  * `displayResizeMessage` Boolean - Should a message be displayed when the image has been scaled down for perforamcen. Defaults to `true`.
+  * `displayResizeMessage` Boolean - Should a message be displayed when the image has been scaled down for performance reasons. Defaults to `true`.
 
 
   * `photoRoll` Object
