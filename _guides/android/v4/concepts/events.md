@@ -20,8 +20,8 @@ To receive events you have to include our apt build processor into your applicat
 ...
 apply plugin: 'com.neenbedankt.android-apt'
 dependencies {
-    compile 'ly.img.android:photo-editor-sdk:4.0.0'
-    apt 'ly.img.android:build-processor:4.0.0'
+    compile 'ly.img.android:photo-editor-sdk:4.0.1'
+    apt 'ly.img.android:build-processor:4.0.1'
     ...
 }
 ...
