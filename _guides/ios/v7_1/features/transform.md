@@ -47,7 +47,7 @@ let photoEditViewController =  PhotoEditViewController(photo: sampleImage!, conf
 
 # Adding social media aspect ratios
 
-To let your users crop their image to specific aspect ratios used by social networks (e.g. Facebook, Twitter, Instagram, Flickr), you simply have to set the desired aspect ratio and name it accordingly:
+To let your users crop their image to specific aspect ratios used by social networks (e.g. Facebook, Twitter, Instagram, Flickr), you simply have to set the desired aspect ratio and name it accordingly (setting the aspect ratio will not affect the resolution of the image):
 
 ```swift
 let configuration = Configuration { builder in
@@ -57,9 +57,6 @@ let configuration = Configuration { builder in
             CropAspect(width: 3, height: 4, localizedName: "FB Post", rotatable: false),
             CropAspect(width: 828, height: 315, localizedName: "FB Cover", rotatable: false),
         ]
-    }
-    builder.configurePhotoEditorViewController { options in
-        options.forceCropMode = false
     }
 }
 let sampleImage = UIImage(named: "sample_image")
