@@ -54,8 +54,11 @@ let configuration = Configuration { builder in
     builder.configureTransformToolController { options in
         options.allowFreeCrop = true
         options.allowedCropRatios = [
-            CropAspect(width: 3, height: 4, localizedName: "FB Post", rotatable: false),
-            CropAspect(width: 828, height: 315, localizedName: "FB Cover", rotatable: false),
+            CropAspect(width: 3, height: 4, localizedName: "Facebook Post", rotatable: false),
+            CropAspect(width: 828, height: 315, localizedName: "Facebook Cover", rotatable: false),
+            CropAspect(width: 2, height: 3, localizedName: "Twitter Post", rotatable: false),
+            CropAspect(width: 1, height: 1, localizedName: "Linkedin Post", rotatable: false),
+            CropAspect(width: 1, height: 1, localizedName: "Instagram Post", rotatable: false),
         ]
     }
 }
