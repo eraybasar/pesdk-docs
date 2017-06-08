@@ -55,7 +55,7 @@ $ cp example/LICENSE_ANDROID example/platforms/android/assets
 ```
 These add the iOS and Android platforms to the example app, install the `pesdk` plugin from the current directory and finally add the required license for the PhotoEditor SDK to the Android application.
 
-Furthermore you need to add the `LICENSE_IOS` file to the Xcode project by opening [PESDKDemo.xcworkspace](/example/platforms/ios/PESDKDemo.xcworkspace) using Xcode and dragging the license file into the sidebar.
+Furthermore you need to add the `LICENSE_IOS` file to the Xcode project by opening _PESDKDemo.xcworkspace_ using Xcode and dragging the license file into the sidebar.
 
 To run the Android and iOS samples you can then simply execute `cordova run android` or `cordova run ios` from the `example` subfolder. If the Android app crashes upon launch you most likely forgot the `cp LICENSE_ANDROID...` command mentioned above.
 
