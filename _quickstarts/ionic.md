@@ -17,7 +17,7 @@ published: true
 
 # Getting Started with Ionic
 
-We created a [demo repository](https://github.com/imgly/pesdk-ionic-demo), that uses our [Cordova demo](https://github.com/imgly/pesdk-cordova-demo) to integrate the PhotoEditor SDK into an Ionic application.
+We created a [demo repository](https://github.com/imgly/pesdk-ionic-demo), that uses our [Cordova demo](https://github.com/imgly/pesdk-cordova-demo) to integrate the PhotoEditor SDK into an Ionic application. Make sure to check out our [accompanying blog post](https://blog.photoeditorsdk.com/photoeditor-sdk-cordova-dabe146e6c13) as well.
 
 >**WARNING**: The repository is not meant as a fully fledged Ionic plugin, but as a base for further development instead. See the [Cordova plugin repository](https://github.com/imgly/pesdk-cordova-demo) for more details on how to implement a full plugin for your use case.
 

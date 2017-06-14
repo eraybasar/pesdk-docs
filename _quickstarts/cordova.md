@@ -16,7 +16,7 @@ published: true
 
 # Getting Started with Cordova
 
-We created a [demo repository](https://github.com/imgly/pesdk-cordova-demo) to show you how to easily easily integrate the [PhotoEditor SDK into your Cordova application.
+We created a [demo repository](https://github.com/imgly/pesdk-cordova-demo) to show you how to easily easily integrate the PhotoEditor SDK into your Cordova application. Make sure to check out our [accompanying blog post](https://blog.photoeditorsdk.com/photoeditor-sdk-cordova-dabe146e6c13) as well.
 
 > **WARNING:** The repository is not meant as a fully fledged Cordova plugin, but as a base for further development instead.
  
