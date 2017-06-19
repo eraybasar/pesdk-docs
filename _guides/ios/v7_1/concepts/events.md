@@ -80,9 +80,26 @@ class AnalyticsClient: PhotoEditorSDK.AnalyticsClient {
 
 Prior to presenting any PhotoEditor SDK related view controllers, you would then call
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 PESDK.analytics.isEnabled = true
 PESDK.analytics.addAnalyticsClient(AnalyticsClient())
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDK.analytics.isEnabled = YES;
+[PESDK.analytics addAnalyticsClient:[PESDKAnalyticsClient new]];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 to enable analytics and add your custom tracker to receive events.
