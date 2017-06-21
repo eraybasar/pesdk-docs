@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Overview
 
 Our photo editor is a powerhorse. It comes with unmatched performance using WebGL as primary
 rendering engine, and canvas as fallback. All essential photo editing functions are bundled into a

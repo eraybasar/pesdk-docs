@@ -4,6 +4,7 @@
   margin-left: 0px
   margin-right: 24px
   border: 1px solid #eee
+
   +element(item)
     padding-left: 12px
     padding-right: 12px
@@ -15,12 +16,98 @@
     > input
       @extend .regular-font
       width: 100%
-      cursor: pointer
       font-size: 18px
       color: #555558
       border: 0px
       box-sizing: border-box
+      &:focus
+        outline: none
 
     > input[type=submit]
       display: none
       
+  +element(results)
+    overflow: hidden
+
+    h1
+      color: $text-color
+      margin-bottom: 20px
+      @extend .bold-italic-font
+      font-size: 32px !important
+      font-family: "Open Sans"
+
+      +screen-small
+        font-size: 28px !important
+
+    +element(list)
+      list-style: none
+      padding: 0
+      margin: 0
+    
+      +element(item)
+        list-style: none
+        margin-bottom: 25px
+        color: $text-color
+
+        h2
+          font-size: 2.0rem
+          line-height: 2.0rem
+          color: $primary-color
+          margin-bottom: 8px
+
+          &:hover
+            text-decoration: underline
+
+        a
+          color: $text-color
+
+          &:hover
+            text-decoration: none
+
+        span
+          background: $light-grey-color
+          font-size: 12px
+          padding: 3px 6px
+          margin-right: 8px
+          border-radius: 3px
+        
+        p
+          margin-top: 8px
+
+    +element(filter-bar)
+      margin-bottom: 20px
+
+      input
+        display: none
+
+        & + label
+          display: inline-block
+          color: $text-color
+          cursor: pointer
+          border: 1px solid #eee
+          padding: 6px 12px
+          margin-bottom: 10px
+
+          &:last-child
+            margin-bottom: 0
+
+        &:checked + label
+          color: $primary-color
+
+        &:disabled + label
+          opacity: 0.3
+
+      form
+        display: inline-block
+        margin-right: 20px
+
+      div
+        display: inline-block
+        font-size: 12px
+        margin-right: 8px
+
+    +element(spinner)
+      margin-top: 40px
+      width: 40px
+      height: 40px
+      margin: 0 auto

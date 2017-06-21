@@ -16,7 +16,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-# Localization
 
 International web applications have international users. That's why we allow you to easily add custom
 languages to our UI by passing them using the `extensions.languages` object. The `language` option

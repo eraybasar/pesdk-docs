@@ -1,0 +1,29 @@
+---
+---
+
+{% assign pages = site.guides | where: "published", true | sort: "order" %}
+
+[
+  {% for page in pages %}
+    {% assign content_length = page.content | size %}
+    {% if content_length < 10 %}
+      {% continue %}
+    {% endif %}
+    {
+      "title": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "url": "{{ page.url | slugify }}",
+      "tags": {{ page.tags | jsonify }},
+      "platform": {{page.platform | jsonify }},
+      "category": {{page.category | jsonify }},
+      "version": "{{page.version}}",
+      "date": "{{ page.date | date: '%D' }}",
+      "date_iso": "{{ page.date | date: '%F' }}",
+      "id": "{{ page.id }}",
+      "content": {{ page.content | jsonify }}
+    }
+    {% if forloop.index != pages.size %}
+    ,
+    {% endif %}
+  {% endfor %}
+]

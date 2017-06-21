@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# {{ page.title }}
 
 Since version 3.5.0 you can force users to use certain controls before using all other editor
 functions. In order to do that, you need to pass the `editor.forceControls` option which contains

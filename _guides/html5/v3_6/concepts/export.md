@@ -16,7 +16,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Exporting
 
 To export the resulting image as an `Image` object or as a data url, you can use the [`export`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.html#export)
 method:

@@ -1,0 +1,275 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="documentation">
+    {% include guides/subnavigation.html platform=page.platform version=page.version %}
+    <div class="documentation-content documentation-search__results">
+      <h1>Search Results</h1>
+      <div id='filter-bar' class="documentation-search__results__filter-bar">
+
+      </div>
+      <ul id="search-results" class="documentation-search__results__list">
+        <img class="documentation-search__results__spinner" src="{{site.baseurl}}/assets/images/shared/loading_spinner.gif" />
+        <!-- Results go here. -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  /*
+   * Generates a local storage of all available guides, thats used
+   * when rendering any search results.
+   */
+  {% assign guides = site.guides | sort: "order" %}
+  window.store = {
+    {% for guide in guides %}
+      "{{ guide.id }}": {
+        "title": "{{ guide.title }}",
+        "platform": "{{guide.platform}}",
+        "version": "{{guide.version}}",
+        "content": {{guide.content | markdownify | strip_html | strip_newlines | jsonify}},
+        "url": "{{ site.baseurl | append: guide.url | xml_escape }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.1/lunr.min.js"></script>
+<script>
+  // Create a map to determine the available versions for a given platform
+  {% assign platforms = "html5|ios|android" | split: "|" %}
+  var platformVersionMap = {
+    {% for platform in platforms %}
+      {% assign guides_by_platform = site.guides | where: "published", true | where: "platform", platform %}
+      {% assign guides_by_version = guides_by_platform | group_by: "version" | sort: "name" | reverse %}
+      "{{platform}}": [
+        {% for group in guides_by_version %}
+          "{{group.name}}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  }
+
+  // Read initial version/platform filters
+  var activeVersions = []
+  if (getQueryVariable('versions')) { activeVersions = getQueryVariable('versions').split(',') }
+  var activePlatforms = []
+  if (getQueryVariable('platforms')) { activePlatforms = getQueryVariable('platforms').split(',') }
+
+  /*
+   * Called when the user selects/deselects a platform.
+   */
+  function togglePlatform(event, platform) {
+    let index = activePlatforms.indexOf(platform)
+    if (index == -1) {
+      activePlatforms.push(platform)
+    } else {
+      activePlatforms.splice(index, 1)
+    }
+
+    displaySearchResults(window.results, window.store)
+  }
+
+  /*
+   * Called when the user selects/deselects a version.
+   */
+  function toggleVersion(event, version) {
+    let index = activeVersions.indexOf(version)
+    if (index == -1) {
+      activeVersions.push(version)
+    } else {
+      activeVersions.splice(index, 1)
+    }
+
+    displaySearchResults(window.results, window.store)
+  }
+
+  /*
+   * Creates a pretty string for the given platform.
+   */
+  function prettyPlatformString(platform) {
+    if (platform == 'android') {
+      return 'Android'
+    } else if (platform == 'ios') {
+      return 'iOS'
+    } else if (platform == 'html5') {
+      return 'HTML5'
+    }
+
+    return ''
+  }
+
+  /*
+   * Returns whether the given version is currently enabled.
+   * If no versions are selected, all versions are enabled by default.
+   */
+  function isVersionEnabled(version) {
+    if (activeVersions.indexOf(version) == -1) {
+      return false || activeVersions.length == 0
+    } 
+    
+    return true
+  }
+
+  /*
+   * Returns whether the given platform is currently enabled.
+   * If no platforms are selected, all platforms are enabled by default.
+   */
+  function isPlatformEnabled(platform) {
+    if (activePlatforms.indexOf(platform) == -1) {
+      return false || activePlatforms.length == 0
+    }
+    
+    return true
+  }
+
+  /*
+   * Determines if the given version is available given
+   * the current platform selection.
+   */
+  function shouldDisplayVersionDisabled(version) {
+    if (activePlatforms.length == 0) {
+      return true
+    } else {
+      for (var i = 0; i < activePlatforms.length; i++) {
+        let platform = activePlatforms[i]
+        if (platformVersionMap[platform].indexOf(version) != -1) {
+          return true
+        }
+      }
+    }
+
+    return false
+  }
+
+  /*
+   * Renders the HTML for the search result list and a filter bar.
+   */
+  function displaySearchResults(results, store) {
+    var searchTerm = getQueryVariable('query')
+    var searchResults = document.getElementById('search-results')
+    var filterBar = document.getElementById('filter-bar')
+
+    let noResultsHTML = "<li class='documentation-search__results__list__item'><p>Your search for '<b>" + searchTerm + "</b>' did not match any documents.</p></li>"
+    if (results.length) {
+
+      let versions = []
+      let platforms = []
+
+      var resultsHTML = ''
+      for (var i = 0; i < results.length; i++) {
+        var item = store[results[i].ref]
+        if (item) {
+          // Collect versions and platforms given in the results
+          if (versions.indexOf(item.version) == -1) { versions.push(item.version) }
+          if (platforms.indexOf(item.platform) == -1) { platforms.push(item.platform) }
+
+          // Do not render results of disabled versions and platforms
+          if (!isVersionEnabled(item.version) || !isPlatformEnabled(item.platform)) {
+            continue
+          }
+
+          // Create HTML for current result
+          resultsHTML += '<li class="documentation-search__results__list__item"><a href="' + item.url + '"><h2>' + item.title + '</h2>'
+          resultsHTML += '<span>' + prettyPlatformString(item.platform) + '</span>'
+          resultsHTML += '<span>' + item.version.replace('_','.') + '</span>'
+          resultsHTML += '<p>' + item.content.substring(0, 150) + '...</p></a></li>'
+        }
+      }
+
+      // Add empty state if no HTML was appended
+      if (resultsHTML.length == 0) {
+        resultsHTML = noResultsHTML
+      }
+      searchResults.innerHTML = resultsHTML
+
+      // Render top filter bar
+      filterbarHTML = "<form>"
+      for (var i = 0; i < platforms.length; i++) {
+        let isChecked = isPlatformEnabled(platforms[i]) && activePlatforms.length != 0
+        filterbarHTML += "<div>"
+        filterbarHTML += "<input id='" + platforms[i] + "' type='checkbox' value='" + platforms[i] + "'" + (isChecked && " checked " || "") + "/>"
+        filterbarHTML += "<label for='" + platforms[i] + "' onclick='togglePlatform(event,\"" + platforms[i] + "\")'>" + prettyPlatformString(platforms[i]) + "</label>"
+        filterbarHTML += "</div>"
+      }
+      filterbarHTML += "</form>"
+
+      filterbarHTML += "<form>"
+      for (var i = 0; i < versions.length; i++) {
+        let isChecked = isVersionEnabled(versions[i]) && activeVersions.length != 0
+        let isDisabled = !shouldDisplayVersionDisabled(versions[i])
+        filterbarHTML += "<div>"
+        filterbarHTML += "<input id='" + versions[i] + "' type='checkbox' value='" + versions[i] + "'" + (isChecked && " checked " || "") + (isDisabled && " disabled " || "") + "/>"
+        filterbarHTML += "<label for='" + versions[i] + "' onclick='toggleVersion(event,\"" + versions[i] + "\")'>" + versions[i].replace('_','.') + "</label>"
+        filterbarHTML += "</div>"
+      }
+      filterbarHTML += "</form>"
+
+      filterBar.innerHTML = filterbarHTML
+    } else {
+      searchResults.innerHTML = noResultsHTML;
+    }
+  }
+
+  /*
+   * Extracts a query variable from the URL.
+   */
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1)
+    var vars = query.split('&')
+
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=')
+
+      if (pair[0] === variable) {
+        return decodeURIComponent(pair[1].replace(/\+/g, '%20'))
+      }
+    }
+  }
+
+  /*
+   * Initial function that performs the actual search by extracting
+   * the search term from the parameters, downloading the index 
+   * JSON and performing the search. The results are stored in the
+   * window object.
+   */
+  (function() {
+    var searchTerm = getQueryVariable('query')
+    if (searchTerm) {
+      document.getElementById('search-box').setAttribute("value", searchTerm)
+
+      // Download index JSON from /guides/search.json
+      {% assign search_index_url = site.baseurl | append: '/guides/search.json' %}
+      var url = "{{search_index_url}}"
+      var searchEngine = fetch(url, {method: 'get'})
+        .then(function(response) {
+          return response.json()
+      }).then(function(data){
+        var documents = data
+        
+        // Configure lunr and add index
+        return lunr(function () {
+          this.ref('id')
+          this.field('title', { boost: 5 })
+          this.field('platform', {boost: 3})
+          this.field('version')
+          this.field('content')
+          this.field('description')
+
+          documents.forEach(function (doc) { this.add(doc)}, this)
+        })
+      })
+
+      // Perform search
+      searchEngine.then( function (engine){
+        window.results = engine.search(searchTerm)
+        displaySearchResults(window.results, window.store)
+      })
+    }
+  })()
+</script>
+

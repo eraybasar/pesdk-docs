@@ -17,7 +17,6 @@ published: true # Either published or not
 ---
 
 <!--Check PhotoEditorReactUI.js in the sourcecode -->
-# Configuration
 
 You can easily configure the editor to disable specific tools, hide buttons etc. by adding properties
 to the `options` object passed to the UI:

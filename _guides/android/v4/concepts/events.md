@@ -13,7 +13,6 @@ tags: &tags # tags that are necessary
   - photo editor 
 published: true # Either published or not 
 ---
-# Events
 The PhotoEditor SDK allows you to register an object that is being notified about events in real-time. You can then send these events to an analytics service of your choice.
 To receive events you have to include our apt build processor into your application `build.gradle` file:
 ```groovy

@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Third Party Libraries
 
 To bring you the best PhotoEditor SDK possible, we rely on some third party libraries. These are attributed below:
 

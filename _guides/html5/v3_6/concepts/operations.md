@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-# {{ page.title }}
 ## Adding Custom Operations
 
 Per default, the SDK just renders the plain image. To modify the rendered image you need to add

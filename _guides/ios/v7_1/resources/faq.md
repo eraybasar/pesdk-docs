@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-# Frequently Asked Questions
 
 ## Library not loaded
 If you see an issue like this one:

@@ -16,4 +16,3 @@ redirect_to:
   - https://artifactory.9elements.com/artifactory/imgly/ly/img/android/photo-editor-sdk/
 ---
 
-# {{page.title}}

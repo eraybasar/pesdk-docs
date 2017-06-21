@@ -17,7 +17,6 @@ tags: &tags # tags that are necessary
 
 ---
 
-# Architecture
 
 The PhotoEditor SDK for iOS is structured into two main components:
 

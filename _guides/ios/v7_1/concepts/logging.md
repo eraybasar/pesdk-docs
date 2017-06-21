@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-# {{page.title}}
 
 With version 7 we introduced a new way of dealing with errors, warnings and such.
 We created the `MasterLogger` class, which will take care of managing child loggers, and dispatching events.

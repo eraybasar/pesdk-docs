@@ -1,0 +1,56 @@
+<div class="documentation-search">
+    <form class="documentation-search__item" action="{{ site.baseurl }}/guides/search.html" name="searchForm" method="get">
+      <input type="search" id="search-box" name="query" placeholder="Search..." />
+      {% if include.version %}
+      	<input type="text" name="versions" value="{{include.version}}" hidden />
+      {% endif %}
+      {% if include.platform %}
+      	<input type="text" name="platforms" value="{{include.platform}}" hidden />
+      {% endif %}
+      <input type="submit" tabindex="-1" />
+    </form>
+</div>
+
+<script>
+	function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split('&');
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+
+        if (pair[0] === variable) {
+          return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+        }
+      }
+    }
+
+	var search_url = "{{ site.baseurl }}/guides/search.html"
+	var typingTimer;
+	var doneTypingInterval = 1000;
+
+	$('#search-box').keyup(function () {
+		clearTimeout(typingTimer);
+		if ($('#search-box').val()) {
+			typingTimer = setTimeout(userDidFinishTyping, doneTypingInterval);
+		}
+	});
+
+	let version = "{{include.version}}"
+	let platform = "{{include.platform}}"
+	function userDidFinishTyping () {
+		let query = $('#search-box').val();
+		console.log(window.location.href);
+		if (query.length > 0 && query != getQueryVariable('query')) {
+			let url = search_url + '?query=' + query;
+			if (version.length > 0) {
+				url += "&versions=" + version
+			}
+			if (platform.length > 0) {
+				url += "&platforms=" + platform
+			}
+			location.href = url;
+			clearInterval(intervalID);
+		}
+	}
+</script>

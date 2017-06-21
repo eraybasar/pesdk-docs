@@ -17,7 +17,6 @@ published: true # Either published or not
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
-# {{page.title}}
 
 The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames.
 The first option is to use our static frames. These frames hold serveral versions of the assets, i.e one for each supported ratio. During the rendering process the

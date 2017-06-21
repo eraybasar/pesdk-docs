@@ -17,7 +17,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-# Getting Started with the PhotoEditor SDK for iOS
 
 ## Requirements
 
@@ -67,7 +66,6 @@ The script works around an [App Store submission bug](http://www.openradar.me/ra
 
 ![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/copy-dsym.jpg)
 
-# Setup
 
 Our SDK provides two main view controllers. One to work with the camera and the other to edit an image.
 In the following section we will first explain how the licensing works

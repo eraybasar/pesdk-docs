@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# {{ page.title }}
 
 Since version 3.4.2, PhotoEditorSDK's Editor UI supports serialization and deserialization of
 application states. This means that you can export the current state of the editor and import

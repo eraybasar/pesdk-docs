@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# {{page.title}}
 
 We added overlays to our PhotoEditor SDK in version 4. Overlays are an easy, yet powerful way to create stunning effects.
 To put it simple, overlays are images put on top of the input image.

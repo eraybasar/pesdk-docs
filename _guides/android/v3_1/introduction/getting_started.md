@@ -17,7 +17,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Getting started with our PhotoEditor SDK for Android
 
 This document guides you through the process of integrating the PhotoEditor SDK into you Android
 application.

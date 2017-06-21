@@ -17,7 +17,6 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-# Configuration
 
 The `ImgLyConfig` provides a lot of functions for customizing the Editor.
 To modify this configuration you need to generate a default object using a new `SettingsList` object. You can then configure the SDK using the `ImglyConfig` object returned from `getConfig()`. Afterwards you add the modified `settingsList` to the `CameraPreviewBuilder` or the `PhotoEditorBuilder`.

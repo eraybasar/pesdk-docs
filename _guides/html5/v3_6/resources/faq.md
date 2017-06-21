@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Frequently Asked Questions
 
 ## Browser Support
 

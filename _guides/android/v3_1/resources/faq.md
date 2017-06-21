@@ -16,7 +16,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Frequently Asked Questions
 
 ### I just use the editor, why does the app request permission to use the camera?
 

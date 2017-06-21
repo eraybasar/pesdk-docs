@@ -14,4 +14,3 @@ tags: &tags # tags that are necessary
 
 published: false # Either published or not 
 ---
-# Events

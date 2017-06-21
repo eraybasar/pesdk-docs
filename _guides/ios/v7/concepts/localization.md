@@ -16,7 +16,6 @@ published: true # Either published or not
 ---ished: true # Either published or not
 ---
 
-# Localization
 
 The PhotoEditor SDK is fully localizable. We provide an english fallback localization, that will be used when no matching localization is found. To determine the matching language PhotoEditor SDK uses `NSLocale.preferredLanguages`.
 To add support for a language, please refer to Apple's localization guidelines.

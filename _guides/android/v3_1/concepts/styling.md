@@ -14,9 +14,6 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not 
 ---
-
-# Styling the Editor
-
 It's easy to customize the PhotoEditor Android SDK's style.
 ​All resource and style identifier can be overwritten. They have the prefix: `imgly_` e.g. `Imgly.`
 ​

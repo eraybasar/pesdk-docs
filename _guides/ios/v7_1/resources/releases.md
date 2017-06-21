@@ -16,4 +16,3 @@ redirect_to:
   - https://github.com/imgly/pesdk-ios-build/releases
 ---
 
-# {{page.title}}

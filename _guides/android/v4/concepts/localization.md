@@ -15,7 +15,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-# Localization
 
 You can easily add more languages by adding/overwriting string resources.
 

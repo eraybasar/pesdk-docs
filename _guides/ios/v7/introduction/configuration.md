@@ -18,7 +18,6 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-# Configuration
 
 The PhotoEditor SDK can be customized to meet your requirements. There are global settings to set things like
 the background color of the app, but also closures that allow an in-depth customization.

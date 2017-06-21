@@ -14,7 +14,6 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not
 ---
-# Events
 
 The PhotoEditor SDK allows you to register an object that's notified about events and screen views in real-time. You can then send these events to an analytics service of your choice.
 

@@ -17,7 +17,6 @@ published: true # Either published or not
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
-# Filters
 Our SDK features more than 60 high quality filters. The processing is lightning fast, and it's easy to add your own filters.
 You might think that adding your own filters is complicated or requires super math skills.
 Well, not at all. The way we realize filters makes it super easy. Actually, you don't have to code filters,

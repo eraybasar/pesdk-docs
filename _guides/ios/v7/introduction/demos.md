@@ -16,7 +16,6 @@ tags: &tags # tags that are necessary
 published: true
 ---
 
-# Demos
 
 Wether you want to learn how to use the PhotoEditor SDK or just want to see what can be built with it, we are providing some example integrations for various frameworks.
 

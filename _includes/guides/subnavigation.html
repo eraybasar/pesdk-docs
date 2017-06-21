@@ -7,47 +7,33 @@
 {% assign intropages = subpages | where: "category", "introduction" %}
 {% assign feature_pages = subpages | where: "category", "feature" %}
 {% assign concept_pages = subpages | where: "category", "concept" %}
-
 {% assign resource_pages = subpages | where: "category", "resource" %}
 
 <div class="documentation-subnavigation">
   <div class="documentation-subnavigation__container">
-      <!--{% include documentation/search.html %}-->
+      {% include documentation/search_box.html platform=platform version=version %}
       {% include documentation/picker.html platform=platform version=version %}
       {% include documentation/spacer.html %}
       <ul class="documentation-subnavigation__list">
-        <li class="documentation-subnavigation__list__header">
-          Introduction
-          <ul>
-            {% for p in intropages %}
-              <li class="documentation-subnavigation__list__item">
-                {% if p.url == page.url %}
-                  <a class="is-active" href="{{site.baseurl}}{{site.baseurl}}{{p.url}}">{{p.menuitem}}</a>
-                {% else %}
-                  <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
-                {% endif %}
-              </li>              
-            {% endfor %}
-          </ul>
-        </li>
-        
-        <li class="documentation-subnavigation__list__header">
-          Features
-          {% for p in feature_pages %}
-            <li class="documentation-subnavigation__list__item">
-              {% if p.url == page.url %}
-                <a class="is-active" href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
-              {% else %}
-                <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
-              {% endif %}
-            </li>   
-          {% endfor %}
-        </li>
-        
-        <li class="documentation-subnavigation__list__header">
-          Concepts
-           <ul>
-            {% for p in concept_pages %}
+        {% if intropages.size > 0 or feature_pages.size > 0 or concept_pages.size > 0 or resource_pages.size > 0 %}
+          <li class="documentation-subnavigation__list__header">
+            Introduction
+            <ul>
+              {% for p in intropages %}
+                <li class="documentation-subnavigation__list__item">
+                  {% if p.url == page.url %}
+                    <a class="is-active" href="{{site.baseurl}}{{site.baseurl}}{{p.url}}">{{p.menuitem}}</a>
+                  {% else %}
+                    <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
+                  {% endif %}
+                </li>              
+              {% endfor %}
+            </ul>
+          </li>
+          
+          <li class="documentation-subnavigation__list__header">
+            Features
+            {% for p in feature_pages %}
               <li class="documentation-subnavigation__list__item">
                 {% if p.url == page.url %}
                   <a class="is-active" href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
@@ -56,23 +42,38 @@
                 {% endif %}
               </li>   
             {% endfor %}
-          </ul>
-        </li>
-        
-        <li class="documentation-subnavigation__list__header">
-          Resources
-          <ul>
-            {% for p in resource_pages %}
-              <li class="documentation-subnavigation__list__item">
-                {% if p.url == page.url %}
-                  <a class="is-active" href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
-                {% else %}
-                  <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
-                {% endif %}
-              </li>   
-            {% endfor %}
-          </ul>
-        </li>
+          </li>
+          
+          <li class="documentation-subnavigation__list__header">
+            Concepts
+             <ul>
+              {% for p in concept_pages %}
+                <li class="documentation-subnavigation__list__item">
+                  {% if p.url == page.url %}
+                    <a class="is-active" href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
+                  {% else %}
+                    <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
+                  {% endif %}
+                </li>   
+              {% endfor %}
+            </ul>
+          </li>
+          
+          <li class="documentation-subnavigation__list__header">
+            Resources
+            <ul>
+              {% for p in resource_pages %}
+                <li class="documentation-subnavigation__list__item">
+                  {% if p.url == page.url %}
+                    <a class="is-active" href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
+                  {% else %}
+                    <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
+                  {% endif %}
+                </li>   
+              {% endfor %}
+            </ul>
+          </li>
+        {% endif %}
       </ul>
   </div> 
 </div> 
