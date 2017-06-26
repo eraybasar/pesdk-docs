@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: Rendering
+title: &title Rendering
 description: Learn how to leverage the powerful rendering engine of the PhotoEditor SDK for HTML5 and how to wire it with your own custom UI or no UI at all.
 
 menuitem: *title

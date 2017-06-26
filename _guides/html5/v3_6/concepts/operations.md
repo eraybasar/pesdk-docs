@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: Custom Operations
+title: &title Custom Operations
 description: Learn how to add custom image modifications to the rendering process of the PhotoEditor SDK for HTML5 by extending the operation class.
 
 menuitem: *title

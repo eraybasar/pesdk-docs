@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: Adjustments # title as shown in the menu and 
+title: &title Adjustments # title as shown in the menu and 
 menuitem: Adjustments
 order: 2
 platform: html5

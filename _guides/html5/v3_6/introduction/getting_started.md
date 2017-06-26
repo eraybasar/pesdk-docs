@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: Getting started
+title: &title Getting started
 description: A quick guide on how to easily get started with the PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities.
 order: 1
 menuitem: Getting Started
