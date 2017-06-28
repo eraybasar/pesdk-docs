@@ -26,7 +26,7 @@ We start with the basic react setup, add the native SDKs to the corresponding pl
 
 ## Setup
 
-Create a demo project using `react-native init <PROJECT_NAME>` and add follow the [manual installation]({{ site.baseurl }}/guides/ios/v6_5/introduction/getting_started) steps from the iOS documentation. Once the PhotoEditor SDK has been set up in your iOS app, repeat the same for Android by following the corresponding [getting started steps]({{ site.baseurl }}/guides/android/v3_1/introduction/getting_started) from our docs.
+Create a demo project using `react-native init <PROJECT_NAME>` and add follow the [manual installation]({{ site.baseurl }}/guides/ios/v6/introduction/getting_started) steps from the iOS documentation. Once the PhotoEditor SDK has been set up in your iOS app, repeat the same for Android by following the corresponding [getting started steps]({{ site.baseurl }}/guides/android/v3_1/introduction/getting_started) from our docs.
 
 ## Bridging between React Native and the native SDKs
 
