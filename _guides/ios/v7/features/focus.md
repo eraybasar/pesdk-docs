@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Focus # title as shown in the menu and 
+title: &title Focus # title as shown in the menu and
 
 menuitem: *title
 order: 0
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - feature
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}

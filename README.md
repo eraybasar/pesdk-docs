@@ -1,4 +1,4 @@
-# Documentation of the PhotoEditor SDK 
+# Documentation of the PhotoEditor SDK
 
 ## Run locally
 The docs are generated using [Jekyll](https://jekyllrb.com/). In order to run them locally, install Jekyll:
@@ -10,7 +10,7 @@ And launch it:
 
 ```
 $ bundle exec jekyll serve
-``` 
+```
 
 ## Definition of Meta tags
 Every document starts with a preamble like this:
@@ -25,7 +25,7 @@ category: # The categories this page belongs to
   - guide
   - feature
 tags: &tags # Tags that are necessary
-  - photo editor 
+  - photo editor
 published: true # Either published or not (not published = not visible on page)
 ---
 ```
@@ -69,4 +69,4 @@ Finally we need to combine all snippets into an array (yep, that's how you do th
     {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
     {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-To see multilingual code blocks in action, take a look at the [iOS events documentation](http://docs.photoeditorsdk.com/guides/ios/v7_1/concepts/events).
+To see multilingual code blocks in action, take a look at the [iOS events documentation](http://docs.photoeditorsdk.com/guides/ios/v7/concepts/events).

@@ -1,13 +1,13 @@
 ---
 layout: quickstarts/content
-title: &title Cordova # title as shown in the menu and 
+title: &title Cordova # title as shown in the menu and
 
 menuitem: *title
 order: 2
-category: 
+category:
   - quickstart
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
   - html5
 published: true
 ---
@@ -19,8 +19,8 @@ published: true
 We created a [demo repository](https://github.com/imgly/pesdk-cordova-demo) to show you how to easily easily integrate the PhotoEditor SDK into your Cordova application. Make sure to check out our [accompanying blog post](https://blog.photoeditorsdk.com/photoeditor-sdk-cordova-dabe146e6c13) as well.
 
 > **WARNING:** The repository is not meant as a fully fledged Cordova plugin, but as a base for further development instead.
- 
-You can copy the repository into your own project and use the `cordova plugin add /path/to/plugin --link` command to add it to your app. You will most likely need to adjust the codebase to fit your requirements and to customize the PhotoEditor SDK. For customizations, take a look at the [PESDKPlugin.m](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/ios/PESDKPlugin.m) and [PESDKPlugin.java](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/android/PESDKPlugin.java) files and the corresponding documentation for [iOS]({{ site.baseurl }}/guides/ios/v7_1/introduction/configuration) and [Android]({{ site.baseurl }}/guides/android/v3_1/introduction/configuration). You can easily alter the configurations to change colors, behaviour etc. and handle callbacks that are sent by our SDK.
+
+You can copy the repository into your own project and use the `cordova plugin add /path/to/plugin --link` command to add it to your app. You will most likely need to adjust the codebase to fit your requirements and to customize the PhotoEditor SDK. For customizations, take a look at the [PESDKPlugin.m](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/ios/PESDKPlugin.m) and [PESDKPlugin.java](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/android/PESDKPlugin.java) files and the corresponding documentation for [iOS]({{ site.baseurl }}/guides/ios/v7/introduction/configuration) and [Android]({{ site.baseurl }}/guides/android/v3_1/introduction/configuration). You can easily alter the configurations to change colors, behaviour etc. and handle callbacks that are sent by our SDK.
 
 ## Example App
 The included example app demonstrates how to open the PhotoEditor SDK's camera and pass any taken or selected images to the editor. When an edited image is saved, its filepath is sent back to Cordova and displayed using a JavaScript alert. An app could then display this image in Cordova or send it to a backend. To launch the example app, take a look at the *Development* section below.

@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Transform # title as shown in the menu and 
+title: &title Transform # title as shown in the menu and
 
 menuitem: *title
 order: 3
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - feature
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
@@ -43,3 +43,22 @@ let sampleImage = UIImage(named: "sample_image")
 let photoEditViewController =  PhotoEditViewController(photo: sampleImage!, configuration: configuration)
 ```
 
+
+To let your users crop their image to specific aspect ratios used by social networks (e.g. Facebook, Twitter, Instagram, Flickr), you simply have to set the desired aspect ratio and name it accordingly (setting the aspect ratio will not affect the resolution of the image):
+
+```swift
+let configuration = Configuration { builder in
+    builder.configureTransformToolController { options in
+        options.allowFreeCrop = true
+        options.allowedCropRatios = [
+            CropAspect(width: 3, height: 4, localizedName: "Facebook Post", rotatable: false),
+            CropAspect(width: 828, height: 315, localizedName: "Facebook Cover", rotatable: false),
+            CropAspect(width: 2, height: 3, localizedName: "Twitter Post", rotatable: false),
+            CropAspect(width: 1, height: 1, localizedName: "Linkedin Post", rotatable: false),
+            CropAspect(width: 1, height: 1, localizedName: "Instagram Post", rotatable: false),
+        ]
+    }
+}
+let sampleImage = UIImage(named: "sample_image")
+let photoEditViewController =  PhotoEditViewController(photo: sampleImage!, configuration: configuration)
+```

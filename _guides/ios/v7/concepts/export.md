@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Export # title as shown in the menu and 
+title: &title Export # title as shown in the menu and
 description: By default, the PhotoEditor SDK for iOS exports to your user's device. Learn how to disable the automatic download and export to a server instead.
 menuitem: *title
 order: 0
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - concept
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 

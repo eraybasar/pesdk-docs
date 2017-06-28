@@ -1,13 +1,13 @@
 ---
 layout: quickstarts/content
-title: &title React Native # title as shown in the menu and 
+title: &title React Native # title as shown in the menu and
 
 menuitem: *title
 order: 0
-category: 
+category:
   - quickstart
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
   - ios
   - android
 published: true
@@ -19,7 +19,7 @@ published: true
 
 Often our users ask whether it’s possible to use the SDK with React Native. Although we do not offer a fully fledged solution, we created a demo app and put together a guide on how to easily set up the PhotoEditor SDK with React Native and how to avoid eventual pitfalls.
 
->**WARNING**: The repository is not meant as a fully fledged React Native binding, but as a base for further development instead. 
+>**WARNING**: The repository is not meant as a fully fledged React Native binding, but as a base for further development instead.
 
 
 We start with the basic react setup, add the native SDKs to the corresponding platforms, create an iOS and Android plugin and wire it all together using JavaScript. If you want to jump ahead you can always take a look at our [demo repository](https://github.com/imgly/pesdk-react-native-demo).
@@ -40,10 +40,10 @@ Creating a native module in React Native is fairly easy. Simply create `PESDKMod
 #import <React/RCTBridgeModule.h>
 @interface PESDKModule : NSObject <RCTBridgeModule>
 @end
- 
+
 // PESDKModule.m
 @implementation PESDKModule
- 
+
 RCT_EXPORT_MODULE(PESDK);
 ```
 
@@ -56,7 +56,7 @@ RCT_EXPORT_METHOD(present) {
   IMGLYToolbarController *toolbarController = [IMGLYToolbarController new];
   IMGLYPhotoEditViewController *photoEditViewController = [[IMGLYPhotoEditViewController alloc] initWithImage:[UIImage named:"test"]];
   UIViewController *currentViewController = RCTPresentedViewController();
- 
+
   dispatch_async(dispatch_get_main_queue(), ^{
     [toolbarController pushViewController:photoEditViewController animated:NO completion:NULL];
     [currentViewController presentViewController:toolbarController animated:YES completion:NULL];
@@ -82,9 +82,9 @@ Now you're ready to launch the PhotoEditor SDK from your React Native code. Just
 {% raw %}
 ```javascript
 const PESDK = NativeModules.PESDK
- 
+
 // ...
- 
+
 render () {
   return (
     <View style={{flex: 1, padding: 20, backgroundColor: '#e6e6e6'}}>
@@ -110,12 +110,12 @@ public class PESDKModule extends ReactContextBaseJavaModule {
     public PESDKModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
- 
+
     @Override
     public String getName() {
         return "PESDK";
     }
-    
+
     @ReactMethod
     public void present(@NonNull String image) {
         if (getCurrentActivity() != null) {
@@ -147,12 +147,12 @@ public class PESDKPackage implements ReactPackage {
         modules.add(new PESDKModule(reactContext));
         return modules;
     }
- 
+
     @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
- 
+
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
@@ -177,6 +177,6 @@ Thanks to React Native and the matching iOS/Android interfaces, thats all! Just 
 
 ## Moving on
 
-Now you've got the SDKs wired in your React Native application and can customize them to your needs. You could try to bridge the configuration settings for iOS and Android, but we recommend to do any customization within the native modules. Just take a look at the corresponding docs for [iOS]({{ site.baseurl }}/guides/ios/v7_1/introduction/configuration) and [Android]({{ site.baseurl }}/guides/android/v4/introduction/configuration) and you'll be able to create an end to end photo editing experience within your React Native app in no time.
+Now you've got the SDKs wired in your React Native application and can customize them to your needs. You could try to bridge the configuration settings for iOS and Android, but we recommend to do any customization within the native modules. Just take a look at the corresponding docs for [iOS]({{ site.baseurl }}/guides/ios/v7/introduction/configuration) and [Android]({{ site.baseurl }}/guides/android/v4/introduction/configuration) and you'll be able to create an end to end photo editing experience within your React Native app in no time.
 
 If you need more details, take a look at our corresponding [blog post](https://blog.photoeditorsdk.com/photoeditor-sdk-react-native-15179c589a55) or head to our [demo repository](https://github.com/imgly/pesdk-react-native-demo) on GitHub. Feel free to adapt our code and add the PhotoEditor SDK to your React Native app. We’re looking forward to your feedback and any pull requests, that further optimize our implementation.

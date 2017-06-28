@@ -1,17 +1,17 @@
 ---
 layout: guides/content
-title: &title Demos # title as shown in the menu and 
+title: &title Demos # title as shown in the menu and
 
 menuitem: *title
 order: 4
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - introduction
 
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
 published: true
 ---
@@ -28,7 +28,7 @@ For code examples take a look at the {% include guides/ios/demo-repository.md %}
 
 ## Example Integrations
 
-Check out our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and Native SDKs. 
+Check out our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and Native SDKs.
 All example integrations repositories are tagged with the suffix `-demo`. In general these examples are a good place to start with:
 
  * Quickly testing out our SDK without the need to write code
@@ -37,7 +37,7 @@ All example integrations repositories are tagged with the suffix `-demo`. In gen
 
  Currently, we are providing example integrations for:
 
-  * [React Native](https://github.com/imgly/pesdk-react-native-demo) 
+  * [React Native](https://github.com/imgly/pesdk-react-native-demo)
   * [Ionic](https://github.com/imgly/pesdk-ionic-demo)
   * [Cordova](https://github.com/imgly/pesdk-cordova-demo)
 

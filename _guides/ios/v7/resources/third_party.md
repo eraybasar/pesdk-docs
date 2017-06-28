@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Third Party # title as shown in the menu and 
+title: &title Third Party # title as shown in the menu and
 
 menuitem: *title
 order: 5
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - resource
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 
@@ -93,5 +93,3 @@ To provide you with the best PhotoEditor SDK possible, we rely on some third par
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
-
-

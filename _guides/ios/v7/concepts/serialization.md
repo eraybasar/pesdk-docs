@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Serialization # title as shown in the menu and 
+title: &title Serialization # title as shown in the menu and
 description: The PhotoEditor SDK for iOS provides an option for serialization and deserialization, allowing your users to save and revise their work anytime.
 menuitem: *title
 order: 0
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - concept
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 
@@ -55,5 +55,3 @@ toolbarController.push(photoEditViewController, animated: false)
 
 present(toolbarController, animated: true, completion: nil)
 ```
-
-

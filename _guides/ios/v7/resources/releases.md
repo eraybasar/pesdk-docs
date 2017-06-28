@@ -1,18 +1,17 @@
 ---
-published: true # Either published or not 
+published: true # Either published or not
 layout: guides/content
-title: &title Releases # title as shown in the menu and 
+title: &title Releases # title as shown in the menu and
 
 menuitem: *title
 order: 2
 platform: ios
 version: v7
-category: 
+category:
   - guide
   - resource
 tags: &tags # tags that are necessary
-  - photo editor 
-redirect_to: 
+  - photo editor
+redirect_to:
   - https://github.com/imgly/pesdk-ios-build/releases
 ---
-

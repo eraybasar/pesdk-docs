@@ -70,7 +70,7 @@ The black borders are required in order to optimize performance and the number o
 
 The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
-If you want to create a new filter, you'll have to download one of the identity LUTs shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app. 
+If you want to create a new filter, you'll have to download one of the identity LUTs shown above, load it into an image editing software of your choice, apply your operations, save it and add it to your app.
 
 > __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you have to save your LUT as a PNG file.
 
