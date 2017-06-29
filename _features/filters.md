@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Filters # title as shown in the menu and 
+description: The PhotoEditor SDK features more than 60 high-quality filters with lightning fast processing. Learn how to easily add your own custom filters.
 order: 0
 menuitem: Filters
 category: 
