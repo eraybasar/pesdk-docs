@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Brush # title as shown in the menu and
-
+description: The Brush Engine of the PhotoEditor SDK for iOS is optimized for touch screen interaction and supports various brush strokes, thicknesses, and colors.
 menuitem: *title
 order: 8
 platform: ios
