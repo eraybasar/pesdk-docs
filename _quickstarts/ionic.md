@@ -1,7 +1,7 @@
 ---
 layout: quickstarts/content
 title: &title Ionic # title as shown in the menu and 
-
+description: Learn how to get started with the PhotoEditor SDK and Ionic and how to swiftly integrate the SDK into an Ionic application with this Quick Start.
 menuitem: *title
 order: 0
 category: 
