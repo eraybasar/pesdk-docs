@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Photo Roll
+description: The PhotoEditor SDK provides a photo roll that your users can pick and edit photos and creatives from. Learn how to swiftly set your own photo library.
 order: 8
 menuitem: Photo Roll
 tags: &tags # tags that are necessary
