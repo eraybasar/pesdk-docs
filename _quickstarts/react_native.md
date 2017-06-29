@@ -1,7 +1,7 @@
 ---
 layout: quickstarts/content
 title: &title React Native # title as shown in the menu and
-
+description: Learn how to get started with the PhotoEditor SDK & React-Native and how to swiftly integrate the SDK into a React-Native application with this Quick Start.
 menuitem: *title
 order: 0
 category:
