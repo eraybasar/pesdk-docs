@@ -1,7 +1,7 @@
 ---
 layout: quickstarts/content
 title: &title Cordova # title as shown in the menu and
-
+description: Learn how to get started with the PhotoEditor SDK and Cordova and how to swiftly integrate the SDK into a Cordova application with this Quick Start.
 menuitem: *title
 order: 2
 category:
