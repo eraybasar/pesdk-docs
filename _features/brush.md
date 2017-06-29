@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Brush # title as shown in the menu and 
+description: The Brush Engine of the PhotoEditor SDK is optimized for touch screen interaction and supports various brush strokes, thicknesses, and colors.
 order: 7
 menuitem: Brush
 category: 
