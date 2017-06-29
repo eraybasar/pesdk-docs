@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Overview # title as shown in the menu and 
-
+description: The PhotoEditor SDK for HTML5 provides all the tools necessary to enhance your product with state-of-the-art photo editing features, effects, and assets.
 menuitem: Overview
 order: 0
 platform: html5
