@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Demos # title as shown in the menu and 
-
+description: For a straightforward integration of the PhotoEditor SDK, see our set of example integrations for various frameworks like React Native, Ionic or Cordova.
 menuitem: *title
 order: 4
 platform: ios
