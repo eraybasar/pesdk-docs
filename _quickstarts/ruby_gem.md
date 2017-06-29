@@ -1,7 +1,7 @@
 ---
 layout: quickstarts/content
 title: &title Ruby Gem # title as shown in the menu and 
-
+description: Learn how to get started with the PhotoEditor SDK for HTML5 and Ruby on Rails and how to swiftly integrate the SDK into a Ruby on Rails project.
 menuitem: *title
 order: 0
 category: 
