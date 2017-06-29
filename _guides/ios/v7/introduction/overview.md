@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Overview # title as shown in the menu and
-
+description: The PhotoEditor SDK for iOS provides all the tools necessary to enhance your App with state-of-the-art photo editing features, effects, and assets.
 menuitem: *title
 order: 0
 platform: ios
