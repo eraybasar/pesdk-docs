@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Adjustments # title as shown in the menu and 
+description: The Adjustment tool set of the PhotoEditor SDK offers essential and advanced editing functions like Brightness, Contrast, Saturation, Exposure or Clarity.
 menuitem: Adjustments
 order: 2
 tags: &tags # tags that are necessary
