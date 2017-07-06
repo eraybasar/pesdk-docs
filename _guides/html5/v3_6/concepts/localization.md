@@ -40,18 +40,14 @@ language object as an example:
   "controls": {
     "overview": {
       "filters": "Filters",
-      "orientation": "Orientation",
       "adjustments": "Adjust",
       "crop": "Crop",
       "focus": "Focus",
-      "border": "Border",
+      "frame": "Frame",
       "sticker": "Sticker",
       "text": "Text",
-      "brush": "Brush"
-    },
-    "border": {
-      "color": "Color",
-      "thickness": "Thickness"
+      "brush": "Brush",
+      "selective-blur": "Selective Blur"
     },
     "text": {
       "foreground": "Foreground",
@@ -61,31 +57,37 @@ language object as an example:
       "alignment": "Alignment",
       "takeToFront": "To Front"
     },
-    "orientation": {
-      "rotate-l": "Rotate -90°",
-      "rotate-r": "Rotate +90°",
-      "flip-h": "Flip (H)",
-      "flip-v": "Flip (V)"
-    },
     "adjustments": {
       "brightness": "Brightness",
       "contrast": "Contrast",
       "saturation": "Saturation",
       "exposure": "Exposure",
+      "gamma": "Gamma",
       "shadows": "Shadows",
       "highlights": "Highlights",
       "clarity" : "Clarity"
     },
     "crop": {
+      "none": "Original",
       "custom": "Custom",
       "square": "Square",
       "4-3": "4:3",
-      "16-9": "16:9"
+      "16-9": "16:9",
+      "social": "Social Media",
+      "fb-ad": "FB Ad",
+      "fb-post": "FB Post",
+      "fb-cover": "FB Cover",
+      "rotation": "Rotation"
     },
     "focus": {
+      "none": "None",
       "radial": "Radial",
       "linear": "Linear",
       "blurRadius": "Blur radius"
+    },
+    "selectiveBlur": {
+      "blurRadius": "Blur radius",
+      "thickness": "Thickness"
     },
     "filters": {
       "intensity": "Intensity",
@@ -108,16 +110,16 @@ language object as an example:
       "flip-h": "Flip (H)",
       "takeToFront": "To Front",
       "categories": {
-        "all": "All",
-        "glasses": "Glasses",
-        "hats": "Hats",
-        "beards": "Beards",
-        "misc": "Misc"
+        "all": "All"
       }
     },
     "brush": {
       "thickness": "Thickness",
       "color": "Color"
+    },
+    "frame": {
+      "noFrame": "No Frame",
+      "scale": "Scale"
     }
   },
   "webcam": {
@@ -126,7 +128,7 @@ language object as an example:
   "editor": {
     "headline": "Edit Photo",
     "new": "New",
-    "photo-roll": "Photo Roll",
+    "backgroundImage": "Background Image",
     "undo": "Undo",
     "export": "Export"
   },
@@ -139,16 +141,17 @@ language object as an example:
       "headline": "Webcam",
       "description": "Take a picture with your webcam or phone"
     },
-    "photo-roll": {
+    "photoRoll": {
       "headline": "Free stock footage",
       "description": "Select from thousands of Free Stock Photos"
     }
   },
-  "photo-roll": {
+  "photoRoll": {
     "search": {
       "placeholder": "Search for photos",
+      "noSearchResults": "Sorry, but we couldn't find any photos for <strong>\"${query}\"</strong>.",
       "results": {
-        "headline": "Search results for ${query}"
+        "headline": "Search results for \"${query}\""
       }
     }
   },
@@ -199,7 +202,16 @@ language object as an example:
     },
     "loadingStickersFailed": {
       "title": "Failed to load stickers"
-    }
+    },
+    "loadingFontsFailed": {
+      "title": "Failed to load fonts",
+      "text": "Some fonts might not be available."
+    },
+    "photoRollLoadFail": {
+      "title": "Failed to load Photo Roll",
+      "text": "Failed to load photos for the photo roll: ${error}"
+    },
+    "title": "An error has occurred"
   }
 }
 ```
