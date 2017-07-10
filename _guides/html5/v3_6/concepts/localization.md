@@ -130,7 +130,8 @@ language object as an example:
     "new": "New",
     "backgroundImage": "Background Image",
     "undo": "Undo",
-    "export": "Export"
+    "export": "Export",
+    "zoom": "Zoom"
   },
   "splash": {
     "upload": {
