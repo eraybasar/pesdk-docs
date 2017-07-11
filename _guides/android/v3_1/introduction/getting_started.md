@@ -201,9 +201,9 @@ public class MainActivity extends Activity implements PermissionRequest.Response
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == CAMERA_PREVIEW_RESULT) {
             String resultPath = 
-                   data.getStringExtra(CameraPreviewActivity.RESULT_IMAGE_PATH);
+                   data.getStringExtra(ImgLyActivity.RESULT_IMAGE_PATH);
             String sourcePath =
-                   data.getStringExtra(CameraPreviewActivity.SOURCE_IMAGE_PATH);
+                   data.getStringExtra(ImgLyActivity.SOURCE_IMAGE_PATH);
 
             if (resultPath != null) {
                 // Scan result file
@@ -284,9 +284,9 @@ public class MainActivity extends Activity implements PermissionRequest.Response
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == CAMERA_PREVIEW_RESULT) {
             String resultPath = 
-                   data.getStringExtra(CameraPreviewActivity.RESULT_IMAGE_PATH);
+                   data.getStringExtra(ImgLyActivity.RESULT_IMAGE_PATH);
             String sourcePath =
-                   data.getStringExtra(CameraPreviewActivity.SOURCE_IMAGE_PATH);
+                   data.getStringExtra(ImgLyActivity.SOURCE_IMAGE_PATH);
 
             if (resultPath != null) {
                 // Scan result file
