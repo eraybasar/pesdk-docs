@@ -42,9 +42,11 @@ Canvas Renderer (slower than WebGL):
   * Android Browser 3+
   * Opera Mobile 12+
 
+Regarding webcam support, please consult [caniuse.com](http://caniuse.com/#feat=stream).
 
 
-## CORS issues
+
+## CORS / Cross Origin Policy issues
 
 The following error messages indicate that the image you have passed to the SDK could not be loaded
 due to Cross-Origin Resource Sharing (CORS):
@@ -58,3 +60,13 @@ In this case:
 * If you're loading images from S3, make sure you created a CORS policy for your S3 bucket (More information [here](http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html))
 * If you're loading images from your own server, make sure the CORS header is set (More information [here](http://enable-cors.org/server.html))
 * Make sure you enable CORS for the loaded image (More information [here](http://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html))
+
+
+
+## Supported file formats
+
+For stickers, frames and overlays as well as uploaded files, the supported file formats vary per browser. There's
+a good and up-to-date list of supported file formats on [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).
+Basically, the best formats to use are JPEG and PNG.
+
+Due to browser limitations, PhotoEditorSDK for HTML5 can only export to JPEG and PNG.
