@@ -18,3 +18,19 @@ published: true # Either published or not
 
 
 The focus tool allows your users to add a radial or linear blur to their images which lets them mimic *Tile Shift* or *Bokeh* effects.
+
+# Specifying which focus modes are available
+
+In order to enable or disable specific focus modes, simply pass the `availableModes` option to
+the focus controls. This option should be an array of focus identifiers of which the following
+are available: `radial`, `mirrored`, `linear`, `gaussian`.
+
+```js
+const editor = new PhotoEditorSDK.UI.DesktopUI({
+  controlsOptions: {
+    focus: {
+      availableModes: ['radial', 'mirrored', 'linear', 'gaussian']
+    }
+  }
+})
+```
