@@ -5,7 +5,7 @@ description: The PhotoEditor SDK for HTML5 provides an option for serialization 
 menuitem: *title
 order: 0
 platform: html5
-version: v4-ReactUI
+version: v4-DesktopUI
 category:
   - guide
   - concept

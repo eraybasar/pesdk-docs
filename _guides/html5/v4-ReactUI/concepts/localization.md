@@ -41,7 +41,7 @@ language object as an example:
     "overview": {
       "filters": "Filters",
       "adjustments": "Adjust",
-      "crop": "Crop",
+      "transform": "Transform",
       "focus": "Focus",
       "frame": "Frame",
       "sticker": "Sticker",
@@ -55,7 +55,8 @@ language object as an example:
       "size": "Size",
       "font": "Font",
       "alignment": "Alignment",
-      "takeToFront": "To Front"
+      "takeToFront": "To Front",
+      "defaultText": "Double-click to edit"
     },
     "adjustments": {
       "brightness": "Brightness",
@@ -67,37 +68,24 @@ language object as an example:
       "highlights": "Highlights",
       "clarity" : "Clarity"
     },
-    "crop": {
+    "transform": {
       "none": "Original",
-      "custom": "Custom",
-      "square": "Square",
-      "4-3": "4:3",
-      "16-9": "16:9",
-      "social": "Social Media",
-      "fb-ad": "FB Ad",
-      "fb-post": "FB Post",
-      "fb-cover": "FB Cover",
       "rotation": "Rotation"
     },
     "focus": {
       "none": "None",
       "radial": "Radial",
-      "linear": "Linear",
+      "mirrored": "Mirrored",
       "blurRadius": "Blur radius"
     },
     "selectiveBlur": {
       "blurRadius": "Blur radius",
-      "thickness": "Thickness"
+      "size": "Size"
     },
-    "filters": {
+    "filter": {
       "intensity": "Intensity",
-      "categories": {
-        "all": "All",
-        "retro": "Retro",
-        "bw": "Black & White",
-        "summer": "Summer",
-        "winter": "Winter",
-        "special": "Special"
+      "filters": {
+        "identity": "None"
       }
     },
     "sticker": {
@@ -114,7 +102,7 @@ language object as an example:
       }
     },
     "brush": {
-      "thickness": "Thickness",
+      "size": "Size",
       "color": "Color"
     },
     "frame": {
@@ -130,8 +118,7 @@ language object as an example:
     "new": "New",
     "backgroundImage": "Background Image",
     "undo": "Undo",
-    "export": "Export",
-    "zoom": "Zoom"
+    "export": "Export"
   },
   "splash": {
     "upload": {
@@ -211,6 +198,9 @@ language object as an example:
     "photoRollLoadFail": {
       "title": "Failed to load Photo Roll",
       "text": "Failed to load photos for the photo roll: ${error}"
+    },
+    "invalidFileType": {
+      "text": "The file type ${fileType} is not supported."
     },
     "title": "An error has occurred"
   }
