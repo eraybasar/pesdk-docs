@@ -19,17 +19,18 @@ published: true # Either published or not
 
 Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
 
-The available tool set consists of:
+# Specifying which adjustments are available
 
-1. Brightness
-2. Contrast
-3. Saturation
-4. Clarity
-5. Shadows
-6. Highlights
-7. Exposure
-8. Gamma
+In order to enable or disable specific adjustments, simply pass the `availableAdjustments` option to
+the adjustments controls. This option should be an array of adjustment identifiers of which the following
+are available: `brightness`, `saturation`, `contrast`, `gamma`, `clarity`, `exposure`, `shadows`, `highlights`
 
-## Enabling / disabling certain adjustment options
-
-You can enable / disable specific adjustments by passing them to the `editor.tools` option. See the [Configuration]({{ site.baseurl }}/guides/{{ page.platform }}/{{ page.version }}/introduction/configuration) on how to do this.
+```js
+const editor = new PhotoEditorSDK.UI.DesktopUI({
+  controlsOptions: {
+    focus: {
+      availableModes: ['brightness', 'saturation', 'contrast']
+    }
+  }
+})
+```
