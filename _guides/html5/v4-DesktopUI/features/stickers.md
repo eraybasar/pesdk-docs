@@ -144,3 +144,21 @@ const editor = new PhotoEditorSDK.UI.DesktopUI({
   }
 })
 ```
+
+## Rotation snapping
+
+Our UI allows the user to freely rotate stickers, which is nice, but it can be hard to hit the right rotation (e.g. exactly 90 degrees). To fix this, we added a customizable snapping feature that can be configured using the `snapRotation` and `snapRotationTolerance` options:
+
+```js
+const editor = new PhotoEditorSDK.UI.ReactUI({
+  controlsOptions: {
+    sticker: {
+      // This value defines at what degrees rotation snapping should happen
+      snapRotation: 90,
+
+      // This value defines at what degrees *around* the `snapRotation` value snapping should happen
+      snapRotationTolerance: 5
+    }
+  }
+})
+```
