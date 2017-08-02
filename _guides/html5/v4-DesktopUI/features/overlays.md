@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Overlays # title as shown in the menu and
 
 menuitem: *title
-order: 1
+order: 8
 platform: html5
 version: v4-DesktopUI
 category:
@@ -12,7 +12,7 @@ category:
 tags: &tags # tags that are necessary
   - photo editor
 
-published: false # Either published or not
+published: true # Either published or not
 ---
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg){: .center-image style="padding: 20px; max-height: 400px;"}
 
