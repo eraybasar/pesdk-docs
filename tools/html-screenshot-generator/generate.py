@@ -24,9 +24,9 @@ for file in screenshots:
 		filename = os.path.splitext(file)[0]
 		result_filename = filename + '.png'
 		screenshot = Image.open(os.path.join(screenshot_dir, file))
-		resized_screenshot = screenshot.resize((1062, 658), Image.LANCZOS)
+		resized_screenshot = screenshot.resize((1062, 664), Image.LANCZOS)
 		screenshot_on_canvas = canvas.copy()
-		screenshot_on_canvas.paste(resized_screenshot, (316, 166, base_image.width - 330, base_image.height - 164))
+		screenshot_on_canvas.paste(resized_screenshot, (316, 166, base_image.width - 330, base_image.height - 158))
 		result = Image.composite(screenshot_on_canvas, base_image, mask_image)
 		result.save(os.path.join(result_dir, result_filename), "PNG")
 		print("Saved framed screenshot %s" % result_filename)
