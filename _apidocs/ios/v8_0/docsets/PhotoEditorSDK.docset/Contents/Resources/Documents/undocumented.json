@@ -1,0 +1,124 @@
+{
+  "source_directory" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios",
+  "warnings" : [
+    {
+      "symbol_kind" : "source.lang.swift.decl.function.method.static",
+      "warning" : "undocumented",
+      "line" : 85,
+      "symbol" : "FontImporter.font(withIdentifier:)",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Backend\/Importer\/FontImporter.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.struct",
+      "warning" : "undocumented",
+      "line" : 12,
+      "symbol" : "TransformModel",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Backend\/Rendering\/Models\/TransformModel.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.function.method.instance",
+      "warning" : "undocumented",
+      "line" : 862,
+      "symbol" : "PhotoEditRenderer.drawOutputImage(for:in:to:commandQueue:)",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Backend\/Rendering\/PhotoEditRenderer.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.function.method.instance",
+      "warning" : "undocumented",
+      "line" : 50,
+      "symbol" : "CanvasViewDelegate.canvasView(_:didAddPathModel:)",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Brush\/Views\/CanvasView.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.function.method.instance",
+      "warning" : "undocumented",
+      "line" : 29,
+      "symbol" : "MenuDataSourceProtocol.item(at:)",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Core\/Protocols\/MenuDataSourceProtocol.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 136,
+      "symbol" : "Slider.panGestureRecognizer",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Core\/Views\/Controls\/Slider.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.class",
+      "warning" : "undocumented",
+      "line" : 13,
+      "symbol" : "SpriteLabel",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Core\/Views\/Sprites\/SpriteLabel.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 32,
+      "symbol" : "FrameToolControllerOptions.rotationEnabled",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Frame\/Configuration\/FrameToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 85,
+      "symbol" : "FrameToolControllerOptionsBuilder.rotationEnabled",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Frame\/Configuration\/FrameToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.function.method.static",
+      "warning" : "undocumented",
+      "line" : 144,
+      "symbol" : "Frame.withIdentifier(_:)",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Frame\/Models\/Frame.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 31,
+      "symbol" : "OverlayToolControllerOptions.blendModeSelectedClosure",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Overlay\/Configuration\/OverlayToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 41,
+      "symbol" : "OverlayToolControllerOptions.initialOverlayIntensity",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Overlay\/Configuration\/OverlayToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 43,
+      "symbol" : "OverlayToolControllerOptions.allowedBlendModes",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Overlay\/Configuration\/OverlayToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 92,
+      "symbol" : "OverlayToolControllerOptionsBuilder.blendModeSelectedClosure",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Overlay\/Configuration\/OverlayToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 105,
+      "symbol" : "OverlayToolControllerOptionsBuilder.initialOverlayIntensity",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Overlay\/Configuration\/OverlayToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.var.instance",
+      "warning" : "undocumented",
+      "line" : 107,
+      "symbol" : "OverlayToolControllerOptionsBuilder.allowedBlendModes",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Overlay\/Configuration\/OverlayToolControllerOptions.swift"
+    },
+    {
+      "symbol_kind" : "source.lang.swift.decl.function.method.static",
+      "warning" : "undocumented",
+      "line" : 69,
+      "symbol" : "Sticker.withIdentifier(_:)",
+      "file" : "\/Users\/sascha\/Projects\/iOS\/9elements\/pesdk-ios\/PhotoEditorSDK\/Frontend\/Sticker\/Models\/Sticker.swift"
+    }
+  ]
+}
