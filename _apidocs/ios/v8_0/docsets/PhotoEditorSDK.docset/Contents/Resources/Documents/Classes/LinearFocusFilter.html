@@ -105,6 +105,12 @@
                 <a class="nav-group-task-link" href="../Classes/BrushColorToolController.html">BrushColorToolController</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushColorToolControllerOptions.html">BrushColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushColorToolControllerOptionsBuilder">BrushColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/BrushEditController.html">BrushEditController</a>
               </li>
               <li class="nav-group-task">
@@ -501,6 +507,12 @@
                 <a class="nav-group-task-link" href="../Classes/TextColorToolController.html">TextColorToolController</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextColorToolControllerOptions.html">TextColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextColorToolControllerOptionsBuilder.html">TextColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/TextFontToolController.html">TextFontToolController</a>
               </li>
               <li class="nav-group-task">
@@ -627,9 +639,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/FrameLayoutMode.html">FrameLayoutMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/FrameOverlayAction.html">FrameOverlayAction</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/FrameTileMode.html">FrameTileMode</a>
@@ -1069,7 +1078,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The first normalized control point of the focus. This control point should use the coordinate system of Core Image, which means that (0,0) is at the top left.</p>
+                        <p>The first normalized control point of the focus. This control point should use the coordinate
+system of Core Image, which means that (0, 0) is at the bottom left. <code>x</code> is relative to the
+width of the <code><a href="../Classes/LinearFocusFilter.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputImage">inputImage</a></code>, <code>y</code> is relative to the height of the <code><a href="../Classes/LinearFocusFilter.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputImage">inputImage</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1096,7 +1107,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The second normalized control point of the focus. This control point should use the coordinate system of Core Image, which means that (0,0) is at the top left.</p>
+                        <p>The second normalized control point of the focus. This control point should use the coordinate
+system of Core Image, which means that (0, 0) is at the bottom left. <code>x</code> is relative to the
+width of the <code><a href="../Classes/LinearFocusFilter.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputImage">inputImage</a></code>, <code>y</code> is relative to the height of the <code><a href="../Classes/LinearFocusFilter.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputImage">inputImage</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1140,9 +1153,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputNormalizedFadeWidth"></a>
-                    <a name="//apple_ref/swift/Property/inputNormalizedFadeWidth" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputNormalizedFadeWidth">inputNormalizedFadeWidth</a>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputFadeWidth"></a>
+                    <a name="//apple_ref/swift/Property/inputFadeWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearFocusFilter(py)inputFadeWidth">inputFadeWidth</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1157,7 +1170,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">inputNormalizedFadeWidth</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">?</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">inputFadeWidth</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1199,7 +1212,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2017-09-08)</p>
+      <p>&copy; 2017 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2017-09-14)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
