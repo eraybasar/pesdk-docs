@@ -21,21 +21,21 @@ published: true # Either published or not
 Unfortunatly, this is a bug in gradle and java
 
 1. You have to trust both certificates with this commandline commands
-
-```wget https://raw.githubusercontent.com/escline/InstallCert/master/InstallCert.java```
-
-```javac InstallCert.java````
-
-```java InstallCert artifactory.9elements.com```````
+```
+wget https://raw.githubusercontent.com/escline/InstallCert/master/InstallCert.java
+javac InstallCert.java
+java InstallCert artifactory.9elements.com
+```
 
 2. Navigate in the Console to you project folder and clear the gradle cache.
+```
+# On Mac & Linux
+./gradlew cleanBuildCache
+# On Windows
+gradlew cleanBuildCache
+```
 
-On Mac & Linux
-`./gradlew cleanBuildCache`
-
-On Windows
-`gradlew cleanBuildCache`
-
+3. Do a rebuild an Android Studio (Do it twice if the first build fail)
 3. Do a rebuild an Android Studio (Do it twice if the first build fail)
 
 ### I just use the editor, why does the app request permission to use the camera?
