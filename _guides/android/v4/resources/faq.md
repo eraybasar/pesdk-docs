@@ -27,7 +27,7 @@ javac InstallCert.java
 java InstallCert artifactory.9elements.com
 ```
 
-2. Navigate in the Console to you project folder and clear the gradle cache.
+2. Navigate in the Console to your project folder and clear the gradle cache.
 ```
 # On Mac & Linux
 ./gradlew cleanBuildCache
@@ -35,7 +35,7 @@ java InstallCert artifactory.9elements.com
 gradlew cleanBuildCache
 ```
 
-3. Do a rebuild an Android Studio (Do it twice if the first build fail)
+3. Do a rebuild in Android Studio (Do it twice if the first build fails)
 
 
 ### I just use the editor, why does the app request permission to use the camera?
