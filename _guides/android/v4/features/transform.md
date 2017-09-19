@@ -51,9 +51,9 @@ cropConfig.add(new CropAspectConfig(16, 9));
 /* Add a 4:3 crop configuration with name */
 cropConfig.add(new CropAspectConfig(R.string.my_4_3_crop_name, 4, 3));
 
-config.setAspectConfig(cropConfig);
+config.setAspects(cropConfig);
 ```
 
 ## Forcing specific ratios
 
-In order to force your users to crop their image to one of the available crop ratios, you can use the `setForcedCropMode` of the `ImgLyConfig` object to set the desired `CropAspectConfig` configurations in portrait and landscape mode. This creates a crop overlay when displaying the camera preview and crops the image to the desired aspect ratio when the user captures an image. In this case, you need to remove the `CustomCrop` option from the tool as well, to ensure that a user can't remove the forced crop ratio afterwards.
+In order to force your users to crop their image to one of the available crop ratios, you can use the `setForcedCropMode` of the `PESDKConfig` object to set the desired `CropAspectConfig` configurations in portrait and landscape mode. This creates a crop overlay when displaying the camera preview and crops the image to the desired aspect ratio when the user captures an image. In this case, you need to remove the `CustomCrop` option from the tool as well, to ensure that a user can't remove the forced crop ratio afterwards.
