@@ -5,7 +5,7 @@ description: The PhotoEditor SDK for iOS provides all the tools necessary to enh
 menuitem: *title
 order: 0
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - introduction

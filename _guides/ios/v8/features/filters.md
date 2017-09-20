@@ -5,7 +5,7 @@ description: The PhotoEditor SDK for iOS features more than 60 high-quality filt
 menuitem: *title
 order: 0
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - feature

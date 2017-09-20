@@ -5,7 +5,7 @@ description: The PhotoEditor SDK for iOS can be localized easily. Learn how to q
 menuitem: *title
 order: 0
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - concept

@@ -5,7 +5,7 @@ title: &title Stickers # title as shown in the menu and
 menuitem: *title
 order: 5
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - feature

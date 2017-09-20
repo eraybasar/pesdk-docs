@@ -5,7 +5,7 @@ description: For a straightforward integration of the PhotoEditor SDK, see our s
 menuitem: *title
 order: 4
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - introduction

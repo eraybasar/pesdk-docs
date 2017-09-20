@@ -5,7 +5,7 @@ description: The Brush Engine of the PhotoEditor SDK for iOS is optimized for to
 menuitem: *title
 order: 8
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - feature

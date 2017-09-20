@@ -5,7 +5,7 @@ title: &title Overlays # title as shown in the menu and
 menuitem: *title
 order: 1
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - feature

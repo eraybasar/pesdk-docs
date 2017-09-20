@@ -5,7 +5,7 @@ description: By default, the PhotoEditor SDK for iOS exports to your user's devi
 menuitem: *title
 order: 0
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - concept

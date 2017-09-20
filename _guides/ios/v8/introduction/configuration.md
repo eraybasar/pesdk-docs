@@ -5,7 +5,7 @@ title: &title Configuration # title as shown in the menu and
 menuitem: *title
 order: 2
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - introduction

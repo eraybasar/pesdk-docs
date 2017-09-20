@@ -5,7 +5,7 @@ description: The PhotoEditor SDK provides a photo roll that your users can pick 
 menuitem: *title
 order: 0
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - feature

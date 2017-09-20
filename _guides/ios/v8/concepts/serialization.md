@@ -5,7 +5,7 @@ description: The PhotoEditor SDK for iOS provides an option for serialization an
 menuitem: *title
 order: 0
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - concept

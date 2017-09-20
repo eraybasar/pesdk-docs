@@ -5,7 +5,7 @@ description: The Adjustment tool set of the PhotoEditor SDK for iOS offers essen
 menuitem: *title
 order: 2
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - feature

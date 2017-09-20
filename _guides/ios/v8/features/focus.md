@@ -5,7 +5,7 @@ title: &title Focus # title as shown in the menu and
 menuitem: *title
 order: 0
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - feature

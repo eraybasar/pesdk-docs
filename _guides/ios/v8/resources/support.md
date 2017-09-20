@@ -6,7 +6,7 @@ title: &title Support # title as shown in the menu and
 menuitem: *title
 order: 4
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - resource

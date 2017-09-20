@@ -4,7 +4,7 @@ title: &title Getting Started # title as shown in the menu and
 order: 1
 menuitem: *title
 platform: ios
-version: v7
+version: v8
 category:
   - guide
   - introduction
