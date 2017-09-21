@@ -221,6 +221,12 @@
                 <a class="nav-group-task-link" href="Classes/DefaultToolbarItem.html">DefaultToolbarItem</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Deserializer.html">Deserializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Deserializer/DeserializationResult.html">– DeserializationResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/DeviceOrientationController.html">DeviceOrientationController</a>
               </li>
               <li class="nav-group-task">
@@ -488,7 +494,7 @@
                 <a class="nav-group-task-link" href="Classes/StickerSelectionController.html">StickerSelectionController</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerSelectionView">StickerSelectionView</a>
+                <a class="nav-group-task-link" href="Classes/StickerSelectionView.html">StickerSelectionView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/StickerToolController.html">StickerToolController</a>
@@ -604,6 +610,45 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/WeakContainer.html">WeakContainer</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCAdjustmentModel.html">_ObjCAdjustmentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCBrushSpriteModel.html">_ObjCBrushSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCEffectFilterModel.html">_ObjCEffectFilterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCFocusModel.html">_ObjCFocusModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCFrameSpriteModel.html">_ObjCFrameSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCOverlayModel.html">_ObjCOverlayModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCPathModel.html">_ObjCPathModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCPhotoEditMenuItem.html">_ObjCPhotoEditMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCPhotoEditModel.html">_ObjCPhotoEditModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCStickerSpriteModel.html">_ObjCStickerSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCTextSpriteModel.html">_ObjCTextSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/_ObjCTransformModel.html">_ObjCTransformModel</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -688,6 +733,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/CFString.html">CFString</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Notification.html">Notification</a>
@@ -800,6 +848,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NormalizedWidthSettable.html">NormalizedWidthSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols.html#/s:14PhotoEditorSDK20ObjectiveCBridgeableP">ObjectiveCBridgeable</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols.html#/s:14PhotoEditorSDK12OrientatableP">Orientatable</a>
@@ -1151,6 +1202,42 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditViewController"></a>
+                    <a name="//apple_ref/swift/Class/PhotoEditViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditViewController">PhotoEditViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code>PhotoEditViewController</code> is the main starting point for the SDK. It displays the rendered
+photo and a menu. It can present <code><a href="Classes/PhotoEditToolController.html">PhotoEditToolController</a></code> objects and react to changes. It
+can be presented on its own (thus displaying a toolbar for navigation at the bottom) or be
+embedded into a <code>UINavigationController</code> (thus using the navigation controller&rsquo;s navigation bar
+for navigation).</p>
+
+                        <a href="Classes/PhotoEditViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKPhotoEditViewController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">PhotoEditViewController</span><span class="p">:</span> <span class="kt"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKViewController">ViewController</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKMenuCollectionView"></a>
                     <a name="//apple_ref/swift/Class/MenuCollectionView" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKMenuCollectionView">MenuCollectionView</a>
@@ -1301,6 +1388,66 @@ activity indicator in its center.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFontMenuItem)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">FontMenuItem</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols.html#/s:14PhotoEditorSDK8MenuItemP">MenuItem</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptionsBuilder"></a>
+                    <a name="//apple_ref/swift/Class/AdjustToolControllerOptionsBuilder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptionsBuilder">AdjustToolControllerOptionsBuilder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default <code>AdjustToolControllerOptionsBuilder</code> for <code><a href="Classes/AdjustToolControllerOptions.html">AdjustToolControllerOptions</a></code>.</p>
+
+                        <a href="Classes/AdjustToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKAdjustToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">AdjustToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptions"></a>
+                    <a name="//apple_ref/swift/Class/AdjustToolControllerOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptions">AdjustToolControllerOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options for configuring an <code><a href="Classes/AdjustToolController.html">AdjustToolController</a></code>.</p>
+
+                        <a href="Classes/AdjustToolControllerOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKAdjustToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">AdjustToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1760,6 +1907,402 @@ category.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController"></a>
+                    <a name="//apple_ref/swift/Class/CameraController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController">CameraController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>CameraController</code> class provides functions for serveral camera related tasks,
+including setup, flash control, and such.</p>
+
+                        <a href="Classes/CameraController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKCameraController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">CameraController</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustmentModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCAdjustmentModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustmentModel">_ObjCAdjustmentModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/AdjustmentModel.html">AdjustmentModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/AdjustmentModel.html">AdjustmentModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCAdjustmentModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKAdjustmentModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCAdjustmentModel</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushSpriteModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCBrushSpriteModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushSpriteModel">_ObjCBrushSpriteModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/BrushSpriteModel.html">BrushSpriteModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/BrushSpriteModel.html">BrushSpriteModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCBrushSpriteModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKBrushSpriteModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCBrushSpriteModel</span><span class="p">:</span> <span class="n"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKEffectFilterModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCEffectFilterModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKEffectFilterModel">_ObjCEffectFilterModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/EffectFilterModel.html">EffectFilterModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/EffectFilterModel.html">EffectFilterModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCEffectFilterModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKEffectFilterModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCEffectFilterModel</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCFocusModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusModel">_ObjCFocusModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/FocusModel.html">FocusModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/FocusModel.html">FocusModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCFocusModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFocusModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCFocusModel</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKFrameSpriteModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCFrameSpriteModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKFrameSpriteModel">_ObjCFrameSpriteModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/FrameSpriteModel.html">FrameSpriteModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/FrameSpriteModel.html">FrameSpriteModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCFrameSpriteModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFrameSpriteModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCFrameSpriteModel</span><span class="p">:</span> <span class="n"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKOverlayModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCOverlayModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKOverlayModel">_ObjCOverlayModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/OverlayModel.html">OverlayModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/OverlayModel.html">OverlayModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCOverlayModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKOverlayModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCOverlayModel</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKPathModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCPathModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKPathModel">_ObjCPathModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/PathModel.html">PathModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/PathModel.html">PathModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCPathModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKPathModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCPathModel</span><span class="p">:</span> <span class="n"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCPhotoEditModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditModel">_ObjCPhotoEditModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/PhotoEditModel.html">PhotoEditModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/PhotoEditModel.html">PhotoEditModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCPhotoEditModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKPhotoEditModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCPhotoEditModel</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCSpriteModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Protocols.html#/s:14PhotoEditorSDK11SpriteModelP">SpriteModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Protocols.html#/s:14PhotoEditorSDK11SpriteModelP">SpriteModel</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKSpriteModel)</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nv">_ObjCSpriteModel</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerSpriteModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCStickerSpriteModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerSpriteModel">_ObjCStickerSpriteModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/StickerSpriteModel.html">StickerSpriteModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/StickerSpriteModel.html">StickerSpriteModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCStickerSpriteModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKStickerSpriteModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCStickerSpriteModel</span><span class="p">:</span> <span class="n"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKTextSpriteModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCTextSpriteModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextSpriteModel">_ObjCTextSpriteModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/TextSpriteModel.html">TextSpriteModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/TextSpriteModel.html">TextSpriteModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCTextSpriteModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKTextSpriteModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCTextSpriteModel</span><span class="p">:</span> <span class="n"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKTransformModel"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCTransformModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKTransformModel">_ObjCTransformModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class should only be used if you are using Objective-C. It is a wrapper
+class for <code><a href="Structs/TransformModel.html">TransformModel</a></code>. For more information about the type, please take
+a look at the documentation for <code><a href="Structs/TransformModel.html">TransformModel</a></code>.</p>
+
+                        <a href="Classes/_ObjCTransformModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKTransformModel)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCTransformModel</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKColorCollectionViewCell"></a>
                     <a name="//apple_ref/swift/Class/ColorCollectionViewCell" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKColorCollectionViewCell">ColorCollectionViewCell</a>
@@ -1955,6 +2498,66 @@ contained <code>UIViewController</code> above that menu.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKTextOptionsToolControllerOptionsBuilder"></a>
+                    <a name="//apple_ref/swift/Class/TextOptionsToolControllerOptionsBuilder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextOptionsToolControllerOptionsBuilder">TextOptionsToolControllerOptionsBuilder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default <code>TextOptionsToolControllerOptionsBuilder</code> for <code><a href="Classes/TextOptionsToolControllerOptions.html">TextOptionsToolControllerOptions</a></code>.</p>
+
+                        <a href="Classes/TextOptionsToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc(PESDKTextOptionsToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">TextOptionsToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)IMGLTextOptionsToolControllerOptions"></a>
+                    <a name="//apple_ref/swift/Class/TextOptionsToolControllerOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)IMGLTextOptionsToolControllerOptions">TextOptionsToolControllerOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options for configuring a <code><a href="Classes/TextOptionsToolController.html">TextOptionsToolController</a></code>.</p>
+
+                        <a href="Classes/TextOptionsToolControllerOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc(IMGLTextOptionsToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">TextOptionsToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKActionMenuItem"></a>
                     <a name="//apple_ref/swift/Class/ActionMenuItem" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKActionMenuItem">ActionMenuItem</a>
@@ -2033,6 +2636,7 @@ closure.</p>
                         <p>A <code>StickerSelectionView</code> is displayed above a sticker image view to indicate that this sticker
 is selected.</p>
 
+                        <a href="Classes/StickerSelectionView.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -2546,7 +3150,7 @@ button on the left and apply button on the right. It is used in most tool contro
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKStickerGestureController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">StickerGestureController</span><span class="p">:</span> <span class="kt"><a href="Classes/SpriteGestureController.html">SpriteGestureController</a></span><span class="o">&lt;</span><span class="kt"><a href="Structs/StickerSpriteModel.html">StickerSpriteModel</a></span><span class="p">,</span> <span class="kt"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerSelectionView">StickerSelectionView</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKStickerGestureController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">StickerGestureController</span><span class="p">:</span> <span class="kt"><a href="Classes/SpriteGestureController.html">SpriteGestureController</a></span><span class="o">&lt;</span><span class="kt"><a href="Structs/StickerSpriteModel.html">StickerSpriteModel</a></span><span class="p">,</span> <span class="kt"><a href="Classes/StickerSelectionView.html">StickerSelectionView</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -2579,39 +3183,6 @@ button on the left and apply button on the right. It is used in most tool contro
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKSpriteImageView)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">SpriteImageView</span><span class="p">:</span> <span class="kt">UIImageView</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController"></a>
-                    <a name="//apple_ref/swift/Class/CameraController" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController">CameraController</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>CameraController</code> class provides functions for serveral camera related tasks,
-including setup, flash control, and such.</p>
-
-                        <a href="Classes/CameraController.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKCameraController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">CameraController</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -2744,6 +3315,38 @@ position, size and rotation of a sprite.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">SpriteEditController</span><span class="o">&lt;</span><span class="kt">SpriteModelType</span><span class="p">,</span> <span class="kt">GestureController</span><span class="p">:</span> <span class="kt"><a href="Classes/SpriteGestureController.html">SpriteGestureController</a></span><span class="o">&lt;</span><span class="kt">SpriteModelType</span><span class="p">,</span> <span class="kt">SpriteSelectionView</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">SpriteSelectionView</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKViewController">ViewController</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/ProxyZoomControllerDelegate.html">ProxyZoomControllerDelegate</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditMenuItem"></a>
+                    <a name="//apple_ref/swift/Class/_ObjCPhotoEditMenuItem" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditMenuItem">_ObjCPhotoEditMenuItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wrapper class for <code><a href="Enums/PhotoEditMenuItem.html">PhotoEditMenuItem</a></code>. This should only be used if you are using Objective-C.</p>
+
+                        <a href="Classes/_ObjCPhotoEditMenuItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKPhotoEditMenuItem)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nv">_ObjCPhotoEditMenuItem</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -3931,6 +4534,66 @@ to use.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptionsBuilder"></a>
+                    <a name="//apple_ref/swift/Class/FocusToolControllerOptionsBuilder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptionsBuilder">FocusToolControllerOptionsBuilder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default <code>FocusToolControllerOptionsBuilder</code> for <code><a href="Classes/FocusToolControllerOptions.html">FocusToolControllerOptions</a></code>.</p>
+
+                        <a href="Classes/FocusToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFocusToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">FocusToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptions"></a>
+                    <a name="//apple_ref/swift/Class/FocusToolControllerOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptions">FocusToolControllerOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options for configuring a <code><a href="Classes/FocusToolController.html">FocusToolController</a></code>.</p>
+
+                        <a href="Classes/FocusToolControllerOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFocusToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">FocusToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustMenuItem"></a>
                     <a name="//apple_ref/swift/Class/AdjustMenuItem" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustMenuItem">AdjustMenuItem</a>
@@ -4382,9 +5045,9 @@ text and a <code><a href="Classes/SpriteEditController.html">SpriteEditControlle
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditViewController"></a>
-                    <a name="//apple_ref/swift/Class/PhotoEditViewController" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditViewController">PhotoEditViewController</a>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKDeserializer"></a>
+                    <a name="//apple_ref/swift/Class/Deserializer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKDeserializer">Deserializer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -4392,19 +5055,16 @@ text and a <code><a href="Classes/SpriteEditController.html">SpriteEditControlle
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A <code>PhotoEditViewController</code> is the main starting point for the SDK. It displays the rendered
-photo and a menu. It can present <code><a href="Classes/PhotoEditToolController.html">PhotoEditToolController</a></code> objects and react to changes. It
-can be presented on its own (thus displaying a toolbar for navigation at the bottom) or be
-embedded into a <code>UINavigationController</code> (thus using the navigation controller&rsquo;s navigation bar
-for navigation).</p>
+                        <p>Wrapper class that manages deserialization of settings files and delegates
+work to the different implementations for each major version.</p>
 
-                        <a href="Classes/PhotoEditViewController.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/Deserializer.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKPhotoEditViewController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">PhotoEditViewController</span><span class="p">:</span> <span class="kt"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKViewController">ViewController</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc(PESDKDeserializer)</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">Deserializer</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -5057,9 +5717,9 @@ thumb image while dragging.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)IMGLTextOptionsToolControllerOptions"></a>
-                    <a name="//apple_ref/swift/Class/TextOptionsToolControllerOptions" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)IMGLTextOptionsToolControllerOptions">TextOptionsToolControllerOptions</a>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptionsBuilder"></a>
+                    <a name="//apple_ref/swift/Class/BrushToolControllerOptionsBuilder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptionsBuilder">BrushToolControllerOptionsBuilder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -5067,15 +5727,15 @@ thumb image while dragging.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Options for configuring a <code><a href="Classes/TextOptionsToolController.html">TextOptionsToolController</a></code>.</p>
+                        <p>The default <code>BrushToolControllerOptionsBuilder</code> for <code><a href="Classes/BrushToolControllerOptions.html">BrushToolControllerOptions</a></code>.</p>
 
-                        <a href="Classes/TextOptionsToolControllerOptions.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/BrushToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc(IMGLTextOptionsToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">TextOptionsToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc(PESDKBrushToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">BrushToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5085,9 +5745,9 @@ thumb image while dragging.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKTextOptionsToolControllerOptionsBuilder"></a>
-                    <a name="//apple_ref/swift/Class/TextOptionsToolControllerOptionsBuilder" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextOptionsToolControllerOptionsBuilder">TextOptionsToolControllerOptionsBuilder</a>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptions"></a>
+                    <a name="//apple_ref/swift/Class/BrushToolControllerOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptions">BrushToolControllerOptions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -5095,15 +5755,15 @@ thumb image while dragging.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The default <code>TextOptionsToolControllerOptionsBuilder</code> for <code><a href="Classes/TextOptionsToolControllerOptions.html">TextOptionsToolControllerOptions</a></code>.</p>
+                        <p>Options for configuring an <code><a href="Classes/BrushToolController.html">BrushToolController</a></code>.</p>
 
-                        <a href="Classes/TextOptionsToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/BrushToolControllerOptions.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc(PESDKTextOptionsToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">TextOptionsToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc(PESDKBrushToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">BrushToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5266,66 +5926,6 @@ a &lsquo;Start recording&rsquo; and a &lsquo;Stop recording&rsquo; state.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKVideoRecordButton)</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">VideoRecordButton</span><span class="p">:</span> <span class="kt">UIControl</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptions"></a>
-                    <a name="//apple_ref/swift/Class/AdjustToolControllerOptions" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptions">AdjustToolControllerOptions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Options for configuring an <code><a href="Classes/AdjustToolController.html">AdjustToolController</a></code>.</p>
-
-                        <a href="Classes/AdjustToolControllerOptions.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKAdjustToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">AdjustToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptionsBuilder"></a>
-                    <a name="//apple_ref/swift/Class/AdjustToolControllerOptionsBuilder" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustToolControllerOptionsBuilder">AdjustToolControllerOptionsBuilder</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The default <code>AdjustToolControllerOptionsBuilder</code> for <code><a href="Classes/AdjustToolControllerOptions.html">AdjustToolControllerOptions</a></code>.</p>
-
-                        <a href="Classes/AdjustToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKAdjustToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">AdjustToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5615,66 +6215,6 @@ view that displays an icon instead of the label when required.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKLabelIconBorderedCollectionViewCell)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">LabelIconBorderedCollectionViewCell</span><span class="p">:</span> <span class="kt"><a href="Classes/LabelBorderedCollectionViewCell.html">LabelBorderedCollectionViewCell</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptions"></a>
-                    <a name="//apple_ref/swift/Class/FocusToolControllerOptions" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptions">FocusToolControllerOptions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Options for configuring a <code><a href="Classes/FocusToolController.html">FocusToolController</a></code>.</p>
-
-                        <a href="Classes/FocusToolControllerOptions.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFocusToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">FocusToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptionsBuilder"></a>
-                    <a name="//apple_ref/swift/Class/FocusToolControllerOptionsBuilder" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusToolControllerOptionsBuilder">FocusToolControllerOptionsBuilder</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The default <code>FocusToolControllerOptionsBuilder</code> for <code><a href="Classes/FocusToolControllerOptions.html">FocusToolControllerOptions</a></code>.</p>
-
-                        <a href="Classes/FocusToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFocusToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">FocusToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5998,7 +6538,7 @@ the chosen focus parameters.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKStickerColorToolController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">StickerColorToolController</span><span class="p">:</span> <span class="kt"><a href="Classes/ColorToolController.html">ColorToolController</a></span><span class="o">&lt;</span><span class="kt"><a href="Structs/StickerSpriteModel.html">StickerSpriteModel</a></span><span class="p">,</span> <span class="kt"><a href="Classes.html#/s:14PhotoEditorSDK24StickerGestureControllerC">StickerGestureController</a></span><span class="p">,</span> <span class="kt"><a href="Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerSelectionView">StickerSelectionView</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKStickerColorToolController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">StickerColorToolController</span><span class="p">:</span> <span class="kt"><a href="Classes/ColorToolController.html">ColorToolController</a></span><span class="o">&lt;</span><span class="kt"><a href="Structs/StickerSpriteModel.html">StickerSpriteModel</a></span><span class="p">,</span> <span class="kt"><a href="Classes.html#/s:14PhotoEditorSDK24StickerGestureControllerC">StickerGestureController</a></span><span class="p">,</span> <span class="kt"><a href="Classes/StickerSelectionView.html">StickerSelectionView</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -6063,66 +6603,6 @@ the chosen focus parameters.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKTintFilter)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">TintFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptions"></a>
-                    <a name="//apple_ref/swift/Class/BrushToolControllerOptions" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptions">BrushToolControllerOptions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Options for configuring an <code><a href="Classes/BrushToolController.html">BrushToolController</a></code>.</p>
-
-                        <a href="Classes/BrushToolControllerOptions.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc(PESDKBrushToolControllerOptions)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">BrushToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptionsBuilder"></a>
-                    <a name="//apple_ref/swift/Class/BrushToolControllerOptionsBuilder" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushToolControllerOptionsBuilder">BrushToolControllerOptionsBuilder</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The default <code>BrushToolControllerOptionsBuilder</code> for <code><a href="Classes/BrushToolControllerOptions.html">BrushToolControllerOptions</a></code>.</p>
-
-                        <a href="Classes/BrushToolControllerOptionsBuilder.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc(PESDKBrushToolControllerOptionsBuilder)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">BrushToolControllerOptionsBuilder</span><span class="p">:</span> <span class="kt"><a href="Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a></span></code></pre>
 
                         </div>
                       </div>
@@ -6890,7 +7370,7 @@ presented in a <code><a href="Classes/PhotoEditViewController.html">PhotoEditVie
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2017-09-14)</p>
+      <p>&copy; 2017 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2017-09-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
