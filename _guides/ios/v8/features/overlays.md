@@ -15,6 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
 For version 7 we added overlays to our PhotoEditor SDK. Said overlays are an easy, yet powerful way to create stunning effects.
 To put it simply, overlays are images put on top of the input image.
