@@ -16,42 +16,51 @@ published: true # Either published or not
 ---
 
 
-Our serialization functionality empowers you to save the current settings of the UI and recover it the next time the editor is opened again. The settings will be stored in a plain JSON file.
-For details on the JSON structure you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-2.0.0.json){: download="schema-2.0.0.json" } our schema.
+Our serialization functionality empowers you to save the current operations that have been applied to the image and the image itself. It also allows you to recover such settings the next time the editor is opened again. The settings will be stored in a plain JSON file.
+For details on the JSON structure you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-3.0.0.json){: download="schema-3.0.0.json" } our schema.
 
-## Saving the UI settings
+## Saving the current settings
 When the editor is about to be closed, the according delegate method will be called.
 In that method you can retrieve the serialized settings by calling the `serializedSettings` method on the `PhotoEditViewController` class
 and save these to a file. Here is some example code to get you started:
 
 ```swift
 func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data) {
-    if ViewController.writeSettings {
-        let data = photoEditViewController.serializedSettings
-        do {
-            try data?.write(to: dataFileURL, options: .atomic)
-        } catch {
-            print(error)
-        }
+    if let data = photoEditViewController.serializedSettings {
+      do {
+          try data?.write(to: dataFileURL, options: .atomic)
+      } catch {
+          print(error)
+      }
     }
 
     dismiss(animated: true, completion: nil)
 }
 ```
 
-## Restoring the UI settings
+## Restoring a settings file
 
-To set the initial editor settings, load the saved settings as `NSData` object and set them via the `initialSerializedSettings` property of
-the `PhotoEditViewController`. This has to be done **before** the editor is presented. Here is an example, to demonstrate the process:
+To set the initial editor settings, you can deserialize a `Data` object containing a previously serialized settings file using the `Deserializer` class. A settings file contains the serialized `PhotoEditModel` and the original input image as a `UIImage` object. After a successful deserialization both of these are returned in a `DeserializationResult` object and may be used to fully restore the previous editing state. This can be done by using the deserialized image and model to initialize and present a new `PhotoEditViewController` instance:
 
 ```swift
-let photoEditViewController = PhotoEditViewController(photo: UIImage(named: "sample_image")!)
-photoEditViewController.delegate = self
-if let serializedData = NSData(contentsOf: dataFileURL) {
-    photoEditViewController.initialSerializedSettings = initialSerializedSettings
-}
-let toolbarController = ToolbarController()
-toolbarController.push(photoEditViewController, animated: false)
+let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: nil)
+if let model = deserializationResult.model, let image = deserializationResult.image {
+    photoEditViewController = PhotoEditViewController(photo: image, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
 
-present(toolbarController, animated: true, completion: nil)
+    present(photoEditViewController, animated: true, completion: nil)
+  }
+}
+```
+
+To apply existing settings to a different image, you need to pass the new images dimensions to the deserializer. This ensures that all dimensions and positions are matched as expected. Dimensions passed to `Deserializer.deserialize(data:, imageDimensions:)` always take precedence over the image dimensions contained in the serialized settings. Once you deserialized with the desired dimensions, you can once again present the `PhotoEditViewController` with the deserialized `PhotoEditModel` and the image:
+
+```swift
+if let inputImage = UIImage(named: "example_image"), let data = loadPredefinedSettingsData() {
+  let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: inputImage.size)
+  if let model = deserializationResult.model {
+    photoEditViewController = PhotoEditViewController(photo: inputImage, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
+
+    present(photoEditViewController, animated: true, completion: nil)
+  }
+}
 ```
