@@ -34,7 +34,7 @@ We highly recommend you to prefix your identifiers as well. For more information
 
 Here is an exmple of how to add an overlay.
 
-```
+```swift
 let overlay = Overlay(identifier: "imgly_overlay_golden", displayName: "Golden".localized, url: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden", withExtension: "jpg"), thumbnailURL: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden_thumb", withExtension: "jpg"), initialBlendMode: .lighten)
 Overlay.all.append(overlay)
 ```

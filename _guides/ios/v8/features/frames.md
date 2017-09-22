@@ -33,7 +33,7 @@ In contrast to version 6, frames are stored in a static array of the `Frame` cla
 In the example code below, we are creating a new static frame. We are adding three assets, to support the aspect ratios, 1:1, 4:6 and 6:4.
 As tolerance we set 0.1, which is our go to value. Also we set an identifier that will be used during the (de)serialization process and must be unique. We prefixed all frame assets with `imgly_frame`, and we highly reconmend you to prefix your assets and identifiers as well.
 
-```
+```swift
 let frame = Frame(identifier: "imgly_frame_blackwood", tolerance: 0.1)
 frame.accessibilityLabel = "Black wood frame".localized
 
@@ -84,7 +84,7 @@ The left and right group consist of a stretched border texture, and a start and 
 
 The code to create that frame looks like this:
 
-```
+```swift
 open static var diaFrameBuilder: CustomPatchFrameBuilder {
     let config = CustomPatchConfiguration()
 
@@ -121,7 +121,7 @@ open static var diaFrameBuilder: CustomPatchFrameBuilder {
 
 And the code to create the `Frame` instance looks like this
 
-```
+```swift
 if let url = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_thumbnail", withExtension: "png") {
       let dynamicFrame = Frame(frameBuilder: DefaultDynamicFrames.diaFrameBuilder, relativeScale: 0.075, thumbnailURL: url, identifier: "imgly_frame_dia")
       dynamicFrame.accessibilityLabel = "Dia frame".localized

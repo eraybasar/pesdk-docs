@@ -26,7 +26,7 @@ The SDK's backend is in charge of all image processing and rendering. That inclu
 
 ## Frontend
 
-The frontend contains all UI elements including the `PhotoEditToolController`, which is the base class for all tools, the `StackLayoutToolController`, which is a subclass of `PhotoEditToolController` and lays out its views into the top `workspaceView` and the bottom `accessoryView`, which is used for the menu.
-It also contains the `CameraViewController` and `PhotoEditViewController` classes, which represent the root view controllers as well as the `ToolbarController`, which is used to handle the transitions between the editor and its tools.
+The frontend contains all UI elements including the `PhotoEditToolController`, which is the base class for all tools, the `MenuToolController`, which is a subclass of `PhotoEditToolController` and provides a collection view at the bottom of the view, which acts as the menu.
+It also contains the `CameraViewController` and `PhotoEditViewController` classes, which represent the root view controllers.
 
-All tools described in the `Features` section are implemented as `PhotoEditToolController` subclasses and managed by the `ToolbarController`. The UI configuration is implemented using the `Configuration` class and their subclasses, as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.
+All tools described in the `Features` section are implemented as `PhotoEditToolController` subclasses and managed by the `PhotoEditViewController`. The UI configuration is implemented using the `Configuration` class and their subclasses, as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.

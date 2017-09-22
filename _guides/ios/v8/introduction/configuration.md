@@ -30,6 +30,9 @@ The constructor of each configuration class has a parameter for its dedicated bu
 Hence, all default settings of our SDK are set in the default builder classes.
 To change the configuration of any module, you have to set up your own builder, as follows:
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 ...
 let configuration = Configuration() { builder in
@@ -39,15 +42,56 @@ let configuration = Configuration() { builder in
 let cameraViewController = CameraViewController(configuration: configuration)
 ...
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+...
+PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:^(PESDKConfigurationBuilder * _Nonnull builder) {
+  builder.backgroundColor = UIColor.redColor;
+}];
+
+PESDKCameraViewController *cameraViewController = [[PESDKCameraViewController alloc] initWithConfiguration:configuration];
+...
+
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-CONFIG{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 In order to modify the options of any specific tool, you need to modify the corresponding options using the same pattern. For example, changing the background color of the transform tool can be done using the following code:
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 let configuration = Configuration { builder in
-    builder.configureTransformToolController { options in
-        options.backgroundColor = .darkGray
+  builder.configureTransformToolController { options in
+    options.backgroundColor = .darkGray
+  }
 }
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:^(PESDKConfigurationBuilder * _Nonnull builder) {
+  [builder configureTransformToolController:^(PESDKTransformToolControllerOptionsBuilder * _Nonnull options) {
+    options.backgroundColor = UIColor.darkGrayColor;
+  }];
+}];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-TRANSFORMCONFIG1{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 For more configuration examples, please refer to the examples shown below or take a look at the {% include guides/ios/demo-repository.md %}. Or take a look at our default configuration in action and check out our {% include guides/ios/example-app.md %}.
 
@@ -58,7 +102,7 @@ That means, that if you set the `backgroundColor` of the `Configuration` to blac
 unless you set another `backgroundColor` in the specific tool configuration.
 The following image annotates the most common configuration members.
 Please note that the background color of the toolbar,
-which sits at the bottom, is set through a property of the `toolbarController`.
+which sits at the bottom, is set through a property of the `PhotoEditViewController`.
 
 ![Common members]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/commonMembers.jpg)
 
@@ -66,25 +110,53 @@ which sits at the bottom, is set through a property of the `toolbarController`.
 
 Most configuration objects offer closures to setup UI elements individually.
 In that case they usually come with an array of actions that determine the available actions.
-These closures will also have a `cell` and an `action` as parameters.
-This is due to the fact that most of our controllers use `UICollectionViews`.
-For example, the main tool bar presents all available actions like filters, crop, orientation.
-The closure is then called for each of these actions. So if you wish to change the crop button icon
-you have to check the action type and set the image accordingly.
+These closures will also have a `cell` and an `menuItem` as parameters.
+This is due to the fact that most of our controllers use `UICollectionView`s.
+For example, the main tool bar presents all available tools like filters and transform.
+The closure is then called for each of these menu items. If you wish to change the transform button icon
+you have to check the menu item and set the image accordingly.
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 builder.configurePhotoEditorViewController { options in
-    options.actionButtonConfigurationClosure = { cell, action in
-        if action == .Crop {
-            cell.imageView.image = ...
+  options.actionButtonConfigurationClosure = { cell, menuItem in
+    switch menuItem {
+      case .tool(let toolMenuItem):
+        if toolMenuItem.toolControllerClass == TransformToolController.self {
+          cell.imageView.image = ...
         }
+      default:
+        break
     }
 
-    options.actionButtonConfigurationClosure = { cell, action in
-      cell.captionTintColor = UIColor.red
-    }
+    cell.captionTintColor = UIColor.red
+  }
 }
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+[builder configurePhotoEditorViewController:^(PESDKPhotoEditViewControllerOptionsBuilder * _Nonnull options) {
+  options.actionButtonConfigurationBlock = ^(PESDKIconCaptionCollectionViewCell * _Nonnull cell, PESDKPhotoEditMenuItem * _Nonnull menuItem) {
+    if ([menuItem.toolMenuItem.title isEqualToString:@"Transform"]) {
+      cell.imageView.image = ...
+    }
+
+    cell.captionTintColor = UIColor.redColor;
+  };
+}];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-TRANSFORMCONFIG2{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
 
 ### Changing icons
 
@@ -93,54 +165,43 @@ You can register a block using the `PESDK.bundleImageBlock` property which gets 
 
 ### Selecting menu items
 
-With version 6 we changed the way menu items are configured. Now there is a new constructor for the `PhotoEditViewController`,
-that takes an array of `MenuItem`'s. We recommend having a separate function to setup the menu items:
+`PhotoEditViewController` has a constructor which takes an array of `PhotoEditMenuItem`s.
 
-```swift
-func menuItems(with configuration: Configuration) -> [MenuItem] {
-    return [
-        .tool("Transform", UIImage(named: "ic_crop_48pt", in: Bundle.pesdkBundle, compatibleWith: nil)!, TransformToolController(configuration: configuration))
-    ]
-}
-```
-
-`MenuItem` is an enum with three possible cases.
-1. `case tool(String, UIImage, PhotoEditToolController)` represents a tool that can be pushed onto the stack. It has a title, an icon and the instantiated tool as associated values.
-2. `case action(String, UIImage, (inout PhotoEditModel) -> Void, ((PhotoEditModel) -> Bool)?)` represents an action that should be run when this menu item is selected. It has a title, an icon, the closure that should be run and which can update the current photo edit model, and a state closure that is used to query the active state of the action as associated values.
-3. `case separator` represents a visual separator in the menu. It has no associated values.
+`PhotoEditMenuItem` is an enum with two possible cases.
+1. `case tool(ToolMenuItem)` represents a tool that can be pushed onto the stack. It has a `ToolMenuItem` as an associated value, which has a title, an icon and the class of the tool that should be instantiated.
+2. `case action(ActionMenuItem)` represents an action that should be executed when this menu item is selected. It has an `ActionMenuItem` as an associated value, which has a title, an icon, the closure that should be executed and which can update the current photo edit model, and a state closure that is used to query the active state of the action.
 
 The `.tool` case can be used to present any subclass of `PhotoEditToolController`, making it easier to add your very own custom tool controllers to the SDK.
 Here is the code for the current default set of menu items:
 
 ```swift
-/// The default items that will be used for the main menu.
-///
-/// - Parameter configuration: A configuration instance to use to configure the tools.
-/// - Returns: An array with the default menu items.
-public static func defaultItems(with configuration: Configuration) -> [MenuItem] {
-  return [
-    .tool("Transform".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_transform_48pt"), TransformToolController(configuration: configuration)),
-    .tool("Filter".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_filter_48pt"), FilterToolController(configuration: configuration)),
-    .tool("Adjust".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_adjust_48pt"), AdjustToolController(configuration: configuration)),
-    .tool("Sticker".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_sticker_48pt"), StickerToolController(configuration: configuration)),
-    .tool("Text".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_text_48pt"), TextToolController(configuration: configuration)),
-    .tool("Overlay".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_overlay_48pt"), OverlayToolController(configuration: configuration)),
-    .tool("Frame".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_frame_48pt"), FrameToolController(configuration: configuration)),
-    .tool("Brush".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_brush_48pt"), BrushToolController(configuration: configuration)),
-    .tool("Focus".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_focus_48pt"), FocusToolController(configuration: configuration)),
-    .action("Magic".localized, UIImage.bundledTemplateImage(named: "imgly_icon_tool_magic_48pt"), { photoEditModel in
-      var updatedPhotoEditModel = photoEditModel
-      updatedPhotoEditModel.isAutoEnhancementEnabled = !updatedPhotoEditModel.isAutoEnhancementEnabled
-      photoEditModel = updatedPhotoEditModel
-
-      if updatedPhotoEditModel.isAutoEnhancementEnabled {
-        PESDK.analytics.logEvent(.autoEnhancementOn)
-      } else {
-        PESDK.analytics.logEvent(.autoEnhancementOff)
-      }
-    }, { photoEditModel in
-      photoEditModel.isAutoEnhancementEnabled
-    })
+/// Creates the default menu items (transform, filter, adjust, sticker, text, overlay, frame,
+/// brush, focus and auto enhancement)
+public static var defaultItems: [PhotoEditMenuItem] {
+  let menuItems: [MenuItem?] = [
+    ToolMenuItem.createTransformToolItem(),
+    ToolMenuItem.createFilterToolItem(),
+    ToolMenuItem.createAdjustToolItem(),
+    ToolMenuItem.createStickerToolItem(),
+    ToolMenuItem.createTextToolItem(),
+    ToolMenuItem.createOverlayToolItem(),
+    ToolMenuItem.createFrameToolItem(),
+    ToolMenuItem.createBrushToolItem(),
+    ToolMenuItem.createFocusToolItem(),
+    ActionMenuItem.createMagicItem()
   ]
+
+  let photoEditMenuItems: [PhotoEditMenuItem] = menuItems.flatMap { menuItem in
+    switch menuItem {
+    case let menuItem as ToolMenuItem:
+      return .tool(menuItem)
+    case let menuItem as ActionMenuItem:
+      return .action(menuItem)
+    default:
+      return nil
+    }
+  }
+
+  return photoEditMenuItems
 }
 ```

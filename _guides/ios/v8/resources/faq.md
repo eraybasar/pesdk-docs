@@ -31,7 +31,7 @@ We have a full-source license. Please [contact us](https://www.photoeditorsdk.co
 
 ## Framework Size
 
-You might be wondering why the `PhotoEditorSDK.framework` folder is almost 100 MB large. This can be irritating at first, however this is not the size that your users will get.
+You might be wondering why the `PhotoEditorSDK.framework` folder is almost 135 MB large. This can be irritating at first, however this is not the size that your users will get.
 
 The PhotoEditor SDK includes many UI components, lookup tables and fonts. This results in a lot of code and thus a sizeable binary, although there are certain factors that make it appear larger than it actually is. We’re working hard to ensure the framework size stays as low as possible.
 
@@ -39,11 +39,11 @@ The PhotoEditor SDK includes many UI components, lookup tables and fonts. This r
 
 The SDK binary includes slices for i386, x64, armv7 and arm64. For armv7 and arm64, bitcode is included as well — which basically results in 6 different slices. ([Learn more about bitcode here](https://www.photoeditorsdk.com/documentation/ios/faq#bitcode)) Each slice is a full and complete copy of the SDK, and only one slice is required for your users. During archiving Xcode ensures that the Simulator slices (i386, x64) are stripped away from our SDK, which will result in a significant size reduction.
 
-Bitcode is a large size contributor. As bitcode is unoptimized code in a generic format, it takes up a lot of space. Since Bitcode is not architecture independent, slices are emitted for both armv7 and arm64. These slices are rather large, more than 8MB per slice, so support for Bitcode alone is about 16 MB of space.
+Bitcode is a large size contributor. As bitcode is unoptimized code in a generic format, it takes up a lot of space. Since Bitcode is not architecture independent, slices are emitted for both armv7 and arm64. These slices are rather large, more than 18MB per slice, so support for Bitcode alone is about 36 MB of space.
 
 ### App Thinning
 
-Apple also actively works on reducing app binary size, and added [App Thinning](https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html) in iOS 9. This creates optimized versions of your app and the user only downloads the architecture that is required for the current device. This also strips away bitcode, resulting in a total SDK footprint of about 10-20 MB.
+Apple also actively works on reducing app binary size, and added [App Thinning](https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html) in iOS 9. This creates optimized versions of your app and the user only downloads the architecture that is required for the current device. This also strips away bitcode, resulting in a total SDK footprint of about 20-25 MB.
 
 ### PhotoEditorSDK.bundle
 
@@ -51,7 +51,7 @@ The PhotoEditor SDK needs various images and localization files, which are distr
 
 ### Swift
 
-Because the Swift ABI is not yet stable, each app that includes Swift bundles a version of the current Swift runtime. The PhotoEditor SDK is written in Swift and thus requires said Swift runtime to be included, even if you only use Objective-C in your own code. Unfortunately, the runtime adds roughly another 10 MB to the App Store size. When the Swift binary interface stabilizes, the Swift runtime will become part of the host OS and this size increase of apps will no longer exist.
+Because the Swift ABI is not yet stable, each app that includes Swift bundles a version of the current Swift runtime. The PhotoEditor SDK is written in Swift and thus requires said Swift runtime to be included, even if you only use Objective-C in your own code. Unfortunately, the runtime adds roughly another 12 MB to the App Store size. When the Swift binary interface stabilizes, the Swift runtime will become part of the host OS and this size increase of apps will no longer exist. Xcode 9 offers a new option to 'Strip Swift Symbols' when uploading a build to iTunes Connect. This step will get rid of quite a few MB. 
 
 ### Delta Updates
 

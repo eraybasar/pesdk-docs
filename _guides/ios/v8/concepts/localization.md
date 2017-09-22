@@ -24,7 +24,12 @@ We also provide two properties to customize your localization, `PESDK.localizati
 ## Add further localization to the PhotoEditor SDK
 
 You can either set new localization programmatically or add further localization via adding the corresponding folders.
-To get an overview of all available strings that need to be localized, look inside /PhotoEditorSDK.bundle/en.lproj/Localizable.strings.
+To get an overview of all available strings that need to be localized, look inside /PhotoEditorSDK.bundle/en.lproj/Localizable.strings. The contents of that file are in binary format. To convert them back into a readable format please use the following command:
+
+```bash
+plutil -convert xml1 PhotoEditorSDK.bundle/en.lproj/Localizable.strings
+```
+
 As mentioned above, there are two ways to add localization programmatically. The first is to set a localization dictionary like so:
 
 ```swift
