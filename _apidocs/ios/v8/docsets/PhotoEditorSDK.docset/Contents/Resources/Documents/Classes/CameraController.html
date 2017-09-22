@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CameraController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CameraController" class="dashAnchor"></a>
+    <a title="CameraController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PhotoEditorSDK Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/imgly/pesdk-ios-build"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv8%2Fdocsets%2FPhotoEditorSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PhotoEditorSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CameraController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Common.html">Common</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CameraViewController.html">CameraViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PESDK.html">PESDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PESDK/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PhotoEditModel.html">PhotoEditModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEditRenderer.html">PhotoEditRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PhotoEditViewControllerDelegate.html">PhotoEditViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Tools.html">Tools</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AdjustToolController.html">AdjustToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushColorToolController.html">BrushColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushToolController.html">BrushToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorToolController.html">ColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FilterToolController.html">FilterToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FocusToolController.html">FocusToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameToolController.html">FrameToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuToolController.html">MenuToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverlayToolController.html">OverlayToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Tools.html#/s:14PhotoEditorSDK26StickerColorToolControllerC">StickerColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerOptionsToolController.html">StickerOptionsToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerToolController.html">StickerToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextColorToolController.html">TextColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextFontToolController.html">TextFontToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextOptionsToolController.html">TextOptionsToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextToolController.html">TextToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransformToolController.html">TransformToolController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Sprites.html">Sprites</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Font.html">Font</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Frame.html">Frame</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Overlay.html">Overlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEffect.html">PhotoEffect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Sticker.html">Sticker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerCategory.html">StickerCategory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Configuration.html">Configuration</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AdjustToolControllerOptions.html">AdjustToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushColorToolControllerOptions.html">BrushColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushToolControllerOptions.html">BrushToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CameraViewControllerOptions.html">CameraViewControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorToolControllerOptions.html">ColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FilterToolControllerOptions.html">FilterToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FocusToolControllerOptions.html">FocusToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameToolControllerOptions.html">FrameToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverlayToolControllerOptions.html">OverlayToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEditViewControllerOptions.html">PhotoEditViewControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerOptionsToolControllerOptions.html">StickerOptionsToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerToolControllerOptions.html">StickerToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextColorToolControllerOptions.html">TextColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextFontToolControllerOptions.html">TextFontToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextOptionsToolControllerOptions.html">TextOptionsToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextToolControllerOptions.html">TextToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ToolControllerOptions.html">ToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransformToolControllerOptions.html">TransformToolControllerOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Controllers.html">Controllers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AdjustEditController.html">AdjustEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushEditController.html">BrushEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FilterEditController.html">FilterEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FocusEditController.html">FocusEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameEditController.html">FrameEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuViewController.html">MenuViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverlayEditController.html">OverlayEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEditPreviewController.html">PhotoEditPreviewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProxyZoomController.html">ProxyZoomController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SliderEditController.html">SliderEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpriteEditController.html">SpriteEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpriteGestureController.html">SpriteGestureController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpriteViewController.html">SpriteViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Controllers.html#/s:14PhotoEditorSDK24StickerGestureControllerC">StickerGestureController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerSelectionController.html">StickerSelectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextGestureController.html">TextGestureController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransformEditController.html">TransformEditController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AdjustmentModel.html">AdjustmentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BrushSpriteModel.html">BrushSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CropAspect.html">CropAspect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EffectFilterModel.html">EffectFilterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FocusModel.html">FocusModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FrameSpriteModel.html">FrameSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OverlayModel.html">OverlayModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PathModel.html">PathModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Models.html#/s:14PhotoEditorSDK11SpriteModelP">SpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StickerSpriteModel.html">StickerSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TextSpriteModel.html">TextSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ToolbarItem.html">ToolbarItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransformModel.html">TransformModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Sprite Protocols.html">Sprite Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HorizontallyFlippable.html">HorizontallyFlippable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Identifiable.html">Identifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NormalizedCenterable.html">NormalizedCenterable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NormalizedFontSizable.html">NormalizedFontSizable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NormalizedHeightSettable.html">NormalizedHeightSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NormalizedPlaceable.html">NormalizedPlaceable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NormalizedSizable.html">NormalizedSizable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NormalizedWidthSettable.html">NormalizedWidthSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Sprite Protocols.html#/s:14PhotoEditorSDK12OrientatableP">Orientatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Rotatable.html">Rotatable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Sprite Views.html">Sprite Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Sprite Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKFrameImageView">FrameImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpriteContainerView.html">SpriteContainerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpriteImageView.html">SpriteImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpriteLabel.html">SpriteLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Sprite Views.html#/s:14PhotoEditorSDK10SpriteViewa">SpriteView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerImageView.html">StickerImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Views.html">Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBoxGradientView">BoxGradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushPreviewView.html">BrushPreviewView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Button.html">Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CanvasView.html">CanvasView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCircleGradientView">CircleGradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorPickerView.html">ColorPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CropAndStraightenView.html">CropAndStraightenView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CropHandleView.html">CropHandleView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CropMaskView.html">CropMaskView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CropOverlayView.html">CropOverlayView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultProgressView.html">DefaultProgressView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FocusGradientView.html">FocusGradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FontSelectorView.html">FontSelectorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GradientView.html">GradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKHandleButton">HandleButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuCollectionView.html">MenuCollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverlayButton.html">OverlayButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScalePicker.html">ScalePicker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Slider.html">Slider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SliderTooltip.html">SliderTooltip</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerSelectionView.html">StickerSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextButton.html">TextButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextSelectionView.html">TextSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Toolbar.html">Toolbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKToolbarButton">ToolbarButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TooltipSlider.html">TooltipSlider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRecordButton.html">VideoRecordButton</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Cells.html">Cells</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ActivityBorderedCollectionViewCell.html">ActivityBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BorderedCollectionViewCell.html">BorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorCollectionViewCell.html">ColorCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FilterCollectionViewCell.html">FilterCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IconBorderedCollectionViewCell.html">IconBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IconCaptionCollectionViewCell.html">IconCaptionCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LabelBorderedCollectionViewCell.html">LabelBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LabelCaptionCollectionViewCell.html">LabelCaptionCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LabelIconBorderedCollectionViewCell.html">LabelIconBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerCollectionViewCell.html">StickerCollectionViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Cell Configurators.html">Cell Configurators</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK30ActionMenuItemCellConfiguratorV">ActionMenuItemCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK22AdjustCellConfiguratorV">AdjustCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK25BlendModeCellConfiguratorV">BlendModeCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK21BrushCellConfiguratorV">BrushCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CellConfigurator.html">CellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CellConfiguratorProtocol.html">CellConfiguratorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK21ColorCellConfiguratorV">ColorCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK26CropAspectCellConfiguratorV">CropAspectCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK21FocusCellConfiguratorV">FocusCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK20FontCellConfiguratorV">FontCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK21FrameCellConfiguratorV">FrameCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK23OverlayCellConfiguratorV">OverlayCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PhotoEditCellConfigurator.html">PhotoEditCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK0A22EffectCellConfiguratorV">PhotoEffectCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK31StickerCategoryCellConfiguratorV">StickerCategoryCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK23StickerCellConfiguratorV">StickerCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK29StickerOptionCellConfiguratorV">StickerOptionCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK26TextOptionCellConfiguratorV">TextOptionCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Cell Configurators.html#/s:14PhotoEditorSDK28ToolMenuItemCellConfiguratorV">ToolMenuItemCellConfigurator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Menu Items.html">Menu Items</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ActionMenuItem.html">ActionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AdjustMenuItem.html">AdjustMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BlendModeMenuItem.html">BlendModeMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushMenuItem.html">BrushMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorMenuItem.html">ColorMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CropAspectMenuItem.html">CropAspectMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FocusMenuItem.html">FocusMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FontMenuItem.html">FontMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameMenuItem.html">FrameMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Menu Items.html#/s:14PhotoEditorSDK8MenuItemP">MenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverlayMenuItem.html">OverlayMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PhotoEditMenuItem.html">PhotoEditMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEffectMenuItem.html">PhotoEffectMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerCategoryMenuItem.html">StickerCategoryMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerMenuItem.html">StickerMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerOptionMenuItem.html">StickerOptionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextOptionMenuItem.html">TextOptionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ToolMenuItem.html">ToolMenuItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Filters.html">Filters</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ClarityFilter.html">ClarityFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorizeFilter.html">ColorizeFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomAdjustmentsFilter.html">CustomAdjustmentsFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LinearFocusFilter.html">LinearFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LUTFilter.html">LUTFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RadialFocusFilter.html">RadialFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TintFilter.html">TintFilter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Logging.html">Logging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultLogger.html">DefaultLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LoggerProtocol.html">LoggerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MasterLogger.html">MasterLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Undo.html">Undo</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/UndoController.html">UndoController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Analytics.html">Analytics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Analytics.html">Analytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AnalyticsClient.html">AnalyticsClient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Helpers.html">Helpers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ImageGeometry.html">ImageGeometry</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AdjustToolControllerOptionsBuilder.html">AdjustToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AnimationDelegate.html">AnimationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AssetManager.html">AssetManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrush">Brush</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushColorToolControllerOptionsBuilder">BrushColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BrushToolControllerOptionsBuilder.html">BrushToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CameraController.html">CameraController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CameraViewControllerOptionsBuilder.html">CameraViewControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorPickerViewController.html">ColorPickerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ColorToolControllerOptionsBuilder.html">ColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigurationBuilder.html">ConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomPatchConfiguration.html">CustomPatchConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomPatchFrameBuilder.html">CustomPatchFrameBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultDynamicFrames.html">DefaultDynamicFrames</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultToolbarItem.html">DefaultToolbarItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Deserializer.html">Deserializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Deserializer/DeserializationResult.html">– DeserializationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceOrientationController.html">DeviceOrientationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FilterSelectionController.html">FilterSelectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FilterToolControllerOptionsBuilder.html">FilterToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FocusToolControllerOptionsBuilder.html">FocusToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FontImporter.html">FontImporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FontSelectorViewController.html">FontSelectorViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameImageGroup.html">FrameImageGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameToolControllerOptionsBuilder.html">FrameToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FreehandTool.html">FreehandTool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IconGenerator.html">IconGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LicenseModel.html">LicenseModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainFlowController.html">MainFlowController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuDataSourceProvider.html">MenuDataSourceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverlayToolControllerOptionsBuilder.html">OverlayToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Painting.html">Painting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaintingFragment.html">PaintingFragment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEditViewControllerOptionsBuilder.html">PhotoEditViewControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoEffectThumbnailRenderer.html">PhotoEffectThumbnailRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoundGenerator.html">RoundGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StampGenerator.html">StampGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerOptionsToolControllerOptionsBuilder.html">StickerOptionsToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StickerToolControllerOptionsBuilder.html">StickerToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextColorToolControllerOptionsBuilder.html">TextColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextFontToolControllerOptionsBuilder.html">TextFontToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextOptionsToolControllerOptionsBuilder.html">TextOptionsToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextToolControllerOptionsBuilder.html">TextToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Texture.html">Texture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Tool.html">Tool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTouchingGestureRecognizer">TouchingGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransformToolControllerOptionsBuilder.html">TransformToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKViewController">ViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WeakContainer.html">WeakContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCAdjustmentModel.html">_ObjCAdjustmentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCBrushSpriteModel.html">_ObjCBrushSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCEffectFilterModel.html">_ObjCEffectFilterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCFocusModel.html">_ObjCFocusModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCFrameSpriteModel.html">_ObjCFrameSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCOverlayModel.html">_ObjCOverlayModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCPathModel.html">_ObjCPathModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCPhotoEditMenuItem.html">_ObjCPhotoEditMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCPhotoEditModel.html">_ObjCPhotoEditModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCStickerSpriteModel.html">_ObjCStickerSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCTextSpriteModel.html">_ObjCTextSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/_ObjCTransformModel.html">_ObjCTransformModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Enums.html">Other Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AdjustTool.html">AdjustTool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BlendMode.html">BlendMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BlurQuality.html">BlurQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BrushOverlayAction.html">BrushOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BrushTool.html">BrushTool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CameraControllerError.html">CameraControllerError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CropHandle.html">CropHandle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FocusType.html">FocusType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FrameBuildMode.html">FrameBuildMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FrameLayoutMode.html">FrameLayoutMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FrameTileMode.html">FrameTileMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LicenseFeatureType.html">LicenseFeatureType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Orientation.html">Orientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PhotoEditOverlayAction.html">PhotoEditOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RecordingMode.html">RecordingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StickerAction.html">StickerAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StickerOverlayAction.html">StickerOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StickerTintMode.html">StickerTintMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TextAction.html">TextAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TextColorToolControllerMode.html">TextColorToolControllerMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TextOverlayAction.html">TextOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransformAction.html">TransformAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CFString.html">CFString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Functions.html">Other Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other Functions.html#/s:14PhotoEditorSDK2eeoiSbAA15AdjustmentModelV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AdjustEditControllerDelegate.html">AdjustEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BrushEditControllerDelegate.html">BrushEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CanvasViewDataSource.html">CanvasViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CanvasViewDelegate.html">CanvasViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ColorPickerViewControllerDelegate.html">ColorPickerViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CropAndStraightenViewDelegate.html">CropAndStraightenViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventSubscribable.html">EventSubscribable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventSubscriber.html">EventSubscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FilterEditControllerDelegate.html">FilterEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FocusEditControllerDelegate.html">FocusEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FontSelectorViewControllerDelegate.html">FontSelectorViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FontSelectorViewDelegate.html">FontSelectorViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FrameBuilder.html">FrameBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GeneratorDelegate.html">GeneratorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MenuDataSourceProtocol.html">MenuDataSourceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MenuViewControllerDelegate.html">MenuViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Protocols.html#/s:14PhotoEditorSDK20ObjectiveCBridgeableP">ObjectiveCBridgeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OverlayEditControllerDelegate.html">OverlayEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PhotoEditModelSettable.html">PhotoEditModelSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PhotoEditPreviewControllerDelegate.html">PhotoEditPreviewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PhotoEditToolControllerDelegate.html">PhotoEditToolControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PhotoPreviewControlling.html">PhotoPreviewControlling</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ProgressView.html">ProgressView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ProxyZoomControllerDelegate.html">ProxyZoomControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScalePickerDelegate.html">ScalePickerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SliderEditControllerDelegate.html">SliderEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpriteEditControllerDelegate.html">SpriteEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpriteGestureControllerDelegate.html">SpriteGestureControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpriteViewControllerDelegate.html">SpriteViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StickerSelectionControllerDelegate.html">StickerSelectionControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ToolbarItemProviding.html">ToolbarItemProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransformEditControllerDelegate.html">TransformEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransitionAnimator.html">TransitionAnimator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransitionProviding.html">TransitionProviding</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Structs.html">Other Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ColorMatrix.html">ColorMatrix</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MenuDataSource.html">MenuDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NeutralModelValues.html">NeutralModelValues</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NeutralModelValues/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NeutralModelValues/Overlay.html">– Overlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NeutralModelValues/Focus.html">– Focus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NeutralModelValues/Orientation.html">– Orientation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Typealiases.html">Other Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other Typealiases.html#/s:14PhotoEditorSDK26ButtonConfigurationClosurea">ButtonConfigurationClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Typealiases.html#/s:14PhotoEditorSDK19DidEnterToolClosurea">DidEnterToolClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Typealiases.html#/s:14PhotoEditorSDK26SliderConfigurationClosurea">SliderConfigurationClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Typealiases.html#/s:14PhotoEditorSDK18ToolbarItemClosurea">ToolbarItemClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Typealiases.html#/s:14PhotoEditorSDK24ViewConfigurationClosurea">ViewConfigurationClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other Typealiases.html#/s:14PhotoEditorSDK20WillLeaveToolClosurea">WillLeaveToolClosure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CameraController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKCameraController)</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">CameraController</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>CameraController</code> class provides functions for serveral camera related tasks,
+including setup, flash control, and such.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoPreviewView"></a>
+                    <a name="//apple_ref/swift/Property/videoPreviewView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoPreviewView">videoPreviewView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An instance of a <code>GLKView</code> that is used to present the preview.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">videoPreviewView</span><span class="p">:</span> <span class="kt">GLKView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)recordingMode"></a>
+                    <a name="//apple_ref/swift/Property/recordingMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)recordingMode">recordingMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The currently active recording mode (i.e. <code>.Photo</code> or <code>.Video</code>). Setting this property before
+calling <code>setupWithInitialRecordingMode(:)</code> is ignored. The setter asynchronously updates the
+session, so the getter might not immediately represent the new value. You can observe changes
+to the value of this property using key-value observing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">dynamic</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)runningStateChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/runningStateChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)runningStateChangedHandler">runningStateChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the <code>running</code> state of the camera changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">runningStateChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">running</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)cameraPositionChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/cameraPositionChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)cameraPositionChangedHandler">cameraPositionChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the camera position changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">cameraPositionChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">previousPosition</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">,</span> <span class="n">_</span> <span class="nv">newPosition</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)recordingModeChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/recordingModeChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)recordingModeChangedHandler">recordingModeChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the recording mode changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">recordingModeChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)availableCameraPositionsChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/availableCameraPositionsChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)availableCameraPositionsChangedHandler">availableCameraPositionsChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the list of available camera positions was changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">availableCameraPositionsChangedHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)flashChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/flashChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)flashChangedHandler">flashChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when any aspect of the flash changes.
+<code>hasFlash</code> is <code>true</code> if the current camera has a flash. <code>flashMode</code> represents the currently
+active flash mode. <code>flashAvailable</code> is <code>true</code> if the flash is available for use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">flashChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">hasFlash</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flashMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flashAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)torchChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/torchChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)torchChangedHandler">torchChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when any aspect of the torch changes.
+<code>hasTorch</code> is <code>true</code> if the current camera has a torch. <code>torchMMode</code> represents the currently
+active torch mode. <code>torchAvailable</code> is <code>true</code> if the torch is available for use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">torchChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">hasTorch</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">torchMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">,</span> <span class="n">_</span> <span class="nv">torchAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)capturingStillImageHandler"></a>
+                    <a name="//apple_ref/swift/Property/capturingStillImageHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)capturingStillImageHandler">capturingStillImageHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a photo is currently being captured or done being captured.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">capturingStillImageHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">capturing</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)sessionInterruptionHandler"></a>
+                    <a name="//apple_ref/swift/Property/sessionInterruptionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)sessionInterruptionHandler">sessionInterruptionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the session is interrupted or the interruption ended. This can happen when
+switching to a multi-app layout, introduced in iOS 9 for example.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">sessionInterruptionHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">interrupted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)sessionRuntimeErrorHandler"></a>
+                    <a name="//apple_ref/swift/Property/sessionRuntimeErrorHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)sessionRuntimeErrorHandler">sessionRuntimeErrorHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a runtime error occurs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">sessionRuntimeErrorHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)authorizationFailedHandler"></a>
+                    <a name="//apple_ref/swift/Property/authorizationFailedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)authorizationFailedHandler">authorizationFailedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the user did not grant authorization for the camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">authorizationFailedHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingStartedHandler"></a>
+                    <a name="//apple_ref/swift/Property/videoRecordingStartedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingStartedHandler">videoRecordingStartedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when video recording starts.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">videoRecordingStartedHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFinishedHandler"></a>
+                    <a name="//apple_ref/swift/Property/videoRecordingFinishedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFinishedHandler">videoRecordingFinishedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when video recording finishes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">videoRecordingFinishedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">fileURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFailedHandler"></a>
+                    <a name="//apple_ref/swift/Property/videoRecordingFailedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFailedHandler">videoRecordingFailedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when video recording fails.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">videoRecordingFailedHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingProgressHandler"></a>
+                    <a name="//apple_ref/swift/Property/videoRecordingProgressHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingProgressHandler">videoRecordingProgressHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called each second while a video recording is in progress.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">videoRecordingProgressHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)previewFrameChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/previewFrameChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)previewFrameChangedHandler">previewFrameChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the size of the preview image within the <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoPreviewView">videoPreviewView</a></code> changes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">previewFrameChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">previewFrame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)focusPointChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/focusPointChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)focusPointChangedHandler">focusPointChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the focus point changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">focusPointChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)focusModeChangedHandler"></a>
+                    <a name="//apple_ref/swift/Property/focusModeChangedHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)focusModeChangedHandler">focusModeChangedHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the focus mode changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">focusModeChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">focusMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FocusMode</span><span class="p">,</span> <span class="n">_</span> <span class="nv">exposureMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">ExposureMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)focusDisabledHandler"></a>
+                    <a name="//apple_ref/swift/Property/focusDisabledHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)focusDisabledHandler">focusDisabledHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the focus gets disabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">focusDisabledHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoOutputSettings"></a>
+                    <a name="//apple_ref/swift/Property/videoOutputSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoOutputSettings">videoOutputSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The video output settings to use for video recording. If <code>nil</code>, the recommended video
+settings for file type <code>AVFileTypeQuickTimeMovie</code> will be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">videoOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)audioOutputSettings"></a>
+                    <a name="//apple_ref/swift/Property/audioOutputSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)audioOutputSettings">audioOutputSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The video output settings to use for video recording. If <code>nil</code>, the recommended audio
+settings for file type <code>AVFileTypeQuickTimeMovie</code> will be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">audioOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFileType"></a>
+                    <a name="//apple_ref/swift/Property/videoRecordingFileType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFileType">videoRecordingFileType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file type to use for video recording. Default is <code>AVFileTypeQuickTimeMovie</code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If you change this, you will most likely also want to change <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoOutputSettings">videoOutputSettings</a></code>
+and <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)audioOutputSettings">audioOutputSettings</a></code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileType</span><span class="p">:</span> <span class="kt">AVFileType</span> <span class="o">=</span> <span class="kt">AVFileType</span><span class="o">.</span><span class="n">mov</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFileExtension"></a>
+                    <a name="//apple_ref/swift/Property/videoRecordingFileExtension" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFileExtension">videoRecordingFileExtension</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The extension to use for video files. Default is <q>mov</q>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileExtension</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"mov"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)assetWriterConfigurationClosure"></a>
+                    <a name="//apple_ref/swift/Property/assetWriterConfigurationClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)assetWriterConfigurationClosure">assetWriterConfigurationClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this closure to further configure the asset writer that is created for video recording.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">assetWriterConfigurationClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt">AVAssetWriter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK16CameraControllerC15cameraPositionsSaySo15AVCaptureDeviceC8PositionOGv"></a>
+                    <a name="//apple_ref/swift/Property/cameraPositions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK16CameraControllerC15cameraPositionsSaySo15AVCaptureDeviceC8PositionOGv">cameraPositions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of camera positions (e.g. <code>.Front</code>, <code>.Back</code>) that you want to support. Setting
+this property automatically checks if the device supports all camera positions and updates
+the property accordingly if it does not. Passing an empty array to this property is ignored.
+Defaults to all available camera positions. Duplicate values result in undefined behaviour.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">cameraPositions</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">]</span> <span class="o">=</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">devices</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">AVMediaType</span><span class="o">.</span><span class="n">video</span><span class="p">)</span><span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span>
+    <span class="nv">$0</span><span class="o">.</span><span class="n">position</span>
+  <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK16CameraControllerC10flashModesSaySo15AVCaptureDeviceC9FlashModeOGv"></a>
+                    <a name="//apple_ref/swift/Property/flashModes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK16CameraControllerC10flashModesSaySo15AVCaptureDeviceC9FlashModeOGv">flashModes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of flash modes (e.g. <code>.Auto</code>, <code>.On</code>, <code>.Off</code>) that you want to support. Passing an empty
+array to this property is ignored. Often not all modes are supported by each camera on a
+device, in which case only the supported flash modes are used.
+Defaults to all flash modes. Duplicate values result in undefined behaviour.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">flashModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">auto</span><span class="p">,</span> <span class="o">.</span><span class="n">on</span><span class="p">,</span> <span class="o">.</span><span class="n">off</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK16CameraControllerC10torchModesSaySo15AVCaptureDeviceC9TorchModeOGv"></a>
+                    <a name="//apple_ref/swift/Property/torchModes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK16CameraControllerC10torchModesSaySo15AVCaptureDeviceC9TorchModeOGv">torchModes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of torch modes (e.g. <code>.Auto</code>, <code>.On</code>, <code>.Off</code>) that you want to support. Passing an empty
+array to this property is ignored. Often not all modes are supported by each camera on a
+device, in which case only the supported torch modes are used.
+Defaults to all torch modes. Duplicate values result in undefined behaviour.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">torchModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">auto</span><span class="p">,</span> <span class="o">.</span><span class="n">on</span><span class="p">,</span> <span class="o">.</span><span class="n">off</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)tapToFocusEnabled"></a>
+                    <a name="//apple_ref/swift/Property/tapToFocusEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)tapToFocusEnabled">tapToFocusEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set to <code>false</code> to disable locking focus when a user taps on the live preview. Default is <code>true</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">tapToFocusEnabled</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)photoEffect"></a>
+                    <a name="//apple_ref/swift/Property/photoEffect" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)photoEffect">photoEffect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The effect filter that is applied to the live feed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">photoEffect</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEffect.html">PhotoEffect</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)photoEffectIntensity"></a>
+                    <a name="//apple_ref/swift/Property/photoEffectIntensity" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)photoEffectIntensity">photoEffectIntensity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The intensity of the filter that is applied to the live feed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">photoEffectIntensity</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)includeUserLocation"></a>
+                    <a name="//apple_ref/swift/Property/includeUserLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)includeUserLocation">includeUserLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the user&rsquo;s location should be included in photos. This is enabled by default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">includeUserLocation</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setup"></a>
+                <a name="//apple_ref/swift/Section/Setup" class="dashAnchor"></a>
+                <a href="#/Setup">
+                  <h3 class="section-name">Setup</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)setupWithInitialRecordingMode:error:"></a>
+                    <a name="//apple_ref/swift/Method/setup(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)setupWithInitialRecordingMode:error:">setup(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the camera. This method <strong>must</strong> be called before calling <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)startCamera">startCamera()</a></code>.
+Any handlers that will be used should be set before calling this method, so that they are called
+with their initial values.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/CameraControllerError.html">CameraControllerError</a></code> or an <code>NSError</code> if setup fails.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>recordingMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The initial recording mode (e.g. <code>.Photo</code> or <code>.Video</code>) to use when
+        initializing the camera.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)setupWithInitialRecordingMode:completion:error:"></a>
+                    <a name="//apple_ref/swift/Method/setup(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)setupWithInitialRecordingMode:completion:error:">setup(with:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Same as <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)setupWithInitialRecordingMode:error:">setup(with:)</a></code> but with an optional completion handler. The completion handler is
+always invoked on the main thread.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/CameraControllerError.html">CameraControllerError</a></code> or an <code>NSError</code> if setup fails.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>recordingMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The initial recording mode (e.g. <code>.photo</code> or <code>.video</code>) to use when
+initializing the camera.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be executed when the camera has finished initialization.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Starting%20/%20Stopping"></a>
+                <a name="//apple_ref/swift/Section/Starting / Stopping" class="dashAnchor"></a>
+                <a href="#/Starting%20/%20Stopping">
+                  <h3 class="section-name">Starting / Stopping</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)startCamera"></a>
+                    <a name="//apple_ref/swift/Method/startCamera()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)startCamera">startCamera()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the camera. <code>setupWithInitialRecordingMode(:)</code> <strong>must</strong> be called before calling this method, otherwise this method does
+nothing. You should also add the <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoPreviewView">videoPreviewView</a></code> to your view hierachy to see the camera output.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">startCamera</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)stopCamera"></a>
+                    <a name="//apple_ref/swift/Method/stopCamera()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)stopCamera">stopCamera()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops the camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">stopCamera</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Camera%20Switching"></a>
+                <a name="//apple_ref/swift/Section/Camera Switching" class="dashAnchor"></a>
+                <a href="#/Camera%20Switching">
+                  <h3 class="section-name">Camera Switching</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)toggleCameraPosition"></a>
+                    <a name="//apple_ref/swift/Method/toggleCameraPosition()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)toggleCameraPosition">toggleCameraPosition()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Switches the camera to the other position (e.g. <code>.Back</code> -&gt; <code>.Front</code> and <code>.Front</code> -&gt; <code>.Back</code>)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">toggleCameraPosition</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)switchToCameraAtPosition:"></a>
+                    <a name="//apple_ref/swift/Method/switchToCamera(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)switchToCameraAtPosition:">switchToCamera(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Switches the camera to the desired position (if available)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">switchToCamera</span><span class="p">(</span><span class="n">at</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The position to switch to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Photo"></a>
+                <a name="//apple_ref/swift/Section/Photo" class="dashAnchor"></a>
+                <a href="#/Photo">
+                  <h3 class="section-name">Photo</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)takePhoto:"></a>
+                    <a name="//apple_ref/swift/Method/takePhoto(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)takePhoto:">takePhoto(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Takes a photo and hands it over to the completion block. The completion block always runs on
+the main thread. This method loses the image&rsquo;s metadata.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">takePhoto</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UIImage</span><span class="p">?,</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that has an image and an error as parameters.
+        If the image was taken sucessfully the error is nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)takePhotoAndReturnData:"></a>
+                    <a name="//apple_ref/swift/Method/takePhotoAndReturnData(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)takePhotoAndReturnData:">takePhotoAndReturnData(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Takes a photo and hands it over to the completion block. The completion block always runs on
+the main thread. Use this method to preserve the image&rsquo;s metadata.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">takePhotoAndReturnData</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Data</span><span class="p">?,</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that has data and an error as parameters.
+        If the image was taken successfully the error is <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Video"></a>
+                <a name="//apple_ref/swift/Section/Video" class="dashAnchor"></a>
+                <a href="#/Video">
+                  <h3 class="section-name">Video</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)startVideoRecording"></a>
+                    <a name="//apple_ref/swift/Method/startVideoRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)startVideoRecording">startVideoRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the video recording. This only works if <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)recordingMode">recordingMode</a></code> is set to .Video. You should
+set appropriate blocks for <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingStartedHandler">videoRecordingStartedHandler</a></code>, <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFailedHandler">videoRecordingFailedHandler</a></code>,
+<code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingFinishedHandler">videoRecordingFinishedHandler</a></code> and <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(py)videoRecordingProgressHandler">videoRecordingProgressHandler</a></code>. The finished handler gets
+passed a <code>NSURL</code> to the path of the recorded video file. Please note that you are responsible
+for deleting that file when you no longer need it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">startVideoRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)stopVideoRecording"></a>
+                    <a name="//apple_ref/swift/Method/stopVideoRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)stopVideoRecording">stopVideoRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops video recording. This only works if you previously started video recording.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">stopVideoRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/LED"></a>
+                <a name="//apple_ref/swift/Section/LED" class="dashAnchor"></a>
+                <a href="#/LED">
+                  <h3 class="section-name">LED</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)selectNextLightMode"></a>
+                    <a name="//apple_ref/swift/Method/selectNextLightMode()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)selectNextLightMode">selectNextLightMode()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Selects the next light mode. The order is taken from <code><a href="../Classes/CameraController.html#/s:14PhotoEditorSDK16CameraControllerC10flashModesSaySo15AVCaptureDeviceC9FlashModeOGv">flashModes</a></code> or <code><a href="../Classes/CameraController.html#/s:14PhotoEditorSDK16CameraControllerC10torchModesSaySo15AVCaptureDeviceC9TorchModeOGv">torchModes</a></code> depending on which is active.
+If the current device does not support a light mode, the next light mode that is supported is used or <code>.off</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">selectNextLightMode</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Zoom"></a>
+                <a name="//apple_ref/swift/Section/Zoom" class="dashAnchor"></a>
+                <a href="#/Zoom">
+                  <h3 class="section-name">Zoom</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)zoomWithDesiredZoomFactor:"></a>
+                    <a name="//apple_ref/swift/Method/zoom(withDesiredZoomFactor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKCameraController(im)zoomWithDesiredZoomFactor:">zoom(withDesiredZoomFactor:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zooms the camera by the desired zoom factor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">zoom</span><span class="p">(</span><span class="n">withDesiredZoomFactor</span> <span class="nv">zoomFactor</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoomFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The factor to zoom by.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PhotoEditorSDK@objc(cs)PESDKCameraController(py)cameraPositionsAsNSNumbers"></a>
+                    <a name="//apple_ref/swift/Property/cameraPositionsAsNSNumbers" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PhotoEditorSDK@objc(cs)PESDKCameraController(py)cameraPositionsAsNSNumbers">cameraPositionsAsNSNumbers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of <code>AVCaptureDevicePosition</code> raw values wrapped in <code>NSNumber</code>s.
+Setting this property overrides any previously set values in
+<code><a href="../Classes/CameraController.html#/s:14PhotoEditorSDK16CameraControllerC15cameraPositionsSaySo15AVCaptureDeviceC8PositionOGv">cameraPositions</a></code> with the corresponding unwrapped values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">cameraPositionsAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PhotoEditorSDK@objc(cs)PESDKCameraController(py)flashModesAsNSNumbers"></a>
+                    <a name="//apple_ref/swift/Property/flashModesAsNSNumbers" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PhotoEditorSDK@objc(cs)PESDKCameraController(py)flashModesAsNSNumbers">flashModesAsNSNumbers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of <code>AVCaptureFlashMode</code> raw values wrapped in <code>NSNumber</code>s.
+Setting this property overrides any previously set values in
+<code><a href="../Classes/CameraController.html#/s:14PhotoEditorSDK16CameraControllerC10flashModesSaySo15AVCaptureDeviceC9FlashModeOGv">flashModes</a></code> with the corresponding unwrapped values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">flashModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PhotoEditorSDK@objc(cs)PESDKCameraController(py)torchModesAsNSNumbers"></a>
+                    <a name="//apple_ref/swift/Property/torchModesAsNSNumbers" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PhotoEditorSDK@objc(cs)PESDKCameraController(py)torchModesAsNSNumbers">torchModesAsNSNumbers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of <code>AVCaptureTorchMode</code> raw values wrapped in <code>NSNumber</code>s.
+Setting this property overrides any previously set values in
+<code><a href="../Classes/CameraController.html#/s:14PhotoEditorSDK16CameraControllerC10torchModesSaySo15AVCaptureDeviceC9TorchModeOGv">torchModes</a></code> with the corresponding unwrapped values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">torchModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2017-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
