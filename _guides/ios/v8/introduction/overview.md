@@ -39,21 +39,20 @@ A commercial license is required for any app or service that has any form of mon
 * Objective-C support: All of our public API is Objective-C compatible.
 * Fast: Our renderer uses hardware acceleration and the GPU, which makes it lightning fast.
 
+### New in Version 8.0
+
+* Written in Swift 4.0.
+* Cross-platform serialization and deserialization support.
+* More stable and uses less memory while generating better looking images.
+* More customization options.
+* Undo and redo support across all tools.
+
 ### New in Version 7.0
 
 * New stickers, frames and fonts.
-* The SDK has been rebranded to `PhotoEditor SDK`.
+* The SDK has been rebranded to `PhotoEditorSDK`.
 * We now include the dSYM and bcsymbolmap files in the SDK for better debugging.
 * Faster and better looking adjustments.
 * Faster and better looking filters.
-* The frame tool has been updated to look better than ever before.
-
-### New in Version 6.0
-
-* Updated UI: We've made some UI changes thet lead to an even better user experience.
-* Lots of refactoring and stability improvements.
-* Updated Sticker Tool: We now support multiple sticker categories and sticker coloring.
-* Updated Focus Tool: You can finally adjust the gradient and we've moved from a gaussian blur to a box blur for an even better result.
-* Transform Tool: We've completely redesigned and rewritten our crop tool. As of now, you can not only crop your image, but also straighten it.
 
 ![Product]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/product.jpg)
