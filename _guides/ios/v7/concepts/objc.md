@@ -14,7 +14,6 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not
 ---
--C compatibility
 
 All public classes, methods and enums can be mixed and matched with Objective-C. If you installed PhotoEditor SDK with CocoaPods or embedded the framework directly all you have to do is import the framework:
 

@@ -86,10 +86,10 @@ defaults:
       prefix: "PhotoEditor SDK | iOS "
       description: "A quick guide on how to easily get started with the PhotoEditor SDK for iOS. Your kick-off to delight your users with top-notch editing capabilities."
   - scope:
-      path: "guides/ios/v7"
+      path: "guides/ios/v8"
       collection: guides
     values:
-      version: v7
+      version: v8
 
 # Android
   - scope:
