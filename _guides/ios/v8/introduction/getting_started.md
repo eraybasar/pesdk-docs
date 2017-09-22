@@ -20,7 +20,7 @@ published: true # Either published or not
 
 ## Requirements
 
-PhotoEditor SDK 7 requires Xcode 8.3, Swift 3.1 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
+PhotoEditor SDK 8 requires Xcode 9.0, Swift 4.0 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
 
 ## CocoaPods
 
@@ -33,7 +33,7 @@ Here's what you have to add to your `Podfile`:
 ```ruby
 use_frameworks!
 
-pod 'PhotoEditorSDK', '~> 7.2'
+pod 'PhotoEditorSDK', '~> 8.0'
 ```
 
 Then run `pod install`.
@@ -46,7 +46,7 @@ If you prefer not to use CocoaPods, you can integrate PhotoEditor SDK into your 
 
 ![Embedded Binaries]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/embedded-binaries.jpg)
 
-If you are integrating the PhotoEditor SDK into an Objective-C only project you might also have to set the `Always Embed Swift Standard Libraries` build setting to `Yes`.
+If you are integrating the PhotoEditor SDK into an Objective-C only project you also have to set the `Always Embed Swift Standard Libraries` build setting to `Yes`.
 
 2) Add a new `Run Script Phase` in your target’s `Build Phases`.
 
@@ -68,13 +68,16 @@ The script works around an [App Store submission bug](http://www.openradar.me/ra
 
 
 Our SDK provides two main view controllers. One to work with the camera and the other to edit an image.
-In the following section we will first explain how the licensing works
-and then how the basic view controllers are set up. We will also demonstrate how they can be embedded into a `UINavigationController`.
+In the following section we will first explain how the licensing works and then how the basic view controllers are set up. 
+We will also demonstrate how they can be embedded into a `UINavigationController`.
 
 ## License file
 
 Before using any components of the PhotoEditor SDK, you have to unlock the SDK using your license key file. It is important that you set the license key before using any of the SDK classes.
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
   if let licenseURL = Bundle.main.url(forResource: "license", withExtension: "") {
@@ -84,6 +87,23 @@ func application(_ application: UIApplication, willFinishLaunchingWithOptions la
   return true
 }
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [PESDK unlockWithLicenseAt:[[NSBundle mainBundle] URLForResource:@"license" withExtension:@""]];
+  return YES;
+}
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-UNLOCK{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
 
 The license is digitally signed so it can not be altered without becoming invalid.
 Our sample app comes with its own license, so you can try that right away.
@@ -95,40 +115,95 @@ The following example demonstrates how to unlock the SDK.
 ## Add Import Statement
 You have to add an import statement like this:
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 import PhotoEditorSDK
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+@import PhotoEditorSDK;
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-IMPORT{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 ## Add a CameraViewController
 
 The `CameraViewController` class is responsible for displaying an interface to interact with the camera. It provides user interface elements among others to enable the flash, toggle the camera and choose a filter. All you have to do is the following:
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 let cameraViewController = CameraViewController()
 present(cameraViewController, animated: true, completion: nil)
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKCameraViewController *cameraViewController = [[PESDKCameraViewController alloc] init];
+[self presentViewController:cameraViewController animated:YES completion:nil];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-CAMERA{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 The `CameraViewController` has a `completionBlock` property. When it is set to `nil`, the photo is passed to the `PhotoEditViewController`, which is then presented modally.
 
 ## Add a PhotoEditViewController
 
-The `PhotoEditViewController` class is responsible for presenting and rendering an image. It is designed to work together with a `ToolbarController`, which is responsible for presenting and dismissing the various tool controllers.
+The `PhotoEditViewController` class is responsible for presenting and rendering an image. It can be presented modally in which case it will display a toolbar at the bottom or it can be pushed onto a `UINavigationController` in which case it will use the navigation controller’s navigation bar. It also handles presentation of `PhotoEditToolController` subclasses.
 
 To present an `PhotoEditViewController` just add these few lines:
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 let sampleImage = UIImage(named: "sample_image")
 
 let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
 photoEditViewController.delegate = self
 
-let toolbarController = ToolbarController()
-toolbarController.push(photoEditViewController, animated: false)
-
-present(toolbarController, animated: true, completion: nil)
+present(photoEditViewController, animated: true, completion: nil)
 ```
+{% endcapture %}
 
-Here, we set the `delegate` of the `photoEditViewController` instance to `self`.
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:^(PESDKConfigurationBuilder * _Nonnull builder) {
+  // See Configuration section
+}];
+
+UIImage *sampleImage = [UIImage imageNamed:@"sample_image"];
+
+PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhoto:sampleImage configuration:configuration];
+photoEditViewController.delegate = self;
+
+[self presentViewController:photoEditViewController animated:YES completion:nil];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EDITOR{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+Here, we set the `delegate` of the `photoEditViewController` object to `self`.
 That means that the presenting view controller must implement the `PhotoEditViewControllerDelegate` protocol.
 The methods of the `PhotoEditViewControllerDelegate` protocol are designed to inform the delegate about the result of the editing process (for example cancelation).
 
@@ -140,20 +215,40 @@ It provides the resulting image as an `UIImage` and a `Data` object. Please note
 
 The controllers provided with the SDK can be embedded in an `UINavigationController`. The following code demonstrates how.
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 let sampleImage = UIImage(named: "sample_image")
 
 let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
 photoEditViewController.delegate = self
 
-let toolbarController = ToolbarController()
-toolbarController.push(photoEditViewController, animated: false)
-
-let navigationController = UINavigationController(rootViewController: toolbarController)
-navigationController.navigationBar.barStyle = .black
-navigationController.navigationBar.isTranslucent = false
-
+let navigationController = UINavigationController(rootViewController: photoEditViewController)
 present(navigationController, animated: true, completion: nil)
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:^(PESDKConfigurationBuilder * _Nonnull builder) {
+  // See Configuration section
+}];
+
+UIImage *sampleImage = [UIImage imageNamed:@"sample_image"];
+
+PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhoto:sampleImage configuration:configuration];
+photoEditViewController.delegate = self;
+
+UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:photoEditViewController];
+[self presentViewController:navigationController animated:YES completion:nil];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-NAVIGATION{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 To try these examples, and find out about more options please take a look at the sample project provided [here](https://github.com/imgly/pesdk-ios-examples).
