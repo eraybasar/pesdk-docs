@@ -1,6 +1,7 @@
 ---
 layout: features/content
-title: Frames # title as shown in the menu and 
+title: Frames # title as shown in the menu and
+description: The PhotoEditor SDK provides a quick and easy way for adding artistic frames to any creative. Learn how to add custom frame assets to the library.
 order: 3
 menuitem: Frames
 tags:
