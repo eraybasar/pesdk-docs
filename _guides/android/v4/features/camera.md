@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Camera # title as shown in the menu and 
-
+description: The PhotoEditor SDK offers a camera implementation for Android to complement your editor, featuring essential camera components as well as live filters.
 menuitem: *title
 order: 0
 platform: android
