@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Transform # title as shown in the menu and 
+description: The transform tool unifies cropping, flipping and rotation operations. Learn how to complement the library with any custom ratio your use case requires.
 order: 3
 menuitem: Transform
 tags: &tags # tags that are necessary
