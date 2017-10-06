@@ -32,3 +32,15 @@ editor.export(
 
 See the API documentation for available [`RenderTypes`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.html#.RenderType)
 and [`ImageFormats`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.html#.ImageFormat)
+
+When exporting using the `DATAURL` type, you can pass the resulting Data URL to a server:
+
+```js
+editor.export(
+  PhotoEditorSDK.RenderType.DATAURL, // Export as `Image` object
+  PhotoEditorSDK.ImageFormat.JPEG, // Export as JPEG
+  0.8 // JPEG quality: 80%
+).then((dataUrl) => {
+  // Upload to server
+})
+```
