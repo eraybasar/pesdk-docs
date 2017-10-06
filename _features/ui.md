@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Platform/UI # title as shown in the menu and 
+description: The PhotoEditor SDK has a clean and fully customizable interface for mobile and web that ensures an unhindered flow of creativity & a seamless experience.
 order: 9
 menuitem: Platform/UI
 category: 
