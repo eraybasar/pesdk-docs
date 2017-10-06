@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Stickers # title as shown in the menu and
-
+description: The PhotoEditor SDK for HTML5 ships with a preset sticker library containing emoticons and shapes. Learn how to add custom sticker packages to the library.
 menuitem: *title
 order: 5
 platform: html5
