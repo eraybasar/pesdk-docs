@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Text # title as shown in the menu and
-
+description: The PhotoEditor SDK for HTML5 ships with a robust tool that provides all necessary functions for quickly adding text. Learn how to add custom fonts.
 menuitem: *title
 order: 4
 platform: html5
