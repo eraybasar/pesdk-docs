@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Controls # title as shown in the menu and
-
+description: The PhotoEditor SDK for iOS offers controls for all tools available. Learn how to present or dismiss and configure the tool controls.
 menuitem: *title
 order: 0
 platform: ios
