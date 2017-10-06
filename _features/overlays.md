@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Overlays # title as shown in the menu and 
+description: The PhotoEditor SDK holds a set of preset overlay assets that can be used to create neat lighting and texture effects such as lens flare, bokeh or plaster.
 order: 1
 menuitem: Overlays
 tags: &tags # tags that are necessary
