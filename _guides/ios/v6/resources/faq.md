@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title FAQ # title as shown in the menu and
-
+description: A collection of frequently asked questions for the PhotoEditor SDK for iOS including framework size, Swift, Delta updates, Bitcode and app thinning.
 menuitem: *title
 order: 0
 platform: ios
