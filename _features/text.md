@@ -1,6 +1,7 @@
 ---
 layout: features/content
 title: Text # title as shown in the menu and 
+description: The PhotoEditor SDK ships with a robust tool that provides all necessary functions for quickly adding text to an image. Learn how to add custom fonts.
 order: 3
 menuitem: Text
 category: 
