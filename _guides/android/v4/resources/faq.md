@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title FAQ # title as shown in the menu and 
-
+description: A collection of frequently asked questions for the PhotoEditor SDK for Android including build exceptions, camera permission and known issues.
 menuitem: *title
 order: 0
 platform: android
