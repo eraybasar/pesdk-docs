@@ -17,8 +17,8 @@ published: true # Either published or not
 
 
 With version 7 we introduced a new way of dealing with errors, warnings and such.
-We created the `MasterLogger` class, which will take care of managing child loggers, and dispatching events.
-The PhotoEditor SDK will use the logger to provide important information. It is up to you whether these information will be shown
+We created the `MasterLogger` class, which will take care of managing child loggers and dispatch events.
+The PhotoEditor SDK will use the logger to provide important information. It is up to you whether this information will be shown
 to the user or handled by your code.
 
 There are four types of log-events that are, ordered from high to low priority: `error`, `warn`, `info`, and `debug`.
@@ -29,6 +29,6 @@ that contains a method for each of these types. We provide a default logger, tha
 In case you want to add a custom logger, create a new class, implement the `LoggerProtocol` and call the `add` method of the `MasterLogger`.
 For more details, take a look at the [`MasterLogger`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/MasterLogger.html) documentation.
 
-Here is an example for a simple log with warning as log level.
+Here is an example for a simple log with warning as log-level.
 
 ```MasterLogger.warn("This is my important warning !")```
