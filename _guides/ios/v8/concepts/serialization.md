@@ -21,7 +21,7 @@ For details on the JSON structure you can [download]({{ site.baseurl }}/assets/d
 
 ## Saving the current settings
 When the editor is about to be closed, the according delegate method will be called.
-In that method you can retrieve the serialized settings by calling the `serializedSettings` method on the `PhotoEditViewController` class
+In that method, you can retrieve the serialized settings by calling the `serializedSettings` method on the `PhotoEditViewController` class
 and save these to a file. Here is some example code to get you started:
 
 ```swift
@@ -40,7 +40,7 @@ func photoEditViewController(_ photoEditViewController: PhotoEditViewController,
 
 ## Restoring a settings file
 
-To set the initial editor settings, you can deserialize a `Data` object containing a previously serialized settings file using the `Deserializer` class. A settings file contains the serialized `PhotoEditModel` and the original input image as a `UIImage` object. After a successful deserialization both of these are returned in a `DeserializationResult` object and may be used to fully restore the previous editing state. This can be done by using the deserialized image and model to initialize and present a new `PhotoEditViewController` instance:
+To set the initial editor settings, you can deserialize a `Data` object containing a previously serialized settings file using the `Deserializer` class. A settings file contains the serialized `PhotoEditModel` and the original input image as a `UIImage` object. After a successful deserialization, both of these are returned in a `DeserializationResult` object and may be used to fully restore the previous editing state. This can be done by using the deserialized image and model to initialize and present a new `PhotoEditViewController` instance:
 
 ```swift
 let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: nil)
