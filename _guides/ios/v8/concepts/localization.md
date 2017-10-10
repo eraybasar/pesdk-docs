@@ -17,7 +17,7 @@ published: true # Either published or not
 ---
 
 
-The PhotoEditor SDK is fully localizable. We provide an english fallback localization, that will be used when no matching localization is found. To determine the matching language PhotoEditor SDK uses `NSLocale.preferredLanguages`.
+The PhotoEditor SDK is fully localizable. We provide an English fallback localization, that will be used when no matching localization is found. To determine the matching language PhotoEditor SDK uses `NSLocale.preferredLanguages`.
 To add support for a language, please refer to Apple's localization guidelines.
 We also provide two properties to customize your localization, `PESDK.localizationDictionary` and `PESDK.localizationBlock`.
 
@@ -42,9 +42,9 @@ PESDK.localizationDictionary = [
 ]
 ```
 
-The `en` string indicates, that this translation should be used when english language is needed.
+The `en` string indicates, that this translation should be used when English language is needed.
 You can chain multiple translations like this. The second option is, to use a block, allowing you to easily use your
-default bundle, or a customized bundle with `NSLocalizedStringFromTableInBundle`.
+default bundle or a customized bundle with `NSLocalizedStringFromTableInBundle`.
 
 ```objc
 [PESDK setLocalizationBlock:^NSString * _Nullable(NSString * _Nonnull stringToLocalize) {
