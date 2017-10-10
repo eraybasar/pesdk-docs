@@ -21,11 +21,11 @@ Most public classes, methods and enums can be mixed and matched with Objective-C
 @import PhotoEditorSDK;
 ```
 
-If you want full control over the SDK and the possibility to subclass certain classes of the SDK and replace them, you will have to use Swift however. Because of that we highly recommend that the parts of your code that interact with the SDK are written in Swift.
+However, if you want full control over the SDK and the possibility to subclass certain classes of the SDK and replace them, you will have to use Swift. Because of that we highly recommend that the parts of your code that interact with the SDK are written in Swift.
 
 For more information about Swift and Objective-C interoperability please refer to [Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html).
 
 #### Prefixes
 
 With the introduction of modules in Swift, there is no need for class prefixes anymore, therefore we removed
-all class prefixes in Swift. For Objective-C we added prefixed declarations. For example the `CameraViewController` can be used from Objective-C and can be found under its alias `PESDKCameraViewController`.
+all class prefixes in Swift. For Objective-C, we added prefixed declarations. For example, the `CameraViewController` can be used from Objective-C and can be found under its alias `PESDKCameraViewController`.
