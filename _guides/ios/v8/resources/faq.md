@@ -26,24 +26,24 @@ dyld: Library not loaded: @rpath/libswiftAVFoundation.dylib
 Please make sure, that the build setting `Always Embed Swift Standard Libraries` is set to `YES`.
 
 
-## How do I get the source-code ?
+## How do I get the source-code?
 We have a full-source license. Please [contact us](https://www.photoeditorsdk.com/pricing#contact) for details.
 
 ## Framework Size
 
-You might be wondering why the `PhotoEditorSDK.framework` folder is almost 135 MB large. This can be irritating at first, however this is not the size that your users will get.
+You might be wondering why the `PhotoEditorSDK.framework` folder is almost 135 MB large. Although this can be irritating at first, this is not the size that your users will get.
 
 The PhotoEditor SDK includes many UI components, lookup tables and fonts. This results in a lot of code and thus a sizeable binary, although there are certain factors that make it appear larger than it actually is. We’re working hard to ensure the framework size stays as low as possible.
 
 ### Architectures
 
-The SDK binary includes slices for i386, x64, armv7 and arm64. For armv7 and arm64, bitcode is included as well — which basically results in 6 different slices. ([Learn more about bitcode here](https://www.photoeditorsdk.com/documentation/ios/faq#bitcode)) Each slice is a full and complete copy of the SDK, and only one slice is required for your users. During archiving Xcode ensures that the Simulator slices (i386, x64) are stripped away from our SDK, which will result in a significant size reduction.
+The SDK binary includes slices for i386, x64, armv7 and arm64. For armv7 and arm64, bitcode is included as well — which basically results in 6 different slices. ([Learn more about bitcode here](https://www.photoeditorsdk.com/documentation/ios/faq#bitcode)) Each slice is a full and complete copy of the SDK, and only one slice is required for your users. During archiving, Xcode ensures that the Simulator slices (i386, x64) are stripped away from our SDK, which will result in a significant size reduction.
 
 Bitcode is a large size contributor. As bitcode is unoptimized code in a generic format, it takes up a lot of space. Since Bitcode is not architecture independent, slices are emitted for both armv7 and arm64. These slices are rather large, more than 18MB per slice, so support for Bitcode alone is about 36 MB of space.
 
 ### App Thinning
 
-Apple also actively works on reducing app binary size, and added [App Thinning](https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html) in iOS 9. This creates optimized versions of your app and the user only downloads the architecture that is required for the current device. This also strips away bitcode, resulting in a total SDK footprint of about 20-25 MB.
+Apple also actively works on reducing app binary size and added [App Thinning](https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html) in iOS 9. This creates optimized versions of your app and the user only downloads the architecture that is required for the current device. This also strips away bitcode, resulting in a total SDK footprint of about 20-25 MB.
 
 ### PhotoEditorSDK.bundle
 
@@ -79,7 +79,7 @@ Bitcode is an intermediate representation of a compiled binary. Including bitcod
 
 ### Checking for Bitcode
 
-Open a terminal and navigate into the `PhotoEditorSDK.framework` folder.
+Open a terminal and navigate to the `PhotoEditorSDK.framework` folder.
 
 Here is how to check what architectures are available:
 
