@@ -22,9 +22,9 @@ published: true # Either published or not
 The PhotoEditor SDK can be customized to meet your requirements. There are global settings to set things like
 the background color of the app, but also closures that allow an in-depth customization.
 Please note that by default the tint color determines the color of the icons.
-Of course you are free to override that behavior.
+Of course, you are free to override that behavior.
 
-In order to configure the PhotoEditor SDK you have to modify the default configuration. The `Configuration` class contains all global settings and nested configurations for each submodule.
+In order to configure the PhotoEditor SDK, you have to modify the default configuration. The `Configuration` class contains all global settings and nested configurations for each submodule.
 We decided to use a builder-pattern, that means that the properties of any configuration object are read-only.
 The constructor of each configuration class has a parameter for its dedicated builder.
 Hence, all default settings of our SDK are set in the default builder classes.
@@ -109,8 +109,8 @@ which sits at the bottom, is set through a property of the `PhotoEditViewControl
 ### Using the closures
 
 Most configuration objects offer closures to setup UI elements individually.
-In that case they usually come with an array of actions that determine the available actions.
-These closures will also have a `cell` and an `menuItem` as parameters.
+In that case, they usually come with an array of actions that determine the available actions.
+These closures will also have a `cell` and a `menuItem` as parameters.
 This is due to the fact that most of our controllers use `UICollectionView`s.
 For example, the main tool bar presents all available tools like filters and transform.
 The closure is then called for each of these menu items. If you wish to change the transform button icon
@@ -160,7 +160,7 @@ Objective-C
 
 ### Changing icons
 
-You can register a block using the `PESDK.bundleImageBlock` property which gets called once for each icon that is used by the SDK. The block is passed with the name of the image and within the block you should return your desired icon for the given name. Please note that the icons that you return should have the same dimensions as the default icons to ensure the best user experience.
+You can register a block using the `PESDK.bundleImageBlock` property which gets called once for each icon that is used by the SDK. The block is passed with the name of the image and within the block, you should return your desired icon for the given name. Please note that the icons that you return should have the same dimensions as the default icons to ensure the best user experience.
 
 
 ### Selecting menu items
