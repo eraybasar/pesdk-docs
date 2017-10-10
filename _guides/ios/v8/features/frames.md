@@ -19,7 +19,7 @@ published: true # Either published or not
 
 
 The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames.
-The first option is to use our static frames. These frames hold serveral versions of the assets, i.e one for each supported ratio. During the rendering process the
+The first option is to use static frames. These frames hold serveral versions of the assets, i.e. one for each supported ratio. During the rendering process the
 best fitting asset will be selected and used by the backend. Also the tolerance can be used to determine how close the ratio of the asset has to be to the current image
 ratio. Setting a higher tolerance can lead to a deformation of the frame asset, since it will be simply scaled to match the image dimensions.
 In the frame tool UI, only static frames with a matching asset for the current image ratio will be listed. The static frames can be used for complex and irregular creatives.
@@ -29,9 +29,9 @@ Supported asset formats are jpeg and png.
 
 ## Adding static frames
 
-In contrast to version 6, frames are stored in a static array of the `Frame` class. To add frames, simply append new `Frame` instances to that array.
+In contrast to version 6, frames are stored in a static array of the `Frame` class. To add frames, simply append new `Frame` objects to that array.
 In the example code below, we are creating a new static frame. We are adding three assets, to support the aspect ratios, 1:1, 4:6 and 6:4.
-As tolerance we set 0.1, which is our go to value. Also we set an identifier that will be used during the (de)serialization process and must be unique. We prefixed all frame assets with `imgly_frame`, and we highly reconmend you to prefix your assets and identifiers as well.
+As tolerance we set 0.1, which is our go to value. We also set an identifier that will be used during the (de)serialization process and which must be unique. We prefixed all frame assets with `imgly_frame`, and we highly recommend you prefix your assets and identifiers as well.
 
 ```swift
 let frame = Frame(identifier: "imgly_frame_blackwood", tolerance: 0.1)
@@ -55,9 +55,9 @@ if let url64 = Bundle.pesdkBundle.url(forResource: "imgly_frame_blackwood6_4", w
 
 Dynamic frames are added in the same manner as static frames, please read the section above, to grasp the basic concepts.
 Dynamic frames consist of four groups. Each group has a start, middle and end image. The start and end images are optional,
-and for the middle image there are to modes, `.repeat` and `.stretch`. These determine whether the asset should be stretched over the area,
+and for the middle image there are two modes, `.repeat` and `.stretch`. These determine whether the asset should be stretched over the area,
 or if they should be repeated to fill up space. Please note that in our implementation the middle asset will never be cut, when `.repeat` is set
-as mode, but rather squeeze or stretch the single tiles a bit, to fit in only complete copies of the asset.
+as its mode, but rather squeeze or stretch the single tiles a bit, to fit in only complete copies of the asset.
 The four groups can be laid out in two ways. Horizontal inside and vertical inside, see the images below.
 
 
@@ -69,13 +69,13 @@ the horizontal box is inside the groups, as illustrated by the following image,
 ![frame horizontal]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/horizontalFrame.png){: height="150px" .center-image }
 
 To create such a frame, you must use the initializer of the `Frame` class that takes a `FrameBuilder`, a thumbnail URL, a relative scale, and
- an identifier. `FrameBuilder` is a protocol, and its only method takes the size of the image that the frame should be applied to, and
- the relative scale as parameters, and returns the matching frame asset via completion block. The relative scale is used to describe how
- big the frame should be in relation to the image it will be applied to. Lower values result into thinner, smaller frames. Currently we provide only one
- class for that purpose, the `CustomPatchFrameBuilder`, but it is so powerful and flexible, that we were able to build all frames we needd with it.
- The `CustomFrameBuilder` takes a `CustomPatchConfiguration` that holds the four groups, and theirr properties.
+an identifier. `FrameBuilder` is a protocol, and its only method takes the size of the image that the frame should be applied to, and
+the relative scale as parameters, and returns the matching frame asset via completion block. The relative scale is used to describe how
+big the frame should be in relation to the image it will be applied to. Lower values result in thinner, smaller frames. Currently we provide only one
+class for that purpose, the `CustomPatchFrameBuilder`, but it is so powerful and flexible, that we were able to build all frames we needed with it.
+The `CustomFrameBuilder` takes a `CustomPatchConfiguration` that holds the four groups, and their properties.
 
-Lastly, lets have a look at a real world example.
+Finally, lets have a look at a real world example.
 
 ![dia sample]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/dia_sample.png){: height="300px" .center-image }
 
