@@ -29,7 +29,7 @@ If `replaceFonts` is set to true, all default fonts are removed. If it is set to
 
 ### Adding system fonts
 
-You can simply add system fonts by specifying their font family, which you would also use in CSS. You can also specify the additional `fontWeight` and `fontStyle` options.
+You can simply add system fonts by specifying their font family, which you would also use in CSS, and the variations in which the font should be available.
 
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
@@ -37,9 +37,16 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
     text: {
       fonts: [
         {
-          identifier: 'comicsans', // A unique identifier for this font
           fontFamily: 'Comic Sans MS', // The font family name
-          fontWeight: 'normal'
+          variations: [
+            {
+              identifier: 'comicsans_regular'
+            },
+            {
+              identifier: 'comicsans_bold',
+              fontWeight: 'bold'
+            }
+          ]
         }
       ]
     }
@@ -49,7 +56,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 
 ### Adding google fonts
 
-The `fonts` option also allows you to add custom fonts from Google Fonts. To do this, add the `provider` option and set it to `google`. This will cause the UI to pre-load the font from Google Fonts.
+The `fonts` option also allows you to add custom fonts from Google Fonts. To do this, add the variation's `provider` option and set it to `google`. This will cause the UI to pre-load the font from Google Fonts.
 
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
@@ -57,9 +64,13 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
     text: {
       fonts: [
         {
-          name: 'shrikhand', // A unique identifier for this font
           fontFamily: 'Shrikhand', // The font family name, defined by Google Fonts
-          provider: 'google' // This loads the font from Google Fonts
+          variations: [
+            {
+              identifier: 'shrikhand',
+              provider: 'google' // This loads the font from Google Fonts
+            }
+          ]
         }
       ]
     }
@@ -69,7 +80,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 
 ### Adding web fonts
 
-The `fonts` option also allows you to add custom web fonts. To do this, set the `provider` option to `file` and specify a `filePath`. If the `filePath` is relative, it will be fetched from the `assets/` directory. We recommend adding the web fonts as `.woff` files, which have the widest browser support.
+The `fonts` option also allows you to add custom web fonts. To do this, set the variaton's `provider` option to `file` and specify a `filePath`. If the `filePath` is relative, it will be fetched from the `assets/` directory. We recommend adding the web fonts as `.woff` files, which have the widest browser support.
 
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
@@ -77,10 +88,14 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
     text: {
       fonts: [
         {
-          name: 'custom_font', // A unique identifier for this font
           fontFamily: 'Custom Font', // The font family name, defined by you. Can be anything.
-          provider: 'file',
-          filePath: 'fonts/Custom-Font.woff'
+          variations: [
+            {
+              identifier: 'custom_font', // A unique identifier for this font
+              provider: 'file',
+              filePath: 'fonts/Custom-Font.woff'
+            }
+          ]
         }
       ]
     }
@@ -90,13 +105,13 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 
 ## Specifying the available fonts
 
-Per default, all existing fonts (including your own) are available to the user. To make only specific fonts available to the user, use the `availableFonts` option.
+Per default, all existing font variations (including your own) are available to the user. To make only specific fonts available to the user, use the `availableFonts` option.
 
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
   controlsOptions: {
     text: {
-      availableFonts: [
+      availableVariations: [
         'imgly_font_aleo_bold',
         'imgly_font_amaticsc',
         'custom_font'
