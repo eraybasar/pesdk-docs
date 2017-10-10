@@ -68,7 +68,7 @@ The script works around an [App Store submission bug](http://www.openradar.me/ra
 
 
 Our SDK provides two main view controllers. One to work with the camera and the other to edit an image.
-In the following section we will first explain how the licensing works and then how the basic view controllers are set up. 
+In the following section, we will first explain how the licensing works and then how the basic view controllers are set up. 
 We will also demonstrate how they can be embedded into a `UINavigationController`.
 
 ## License file
@@ -167,7 +167,7 @@ The `CameraViewController` has a `completionBlock` property. When it is set to `
 
 The `PhotoEditViewController` class is responsible for presenting and rendering an image. It can be presented modally in which case it will display a toolbar at the bottom or it can be pushed onto a `UINavigationController` in which case it will use the navigation controller’s navigation bar. It also handles presentation of `PhotoEditToolController` subclasses.
 
-To present an `PhotoEditViewController` just add these few lines:
+To present a `PhotoEditViewController` just add these few lines:
 
 {% capture first_snippet %}
 Swift
@@ -205,11 +205,11 @@ photoEditViewController.delegate = self;
 
 Here, we set the `delegate` of the `photoEditViewController` object to `self`.
 That means that the presenting view controller must implement the `PhotoEditViewControllerDelegate` protocol.
-The methods of the `PhotoEditViewControllerDelegate` protocol are designed to inform the delegate about the result of the editing process (for example cancelation).
+The methods of the `PhotoEditViewControllerDelegate` protocol are designed to inform the delegate about the result of the editing process (for example cancellation).
 
 The method that gets called when the user confirms the changes is
 `func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data)`.
-It provides the resulting image as an `UIImage` and a `Data` object. Please note that the EXIF data of the input image, is only fully contained within the `Data` object. Please refer to the next section for more information about EXIF handling.
+It provides the resulting image as an `UIImage` and a `Data` object. Please note that the EXIF data of the input image is only fully contained within the `Data` object. Please refer to the next section for more information about EXIF handling.
 
 ## Embed in an UINavigationController
 
