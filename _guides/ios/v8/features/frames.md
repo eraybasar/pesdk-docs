@@ -33,9 +33,12 @@ In contrast to version 6, frames are stored in a static array of the `Frame` cla
 In the example code below, we are creating a new static frame. We are adding three assets, to support the aspect ratios, 1:1, 4:6 and 6:4.
 As tolerance we set 0.1, which is our go to value. We also set an identifier that will be used during the (de)serialization process and which must be unique. We prefixed all frame assets with `imgly_frame`, and we highly recommend you prefix your assets and identifiers as well.
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 let frame = Frame(identifier: "imgly_frame_blackwood", tolerance: 0.1)
-frame.accessibilityLabel = "Black wood frame".localized
+frame.accessibilityLabel = "Black wood frame"
 
 if let url1 = Bundle.pesdkBundle.url(forResource: "imgly_frame_blackwood1_1", withExtension: "png") {
     frame.addImage(url1, thumbnailURL: nil, forRatio: 1)
@@ -49,6 +52,23 @@ if let url64 = Bundle.pesdkBundle.url(forResource: "imgly_frame_blackwood6_4", w
     frame.addImage(url64, thumbnailURL: nil, forRatio: 6.0 / 4.0)
 }
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKFrame *frame = [[PESDKFrame alloc] initWithIdentifier:@"imgly_frame_blackwood" tolerance:0.1]
+[frame setAccessibilityLabel:@"Black wood frame"];
+[frame addImage:[[NSBundle mainBundle] URLForResource:@"imgly_frame_blackwood1_1" withExtension:@"png"] thumbnailURL:nil forRatio:1];
+[frame addImage:[[NSBundle mainBundle] URLForResource:@"imgly_frame_blackwood4_6" withExtension:@"png"] thumbnailURL:nil forRatio:4.0 / 6.0];
+[frame addImage:[[NSBundle mainBundle] URLForResource:@"imgly_frame_blackwood6_4" withExtension:@"png"] thumbnailURL:nil forRatio:6.0 / 4.0];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-FRAMES-STATIC{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 
 ## Adding dynamic frames
@@ -82,53 +102,130 @@ Finally, lets have a look at a real world example.
 The layout mode is horizontal inside. The top and bottom group just have a middle image, containing the film strip pattern.
 The left and right group consist of a stretched border texture, and a start and end image to create a nice transition between the two sides of the film strip.
 
-The code to create that frame looks like this:
+The code to create that frame builder looks like this:
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
-open static var diaFrameBuilder: CustomPatchFrameBuilder {
-    let config = CustomPatchConfiguration()
+let config = CustomPatchConfiguration()
 
-    if let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top", withExtension: "png") {
-        let topImageGroup = FrameImageGroup(startImageURL: nil, midImageURL: midURL, endImageURL: nil)
-        config.topImageGroup = topImageGroup
-    }
-
-    if let startURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top_left", withExtension: "png"),
-        let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_left", withExtension: "png"),
-        let endURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom_left", withExtension: "png") {
-        let leftImageGroup = FrameImageGroup(startImageURL: startURL, midImageURL: midURL, endImageURL: endURL)
-        leftImageGroup.midImageMode = .stretch
-        config.leftImageGroup = leftImageGroup
-    }
-
-    if let startURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top_right", withExtension: "png"),
-        let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_right", withExtension: "png"),
-        let endURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom_right", withExtension: "png") {
-        let rightImageGroup = FrameImageGroup(startImageURL: startURL, midImageURL: midURL, endImageURL: endURL)
-        rightImageGroup.midImageMode = .stretch
-        config.rightImageGroup = rightImageGroup
-    }
-
-    if let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom", withExtension: "png") {
-        let bottomImageGroup = FrameImageGroup(startImageURL: nil, midImageURL: midURL, endImageURL: nil)
-        config.bottomImageGroup = bottomImageGroup
-    }
-
-    let builder = CustomPatchFrameBuilder(configuration: config)
-    return builder
+if let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top", withExtension: "png") {
+    let topImageGroup = FrameImageGroup(startImageURL: nil, midImageURL: midURL, endImageURL: nil)
+    config.topImageGroup = topImageGroup
 }
+
+if let startURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top_left", withExtension: "png"),
+    let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_left", withExtension: "png"),
+    let endURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom_left", withExtension: "png") {
+    let leftImageGroup = FrameImageGroup(startImageURL: startURL, midImageURL: midURL, endImageURL: endURL)
+    leftImageGroup.midImageMode = .stretch
+    config.leftImageGroup = leftImageGroup
+}
+
+if let startURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top_right", withExtension: "png"),
+    let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_right", withExtension: "png"),
+    let endURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom_right", withExtension: "png") {
+    let rightImageGroup = FrameImageGroup(startImageURL: startURL, midImageURL: midURL, endImageURL: endURL)
+    rightImageGroup.midImageMode = .stretch
+    config.rightImageGroup = rightImageGroup
+}
+
+if let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom", withExtension: "png") {
+    let bottomImageGroup = FrameImageGroup(startImageURL: nil, midImageURL: midURL, endImageURL: nil)
+    config.bottomImageGroup = bottomImageGroup
+}
+
+let builder = CustomPatchFrameBuilder(configuration: config)
 ```
+{% endcapture %}
 
-And the code to create the `Frame` instance looks like this
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKCustomPatchConfiguration *config = [[PESDKCustomPatchConfiguration alloc] init];
+  
+PESDKFrameImageGroup *topImageGroup = [[PESDKFrameImageGroup alloc]
+                                       initWithStartImageURL:nil
+                                       midImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_top" withExtension:@"png"]
+                                       endImageURL:nil];
+config.topImageGroup = topImageGroup;
 
+PESDKFrameImageGroup *leftImageGroup = [[PESDKFrameImageGroup alloc]
+                                        initWithStartImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_top_left" withExtension:@"png"]
+                                        midImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_left" withExtension:@"png"]
+                                        endImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_bottom_left" withExtension:@"png"]];
+leftImageGroup.midImageMode = FrameTileModeStretch;
+config.leftImageGroup = leftImageGroup;
+
+PESDKFrameImageGroup *rightImageGroup = [[PESDKFrameImageGroup alloc]
+                                         initWithStartImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_top_right" withExtension:@"png"]
+                                         midImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_right" withExtension:@"png"]
+                                         endImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_bottom_right" withExtension:@"png"]];
+rightImageGroup.midImageMode = FrameTileModeStretch;
+config.rightImageGroup = rightImageGroup;
+
+PESDKFrameImageGroup *bottomImageGroup = [[PESDKFrameImageGroup alloc] 
+                                          initWithStartImageURL:nil 
+                                          midImageURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_bottom" withExtension:@"png"] 
+                                          endImageURL:nil];
+config.bottomImageGroup = bottomImageGroup;
+
+PESDKCustomPatchFrameBuilder *builder = [[PESDKCustomPatchFrameBuilder alloc] initWithConfiguration:config];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-FRAMEBUILDER{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+And the code to create the `Frame` object looks like this
+
+{% capture first_snippet %}
+Swift
+---
 ```swift
 if let url = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_thumbnail", withExtension: "png") {
-      let dynamicFrame = Frame(frameBuilder: DefaultDynamicFrames.diaFrameBuilder, relativeScale: 0.075, thumbnailURL: url, identifier: "imgly_frame_dia")
-      dynamicFrame.accessibilityLabel = "Dia frame".localized
-      result.append(dynamicFrame)
+    let dynamicFrame = Frame(frameBuilder: builder, relativeScale: 0.075, thumbnailURL: url, identifier: "imgly_frame_dia")
+    dynamicFrame.accessibilityLabel = "Dia frame"
 }
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKFrame *dynamicFrame = [[PESDKFrame alloc] initWithFrameBuilder:builder relativeScale:0.075 thumbnailURL:[[NSBundle mainBundle] URLForResource:@"imgly_frame_dia_thumbnail" withExtension:@"png"] identifier:@"imgly_frame_dia"];
+[dynamicFrame setAccessibilityLabel:@"Dia frame"];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-FRAMES-DYNAMIC{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 ## Enabling frames
 
 After you have instantiated your instances of the `Frame` class, you can enable them by appending them to the static `Frame.all` array.
+
+{% capture first_snippet %}
+Swift
+---
+```swift
+Frame.all.append(dynamicFrame)
+```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKFrame.all = [PESDKFrame.all arrayByAddingObject:dynamicFrame];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-FRAMES-DYNAMIC-APPEND{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
