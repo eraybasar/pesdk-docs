@@ -17,7 +17,7 @@ published: true # Either published or not
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
-Our SDK features more than 60 high quality filters. The processing is lightning fast, and it's easy to add your own filters.
+Our SDK features more than 60 high-quality filters. The processing is lightning fast, and it's easy to add your own filters.
 You might think that adding your own filters is complicated or requires super math skills.
 Well, not at all. The way we realize filters makes it super easy. Actually, you don't have to code filters,
 you just need a program like Gimp of Photoshop. The only thing that needs to be done in code, is to add the filter you created.
@@ -66,7 +66,7 @@ Using a smaller LUT file may lead to issues when applying your filter, as our pr
 ![Identity 128x128 5x5 LUT]({{ site.baseurl }}/assets/images/shared/identity_5_5_128.png){: width="64px" style="padding: 10px"}
 {:center}
 
-The black borders are required in order to optimize performance and the number of rows translates to the resolution for the green channel, the number of columns translates to the resolution of the red channel and the number of tiles translates to the blue channels resolution. And larger LUTs naturally guarantuee a larger resolution across all channels.
+The black borders are required in order to optimize performance and the number of rows translates to the resolution for the green channel, the number of columns translates to the resolution of the red channel and the number of tiles translates to the blue channels resolution. And larger LUTs naturally guarantee a larger resolution across all channels.
 
 The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
