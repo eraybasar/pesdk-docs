@@ -24,7 +24,7 @@ The tool is implemented in the `TextToolController` class and can be configured 
 ## Adding and removing fonts
 For version 6 of our SDK, we added an easy way to use your own fonts.
 The `FontImporter` class now has a static `all` property that holds an array of `Font` objects.
-By default this array contains all fonts that we ship with the SDK.
+By default, this array contains all fonts that we ship with the SDK.
 
 A `Font` object is a simple collection of the metadata of a font, the `fontName`, the `displayName`
 and the `path`. The `path` points to the font file, or is empty if a system font should be added.
