@@ -173,7 +173,7 @@ In order to open the camera preview and pass the resulting image to the editor, 
 `CameraPreviewBuilder` and start the `CameraPreviewActivity` with `startActivityForResult(activity, custom_id)`:
 
 > __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
-as demonstrated in the following example. This ensures correct behaviour on Android 6.0 and above.__
+as demonstrated in the following example. This ensures correct behavior on Android 6.0 and above.__
 
 ```java
 public class MainActivity extends Activity implements PermissionRequest.Response {
