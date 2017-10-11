@@ -25,7 +25,7 @@ dependencies {
 }
 ...
 ```
-Afterwards you have to create a custom class that extends from [`EventTracker`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/sdk/models/state/manager/EventTracker.html). 
+Afterwards, you have to create a custom class that extends from [`EventTracker`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/sdk/models/state/manager/EventTracker.html). 
 This class has to be a [`Parcelable`](https://developer.android.com/reference/android/os/Parcelable.html) and must be annotated with `@ly.img.sdk.android.annotations.StateEvents`.
 
 You have to create methods that are annotated with `@ly.img.sdk.android.annotations.OnEvent` for all events that you want to track. <br><br>
@@ -95,7 +95,7 @@ public class CustomEventTracker extends EventTracker {
 }
 ```
 Now you have to add your `CustomEventTracker` and the build time created `your.package.PESDKEvents.class` to the settings class.<br>
-*If this class does exist: do a "clean build" and a "rebuild" and after this the Build Processor will create these classes.*
+*If this class does exist: do a "clean build" and a "rebuild" and after this, the Build Processor will create these classes.*
 ```java
     settingsList.setEventProcessor(your.packagename.PESDKEvents.class);
     settingsList.setEventTracker(new CustomEventTracker(Application.ANALYTICS_TRACK_ID));

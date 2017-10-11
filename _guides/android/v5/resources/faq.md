@@ -18,9 +18,9 @@ published: true # Either published or not
 
 ### We get this build exception `Error:Failed to resolve: ly.img.android:authorization:3.0.0.12+`
 
-Unfortunatly, this is a bug in gradle and java
+Unfortunately, this is a bug in gradle and java
 
-1. You have to trust both certificates with this commandline commands
+1. You have to trust both certificates with this command line commands
 ```
 wget https://raw.githubusercontent.com/escline/InstallCert/master/InstallCert.java
 javac InstallCert.java

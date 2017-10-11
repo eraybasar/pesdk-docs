@@ -19,7 +19,7 @@ published: true # Either published or not
 ---
 
 The `ImgLyConfig` provides a lot of functions for customizing the Editor.
-To modify this configuration you need to generate a default object using a new `SettingsList` object. You can then configure the SDK using the `ImglyConfig` object returned from `getConfig()`. Afterwards you add the modified `settingsList` to the `CameraPreviewBuilder` or the `PhotoEditorBuilder`.
+To modify this configuration you need to generate a default object using a new `SettingsList` object. You can then configure the SDK using the `ImglyConfig` object returned from `getConfig()`. Afterwards, you add the modified `settingsList` to the `CameraPreviewBuilder` or the `PhotoEditorBuilder`.
 
 ```java
 SettingsList settingsList = new SettingsList();
@@ -38,7 +38,7 @@ ImgLyConfig config = settingsList.getConfig()
 
 ![Editor Tools]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_editor_tools.png){: width="360px"}
 
-In order to change the tools or rearrange them, use the `setTools()` method of the `ImgLyConfig` object. Before this you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
+In order to change the tools or rearrange them, use the `setTools()` method of the `ImgLyConfig` object. Before this, you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
 the `AbstractEditorTool` class.
 
 A single `EditorTool` object takes two parameters:

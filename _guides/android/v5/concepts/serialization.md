@@ -16,9 +16,9 @@ published: true # Either published or not
 ---
 
 Our serialization functionality empowers you to save the current settings of the changes and recover it the next time the editor is opened again. The settings will be stored in a plain JSON file.
-For details on the JSON structure you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-3.0.0-beta.json){: download="schema-3.0.0-beta.json" } our schema.
+For details on the JSON structure, you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-3.0.0-beta.json){: download="schema-3.0.0-beta.json" } our schema.
 
-## Dependancy
+## Dependency
 
 Add the serializer dependancy into your project, the version number must be the same like the SDK version.
 

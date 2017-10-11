@@ -16,7 +16,7 @@ published: true # Either published or not
 ---
 
 
-Wether you just want to learn to use the PhotoEditor SDK or just see what can be build with it, we are providing some example integrations for various frameworks.
+Whether you just want to learn to use the PhotoEditor SDK or just see what can be built with it, we are providing some example integrations for various frameworks.
 
 ## Example app
 
@@ -27,8 +27,8 @@ For code examples take a look at the {% include guides/android/demo-repository.m
 
 ## Example Integrations
 
-Checkout our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and native SDKs. 
-All example intergrations repositories are tagged with the suffix `-demo`. In general these examples are a good starting place to:
+Check out our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and native SDKs. 
+All example intergrations repositories are tagged with the suffix `-demo`. In general, these examples are a good starting place to:
 
  * Quickly test out our SDK without the need to write code
  * Tinker with the code to understand how it works and
@@ -40,6 +40,6 @@ All example intergrations repositories are tagged with the suffix `-demo`. In ge
   * [Ionic](https://github.com/imgly/pesdk-ionic-demo)
   * [Cordova](https://github.com/imgly/pesdk-cordova-demo)
 
-We are also providing the corresponding tutorials in our quickstart section [here]({{ site.baseurl }}/quickstarts), if you want to learn to integrate the SDK yourself. This includes:
+We are also providing the corresponding tutorials in our quickstart section [here]({{ site.baseurl }}/quickstarts) if you want to learn to integrate the SDK yourself. This includes:
 
   * [React Native]({{ site.baseurl }}/quickstarts/react_native)
