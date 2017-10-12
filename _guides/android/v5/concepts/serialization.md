@@ -20,7 +20,7 @@ For details on the JSON structure, you can [download]({{ site.baseurl }}/assets/
 
 ## Dependency
 
-Add the serializer dependancy into your project, the version number must be the same like the SDK version.
+Add the serializer dependency into your project, the version number must be the same like the SDK version.
 
 ```groovy
 	compile 'ly.img.android:serializer:5.0.0-beta'
