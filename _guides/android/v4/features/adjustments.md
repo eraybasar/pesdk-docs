@@ -22,7 +22,7 @@ Our Adjustment tool is our swiss army knife for image optimization. It offers es
 
 The tool is implemented in the [`ColorAdjustmentTool`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/sdk/tools/ColorAdjustmentTool.html) class and displayed using the [`AdjustmentToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/panels/AdjustmentToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.
 
-The available tool set consists of:
+The available toolset consists of:
 
 1. Brightness
 2. Contrast
