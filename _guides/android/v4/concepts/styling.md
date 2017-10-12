@@ -70,7 +70,7 @@ Now you can edit all style attributes. It's also possible to override the style 
 
 ### Declaring layout guides
 
-For more information look at the [Google Developer Guides]( http://developer.android.com/guide/topics/ui/declaring-layout.html):
+For more information look at the [Google Developer Guides]( http://developer.android.com/guide/topics/ui/declaring-layout.html).
 
 ### See an example
 
