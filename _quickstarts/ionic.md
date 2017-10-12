@@ -52,7 +52,7 @@ $ ionic build android
 $ cp LICENSE_ANDROID platforms/android/assets
 ```
 
-This builds the app for both platforms and copies the Android license file to the corresponding directory. Afterwards you need to add the `LICENSE_IOS` file to the iOS app by opening [PESDKDemo.xcworkspace](/example/platforms/ios/PESDKDemo.xcworkspace) using Xcode and dragging the license file into the sidebar. Within Xcode you then need to enable the `Always Embed Swift Standard Libraries` build setting for the PESDKDemo target.
+This builds the app for both platforms and copies the Android license file to the corresponding directory. Afterwards you need to add the `LICENSE_IOS` file to the iOS app by opening `PESDKDemo.xcworkspace` using Xcode and dragging the license file into the sidebar. Within Xcode you then need to enable the `Always Embed Swift Standard Libraries` build setting for the PESDKDemo target.
 
 Once all license copying is done and both platforms have been built, the app can be run using the following commands:
 ```bash
