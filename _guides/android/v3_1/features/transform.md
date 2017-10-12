@@ -55,4 +55,4 @@ config.setAspectConfig(cropConfig);
 
 ## Forcing specific ratios
 
-In order to force your users to crop their image to one of the available crop ratios, you can use the `setForcedCropMode` of the `ImgLyConfig` object to set the desired `CropAspectConfig` configurations in portrait and landscape mode. This creates a crop overlay when displaying the camera preview and crops the image to the desired aspect ratio when the user captures an image. In this case, you need to remove the `CustomCrop` option from the tool as well, to ensure that a user can't remove the forced crop ratio afterwards.
+In order to force your users to crop their image to one of the available crop ratios, you can use the `setForcedCropMode` of the `ImgLyConfig` object to set the desired `CropAspectConfig` configurations in portrait and landscape mode. This creates a crop overlay when displaying the camera preview and crops the image to the desired aspect ratio when the user captures an image. In this case, you need to remove the `CustomCrop` option from the tool as well, to ensure that a user can't remove the forced crop ratio afterward.

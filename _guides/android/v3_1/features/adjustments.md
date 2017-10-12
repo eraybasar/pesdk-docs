@@ -17,7 +17,7 @@ published: true # Either published or not
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
-Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
+Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast while allowing more expert users to fine-tune highlights, shadows and clarity.
 
 The tool is implemented in the [`ColorAdjustmentTool`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/sdk/tools/ColorAdjustmentTool.html) class and displayed using the [`AdjustmentToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/panels/AdjustmentToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.
 

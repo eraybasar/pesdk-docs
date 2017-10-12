@@ -16,10 +16,10 @@ published: true # Either published or not
 ---
 
 
-We added overlays to our PhotoEditor SDK in version 4. Overlays are an easy, yet powerful way to create stunning effects.
-To put it simple, overlays are images put on top of the input image.
+We added overlays to our PhotoEditor SDK in version 4. Overlays are an simple, yet powerful way to create stunning effects.
+To put it easy, overlays are images put on top of the input image.
 We provide several blend modes, that determine how exactly the overlay is applied.
-Each mode has its own characteristics and will add a unique flavour to the final composition.
+Each mode has its own characteristics and will add a unique flavor to the final composition.
 
 ## Adding and removing overlays
 
@@ -78,4 +78,4 @@ settingsList.getConfig().setOverlays(
 ```
 Please note that you have to set the default [`BlendMode`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/sdk/models/constant/BlendMode.html) and intensity.
 We could show you the math for each of these modes, but that won't help to get a feel for the resulting visual effect. Therefore we encourage you to add your overlay 
-with any initial mode, and use the UI to play with the blend mode and intensities. 
+with every initial mode and use the UI to play with the blend mode and intensities. 

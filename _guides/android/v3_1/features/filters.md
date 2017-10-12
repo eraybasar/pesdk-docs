@@ -17,7 +17,7 @@ published: true # Either published or not
 
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
-Our PhotoEditor SDK features more than 60 high quality filters and enables you to add custom filters with ease. The processing of the images is lightning fast and adding your own filters neither requires super math nor high level coding skills.
+Our PhotoEditor SDK features more than 60 high-quality filters and enables you to add custom filters with ease. The processing of the images is lightning fast and adding your own filters neither requires super math nor high-level coding skills.
 
 To examine the included filters, you can download the {% include guides/android/example-app.md %} from the Play Store or clone our {% include guides/android/demo-repository.md %}.
 
@@ -105,14 +105,14 @@ Typically those operations use surrounding the pixels to determine the color of 
 
 > __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you need to save your LUT as a PNG file.
  
-The last step step is to add the filter to
+The last step is to add the filter to
 the list of available filters by creating a `LutColorFilter` object just as described above. The object takes the following three parameters:
 
 1. String resource identifier of the filters name, which will not be displayed in the default layout, but is used for Accessibility.
 2. Preview image resource for the `CameraPreview` activity. This image is replaced with a filtered version within the editor.
 3. Drawable-nodpi or Raw resource identifier of the PNG LUT.
 
-> __WARNING:__ Be sure to put the LUT PNG file in the 'res/drawable-nodpi' folder. Otherwise the LUT will be scaled by the Android system. 
+> __WARNING:__ Be sure to put the LUT PNG file in the 'res/drawable-nodpi' folder. Otherwise, the LUT will be scaled by the Android system. 
 
 Adding the custom filter to the available filters then looks like this:
 

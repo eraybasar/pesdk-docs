@@ -18,7 +18,7 @@ published: true # Either published or not
 ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
 
 
-Our PhotoEditor SDK features more than 60 high quality filters and enables you to add custom filters with ease. The processing of the images is lightning fast and adding your own filters neither requires super math nor high level coding skills.
+Our PhotoEditor SDK features more than 60 high-quality filters and enables you to add custom filters with ease. The processing of the images is lightning fast and adding your own filters neither requires super math nor high-level coding skills.
 
 To examine the included filters, you can download the {% include guides/android/example-app.md %} from the Play Store or clone our {% include guides/android/demo-repository.md %}.
 
@@ -104,7 +104,7 @@ Starting with version 4.0, we support lower resolution LUT files in order to fur
 - 256x256 LUT with 6 columns and 6 rows ([download ]({{ site.baseurl }}/assets/images/shared/identity_6_6_256.png){: download="identity_6_6_256" })
 - 128x128 LUT with 5 columns and 5 rows ([download ]({{ site.baseurl }}/assets/images/shared/identity_5_5_128.png){: download="identity_5_5_128" })
 
-Using a smaller LUT file may lead to issues when applying your filter, as our processing engine needs to interpolate missing values. We recommend starting with the smallest possible LUT file and falling back to larger files, if you notice that your filter can’t be fully reproduced:
+Using a smaller LUT file may lead to issues when applying your filter, as our processing engine needs to interpolate missing values. We recommend starting with the smallest possible LUT file and falling back to larger files if you notice that your filter can’t be fully reproduced:
 
 {:center: style="text-align: center"}
 ![Identity 512x512 8x8 LUT]({{ site.baseurl }}/assets/images/shared/identity_8_8_512.png){: width="256px" style="padding: 10px"}
@@ -113,7 +113,7 @@ Using a smaller LUT file may lead to issues when applying your filter, as our pr
 ![Identity 128x128 5x5 LUT]({{ site.baseurl }}/assets/images/shared/identity_5_5_128.png){: width="64px" style="padding: 10px"}
 {:center}
 
-The black borders are required in order to optimize performance and the number of rows translates to the resolution for the green channel, the number of columns translates to the resolution of the red channel and the number of tiles translates to the blue channels resolution. And larger LUTs naturally garantuee a larger resolution across all channels.
+The black borders are required in order to optimize performance and the number of rows translates to the resolution for the green channel, the number of columns translates to the resolution of the red channel and the number of tiles translates to the blue channels resolution. And larger LUTs naturally guarantee a larger resolution across all channels.
 
 The resulting image can be used within our SDK and the recorded changes can then be applied to any image by looking up the transformed colors in the modified LUT.
 
@@ -129,7 +129,7 @@ the list of available filters by creating a `LutColorFilter` object just as desc
 2. Preview image resource for the `CameraPreview` activity. This image is replaced with a filtered version of the current image within the editor.
 3. Drawable-nodpi or Raw resource identifier of the PNG LUT.
 
-> __WARNING:__ Be sure to put the LUT PNG file in the 'res/drawable-nodpi' folder. Otherwise the LUT will be scaled by the Android system. 
+> __WARNING:__ Be sure to put the LUT PNG file in the 'res/drawable-nodpi' folder. Otherwise, the LUT will be scaled by the Android system. 
 
 Adding the custom filter to the available filters then looks like this:
 

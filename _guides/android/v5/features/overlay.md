@@ -19,7 +19,7 @@ published: true # Either published or not
 We added overlays to our PhotoEditor SDK in version 4. Overlays are a simple, yet powerful way to create stunning effects.
 To put it easy, overlays are images put on top of the input image.
 We provide several blend modes, that determine how exactly the overlay is applied.
-Each mode has its own characteristics and will add a unique flavour to the final composition.
+Each mode has its own characteristics and will add a unique flavor to the final composition.
 
 ## Adding and removing overlays
 

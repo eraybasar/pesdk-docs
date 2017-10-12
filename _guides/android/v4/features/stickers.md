@@ -37,7 +37,7 @@ The list of `StickerConfig` objects represents the stickers that are available i
 1. Resource identifier of the sticker name. Will not be displayed in the default layout, but is used for accessibility
 2. `Drawable` resource or `ImageSource` of the icon
 3. `Drawable` resource or `ImageSource` of the sticker
-4. `ImageStickerConfig.OPTION_MODE` to configure the coloring behaviour (optional)
+4. `ImageStickerConfig.OPTION_MODE` to configure the coloring behavior (optional)
 
 A sticker configuration could then look like this:
 

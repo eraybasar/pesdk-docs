@@ -45,7 +45,7 @@ Please make sure, that you overwrite the icon in all densities.
 There are two special files inside this project: `imgly_icon_option_selected_color.png` and `imgly_icon_option_selected_color_bg.png`.
 Both combined will create an icon which will be used for both the fore- and background colorpicking for the sticker.
 
-The white color values from `imgly_icon_option_selected_color.png` replaces and overlays the content from `imgly_icon_option_selected_color_bg.png` with the chosen color within the runtime.
+The white color values from `imgly_icon_option_selected_color.png` replace and overlays the content from `imgly_icon_option_selected_color_bg.png` with the chosen color within the runtime.
 
 
 ### Change default colors

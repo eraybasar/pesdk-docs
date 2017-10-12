@@ -18,7 +18,7 @@ published: true # Either published or not
 ---
 
 
-This document guides you through the process of integrating the PhotoEditor SDK into you Android
+This document guides you through the process of integrating the PhotoEditor SDK into your Android
 application.
 
 ## Prerequisites
@@ -149,7 +149,7 @@ public class Application extends android.app.Application {
 Before using any components of the PhotoEditor SDK, you have to add your license file to your applications assets folder.
 The expected default name of the license file is "LICENSE". In order to change this, call `PESDK.init(this, "YOUR_FILENAME")` instead of `PESDK.init(this)`  
 
-The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license thats bound to your bundle identifier. You can start a trial [here](https://www.photoeditorsdk.com/users/new) and download your license file from your [dashboard](https://www.photoeditorsdk.com/dashboard).
+The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license that's bound to your bundle identifier. You can start a trial [here](https://www.photoeditorsdk.com/users/new) and download your license file from your [dashboard](https://www.photoeditorsdk.com/dashboard).
 
 Once the license file has been added the application will validate its presence upon launch.
 
@@ -165,7 +165,7 @@ In order to open the camera preview and pass the resulting image to the editor, 
 `CameraPreviewBuilder` and start the `CameraPreviewActivity` with `startActivityForResult(activity, custom_id)`:
 
 > __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
-as demonstrated in the following example. This ensures correct behaviour on Android 6.0 and above.__
+as demonstrated in the following example. This ensures correct behavior on Android 6.0 and above.__
 
 ```java
 public class MainActivity extends Activity implements PermissionRequest.Response {
