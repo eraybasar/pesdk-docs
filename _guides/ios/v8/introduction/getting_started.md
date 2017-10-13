@@ -33,7 +33,7 @@ Here's what you have to add to your `Podfile`:
 ```ruby
 use_frameworks!
 
-pod 'PhotoEditorSDK', '~> 8.0'
+pod 'PhotoEditorSDK'
 ```
 
 Then run `pod install`.
