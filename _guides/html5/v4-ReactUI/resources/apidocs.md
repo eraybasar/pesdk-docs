@@ -6,5 +6,5 @@ category:
   - guide
   - resource
 redirect_to:
-  - /apidocs/html5/v4-ReactUI
+  - /apidocs/html5/v4
 ---

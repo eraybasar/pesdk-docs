@@ -6,5 +6,5 @@ category:
   - guide
   - resource
 redirect_to:
-  - /apidocs/html5/v4-DesktopUI
+  - /apidocs/html5/v4
 ---
