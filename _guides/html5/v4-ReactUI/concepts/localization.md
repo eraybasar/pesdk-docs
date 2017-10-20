@@ -89,10 +89,6 @@ language object as an example:
       }
     },
     "sticker": {
-      "brightness": "Brightness",
-      "contrast": "Contrast",
-      "saturation": "Saturation",
-      "blur": "Blur",
       "flip": "Flip",
       "flip-v": "Flip (V)",
       "flip-h": "Flip (H)",
@@ -118,7 +114,8 @@ language object as an example:
     "new": "New",
     "backgroundImage": "Background Image",
     "undo": "Undo",
-    "export": "Export"
+    "export": "Export",
+    "zoom": "Zoom"
   },
   "splash": {
     "upload": {
