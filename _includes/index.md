@@ -4,7 +4,7 @@ title: &title Getting Started # title as shown in the menu and
 order: 1
 menuitem: *title
 platform: ios
-version: v6
+version: v8
 category:
   - guide
 
@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not
 redirect_to:
-  - '/guides/ios/v6/introduction/overview'
+  - '/guides/ios/v8/introduction/overview'
 ---
