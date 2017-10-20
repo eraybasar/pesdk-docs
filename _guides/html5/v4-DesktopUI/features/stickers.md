@@ -32,6 +32,9 @@ const editor = new PhotoEditorSDK.UI.DesktopUI({
         {
           identifier: 'some_category',
           defaultName: 'Some Category',
+          metaData: {
+            backgroundImage: 'stickers/background.png'
+          },
           stickers: [
             {
               identifier: 'custom_sticker',
@@ -86,6 +89,9 @@ In order to correctly use stickers in our UI, you need to follow our Stickers JS
   "categories": [{
     "identifier": "imgly_sticker_emoticons",
     "defaultName": "Emoticons",
+    "metaData": {
+      "backgroundImage": "stickers/background.png"
+    },
     "stickers": [{
       "identifier": "imgly_sticker_emoticons_alien",
       "defaultName": "Alien Emoticon",
