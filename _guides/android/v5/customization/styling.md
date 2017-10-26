@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Styling # title as shown in the menu and 
+title: &title Styling # title as shown in the menu and
 
 menuitem: *title
 order: 0
 platform: android
 version: v5
-category: 
+category:
   - guide
-  - concept
+  - customization
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 

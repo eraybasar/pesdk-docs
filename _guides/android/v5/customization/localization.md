@@ -1,18 +1,18 @@
 ---
 layout: guides/content
-title: &title Localization # title as shown in the menu and 
+title: &title Localization # title as shown in the menu and
 description: The PhotoEditor SDK for Android can be localized easily. Learn how to quickly set up your editor in the proper language for your target audience.
 menuitem: *title
 order: 1
 platform: android
 version: v5
-category: 
+category:
   - guide
-  - concept
+  - customization
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
 
