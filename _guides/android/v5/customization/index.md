@@ -4,7 +4,7 @@ title: &title Getting Started # title as shown in the menu and
 order: 1
 menuitem: *title
 platform: android
-version: v8
+version: v5
 category:
   - guide
 description: The PhotoEditor SDK for Android can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires.
