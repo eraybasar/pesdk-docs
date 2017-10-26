@@ -9,7 +9,7 @@ platform: html5
 version: v4-ReactUI
 category:
   - guide
-  - concept
+  - customization
 tags: &tags # tags that are necessary
   - photo editor
 
