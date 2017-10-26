@@ -6,6 +6,7 @@
 
 {% assign intropages = subpages | where: "category", "introduction" %}
 {% assign feature_pages = subpages | where: "category", "feature" %}
+{% assign customization_pages = subpages | where: "category", "customization" %}
 {% assign concept_pages = subpages | where: "category", "concept" %}
 {% assign resource_pages = subpages | where: "category", "resource" %}
 
@@ -18,7 +19,7 @@
         {% include documentation/gray_button.html title="API Docs" link=api_url %}
         {% include documentation/spacer.html %}
         <ul class="documentation-subnavigation__list">
-          {% if intropages.size > 0 or feature_pages.size > 0 or concept_pages.size > 0 or resource_pages.size > 0 %}
+          {% if intropages.size > 0 %}
             <li class="documentation-subnavigation__list__header">
               Introduction
               <ul>
@@ -29,11 +30,12 @@
                     {% else %}
                       <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
                     {% endif %}
-                  </li>              
+                  </li>
                 {% endfor %}
               </ul>
             </li>
-            
+          {% endif %}
+          {% if feature_pages.size > 0 %}
             <li class="documentation-subnavigation__list__header">
               Features
               {% for p in feature_pages %}
@@ -43,10 +45,25 @@
                   {% else %}
                     <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
                   {% endif %}
-                </li>   
+                </li>
               {% endfor %}
             </li>
-            
+          {% endif %}
+          {% if customization_pages.size > 0 %}
+            <li class="documentation-subnavigation__list__header">
+              Customization
+              {% for p in customization_pages  %}
+                <li class="documentation-subnavigation__list__item">
+                  {% if p.url == page.url %}
+                    <a class="is-active" href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
+                  {% else %}
+                    <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </li>
+          {% endif %}
+          {% if concept_pages.size > 0 %}
             <li class="documentation-subnavigation__list__header">
               Concepts
                <ul>
@@ -57,11 +74,12 @@
                     {% else %}
                       <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
                     {% endif %}
-                  </li>   
+                  </li>
                 {% endfor %}
               </ul>
             </li>
-            
+          {% endif %}
+          {% if resource_pages.size > 0 %}
             <li class="documentation-subnavigation__list__header">
               Resources
               <ul>
@@ -72,12 +90,12 @@
                     {% else %}
                       <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>
                     {% endif %}
-                  </li>   
+                  </li>
                 {% endfor %}
               </ul>
             </li>
           {% endif %}
         </ul>
       {% endif %}
-  </div> 
-</div> 
+  </div>
+</div>
