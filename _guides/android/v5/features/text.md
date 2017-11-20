@@ -27,7 +27,7 @@ The SDK comes with a predefined set of fonts, which you can examine in our demo 
 
 ![Editor Fonts]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_editor_fonts.jpg){: height="400px" .center-image}
 
-In order to change the available fonts or rearrange them, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use the `getFontConfig()` method. This method returns
+In order to change the available fonts or rearrange them, start with a default `PESDKConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use the `getFontConfig()` method. This method returns
 an `ArrayList` containing the default fonts. Use the `clear()` method to clear the list and re-fill
 it with the fonts you like in any order you prefer or set a new list with  `setFontConfig()`.
 

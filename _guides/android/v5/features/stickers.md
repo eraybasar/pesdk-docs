@@ -24,7 +24,7 @@ The tool is implemented in the [`StickerEditorTool`]({{site.baseurl}}/apidocs/{{
 
 ## Managing stickers
 
-In order to change the available stickers, rearrange or add new stickers, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Then use the `setStickerConfig()` method to update the configuration. The stickers are partitioned into categories, therefore the `ImglyConfig` expects a list of `StickerCategoryConfig` objects. Each of these objects represents a single sticker category and takes three parameters:
+In order to change the available stickers, rearrange or add new stickers, start with a default `PESDKConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Then use the `setStickerConfig()` method to update the configuration. The stickers are partitioned into categories, therefore the `PESDKConfig` expects a list of `StickerCategoryConfig` objects. Each of these objects represents a single sticker category and takes three parameters:
 
 1. The resource identifier of the sticker name. Will not be displayed in the default layout but, is used for accessibility
 2. A drawable resource or ImageSource of the icon

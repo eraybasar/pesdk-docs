@@ -26,7 +26,7 @@ The tool is implemented in the [`FilterEditorTool`]({{site.baseurl}}/apidocs/{{p
 
 ## Add or remove predefined filters
 
-In order to change the available filters or rearrange them, start with a default `ImglyConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
+In order to change the available filters or rearrange them, start with a default `PESDKConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use the `setFilterConfig()` method to add your filter selection as a list of `ColorFilter` objects:
 
 ```java
     ArrayList<<ColorFilter>> filter = new ArrayList<>();
