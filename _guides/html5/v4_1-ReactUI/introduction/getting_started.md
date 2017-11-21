@@ -93,10 +93,10 @@ This was all required to get the PhotoEditor SDK up and running. For simplicity 
     <script src="js/vendor/react.min.js"></script>
     <script src="js/vendor/react-dom.min.js"></script>
     <!-- PhotoEditor SDK-->
-    <script src="js/PhotoEditorSDK.min.js"></script>
+    <script src="js/PhotoEditorSDK.js"></script>
     <!-- PhotoEditor SDK UI -->
-    <script src="js/PhotoEditorReactUI.min.js"></script>
-    <link rel="stylesheet" href="css/PhotoEditorReactUI.min.css" />
+    <script src="js/PhotoEditorSDK.UI.ReactUI.js"></script>
+    <link rel="stylesheet" href="css/PhotoEditorSDK.UI.ReactUI.css" />
   </head>
 
   <body>
