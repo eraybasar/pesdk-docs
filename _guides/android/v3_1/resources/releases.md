@@ -13,6 +13,6 @@ category:
 tags: &tags # tags that are necessary
   - photo editor 
 redirect_to: 
-  - https://artifactory.9elements.com/artifactory/imgly/ly/img/android/photo-editor-sdk/
+  - https://github.com/imgly/pesdk-android-demo/releases
 ---
 
