@@ -43,7 +43,6 @@ The list of `StickerConfig` objects represents the stickers that are available i
 A sticker configuration could then look like this:
 
 ```java
-
 // Set custom sticker set
 config.setStickerLists (
     new StickerCategoryConfig(

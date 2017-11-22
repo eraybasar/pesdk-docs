@@ -84,7 +84,7 @@ The four groups can be laid out in two ways. Horizontal inside and vertical insi
 ![frame inside]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/frame_inside.png){: height="150px" .center-image }
 
 The idea behind the naming is, that if you imagine a box that covers the right and left groups and the top and bottom groups surrounding it,
-the horizontal box is inside the groups, as illustrated by the following image,
+the horizontal box is inside the groups, as illustrated by the following image.
 
 ![frame horizontal]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/horizontalFrame.png){: height="150px" .center-image }
 
