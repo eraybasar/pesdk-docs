@@ -32,12 +32,13 @@ In order to change the available stickers, rearrange or add new stickers, start 
 
 > Please make sure you put the PNG files into the `res/raw` **or** the `res/drawable-nodpi` folder, otherwise the sticker is scaled by Android.
 
-The list of `StickerConfig` objects represents the stickers that are available in the current category. Each `StickerConfig` takes the following four parameters:
+The list of `StickerConfig` objects represents the stickers that are available in the current category. Each `StickerConfig` takes the following five parameters:
 
-1. Resource identifier of the sticker name. Will not be displayed in the default layout, but is used for accessibility
-2. `Drawable` resource or `ImageSource` of the icon
-3. `Drawable` resource or `ImageSource` of the sticker
-4. `ImageStickerConfig.OPTION_MODE` to configure the coloring behavior (optional)
+1. Sticker identifier, this should be unique. It is currently used for serialization only.
+2. Resource identifier of the sticker name. Will not be displayed in the default layout, but is used for accessibility
+3. `Drawable` resource or `ImageSource` of the icon
+4. `Drawable` resource or `ImageSource` of the sticker
+5. `ImageStickerConfig.OPTION_MODE` to configure the coloring behavior (optional)
 
 A sticker configuration could then look like this:
 
