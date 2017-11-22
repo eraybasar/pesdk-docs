@@ -173,9 +173,10 @@ To present a `PhotoEditViewController` just add these few lines:
 Swift
 ---
 ```swift
-let sampleImage = UIImage(named: "sample_image")
+let sampleImage = UIImage(named: "sample_image")!
+let photo = Photo(image: sampleImage)
 
-let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
+let photoEditViewController = PhotoEditViewController(photoAsset: photo)
 photoEditViewController.delegate = self
 
 present(photoEditViewController, animated: true, completion: nil)
@@ -191,8 +192,9 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
 }];
 
 UIImage *sampleImage = [UIImage imageNamed:@"sample_image"];
+PESDKPhoto *photo = [[PESDKPhoto alloc] initWithImage:sampleImage];
 
-PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhoto:sampleImage configuration:configuration];
+PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhotoAsset:photo configuration:configuration];
 photoEditViewController.delegate = self;
 
 [self presentViewController:photoEditViewController animated:YES completion:nil];
@@ -219,9 +221,10 @@ The controllers provided with the SDK can be embedded in an `UINavigationControl
 Swift
 ---
 ```swift
-let sampleImage = UIImage(named: "sample_image")
+let sampleImage = UIImage(named: "sample_image")!
+let photo = Photo(image: sampleImage)
 
-let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
+let photoEditViewController = PhotoEditViewController(photoAsset: photo)
 photoEditViewController.delegate = self
 
 let navigationController = UINavigationController(rootViewController: photoEditViewController)
@@ -238,8 +241,9 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
 }];
 
 UIImage *sampleImage = [UIImage imageNamed:@"sample_image"];
+PESDKPhoto *photo = [[PESDKPhoto alloc] initWithImage:sampleImage];
 
-PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhoto:sampleImage configuration:configuration];
+PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhotoAsset:photo configuration:configuration];
 photoEditViewController.delegate = self;
 
 UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:photoEditViewController];
