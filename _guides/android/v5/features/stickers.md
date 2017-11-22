@@ -38,12 +38,11 @@ The list of `StickerConfig` objects represents the stickers that are available i
 2. Resource identifier of the sticker name. Will not be displayed in the default layout, but is used for accessibility
 3. `Drawable` resource or `ImageSource` of the icon
 4. `Drawable` resource or `ImageSource` of the sticker
-5. `ImageStickerConfig.OPTION_MODE` to configure the coloring behavior (optional)
+5. (Optional) `ImageStickerConfig.OPTION_MODE` to configure the coloring behavior
 
 A sticker configuration could then look like this:
 
 ```java
-ArrayList<ImageStickerConfig> stickers = config.getStickerConfig(); // Default set
 
 // Set custom sticker set
 config.setStickerLists (
