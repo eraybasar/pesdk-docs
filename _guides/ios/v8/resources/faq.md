@@ -33,7 +33,7 @@ We have a full-source license. Please [contact us](https://www.photoeditorsdk.co
 
 You might be wondering why the `PhotoEditorSDK.framework` folder is almost 135 MB large. Although this can be irritating at first, this is not the size that your users will get.
 
-The PhotoEditor SDK includes many UI components, lookup tables and fonts. This results in a lot of code and thus a sizeable binary, although there are certain factors that make it appear larger than it actually is. We’re working hard to ensure the framework size stays as low as possible.
+The PhotoEditor SDK includes many UI components, controllers and assets. This results in a lot of code and thus a sizeable binary, but there are certain factors that make it appear larger than it actually is. We’re working hard to ensure the framework size stays as low as possible.
 
 ### Architectures
 
