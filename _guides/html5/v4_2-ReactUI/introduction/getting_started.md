@@ -51,6 +51,7 @@ Then include the SDK and the UI JavaScript files in your as well as the CSS file
   <!-- React Dependencies for the SDK UI -->
   <script src="js/vendor/react.min.js"></script>
   <script src="js/vendor/react-dom.min.js"></script>
+  <script src="js/vendor/prop-types.min.js"></script>
   <!-- PhotoEditor SDK-->
   <script src="js/PhotoEditorSDK.Full.js"></script>
   <!-- PhotoEditor SDK UI -->
@@ -92,6 +93,7 @@ This was all required to get the PhotoEditor SDK up and running. For simplicity 
     <!-- React Dependencies for the SDK UI -->
     <script src="js/vendor/react.min.js"></script>
     <script src="js/vendor/react-dom.min.js"></script>
+    <script src="js/vendor/prop-types.min.js"></script>
     <!-- PhotoEditor SDK-->
     <script src="js/PhotoEditorSDK.js"></script>
     <!-- PhotoEditor SDK UI -->

@@ -51,6 +51,7 @@ Then include the SDK and the UI JavaScript files in your as well as the CSS file
   <!-- React Dependencies for the SDK UI -->
   <script src="js/vendor/react.min.js"></script>
   <script src="js/vendor/react-dom.min.js"></script>
+  <script src="js/vendor/prop-types.min.js"></script>
   <!-- PhotoEditor SDK-->
   <script src="js/PhotoEditorSDK.Full.js"></script>
   <!-- PhotoEditor SDK UI -->
@@ -74,7 +75,7 @@ Finally, in order to initialize the editor, instantiate the UI using JavaScript.
     var container = document.getElementById('editor')
     var editor = new PhotoEditorSDK.UI.DesktopUI({
       container: container,
-      license: 'YOUR_LICENSE', // <-- Please replace this with your license
+      license: 'YOUR_LICENSE', // <-- Please replace this with your license. Make sure it's in string format, not object.
       assets: {
         baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
       }
@@ -92,10 +93,11 @@ This was all required to get the PhotoEditor SDK up and running. For simplicity 
     <!-- React Dependencies for the SDK UI -->
     <script src="js/vendor/react.min.js"></script>
     <script src="js/vendor/react-dom.min.js"></script>
+    <script src="js/vendor/prop-types.min.js"></script>
     <!-- PhotoEditor SDK-->
-    <script src="js/PhotoEditorSDK.js"></script>
+    <script src="js/PhotoEditorSDK.Full.js"></script>
     <!-- PhotoEditor SDK UI -->
-    <script src="js/PhotoEditorSDK.UI.DesktopUI.js"></script>
+    <script src="js/PhotoEditorSDK.UI.DesktopUI.Full.js"></script>
     <link rel="stylesheet" href="css/PhotoEditorSDK.UI.DesktopUI.css" />
   </head>
 
@@ -106,7 +108,7 @@ This was all required to get the PhotoEditor SDK up and running. For simplicity 
         var container = document.getElementById('editor')
         var editor = new PhotoEditorSDK.UI.DesktopUI({
           container: container,
-          license: 'YOUR_LICENSE', // <-- Please replace this with your license
+          license: 'YOUR_LICENSE', // <-- Please replace this with your license. Make sure it's in string format, not object.
           assets: {
             baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
           }
