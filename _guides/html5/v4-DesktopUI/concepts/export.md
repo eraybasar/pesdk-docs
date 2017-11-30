@@ -17,30 +17,13 @@ published: true # Either published or not
 ---
 
 
-To export the resulting image as an `Image` object or as a data url, you can use the [`export`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorDesktopUI.html#export)
-method:
+To export the resulting image as an `Image` object or as a data url, you can use the [`export`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorDesktopUI.html#export) method:
 
 ```js
-editor.export(
-  PhotoEditorSDK.RenderType.IMAGE, // Export as `Image` object
-  PhotoEditorSDK.ImageFormat.JPEG, // Export as JPEG
-  0.8 // JPEG quality: 80%
-).then((image) => {
-  document.body.appendChild(image)
-})
+editor.export(false)
+  .then((image) => {
+    document.body.appendChild(image)
+  })
 ```
 
-See the API documentation for available [`RenderTypes`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.html#.RenderType)
-and [`ImageFormats`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.html#.ImageFormat)
-
-When exporting using the `DATAURL` type, you can pass the resulting Data URL to a server:
-
-```js
-editor.export(
-  PhotoEditorSDK.RenderType.DATAURL, // Export as `Image` object
-  PhotoEditorSDK.ImageFormat.JPEG, // Export as JPEG
-  0.8 // JPEG quality: 80%
-).then((dataUrl) => {
-  // Upload to server
-})
-```
+The export format (e.g. DataURL or Image) and file format (e.g. PNG or JPEG) can be specified using the editor configuration. See the API documentation for available [`RenderTypes`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.html#.RenderType) and [`ImageFormats`](http://static.photoeditorsdk.com/docs/html5/PhotoEditorSDK.html#.ImageFormat). When exporting using the `DATAURL` format, you can pass the resulting Data URL to a server, decode it there and write it to a file.
