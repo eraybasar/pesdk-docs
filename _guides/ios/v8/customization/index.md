@@ -18,18 +18,29 @@ redirect_to:
 ---
 <!--
 
-adding a “Close/Cancel”-button/operation for the camera view (controller) (3x)
-change “Export” Icon (either to a different icon or to a text) (3x)
-change color of icons (3x)
-change icons (2x)
-change editor title (2x)
-change text/label of menu item/icon
-how to change tint so icons on camera view controller change colors
-hide Cancel button
-change editor background
-add a text to the redo/undo-button (instead of just a simple icon)
-increase the gap between the icons on the editor toolbar page
-add separator between menu items
-Change the color of the icons on the top bar
-change text for menu item
-change the chequered box on the color changer to a rainbow box -->
+- adding a “Close/Cancel”-button/operation for the camera view (controller) (3x)
+- how to change tint so icons on camera view controller change colors
+
+Configuration/Modification : -> Advances configuration
+- hide Cancel button
+
+Theming:
+- change “Export” Icon (either to a different icon or to a text) (3x)
+- change color of icons (3x)
+- change icons (2x)
+- change the chequered box on the color changer to a rainbow box
+- Change the color of the icons on the top bar
+- change editor background
+-* increase the gap between the icons on the editor toolbar page
+
+Localization: -> Kein Hauptpunkt
+- change text/label of menu item/icon
+- change text for menu item
+- change editor title (2x) -> Localization
+
+
+Customization:
+- add a text to the redo/undo-button (instead of just a simple icon)
+- add separator between menu items
+
+-->

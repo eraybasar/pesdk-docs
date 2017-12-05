@@ -17,15 +17,32 @@ redirect_to:
   - '/guides/android/v5/customization/styling'
 ---
 <!--
-change Export/Save-Button (either to a different icon or to a text) (5x)
-change color of button/icon (2x)
-change background color
-change background color in listview/toolbar
+
+Configuration:
+- change color of button/icon (2x)
+- change background color
+- change background color in listview/toolbar
 change the corner image (?!)
-Can I only change the photo editor toolbar background color not the specific tools (like Transform or filter) background color?
-change the photo editor preview background (from black to white)
-change camera button
-change camera view (to white background)
-change text for menu item
-change the chequered box on the color changer to a rainbow box
+
+Localization:
+(- change Export/Save-Button (to a different to a text) (5x))
+- change text for menu item
+
+Theming:
+- change Export/Save-Button (either to a different icon) (5x)
+- Can I only change the photo editor toolbar background color not the specific tools (like Transform or filter) background color?
+- Change the photo editor preview background (from black to white)
+- change camera button
+- change camera view (to white background)
+- change the chequered box on the color changer to a rainbow box
+
+Customization:
+- Replace Export/Save Button from icon to text
+
+
+
+
+
+
+
 -->
