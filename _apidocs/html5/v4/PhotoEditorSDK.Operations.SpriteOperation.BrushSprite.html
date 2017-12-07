@@ -208,6 +208,27 @@
             </ul>
         </li>
     
+        <li class="item" data-name="PhotoEditorSDK.UI">
+            <span class="title">
+                <a href="PhotoEditorSDK.UI.html">UI</a>
+                
+                <span class="static">static</span>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="PhotoEditorSDK.UI.ReactUI.Controls">
             <span class="title">
                 <a href="PhotoEditorSDK.UI.ReactUI.Controls.html">UI.ReactUI.Controls</a>
@@ -294,6 +315,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="Operation#clone"><a href="Operation.html#clone">clone</a></li>
             
                 <li data-name="Operation#dispose"><a href="Operation.html#dispose">dispose</a></li>
             
@@ -3206,6 +3229,8 @@
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation#removeSprite"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#removeSprite">removeSprite</a></li>
             
+                <li data-name="PhotoEditorSDK.Operations.SpriteOperation#scale"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#scale">scale</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation#setAlignment"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#setAlignment">setAlignment</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation#setAnchor"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#setAnchor">setAnchor</a></li>
@@ -3406,6 +3431,8 @@
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#applyFlip"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#applyFlip">applyFlip</a></li>
             
+                <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#applyScale"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#applyScale">applyScale</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#dispose"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#dispose">dispose</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#serializeOptions"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#serializeOptions">serializeOptions</a></li>
@@ -3594,6 +3621,8 @@
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastFlip"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastFlip">broadcastFlip</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastRotate"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastRotate">broadcastRotate</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastScale"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastScale">broadcastScale</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastTransform"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastTransform">broadcastTransform</a></li>
             
@@ -4585,7 +4614,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 124
+            sdk/operations/sprites/brush-sprite.js, line 129
         </div>
         
     </div>
@@ -4656,7 +4685,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 140
+            sdk/operations/sprites/brush-sprite.js, line 145
         </div>
         
     </div>
@@ -4727,7 +4756,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 182
+            sdk/operations/sprites/brush-sprite.js, line 187
         </div>
         
     </div>
@@ -4872,7 +4901,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 345
+            sdk/operations/sprites/brush-sprite.js, line 349
         </div>
         
     </div>
@@ -5039,7 +5068,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 336
+            sdk/operations/sprites/brush-sprite.js, line 340
         </div>
         
     </div>
@@ -5427,7 +5456,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 255
+            sdk/operations/sprites/brush-sprite.js, line 260
         </div>
         
     </div>
@@ -5543,7 +5572,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 169
+            sdk/operations/sprites/brush-sprite.js, line 174
         </div>
         
     </div>
@@ -5723,7 +5752,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 157
+            sdk/operations/sprites/brush-sprite.js, line 162
         </div>
         
     </div>
@@ -6239,7 +6268,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 245
+            sdk/operations/sprites/brush-sprite.js, line 250
         </div>
         
     </div>
@@ -6390,7 +6419,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 230
+            sdk/operations/sprites/brush-sprite.js, line 235
         </div>
         
     </div>
@@ -6675,12 +6704,12 @@
     <div class="nameContainer">
         <h4 class="name" id="update">
             
-            update<span class="signature">(sdk, inputDimensions)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
+            update<span class="signature">(sdk, inputDimensions)</span>
         </h4>
     
         
         <div class="tag-source">
-            sdk/operations/sprites/brush-sprite.js, line 295
+            sdk/operations/sprites/brush-sprite.js, line 299
         </div>
         
     </div>
@@ -6804,35 +6833,6 @@
     
     
     
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        Promise
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
     
     
 </dd>
@@ -6854,7 +6854,7 @@
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.3</a>
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
         </footer>
     </div>
 </div>

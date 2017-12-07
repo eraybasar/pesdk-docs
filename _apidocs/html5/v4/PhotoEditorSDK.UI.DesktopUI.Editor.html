@@ -208,6 +208,27 @@
             </ul>
         </li>
     
+        <li class="item" data-name="PhotoEditorSDK.UI">
+            <span class="title">
+                <a href="PhotoEditorSDK.UI.html">UI</a>
+                
+                <span class="static">static</span>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="PhotoEditorSDK.UI.ReactUI.Controls">
             <span class="title">
                 <a href="PhotoEditorSDK.UI.ReactUI.Controls.html">UI.ReactUI.Controls</a>
@@ -294,6 +315,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="Operation#clone"><a href="Operation.html#clone">clone</a></li>
             
                 <li data-name="Operation#dispose"><a href="Operation.html#dispose">dispose</a></li>
             
@@ -3206,6 +3229,8 @@
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation#removeSprite"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#removeSprite">removeSprite</a></li>
             
+                <li data-name="PhotoEditorSDK.Operations.SpriteOperation#scale"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#scale">scale</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation#setAlignment"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#setAlignment">setAlignment</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation#setAnchor"><a href="PhotoEditorSDK.Operations.SpriteOperation.html#setAnchor">setAnchor</a></li>
@@ -3406,6 +3431,8 @@
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#applyFlip"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#applyFlip">applyFlip</a></li>
             
+                <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#applyScale"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#applyScale">applyScale</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#dispose"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#dispose">dispose</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite#serializeOptions"><a href="PhotoEditorSDK.Operations.SpriteOperation.StickerSprite.html#serializeOptions">serializeOptions</a></li>
@@ -3594,6 +3621,8 @@
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastFlip"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastFlip">broadcastFlip</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastRotate"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastRotate">broadcastRotate</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastScale"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastScale">broadcastScale</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#broadcastTransform"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#broadcastTransform">broadcastTransform</a></li>
             
@@ -4294,7 +4323,7 @@ history, zoom etc.</p></div>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="offset">offset</h4>
+        <h4 class="name" id="offset">offset<span class="type-signature type photoeditorsdk.math.vector2"><a href="PhotoEditorSDK.Math.Vector2.html">PhotoEditorSDK.Math.Vector2</a></span> </h4>
     </div>
     
     
@@ -4302,7 +4331,7 @@ history, zoom etc.</p></div>
 <dd>
     
     <div class="description">
-        <p>Sets the offset to the given vector</p>
+        <p>Returns the current offset</p>
     </div>
     
     
@@ -4339,7 +4368,7 @@ history, zoom etc.</p></div>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="offset">offset<span class="type-signature type photoeditorsdk.math.vector2"><a href="PhotoEditorSDK.Math.Vector2.html">PhotoEditorSDK.Math.Vector2</a></span> </h4>
+        <h4 class="name" id="offset">offset</h4>
     </div>
     
     
@@ -4347,7 +4376,7 @@ history, zoom etc.</p></div>
 <dd>
     
     <div class="description">
-        <p>Returns the current offset</p>
+        <p>Sets the offset to the given vector</p>
     </div>
     
     
@@ -4397,7 +4426,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 602
+            desktop-ui/lib/editor.js, line 630
         </div>
         
     </div>
@@ -4513,7 +4542,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 617
+            desktop-ui/lib/editor.js, line 645
         </div>
         
     </div>
@@ -4622,6 +4651,124 @@ history, zoom etc.</p></div>
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="broadcastScale">
+            
+            broadcastScale<span class="signature">(scale)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            desktop-ui/lib/editor.js, line 596
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Broadcasts a scaling to all operations that need to be changed. These operations include
+ones that store absolute values (e.g. sprite operation which holds sticker dimensions
+in absolute values)</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>scale</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PhotoEditorSDK.Math.Vector2.html">PhotoEditorSDK.Math.Vector2</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="broadcastTransform">
             
             broadcastTransform<span class="signature">(transformOperation, options)</span>
@@ -4629,7 +4776,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 584
+            desktop-ui/lib/editor.js, line 612
         </div>
         
     </div>
@@ -4768,7 +4915,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 385
+            desktop-ui/lib/editor.js, line 396
         </div>
         
     </div>
@@ -4913,7 +5060,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 505
+            desktop-ui/lib/editor.js, line 516
         </div>
         
     </div>
@@ -4984,7 +5131,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 323
+            desktop-ui/lib/editor.js, line 333
         </div>
         
     </div>
@@ -5137,7 +5284,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 176
+            desktop-ui/lib/editor.js, line 186
         </div>
         
     </div>
@@ -5208,7 +5355,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 287
+            desktop-ui/lib/editor.js, line 297
         </div>
         
     </div>
@@ -5361,7 +5508,7 @@ history, zoom etc.</p></div>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 278
+            desktop-ui/lib/editor.js, line 288
         </div>
         
     </div>
@@ -5515,7 +5662,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 559
+            desktop-ui/lib/editor.js, line 570
         </div>
         
     </div>
@@ -5615,7 +5762,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 535
+            desktop-ui/lib/editor.js, line 546
         </div>
         
     </div>
@@ -5715,7 +5862,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 567
+            desktop-ui/lib/editor.js, line 578
         </div>
         
     </div>
@@ -5815,7 +5962,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 259
+            desktop-ui/lib/editor.js, line 269
         </div>
         
     </div>
@@ -5968,7 +6115,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 268
+            desktop-ui/lib/editor.js, line 278
         </div>
         
     </div>
@@ -6121,7 +6268,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 541
+            desktop-ui/lib/editor.js, line 552
         </div>
         
     </div>
@@ -6221,7 +6368,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 523
+            desktop-ui/lib/editor.js, line 534
         </div>
         
     </div>
@@ -6321,7 +6468,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 192
+            desktop-ui/lib/editor.js, line 202
         </div>
         
     </div>
@@ -6421,7 +6568,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 529
+            desktop-ui/lib/editor.js, line 540
         </div>
         
     </div>
@@ -6521,7 +6668,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 208
+            desktop-ui/lib/editor.js, line 218
         </div>
         
     </div>
@@ -6621,7 +6768,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 575
+            desktop-ui/lib/editor.js, line 586
         </div>
         
     </div>
@@ -6721,7 +6868,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 517
+            desktop-ui/lib/editor.js, line 528
         </div>
         
     </div>
@@ -6821,7 +6968,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 236
+            desktop-ui/lib/editor.js, line 246
         </div>
         
     </div>
@@ -6966,7 +7113,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 227
+            desktop-ui/lib/editor.js, line 237
         </div>
         
     </div>
@@ -7111,7 +7258,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 437
+            desktop-ui/lib/editor.js, line 448
         </div>
         
     </div>
@@ -7234,7 +7381,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 491
+            desktop-ui/lib/editor.js, line 502
         </div>
         
     </div>
@@ -7305,7 +7452,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 371
+            desktop-ui/lib/editor.js, line 382
         </div>
         
     </div>
@@ -7638,7 +7785,7 @@ the image.</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 547
+            desktop-ui/lib/editor.js, line 558
         </div>
         
     </div>
@@ -7754,7 +7901,7 @@ the image.</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 200
+            desktop-ui/lib/editor.js, line 210
         </div>
         
     </div>
@@ -7870,7 +8017,7 @@ the image.</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 216
+            desktop-ui/lib/editor.js, line 226
         </div>
         
     </div>
@@ -7986,7 +8133,7 @@ the image.</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 418
+            desktop-ui/lib/editor.js, line 429
         </div>
         
     </div>
@@ -8057,7 +8204,7 @@ the image.</p>
     
         
         <div class="tag-source">
-            desktop-ui/lib/editor.js, line 425
+            desktop-ui/lib/editor.js, line 436
         </div>
         
     </div>
@@ -8134,7 +8281,7 @@ the image.</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.3</a>
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
         </footer>
     </div>
 </div>
