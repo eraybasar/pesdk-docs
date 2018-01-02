@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/sascha/Projects/iOS/9elements/pesdk-ios/PhotoEditorSDK/Backend/Processing/OverlayFilter.swift",
-      "line": 13,
-      "symbol": "OverlayFilter",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/sascha/Projects/iOS/9elements/pesdk-ios"
 }
