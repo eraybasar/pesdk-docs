@@ -28,9 +28,7 @@ ECMAScript 6 standard. If you're using an older ECMAScript / JavaScript standard
 <div class="documentation__disclaimer">
 <h4 id="license-terms">License Terms</h4>
 Make sure you have a commercial license before releasing your app.
-A commercial license is required for any app or service that has any form of monetization: This
-includes free apps with in-app purchases or ad supported applications. Please contact us if you want
-to purchase the commercial license.
+A commercial license is always required unless you are a non-profit company. Please [contact us](https://www.photoeditorsdk.com/pricing) to get more information about the pricing options.
 </div>
 
 
