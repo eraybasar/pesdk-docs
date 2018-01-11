@@ -49,10 +49,10 @@ Then include the SDK and the UI JavaScript files in your as well as the CSS file
   <script src="js/vendor/react.min.js"></script>
   <script src="js/vendor/react-dom.min.js"></script>
   <!-- PhotoEditor SDK-->
-  <script src="js/PhotoEditorSDK.min.js"></script>
+  <script src="js/PhotoEditorSDK.js"></script>
   <!-- PhotoEditor SDK UI -->
-  <script src="js/PhotoEditorDesktopUI.min.js"></script>
-  <link rel="stylesheet" href="css/PhotoEditorDesktopUI.min.css" />
+  <script src="js/PhotoEditorSDK.UI.DesktopUI.js"></script>
+  <link rel="stylesheet" href="css/PhotoEditorSDK.UI.DesktopUI.css" />
 </head>
 ```
 
