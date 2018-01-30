@@ -27,7 +27,7 @@ Dynamic frames consist of four groups. Each group has a start, middle and end im
 and for the middle image there are two modes, `FrameTileMode.repeat` and `FrameTileMode.stretch`. These determine whether the asset should be stretched over the area,
 or if they should be repeated to fill up space. Please note that in our implementation the middle asset will never be cut, when `.repeat` is set
 as its mode, but rather squeeze or stretch the single tiles a bit, to fit in only complete copies of the asset.
-The four groups can be laid out in two ways. Horizontal inside and vertical inside, see the images below.
+The four groups can be laid out in two ways. Horizontal inside or vertical inside, see the images below.
 
 
 ![frame inside]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/frame_inside.png){: height="150px" .center-image }
@@ -41,7 +41,7 @@ Finally, let's have a look at a real-world example.
 
 ![dia sample]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/dia_sample.png){: height="300px" .center-image }
 
-The layout mode is horizontal inside. The top and bottom group just have a middle image, containing the film strip pattern.
+The layout mode here is horizontal inside. The top and bottom group just have a middle image, containing the film strip pattern.
 The left and right group consist of a stretched border texture, and a start and end image to create a nice transition between the two sides of the film strip.
 
 ## Adding dynamic frames
@@ -139,8 +139,8 @@ For static frames each `FrameConfig` takes the following six parameters:
 2. Resource identifier of the frame name, which should be unique. Will not be displayed in the default layout, but is used for accessibility
 3. `Drawable` resource of the icon
 4. `Drawable` resource of the frame
-5. Aspect to which the frame corespond
-6. Group number to identifier a equal frame with different aspect. If the crop aspect changed the unfitting frame are replaced with a frame that fit the aspect and has the same group id.
+5. Aspect ratio to which the frame corresponds
+6. Group number to identifiy an equal frame with different aspect ratios. If the crop aspect changed the unfitting frame are replaced with a frame that fit the aspect and has the same group id.
 
 A static frame configuration could then look like this:
 
