@@ -50,61 +50,78 @@ In order to change the available frames, rearrange or add new frames, start with
 
 > Please make sure you put the PNG files into the `res/raw` **or** the `res/drawable-nodpi` folder, otherwise the frame is scaled by Android.
 
-Each `FrameConfig` takes the following five parameters:
+For dynamic frames each `FrameConfig` takes the following five parameters:
 
 1. Frame identifier, this should be unique. It is currently used for serialization only
 2. Resource identifier of the frame name, which should be unique. Will not be displayed in the default layout, but is used for accessibility
 3. `Drawable` resource or `ImageSource` of the icon
 4. Custom patch model, which describes the 12-patch layout
-5. Frame thickness
+5. Frame thickness, which is between > 0 and 1 \(100%\) 
+
+Each `CustomPatchFrameConfig` takes the following 5 parameters:
+
+1. `FrameLayoutMode`, which describes the orientation \(`HorizontalInside` or `VerticalInside`\)
+2. Top `FrameImagGroup`
+3. Left `FrameImagGroup`
+4. Right `FrameImagGroup`
+5. Bottom `FrameImagGroup`
+
+Each `FrameImageGroup` takes the following 4 parameters:
+
+1. \(Optional\) Start image tile `ImageSource`
+2. Middle tile `ImageSource`
+3. `FrameTileMode` of the middle tile \(`Stretch` or `Repeat`\)
+4. \(Optional\) End image tile `ImageSource`
 
 A dynamic frame configuration could then look like this:
 
 ```java
 //Internal frame
 config.setFrameLists (
-	new FrameConfig(
-   	   "your_unique_frame_ID_1",
-    	R.string.imgly_frame_name_dia,
-    	R.drawable.imgly_frame_dia_thumb,
-    	new CustomPatchFrameConfig(
-            FrameLayoutMode.HorizontalInside,
-            new FrameImageGroup(ImageSource.create(R.drawable.imgly_frame_dia_top), FrameTileMode.Repeat),
-            new FrameImageGroup(
-                    ImageSource.create(R.drawable.imgly_frame_dia_top_left),
-                    ImageSource.create(R.drawable.imgly_frame_dia_left), FrameTileMode.Stretch,
-                    ImageSource.create(R.drawable.imgly_frame_dia_bottom_left)
-            ),
-            new FrameImageGroup(
-                    ImageSource.create(R.drawable.imgly_frame_dia_top_right),
-                    ImageSource.create(R.drawable.imgly_frame_dia_right), FrameTileMode.Stretch,
-                    ImageSource.create(R.drawable.imgly_frame_dia_bottom_right)
-            ),
-            new FrameImageGroup(ImageSource.create(R.drawable.imgly_frame_dia_bottom), FrameTileMode.Repeat)
+  FrameConfig.createNonFrameConfig(R.string.imgly_frame_name_none, R.drawable.imgly_icon_option_frame_none),
+  new FrameConfig(
+    "your_unique_frame_ID_1",
+    R.string.imgly_frame_name_dia,
+    R.drawable.imgly_frame_dia_thumb,
+    new CustomPatchFrameConfig(
+      FrameLayoutMode.HorizontalInside,
+      new FrameImageGroup(ImageSource.create(R.drawable.imgly_frame_dia_top), FrameTileMode.Repeat),
+      new FrameImageGroup(
+        ImageSource.create(R.drawable.imgly_frame_dia_top_left),
+        ImageSource.create(R.drawable.imgly_frame_dia_left), FrameTileMode.Stretch,
+        ImageSource.create(R.drawable.imgly_frame_dia_bottom_left)
+      ),
+      new FrameImageGroup(
+        ImageSource.create(R.drawable.imgly_frame_dia_top_right),
+        ImageSource.create(R.drawable.imgly_frame_dia_right), FrameTileMode.Stretch,
+        ImageSource.create(R.drawable.imgly_frame_dia_bottom_right)
+      ),
+      new FrameImageGroup(ImageSource.create(R.drawable.imgly_frame_dia_bottom), FrameTileMode.Repeat)
     ),
     0.075f
 ));
 
 //External frame
 config.setFrameLists (
-	new FrameConfig(
-   	   "your_unique_frame_ID_2",
-   	   "Your external frame PNG",
-   	   "Your external frame thumb PNG",
-    	new CustomPatchFrameConfig(
-            FrameLayoutMode.VerticalInside,
-            new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top.png")), FrameTileMode.Repeat),
-            new FrameImageGroup(
-              		ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_left.png")),
-              		ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_left.png")), FrameTileMode.Stretch,
-              		ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_left.png"))
-            ),
-            new FrameImageGroup(
-              		ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_right.png")),
-              		ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_right.png")), FrameTileMode.Stretch,
-              		ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_right.png"))
-            ),
-            new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom.png")), FrameTileMode.Repeat)
+  FrameConfig.createNonFrameConfig(R.string.imgly_frame_name_none, R.drawable.imgly_icon_option_frame_none),
+  new FrameConfig(
+    "your_unique_frame_ID_2",
+    "Your external frame PNG",
+    "Your external frame thumb PNG",
+      new CustomPatchFrameConfig(
+        FrameLayoutMode.VerticalInside,
+        new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top.png")), FrameTileMode.Repeat),
+        new FrameImageGroup(
+          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_left.png")),
+          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_left.png")), FrameTileMode.Stretch,
+          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_left.png"))
+        ),
+        new FrameImageGroup(
+          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_right.png")),
+          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_right.png")), FrameTileMode.Stretch,
+          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_right.png"))
+        ),
+        new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom.png")), FrameTileMode.Repeat)
     ),
     0.1f
 ));
@@ -116,21 +133,28 @@ Static frames hold several versions of the assets, i.e. one for each supported r
 
 ## Adding static frames
 
-Each `FrameConfig` takes the following five parameters:
+For static frames each `FrameConfig` takes the following six parameters:
 
 1. Frame identifier, this should be unique. It is currently used for serialization only
 2. Resource identifier of the frame name, which should be unique. Will not be displayed in the default layout, but is used for accessibility
-3. `Drawable` resource or `ImageSource` of the icon
-4. ...
-5. ...
+3. `Drawable` resource of the icon
+4. `Drawable` resource of the frame
+5. Aspect to which the frame corespond
+6. Group number to identifier a equal frame with different aspect. If the crop aspect changed the unfitting frame are replaced with a frame that fit the aspect and has the same group id.
 
 A static frame configuration could then look like this:
 
 ```java
-
-...
-code
-...
-
-
+config.setFrameLists (
+  FrameConfig.createNonFrameConfig(R.string.imgly_frame_name_none, R.drawable.imgly_icon_option_frame_none),
+  new FrameConfig(
+    "your_unique_frame_ID_1",
+    R.string.imgly_frame_name_dia,
+    R.drawable.imgly_frame_dia_thumb,
+    R.drawable.imgly_frame_dia,
+    new CropAspectConfig(16, 9),
+    1
+  ),
+  ...
+);
 ```
