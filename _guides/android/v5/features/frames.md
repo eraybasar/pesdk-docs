@@ -140,7 +140,7 @@ For static frames each `FrameConfig` takes the following six parameters:
 3. `Drawable` resource of the icon
 4. `Drawable` resource of the frame
 5. Aspect ratio to which the frame corresponds
-6. Group number to identifiy an equal frame with different aspect ratios. If the crop aspect changed the unfitting frame are replaced with a frame that fit the aspect and has the same group id.
+6. Group ID to identifiy an equal frame with different aspect ratios. If the crop ratio is changed, the frame will be replaced with a frame that fits the new aspect ratio given that both frames have the same group id.
 
 A static frame configuration could then look like this:
 
