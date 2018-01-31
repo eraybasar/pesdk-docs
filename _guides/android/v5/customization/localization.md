@@ -22,6 +22,10 @@ You can easily add more languages by adding/overwriting string resources.
 
 For more information take a look at the [Developer Guides](http://developer.android.com/guide/topics/resources/localization.html).
 
+## Right-to-left \(RTL\) support
+
+If you use a right-to-left language on a device running Android 4.2 or later, our SDK automatically changes the layout, including layout mirroring.
+
 ## Using the localization editor
 
 Copy and paste the downloaded files (just the files, not the folder) into the `res` folder of your own app. Afterwards, open your project in Android Studio.
