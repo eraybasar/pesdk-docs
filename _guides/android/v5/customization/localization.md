@@ -22,9 +22,9 @@ You can easily add more languages by adding/overwriting string resources.
 
 For more information take a look at the [Developer Guides](http://developer.android.com/guide/topics/resources/localization.html).
 
-## Right-to-left \(RTL\) support
+## Right-to-left \(RTL\) languages
 
-If you use a right-to-left language on a device running Android 4.2 or later, our SDK automatically changes the layout, including layout mirroring.
+If you want to incorporate a right-to-left language on a device running Android 4.2 or later, our SDK automatically mirrors the layout. If you want to test it, all you have to do is change the language on your device to a right-to-left language or turn on the "Force RTL layout" option in [Developer options](https://developer.android.com/studio/debug/dev-options.html#enable).
 
 ## Using the localization editor
 
