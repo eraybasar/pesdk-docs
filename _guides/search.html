@@ -41,7 +41,7 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.1/lunr.min.js"></script>
 <script>
   // Create a map to determine the available versions for a given platform
-  {% assign platforms = "html5|ios|android" | split: "|" %}
+  {% assign platforms = "html5|ios|android|server" | split: "|" %}
   var platformVersionMap = {
     {% for platform in platforms %}
       {% assign guides_by_platform = site.guides | where: "published", true | where: "platform", platform %}
@@ -98,6 +98,8 @@ layout: default
       return 'iOS'
     } else if (platform == 'html5') {
       return 'HTML5'
+    } else if (platform == 'server') {
+      return 'Server'
     }
 
     return ''
@@ -110,8 +112,8 @@ layout: default
   function isVersionEnabled(version) {
     if (activeVersions.indexOf(version) == -1) {
       return false || activeVersions.length == 0
-    } 
-    
+    }
+
     return true
   }
 
@@ -123,7 +125,7 @@ layout: default
     if (activePlatforms.indexOf(platform) == -1) {
       return false || activePlatforms.length == 0
     }
-    
+
     return true
   }
 
@@ -233,7 +235,7 @@ layout: default
 
   /*
    * Initial function that performs the actual search by extracting
-   * the search term from the parameters, downloading the index 
+   * the search term from the parameters, downloading the index
    * JSON and performing the search. The results are stored in the
    * window object.
    */
@@ -250,7 +252,7 @@ layout: default
           return response.json()
       }).then(function(data){
         var documents = data
-        
+
         // Configure lunr and add index
         return lunr(function () {
           this.ref('id')
