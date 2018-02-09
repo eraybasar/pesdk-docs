@@ -29,4 +29,82 @@ The tool is implemented in the `StickerToolController` class and can be customiz
 Stickers are inserted into the SDK using the static property `StickerCategory.all`, which is an array of `StickerCategory` objects.
 A `StickerCategory` object holds the metadata of a sticker category, such as its preview image or the title and has an array of `Sticker` objects,
 which again hold the metadata for a `Sticker`, such as its `imageURL` and `thumbnailURL`. The `Sticker` class can handle local and remote resources.
-Supported formats are jpeg and png.
+Supported formats are jpeg and png
+
+{% capture first_snippet %}
+Swift
+---
+```swift
+var categories = StickerCategory.all
+
+let stickers = [
+  Bundle.main.url(forResource: "glasses_nerd", withExtension: "png"),
+  Bundle.main.url(forResource: "glasses_normal", withExtension: "png"),
+  Bundle.main.url(forResource: "glasses_shutter_green", withExtension: "png"),
+  Bundle.main.url(forResource: "glasses_shutter_yellow", withExtension: "png"),
+  Bundle.main.url(forResource: "glasses_sun", withExtension: "png"),
+  Bundle.main.url(forResource: "hat_cap", withExtension: "png"),
+  Bundle.main.url(forResource: "hat_party", withExtension: "png"),
+  Bundle.main.url(forResource: "hat_scherif", withExtension: "png"),
+  Bundle.main.url(forResource: "hat_zylinder 2", withExtension: "png"),
+  Bundle.main.url(forResource: "heart", withExtension: "png"),
+  Bundle.main.url(forResource: "mustache_long", withExtension: "png"),
+  Bundle.main.url(forResource: "mustache1", withExtension: "png"),
+  Bundle.main.url(forResource: "mustache2", withExtension: "png"),
+  Bundle.main.url(forResource: "mustache3", withExtension: "png"),
+  Bundle.main.url(forResource: "pipe", withExtension: "png"),
+  Bundle.main.url(forResource: "smile", withExtension: "png"),
+  Bundle.main.url(forResource: "snowflake", withExtension: "png"),
+  Bundle.main.url(forResource: "star", withExtension: "png"),
+  Bundle.main.url(forResource: "teardrop", withExtension: "png")
+].flatMap { $0.map { Sticker(imageURL: $0, thumbnailURL: nil, identifier: $0.path) } }
+
+if let previewURL = Bundle.main.url(forResource: "face_decor", withExtension: "png") {
+  categories.append(StickerCategory(title: "Oldschool", imageURL: previewURL, stickers: stickers))
+}
+
+StickerCategory.all = categories
+```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+NSMutableArray<PESDKStickerCategory *> *categories = [[PESDKStickerCategory all] mutableCopy];
+
+NSArray<NSURL *> *stickerURLs = @[
+  [[NSBundle mainBundle] URLForResource:@"glasses_nerd" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"glasses_normal" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"glasses_shutter_green" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"glasses_shutter_yellow" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"glasses_sun" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"hat_cap" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"hat_party" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"hat_scherif" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"hat_zylinder 2" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"heart" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"mustache_long" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"mustache1" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"mustache2" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"mustache3" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"pipe" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"smile" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"snowflake" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"star" withExtension:@"png"],
+  [[NSBundle mainBundle] URLForResource:@"teardrop" withExtension:@"png"]
+];
+
+NSMutableArray<PESDKSticker *> *stickers = [[NSMutableArray alloc] init];
+for (NSURL *stickerURL in stickerURLs) {
+  [stickers addObject:[[PESDKSticker alloc] initWithImageURL:stickerURL thumbnailURL:nil identifier:stickerURL.path]];
+}
+
+[categories addObject:[[PESDKStickerCategory alloc] initWithTitle:@"Oldschool" imageURL:[[NSBundle mainBundle] URLForResource:@"face_decor" withExtension:@"png"] stickers:stickers]];
+PESDKStickerCategory.all = [categories copy];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ADDSTICKERS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
