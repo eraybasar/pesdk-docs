@@ -146,11 +146,12 @@ DesktopUI
     <!-- React Dependencies for the SDK UI -->
     <script src="js/vendor/react.min.js"></script>
     <script src="js/vendor/react-dom.min.js"></script>
+    <script src="js/vendor/prop-types.min.js"></script>
     <!-- PhotoEditor SDK-->
     <script src="js/PhotoEditorSDK.min.js"></script>
     <!-- PhotoEditor SDK UI -->
-    <script src="js/PhotoEditorDesktopUI.min.js"></script>
-    <link rel="stylesheet" href="css/PhotoEditorDesktopUI.min.css" />
+    <script src="js/PhotoEditorSDK.UI.DesktopUI.min.js"></script>
+    <link rel="stylesheet" href="css/PhotoEditorSDK.UI.DesktopUI.min.css" />
   </head>
 
   <body>
@@ -180,13 +181,14 @@ ReactUI
 <html>
   <head>
     <!-- React Dependencies for the SDK UI -->
-    <script src="js/vendor/react.min.js"></script>
-    <script src="js/vendor/react-dom.min.js"></script>
+    <script src="js/vendor/react.production.min.js"></script>
+    <script src="js/vendor/react-dom.production.min.js"></script>
+    <script src="js/vendor/prop-types.min.js"></script>
     <!-- PhotoEditor SDK-->
     <script src="js/PhotoEditorSDK.min.js"></script>
     <!-- PhotoEditor SDK UI -->
-    <script src="js/PhotoEditorReactUI.min.js"></script>
-    <link rel="stylesheet" href="css/PhotoEditorReactUI.min.css" />
+    <script src="js/PhotoEditor.UI.ReactUI.min.js"></script>
+    <link rel="stylesheet" href="css/PhotoEditorSDK.UI.ReactUI.min.css" />
   </head>
 
   <body>
