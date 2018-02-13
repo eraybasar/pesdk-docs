@@ -52,10 +52,10 @@ DesktopUI
   <script src="js/vendor/react.min.js"></script>
   <script src="js/vendor/react-dom.min.js"></script>
   <!-- PhotoEditor SDK-->
-  <script src="js/PhotoEditorSDK.js"></script>
+  <script src="js/PhotoEditorSDK.min.js"></script>
   <!-- PhotoEditor SDK UI -->
-  <script src="js/PhotoEditorSDK.UI.DesktopUI.js"></script>
-  <link rel="stylesheet" href="css/PhotoEditorSDK.UI.DesktopUI.css" />
+  <script src="js/PhotoEditorSDK.UI.DesktopUI.min.js"></script>
+  <link rel="stylesheet" href="css/PhotoEditorSDK.UI.DesktopUI.min.css" />
 </head>
 ```
 {% endcapture %}
