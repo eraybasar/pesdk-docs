@@ -15,16 +15,30 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
+Install required dependencies via platform package manager
+
+### Mac OSX
+```shell
+$ xcode-select --install
+$ brew install libtiff jpeg libpng cairo libsvg librsvg giflib pango node
+```
+
+### Ubuntu
+```shell
+$ sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+```
+
 Install the [latest release](https://github.com/imgly/pesdk-server-build/releases/latest) via `npm`:
 
 ```bash
-  npm install -s photoeditorsdk-server
+  # Install PhotoEditorSDK Server/Node
+  npm install photoeditorsdk-server
   # or
   npm install -s git+https://git@github.com/imgly/photoeditorsdk-server-build.git
 ```
 
 The npm package comes with the Server SDK and all its assets included.
-However, you need to copy the asset folder from the npm package to any folder that is accessible to your code (e.g. `assets`).
+Depending on your setup, you need to copy the asset folder from the npm package to any folder that is accessible to your code (e.g. `assets`).
 
 ```bash
   cp -r node_modules/photoeditorsdk-server/assets assets
@@ -36,79 +50,62 @@ Next, the sdk needs to be loaded and initialized:
 NodeJS
 ---
 ```js
-const PhotoEditorServer = require('photoeditorsdk-server') // require the sdk
+const PesdkServer = require('photoeditorsdk-server') // require the sdk
 
-const pesdkServer = new PhotoEditorServer({
+const pesdkServer = new PesdkServer({
   license: 'YOUR_LICENSE', // <-- Please replace this with your license. Please make sure this is in *string* format, not *object*.
   editor: {
-    preferredRenderer: 'webgl',
+    preferredRenderer: 'webgl', // or 'canvas'
     export: {
       format: 'image/jpeg',
-      type: PhotoEditorServer.SDK.RenderType.BUFFER
+      type: PesdkServer.SDK.RenderType.BUFFER
     }
   },
   assets: {
-    baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
+    baseUrl: '../node_modules/photoeditorsdk-server/assets' // <-- This should be the absolute path to your `assets` directory
   }
-
 })
-```
-{% endcapture %}
 
-After the SDK was successfully initialized, the server sdk can be used to render the image from a `serialization`.
-
-{% assign snippets = "" | split: "" | push: first_snippet %}
-{% capture identifier %}{{page.title}}-{{page.version}}-SNIPPET-01{% endcapture %}
-{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
-
-{% capture first_snippet %}
-NodeJS
----
-```js
-const serialization = {
-  "version": "3.0.0",
-  "operations": [
+// example that converts the image to black and white
+const configuration = {
+  'version': '3.0.0',
+  'operations': [
     {
-      "type": "filter",
-      "options": {
-        "intensity": 1,
-        "identifier": "imgly_lut_bw"
+      'type': 'filter',
+      'options': {
+        'intensity': 1,
+        'identifier': 'imgly_lut_bw'
       }
     }
-  ],
-  "meta": {
-    "platform": "html5",
-    "version": "4.2.0",
-    "createdAt": "2018-01-30T12:43:59Z"
-  },
-  "image": {}
+  ]
 }
 
-/** Variant 1: Load image data and call #setImage directly **/
-const result = PhotoEditorServer.ImageLoader.load('URI TO INPUT IMAGE')
+/** Variant 1: Load image data and call PesdkServer#setImage directly **/
+const result = PesdkServer.ImageLoader.load('URI TO INPUT IMAGE')
   .then((inputImage) => {
     pesdkServer.setImage(inputImage)
-    pesdkServer.render(serialization) // Apply the serialization to the input image
+    pesdkServer.render(configuration) // Apply the serialization to the input image
   })
 
-
 /** Variant 2: Update image uri in serialization file **/
-serialization.image |= {}
-serialization.image.uri = 'URI TO INPUT IMAGE'
-const result = pesdkServer.render(serialization) // Apply the serialization to the input image
-
+// serialization.image |= {}
+// serialization.image.uri = 'URI TO INPUT IMAGE'
+// const result = pesdkServer.render(serialization, uri) // Apply the serialization to the input image
 
 // Finally wait for the promise to be resolved and process the resulting output image buffer
 result.then((outputImageBuffer) => {
-    console.log('Done!')
-  }).catch((e) => {
-    console.log(e)
-  })
+  // do Something with the image data. e.g. write to file
+  console.log('Done!')
+}).catch((e) => {
+  console.log(e)
+})
+
 ```
 {% endcapture %}
 
 {% assign snippets = "" | split: "" | push: first_snippet %}
-{% capture identifier %}{{page.title}}-{{page.version}}-SNIPPET-02{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-Starting here you can use the SDK in any NodeJS server application.
+
+Starting here you can use the SDK in any NodeJS application. For more examples please take a look at the `examples` directory in our [GitHub repository](https://github.com/imgly/pesdk-server-build).
