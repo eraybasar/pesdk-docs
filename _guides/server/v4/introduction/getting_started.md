@@ -34,7 +34,7 @@ Install the [latest release](https://github.com/imgly/pesdk-server-build/release
   # Install PhotoEditorSDK Server/Node
   npm install photoeditorsdk-server
   # or
-  npm install -s git+https://git@github.com/imgly/photoeditorsdk-server-build.git
+  npm install -s git+https://git@github.com/imgly/pesdk-server-build.git
 ```
 
 The npm package comes with the Server SDK and all its assets included.
