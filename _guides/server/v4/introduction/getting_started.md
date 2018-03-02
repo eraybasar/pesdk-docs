@@ -90,7 +90,7 @@ const result = PesdkServer.ImageLoader.load('URI TO INPUT IMAGE')
 /** Variant 2: Update image uri in serialization file **/
 // serialization.image |= {}
 // serialization.image.uri = 'URI TO INPUT IMAGE'
-// const result = pesdkServer.render(serialization, uri) // Apply the serialization to the input image
+// const result = pesdkServer.render(serialization) // Apply the serialization to the input image
 
 // Finally wait for the promise to be resolved and process the resulting output image buffer
 result.then((outputImageBuffer) => {
