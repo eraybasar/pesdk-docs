@@ -51,6 +51,7 @@ function createIFrameWithCode (element, html) {
 	iframe.contentWindow.document.open()
 	iframe.contentWindow.document.write(html)
 	iframe.contentWindow.document.close()
+	return iframe
 }
 
 function createPESDKIFrame (element, code = '', baseurl = 'http://static.photoeditorsdk.com/demo/') {
@@ -81,5 +82,5 @@ function createPESDKIFrame (element, code = '', baseurl = 'http://static.photoed
 </html>
 	`
 
-	createIFrameWithCode(element, html)
+	return { iframe: createIFrameWithCode(element, html), code: html }
 }

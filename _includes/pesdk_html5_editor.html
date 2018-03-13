@@ -3,7 +3,7 @@
   <div id="{{ include.identifier }}" style="width: 92%; height: 540px; margin: 0 auto" ></div>
   <div id="monaco-{{ include.identifier }}" style="width: 92%; height: 500px; margin: 0 auto"></div>
   <div id="refresh-button-{{ include.identifier }}" class="btn-round" style="position: absolute;
-  bottom: 10px;
+  bottom: 80px;
   right: 52px;">
   <i class="fas fa-sync" style="display: inline-block;
     font-size: 28px;
@@ -13,6 +13,7 @@
     color: white;
     text-align: center;
     vertical-align: bottom;"></i></div>
+    <button class="documentation__gray-button" style="margin: 10px 30px; font-size: 12px; width: 25%" id="view-source-{{ include.identifier }}">View full source-code</button>
 </div>
 <script src="{{ site.baseurl }}/assets/monaco-editor/min/vs/loader.js"></script>
 <script>
@@ -20,7 +21,10 @@
     const element = document.getElementById('{{ include.identifier }}')
     const code = `{{ include.code }}`
 
-    createPESDKIFrame(element, code)
+    let res = createPESDKIFrame(element, code)
+
+    let iframe = res.iframe
+    let sourceCode = res.code
 
     require.config({ paths: { 'vs': '{{ site.baseurl }}/assets/monaco-editor/min/vs' }});
 
@@ -44,9 +48,46 @@
           refreshButton.addEventListener('click', () => {
             let value = editor.getValue()
             console.log(value)
-            createPESDKIFrame(element, value)
+            let res = createPESDKIFrame(element, value)
+            iframe = res.iframe
+            sourceCode = res.code
           })
         }
+
+        var entityMap = {
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;',
+          '/': '&#x2F;',
+          '`': '&#x60;',
+          '=': '&#x3D;'
+        };
+
+        function escapeHtml (string) {
+          return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+            return entityMap[s];
+          });
+        }
+
+        let sourceButton = document.getElementById("view-source-{{ include.identifier }}")
+        sourceButton.addEventListener('click', () => {
+          var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840))
+          let body = iframe ? iframe.contentWindow.document.body.innerHTML : 'Error retrieving source-code'
+          let head = iframe ? iframe.contentWindow.document.head.innerHTML : 'Error retrieving source-code'
+          let code = `
+          <head>
+            ${head}
+          </head>
+          <body>
+            ${body}
+          </body>
+          `
+          win.document.body.innerHTML = `
+          <pre>${escapeHtml(sourceCode)}</pre>
+          `
+        })
 
     })
   })
