@@ -1,0 +1,53 @@
+
+<div style="position: relative">
+  <div id="{{ include.identifier }}" style="width: 92%; height: 540px; margin: 0 auto" ></div>
+  <div id="monaco-{{ include.identifier }}" style="width: 92%; height: 500px; margin: 0 auto"></div>
+  <div id="refresh-button-{{ include.identifier }}" class="btn-round" style="position: absolute;
+  bottom: 10px;
+  right: 52px;">
+  <i class="fas fa-sync" style="display: inline-block;
+    font-size: 28px;
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    color: white;
+    text-align: center;
+    vertical-align: bottom;"></i></div>
+</div>
+<script src="{{ site.baseurl }}/assets/monaco-editor/min/vs/loader.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const element = document.getElementById('{{ include.identifier }}')
+    const code = `{{ include.code }}`
+
+    createPESDKIFrame(element, code)
+
+    require.config({ paths: { 'vs': '{{ site.baseurl }}/assets/monaco-editor/min/vs' }});
+
+    require(['vs/editor/editor.main'], function() {
+        var editor = monaco.editor.create(document.getElementById('monaco-{{ include.identifier }}'), {
+            value: code,
+            theme: "vs-dark",
+            scrollBeyondLastLine: false,
+            language: 'javascript',
+            minimap: {
+		          enabled: false
+	          }
+        })
+
+        window.addEventListener('resize', () => {
+          editor.layout()
+        })
+
+        let refreshButton = document.getElementById("refresh-button-{{ include.identifier }}")
+        if (refreshButton) {
+          refreshButton.addEventListener('click', () => {
+            let value = editor.getValue()
+            console.log(value)
+            createPESDKIFrame(element, value)
+          })
+        }
+
+    })
+  })
+</script>

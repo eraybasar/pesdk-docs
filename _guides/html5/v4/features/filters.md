@@ -16,6 +16,7 @@ published: true # Either published or not
 ---
 <!-- ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg){: .center-image style="padding: 20px; max-height: 400px;"} -->
 
+
 {% capture image_desktop %}
 {{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg
 {% endcapture %}
@@ -50,21 +51,23 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    filters: {
-      categories: [
-        {
-          identifier: 'my_category', // A unique identifier for this filter category
-          defaultName: 'My Category', // The default translation for this filter category
-          filters: [
-            {
-              identifier: 'my_custom_lut', // A unique identifier for this filter
-              defaultName: 'Custom LUT', // The default translation for this filter
-              lutImage: 'filters/my_custom_lut.png' // The path to the LUT image
-            }
-          ]
-        }
-      ]
+  editor: {
+    controlsOptions: {
+      filter: {
+        categories: [
+          {
+            identifier: 'my_category', // A unique identifier for this filter category
+            defaultName: 'My Category', // The default translation for this filter category
+            filters: [
+              {
+                identifier: 'my_custom_lut', // A unique identifier for this filter
+                defaultName: 'Custom LUT', // The default translation for this filter
+                lutImage: 'filters/my_custom_lut.png' // The path to the LUT image
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -76,21 +79,23 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    filters: {
-      categories: [
-        {
-          identifier: 'my_category', // A unique identifier for this filter category
-          defaultName: 'My Category', // The default translation for this filter category
-          filters: [
-            {
-              identifier: 'my_custom_lut', // A unique identifier for this filter
-              defaultName: 'Custom LUT', // The default translation for this filter
-              lutImage: 'filters/my_custom_lut.png' // The path to the LUT image
-            }
-          ]
-        }
-      ]
+  editor: {
+    controlsOptions: {
+      filter: {
+        categories: [
+          {
+            identifier: 'my_category', // A unique identifier for this filter category
+            defaultName: 'My Category', // The default translation for this filter category
+            filters: [
+              {
+                identifier: 'my_custom_lut', // A unique identifier for this filter
+                defaultName: 'Custom LUT', // The default translation for this filter
+                lutImage: 'filters/my_custom_lut.png' // The path to the LUT image
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -110,9 +115,11 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    filter: {
-      availableFilters: ['imgly_lut_ad1920', 'imgly_lut_blues']
+  editor: {
+    controlsOptions: {
+      filter: {
+        availableFilters: ['imgly_lut_ad1920', 'imgly_lut_blues']
+      }
     }
   }
 })
@@ -124,9 +131,11 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    filter: {
-      availableFilters: ['imgly_lut_ad1920', 'imgly_lut_blues']
+  editor: {
+    controlsOptions: {
+      filter: {
+        availableFilters: ['imgly_lut_ad1920', 'imgly_lut_blues']
+      }
     }
   }
 })
@@ -186,3 +195,58 @@ Same goes for the category name, the localization key for this is `controls.filt
   }
 }
 ```
+
+### Interactive Example
+
+Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
+
+{% capture code %}
+window.onload = function () {
+        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
+          .then((image) => {
+            let container = document.getElementById('editor')
+            let options = {
+              container: container,
+              license: PESDK_LICENSE_STRING,
+              editor: {
+                image: image,
+                controlsOptions: {
+                  filter: {
+                    categories: [
+                      {
+                        identifier: 'my_category',
+                        defaultName: 'My Category',
+                        filters: [
+                          {
+                            identifier: 'my_custom_lut',
+                            defaultName: 'Custom LUT',
+                            lutImage: 'filters/imgly_lut_bleachedblue_5_5_128.png'
+                          },
+                          {
+                            identifier: 'my_other_custom_lut',
+                            defaultName: 'Other Custom LUT',
+                            lutImage: 'filters/imgly_lut_blues_5_5_128.png'
+                          },
+                          {
+                            identifier: 'my_third_custom_lut',
+                            defaultName: 'Third Custom LUT',
+                            lutImage: 'filters/imgly_lut_orchid_5_5_128.png'
+                          }
+                        ]
+                      }
+                    ],
+                    replaceCategories: true,
+                    availableFilters: ['my_custom_lut', 'my_third_custom_lut']
+                  }
+                }
+              },
+              assets: {
+                baseUrl: PESDK_ASSETS_URL
+              }
+            }
+            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
+        })
+      }
+{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
+{% include pesdk_html5_editor.html code=code identifier=identifier %}
