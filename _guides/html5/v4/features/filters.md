@@ -196,7 +196,7 @@ Same goes for the category name, the localization key for this is `controls.filt
 }
 ```
 
-### Interactive Example
+## Interactive Example
 
 Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
 

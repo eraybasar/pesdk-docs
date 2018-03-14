@@ -47,7 +47,6 @@
         if (refreshButton) {
           refreshButton.addEventListener('click', () => {
             let value = editor.getValue()
-            console.log(value)
             let res = createPESDKIFrame(element, value)
             iframe = res.iframe
             sourceCode = res.code

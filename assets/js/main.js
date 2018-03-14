@@ -1,5 +1,4 @@
 $(window).ready(function () {
-	console.log('Ahhhhhhh!', $('.image-carousel'))
   const toggle = $('.js-toggle-navigation')
   const navigation = $('.js-navigation')
   toggle.click(() => {

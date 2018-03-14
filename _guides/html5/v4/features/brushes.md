@@ -37,11 +37,13 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    brush: {
-      sizePresets: [
-        0.01, 0.02, 0.03, 0.05, 0.1
-      ]
+  editor: {
+    controlsOptions: {
+      brush: {
+        sizePresets: [
+          0.01, 0.02, 0.03, 0.05, 0.1
+        ]
+      }
     }
   }
 })

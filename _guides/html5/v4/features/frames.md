@@ -51,42 +51,53 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    frame: {
-      frames: [
-        {
-          identifier: 'dia',
-          defaultName: 'Dia',
-          layoutMode: 'horizontal-inside',
-          thumbnail: 'frames/dia/icon.png',
-          imageGroups: {
-            top: {
-              mid: {
-                image: 'frames/dia/dia_top.png',
-                mode: 'repeat'
+  editor: {
+    controlsOptions: {
+      frame: {
+        categories: [
+          {
+            identifier: 'imgly_frame_generic',
+            defaultName: 'Generic',
+            metaData: {
+              backgroundImage: 'frames/generic.png' // Not used yet
+            },
+            frames: [
+              {
+                identifier: 'dia',
+                defaultName: 'Dia',
+                layoutMode: 'horizontal-inside',
+                thumbnail: 'frames/dia/icon.png',
+                imageGroups: {
+                  top: {
+                    mid: {
+                      image: 'frames/dia/dia_top.png',
+                      mode: 'repeat'
+                    }
+                  },
+                  left: {
+                    start: 'frames/dia/dia_top_left.png',
+                    mid: 'frames/dia/dia_left.png',
+                    end: 'frames/dia/dia_bottom_left.png'
+                  },
+                  right: {
+                    start: 'frames/dia/dia_top_right.png',
+                    mid: 'frames/dia/dia_right.png',
+                    end: 'frames/dia/dia_bottom_right.png'
+                  },
+                  bottom: {
+                    mid: {
+                      image: 'frames/dia/dia_bottom.png',
+                      mode: 'repeat'
+                    }
+                  }
+                }
               }
-            },
-            left: {
-              start: 'frames/dia/dia_top_left.png',
-              mid: 'frames/dia/dia_left.png',
-              end: 'frames/dia/dia_bottom_left.png'
-            },
-            right: {
-              start: 'frames/dia/dia_top_right.png',
-              mid: 'frames/dia/dia_right.png',
-              end: 'frames/dia/dia_bottom_right.png'
-            },
-            bottom: {
-              mid: {
-                image: 'frames/dia/dia_bottom.png',
-                mode: 'repeat'
-              }
-            }
+            ]
           }
-        }
-      ],
-      replaceFrames: false, // Specifies whether `frames` should replace all existing frames
-      availableFrames: ['dia'] // Only enables our new frame. Leave this out to enable all frames.
+        ],
+        replaceCategories: false,
+        availableFrames: ['dia']
+      }
     }
   }
 })
@@ -98,42 +109,53 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    frame: {
-      frames: [
-        {
-          identifier: 'dia',
-          defaultName: 'Dia',
-          layoutMode: 'horizontal-inside',
-          thumbnail: 'frames/dia/icon.png',
-          imageGroups: {
-            top: {
-              mid: {
-                image: 'frames/dia/dia_top.png',
-                mode: 'repeat'
+  editor: {
+    controlsOptions: {
+      frame: {
+        categories: [
+          {
+            identifier: 'imgly_frame_generic',
+            defaultName: 'Generic',
+            metaData: {
+              backgroundImage: 'frames/generic.png' // Not used yet
+            },
+            frames: [
+              {
+                identifier: 'dia',
+                defaultName: 'Dia',
+                layoutMode: 'horizontal-inside',
+                thumbnail: 'frames/dia/icon.png',
+                imageGroups: {
+                  top: {
+                    mid: {
+                      image: 'frames/dia/dia_top.png',
+                      mode: 'repeat'
+                    }
+                  },
+                  left: {
+                    start: 'frames/dia/dia_top_left.png',
+                    mid: 'frames/dia/dia_left.png',
+                    end: 'frames/dia/dia_bottom_left.png'
+                  },
+                  right: {
+                    start: 'frames/dia/dia_top_right.png',
+                    mid: 'frames/dia/dia_right.png',
+                    end: 'frames/dia/dia_bottom_right.png'
+                  },
+                  bottom: {
+                    mid: {
+                      image: 'frames/dia/dia_bottom.png',
+                      mode: 'repeat'
+                    }
+                  }
+                }
               }
-            },
-            left: {
-              start: 'frames/dia/dia_top_left.png',
-              mid: 'frames/dia/dia_left.png',
-              end: 'frames/dia/dia_bottom_left.png'
-            },
-            right: {
-              start: 'frames/dia/dia_top_right.png',
-              mid: 'frames/dia/dia_right.png',
-              end: 'frames/dia/dia_bottom_right.png'
-            },
-            bottom: {
-              mid: {
-                image: 'frames/dia/dia_bottom.png',
-                mode: 'repeat'
-              }
-            }
+            ]
           }
-        }
-      ],
-      replaceFrames: false, // Specifies whether `frames` should replace all existing frames
-      availableFrames: ['dia'] // Only enables our new frame. Leave this out to enable all frames.
+        ],
+        replaceCategories: false,
+        availableFrames: ['dia']
+      }
     }
   }
 })
@@ -143,3 +165,34 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 {% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Interactive Example
+
+Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
+
+{% capture code %}
+window.onload = function () {
+        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
+          .then((image) => {
+            let container = document.getElementById('editor')
+            let options = {
+              container: container,
+              license: PESDK_LICENSE_STRING,
+              editor: {
+                image: image,
+                controlsOptions: {
+                  frame: {
+                    availableFrames: ['imgly_frame_dia']
+                  }
+                }
+              },
+              assets: {
+                baseUrl: PESDK_ASSETS_URL
+              }
+            }
+            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
+        })
+      }
+{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
+{% include pesdk_html5_editor.html code=code identifier=identifier %}

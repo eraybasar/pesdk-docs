@@ -15,7 +15,8 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-Since version 3.5.0 you can force users to use certain controls before using all other editor
+
+Since version 3.5.0 of ReactUI you can force users to use certain controls before using all other editor
 functions. In order to do that, you need to pass the `editor.forceControls` option which contains
 an array of objects in the following format:
 
@@ -27,32 +28,3 @@ an array of objects in the following format:
   }
 }
 ```
-
-## Example: Force crop
-
-In order to force a user to crop the input image to a square image, pass the following options:
-
-{% capture second_snippet %}
-ReactUI
----
-```js
-var editor = new PhotoEditorSDK.UI.ReactUI({
-  editor: {
-    forceControls: [
-      {
-        control: "crop",
-        options: {
-          ratios: [
-            { name: "square", ratio: 1 }
-          ]
-        }
-      }
-    ]
-  }
-})
-```
-{% endcapture %}
-
-{% assign snippets = "" | split: "" | push: second_snippet %}
-{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
-{% include multilingual_code_block.html snippets=snippets identifier=identifier %}

@@ -49,30 +49,32 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    text: {
-      fonts: [
-        {
-          fontFamily: 'Comic Sans MS', // The font family name
-          variations: [
-            {
-              identifier: 'comicsans_regular',
-              textMetrics: { // For best rendering, you'll need to determine the metrics manually
-                unitsPerEm: 1000,
-                ascender: 1026,
-                descender: -432
+  editor: {
+    controlsOptions: {
+      text: {
+        fonts: [
+          {
+            fontFamily: 'Comic Sans MS', // The font family name
+            variations: [
+              {
+                identifier: 'comicsans_regular',
+                textMetrics: { // For best rendering, you'll need to determine the metrics manually
+                  unitsPerEm: 1000,
+                  ascender: 1026,
+                  descender: -432
+                }
+              },
+              {
+                identifier: 'comicsans_bold',
+                fontWeight: 'bold',
+                textMetrics: {
+                  //...
+                }
               }
-            },
-            {
-              identifier: 'comicsans_bold',
-              fontWeight: 'bold',
-              textMetrics: {
-                //...
-              }
-            }
-          ]
-        }
-      ]
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -84,30 +86,32 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    text: {
-      fonts: [
-        {
-          fontFamily: 'Comic Sans MS', // The font family name
-          variations: [
-            {
-              identifier: 'comicsans_regular',
-              textMetrics: { // For best rendering, you'll need to determine the metrics manually
-                unitsPerEm: 1000,
-                ascender: 1026,
-                descender: -432
+  editor: {
+    controlsOptions: {
+      text: {
+        fonts: [
+          {
+            fontFamily: 'Comic Sans MS', // The font family name
+            variations: [
+              {
+                identifier: 'comicsans_regular',
+                textMetrics: { // For best rendering, you'll need to determine the metrics manually
+                  unitsPerEm: 1000,
+                  ascender: 1026,
+                  descender: -432
+                }
+              },
+              {
+                identifier: 'comicsans_bold',
+                fontWeight: 'bold',
+                textMetrics: {
+                  //...
+                }
               }
-            },
-            {
-              identifier: 'comicsans_bold',
-              fontWeight: 'bold',
-              textMetrics: {
-                //...
-              }
-            }
-          ]
-        }
-      ]
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -127,24 +131,26 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    text: {
-      fonts: [
-        {
-          fontFamily: 'Shrikhand', // The font family name, defined by Google Fonts
-          variations: [
-            {
-              identifier: 'shrikhand',
-              provider: 'google',  // This loads the font from Google Fonts
-              textMetrics: { // For best rendering, you'll need to determine the metrics manually
-                unitsPerEm: 1000,
-                ascender: 1026,
-                descender: -432
+  editor: {
+    controlsOptions: {
+      text: {
+        fonts: [
+          {
+            fontFamily: 'Shrikhand', // The font family name, defined by Google Fonts
+            variations: [
+              {
+                identifier: 'shrikhand',
+                provider: 'google',  // This loads the font from Google Fonts
+                textMetrics: { // For best rendering, you'll need to determine the metrics manually
+                  unitsPerEm: 1000,
+                  ascender: 1026,
+                  descender: -432
+                }
               }
-            }
-          ]
-        }
-      ]
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -156,24 +162,26 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    text: {
-      fonts: [
-        {
-          fontFamily: 'Shrikhand', // The font family name, defined by Google Fonts
-          variations: [
-            {
-              identifier: 'shrikhand',
-              provider: 'google',  // This loads the font from Google Fonts
-              textMetrics: { // For best rendering, you'll need to determine the metrics manually
-                unitsPerEm: 1000,
-                ascender: 1026,
-                descender: -432
+  editor: {
+    controlsOptions: {
+      text: {
+        fonts: [
+          {
+            fontFamily: 'Shrikhand', // The font family name, defined by Google Fonts
+            variations: [
+              {
+                identifier: 'shrikhand',
+                provider: 'google',  // This loads the font from Google Fonts
+                textMetrics: { // For best rendering, you'll need to determine the metrics manually
+                  unitsPerEm: 1000,
+                  ascender: 1026,
+                  descender: -432
+                }
               }
-            }
-          ]
-        }
-      ]
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -193,25 +201,27 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    text: {
-      fonts: [
-        {
-          fontFamily: 'Custom Font', // The font family name, defined by you. Can be anything.
-          variations: [
-            {
-              identifier: 'custom_font', // A unique identifier for this font
-              provider: 'file',
-              filePath: 'fonts/Custom-Font.woff',
-              textMetrics: {
-                unitsPerEm: 2048,
-                ascender: 500,
-                descender: -400
+  editor: {
+    controlsOptions: {
+      text: {
+        fonts: [
+          {
+            fontFamily: 'Custom Font', // The font family name, defined by you. Can be anything.
+            variations: [
+              {
+                identifier: 'custom_font', // A unique identifier for this font
+                provider: 'file',
+                filePath: 'fonts/Custom-Font.woff',
+                textMetrics: {
+                  unitsPerEm: 2048,
+                  ascender: 500,
+                  descender: -400
+                }
               }
-            }
-          ]
-        }
-      ]
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -223,25 +233,27 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    text: {
-      fonts: [
-        {
-          fontFamily: 'Custom Font', // The font family name, defined by you. Can be anything.
-          variations: [
-            {
-              identifier: 'custom_font', // A unique identifier for this font
-              provider: 'file',
-              filePath: 'fonts/Custom-Font.woff',
-              textMetrics: {
-                unitsPerEm: 2048,
-                ascender: 500,
-                descender: -400
+  editor: {
+    controlsOptions: {
+      text: {
+        fonts: [
+          {
+            fontFamily: 'Custom Font', // The font family name, defined by you. Can be anything.
+            variations: [
+              {
+                identifier: 'custom_font', // A unique identifier for this font
+                provider: 'file',
+                filePath: 'fonts/Custom-Font.woff',
+                textMetrics: {
+                  unitsPerEm: 2048,
+                  ascender: 500,
+                  descender: -400
+                }
               }
-            }
-          ]
-        }
-      ]
+            ]
+          }
+        ]
+      }
     }
   }
 })
@@ -261,13 +273,15 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    text: {
-      availableVariations: [
-        'imgly_font_aleo_bold',
-        'imgly_font_amaticsc',
-        'custom_font'
-      ]
+  editor: {
+    controlsOptions: {
+      text: {
+        availableVariations: [
+          'imgly_font_aleo_bold',
+          'imgly_font_amaticsc',
+          'custom_font'
+        ]
+      }
     }
   }
 })
@@ -279,13 +293,15 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    text: {
-      availableVariations: [
-        'imgly_font_aleo_bold',
-        'imgly_font_amaticsc',
-        'custom_font'
-      ]
+  editor: {
+    controlsOptions: {
+      text: {
+        availableVariations: [
+          'imgly_font_aleo_bold',
+          'imgly_font_amaticsc',
+          'custom_font'
+        ]
+      }
     }
   }
 })
@@ -305,13 +321,15 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    text: {
-      // This value defines at what degrees rotation snapping should happen
-      snapRotation: 90,
+  editor: {
+    controlsOptions: {
+      text: {
+        // This value defines at what degrees rotation snapping should happen
+        snapRotation: 90,
 
-      // This value defines at what degrees *around* the `snapRotation` value snapping should happen
-      snapRotationTolerance: 5
+        // This value defines at what degrees *around* the `snapRotation` value snapping should happen
+        snapRotationTolerance: 5
+      }
     }
   }
 })
@@ -323,13 +341,15 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    text: {
-      // This value defines at what degrees rotation snapping should happen
-      snapRotation: 90,
+  editor: {
+    controlsOptions: {
+      text: {
+        // This value defines at what degrees rotation snapping should happen
+        snapRotation: 90,
 
-      // This value defines at what degrees *around* the `snapRotation` value snapping should happen
-      snapRotationTolerance: 5
+        // This value defines at what degrees *around* the `snapRotation` value snapping should happen
+        snapRotationTolerance: 5
+      }
     }
   }
 })
@@ -339,3 +359,49 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 {% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-05{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Interactive Example
+
+Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
+
+{% capture code %}
+window.onload = function () {
+        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
+          .then((image) => {
+            let container = document.getElementById('editor')
+            let options = {
+              container: container,
+              license: PESDK_LICENSE_STRING,
+              editor: {
+                image: image,
+                controlsOptions: {
+                  text: {
+                    fonts: [
+                      {
+                        fontFamily: 'Shrikhand', // The font family name, defined by Google Fonts
+                        variations: [
+                          {
+                            identifier: 'shrikhand',
+                            provider: 'google',  // This loads the font from Google Fonts
+                            textMetrics: { // For best rendering, you'll need to determine the metrics manually
+                              unitsPerEm: 1000,
+                              ascender: 1026,
+                              descender: -432
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              assets: {
+                baseUrl: PESDK_ASSETS_URL
+              }
+            }
+            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
+        })
+      }
+{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
+{% include pesdk_html5_editor.html code=code identifier=identifier %}
