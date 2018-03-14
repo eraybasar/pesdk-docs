@@ -207,6 +207,9 @@ ReactUI
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS03{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
+
+{% comment %}
+
 ## Interactive Example
 
 Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
@@ -252,3 +255,5 @@ window.onload = function () {
 {% endcapture %}
 {% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
 {% include pesdk_html5_editor.html code=code identifier=identifier %}
+
+{% endcomment %}

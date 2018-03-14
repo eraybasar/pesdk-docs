@@ -56,6 +56,8 @@ If you set the `replaceOverlays` option to `true`, only your own overlays will b
 
 The default identifiers are: `imgly_overlay_golden`, `imgly_overlay_bokeh`, `imgly_overlay_hearts`, `imgly_overlay_lightleak1`, `imgly_overlay_lightleak2`, `imgly_overlay_rain`, `imgly_overlay_wood`, `imgly_overlay_mosaic`, `imgly_overlay_chop`, `imgly_overlay_vintage`, `imgly_overlay_metal`, `imgly_overlay_paper`, `imgly_overlay_painting`, `imgly_overlay_grain`, `imgly_overlay_clouds`, `imgly_overlay_wall1` and `imgly_overlay_wall2`
 
+{% comment %}
+
 ## Interactive Example
 
 Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
@@ -96,3 +98,5 @@ window.onload = function () {
 {% endcapture %}
 {% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
 {% include pesdk_html5_editor.html code=code identifier=identifier %}
+
+{% endcomment %}

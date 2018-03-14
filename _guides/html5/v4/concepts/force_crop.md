@@ -33,6 +33,8 @@ var editor = new PhotoEditorSDK.UI.ReactUI({
 
 All other tools, except the library, when enabled, are disabled until the user accepts a crop transform with one of the given values.
 
+{% comment %}
+
 ## Interactive Example
 
 Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
@@ -64,3 +66,5 @@ window.onload = function () {
 {% endcapture %}
 {% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
 {% include pesdk_html5_editor.html code=code identifier=identifier %}
+
+{% endcomment %}
