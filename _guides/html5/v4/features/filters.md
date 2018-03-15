@@ -141,7 +141,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 
 ### Filter name
 
-By default, our UI displays each filter's `defaultName` as the filter label. You can override this value for each filter by overriding or adding new keys to the `controls.filters.filters` object in the [Localization JSON]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/localization) file:
+By default, our UI displays each filter's `defaultName` as the filter label. You can override this value for each filter by overriding or adding new keys to the `controls.filters.filters` object in the [Localization JSON]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization) file:
 
 ```js
 {
