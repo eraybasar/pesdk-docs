@@ -41,17 +41,25 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    transform: {
-      ratios: [
-        {
-          identifier: 'my_custom_ratio', // A unique identifier for this ratio
-          defaultName: 'Custom Ratio', // The default translation for this ratio
-          ratio: 5 / 4, // The image ratio (a floating point number)
-          dimensions: new PhotoEditorSDK.Math.Vector2(50, 40) // Optional fixed
-        }
-      ],
-      replaceRatios: false
+  editor: {
+    controlsOptions: {
+      transform: {
+        categories: [
+          {
+            identifier: 'my_custom_category',
+            defaultName: 'My Custom Ratios',
+            ratios: [
+              {
+                identifier: 'my_custom_ratio', // A unique identifier for this ratio
+                defaultName: 'Custom Ratio', // The default translation for this ratio
+                ratio: 5 / 4, // The image ratio (a floating point number)
+                dimensions: new PhotoEditorSDK.Math.Vector2(50, 40) // Optional fixed
+              }
+            ]
+          }
+        ],
+        replaceCategories: false
+      }
     }
   }
 })
@@ -63,17 +71,19 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    transform: {
-      ratios: [
-        {
-          identifier: 'my_custom_ratio', // A unique identifier for this ratio
-          defaultName: 'Custom Ratio', // The default translation for this ratio
-          ratio: 5 / 4, // The image ratio (a floating point number)
-          dimensions: new PhotoEditorSDK.Math.Vector2(50, 40) // Optional fixed
-        }
-      ],
-      replaceRatios: false
+  editor: {
+    controlsOptions: {
+      transform: {
+        ratios: [
+          {
+            identifier: 'my_custom_ratio', // A unique identifier for this ratio
+            defaultName: 'Custom Ratio', // The default translation for this ratio
+            ratio: 5 / 4, // The image ratio (a floating point number)
+            dimensions: new PhotoEditorSDK.Math.Vector2(50, 40) // Optional fixed
+          }
+        ],
+        replaceRatios: false
+      }
     }
   }
 })
@@ -99,9 +109,11 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    transform: {
-      availableRatios: ['imgly_transform_common_custom', 'my_custom_ratio']
+  editor: {
+    controlsOptions: {
+      transform: {
+        availableRatios: ['imgly_transform_common_custom', 'my_custom_ratio']
+      }
     }
   }
 })
@@ -113,9 +125,11 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    transform: {
-      availableRatios: ['imgly_transform_common_custom', 'my_custom_ratio']
+  editor: {
+    controlsOptions: {
+      transform: {
+        availableRatios: ['imgly_transform_common_custom', 'my_custom_ratio']
+      }
     }
   }
 })
@@ -130,7 +144,45 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 
 By default, our UI displays each ratio's `defaultName` as the ratio label. You can override this value for each ratio by overriding or adding new keys to the `controls.transform.ratios` object in the [Localization JSON]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization) file:
 
-```js
+{% capture first_snippet %}
+DesktopUI
+---
+```json
+{
+  "editor": {
+    "controls": {
+      // ...
+      "transform": {
+        // ...
+        "ratios": {
+          // ...
+          "my_custom_category": {
+            "name": "My Category Name",
+            "ratios": {
+              "my_custom_ratio": "Customly localized ratio name"
+            }
+          },
+          "my_other_custom_category": {
+            "name": "My Other Category Name",
+            "ratios": {
+              "my_other_custom_ratio": "Other Customly localized ratio name"
+            }
+          }
+          // ...
+        }
+        // ...
+      }
+      // ...
+    }
+  }
+}
+```
+{% endcapture %}
+
+{% capture second_snippet %}
+ReactUI
+---
+```json
 {
   "editor": {
     "controls": {
@@ -149,3 +201,59 @@ By default, our UI displays each ratio's `defaultName` as the ratio label. You c
   }
 }
 ```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS03{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+
+{% comment %}
+
+## Interactive Example
+
+Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
+
+{% capture code %}
+window.onload = function () {
+        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
+          .then((image) => {
+            let container = document.getElementById('editor')
+            let options = {
+              container: container,
+              license: PESDK_LICENSE_STRING,
+              editor: {
+                image: image,
+                controlsOptions: {
+                  transform: {
+                    categories: [
+                      {
+                        identifier: 'my_custom_category',
+                        defaultName: 'My Custom Ratios',
+                        ratios: [
+                          {
+                            identifier: 'my_custom_ratio', // A unique identifier for this ratio
+                            defaultName: 'Custom Ratio', // The default translation for this ratio
+                            ratio: 5 / 4, // The image ratio (a floating point number)
+                            dimensions: new PhotoEditorSDK.Math.Vector2(50, 40) // Optional fixed
+                          }
+                        ]
+                      }
+                    ],
+                    replaceCategories: false,
+                    availableRatios: ['my_custom_ratio', 'imgly_transform_common_16-9','imgly_transform_facebook_profile']
+                  }
+                }
+              },
+              assets: {
+                baseUrl: PESDK_ASSETS_URL
+              }
+            }
+            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
+        })
+      }
+{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
+{% include pesdk_html5_editor.html code=code identifier=identifier %}
+
+{% endcomment %}

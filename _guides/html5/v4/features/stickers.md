@@ -39,36 +39,38 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    sticker: {
-      categories: [
-        {
-          identifier: 'some_category',
-          defaultName: 'Some Category',
-          metaData: {
-            backgroundImage: 'stickers/background.png'
-          },
-          stickers: [
-            {
-              identifier: 'custom_sticker',
-              defaultName: 'Custom Sticker',
-              images: {
-                mediaThumb: {
-                  uri: 'stickers/thumb/customsticker.png',
-                  width: 50,
-                  height: 50
-                },
-                mediaBase: {
-                  uri: 'stickers/base/customsticker.png',
-                  width: 400,
-                  height: 400
+  editor: {
+    controlsOptions: {
+      sticker: {
+        categories: [
+          {
+            identifier: 'some_category',
+            defaultName: 'Some Category',
+            metaData: {
+              backgroundImage: 'stickers/background.png'
+            },
+            stickers: [
+              {
+                identifier: 'custom_sticker',
+                defaultName: 'Custom Sticker',
+                images: {
+                  mediaThumb: {
+                    uri: 'stickers/thumb/customsticker.png',
+                    width: 50,
+                    height: 50
+                  },
+                  mediaBase: {
+                    uri: 'stickers/base/customsticker.png',
+                    width: 400,
+                    height: 400
+                  }
                 }
               }
-            }
-          ]
-        }
-      ],
-      replaceCategories: true // `categories` replaces all other categories / stickers
+            ]
+          }
+        ],
+        replaceCategories: true // `categories` replaces all other categories / stickers
+      }
     }
   }
 })
@@ -80,36 +82,38 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    sticker: {
-      categories: [
-        {
-          identifier: 'some_category',
-          defaultName: 'Some Category',
-          metaData: {
-            backgroundImage: 'stickers/background.png'
-          },
-          stickers: [
-            {
-              identifier: 'custom_sticker',
-              defaultName: 'Custom Sticker',
-              images: {
-                mediaThumb: {
-                  uri: 'stickers/thumb/customsticker.png',
-                  width: 50,
-                  height: 50
-                },
-                mediaBase: {
-                  uri: 'stickers/base/customsticker.png',
-                  width: 400,
-                  height: 400
+  editor: {
+    controlsOptions: {
+      sticker: {
+        categories: [
+          {
+            identifier: 'some_category',
+            defaultName: 'Some Category',
+            metaData: {
+              backgroundImage: 'stickers/background.png'
+            },
+            stickers: [
+              {
+                identifier: 'custom_sticker',
+                defaultName: 'Custom Sticker',
+                images: {
+                  mediaThumb: {
+                    uri: 'stickers/thumb/customsticker.png',
+                    width: 50,
+                    height: 50
+                  },
+                  mediaBase: {
+                    uri: 'stickers/base/customsticker.png',
+                    width: 400,
+                    height: 400
+                  }
                 }
               }
-            }
-          ]
-        }
-      ],
-      replaceCategories: true // `categories` replaces all other categories / stickers
+            ]
+          }
+        ],
+        replaceCategories: true // `categories` replaces all other categories / stickers
+      }
     }
   }
 })
@@ -130,13 +134,15 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    sticker: {
-      availableStickers: [
-        'imgly_sticker_emoticons_alien',
-        'imgly_sticker_emoticons_angel',
-        'custom_sticker'
-      ]
+  editor: {
+    controlsOptions: {
+      sticker: {
+        availableStickers: [
+          'imgly_sticker_emoticons_alien',
+          'imgly_sticker_emoticons_angel',
+          'custom_sticker'
+        ]
+      }
     }
   }
 })
@@ -148,13 +154,15 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    sticker: {
-      availableStickers: [
-        'imgly_sticker_emoticons_alien',
-        'imgly_sticker_emoticons_angel',
-        'custom_sticker'
-      ]
+  editor: {
+    controlsOptions: {
+      sticker: {
+        availableStickers: [
+          'imgly_sticker_emoticons_alien',
+          'imgly_sticker_emoticons_angel',
+          'custom_sticker'
+        ]
+      }
     }
   }
 })
@@ -233,9 +241,11 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    sticker: {
-      smoothDownscaling: true
+  editor: {
+    controlsOptions: {
+      sticker: {
+        smoothDownscaling: true
+      }
     }
   }
 })
@@ -247,9 +257,11 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    sticker: {
-      smoothDownscaling: true
+  editor: {
+    controlsOptions: {
+      sticker: {
+        smoothDownscaling: true
+      }
     }
   }
 })
@@ -270,13 +282,15 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    sticker: {
-      // This value defines at what degrees rotation snapping should happen
-      snapRotation: 90,
+  editor: {
+    controlsOptions: {
+      sticker: {
+        // This value defines at what degrees rotation snapping should happen
+        snapRotation: 90,
 
-      // This value defines at what degrees *around* the `snapRotation` value snapping should happen
-      snapRotationTolerance: 5
+        // This value defines at what degrees *around* the `snapRotation` value snapping should happen
+        snapRotationTolerance: 5
+      }
     }
   }
 })
@@ -288,13 +302,15 @@ ReactUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    sticker: {
-      // This value defines at what degrees rotation snapping should happen
-      snapRotation: 90,
+  editor: {
+    controlsOptions: {
+      sticker: {
+        // This value defines at what degrees rotation snapping should happen
+        snapRotation: 90,
 
-      // This value defines at what degrees *around* the `snapRotation` value snapping should happen
-      snapRotationTolerance: 5
+        // This value defines at what degrees *around* the `snapRotation` value snapping should happen
+        snapRotationTolerance: 5
+      }
     }
   }
 })
@@ -304,3 +320,45 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 {% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-04{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+
+{% comment %}
+
+## Interactive Example
+
+Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
+
+{% capture code %}
+window.onload = function () {
+        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
+          .then((image) => {
+            let container = document.getElementById('editor')
+            let options = {
+              container: container,
+              license: PESDK_LICENSE_STRING,
+              editor: {
+                image: image,
+                controlsOptions: {
+                  sticker: {
+                    availableStickers: [
+                      'imgly_sticker_emoticons_alien',
+                      'imgly_sticker_emoticons_angel'
+                    ],
+                    snapRotation: 10,
+                    snapRotationTolerance: 5,
+                    smoothDownscaling: true
+                  }
+                }
+              },
+              assets: {
+                baseUrl: PESDK_ASSETS_URL
+              }
+            }
+            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
+        })
+      }
+{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
+{% include pesdk_html5_editor.html code=code identifier=identifier %}
+
+{% endcomment %}

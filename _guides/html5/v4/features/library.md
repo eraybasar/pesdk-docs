@@ -48,7 +48,7 @@ class MyProvider extends Provider {
     if (this._data) { return Promise.resolve(this._data) }
 
     return this._loadJSON('http://d3czpaw5gb5xgh.cloudfront.net/v4/unsplash.json')
-      .then(function (data) {
+      .then(data => {
         this._data = data
         return data
       })
@@ -174,3 +174,90 @@ const editor = new PhotoEditorSDK.UI.DesktopUI({
 {% assign snippets = "" | split: "" | push: second_snippet %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-03{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Interactive Example
+
+Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
+
+{% capture code %}
+window.onload = function () {
+
+        const { Provider, Category, Image } = PhotoEditorSDK.UI.DesktopUI.Library
+        class MyProvider extends Provider {
+          constructor (...args) {
+            super(...args)
+
+            // Our cache object
+            this._data = null
+            this._loadData = this._loadData.bind(this)
+          }
+
+          _loadData () {
+            if (this._data) { return Promise.resolve(this._data) }
+
+
+            return this._loadJSON('{{ site.baseurl }}/assets/js/provider.json')
+              .then(data => {
+                this._data = data
+                return data
+              })
+          }
+
+          getCategories () {
+            return this._loadData()
+              .then(data => {
+                return data.categories.map(({ name, coverImage }) =>
+                  new Category({
+                    name: name + ' (custom) ', coverImage
+                  })
+                )
+              })
+          }
+
+          searchImages (query) {
+            return this._loadData()
+              .then(data => {
+                return data.images.filter(image => {
+                  var words = query.split(/\s+/)
+                  for (var i = 0; i < words.length; i++) {
+                    var word = words[i]
+                    var regexp = new RegExp(word, 'i')
+                    if (!regexp.test(image.title)) {
+                      return false
+                    }
+                  }
+
+                  return true
+                }).map(imageData => {
+                  return new Image(imageData)
+                })
+              })
+          }
+        }
+
+        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
+          .then((image) => {
+            let container = document.getElementById('editor')
+            let options = {
+              container: container,
+              license: PESDK_LICENSE_STRING,
+              editor: {
+                image: image,
+                controlsOptions: {
+                  library: {
+                    provider: MyProvider,
+                    enableWebcam: false,
+                    enableUpload: false
+                  }
+                }
+              },
+              assets: {
+                baseUrl: PESDK_ASSETS_URL
+              }
+            }
+            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
+        })
+      }
+{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
+{% include pesdk_html5_editor.html code=code identifier=identifier %}

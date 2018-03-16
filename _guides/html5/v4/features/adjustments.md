@@ -40,29 +40,54 @@ DesktopUI
 ---
 ```js
 const editor = new PhotoEditorSDK.UI.DesktopUI({
-  controlsOptions: {
-    focus: {
-      availableModes: ['brightness', 'saturation', 'contrast']
+  editor: {
+    controlsOptions: {
+      adjustments: {
+        availableAdjustments: ['brightness', 'saturation', 'contrast']
+      }
     }
   }
 })
 ```
 {% endcapture %}
 
-{% capture second_snippet %}
-ReactUI
----
-```js
-const editor = new PhotoEditorSDK.UI.ReactUI({
-  controlsOptions: {
-    focus: {
-      availableModes: ['brightness', 'saturation', 'contrast']
-    }
-  }
-})
-```
-{% endcapture %}
-
-{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% assign snippets = "" | split: "" | push: first_snippet  %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+{% comment %}
+
+## Interactive Example
+
+Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
+
+
+
+{% capture code %}
+window.onload = function () {
+        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
+          .then((image) => {
+            let container = document.getElementById('editor')
+            let options = {
+              container: container,
+              license: PESDK_LICENSE_STRING,
+              editor: {
+                image: image,
+                controlsOptions: {
+                  adjustments: {
+                    availableAdjustments: ['brightness', 'saturation', 'contrast']
+                  }
+                }
+              },
+              assets: {
+                baseUrl: PESDK_ASSETS_URL
+              }
+            }
+            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
+        })
+      }
+{% endcapture %}
+{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
+{% include pesdk_html5_editor.html code=code identifier=identifier %}
+
+{% endcomment %}
