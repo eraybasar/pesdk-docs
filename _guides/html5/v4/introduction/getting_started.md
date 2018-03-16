@@ -49,8 +49,8 @@ DesktopUI
 ```html
 <head>
   <!-- React Dependencies for the SDK UI -->
-  <script src="js/vendor/react.min.js"></script>
-  <script src="js/vendor/react-dom.min.js"></script>
+  <script src="js/vendor/react.production.min.js"></script>
+  <script src="js/vendor/react-dom.production.min.js"></script>
   <!-- PhotoEditor SDK-->
   <script src="js/PhotoEditorSDK.min.js"></script>
   <!-- PhotoEditor SDK UI -->
@@ -97,14 +97,23 @@ DesktopUI
 ```html
 <script>
   window.onload = function () {
-    var container = document.getElementById('editor')
-    var editor = new PhotoEditorSDK.UI.DesktopUI({
-      container: container,
-      license: 'YOUR_LICENSE', // <-- Please replace this with your license. Please make sure this is in *string* format, not *object*.
-      assets: {
-        baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
-      }
-    })
+    var image = new Image()
+    image.onload = function () {
+        var container = document.getElementById('editor')
+        var editor = new PhotoEditorSDK.UI.DesktopUI({
+        container: container,
+        // Please replace this with your license: https://www.photoeditorsdk.com/dashboard/subscriptions
+        license: '{"owner":"Imgly Inc.","version":"2.1", ...}',
+        editor: {
+          image: image
+        },
+        assets: {
+          // This should be the absolute path to your `assets` directory
+          baseUrl: '/assets'
+        }
+      })
+    }
+    image.src = './example.jpg'
   }
 </script>
 ```
@@ -119,9 +128,11 @@ ReactUI
     var container = document.getElementById('editor')
     var editor = new PhotoEditorSDK.UI.ReactUI({
       container: container,
-      license: 'YOUR_LICENSE', // <-- Please replace this with your license. Please make sure this is in *string* format, not *object*.
+      // Please replace this with your license; https://www.photoeditorsdk.com/dashboard/subscriptions
+      license: '{"owner":"Imgly Inc.","version":"2.1", ...}',
       assets: {
-        baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
+        // This should be the absolute path to your `assets` directory
+        baseUrl: '/assets'
       }
     })
   }
@@ -144,8 +155,8 @@ DesktopUI
 <html>
   <head>
     <!-- React Dependencies for the SDK UI -->
-    <script src="js/vendor/react.min.js"></script>
-    <script src="js/vendor/react-dom.min.js"></script>
+    <script src="js/vendor/react.production.min.js"></script>
+    <script src="js/vendor/react-dom.production.min.js"></script>
     <!-- PhotoEditor SDK-->
     <script src="js/PhotoEditorSDK.min.js"></script>
     <!-- PhotoEditor SDK UI -->
@@ -157,14 +168,23 @@ DesktopUI
     <div id="editor" style="width: 100vw; height: 100vh;"></div>
     <script>
       window.onload = function () {
-        var container = document.getElementById('editor')
-        var editor = new PhotoEditorSDK.UI.DesktopUI({
-          container: container,
-          license: 'YOUR_LICENSE', // <-- Please replace this with your license. Please make sure this is in *string* format, not *object*.
-          assets: {
-            baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
-          }
-        })
+        var image = new Image()
+        image.onload = function () {
+            var container = document.getElementById('editor')
+            var editor = new PhotoEditorSDK.UI.DesktopUI({
+            container: container,
+            // Please replace this with your license: https://www.photoeditorsdk.com/dashboard/subscriptions
+            license: '{"owner":"Imgly Inc.","version":"2.1", ...}',
+            editor: {
+              image: image
+            },
+            assets: {
+              // This should be the absolute path to your `assets` directory
+              baseUrl: '/assets'
+            }
+          })
+        }
+        image.src = './example.jpg'
       }
     </script>
   </body>
@@ -196,9 +216,11 @@ ReactUI
         var container = document.getElementById('editor')
         var editor = new PhotoEditorSDK.UI.ReactUI({
           container: container,
-          license: 'YOUR_LICENSE', // <-- Please replace this with your license. Please make sure this is in *string* format, not *object*.
+          // Please replace this with your license: https://www.photoeditorsdk.com/dashboard/subscriptions
+            license: '{"owner":"Imgly Inc.","version":"2.1", ...}',
           assets: {
-            baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
+            // This should be the absolute path to your `assets` directory
+            baseUrl: '/assets'
           }
         })
       }
