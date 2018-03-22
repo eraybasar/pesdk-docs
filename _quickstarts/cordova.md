@@ -22,9 +22,29 @@ We created a [demo repository](https://github.com/imgly/pesdk-cordova-demo) to s
 
 You can copy the repository into your own project and use the `cordova plugin add /path/to/plugin --link` command to add it to your app. You will most likely need to adjust the codebase to fit your requirements and to customize the PhotoEditor SDK. For customizations, take a look at the [PESDKPlugin.m](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/ios/PESDKPlugin.m) and [PESDKPlugin.java](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/android/PESDKPlugin.java) files and the corresponding documentation for [iOS]({{ site.baseurl }}/guides/ios/latest/introduction/configuration) and [Android]({{ site.baseurl }}/guides/android/latest/introduction/configuration). You can easily alter the configurations to change colors, behaviour etc. and handle callbacks that are sent by our SDK.
 
-Furthermore you need to add the `LICENSE_IOS` file to the Xcode project by opening _PESDKDemo.xcworkspace_ using Xcode and dragging the license file into the sidebar. On Android, the `LICENSE_IOS` file just needs to be copied to the `/platforms/android/app/main/assets` folder.
+## License Files
 
-> **WARNING:** You need to make sure that the app identifiers declared in your license file match the bundle/app identifiers used on iOS and Android.
+> **WARNING**: The SDK requires dedicated license files for each platform. If unavailable, the camera and editor will crash upon launch.
+
+You need to add the LICENSE_IOS and LICENSE_ANDROID files to each project. This can be done manually by opening the PESDKDemo.xcworkspace using Xcode and dragging the license file into the sidebar, as well as copying the license file to the /platforms/android/app/main/assets folder for Android. 
+
+Or automated by using Cordovas `resource-file` tags to link the files from the root directory. To do so, put your `LICENSE_ANDROID` and `LICENSE_IOS` files in the root folder of your project and then add the following lines to your `config.xml`:
+
+Within the Android platform tag (supported starting `cordova-android-7.0`):
+```xml
+<platform name="android">
+  <resource-file src="LICENSE_ANDROID" target="app/src/main/assets/LICENSE_ANDROID" />
+</platform>
+```
+
+Within the iOS platform tag:
+```xml
+<platform name="ios">
+  <resource-file src="LICENSE_IOS" />
+</platform>
+```
+
+> **WARNING**: You need to make sure that the app identifiers declared in your license files match the bundle/app identifiers used on iOS and Android.
 
 ## Example App
 The included example app demonstrates how to open the PhotoEditor SDK's camera and pass any taken or selected images to the editor. When an edited image is saved, its filepath is sent back to Cordova and displayed using a JavaScript alert. An app could then display this image in Cordova or send it to a backend. To open an existing image instead, you can pass a filepath to the `present` method, but will need to handle the different ways both platforms manage filepaths. To launch the example app, take a look at the *Development* section below.
