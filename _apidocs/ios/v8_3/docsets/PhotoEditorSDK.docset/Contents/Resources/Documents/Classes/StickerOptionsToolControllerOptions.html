@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StickerOptionsToolControllerOptions Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/StickerOptionsToolControllerOptions" class="dashAnchor"></a>
+
+    <a title="StickerOptionsToolControllerOptions Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          PhotoEditorSDK Docs
+        </a>
+         (99% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/imgly/pesdk-ios-build">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv8_3%2Fdocsets%2FPhotoEditorSDK%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">PhotoEditorSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      StickerOptionsToolControllerOptions Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Common.html">Common</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraViewController.html">CameraViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PESDK.html">PESDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PESDK/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Photo.html">Photo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PhotoEditModel.html">PhotoEditModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEditRenderer.html">PhotoEditRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PhotoEditViewControllerDelegate.html">PhotoEditViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Tools.html">Tools</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AdjustToolController.html">AdjustToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushColorToolController.html">BrushColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushToolController.html">BrushToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorToolController.html">ColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FilterToolController.html">FilterToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FocusToolController.html">FocusToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FrameToolController.html">FrameToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MenuToolController.html">MenuToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OverlayToolController.html">OverlayToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Tools.html#/s:14PhotoEditorSDK26StickerColorToolControllerC">StickerColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerOptionsToolController.html">StickerOptionsToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerToolController.html">StickerToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextColorToolController.html">TextColorToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextFontToolController.html">TextFontToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignToolController.html">TextDesignToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignOptionsToolController.html">TextDesignOptionsToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextOptionsToolController.html">TextOptionsToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextToolController.html">TextToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TransformToolController.html">TransformToolController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Sprites.html">Sprites</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Font.html">Font</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Frame.html">Frame</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Overlay.html">Overlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEffect.html">PhotoEffect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Sticker.html">Sticker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerCategory.html">StickerCategory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Configuration.html">Configuration</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AdjustToolControllerOptions.html">AdjustToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushColorToolControllerOptions.html">BrushColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushToolControllerOptions.html">BrushToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraViewControllerOptions.html">CameraViewControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorToolControllerOptions.html">ColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FilterToolControllerOptions.html">FilterToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FocusToolControllerOptions.html">FocusToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FrameToolControllerOptions.html">FrameToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OverlayToolControllerOptions.html">OverlayToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEditViewControllerOptions.html">PhotoEditViewControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerOptionsToolControllerOptions.html">StickerOptionsToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerToolControllerOptions.html">StickerToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextColorToolControllerOptions.html">TextColorToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignOptionsToolControllerOptions.html">TextDesignOptionsToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextFontToolControllerOptions.html">TextFontToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextOptionsToolControllerOptions.html">TextOptionsToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextToolControllerOptions.html">TextToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ToolControllerOptions.html">ToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TransformToolControllerOptions.html">TransformToolControllerOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Controllers.html">Controllers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AdjustEditController.html">AdjustEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushEditController.html">BrushEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FilterEditController.html">FilterEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FocusEditController.html">FocusEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FrameEditController.html">FrameEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MenuViewController.html">MenuViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OverlayEditController.html">OverlayEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEditPreviewController.html">PhotoEditPreviewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ProxyZoomController.html">ProxyZoomController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SliderEditController.html">SliderEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteEditController.html">SpriteEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteGestureController.html">SpriteGestureController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteViewController.html">SpriteViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerEditController.html">StickerEditController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Controllers.html#/s:14PhotoEditorSDK24StickerGestureControllerC">StickerGestureController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerSelectionController.html">StickerSelectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextGestureController.html">TextGestureController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TransformEditController.html">TransformEditController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AdjustmentModel.html">AdjustmentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BrushSpriteModel.html">BrushSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CropAspect.html">CropAspect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/EffectFilterModel.html">EffectFilterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FocusModel.html">FocusModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FrameSpriteModel.html">FrameSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OverlayModel.html">OverlayModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PathModel.html">PathModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Models.html#/s:14PhotoEditorSDK11SpriteModelP">SpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StickerSpriteModel.html">StickerSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TextDesignSpriteModel.html">TextDesignSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TextSpriteModel.html">TextSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ToolbarItem.html">ToolbarItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TransformModel.html">TransformModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Sprite Protocols.html">Sprite Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HorizontallyFlippable.html">HorizontallyFlippable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Identifiable.html">Identifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NormalizedCenterable.html">NormalizedCenterable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NormalizedFontSizable.html">NormalizedFontSizable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NormalizedHeightSettable.html">NormalizedHeightSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NormalizedPlaceable.html">NormalizedPlaceable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NormalizedSizable.html">NormalizedSizable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NormalizedWidthSettable.html">NormalizedWidthSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Sprite Protocols.html#/s:14PhotoEditorSDK12OrientatableP">Orientatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Rotatable.html">Rotatable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Sprite Views.html">Sprite Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Sprite Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKFrameImageView">FrameImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteContainerView.html">SpriteContainerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteImageView.html">SpriteImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteLabel.html">SpriteLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteTextDesignView.html">SpriteTextDesignView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Sprite Views.html#/s:14PhotoEditorSDK10SpriteViewa">SpriteView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerImageView.html">StickerImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Views.html">Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBoxGradientView">BoxGradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushPreviewView.html">BrushPreviewView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Button.html">Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CanvasView.html">CanvasView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKCircleGradientView">CircleGradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorPickerView.html">ColorPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CropAndStraightenView.html">CropAndStraightenView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CropHandleView.html">CropHandleView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CropMaskView.html">CropMaskView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CropOverlayView.html">CropOverlayView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultProgressView.html">DefaultProgressView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FocusGradientView.html">FocusGradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FontSelectorView.html">FontSelectorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GradientView.html">GradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKHandleButton">HandleButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MenuCollectionView.html">MenuCollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OverlayButton.html">OverlayButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ScalePicker.html">ScalePicker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Slider.html">Slider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SliderTooltip.html">SliderTooltip</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerSelectionView.html">StickerSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextButton.html">TextButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignView.html">TextDesignView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextSelectionView.html">TextSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Toolbar.html">Toolbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Views.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKToolbarButton">ToolbarButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TooltipSlider.html">TooltipSlider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VideoRecordButton.html">VideoRecordButton</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Cells.html">Cells</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ActivityBorderedCollectionViewCell.html">ActivityBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BorderedCollectionViewCell.html">BorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorCollectionViewCell.html">ColorCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FilterCollectionViewCell.html">FilterCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/IconBorderedCollectionViewCell.html">IconBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/IconCaptionCollectionViewCell.html">IconCaptionCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LabelBorderedCollectionViewCell.html">LabelBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LabelCaptionCollectionViewCell.html">LabelCaptionCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LabelIconBorderedCollectionViewCell.html">LabelIconBorderedCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerCollectionViewCell.html">StickerCollectionViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Cell Configurators.html">Cell Configurators</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK30ActionMenuItemCellConfiguratorV">ActionMenuItemCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK22AdjustCellConfiguratorV">AdjustCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK25BlendModeCellConfiguratorV">BlendModeCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK21BrushCellConfiguratorV">BrushCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CellConfigurator.html">CellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CellConfiguratorProtocol.html">CellConfiguratorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK21ColorCellConfiguratorV">ColorCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK26CropAspectCellConfiguratorV">CropAspectCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK21FocusCellConfiguratorV">FocusCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK20FontCellConfiguratorV">FontCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK21FrameCellConfiguratorV">FrameCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK23OverlayCellConfiguratorV">OverlayCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PhotoEditCellConfigurator.html">PhotoEditCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK0A22EffectCellConfiguratorV">PhotoEffectCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK31StickerCategoryCellConfiguratorV">StickerCategoryCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK23StickerCellConfiguratorV">StickerCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK29StickerOptionCellConfiguratorV">StickerOptionCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK26TextDesignCellConfiguratorV">TextDesignCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK26TextOptionCellConfiguratorV">TextOptionCellConfigurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Cell Configurators.html#/s:14PhotoEditorSDK28ToolMenuItemCellConfiguratorV">ToolMenuItemCellConfigurator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Menu Items.html">Menu Items</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ActionMenuItem.html">ActionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AdjustMenuItem.html">AdjustMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BlendModeMenuItem.html">BlendModeMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushMenuItem.html">BrushMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorMenuItem.html">ColorMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CropAspectMenuItem.html">CropAspectMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FocusMenuItem.html">FocusMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FontMenuItem.html">FontMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FrameMenuItem.html">FrameMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Menu Items.html#/s:14PhotoEditorSDK8MenuItemP">MenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OverlayMenuItem.html">OverlayMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PhotoEditMenuItem.html">PhotoEditMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEffectMenuItem.html">PhotoEffectMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerCategoryMenuItem.html">StickerCategoryMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerMenuItem.html">StickerMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerOptionMenuItem.html">StickerOptionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignMenuItem.html">TextDesignMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextOptionMenuItem.html">TextOptionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ToolMenuItem.html">ToolMenuItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Text Designs.html">Text Designs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesign.html">TextDesign</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignBlocks">TextDesignBlocks</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignBlocksCondensed">TextDesignBlocksCondensed</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignBlocksLight">TextDesignBlocksLight</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignCelebrate">TextDesignCelebrate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignCelebrateSimple">TextDesignCelebrateSimple</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignEqualWidth">TextDesignEqualWidth</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignEqualWidthFat">TextDesignEqualWidthFat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignMasked">TextDesignMasked</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignMaskedBadge">TextDesignMaskedBadge</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignMaskedSpeechBubble">TextDesignMaskedSpeechBubble</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignMaskedSpeechBubbleComic">TextDesignMaskedSpeechBubbleComic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignMultiline">TextDesignMultiline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignParticles">TextDesignParticles</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignRotated">TextDesignRotated</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignSunshine">TextDesignSunshine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Text Designs.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignWatercolor">TextDesignWatercolor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Filters.html">Filters</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ClarityFilter.html">ClarityFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorizeFilter.html">ColorizeFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CustomAdjustmentsFilter.html">CustomAdjustmentsFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LinearFocusFilter.html">LinearFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LUTFilter.html">LUTFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RadialFocusFilter.html">RadialFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TintFilter.html">TintFilter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Logging.html">Logging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultLogger.html">DefaultLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LoggerProtocol.html">LoggerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MasterLogger.html">MasterLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Undo.html">Undo</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UndoController.html">UndoController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Analytics.html">Analytics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Analytics.html">Analytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AnalyticsClient.html">AnalyticsClient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Helpers.html">Helpers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ImageGeometry.html">ImageGeometry</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AdjustToolControllerOptionsBuilder.html">AdjustToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AnimationDelegate.html">AnimationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AssetManager.html">AssetManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrush">Brush</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushColorToolControllerOptionsBuilder">BrushColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrushToolControllerOptionsBuilder.html">BrushToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraController.html">CameraController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraViewControllerOptionsBuilder.html">CameraViewControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Color.html">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorCollectionView.html">ColorCollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorPalette.html">ColorPalette</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorPickerViewController.html">ColorPickerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ColorToolControllerOptionsBuilder.html">ColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ConfigurationBuilder.html">ConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CustomPatchConfiguration.html">CustomPatchConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CustomPatchFrameBuilder.html">CustomPatchFrameBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultDynamicFrames.html">DefaultDynamicFrames</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultToolbarItem.html">DefaultToolbarItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Deserializer.html">Deserializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Deserializer/DeserializationResult.html">– DeserializationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DeviceOrientationController.html">DeviceOrientationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FilterSelectionController.html">FilterSelectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FilterToolControllerOptionsBuilder.html">FilterToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FocusToolControllerOptionsBuilder.html">FocusToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FontImporter.html">FontImporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FontSelectorViewController.html">FontSelectorViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FrameImageGroup.html">FrameImageGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FrameToolControllerOptionsBuilder.html">FrameToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FreehandTool.html">FreehandTool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/IconGenerator.html">IconGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MainFlowController.html">MainFlowController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MenuDataSourceProvider.html">MenuDataSourceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OverlayFilter.html">OverlayFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OverlayToolControllerOptionsBuilder.html">OverlayToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Painting.html">Painting</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PaintingFragment.html">PaintingFragment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEditViewControllerOptionsBuilder.html">PhotoEditViewControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PhotoEffectThumbnailRenderer.html">PhotoEffectThumbnailRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RoundGenerator.html">RoundGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpriteAdjustmentsFilter.html">SpriteAdjustmentsFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StampGenerator.html">StampGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerOptionsToolControllerOptionsBuilder.html">StickerOptionsToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StickerToolControllerOptionsBuilder.html">StickerToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextColorToolControllerOptionsBuilder.html">TextColorToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/s:14PhotoEditorSDK27TextDesignGestureControllerC">TextDesignGestureController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignOptionsToolControllerOptionsBuilder.html">TextDesignOptionsToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignToolControllerOptions.html">TextDesignToolControllerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextDesignToolControllerOptionsBuilder.html">TextDesignToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextEditingToolController.html">TextEditingToolController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextFontToolControllerOptionsBuilder.html">TextFontToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextOptionsToolControllerOptionsBuilder.html">TextOptionsToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextToolControllerOptionsBuilder.html">TextToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Texture.html">Texture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Tool.html">Tool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ToolControllerOptionsBuilder.html">ToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTouchingGestureRecognizer">TouchingGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TransformToolControllerOptionsBuilder.html">TransformToolControllerOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKViewController">ViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WeakContainer.html">WeakContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKAdjustmentModel">_ObjCAdjustmentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKBrushSpriteModel">_ObjCBrushSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKEffectFilterModel">_ObjCEffectFilterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKFocusModel">_ObjCFocusModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKFrameSpriteModel">_ObjCFrameSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKOverlayModel">_ObjCOverlayModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKPathModel">_ObjCPathModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/_ObjCPhotoEditMenuItem.html">_ObjCPhotoEditMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKPhotoEditModel">_ObjCPhotoEditModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerSpriteModel">_ObjCStickerSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextDesignSpriteModel">_ObjCTextDesignSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextSpriteModel">_ObjCTextSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTransformModel">_ObjCTransformModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AdjustTool.html">AdjustTool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BlendMode.html">BlendMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BlurQuality.html">BlurQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BrushOverlayAction.html">BrushOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BrushTool.html">BrushTool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CameraControllerError.html">CameraControllerError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CropHandle.html">CropHandle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FocusType.html">FocusType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FrameBuildMode.html">FrameBuildMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FrameLayoutMode.html">FrameLayoutMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FrameTileMode.html">FrameTileMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ImageFileFormat.html">ImageFileFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Orientation.html">Orientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PhotoEditOverlayAction.html">PhotoEditOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/RecordingMode.html">RecordingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StickerAction.html">StickerAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StickerAdjustmentMode.html">StickerAdjustmentMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StickerOverlayAction.html">StickerOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StickerTintMode.html">StickerTintMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TextAction.html">TextAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TextColorToolControllerMode.html">TextColorToolControllerMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TextDesignOverlayAction.html">TextDesignOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TextOverlayAction.html">TextOverlayAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TransformAction.html">TransformAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CFString.html">CFString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Functions.html">Other Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:14PhotoEditorSDK2eeoiSbAA15AdjustmentModelV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AdjustEditControllerDelegate.html">AdjustEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BrushEditControllerDelegate.html">BrushEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CanvasViewDataSource.html">CanvasViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CanvasViewDelegate.html">CanvasViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ColorCollectionViewDelegate.html">ColorCollectionViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ColorPickerViewControllerDelegate.html">ColorPickerViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CropAndStraightenViewDelegate.html">CropAndStraightenViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EventSubscribable.html">EventSubscribable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EventSubscriber.html">EventSubscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FilterEditControllerDelegate.html">FilterEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FocusEditControllerDelegate.html">FocusEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FontSelectorViewControllerDelegate.html">FontSelectorViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FontSelectorViewDelegate.html">FontSelectorViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FrameBuilder.html">FrameBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GeneratorDelegate.html">GeneratorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MenuDataSourceProtocol.html">MenuDataSourceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MenuViewControllerDelegate.html">MenuViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NormalizedPaddable.html">NormalizedPaddable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Protocols.html#/s:14PhotoEditorSDK20ObjectiveCBridgeableP">ObjectiveCBridgeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/OverlayEditControllerDelegate.html">OverlayEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Paddable.html">Paddable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PhotoEditModelSettable.html">PhotoEditModelSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PhotoEditPreviewControllerDelegate.html">PhotoEditPreviewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PhotoEditToolControllerDelegate.html">PhotoEditToolControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PhotoPreviewControlling.html">PhotoPreviewControlling</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ProgressView.html">ProgressView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ProxyZoomControllerDelegate.html">ProxyZoomControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ScalePickerDelegate.html">ScalePickerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SliderEditControllerDelegate.html">SliderEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SpriteEditControllerDelegate.html">SpriteEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SpriteGestureControllerDelegate.html">SpriteGestureControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SpriteViewControllerDelegate.html">SpriteViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/StickerEditControllerDelegate.html">StickerEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/StickerSelectionControllerDelegate.html">StickerSelectionControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ToolbarItemProviding.html">ToolbarItemProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TransformEditControllerDelegate.html">TransformEditControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TransitionAnimator.html">TransitionAnimator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TransitionProviding.html">TransitionProviding</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ColorMatrix.html">ColorMatrix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/MenuDataSource.html">MenuDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NeutralModelValues.html">NeutralModelValues</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NeutralModelValues/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NeutralModelValues/Overlay.html">– Overlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NeutralModelValues/Focus.html">– Focus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NeutralModelValues/Orientation.html">– Orientation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Typealiases.html#/s:14PhotoEditorSDK26ButtonConfigurationClosurea">ButtonConfigurationClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Typealiases.html#/s:14PhotoEditorSDK19DidEnterToolClosurea">DidEnterToolClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Typealiases.html#/s:14PhotoEditorSDK18ToolbarItemClosurea">ToolbarItemClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Typealiases.html#/s:14PhotoEditorSDK24ViewConfigurationClosurea">ViewConfigurationClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Typealiases.html#/s:14PhotoEditorSDK20WillLeaveToolClosurea">WillLeaveToolClosure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>StickerOptionsToolControllerOptions</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKStickerOptionsToolControllerOptions)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">StickerOptionsToolControllerOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/ToolControllerOptions.html">ToolControllerOptions</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Options for configuring a <code><a href="../Classes/StickerOptionsToolController.html">StickerOptionsToolController</a></code>.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK028StickerOptionsToolControllerE0C07allowedD7ActionsSayAA0D6ActionOGvp"></a>
+                    <a name="//apple_ref/swift/Property/allowedStickerActions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK028StickerOptionsToolControllerE0C07allowedD7ActionsSayAA0D6ActionOGvp">allowedStickerActions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines all allowed actions. Only buttons for allowed action are visible.
+Defaults to show all available actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">allowedStickerActions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/StickerAction.html">StickerAction</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)stickerActionSelectedClosure"></a>
+                    <a name="//apple_ref/swift/Property/stickerActionSelectedClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)stickerActionSelectedClosure">stickerActionSelectedClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This closure is called when the user selects an action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">stickerActionSelectedClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Enums/StickerAction.html">StickerAction</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)actionButtonConfigurationClosure"></a>
+                    <a name="//apple_ref/swift/Property/actionButtonConfigurationClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)actionButtonConfigurationClosure">actionButtonConfigurationClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This closure allows further configuration of the action buttons. The closure is called for
+each action button and has the button and its corresponding action as parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">actionButtonConfigurationClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt">UICollectionViewCell</span><span class="p">,</span> <span class="kt"><a href="../Enums/StickerAction.html">StickerAction</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)overlayButtonConfigurationClosure"></a>
+                    <a name="//apple_ref/swift/Property/overlayButtonConfigurationClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)overlayButtonConfigurationClosure">overlayButtonConfigurationClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This closure allows further configuration of the overlay buttons. The closure is called for
+each button and has the button and its corresponding enum value as parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">overlayButtonConfigurationClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/OverlayButton.html">OverlayButton</a></span><span class="p">,</span> <span class="kt"><a href="../Enums/StickerOverlayAction.html">StickerOverlayAction</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK028StickerOptionsToolControllerE0C07allowedD14OverlayActionsSayAA0dI6ActionOGvp"></a>
+                    <a name="//apple_ref/swift/Property/allowedStickerOverlayActions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK028StickerOptionsToolControllerE0C07allowedD14OverlayActionsSayAA0dI6ActionOGvp">allowedStickerOverlayActions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines all allowed actions. Only buttons for allowed actions are visible.
+Defaults to show all available actions.
+To set this property from Obj-C, see the <code>allowedStickerOverlayActionsAsNSNumbers</code> property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">allowedStickerOverlayActions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/StickerOverlayAction.html">StickerOverlayAction</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)stickerOverlayActionSelectedClosure"></a>
+                    <a name="//apple_ref/swift/Property/stickerOverlayActionSelectedClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(py)stickerOverlayActionSelectedClosure">stickerOverlayActionSelectedClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This closure is called when the user selects an action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">stickerOverlayActionSelectedClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Enums/StickerOverlayAction.html">StickerOverlayAction</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of <code>StickerOptionsToolControllerOptions</code> using the default builder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(im)initWithBuilder:"></a>
+                    <a name="//apple_ref/swift/Method/init(builder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)PESDKStickerOptionsToolControllerOptions(im)initWithBuilder:">init(builder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of <code>StickerOptionsToolControllerOptions</code> using the given builder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">builder</span><span class="p">:</span> <span class="kt"><a href="../Classes/StickerOptionsToolControllerOptionsBuilder.html">StickerOptionsToolControllerOptionsBuilder</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>builder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A builder to create the options.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-04-03)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
