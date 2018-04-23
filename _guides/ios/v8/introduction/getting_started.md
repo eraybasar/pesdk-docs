@@ -89,24 +89,6 @@ If you prefer not to use CocoaPods, you can integrate PhotoEditor SDK into your 
 
 If you are integrating the PhotoEditor SDK into an Objective-C only project you also have to set the `Always Embed Swift Standard Libraries` build setting to `Yes`.
 
-2) Add a new `Run Script Phase` in your target’s `Build Phases`.
-
-**IMPORTANT:** Make sure this `Run Script Phase` is below the `Embed Frameworks` build phase.
-You can drag and drop build phases to rearrange them.
-Paste the following line in this `Run Script Phase`'s script text field:
-
-```bash
-bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/PhotoEditorSDK.framework/strip-framework.sh"
-```
-
-The script works around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) triggered by universal binaries. It also copies PhotoEditor SDK's bcsymbolmap files into your target's xcarchive. These bcsymbolmap files are required if you want to include app symbols for your application to receive symbolicated crash logs from Apple when you upload your app to the App Store.
-
-![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/run-script-phase.jpg)
-
-3) (Optional but recommended) You may want to copy debug symbols for debugging and crash reporting: Add PhotoEditorSDK.framework.dSYM to your Xcode project (do not add it to any targets - just add it to the tree) and add this folder as input file to the Run Script Phase of step 2). The script will copy the debug symbols into the product's directory and strip it from unneeded architectures. The dSYM file is part of the dmg download available [here](https://github.com/imgly/pesdk-ios-build/releases/latest).
-
-![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/copy-dsym.jpg)
-
 
 Our SDK provides two main view controllers. One to work with the camera and the other to edit an image.
 In the following section, we will first explain how the licensing works and then how the basic view controllers are set up. 
