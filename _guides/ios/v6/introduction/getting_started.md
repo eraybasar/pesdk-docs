@@ -52,20 +52,6 @@ PhotoEditor SDK into your project manually via a dynamic framework.
 
 ![Embedded Binaries]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/embedded-binaries.jpg)
 
-2) Add a new `Run Script Phase` in your target’s `Build Phases`.
-
-**IMPORTANT:** Make sure this `Run Script Phase` is below the `Embed Frameworks` build phase.
-You can drag and drop build phases to rearrange them.
-Paste the following line in this `Run Script Phase`'s script text field:
-
-```bash
-bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/imglyKit.framework/strip-framework.sh"
-```
-
-This script works around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) triggered by universal binaries.
-
-![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/run-script-phase.jpg)
-
 
 Our SDK provides two main view controllers. One to work with the camera and one to edit an image.
 In the following section we will first explain how the licensing works 
