@@ -541,13 +541,23 @@
             
                 <li data-name="PhotoEditorSDK.Color.fromHSV"><a href="PhotoEditorSDK.Color.html#.fromHSV">fromHSV</a></li>
             
+                <li data-name="PhotoEditorSDK.Color#add"><a href="PhotoEditorSDK.Color.html#add">add</a></li>
+            
+                <li data-name="PhotoEditorSDK.Color#clamp"><a href="PhotoEditorSDK.Color.html#clamp">clamp</a></li>
+            
                 <li data-name="PhotoEditorSDK.Color#clone"><a href="PhotoEditorSDK.Color.html#clone">clone</a></li>
             
                 <li data-name="PhotoEditorSDK.Color#copy"><a href="PhotoEditorSDK.Color.html#copy">copy</a></li>
             
+                <li data-name="PhotoEditorSDK.Color#divideScalar"><a href="PhotoEditorSDK.Color.html#divideScalar">divideScalar</a></li>
+            
                 <li data-name="PhotoEditorSDK.Color#equals"><a href="PhotoEditorSDK.Color.html#equals">equals</a></li>
             
                 <li data-name="PhotoEditorSDK.Color#fromHSV"><a href="PhotoEditorSDK.Color.html#fromHSV">fromHSV</a></li>
+            
+                <li data-name="PhotoEditorSDK.Color#minus"><a href="PhotoEditorSDK.Color.html#minus">minus</a></li>
+            
+                <li data-name="PhotoEditorSDK.Color#multiplyScalar"><a href="PhotoEditorSDK.Color.html#multiplyScalar">multiplyScalar</a></li>
             
                 <li data-name="PhotoEditorSDK.Color#set"><a href="PhotoEditorSDK.Color.html#set">set</a></li>
             
@@ -5775,6 +5785,319 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="add">
+            
+            add<span class="signature">(color)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/lib/color.js, line 250
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Adds another color</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="clamp">
+            
+            clamp<span class="signature">(minVal, maxVal)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/lib/color.js, line 303
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>clamp</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>minVal</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>maxVal</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="clone">
             
             clone<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>}</span>
@@ -5882,7 +6205,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/color.js, line 250
+            sdk/core/lib/color.js, line 316
         </div>
         
     </div>
@@ -6020,6 +6343,151 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="divideScalar">
+            
+            divideScalar<span class="signature">(val)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/lib/color.js, line 289
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Divide with a scalar</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>val</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="equals">
             
             equals<span class="signature">(color)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Boolean}</span>
@@ -6027,7 +6495,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/color.js, line 263
+            sdk/core/lib/color.js, line 329
         </div>
         
     </div>
@@ -6318,6 +6786,296 @@
     
     
     
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="minus">
+            
+            minus<span class="signature">(color)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/lib/color.js, line 263
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Subtract another color</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="multiplyScalar">
+            
+            multiplyScalar<span class="signature">(val)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/lib/color.js, line 276
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Multiply with a scalar</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>val</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
     
     
     
@@ -7270,7 +8028,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/color.js, line 285
+            sdk/core/lib/color.js, line 351
         </div>
         
     </div>
