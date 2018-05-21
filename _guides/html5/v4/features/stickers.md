@@ -129,7 +129,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 There are times when you may want to add stickers to the editor while it's stil
 running. For instance a user may upload customized stickers while editing an image.
 You can do this on DesktopUI by calling the `addStickers` method of the
-`PhotoEditorSDK.UI.DesktopUI.Editor` class. For this you must have at least one
+[`PhotoEditorSDK.UI.DesktopUI.Editor`](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.Editor.html) class. For this you must have at least one
 custom sticker category added in `controlsOptions.stickers`, like in the
 previous example. Expanding on the last snippet:
 
