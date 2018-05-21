@@ -124,6 +124,47 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
+### Adding stickers during runtime
+
+There are times when you may want to add stickers to the editor while it's stil
+running. For instance a user may upload customized stickers while editing an image.
+You can do this on DesktopUI by calling the `addStickers` method of the
+`PhotoEditorSDK.UI.DesktopUI.Editor` class. For this you must have at least one
+custom sticker category added in `controlsOptions.stickers`, like in the
+previous example. Expanding on the last snippet:
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const sticker = {
+  identifier: 'other_custom_sticker',
+  defaultName: 'Other Custom Sticker',
+  images: {
+    mediaThumb: {
+      uri: 'stickers/thumb/other_customsticker.png',
+      width: 50,
+      height: 50
+    },
+    mediaBase: {
+      uri: 'stickers/base/other_customsticker.png',
+      width: 400,
+      height: 400
+    }
+  }
+}
+
+editor.getEditor().addSticker('some_category', sticker)
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+This will add a new sticker called 'Other Custom Sticker' to the 'some_category' sticker
+category.
+
 ## Specifying the available stickers
 
 Per default, all existing stickers (including your own) are available to the user. To make only specific stickers available to the user, use the `availableStickers` option.
