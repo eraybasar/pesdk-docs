@@ -1290,7 +1290,7 @@
             
             <p align="center">
     <a href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build">
-        <img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/>
+        <img src="https://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/>
     </a>
 </p>
 
@@ -1298,7 +1298,7 @@
     <a href="https://cocoapods.org/pods/PhotoEditorSDK">
         <img src="https://img.shields.io/cocoapods/v/PhotoEditorSDK.svg" alt="CocoaPods Compatible">
     </a>
-    <a href="http://twitter.com/PhotoEditorSDK">
+    <a href="https://twitter.com/PhotoEditorSDK">
         <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-blue.svg?style=flat" alt="Twitter">
     </a>
     <a target="_blank" href="https://pesdk-slack.herokuapp.com/">
@@ -1309,11 +1309,9 @@
 
 <p>Our SDK provides tools for adding photo editing capabilities to your iOS application with a big variety of filters that can be previewed in realtime. Unlike other apps that allow a live preview of filters, the Photo Editor SDK even provides a live preview when using high-resolution images. We do not have any resolution limits, the framework is written in Swift and allows for easy customization.
 Additionally we support adding stickers and text in a non-destructive manner, which means that you can change the position, size, scale and order at any given time, even after applying other effects or cropping the photo.</p>
-<h2 id='at-a-glance' class='heading'>At a Glance</h2>
+<h2 id='overview' class='heading'>Overview</h2>
 
-<p>Looking at the amount of classes you might be overwhelmed, but in the most common case, you will only have to work with very few classes.</p>
-
-<p>Here’s the list of components you will most likely use:</p>
+<p>The following is a list of the most important classes that you will need for the most common use cases. Although the list of available classes is long, you will not have to interact with them unless you&rsquo;re looking to extend the SDK beyond what&rsquo;s possible out of the box.</p>
 
 <ul>
 <li><code><a href="Classes/CameraViewController.html">CameraViewController</a></code> - responsible for displaying an interface to interact with the camera. It provides controls to enable the flash, toggle the camera, choose a filter and more.</li>
@@ -1326,18 +1324,16 @@ Additionally we support adding stickers and text in a non-destructive manner, wh
 <li><code><a href="Classes/PhotoEditRenderer.html">PhotoEditRenderer</a></code> - renders the changes described in a <code><a href="Structs/PhotoEditModel.html">PhotoEditModel</a></code>.</li>
 <li><code><a href="Classes/PhotoEditToolController.html">PhotoEditToolController</a></code> - the base class for all tools.</li>
 </ul>
+<h2 id='guides' class='heading'>Guides</h2>
 
-<p>With the <code><a href="Classes/PESDK.html#/c:@M@PhotoEditorSDK@objc(cs)PESDK(cm)replaceClass:with:error:">PESDK.replaceClass(_:with:)</a></code> method you can replace almost any controller or view class within the SDK with a subclass of that class. If the methods in the <code><a href="Classes/Configuration.html">Configuration</a></code> class don&rsquo;t give you enough customization possibilities, you should try this approach. Please note that subclassing Swift classes is only possible with Swift and not with Objective-C.</p>
-<h2 id='integration' class='heading'>Integration</h2>
+<p>For a more in-depth look at various features of the PhotoEditor SDK and an integration guide, please visit <a href="https://docs.photoeditorsdk.com/guides/ios/">docs.photoeditorsdk.com/guides/ios</a>.</p>
+<h2 id='support' class='heading'>Support</h2>
 
-<p>For a step-by-step guide to integrate PhotoEditor SDK, please visit <a href="https://docs.photoeditorsdk.com/guides/ios/">docs.photoeditorsdk.com/guides/ios</a>.</p>
+<p>Please use our <a href="https://support.photoeditorsdk.com/">Service Desk</a> if you have any questions or would like to submit bug reports.</p>
 <h2 id='license-terms' class='heading'>License Terms</h2>
 
 <p>Make sure you have a commercial license before releasing your app.
 A commercial license is required for any app or service that has any form of monetization: This includes free apps with in-app purchases or ad supported applications. Please contact us if you want to purchase the commercial license.</p>
-<h2 id='support' class='heading'>Support</h2>
-
-<p>Please use our <a href="http://support.photoeditorsdk.com/">Service Desk</a> if you have any questions or would like to submit bug reports.</p>
 
           </div>
         </section>
@@ -1346,7 +1342,7 @@ A commercial license is required for any app or service that has any form of mon
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-04-12)</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
