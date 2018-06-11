@@ -37,5 +37,8 @@ Want to integrate the PhotoEditor SDK into your app and need a place to start th
 <a class='no-underline' href="{{ site.baseurl }}/quickstarts/react">
 ![Logo]({{ site.baseurl }}/assets/images/quickstarts/react/logo.png){: height="100px"  style="padding: 20px"}
 </a>
+<a class='no-underline' href="{{ site.baseurl }}/quickstarts/vuejs">
+![Logo]({{ site.baseurl }}/assets/images/quickstarts/vuejs/logo.png){: height="100px"  style="padding: 20px"}
+</a>
 {:center}
 
