@@ -68,6 +68,8 @@ Now you can edit all style attributes. It's also possible to override the style 
 
 ![Edit style]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_edit_style.png){: width="800px"}
 
+If you want text instead of icons in the ActionBar, change the tag name in the button’s XML layout from `ly.img.android.ui.widgets.buttons.AcceptButton` to `ly.img.android.ui.widgets.buttons.AcceptTextButton`. The same works for the Cancel button, just use `ly.img.android.ui.widgets.buttons.CancelTextButton`.
+
 ### Declaring layout guides
 
 For more information look at the [Google Developer Guides]( http://developer.android.com/guide/topics/ui/declaring-layout.html).

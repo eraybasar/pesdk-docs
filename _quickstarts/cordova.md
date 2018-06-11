@@ -22,14 +22,37 @@ We created a [demo repository](https://github.com/imgly/pesdk-cordova-demo) to s
 
 You can copy the repository into your own project and use the `cordova plugin add /path/to/plugin --link` command to add it to your app. You will most likely need to adjust the codebase to fit your requirements and to customize the PhotoEditor SDK. For customizations, take a look at the [PESDKPlugin.m](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/ios/PESDKPlugin.m) and [PESDKPlugin.java](https://github.com/imgly/pesdk-cordova-demo/blob/master/src/android/PESDKPlugin.java) files and the corresponding documentation for [iOS]({{ site.baseurl }}/guides/ios/latest/introduction/configuration) and [Android]({{ site.baseurl }}/guides/android/latest/introduction/configuration). You can easily alter the configurations to change colors, behaviour etc. and handle callbacks that are sent by our SDK.
 
+## License Files
+
+> **WARNING**: The SDK requires dedicated license files for each platform. If unavailable, the camera and editor will crash upon launch.
+
+You need to add the LICENSE_IOS and LICENSE_ANDROID files to each project. This can be done manually by opening the PESDKDemo.xcworkspace using Xcode and dragging the license file into the sidebar, as well as copying the license file to the /platforms/android/app/main/assets folder for Android. 
+
+Or automated by using Cordovas `resource-file` tags to link the files from the root directory. To do so, put your `LICENSE_ANDROID` and `LICENSE_IOS` files in the root folder of your project and then add the following lines to your `config.xml`:
+
+Within the Android platform tag (supported starting `cordova-android-7.0`):
+```xml
+<platform name="android">
+  <resource-file src="LICENSE_ANDROID" target="app/src/main/assets/LICENSE_ANDROID" />
+</platform>
+```
+
+Within the iOS platform tag:
+```xml
+<platform name="ios">
+  <resource-file src="LICENSE_IOS" />
+</platform>
+```
+
+> **WARNING**: You need to make sure that the app identifiers declared in your license files match the bundle/app identifiers used on iOS and Android.
+
 ## Example App
-The included example app demonstrates how to open the PhotoEditor SDK's camera and pass any taken or selected images to the editor. When an edited image is saved, its filepath is sent back to Cordova and displayed using a JavaScript alert. An app could then display this image in Cordova or send it to a backend. To launch the example app, take a look at the *Development* section below.
+The included example app demonstrates how to open the PhotoEditor SDK's camera and pass any taken or selected images to the editor. When an edited image is saved, its filepath is sent back to Cordova and displayed using a JavaScript alert. An app could then display this image in Cordova or send it to a backend. To open an existing image instead, you can pass a filepath to the `present` method, but will need to handle the different ways both platforms manage filepaths. To launch the example app, take a look at the *Development* section below.
 
 ## Installation
 In order to use the plugin within your Cordova app you need to follow some steps, detailed in the following paragraphs.
 
 ### iOS Configuration
-
 The plugin adds the `NSCameraUsageDescription` and `NSPhotoLibraryUsageDescription` keys to your iOS apps `Info.plist` file. These are required as of iOS 10 and not setting them will cause your app to crash.
 You can customize these messages to match your use case in the [plugin.xml](https://github.com/imgly/pesdk-cordova-demo/blob/master/plugin.xml) file:
 
@@ -43,25 +66,11 @@ You can customize these messages to match your use case in the [plugin.xml](http
 ```
 
 ### Android Configuration
-
 No special configuration is needed for Android. Just require the plugin.
 
 ## Development
+The example app was created by starting a new Cordova app, adding the iOS and Android platforms and linking the plugin using the `cordova plugin add /path/to/plugin --link` command mentioned above.
 
-To run the example app that comes with this repository you need to execute the following commands from the root folder:
-```
-$ make
-$ cp example/LICENSE_ANDROID example/platforms/android/assets
-```
-These add the iOS and Android platforms to the example app, install the `pesdk` plugin from the current directory and finally add the required license for the PhotoEditor SDK to the Android application.
+To run the Android and iOS samples you can then simply execute `cordova run android` or `cordova run ios` from the `example` subfolder.
 
-Furthermore you need to add the `LICENSE_IOS` file to the Xcode project by opening _PESDKDemo.xcworkspace_ using Xcode and dragging the license file into the sidebar.
-
-To run the Android and iOS samples you can then simply execute `cordova run android` or `cordova run ios` from the `example` subfolder. If the Android app crashes upon launch you most likely forgot the `cp LICENSE_ANDROID...` command mentioned above.
-
-After you change source code in the native Android/Xcode IDE, make sure to **commit your changes back to the root folder** or you might overwrite your work! The `make` commands link the plugin folder into your project and the repository is configured to ignore the corresponding platform and plugin folders within the example app.
-
-### Android
-Run `make clean android` to create a test APK file. You can open `example/platforms/android` directly with Android Studio.
-### iOS
-Run `make clean ios` and a test project is built. It will build an xcode project in `example/platforms/ios`.
+If you make changes to the plugin in the root directory, you'll likely have to remove and add the plugin to your example project again to make sure the updated source code is used.

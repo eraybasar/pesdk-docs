@@ -17,73 +17,80 @@ published: true # Either published or not
 ---
 
 
-The PhotoEditor SDK is fully localizable. We provide an English fallback localization, that will be used when no matching localization is found. To determine the matching language PhotoEditor SDK uses `NSLocale.preferredLanguages`.
+The PhotoEditor SDK is fully localizable. We provide an English fallback localization, that will be used when no matching localization is found. To determine the matching language, PhotoEditor SDK uses `NSLocale.preferredLanguages`.
 To add support for a language, please refer to Apple's localization guidelines.
 We also provide two properties to customize your localization, `PESDK.localizationDictionary` and `PESDK.localizationBlock`.
 
-## Add further localization to the PhotoEditor SDK
+## Localization Dictionary
 
-You can either set new localization programmatically or add further localization via adding the corresponding folders.
-To get an overview of all available strings that need to be localized, look inside /PhotoEditorSDK.bundle/en.lproj/Localizable.strings. The contents of that file are in binary format. To convert them back into a readable format please use the following command:
+The first method to add another language is to set `PESDK.localizationDictionary` to a dictionary containing your localizations. The key of the dictionary needs to be the locale that you want to add, the value should be another dictionary containing the string that needs to be localized as the key and the localized version as the value. And example for the German language might look like this:
 
-```bash
-plutil -convert xml1 PhotoEditorSDK.bundle/en.lproj/Localizable.strings
-```
-
-As mentioned above, there are two ways to add localization programmatically. The first is to set a localization dictionary like so:
-
+{% capture first_snippet %}
+Swift
+---
 ```swift
 PESDK.localizationDictionary = [
-    "en": [
-      "No permission" : "No permission",
-      "Top left cropping area" : "Top left cropping area",
-      "Settings" : "Settings"
-    ]
+  "de": [
+    "No permission" : "Keine Berechtigung",
+    "Top left cropping area" : "Zuschneidebereich oben links",
+    "Settings" : "Einstellungen"
+  ]
 ]
 ```
+{% endcapture %}
 
-The `en` string indicates, that this translation should be used when English language is needed.
-You can chain multiple translations like this. The second option is, to use a block, allowing you to easily use your
-default bundle or a customized bundle with `NSLocalizedStringFromTableInBundle`.
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+[PESDK setLocalizationDictionary:
+ @{
+   @"de": @{
+     @"No permission" : @"Keine Berechtigung",
+     @"Top left cropping area" : @"Zuschneidebereich oben links",
+     @"Settings" : @"Einstellungen"
+   }
+ }
+];
+```
+{% endcapture %}
 
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-localizationDictionary{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Localization Closure
+
+The more advanced way to add localization is passing a closure, which will be called for each string that can be localized. You can then use that closure to look up a matching localization in your app's `Localizable.strings` file or do something completely custom. An example might look like this:
+
+{% capture first_snippet %}
+Swift
+---
+```swift
+PESDK.localizationBlock = { stringToLocalize in
+  return NSLocalizedString(stringToLocalize, comment: "")
+}
+```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
 ```objc
 [PESDK setLocalizationBlock:^NSString * _Nullable(NSString * _Nonnull stringToLocalize) {
-    // This will look up strings in Localizable.strings inside your resource folder.
-    return NSLocalizedStringFromTable(stringToLocalize, @"Localizable", nil);
-
-    // You can also route your default localization:
-    return NSLocalizedString(stringToLocalize, nil);
-
-    // Or use a custom variant, for example to test if everything is localized:
-    // Please keep in mind that several strings like "Edit" are provided by the system and automatically translated, provided that you have the correct localization resources set.
-    return [NSString stringWithFormat:@"_____%@_____", stringToLocalize];
+  return NSLocalizedString(stringToLocalize, nil);
 }];
 ```
+{% endcapture %}
 
-## Plurals
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-localizationBlock{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-To have plurals handled correctly, we use a [.stringsdict](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/StringsdictFileFormat/StringsdictFileFormat.html) file that defines plural rules of a language. Some languages have more plural rules than others.
+## Localizable.strings
 
-Here is an example for croatian:
-```xml
-<key>%tu match(es) found</key>
-<dict>
-    <key>NSStringLocalizedFormatKey</key>
-    <string>%#@tu_matches_found@</string>
-    <key>tu_matches_found</key>
-    <dict>
-        <key>NSStringFormatSpecTypeKey</key>
-        <string>NSStringPluralRuleType</string>
-        <key>NSStringFormatValueTypeKey</key>
-        <string>tu</string>
-        <key>zero</key>
-        <string>Nema pronađenih rezultata</string>
-        <key>one</key>
-        <string>%tu pronađen rezultat</string>
-        <key>two</key>
-        <string>%tu pronađena rezultata</string>
-        <key>other</key>
-        <string>%tu pronađenih rezultata</string>
-    </dict>
-</dict>
+A list of strings that are used in the SDK is available within the framework's bundle at `PhotoEditorSDK.framework/PhotoEditorSDK.bundle/en.lproj/Localizable.strings`. The contents of that file are in binary format. To convert them back into a readable format please use the following command:
+
+```bash
+plutil -convert xml1 PhotoEditorSDK.framework/PhotoEditorSDK.bundle/en.lproj/Localizable.strings
 ```
