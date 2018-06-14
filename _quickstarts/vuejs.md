@@ -21,7 +21,7 @@ published: true
 
 > PhotoEditor SDK Vue.js wrapper
 
-The source code of the plugin can be found [here](https://github.com/imgly/pesdk-plugin-vuejs).
+The source code of the plugin can be found [here](https://github.com/imgly/pesdk-wrapper-vuejs).
 
 ## 🔧 Installation
 
@@ -83,7 +83,7 @@ You have however to either download or copy the PhotoEditorSDk assets to your pu
 
 If you need more configuration possibilites, you can pass all the mentioned [options](https://docs.photoeditorsdk.com/guides/html5/v4/introduction/configuration) to the `editorOptions` or `options` prop.
 
-Furhtermore the editor instance is saved as a Vue Instance Property so you can access the editor instance inside your parent component with `this.$pesdk` after the editor is mounted.
+Furthermore, the editor instance is saved as a Vue Instance Property so you can access the editor instance inside your parent component with `this.$pesdk` after the editor is mounted.
 
 ## 📺 Examples
 
@@ -105,6 +105,7 @@ Furhtermore the editor instance is saved as a Vue Instance Property so you can a
   export default {
     components: { PhotoEditor },
   }
+</script>
 ```
 
 ### Listen to Events
