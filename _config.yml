@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: The PhotoEditor SDK Docs for HTML5, iOS and Android by Img.ly
+title: The PhotoEditor SDK Docs for HTML5, iOS and Android by img.ly
 email: contact@photoeditorsdk.com
 description: > # this means to ignore newlines until "baseurl:"
   The PhotoEditor SDK is a fully customizable mean machine. Start your free trial and integrate the versatile editor into your own HTML5, iOS or Android app
