@@ -870,6 +870,12 @@
                 <a class="nav-group-task-link" href="../Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1291,7 +1297,9 @@
             <h1>PhotoEditViewControllerDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@objc(PESDKPhotoEditViewControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditViewControllerDelegate</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKPhotoEditViewControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditViewControllerDelegate</span></code></pre>
 
                 </div>
               </div>
@@ -1327,7 +1335,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">didSave</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="n">and</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc(photoEditViewController:didSaveImage:imageAsData:)</span>
+<span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">didSave</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="n">and</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1397,7 +1406,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">func</span> <span class="nf">photoEditViewControllerDidFailToGeneratePhoto</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">photoEditViewControllerDidFailToGeneratePhoto</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1443,7 +1453,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">func</span> <span class="nf">photoEditViewControllerDidCancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">photoEditViewControllerDidCancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1489,7 +1500,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">willPresentToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">willPresentToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1547,7 +1559,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">didPresentToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">didPresentToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1605,7 +1618,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">willDismissToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">willDismissToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1663,7 +1677,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">didDismissToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoEditViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoEditViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></span><span class="p">,</span> <span class="n">didDismissToolController</span> <span class="nv">toolController</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEditToolController.html">PhotoEditToolController</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1709,8 +1724,8 @@ object was not created with <code>init(data:)</code> or <code>init(url:)</code>.
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

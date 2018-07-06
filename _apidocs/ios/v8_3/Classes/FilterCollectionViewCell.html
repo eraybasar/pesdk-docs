@@ -870,6 +870,12 @@
                 <a class="nav-group-task-link" href="../Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1291,7 +1297,10 @@
             <h1>FilterCollectionViewCell</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKFilterCollectionViewCell)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">FilterCollectionViewCell</span><span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKFilterCollectionViewCell)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">FilterCollectionViewCell</span> <span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
 
                 </div>
               </div>
@@ -1333,7 +1342,7 @@ an selection indicator.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">imageView</span> <span class="o">=</span> <span class="kt">UIImageView</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">imageView</span><span class="p">:</span> <span class="kt">UIImageView</span></code></pre>
 
                         </div>
                       </div>
@@ -1360,7 +1369,7 @@ an selection indicator.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">gradientView</span> <span class="o">=</span> <span class="kt"><a href="../Classes/GradientView.html">GradientView</a></span><span class="p">(</span><span class="nv">topColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">clear</span><span class="p">,</span> <span class="nv">bottomColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="o">.</span><span class="nf">withAlphaComponent</span><span class="p">(</span><span class="mf">0.4</span><span class="p">))</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">gradientView</span><span class="p">:</span> <span class="kt"><a href="../Classes/GradientView.html">GradientView</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1387,7 +1396,7 @@ an selection indicator.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">captionLabel</span> <span class="o">=</span> <span class="kt">UILabel</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">captionLabel</span><span class="p">:</span> <span class="kt">UILabel</span></code></pre>
 
                         </div>
                       </div>
@@ -1414,7 +1423,7 @@ an selection indicator.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">activityIndicator</span> <span class="o">=</span> <span class="kt">UIActivityIndicatorView</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">activityIndicator</span><span class="p">:</span> <span class="kt">UIActivityIndicatorView</span></code></pre>
 
                         </div>
                       </div>
@@ -1441,7 +1450,7 @@ an selection indicator.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">selectionOverlay</span> <span class="o">=</span> <span class="kt"><a href="../Classes/GradientView.html">GradientView</a></span><span class="p">(</span><span class="nv">topColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="o">.</span><span class="nf">withAlphaComponent</span><span class="p">(</span><span class="mf">0.15</span><span class="p">),</span> <span class="nv">bottomColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="o">.</span><span class="nf">withAlphaComponent</span><span class="p">(</span><span class="mf">0.75</span><span class="p">))</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">selectionOverlay</span><span class="p">:</span> <span class="kt"><a href="../Classes/GradientView.html">GradientView</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1468,7 +1477,7 @@ an selection indicator.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">selectionIndicator</span> <span class="o">=</span> <span class="kt">UIView</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">selectionIndicator</span><span class="p">:</span> <span class="kt">UIView</span></code></pre>
 
                         </div>
                       </div>
@@ -1495,7 +1504,7 @@ an selection indicator.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">selectionLabel</span> <span class="o">=</span> <span class="kt">UILabel</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">selectionLabel</span><span class="p">:</span> <span class="kt">UILabel</span></code></pre>
 
                         </div>
                       </div>
@@ -1510,8 +1519,8 @@ an selection indicator.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

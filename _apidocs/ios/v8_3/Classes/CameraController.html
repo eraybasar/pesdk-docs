@@ -870,6 +870,12 @@
                 <a class="nav-group-task-link" href="../Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1291,7 +1297,10 @@
             <h1>CameraController</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKCameraController)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">CameraController</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKCameraController)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">CameraController</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -1362,7 +1371,8 @@ to the value of this property using key-value observing.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1389,7 +1399,7 @@ to the value of this property using key-value observing.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">runningStateChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">running</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">runningStateChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1416,7 +1426,7 @@ to the value of this property using key-value observing.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cameraPositionChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">previousPosition</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">,</span> <span class="n">_</span> <span class="nv">newPosition</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cameraPositionChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">,</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1443,7 +1453,7 @@ to the value of this property using key-value observing.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">recordingModeChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">recordingModeChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1470,7 +1480,7 @@ to the value of this property using key-value observing.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">availableCameraPositionsChangedHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">availableCameraPositionsChangedHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1499,7 +1509,7 @@ active flash mode. <code>flashAvailable</code> is <code>true</code> if the flash
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">flashChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">hasFlash</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flashMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flashAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">flashChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1528,7 +1538,7 @@ active torch mode. <code>torchAvailable</code> is <code>true</code> if the torch
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">torchChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">hasTorch</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">torchMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">,</span> <span class="n">_</span> <span class="nv">torchAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">torchChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1555,7 +1565,7 @@ active torch mode. <code>torchAvailable</code> is <code>true</code> if the torch
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">capturingStillImageHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">capturing</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">capturingStillImageHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1583,7 +1593,7 @@ switching to a multi-app layout, introduced in iOS 9 for example.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">sessionInterruptionHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">interrupted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">sessionInterruptionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1610,7 +1620,7 @@ switching to a multi-app layout, introduced in iOS 9 for example.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">sessionRuntimeErrorHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">sessionRuntimeErrorHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1691,7 +1701,7 @@ switching to a multi-app layout, introduced in iOS 9 for example.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFinishedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">fileURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFinishedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">URL</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1745,7 +1755,7 @@ switching to a multi-app layout, introduced in iOS 9 for example.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingProgressHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingProgressHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1772,7 +1782,7 @@ switching to a multi-app layout, introduced in iOS 9 for example.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">previewFrameChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">previewFrame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">previewFrameChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1799,7 +1809,7 @@ switching to a multi-app layout, introduced in iOS 9 for example.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">focusPointChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">focusPointChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1826,7 +1836,7 @@ switching to a multi-app layout, introduced in iOS 9 for example.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">focusModeChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">focusMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FocusMode</span><span class="p">,</span> <span class="n">_</span> <span class="nv">exposureMode</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">ExposureMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">focusModeChangedHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FocusMode</span><span class="p">,</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">ExposureMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -1881,7 +1891,7 @@ settings for file type <code>AVFileTypeQuickTimeMovie</code> will be used.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -1909,7 +1919,7 @@ settings for file type <code>AVFileTypeQuickTimeMovie</code> will be used.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">audioOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">audioOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -1942,7 +1952,7 @@ and <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileType</span><span class="p">:</span> <span class="kt">AVFileType</span> <span class="o">=</span> <span class="kt">AVFileType</span><span class="o">.</span><span class="n">mov</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileType</span><span class="p">:</span> <span class="kt">AVFileType</span></code></pre>
 
                         </div>
                       </div>
@@ -1969,7 +1979,7 @@ and <code><a href="../Classes/CameraController.html#/c:@M@PhotoEditorSDK@objc(cs
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileExtension</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"mov"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileExtension</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -2058,7 +2068,7 @@ Defaults to all flash modes. Duplicate values result in undefined behaviour.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">flashModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">auto</span><span class="p">,</span> <span class="o">.</span><span class="n">on</span><span class="p">,</span> <span class="o">.</span><span class="n">off</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">flashModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2088,7 +2098,7 @@ Defaults to all torch modes. Duplicate values result in undefined behaviour.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">torchModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">auto</span><span class="p">,</span> <span class="o">.</span><span class="n">on</span><span class="p">,</span> <span class="o">.</span><span class="n">off</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">torchModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2115,7 +2125,7 @@ Defaults to all torch modes. Duplicate values result in undefined behaviour.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">tapToFocusEnabled</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">tapToFocusEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2142,7 +2152,7 @@ Defaults to all torch modes. Duplicate values result in undefined behaviour.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">photoEffect</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEffect.html">PhotoEffect</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">photoEffect</span><span class="p">:</span> <span class="kt"><a href="../Classes/PhotoEffect.html">PhotoEffect</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2169,7 +2179,7 @@ Defaults to all torch modes. Duplicate values result in undefined behaviour.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">photoEffectIntensity</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">photoEffectIntensity</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2196,7 +2206,7 @@ Defaults to all torch modes. Duplicate values result in undefined behaviour.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">includeUserLocation</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">includeUserLocation</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -2241,7 +2251,8 @@ with their initial values.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc(setupWithInitialRecordingMode:error:)</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -2294,7 +2305,8 @@ always invoked on the main thread.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc(setupWithInitialRecordingMode:completion:error:)</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">recordingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -2457,7 +2469,8 @@ nothing. You should also add the <code><a href="../Classes/CameraController.html
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">switchToCamera</span><span class="p">(</span><span class="n">at</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc(switchToCameraAtPosition:)</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">switchToCamera</span><span class="p">(</span><span class="n">at</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2781,7 +2794,7 @@ Setting this property overrides any previously set values in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cameraPositionsAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cameraPositionsAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2810,7 +2823,7 @@ Setting this property overrides any previously set values in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">flashModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">flashModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2839,7 +2852,7 @@ Setting this property overrides any previously set values in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">torchModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">torchModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2854,8 +2867,8 @@ Setting this property overrides any previously set values in
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -14,6 +14,7 @@
   </head>
   <body>
 
+    <a name="//apple_ref/swift/Section/Other Protocols" class="dashAnchor"></a>
 
     <a title="Other Protocols  Reference"></a>
 
@@ -869,6 +870,12 @@
                 <a class="nav-group-task-link" href="Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1319,7 +1326,42 @@ the <code><a href="Classes/AdjustEditController.html">AdjustEditController</a></
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKAdjustEditControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AdjustEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKAdjustEditControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AdjustEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKGeneratorDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/GeneratorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKGeneratorDelegate">GeneratorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>GeneratorDelegate</code> protocol defines methods that allow you to respond to changes that are made to a generator.</p>
+
+                        <a href="Protocols/GeneratorDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKGeneratorDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GeneratorDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1352,7 +1394,9 @@ the <code><a href="Classes/BrushEditController.html">BrushEditController</a></co
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKBrushEditControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BrushEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKBrushEditControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BrushEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1384,7 +1428,9 @@ the <code><a href="Classes/BrushEditController.html">BrushEditController</a></co
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKCanvasViewDataSource)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CanvasViewDataSource</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKCanvasViewDataSource)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CanvasViewDataSource</span></code></pre>
 
                         </div>
                       </div>
@@ -1412,40 +1458,8 @@ the <code><a href="Classes/BrushEditController.html">BrushEditController</a></co
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CanvasViewDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKColorCollectionViewDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/ColorCollectionViewDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKColorCollectionViewDelegate">ColorCollectionViewDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>ColorCollectionViewDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/ColorCollectionView.html">ColorCollectionView</a></code>.</p>
-
-                        <a href="Protocols/ColorCollectionViewDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKColorCollectionViewDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ColorCollectionViewDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CanvasViewDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1478,7 +1492,8 @@ the <code><a href="Classes/ColorPickerViewController.html">ColorPickerViewContro
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ColorPickerViewControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ColorPickerViewControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1492,9 +1507,9 @@ the <code><a href="Classes/ColorPickerViewController.html">ColorPickerViewContro
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKCropAndStraightenViewDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/CropAndStraightenViewDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKCropAndStraightenViewDelegate">CropAndStraightenViewDelegate</a>
+                    <a name="/s:14PhotoEditorSDK26MenuViewControllerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/MenuViewControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK26MenuViewControllerDelegateP">MenuViewControllerDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1502,17 +1517,191 @@ the <code><a href="Classes/ColorPickerViewController.html">ColorPickerViewContro
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The methods declared by the <code>CropAndStraightenViewDelegate</code> protocol allow the adopting
-delegate to respond to message from the <code><a href="Classes/CropAndStraightenView.html">CropAndStraightenView</a></code> class and thus respond to
-operations such as tracking.</p>
+                        <p>The <code>MenuViewControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/MenuViewController.html">MenuViewController</a></code>.</p>
 
-                        <a href="Protocols/CropAndStraightenViewDelegate.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/MenuViewControllerDelegate.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKCropAndStraightenViewDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CropAndStraightenViewDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MenuViewControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditPreviewControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/PhotoEditPreviewControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditPreviewControllerDelegate">PhotoEditPreviewControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>PhotoEditPreviewControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/PhotoEditPreviewController.html">PhotoEditPreviewController</a></code>.</p>
+
+                        <a href="Protocols/PhotoEditPreviewControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKPhotoEditPreviewControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditPreviewControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditToolControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/PhotoEditToolControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditToolControllerDelegate">PhotoEditToolControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>PhotoEditToolControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/PhotoEditToolController.html">PhotoEditToolController</a></code>.</p>
+
+                        <a href="Protocols/PhotoEditToolControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKPhotoEditToolControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditToolControllerDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKProxyZoomControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/ProxyZoomControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKProxyZoomControllerDelegate">ProxyZoomControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>ProxyZoomControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/ProxyZoomController.html">ProxyZoomController</a></code>.</p>
+
+                        <a href="Protocols/ProxyZoomControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKProxyZoomControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ProxyZoomControllerDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK28SliderEditControllerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SliderEditControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK28SliderEditControllerDelegateP">SliderEditControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>SliderEditControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/SliderEditController.html">SliderEditController</a></code>.</p>
+
+                        <a href="Protocols/SliderEditControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SliderEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKSpriteViewControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/SpriteViewControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKSpriteViewControllerDelegate">SpriteViewControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>SpriteViewControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/SpriteViewController.html">SpriteViewController</a></code>.</p>
+
+                        <a href="Protocols/SpriteViewControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKSpriteViewControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpriteViewControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1544,7 +1733,8 @@ operations such as tracking.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EventSubscribable</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EventSubscribable</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1576,171 +1766,8 @@ operations such as tracking.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EventSubscriber</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFilterEditControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/FilterEditControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFilterEditControllerDelegate">FilterEditControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>FilterEditControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/FilterEditController.html">FilterEditController</a></code>.</p>
-
-                        <a href="Protocols/FilterEditControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKFilterEditControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FilterEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFocusEditControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/FocusEditControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFocusEditControllerDelegate">FocusEditControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>FocusEditControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code>FocusEditControllerDelegate</code>.</p>
-
-                        <a href="Protocols/FocusEditControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKFocusEditControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FocusEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFontSelectorViewDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/FontSelectorViewDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFontSelectorViewDelegate">FontSelectorViewDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>FontSelectorViewDelegate</code> protocol defines methods that allow you to respond to the events
-of an instance of <code><a href="Classes/FontSelectorView.html">FontSelectorView</a></code>.</p>
-
-                        <a href="Protocols/FontSelectorViewDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKFontSelectorViewDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FontSelectorViewDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14PhotoEditorSDK34FontSelectorViewControllerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/FontSelectorViewControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK34FontSelectorViewControllerDelegateP">FontSelectorViewControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>FontSelectorViewControllerDelegate</code> defines methods that allow you to respond to messages
-from the <code><a href="Classes/FontSelectorViewController.html">FontSelectorViewController</a></code>.</p>
-
-                        <a href="Protocols/FontSelectorViewControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FontSelectorViewControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFrameBuilderProtocol"></a>
-                    <a name="//apple_ref/swift/Protocol/FrameBuilder" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFrameBuilderProtocol">FrameBuilder</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Every frame builder must implement this protocol.</p>
-
-                        <a href="Protocols/FrameBuilder.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKFrameBuilderProtocol)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FrameBuilder</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EventSubscriber</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1787,103 +1814,6 @@ from the <code><a href="Classes/FontSelectorViewController.html">FontSelectorVie
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14PhotoEditorSDK26MenuViewControllerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/MenuViewControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK26MenuViewControllerDelegateP">MenuViewControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>MenuViewControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/MenuViewController.html">MenuViewController</a></code>.</p>
-
-                        <a href="Protocols/MenuViewControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MenuViewControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14PhotoEditorSDK20ObjectiveCBridgeableP"></a>
-                    <a name="//apple_ref/swift/Protocol/ObjectiveCBridgeable" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK20ObjectiveCBridgeableP">ObjectiveCBridgeable</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Marker protocol to generate a matching Objective-C type using Sourcery.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ObjectiveCBridgeable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKOverlayEditControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/OverlayEditControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKOverlayEditControllerDelegate">OverlayEditControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>OverlayEditControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code>OverlayEditControllerDelegate</code>.</p>
-
-                        <a href="Protocols/OverlayEditControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKOverlayEditControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">OverlayEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:14PhotoEditorSDK0A17EditModelSettableP"></a>
                     <a name="//apple_ref/swift/Protocol/PhotoEditModelSettable" class="dashAnchor"></a>
                     <a class="token" href="#/s:14PhotoEditorSDK0A17EditModelSettableP">PhotoEditModelSettable</a>
@@ -1902,73 +1832,8 @@ the <code>OverlayEditControllerDelegate</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditModelSettable</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditPreviewControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/PhotoEditPreviewControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditPreviewControllerDelegate">PhotoEditPreviewControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>PhotoEditPreviewControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/PhotoEditPreviewController.html">PhotoEditPreviewController</a></code>.</p>
-
-                        <a href="Protocols/PhotoEditPreviewControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKPhotoEditPreviewControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditPreviewControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditToolControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/PhotoEditToolControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKPhotoEditToolControllerDelegate">PhotoEditToolControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>PhotoEditToolControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/PhotoEditToolController.html">PhotoEditToolController</a></code>.</p>
-
-                        <a href="Protocols/PhotoEditToolControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKPhotoEditToolControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditToolControllerDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotoEditModelSettable</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -2036,172 +1901,8 @@ is visible can cause unexpected behavior.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKProgressView)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ProgressView</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKProxyZoomControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/ProxyZoomControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKProxyZoomControllerDelegate">ProxyZoomControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>ProxyZoomControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/ProxyZoomController.html">ProxyZoomController</a></code>.</p>
-
-                        <a href="Protocols/ProxyZoomControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKProxyZoomControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ProxyZoomControllerDelegate</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKScalePickerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/ScalePickerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKScalePickerDelegate">ScalePickerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>ScalePickerDelegate</code> protocol defines a set of methods you can use to receive value-change
-messages for <code><a href="Classes/ScalePicker.html">ScalePicker</a></code> objects.</p>
-
-                        <a href="Protocols/ScalePickerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKScalePickerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ScalePickerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14PhotoEditorSDK28SliderEditControllerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/SliderEditControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK28SliderEditControllerDelegateP">SliderEditControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>SliderEditControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/SliderEditController.html">SliderEditController</a></code>.</p>
-
-                        <a href="Protocols/SliderEditControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SliderEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14PhotoEditorSDK28SpriteEditControllerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/SpriteEditControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK28SpriteEditControllerDelegateP">SpriteEditControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>SpriteEditControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/SpriteEditController.html">SpriteEditController</a></code>.</p>
-
-                        <a href="Protocols/SpriteEditControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpriteEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14PhotoEditorSDK31SpriteGestureControllerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/SpriteGestureControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK31SpriteGestureControllerDelegateP">SpriteGestureControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>SpriteGestureControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/SpriteGestureController.html">SpriteGestureController</a></code>.</p>
-
-                        <a href="Protocols/SpriteGestureControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpriteGestureControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKProgressView)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ProgressView</span></code></pre>
 
                         </div>
                       </div>
@@ -2276,203 +1977,6 @@ a padding around its content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKSpriteViewControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/SpriteViewControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKSpriteViewControllerDelegate">SpriteViewControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>SpriteViewControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/SpriteViewController.html">SpriteViewController</a></code>.</p>
-
-                        <a href="Protocols/SpriteViewControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKSpriteViewControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpriteViewControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKGeneratorDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/GeneratorDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKGeneratorDelegate">GeneratorDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>GeneratorDelegate</code> protocol defines methods that allow you to respond to changes that are made to a generator.</p>
-
-                        <a href="Protocols/GeneratorDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKGeneratorDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GeneratorDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14PhotoEditorSDK29StickerEditControllerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/StickerEditControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK29StickerEditControllerDelegateP">StickerEditControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>StickerEditControllerDelegate</code> defines methods that allow you to respond to messages from
-the <code><a href="Classes/StickerEditController.html">StickerEditController</a></code>.</p>
-
-                        <a href="Protocols/StickerEditControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StickerEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKStickerSelectionControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/StickerSelectionControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKStickerSelectionControllerDelegate">StickerSelectionControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>StickerSelectionControllerDelegate</code> defines methods that allow you to respond to messages
-from the <code><a href="Classes/StickerSelectionController.html">StickerSelectionController</a></code>.</p>
-
-                        <a href="Protocols/StickerSelectionControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKStickerSelectionControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StickerSelectionControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14PhotoEditorSDK20ToolbarItemProvidingP"></a>
-                    <a name="//apple_ref/swift/Protocol/ToolbarItemProviding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK20ToolbarItemProvidingP">ToolbarItemProviding</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A view controller that is pushed onto a toolbar controller must implement this protocol if
-it wants to present a toolbar item in the toolbar.</p>
-
-                        <a href="Protocols/ToolbarItemProviding.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ToolbarItemProviding</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKTransformEditControllerDelegate"></a>
-                    <a name="//apple_ref/swift/Protocol/TransformEditControllerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKTransformEditControllerDelegate">TransformEditControllerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>TransformEditControllerDelegate</code> defines methods that allow you to respond to messages
-from the <code><a href="Classes/TransformEditController.html">TransformEditController</a></code>.</p>
-
-                        <a href="Protocols/TransformEditControllerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKTransformEditControllerDelegate)</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TransformEditControllerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:14PhotoEditorSDK18TransitionAnimatorP"></a>
                     <a name="//apple_ref/swift/Protocol/TransitionAnimator" class="dashAnchor"></a>
                     <a class="token" href="#/s:14PhotoEditorSDK18TransitionAnimatorP">TransitionAnimator</a>
@@ -2533,14 +2037,563 @@ when presenting or dismissing the controller.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK20ToolbarItemProvidingP"></a>
+                    <a name="//apple_ref/swift/Protocol/ToolbarItemProviding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK20ToolbarItemProvidingP">ToolbarItemProviding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A view controller that is pushed onto a toolbar controller must implement this protocol if
+it wants to present a toolbar item in the toolbar.</p>
+
+                        <a href="Protocols/ToolbarItemProviding.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ToolbarItemProviding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKColorCollectionViewDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/ColorCollectionViewDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKColorCollectionViewDelegate">ColorCollectionViewDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>ColorCollectionViewDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/ColorCollectionView.html">ColorCollectionView</a></code>.</p>
+
+                        <a href="Protocols/ColorCollectionViewDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKColorCollectionViewDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ColorCollectionViewDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFilterEditControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/FilterEditControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFilterEditControllerDelegate">FilterEditControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>FilterEditControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/FilterEditController.html">FilterEditController</a></code>.</p>
+
+                        <a href="Protocols/FilterEditControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKFilterEditControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FilterEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFocusEditControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/FocusEditControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFocusEditControllerDelegate">FocusEditControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>FocusEditControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code>FocusEditControllerDelegate</code>.</p>
+
+                        <a href="Protocols/FocusEditControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKFocusEditControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FocusEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFrameBuilderProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/FrameBuilder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFrameBuilderProtocol">FrameBuilder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Every frame builder must implement this protocol.</p>
+
+                        <a href="Protocols/FrameBuilder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(PESDKFrameBuilderProtocol)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FrameBuilder</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKOverlayEditControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/OverlayEditControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKOverlayEditControllerDelegate">OverlayEditControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>OverlayEditControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code>OverlayEditControllerDelegate</code>.</p>
+
+                        <a href="Protocols/OverlayEditControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKOverlayEditControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">OverlayEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK28SpriteEditControllerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpriteEditControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK28SpriteEditControllerDelegateP">SpriteEditControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>SpriteEditControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/SpriteEditController.html">SpriteEditController</a></code>.</p>
+
+                        <a href="Protocols/SpriteEditControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpriteEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK31SpriteGestureControllerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpriteGestureControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK31SpriteGestureControllerDelegateP">SpriteGestureControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>SpriteGestureControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/SpriteGestureController.html">SpriteGestureController</a></code>.</p>
+
+                        <a href="Protocols/SpriteGestureControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpriteGestureControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK29StickerEditControllerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/StickerEditControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK29StickerEditControllerDelegateP">StickerEditControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>StickerEditControllerDelegate</code> defines methods that allow you to respond to messages from
+the <code><a href="Classes/StickerEditController.html">StickerEditController</a></code>.</p>
+
+                        <a href="Protocols/StickerEditControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StickerEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKStickerSelectionControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/StickerSelectionControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKStickerSelectionControllerDelegate">StickerSelectionControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>StickerSelectionControllerDelegate</code> defines methods that allow you to respond to messages
+from the <code><a href="Classes/StickerSelectionController.html">StickerSelectionController</a></code>.</p>
+
+                        <a href="Protocols/StickerSelectionControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKStickerSelectionControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StickerSelectionControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK34FontSelectorViewControllerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/FontSelectorViewControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK34FontSelectorViewControllerDelegateP">FontSelectorViewControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>FontSelectorViewControllerDelegate</code> defines methods that allow you to respond to messages
+from the <code><a href="Classes/FontSelectorViewController.html">FontSelectorViewController</a></code>.</p>
+
+                        <a href="Protocols/FontSelectorViewControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FontSelectorViewControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKFontSelectorViewDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/FontSelectorViewDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKFontSelectorViewDelegate">FontSelectorViewDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>FontSelectorViewDelegate</code> protocol defines methods that allow you to respond to the events
+of an instance of <code><a href="Classes/FontSelectorView.html">FontSelectorView</a></code>.</p>
+
+                        <a href="Protocols/FontSelectorViewDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKFontSelectorViewDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FontSelectorViewDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKTransformEditControllerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/TransformEditControllerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKTransformEditControllerDelegate">TransformEditControllerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>TransformEditControllerDelegate</code> defines methods that allow you to respond to messages
+from the <code><a href="Classes/TransformEditController.html">TransformEditController</a></code>.</p>
+
+                        <a href="Protocols/TransformEditControllerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKTransformEditControllerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TransformEditControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKCropAndStraightenViewDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/CropAndStraightenViewDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKCropAndStraightenViewDelegate">CropAndStraightenViewDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The methods declared by the <code>CropAndStraightenViewDelegate</code> protocol allow the adopting
+delegate to respond to message from the <code><a href="Classes/CropAndStraightenView.html">CropAndStraightenView</a></code> class and thus respond to
+operations such as tracking.</p>
+
+                        <a href="Protocols/CropAndStraightenViewDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKCropAndStraightenViewDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CropAndStraightenViewDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(pl)PESDKScalePickerDelegate"></a>
+                    <a name="//apple_ref/swift/Protocol/ScalePickerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(pl)PESDKScalePickerDelegate">ScalePickerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>ScalePickerDelegate</code> protocol defines a set of methods you can use to receive value-change
+messages for <code><a href="Classes/ScalePicker.html">ScalePicker</a></code> objects.</p>
+
+                        <a href="Protocols/ScalePickerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objc(PESDKScalePickerDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ScalePickerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14PhotoEditorSDK20ObjectiveCBridgeableP"></a>
+                    <a name="//apple_ref/swift/Protocol/ObjectiveCBridgeable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK20ObjectiveCBridgeableP">ObjectiveCBridgeable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marker protocol to generate a matching Objective-C type using Sourcery.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ObjectiveCBridgeable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -870,6 +870,12 @@
                 <a class="nav-group-task-link" href="../../Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1289,12 +1295,184 @@
         <section class="section">
           <div class="section-content">
             <h1>Name</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="kt">NSNotification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                </div>
+              </div>
             
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE018UndoControllerWillF6ChangeADvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/UndoControllerWillUndoChange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE018UndoControllerWillF6ChangeADvpZ">UndoControllerWillUndoChange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted just before an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs an undo operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerWillUndoChange</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE017UndoControllerDidF6ChangeADvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/UndoControllerDidUndoChange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE017UndoControllerDidF6ChangeADvpZ">UndoControllerDidUndoChange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted just after an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs an undo operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidUndoChange</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE28UndoControllerWillRedoChangeADvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/UndoControllerWillRedoChange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE28UndoControllerWillRedoChangeADvpZ">UndoControllerWillRedoChange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted just before an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs a redo operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerWillRedoChange</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE27UndoControllerDidRedoChangeADvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/UndoControllerDidRedoChange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE27UndoControllerDidRedoChangeADvpZ">UndoControllerDidRedoChange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted just after an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs a redo operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidRedoChange</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE025UndoControllerDidRegisterF9OperationADvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/UndoControllerDidRegisterUndoOperation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE025UndoControllerDidRegisterF9OperationADvpZ">UndoControllerDidRegisterUndoOperation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted after an undo operation has been registered with the <code><a href="../../Classes/UndoController.html">UndoController</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidRegisterUndoOperation</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE23UndoControllerDidUpdateADvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/UndoControllerDidUpdate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE23UndoControllerDidUpdateADvpZ">UndoControllerDidUpdate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted whenever the undo or redo stack changes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidUpdate</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <ul class="item-container">
                 <li class="item">
@@ -1318,7 +1496,7 @@ The notification object is the view controller that layed out its subviews.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">PESDKPhotoEditPreviewControllerDidLayoutSubviews</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="s">"PESDKPhotoEditPreviewControllerDidLayoutSubviews"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">PESDKPhotoEditPreviewControllerDidLayoutSubviews</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
 
                         </div>
                       </div>
@@ -1345,7 +1523,7 @@ The notification object is the view controller that layed out its subviews.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">PESDKDidSelectSpriteView</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="s">"PESDKDidSelectSpriteView"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">PESDKDidSelectSpriteView</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
 
                         </div>
                       </div>
@@ -1376,7 +1554,7 @@ The notification object is the view controller that layed out its subviews.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">SpriteContainerViewDidUpdateLayout</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.sprite-container-view-did-update-layout"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">SpriteContainerViewDidUpdateLayout</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
 
                         </div>
                       </div>
@@ -1407,173 +1585,7 @@ The notification object is the view controller that layed out its subviews.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">StickerCategoriesDidChange</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.sticker-categories-did-change"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE018UndoControllerWillF6ChangeADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/UndoControllerWillUndoChange" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE018UndoControllerWillF6ChangeADvpZ">UndoControllerWillUndoChange</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted just before an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs an undo operation.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerWillUndoChange</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.undo-controller-will-undo-change"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE017UndoControllerDidF6ChangeADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/UndoControllerDidUndoChange" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE017UndoControllerDidF6ChangeADvpZ">UndoControllerDidUndoChange</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted just after an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs an undo operation.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidUndoChange</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.undo-controller-did-undo-change"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE28UndoControllerWillRedoChangeADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/UndoControllerWillRedoChange" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE28UndoControllerWillRedoChangeADvpZ">UndoControllerWillRedoChange</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted just before an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs a redo operation.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerWillRedoChange</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.undo-controller-will-redo-change"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE27UndoControllerDidRedoChangeADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/UndoControllerDidRedoChange" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE27UndoControllerDidRedoChangeADvpZ">UndoControllerDidRedoChange</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted just after an <code><a href="../../Classes/UndoController.html">UndoController</a></code> object performs a redo operation.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidRedoChange</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.undo-controller-did-redo-change"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE025UndoControllerDidRegisterF9OperationADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/UndoControllerDidRegisterUndoOperation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE025UndoControllerDidRegisterF9OperationADvpZ">UndoControllerDidRegisterUndoOperation</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted after an undo operation has been registered with the <code><a href="../../Classes/UndoController.html">UndoController</a></code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidRegisterUndoOperation</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.undo-controller-did-register-undo-operation"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV14PhotoEditorSDKE23UndoControllerDidUpdateADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/UndoControllerDidUpdate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV14PhotoEditorSDKE23UndoControllerDidUpdateADvpZ">UndoControllerDidUpdate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted whenever the undo or redo stack changes</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">UndoControllerDidUpdate</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ly.img.undo-controller-did-update"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">StickerCategoriesDidChange</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
 
                         </div>
                       </div>
@@ -1588,8 +1600,8 @@ The notification object is the view controller that layed out its subviews.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

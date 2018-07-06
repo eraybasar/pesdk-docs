@@ -870,6 +870,12 @@
                 <a class="nav-group-task-link" href="../Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1291,7 +1297,10 @@
             <h1>CameraViewControllerOptionsBuilder</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKCameraViewControllerOptionsBuilder)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">CameraViewControllerOptionsBuilder</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKCameraViewControllerOptionsBuilder)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">CameraViewControllerOptionsBuilder</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -1596,7 +1605,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cropToSquare</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cropToSquare</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1623,7 +1632,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">maximumVideoLength</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">maximumVideoLength</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -1650,7 +1659,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">tapToFocusEnabled</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">tapToFocusEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1677,7 +1686,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showCancelButton</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showCancelButton</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1704,7 +1713,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showCameraRoll</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showCameraRoll</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1731,7 +1740,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showFilters</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showFilters</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1758,7 +1767,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showFilterIntensitySlider</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">showFilterIntensitySlider</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1785,7 +1794,7 @@ light up in yellow, when selected.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">initialFilterIntensity</span> <span class="o">=</span> <span class="kt">CGFloat</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">initialFilterIntensity</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
 
                         </div>
                       </div>
@@ -1814,7 +1823,7 @@ this option from Obj-C see <code><a href="../Classes/CameraViewControllerOptions
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedCameraPositions</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">back</span><span class="p">,</span> <span class="o">.</span><span class="n">front</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedCameraPositions</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -1845,7 +1854,7 @@ To set this option from Obj-C see <code><a href="../Classes/CameraViewController
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedFlashModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">auto</span><span class="p">,</span> <span class="o">.</span><span class="n">on</span><span class="p">,</span> <span class="o">.</span><span class="n">off</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedFlashModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">FlashMode</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -1876,7 +1885,7 @@ To set this option from Obj-C see <code><a href="../Classes/CameraViewController
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedTorchModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">auto</span><span class="p">,</span> <span class="o">.</span><span class="n">on</span><span class="p">,</span> <span class="o">.</span><span class="n">off</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedTorchModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">TorchMode</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -1905,7 +1914,7 @@ selected on launch. To set this option from Obj-C see <code><a href="../Classes/
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedRecordingModes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">photo</span><span class="p">,</span> <span class="o">.</span><span class="n">video</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedRecordingModes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RecordingMode.html">RecordingMode</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -1933,7 +1942,7 @@ settings for file type <code>AVFileTypeQuickTimeMovie</code> will be used.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -1961,7 +1970,7 @@ settings for file type <code>AVFileTypeQuickTimeMovie</code> will be used.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">audioOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">audioOutputSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -1994,7 +2003,7 @@ and <code><a href="../Classes/CameraViewControllerOptionsBuilder.html#/c:@M@Phot
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileType</span><span class="p">:</span> <span class="kt">AVFileType</span> <span class="o">=</span> <span class="o">.</span><span class="n">mov</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileType</span><span class="p">:</span> <span class="kt">AVFileType</span></code></pre>
 
                         </div>
                       </div>
@@ -2021,7 +2030,7 @@ and <code><a href="../Classes/CameraViewControllerOptionsBuilder.html#/c:@M@Phot
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileExtension</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"mov"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">videoRecordingFileExtension</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -2075,7 +2084,7 @@ and <code><a href="../Classes/CameraViewControllerOptionsBuilder.html#/c:@M@Phot
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">includeUserLocation</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">includeUserLocation</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -2108,7 +2117,7 @@ Setting this property overrides any previously set values in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedCameraPositionsAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedCameraPositionsAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2137,7 +2146,7 @@ Setting this property overrides any previously set values in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedFlashModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedFlashModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2166,7 +2175,7 @@ Setting this property overrides any previously set values in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedTorchModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedTorchModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2195,7 +2204,7 @@ Setting this property overrides any previously set values in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedRecordingModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">allowedRecordingModesAsNSNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2210,8 +2219,8 @@ Setting this property overrides any previously set values in
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

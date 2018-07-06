@@ -14,6 +14,7 @@
   </head>
   <body>
 
+    <a name="//apple_ref/swift/Section/Filters" class="dashAnchor"></a>
 
     <a title="Filters  Reference"></a>
 
@@ -869,6 +870,12 @@
                 <a class="nav-group-task-link" href="Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1317,7 +1324,10 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKClarityFilter)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">ClarityFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKClarityFilter)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">ClarityFilter</span> <span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
 
                         </div>
                       </div>
@@ -1349,7 +1359,10 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKColorizeFilter)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">ColorizeFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKColorizeFilter)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">ColorizeFilter</span> <span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
 
                         </div>
                       </div>
@@ -1382,7 +1395,10 @@ Using these we get more consistant results across the several platforms.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKCustomAdjustmentsFilter)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">CustomAdjustmentsFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKCustomAdjustmentsFilter)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">CustomAdjustmentsFilter</span> <span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
 
                         </div>
                       </div>
@@ -1407,6 +1423,13 @@ Using these we get more consistant results across the several platforms.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Applies a linear focus to an instance of <code>CIImage</code>.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    This linear focus filter is actually the &lsquo;mirrored&rsquo; focus in the serialization, but
+for legacy reasons the old name was kept. This will most likely be subject to change in a
+future major version update of the PhotoEditor SDK.
+
+</div>
 
                         <a href="Classes/LinearFocusFilter.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1414,7 +1437,10 @@ Using these we get more consistant results across the several platforms.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKLinearFocusFilter)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">LinearFocusFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKLinearFocusFilter)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">LinearFocusFilter</span> <span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
 
                         </div>
                       </div>
@@ -1446,7 +1472,10 @@ Using these we get more consistant results across the several platforms.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKLUTFilter)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">LUTFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKLUTFilter)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">LUTFilter</span> <span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
 
                         </div>
                       </div>
@@ -1478,7 +1507,10 @@ Using these we get more consistant results across the several platforms.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKRadialFocusFilter)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">RadialFocusFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKRadialFocusFilter)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">RadialFocusFilter</span> <span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
 
                         </div>
                       </div>
@@ -1510,7 +1542,10 @@ Using these we get more consistant results across the several platforms.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKTintFilter)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">TintFilter</span><span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKTintFilter)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">TintFilter</span> <span class="p">:</span> <span class="kt">CIFilter</span></code></pre>
 
                         </div>
                       </div>
@@ -1525,8 +1560,8 @@ Using these we get more consistant results across the several platforms.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

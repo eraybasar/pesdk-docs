@@ -870,6 +870,12 @@
                 <a class="nav-group-task-link" href="../Classes/FreehandTool.html">FreehandTool</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GaussianFocusFilter.html">GaussianFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GradientFocusFilter.html">GradientFocusFilter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/IconGenerator.html">IconGenerator</a>
               </li>
               <li class="nav-group-task">
@@ -1291,7 +1297,10 @@
             <h1>CameraViewController</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span> <span class="kd">@objc(PESDKCameraViewController)</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">CameraViewController</span><span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@available(iOS 9.0, *)</span>
+<span class="kd">@objcMembers</span>
+<span class="kd">@objc(PESDKCameraViewController)</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">CameraViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 
                 </div>
               </div>
@@ -1396,7 +1405,7 @@ the default configuration is created.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">backgroundContainerView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">backgroundContainerView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1423,7 +1432,7 @@ the default configuration is created.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">topControlsView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">topControlsView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1450,7 +1459,7 @@ the default configuration is created.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cameraPreviewContainer</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cameraPreviewContainer</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1477,7 +1486,7 @@ the default configuration is created.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">bottomControlsView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">bottomControlsView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1505,7 +1514,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">bottomSafeAreaHidingView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">bottomSafeAreaHidingView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1532,7 +1541,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cancelButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cancelButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1559,7 +1568,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">flashButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">flashButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1586,7 +1595,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">switchCameraButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">switchCameraButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1613,7 +1622,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cameraRollButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cameraRollButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1640,7 +1649,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">actionButtonContainer</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">actionButtonContainer</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1667,7 +1676,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">recordingTimeLabel</span><span class="p">:</span> <span class="kt">UILabel</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">recordingTimeLabel</span><span class="p">:</span> <span class="kt">UILabel</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1721,7 +1730,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">filterSelectionButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">filterSelectionButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1748,7 +1757,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">filterIntensitySlider</span><span class="p">:</span> <span class="kt"><a href="../Classes/Slider.html">Slider</a></span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">filterIntensitySlider</span><span class="p">:</span> <span class="kt"><a href="../Classes/Slider.html">Slider</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1775,7 +1784,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">swipeRightGestureRecognizer</span><span class="p">:</span> <span class="kt">UISwipeGestureRecognizer</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">swipeRightGestureRecognizer</span><span class="p">:</span> <span class="kt">UISwipeGestureRecognizer</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1802,7 +1811,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">swipeLeftGestureRecognizer</span><span class="p">:</span> <span class="kt">UISwipeGestureRecognizer</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">swipeLeftGestureRecognizer</span><span class="p">:</span> <span class="kt">UISwipeGestureRecognizer</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1829,7 +1838,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">pinchGestureRecognizer</span><span class="p">:</span> <span class="kt">UIPinchGestureRecognizer</span> <span class="o">=</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">pinchGestureRecognizer</span><span class="p">:</span> <span class="kt">UIPinchGestureRecognizer</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1856,7 +1865,7 @@ This is only visible on an iPhone X.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">filterSelectionController</span> <span class="o">=</span> <span class="kt"><a href="../Classes/FilterSelectionController.html">FilterSelectionController</a></span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">let</span> <span class="nv">filterSelectionController</span><span class="p">:</span> <span class="kt"><a href="../Classes/FilterSelectionController.html">FilterSelectionController</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2042,7 +2051,8 @@ metadata. If this is set, then <code><a href="../Classes/CameraViewController.ht
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">takePhoto</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span><span class="p">?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">takePhoto</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt"><a href="../Classes/Button.html">Button</a></span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -2088,7 +2098,8 @@ metadata. If this is set, then <code><a href="../Classes/CameraViewController.ht
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">recordVideo</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoRecordButton.html">VideoRecordButton</a></span><span class="p">?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">recordVideo</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoRecordButton.html">VideoRecordButton</a></span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -2122,8 +2133,8 @@ metadata. If this is set, then <code><a href="../Classes/CameraViewController.ht
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">9elements GmbH</a>. All rights reserved. (Last updated: 2018-07-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
