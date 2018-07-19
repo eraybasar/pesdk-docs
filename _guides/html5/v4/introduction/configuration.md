@@ -40,6 +40,8 @@ DesktopUI
     * `image` Image - The image that should be loaded and displayed initially.
     * `pixelRatio` Number - If none is given, the SDK automatically detects the current device's pixel ratio.
     * `preferredRenderer` String - Defaults to `webgl`. Available are `webgl` and `canvas`.
+    * `transparent` Boolean - If true, allows replacing the background color of the editor with a color defined by the `clearColor` options
+    * `clearColor` Array, String or PhotoEditorSDK.Color - The color used to clear the canvas when `transparent` is set to true
     * `displayCloseButton` Boolean - Should a close button be displayed? If set to `true`, the `DesktopUI` instance will emit a `close` event when the button is clicked
     * `displayResizeMessage` Boolean - Should a message be displayed when the image has been scaled down for performance reasons. Defaults to `true`.
     * `maxMegaPixels` Object - Specifies the maximum amount of megapixels per device type

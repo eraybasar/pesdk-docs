@@ -19,7 +19,7 @@ On DesktopUI you can force the user to crop the input image to one of a set of p
 he can do any additional editing to it. This is can be done by passing the option `forceCrop` to the editor, and setting the `availableRatios` of the transform tool to the desired allowed ratios:
 
 ```js
-var editor = new PhotoEditorSDK.UI.ReactUI({
+var editor = new PhotoEditorSDK.UI.DesktopUI({
   editor: {
     forceCrop: true,
     controlsOptions: {
