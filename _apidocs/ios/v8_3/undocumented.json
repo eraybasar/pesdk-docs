@@ -48,6 +48,20 @@
       "symbol": "Kingfisher",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sascha/Projects/iOS/9elements/pesdk-ios/PhotoEditorSDK/Frontend/TextDesign/Layouts/Blocks/TextDesignBlocks.swift",
+      "line": 24,
+      "symbol": "TextDesignBlocks.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sascha/Projects/iOS/9elements/pesdk-ios/PhotoEditorSDK/Frontend/TextDesign/Views/TextDesignView.swift",
+      "line": 201,
+      "symbol": "TextDesignView.render()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/sascha/Projects/iOS/9elements/pesdk-ios"
