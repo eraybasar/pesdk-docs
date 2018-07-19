@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: X400Filter</title>
+    <title>Class: TextDesignControls</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -4862,7 +4862,7 @@
 </div>
 
     <div class="main">
-        <h1 class="page-title" data-filename="PhotoEditorSDK.Filters.X400Filter.html">Class: X400Filter</h1>
+        <h1 class="page-title" data-filename="PhotoEditorSDK.UI.DesktopUI.Controls.TextDesignControls.html">Class: TextDesignControls</h1>
         
 
 
@@ -4871,12 +4871,12 @@
 
 <header>
     <h2>
-        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.Filters.html">.Filters</a>.</span>
+        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.UI.html">.UI</a><a href="PhotoEditorSDK.UI.DesktopUI.html">.DesktopUI</a><a href="PhotoEditorSDK.UI.DesktopUI.Controls.html">.Controls</a>.</span>
     
-    X400Filter
+    TextDesignControls
     </h2>
     
-        <div class="class-description"><p>X400 Filter</p></div>
+        <div class="class-description"><p>The Controls for the Filter tool.</p></div>
     
 </header>
 
@@ -4888,14 +4888,14 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="X400Filter">
+        <h4 class="name" id="TextDesignControls">
             
-            new PhotoEditorSDK.Filters.X400Filter<span class="signature">()</span>
+            new PhotoEditorSDK.UI.DesktopUI.Controls.TextDesignControls<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            sdk/operations/filter-operation/filters/x400-filter.js, line 25
+            ui/desktop-ui/controls/text-design/index.js, line 38
         </div>
         
     </div>
@@ -4958,7 +4958,7 @@
         <h3 class="subsection-title">Extends</h3>
 
         <ul>
-            <li><a href="PhotoEditorSDK.Filter.html">PhotoEditorSDK.Filter</a></li>
+            <li><a href="PhotoEditorSDK.UI.DesktopUI.BaseControls.html">PhotoEditorSDK.UI.DesktopUI.BaseControls</a></li>
         </ul>
     
 
@@ -4977,7 +4977,7 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".identifier"><span class="type-signature static">static</span>PhotoEditorSDK.Filters.X400Filter.identifier<span class="type-signature type string">String</span> </h4>
+        <h4 class="name" id="activeIconPath">activeIconPath<span class="type-signature type string">String</span> </h4>
     </div>
     
     
@@ -4985,7 +4985,7 @@
 <dd>
     
     <div class="description">
-        <p>This filter's identifier</p>
+        <p>The active icon path of this control</p>
     </div>
     
     
@@ -5006,8 +5006,463 @@
     
     
     
-    <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy"><li>x400</li></ul></dd>
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="canvasControlsComponent">canvasControlsComponent<span class="type-signature type react.component">React.Component</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The canvas component for these controls</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="controlsComponent">controlsComponent<span class="type-signature type react.component">React.Component</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The controls component for these controls</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="defaultOptions">defaultOptions<span class="type-signature type object">Object</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The default options for this control</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>categories</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    []
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>replaceCategories</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>availableFilters</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="iconPath">iconPath<span class="type-signature type string">String</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The icon path of this control</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="identifier">identifier<span class="type-signature type string">String</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>A unique identifier for these controls</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="requiredOperations">requiredOperations<span class="type-signature type array">Array</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The operations required for this control to work properly</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="updatableOperations">updatableOperations<span class="type-signature type array.<string>">Array.&lt;String></span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Operations which will trigger UI updates on this controls.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -5024,6 +5479,447 @@
         </dl>
     
 
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".getPreloadAssets">
+            
+            <span class="type-signature static">static</span>PhotoEditorSDK.UI.DesktopUI.Controls.TextDesignControls.getPreloadAssets<span class="signature">(editor)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;String>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/desktop-ui/controls/text-design/index.js, line 399
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Returns the assets that should be preloaded for this control</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>editor</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html">PhotoEditorSDK.UI.DesktopUI.Editor</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;String>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".isEnabled">
+            
+            <span class="type-signature static">static</span>PhotoEditorSDK.UI.DesktopUI.Controls.TextDesignControls.isEnabled<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/desktop-ui/controls/text-design/index.js, line 390
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Checks if this control is enabled</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Boolean
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".mapOperationsToSharedState">
+            
+            <span class="type-signature static">static</span>PhotoEditorSDK.UI.DesktopUI.Controls.TextDesignControls.mapOperationsToSharedState<span class="signature">(operations, <span class="optional">initial</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Object}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/desktop-ui/controls/text-design/index.js, line 169
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Maps the operations state to a shared state object</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>operations</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>initial</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        </dl>
     
 
     

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: X400Filter</title>
+    <title>Class: TextDesignSprite</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -4862,7 +4862,7 @@
 </div>
 
     <div class="main">
-        <h1 class="page-title" data-filename="PhotoEditorSDK.Filters.X400Filter.html">Class: X400Filter</h1>
+        <h1 class="page-title" data-filename="PhotoEditorSDK.Operations.SpriteOperation.TextDesignSprite.html">Class: TextDesignSprite</h1>
         
 
 
@@ -4871,12 +4871,12 @@
 
 <header>
     <h2>
-        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.Filters.html">.Filters</a>.</span>
+        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.Operations.html">.Operations</a><a href="PhotoEditorSDK.Operations.SpriteOperation.html">.SpriteOperation</a>.</span>
     
-    X400Filter
+    TextDesignSprite
     </h2>
     
-        <div class="class-description"><p>X400 Filter</p></div>
+        <div class="class-description"><p>A sprite that renders a text design layout.</p></div>
     
 </header>
 
@@ -4888,14 +4888,14 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="X400Filter">
+        <h4 class="name" id="TextDesignSprite">
             
-            new PhotoEditorSDK.Filters.X400Filter<span class="signature">()</span>
+            new PhotoEditorSDK.Operations.SpriteOperation.TextDesignSprite<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            sdk/operations/filter-operation/filters/x400-filter.js, line 25
+            sdk/operations/sprite-operation/sprites/text-design-sprite.js, line 46
         </div>
         
     </div>
@@ -4955,11 +4955,7 @@
     </div>
 
     
-        <h3 class="subsection-title">Extends</h3>
 
-        <ul>
-            <li><a href="PhotoEditorSDK.Filter.html">PhotoEditorSDK.Filter</a></li>
-        </ul>
     
 
     
@@ -4971,22 +4967,83 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+        <h3 class="subsection-title">Methods</h3>
 
         <dl>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".identifier"><span class="type-signature static">static</span>PhotoEditorSDK.Filters.X400Filter.identifier<span class="type-signature type string">String</span> </h4>
-    </div>
+        <h4 class="name" id="applyTransform">
+            
+            applyTransform<span class="signature">(transformChange)</span>
+        </h4>
     
+        
+        <div class="tag-source">
+            sdk/operations/sprite-operation/sprites/text-design-sprite.js, line 90
+        </div>
+        
+    </div>
+
     
 </dt>
 <dd>
     
+    
     <div class="description">
-        <p>This filter's identifier</p>
+        <p>Applies a transform with the given options</p>
     </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>transformChange</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">PhotoEditorSDK.Operations.TransformOperation.TransformChange</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -5006,8 +5063,156 @@
     
     
     
-    <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy"><li>x400</li></ul></dd>
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="serializeOptions">
+            
+            serializeOptions<span class="signature">(keys, toObject)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Object}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/sprite-operation/sprites/text-design-sprite.js, line 170
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Returns a serialized version of this configurable</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>keys</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>toObject</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                <p>= false</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -5019,11 +5224,48 @@
 
     
     
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
 </dd>
 
         </dl>
-    
-
     
 
     
