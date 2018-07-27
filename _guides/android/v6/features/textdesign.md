@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title TextDesign # title as shown in the menu and
+title: &title Text Design # title as shown in the menu and
 description: The TextDesign tool of the PhotoEditor SDK for Android offers a automated text layouting engine.
 menuitem: *title
 order: 3
