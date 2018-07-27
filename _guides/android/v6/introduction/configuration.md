@@ -18,7 +18,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/{{page.title | downcase}}.jpg){: height="400px" .center-image}
+![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/screenshot_controls.jpg){: height="400px" .center-image}
 
 The `SettingsList` provides a lot of functions for customizing the Editor.
 To modify this configuration you need to generate a new `SettingsList` object and configurate the different models. Afterwards, you add the modified `settingsList` to the `CameraPreviewBuilder` or the `PhotoEditorBuilder`.
