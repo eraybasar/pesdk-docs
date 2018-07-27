@@ -15,9 +15,12 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-On DesktopUI you can force the user to crop the input image to one of a set of predefined ratios before
+You can force the user to crop the input image to one of a set of predefined ratios before
 he can do any additional editing to it. This is can be done by passing the option `forceCrop` to the editor, and setting the `availableRatios` of the transform tool to the desired allowed ratios:
 
+{% capture first_snippet %}
+DesktopUI
+---
 ```js
 var editor = new PhotoEditorSDK.UI.DesktopUI({
   editor: {
@@ -30,6 +33,28 @@ var editor = new PhotoEditorSDK.UI.DesktopUI({
   }
 })
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+ReactUI
+---
+```js
+var editor = new PhotoEditorSDK.UI.ReactUI({
+  editor: {
+    forceCrop: true,
+    controlsOptions: {
+      transform: {
+         availableRatios: ['imgly_transform_common_4-3', 'imgly_transform_common_16-9']
+      }
+    }
+  }
+})
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 All other tools, except the library, when enabled, are disabled until the user accepts a crop transform with one of the given values.
 

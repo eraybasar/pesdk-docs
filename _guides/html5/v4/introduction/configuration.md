@@ -31,6 +31,8 @@ DesktopUI
   * `logLevel` String - `trace`, `info`, `warn`, `error` or `log`. Defaults to `warn`.
   * `responsive` Boolean - Specifies whether the editor should react to window resizing.
   * `preloader` Boolean - Enables the preloader. Defaults to `true`.
+  *  `crossOrigin` - Sets the global crossOrigin loading mode. Values: 'anonymous', 'use-credentials' or 'none'
+
 
   * `assets` Object
     * `baseUrl` String - The base URL for all assets. Should be the absolute path to your `assets` directory. Defaults to `assets`
@@ -40,6 +42,7 @@ DesktopUI
     * `image` Image - The image that should be loaded and displayed initially.
     * `pixelRatio` Number - If none is given, the SDK automatically detects the current device's pixel ratio.
     * `preferredRenderer` String - Defaults to `webgl`. Available are `webgl` and `canvas`.
+    * `forceCrop` - If true, the editor will launch to the transform tool for cropping, before any other tool is allowed.
     * `transparent` Boolean - If true, allows replacing the background color of the editor with a color defined by the `clearColor` options
     * `clearColor` Array, String or PhotoEditorSDK.Color - The color used to clear the canvas when `transparent` is set to true
     * `displayCloseButton` Boolean - Should a close button be displayed? If set to `true`, the `DesktopUI` instance will emit a `close` event when the button is clicked
@@ -81,7 +84,7 @@ ReactUI
   * `showTopBar` Boolean - Should the top bar (new / zoom / undo / export) be displayed? Defaults to `true`.
   * `preloader` Boolean - Enables the preloader. Defaults to `true`.
   * `watermarkImage` Image - An image that should be placed on top as a watermark. Defaults to `undefined`.
-
+  *  `crossOrigin` - Sets the global crossOrigin loading mode. Values: 'anonymous', 'use-credentials' or 'none'
 
   * `photoRoll` Object
     * `provider` PhotoEditorSDK.UI.ReactUI.PhotoRoll.Provider - The class providing all data for the photo roll.
@@ -90,6 +93,7 @@ ReactUI
     * `image` Image - The image that should be loaded and displayed initially.
     * `displayResizeMessage` Boolean - Should a message be displayed when the image has been scaled down for performance reasons. Defaults to `true`.
     * `preferredRenderer` String - Defaults to `webgl`. Available are `webgl` and `canvas`.
+    * `forceCrop` - If true, the editor will launch to the transform tool for cropping, before any other tool is allowed.
     * `pixelRatio` Number - If none is given, the SDK automatically detects the current device's pixel ratio.
     * `responsive` Boolean - Should the editor re-render on window resize? Defaults to `false`.
     * `enableDrag` Boolean - Should the image be draggable? Defaults to `true`.

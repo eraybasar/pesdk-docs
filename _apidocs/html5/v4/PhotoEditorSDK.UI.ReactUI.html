@@ -3641,6 +3641,8 @@
             
                 <li data-name="PhotoEditorSDK.OperationsStack#get"><a href="PhotoEditorSDK.OperationsStack.html#get">get</a></li>
             
+                <li data-name="PhotoEditorSDK.OperationsStack#getByIdentifier"><a href="PhotoEditorSDK.OperationsStack.html#getByIdentifier">getByIdentifier</a></li>
+            
                 <li data-name="PhotoEditorSDK.OperationsStack#getStack"><a href="PhotoEditorSDK.OperationsStack.html#getStack">getStack</a></li>
             
                 <li data-name="PhotoEditorSDK.OperationsStack#hasChanges"><a href="PhotoEditorSDK.OperationsStack.html#hasChanges">hasChanges</a></li>
@@ -3703,6 +3705,10 @@
                 <li data-name="PhotoEditorSDK.UI.DesktopUI#getPreloader"><a href="PhotoEditorSDK.UI.DesktopUI.html#getPreloader">getPreloader</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI#getTheme"><a href="PhotoEditorSDK.UI.DesktopUI.html#getTheme">getTheme</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.DesktopUI#isReady"><a href="PhotoEditorSDK.UI.DesktopUI.html#isReady">isReady</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.DesktopUI#onReady"><a href="PhotoEditorSDK.UI.DesktopUI.html#onReady">onReady</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI#serialize"><a href="PhotoEditorSDK.UI.DesktopUI.html#serialize">serialize</a></li>
             
@@ -4294,6 +4300,8 @@
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getCanvasDimensions"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getCanvasDimensions">getCanvasDimensions</a></li>
             
+                <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getCrossOrigin"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getCrossOrigin">getCrossOrigin</a></li>
+            
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getFinalDimensions"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getFinalDimensions">getFinalDimensions</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getImage"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getImage">getImage</a></li>
@@ -4407,6 +4415,10 @@
                 <li data-name="PhotoEditorSDK.UI.ReactUI#getFontLoader"><a href="PhotoEditorSDK.UI.ReactUI.html#getFontLoader">getFontLoader</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI#getPreloader"><a href="PhotoEditorSDK.UI.ReactUI.html#getPreloader">getPreloader</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.ReactUI#isReady"><a href="PhotoEditorSDK.UI.ReactUI.html#isReady">isReady</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.ReactUI#onReady"><a href="PhotoEditorSDK.UI.ReactUI.html#onReady">onReady</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI#serialize"><a href="PhotoEditorSDK.UI.ReactUI.html#serialize">serialize</a></li>
             
@@ -4776,6 +4788,8 @@
                 <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#fixOffset"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#fixOffset">fixOffset</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#getCanvasDimensions"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#getCanvasDimensions">getCanvasDimensions</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#getCrossOrigin"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#getCrossOrigin">getCrossOrigin</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#getFinalDimensions"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#getFinalDimensions">getFinalDimensions</a></li>
             
@@ -5370,6 +5384,42 @@
 	
         <tr>
             
+                <td class="name"><code>crossOrigin</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    'anonymous'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>'anonymous', 'use-credentials' or 'none'</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
                 <td class="name"><code>photoRoll</code></td>
             
             
@@ -5953,6 +6003,41 @@
                 <p>An array of objects specifying the controls
                                                  the user needs to use before being able to
                                                  use the actual editor.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>forceCrop</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>If true, the editor will lauch to the transform tool
+                                               for cropping, before any other tool is allowed.</p></td>
         </tr>
 	
 	
@@ -6636,7 +6721,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 184
+            ui/react-ui/ui.jsx, line 189
         </div>
         
     </div>
@@ -6781,7 +6866,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 448
+            ui/react-ui/ui.jsx, line 480
         </div>
         
     </div>
@@ -6852,7 +6937,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 167
+            ui/react-ui/ui.jsx, line 172
         </div>
         
     </div>
@@ -6997,7 +7082,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 400
+            ui/react-ui/ui.jsx, line 432
         </div>
         
     </div>
@@ -7206,7 +7291,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 192
+            ui/react-ui/ui.jsx, line 197
         </div>
         
     </div>
@@ -7306,7 +7391,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 433
+            ui/react-ui/ui.jsx, line 465
         </div>
         
     </div>
@@ -7406,7 +7491,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 441
+            ui/react-ui/ui.jsx, line 473
         </div>
         
     </div>
@@ -7499,6 +7584,224 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="isReady">
+            
+            isReady<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/react-ui/ui.jsx, line 207
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Returns true if the editor is ready for doing operations, e.g.,
+serializing, deserializing and exporting.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Boolean
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="onReady">
+            
+            onReady<span class="signature">(cb)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/react-ui/ui.jsx, line 217
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Calls a callback when the editor is ready, or immeditially if it's already
+in a ready state.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>cb</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="serialize">
             
             serialize<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
@@ -7506,7 +7809,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 175
+            ui/react-ui/ui.jsx, line 180
         </div>
         
     </div>
@@ -7606,7 +7909,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 388
+            ui/react-ui/ui.jsx, line 420
         </div>
         
     </div>
@@ -7722,7 +8025,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 380
+            ui/react-ui/ui.jsx, line 412
         </div>
         
     </div>
@@ -7910,7 +8213,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 491
+            ui/react-ui/ui.jsx, line 523
         </div>
         
     </div>
@@ -7991,7 +8294,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 464
+            ui/react-ui/ui.jsx, line 496
         </div>
         
     </div>
@@ -8078,7 +8381,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 485
+            ui/react-ui/ui.jsx, line 517
         </div>
         
     </div>
@@ -8149,7 +8452,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 471
+            ui/react-ui/ui.jsx, line 503
         </div>
         
     </div>
@@ -8230,7 +8533,7 @@
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 478
+            ui/react-ui/ui.jsx, line 510
         </div>
         
     </div>

@@ -3641,6 +3641,8 @@
             
                 <li data-name="PhotoEditorSDK.OperationsStack#get"><a href="PhotoEditorSDK.OperationsStack.html#get">get</a></li>
             
+                <li data-name="PhotoEditorSDK.OperationsStack#getByIdentifier"><a href="PhotoEditorSDK.OperationsStack.html#getByIdentifier">getByIdentifier</a></li>
+            
                 <li data-name="PhotoEditorSDK.OperationsStack#getStack"><a href="PhotoEditorSDK.OperationsStack.html#getStack">getStack</a></li>
             
                 <li data-name="PhotoEditorSDK.OperationsStack#hasChanges"><a href="PhotoEditorSDK.OperationsStack.html#hasChanges">hasChanges</a></li>
@@ -3703,6 +3705,10 @@
                 <li data-name="PhotoEditorSDK.UI.DesktopUI#getPreloader"><a href="PhotoEditorSDK.UI.DesktopUI.html#getPreloader">getPreloader</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI#getTheme"><a href="PhotoEditorSDK.UI.DesktopUI.html#getTheme">getTheme</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.DesktopUI#isReady"><a href="PhotoEditorSDK.UI.DesktopUI.html#isReady">isReady</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.DesktopUI#onReady"><a href="PhotoEditorSDK.UI.DesktopUI.html#onReady">onReady</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI#serialize"><a href="PhotoEditorSDK.UI.DesktopUI.html#serialize">serialize</a></li>
             
@@ -4294,6 +4300,8 @@
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getCanvasDimensions"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getCanvasDimensions">getCanvasDimensions</a></li>
             
+                <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getCrossOrigin"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getCrossOrigin">getCrossOrigin</a></li>
+            
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getFinalDimensions"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getFinalDimensions">getFinalDimensions</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getImage"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getImage">getImage</a></li>
@@ -4407,6 +4415,10 @@
                 <li data-name="PhotoEditorSDK.UI.ReactUI#getFontLoader"><a href="PhotoEditorSDK.UI.ReactUI.html#getFontLoader">getFontLoader</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI#getPreloader"><a href="PhotoEditorSDK.UI.ReactUI.html#getPreloader">getPreloader</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.ReactUI#isReady"><a href="PhotoEditorSDK.UI.ReactUI.html#isReady">isReady</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.ReactUI#onReady"><a href="PhotoEditorSDK.UI.ReactUI.html#onReady">onReady</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI#serialize"><a href="PhotoEditorSDK.UI.ReactUI.html#serialize">serialize</a></li>
             
@@ -4777,6 +4789,8 @@
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#getCanvasDimensions"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#getCanvasDimensions">getCanvasDimensions</a></li>
             
+                <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#getCrossOrigin"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#getCrossOrigin">getCrossOrigin</a></li>
+            
                 <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#getFinalDimensions"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#getFinalDimensions">getFinalDimensions</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.ReactUI.Editor#getImage"><a href="PhotoEditorSDK.UI.ReactUI.Editor.html#getImage">getImage</a></li>
@@ -4894,7 +4908,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 35
+            sdk/core/sdk.js, line 36
         </div>
         
     </div>
@@ -5406,7 +5420,43 @@ operations.</p></div>
                         
                     
                 
-                <p>If none is given, PhotoEditorSDK automatically
+                <p>If none is given, PhotoEditorSDK automatically</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>crossOrigin</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    'anonymous'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>'anonymous', 'use-credentials' or 'none'
   detects the current device's pixel ratio</p></td>
         </tr>
 	
@@ -6897,7 +6947,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 465
+            sdk/core/sdk.js, line 468
         </div>
         
     </div>
@@ -7013,7 +7063,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 448
+            sdk/core/sdk.js, line 451
         </div>
         
     </div>
@@ -7241,7 +7291,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 998
+            sdk/core/sdk.js, line 1002
         </div>
         
     </div>
@@ -7312,7 +7362,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 263
+            sdk/core/sdk.js, line 266
         </div>
         
     </div>
@@ -7544,7 +7594,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 762
+            sdk/core/sdk.js, line 766
         </div>
         
     </div>
@@ -7644,7 +7694,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 786
+            sdk/core/sdk.js, line 790
         </div>
         
     </div>
@@ -7744,7 +7794,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 941
+            sdk/core/sdk.js, line 945
         </div>
         
     </div>
@@ -7844,7 +7894,7 @@ operations.</p></div>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 494
+            sdk/core/sdk.js, line 497
         </div>
         
     </div>
@@ -7998,7 +8048,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 697
+            sdk/core/sdk.js, line 701
         </div>
         
     </div>
@@ -8098,7 +8148,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 483
+            sdk/core/sdk.js, line 486
         </div>
         
     </div>
@@ -8198,7 +8248,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 957
+            sdk/core/sdk.js, line 961
         </div>
         
     </div>
@@ -8298,7 +8348,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 831
+            sdk/core/sdk.js, line 835
         </div>
         
     </div>
@@ -8398,7 +8448,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 815
+            sdk/core/sdk.js, line 819
         </div>
         
     </div>
@@ -8498,7 +8548,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 794
+            sdk/core/sdk.js, line 798
         </div>
         
     </div>
@@ -8598,7 +8648,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 949
+            sdk/core/sdk.js, line 953
         </div>
         
     </div>
@@ -8698,7 +8748,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 515
+            sdk/core/sdk.js, line 518
         </div>
         
     </div>
@@ -8851,7 +8901,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 526
+            sdk/core/sdk.js, line 529
         </div>
         
     </div>
@@ -9004,7 +9054,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 933
+            sdk/core/sdk.js, line 937
         </div>
         
     </div>
@@ -9104,7 +9154,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 823
+            sdk/core/sdk.js, line 827
         </div>
         
     </div>
@@ -9204,7 +9254,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 852
+            sdk/core/sdk.js, line 856
         </div>
         
     </div>
@@ -9304,7 +9354,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 982
+            sdk/core/sdk.js, line 986
         </div>
         
     </div>
@@ -9375,7 +9425,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 778
+            sdk/core/sdk.js, line 782
         </div>
         
     </div>
@@ -9475,7 +9525,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 915
+            sdk/core/sdk.js, line 919
         </div>
         
     </div>
@@ -9575,7 +9625,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 886
+            sdk/core/sdk.js, line 890
         </div>
         
     </div>
@@ -9675,7 +9725,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 868
+            sdk/core/sdk.js, line 872
         </div>
         
     </div>
@@ -9775,7 +9825,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 990
+            sdk/core/sdk.js, line 994
         </div>
         
     </div>
@@ -9875,7 +9925,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 689
+            sdk/core/sdk.js, line 693
         </div>
         
     </div>
@@ -9975,7 +10025,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 427
+            sdk/core/sdk.js, line 430
         </div>
         
     </div>
@@ -10091,7 +10141,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 473
+            sdk/core/sdk.js, line 476
         </div>
         
     </div>
@@ -10207,7 +10257,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 281
+            sdk/core/sdk.js, line 284
         </div>
         
     </div>
@@ -10360,7 +10410,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 602
+            sdk/core/sdk.js, line 609
         </div>
         
     </div>
@@ -10431,7 +10481,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 595
+            sdk/core/sdk.js, line 602
         </div>
         
     </div>
@@ -10547,7 +10597,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 437
+            sdk/core/sdk.js, line 440
         </div>
         
     </div>
@@ -10671,7 +10721,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 770
+            sdk/core/sdk.js, line 774
         </div>
         
     </div>
@@ -10787,7 +10837,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 707
+            sdk/core/sdk.js, line 711
         </div>
         
     </div>
@@ -10986,7 +11036,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 754
+            sdk/core/sdk.js, line 758
         </div>
         
     </div>
@@ -11102,7 +11152,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 840
+            sdk/core/sdk.js, line 844
         </div>
         
     </div>
@@ -11244,7 +11294,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 802
+            sdk/core/sdk.js, line 806
         </div>
         
     </div>
@@ -11360,7 +11410,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 860
+            sdk/core/sdk.js, line 864
         </div>
         
     </div>
@@ -11476,7 +11526,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 975
+            sdk/core/sdk.js, line 979
         </div>
         
     </div>
@@ -11592,7 +11642,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 965
+            sdk/core/sdk.js, line 969
         </div>
         
     </div>
@@ -11708,7 +11758,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 923
+            sdk/core/sdk.js, line 927
         </div>
         
     </div>
@@ -11824,7 +11874,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 898
+            sdk/core/sdk.js, line 902
         </div>
         
     </div>
@@ -11940,7 +11990,7 @@ after all existing operations have been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/sdk.js, line 876
+            sdk/core/sdk.js, line 880
         </div>
         
     </div>
