@@ -55,6 +55,10 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
 
+        settingsList.getSettingsModel(UiConfigFilter.class).setFilterList(
+          FilterPackBasic.getFilterPack()
+        );
+
         settingsList.getSettingsModel(UiConfigText.class).setFontList(
           FontPackBasic.getFontPack()
         );
@@ -169,6 +173,10 @@ class KCameraDemoActivity : Activity(), PermissionRequest.Response {
         // If you include our asset Packs and you use our UI you also need to add them to the UI,
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
+
+        getSettingsModel(UiConfigFilter::class.java).apply {
+            setFilterList(FilterPackBasic.getFilterPack())
+        }
 
         getSettingsModel(UiConfigText::class.java).apply {
             setFontList(FontPackBasic.getFontPack())

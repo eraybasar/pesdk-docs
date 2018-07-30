@@ -125,15 +125,18 @@ pesdkConfig {
         include 'ly.img.android.pesdk.ui.mobile_ui:sticker'
         include 'ly.img.android.pesdk.ui.mobile_ui:overlay'
         include 'ly.img.android.pesdk.ui.mobile_ui:transform'
-        include 'ly.img.android.pesdk.ui.mobile_ui:text-design'
         include 'ly.img.android.pesdk.ui.mobile_ui:adjustment'
+        include 'ly.img.android.pesdk.ui.mobile_ui:text-design'
+
 
         // Add the serializer if you need
         include 'ly.img.android.pesdk:serializer'
 
         // Add asset packs if you need
         include 'ly.img.android.pesdk.assets:font-basic'
+        include 'ly.img.android.pesdk.assets:font-text-design'
         include 'ly.img.android.pesdk.assets:frame-basic'
+        include 'ly.img.android.pesdk.assets:filter-basic'
         include 'ly.img.android.pesdk.assets:overlay-basic'
         include 'ly.img.android.pesdk.assets:sticker-shapes'
         include 'ly.img.android.pesdk.assets:sticker-emoticons'
@@ -226,6 +229,10 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
         // If you include our asset Packs and you use our UI you also need to add them to the UI,
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
+
+        settingsList.getSettingsModel(UiConfigFilter.class).setFilterList(
+          FilterPackBasic.getFilterPack()
+        );
 
         settingsList.getSettingsModel(UiConfigText.class).setFontList(
           FontPackBasic.getFontPack()
@@ -341,6 +348,10 @@ class KCameraDemoActivity : Activity(), PermissionRequest.Response {
         // If you include our asset Packs and you use our UI you also need to add them to the UI,
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
+
+        getSettingsModel(UiConfigFilter::class.java).apply {
+            setFilterList(FilterPackBasic.getFilterPack())
+        }
 
         getSettingsModel(UiConfigText::class.java).apply {
             setFontList(FontPackBasic.getFontPack())
@@ -467,6 +478,10 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
         // If you include our asset Packs and you use our UI you also need to add them to the UI,
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
+
+        settingsList.getSettingsModel(UiConfigFilter.class).setFilterList(
+            FilterPackBasic.getFilterPack()
+        );
 
         settingsList.getSettingsModel(UiConfigText.class).setFontList(
           FontPackBasic.getFontPack()
@@ -601,18 +616,22 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
 
+        getSettingsModel(UiConfigFilter::class.java).apply {
+            setFilterList(FilterPackBasic.getFilterPack())
+        }
+
         getSettingsModel(UiConfigText::class.java).apply {
-            setFontList(
-              FontPackBasic.getFontPack()
-            )
+            setFontList(FontPackBasic.getFontPack())
         }
 
         getSettingsModel(UiConfigFrame::class.java).apply {
             setFrameList(FramePackBasic.getFramePack())
         }
+
         getSettingsModel(UiConfigOverlay::class.java).apply {
             setOverlayList(OverlayPackBasic.getOverlayPack())
         }
+
         getSettingsModel(UiConfigSticker::class.java).apply {
             setStickerLists(
               StickerPackEmoticons.getStickerCategory(),
