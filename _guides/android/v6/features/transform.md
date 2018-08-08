@@ -96,8 +96,8 @@ settingsList.config.apply {
 
 ## Forcing specific ratios
 
-In this case, you need to remove the CustomCrop option from the tool, to ensure that a user can’t remove the forced crop ratio afterward.
-In order to force your users to crop their image to one of the available crop ratios, you can look at the following code example.
+Per default the SDK chooses the best matching aspect for the input photo. This is in general the `FREE_CROP`.
+In order to force your users to crop their image to one of the available crop ratios, you need to remove the `FREE_CROP` option from the assets, to ensure that a user can’t remove the forced crop ratio afterward.
 {% capture first_snippet_ExampleConfigUtility_configForceCrop %}
 Java
 ---
@@ -148,17 +148,14 @@ settingsList.getSettingsModel(UiConfigAspect::class.java).apply {
 {% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configForceCrop{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-You can also force a specific Aspect for Portrait and Landscape images Without removing the Free Crop option.
+You can also force a specific aspect for portrait and landscape images. (In this case you do not need to removing the `FREE_CROP` option)
 {% capture first_snippet_ExampleConfigUtility_configShouldCropped %}
 Java
 ---
 ``````java
 // Set force crop by asset id, make sure you have added that asset.
-settingsList.getSettingsModel(TransformSettings.class).setForceCrop(
-  "aspect_16_9",
-  "aspect_9_16"
-
-);
+settingsList.getSettingsModel(TransformSettings.class)
+  .setForceCrop("aspect_16_9", "aspect_9_16");
 ``````
 {% endcapture %}{% capture second_snippet_ExampleConfigUtility_configShouldCropped %}
 Kotlin
