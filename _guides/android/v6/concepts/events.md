@@ -30,37 +30,37 @@ You have to create methods that are annotated with `@ly.img.sdk.android.annotati
 
 Here is an example:
 
-```java
-import ly.img.android.pesdk.annotations.OnEvent;
-@ly.img.sdk.android.annotations.StateEvents
-public class CustomEventTracker extends EventTracker {
-     
-    /* 
+{% capture first_snippet_ExampleCustomEventTracker %}
+Java
+---
+``````java
+public class ExampleCustomEventTracker extends EventTracker {
+
+    /*
      * This annotated method tracks any tool change like opening the brush tool
      */
-    @ly.img.sdk.android.annotations.OnEvent(PESDKEvents.EditorMenuState_TOOL_STACK_CHANGED)
-    protected void changeToolView(EditorMenuState menuState) {
-        googleAnalyticsTracker.setScreenName(menuState.getCurrentTool().getName());
+    @OnEvent(ly.img.android.pesdk.ui.PESDKEvents.UiStateMenu_TOOL_STACK_CHANGED)
+    protected void changeToolView(UiStateMenu menuState) {
+        googleAnalyticsTracker.setScreenName(menuState.getCurrentTool().toString());
         googleAnalyticsTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
-    /* 
+    /*
      * This annotated method tracks contrast changes after a delay of 1000ms (triggerDelay) in order to prevent too many traking events.
      * ignoreReverts = true means that this event is not triggered again if you cancel the changes.
      */
-    @ly.img.sdk.android.annotations.OnEvent(value = PESDKEvents.ColorAdjustmentSettings_CONTRAST, ignoreReverts = true, triggerDelay = 1000)
+    @OnEvent(value = ly.img.android.pesdk.backend.adjustment.PESDKEvents.ColorAdjustmentSettings_CONTRAST, ignoreReverts = true, triggerDelay = 1000)
     protected void onColorAdjustmentChangeContrast(ColorAdjustmentSettings colorAdjustmentSettings) {
         HitBuilders.EventBuilder builder = new HitBuilders.EventBuilder()
-                .setCategory("change color adjustment")
-                .setLabel("contrast")
-                .setAction("changed")
-                .setValue(Math.round(colorAdjustmentSettings.getContrast() * 100));
+          .setCategory("change color adjustment")
+          .setLabel("contrast")
+          .setAction("changed")
+          .setValue(Math.round(colorAdjustmentSettings.getContrast() * 100));
         googleAnalyticsTracker.send(builder.build());
     }
     // Has to be a Parcalable. For example:
     private String trackerId;
     private Tracker googleAnalyticsTracker;
-    private String trackerId;
-    public CustomEventTracker(String trackerId) {
+    public ExampleCustomEventTracker(String trackerId) {
         init(trackerId);
     }
     private void init(String trackerId) {
@@ -77,22 +77,93 @@ public class CustomEventTracker extends EventTracker {
         super.writeToParcel(dest, flags);
         dest.writeString(this.trackerId);
     }
-    protected CustomEventTracker(Parcel in) {
+    protected ExampleCustomEventTracker(Parcel in) {
         super(in);
         init(in.readString());
     }
-    public static final Creator<CustomEventTracker> CREATOR = new Creator<CustomEventTracker>() {
+    public static final Creator<ExampleCustomEventTracker> CREATOR = new Creator<ExampleCustomEventTracker>() {
         @Override
-        public CustomEventTracker createFromParcel(Parcel source) {
-            return new CustomEventTracker(source);
+        public ExampleCustomEventTracker createFromParcel(Parcel source) {
+            return new ExampleCustomEventTracker(source);
         }
         @Override
-        public CustomEventTracker[] newArray(int size) {
-            return new CustomEventTracker[size];
+        public ExampleCustomEventTracker[] newArray(int size) {
+            return new ExampleCustomEventTracker[size];
         }
     };
+
 }
-```
+``````
+{% endcapture %}{% capture second_snippet_ExampleCustomEventTracker %}
+Kotlin
+---
+``````kotlin
+class KExampleCustomEventTracker : EventTracker {
+    // Has to be a Parcalable. For example:
+    private var trackerId: String? = null
+    private var googleAnalyticsTracker: Tracker? = null
+
+    /*
+     * This annotated method tracks any tool change like opening the brush tool
+     */
+    @OnEvent(ly.img.android.pesdk.ui.PESDKEvents.UiStateMenu_TOOL_STACK_CHANGED)
+    protected fun changeToolView(menuState: UiStateMenu) {
+        googleAnalyticsTracker!!.setScreenName(menuState.currentTool.toString())
+        googleAnalyticsTracker!!.send(HitBuilders.ScreenViewBuilder().build())
+    }
+
+    /*
+     * This annotated method tracks contrast changes after a delay of 1000ms (triggerDelay) in order to prevent too many traking events.
+     * ignoreReverts = true means that this event is not triggered again if you cancel the changes.
+     */
+    @OnEvent(value = ly.img.android.pesdk.backend.adjustment.PESDKEvents.ColorAdjustmentSettings_CONTRAST, ignoreReverts = true, triggerDelay = 1000)
+    protected fun onColorAdjustmentChangeContrast(colorAdjustmentSettings: ColorAdjustmentSettings) {
+        val builder = HitBuilders.EventBuilder()
+          .setCategory("change color adjustment")
+          .setLabel("contrast")
+          .setAction("changed")
+          .setValue(Math.round(colorAdjustmentSettings.contrast * 100).toLong())
+        googleAnalyticsTracker!!.send(builder.build())
+    }
+
+    constructor(trackerId: String) {
+        init(trackerId)
+    }
+
+    private fun init(trackerId: String) {
+        this.trackerId = trackerId
+        val analytics = GoogleAnalytics.getInstance(PESDK.getAppContext())
+        googleAnalyticsTracker = analytics.newTracker(trackerId)
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    override fun writeToParcel(dest: Parcel, flags: Int) {
+        super.writeToParcel(dest, flags)
+        dest.writeString(this.trackerId)
+    }
+
+    protected constructor(`in`: Parcel) : super(`in`) {
+        init(`in`.readString())
+    }
+
+    companion object CREATOR : Parcelable.Creator<KExampleCustomEventTracker> {
+        override fun createFromParcel(parcel: Parcel): KExampleCustomEventTracker {
+            return KExampleCustomEventTracker(parcel)
+        }
+
+        override fun newArray(size: Int): Array<KExampleCustomEventTracker?> {
+            return arrayOfNulls(size)
+        }
+    }
+
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleCustomEventTracker | push: second_snippet_ExampleCustomEventTracker %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleCustomEventTracker{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 Now you have to add your `CustomEventTracker` to the settings class.<br>
 ```java

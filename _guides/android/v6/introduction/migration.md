@@ -1,27 +1,162 @@
 ---
 layout: guides/content
-title: &title Configuration # title as shown in the menu and 
-
+title: &title Migration from v5 # title as shown in the menu and
+description: Look for a straightforward migration of the PhotoEditor SDK v5.
 menuitem: *title
-order: 2
+order: 3
 platform: android
 version: v6
-category: 
+category:
   - guide
   - introduction
-  
-description: The PhotoEditor SDK for Android can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires.
-  
 tags: &tags # tags that are necessary
-  - photo editor 
+  - photo editor
 
-published: true # Either published or not 
+published: true # Either published or not
 ---
 
-![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/screenshot_controls.jpg){: height="400px" .center-image}
+To keep the good quality of our products and keep the ability to introduce new features, we have to refactor the sdk from time to time.
+We try to keep the external api, as good as possible, but unfortunately this is not always possible.
 
-The [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) provides a lot of functions for customizing the Editor.
-To modify this configuration you need to generate a new [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) object and configurate the different models. Afterwards, you add the modified [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) to the [`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html) or the [`PhotoEditorBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/PhotoEditorBuilder.html).
+## Migrate from v5 to v6
+
+## 1. Step, update the project `build.gradle`
+
+Starting with v6 we have introduced a Gradle plugin, written in groovy to keep the integration as simple as possible for you.
+To enable this plugin you have to prepare you project `build.gradle` file at first.
+
+```
+// Add the PESDK plugin repository
+buildscript {
+    repositories {
+
+        google() // Add the google maven repository if you not already have it.
+        jcenter()
+        maven { url 'https://artifactory.9elements.com/artifactory/imgly' }
+    }
+    dependencies {
+
+        // And plugin dependency with the lates available version
+        classpath 'ly.img.android.pesdk:plugin:6.0.1'
+
+        // Update you gradle version at least to v3.1.3
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        ...
+    }
+}
+
+allprojects {
+    repositories {
+        google() // Add the google maven repository if you not already have it.
+        jcenter()
+        maven { url 'https://artifactory.9elements.com/artifactory/imgly' }
+    }
+}
+```
+
+## 2. Step, remove unused configs from your application `build.gradle`
+
+Starting with v6, some of the configurations needed for the SDK are handled by the PESDK-Plugin itself.
+
+Because of this you can __remove__ the following configuration.
+```
+android {
+    defaultConfig {
+        renderscriptTargetApi 23
+        renderscriptSupportModeEnabled true
+    }
+}
+```
+
+Remove also the old dependencies
+```
+dependencies {
+    compile 'ly.img.android:photo-editor-sdk:5.1.5'
+        apt 'ly.img.android:build-processor:5.1.5'
+    ...
+}
+```
+
+## 3. Step apply the PESDK-Plugin to your application `build.gradle`
+
+Starting with v6, the SDK is split into separate modules, the plugin is set up and the required modules are defined.
+
+```
+// Apply the Android Plugin
+apply plugin: 'com.android.application'
+
+// Apply the PESDKPlugin, this must be done after the Android Plugin!
+apply plugin: 'ly.img.android.pesdk'
+
+// Configure the PESDKPlugin
+pesdkConfig {
+
+    licencePath "LICENSE" // Name of the Licence file in the asset folder
+
+    // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
+    pesdkVersion "6.0.0"
+
+    // If you use another supportLibVersion ('com.android.support'), change this version here to update your own supportLibVersion
+    supportLibVersion "27.1.1"
+
+    // Define the modules you are need
+    modules {
+        // Add all the backend modules you need
+        include 'ly.img.android.pesdk.operation:text'
+        include 'ly.img.android.pesdk.operation:frame'
+        include 'ly.img.android.pesdk.operation:focus'
+        include 'ly.img.android.pesdk.operation:brush'
+        include 'ly.img.android.pesdk.operation:camera'
+        include 'ly.img.android.pesdk.operation:filter'
+        include 'ly.img.android.pesdk.operation:sticker'
+        include 'ly.img.android.pesdk.operation:overlay'
+        include 'ly.img.android.pesdk.operation:adjustment'
+        include 'ly.img.android.pesdk.operation:text-design'
+        include 'ly.img.android.pesdk.operation:abstract-sticker'
+
+        // Add all the UI modules you are need
+        include 'ly.img.android.pesdk.ui.mobile_ui:core'
+        include 'ly.img.android.pesdk.ui.mobile_ui:text'
+        include 'ly.img.android.pesdk.ui.mobile_ui:focus'
+        include 'ly.img.android.pesdk.ui.mobile_ui:frame'
+        include 'ly.img.android.pesdk.ui.mobile_ui:brush'
+        include 'ly.img.android.pesdk.ui.mobile_ui:filter'
+        include 'ly.img.android.pesdk.ui.mobile_ui:camera'
+        include 'ly.img.android.pesdk.ui.mobile_ui:sticker'
+        include 'ly.img.android.pesdk.ui.mobile_ui:overlay'
+        include 'ly.img.android.pesdk.ui.mobile_ui:transform'
+        include 'ly.img.android.pesdk.ui.mobile_ui:adjustment'
+        include 'ly.img.android.pesdk.ui.mobile_ui:text-design'
+
+
+        // Add the serializer if you need
+        include 'ly.img.android.pesdk:serializer'
+
+        // Add asset packs if you need
+        include 'ly.img.android.pesdk.assets:font-basic'
+        include 'ly.img.android.pesdk.assets:font-text-design'
+        include 'ly.img.android.pesdk.assets:frame-basic'
+        include 'ly.img.android.pesdk.assets:filter-basic'
+        include 'ly.img.android.pesdk.assets:overlay-basic'
+        include 'ly.img.android.pesdk.assets:sticker-shapes'
+        include 'ly.img.android.pesdk.assets:sticker-emoticons'
+    }
+}
+```
+
+### 4. Step remove `PESDK.init(this);`
+
+From v6 there is no need to initiate the SDK anymore.
+You can remove this line of code, and you can also remove the Application class if you only need to initiate the PESDK.
+
+### 5. Update your `SettingsList` code and all the imports.
+
+With v6 the internal package structure has changed a lot, sorry!
+
+To keep it simple, remove all old imports and rewrite your initialization SettingsList.
+Look the `createPesdkSettingsList()` method of the following example code to get a default configuration.
+
+p.s. If you do not apply any Assets to the UI, the tools are empty. This is not a bug ;-)
 
 {% capture first_snippet_EditorDemoActivity %}
 Java
@@ -305,79 +440,4 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 {% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_EditorDemoActivity | push: second_snippet_EditorDemoActivity %}
 {% capture identifier %}{{page.title}}-{{page.version}}-EditorDemoActivity{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
-
-## Toolset configuration
-
-![Editor Tools]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/screenshot_editor_toolbar.jpg){: width="360px"}
-
-In order to change the tools or rearrange them, use the `setTools()` method of the `PESDKConfig` object. Before this, you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
-the `AbstractEditorTool` class.
-
-A single `EditorTool` object takes two parameters:
-
-1. ID of the tool panel
-2. The tool name
-3. ImageSource of the icon
-
-{% capture first_snippet_ExampleConfigUtility_configEditorTools %}
-Java
----
-``````java
-// Obtain the config
-UiConfigMainMenu uiConfigMainMenu = settingsList.getSettingsModel(UiConfigMainMenu.class);
-// Set the tools you want keep sure you licence is cover the feature and do not forget to include the correct modules in your build.gradle
-uiConfigMainMenu.setToolList(
-  new ToolItem("imgly_tool_transform", R.string.pesdk_transform_title_name, ImageSource.create(R.drawable.imgly_icon_tool_transform)),
-  new ToolItem("imgly_tool_filter", R.string.pesdk_filter_title_name, ImageSource.create(R.drawable.imgly_icon_tool_filters)),
-  new ToolItem("imgly_tool_adjustment", R.string.pesdk_adjustments_title_name, ImageSource.create(R.drawable.imgly_icon_tool_adjust)),
-  new ToolItem("imgly_tool_sticker_selection", R.string.pesdk_sticker_title_name, ImageSource.create(R.drawable.imgly_icon_tool_sticker)),
-  new ToolItem("imgly_tool_text_design", R.string.pesdk_textDesign_title_name, ImageSource.create(R.drawable.imgly_icon_tool_text_design)),
-  new ToolItem("imgly_tool_text", R.string.pesdk_text_title_name, ImageSource.create(R.drawable.imgly_icon_tool_text)),
-  new ToolItem("imgly_tool_overlay", R.string.pesdk_overlay_title_name, ImageSource.create(R.drawable.imgly_icon_tool_overlay)),
-  new ToolItem("imgly_tool_frame", R.string.pesdk_frame_title_name, ImageSource.create(R.drawable.imgly_icon_tool_frame)),
-  new ToolItem("imgly_tool_brush", R.string.pesdk_brush_title_name, ImageSource.create(R.drawable.imgly_icon_tool_brush)),
-  new ToolItem("imgly_tool_focus", R.string.pesdk_focus_title_name, ImageSource.create(R.drawable.imgly_icon_tool_focus))
-);
-``````
-{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configEditorTools %}
-Kotlin
----
-``````kotlin
-// Obtain the config
-settingsList.getSettingsModel(UiConfigMainMenu::class.java).apply {
-    // Set the tools you want keep sure you licence is cover the feature and do not forget to include the correct modules in your build.gradle
-    setToolList(
-      ToolItem("imgly_tool_transform", R.string.pesdk_transform_title_name, ImageSource.create(R.drawable.imgly_icon_tool_transform)),
-      ToolItem("imgly_tool_filter", R.string.pesdk_filter_title_name, ImageSource.create(R.drawable.imgly_icon_tool_filters)),
-      ToolItem("imgly_tool_adjustment", R.string.pesdk_adjustments_title_name, ImageSource.create(R.drawable.imgly_icon_tool_adjust)),
-      ToolItem("imgly_tool_sticker_selection", R.string.pesdk_sticker_title_name, ImageSource.create(R.drawable.imgly_icon_tool_sticker)),
-      ToolItem("imgly_tool_text_design", R.string.pesdk_textDesign_title_name, ImageSource.create(R.drawable.imgly_icon_tool_text_design)),
-      ToolItem("imgly_tool_text", R.string.pesdk_text_title_name, ImageSource.create(R.drawable.imgly_icon_tool_text)),
-      ToolItem("imgly_tool_overlay", R.string.pesdk_overlay_title_name, ImageSource.create(R.drawable.imgly_icon_tool_overlay)),
-      ToolItem("imgly_tool_frame", R.string.pesdk_frame_title_name, ImageSource.create(R.drawable.imgly_icon_tool_frame)),
-      ToolItem("imgly_tool_brush", R.string.pesdk_brush_title_name, ImageSource.create(R.drawable.imgly_icon_tool_brush)),
-      ToolItem("imgly_tool_focus", R.string.pesdk_focus_title_name, ImageSource.create(R.drawable.imgly_icon_tool_focus))
-    )
-}
-``````
-{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configEditorTools | push: second_snippet_ExampleConfigUtility_configEditorTools %}
-{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configEditorTools{% endcapture %}
-{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
-
-## Select available crop ratios
-
-Check out our [transform documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/transform).
-
-## Configuring available fonts
-
-Take a look at the [text documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/text).
-
-## Adding or removing stickers
-
-Take a look at the [stickers documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/stickers).
-
-## Adding or removing filters
-
-Take a look at the [filters documentation]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/filters).
-
 

@@ -22,7 +22,7 @@ The PhotoEditor SDK offers a camera implementation for Android to complement you
 
 In order to use our camera, you need to instantiate a [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewActivity.html) using a [`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html) and present it. You can configure the camera to fit your needs by passing a [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) object to the builder. If no configuration is passed, the default setup is passed:
 
-{% capture first_snippet %}
+{% capture first_snippet_CameraDemoActivity %}
 Java
 ---
 ``````java
@@ -144,7 +144,7 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
     }
 }
 ``````
-{% endcapture %}{% capture second_snippet %}
+{% endcapture %}{% capture second_snippet_CameraDemoActivity %}
 Kotlin
 ---
 ``````kotlin
@@ -262,7 +262,7 @@ class KCameraDemoActivity : Activity(), PermissionRequest.Response {
 
 }
 ``````
-{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_CameraDemoActivity | push: second_snippet_CameraDemoActivity %}
 {% capture identifier %}{{page.title}}-{{page.version}}-CameraDemoActivity{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 

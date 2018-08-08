@@ -18,26 +18,22 @@ published: true # Either published or not
 Our serialization functionality empowers you to save the current settings of the changes and recover it the next time the editor is opened again. The settings will be stored in a plain JSON file.
 For details on the JSON structure, you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-3.0.0-beta.json){: download="schema-3.0.0-beta.json" } our schema.
 
-## Dependency
-
-Add the serializer dependency into your project, the version number must be the same like the SDK version.
-
-```groovy
-	compile 'ly.img.android:serializer:6.0.0-beta'
-```
-
 ## Saving the settings
-When the editor is closed, the `SettingsList` is parceled into the `android.content.Intent` data of `onActivityResult(int requestCode, int resultCode, android.content.Intent data)`
-You can parse the serialize and write settings by calling the `writeJson(File file)` method on a fresh `PESDKFileWriter` object.
+When the editor is closed, the [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) is parceled into the `android.content.Intent` data of `onActivityResult(int requestCode, int resultCode, android.content.Intent data)`
+You can parse the serialize and write settings by calling the `writeJson(File file)` method on a fresh [`PESDKFileWriter`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/serializer/_3/_0/_0/PESDKFileWriter.html) object.
 Here is some example code to get you started:
 
-```java
-@Override
+{% capture first_snippet_ExampleSerialization_onActivityResult %}
+Java
+---
+``````java
 protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
 
+    int EDITOR_RESULT = 2;
+
     if (resultCode == RESULT_OK && requestCode == EDITOR_RESULT) {
-		SettingsList settingsList = data.getParcelableExtra(ImgLyIntent.SETTINGS_LIST);
+        SettingsList settingsList = data.getParcelableExtra(ImgLyIntent.SETTINGS_LIST);
         PESDKFileWriter writer = new PESDKFileWriter(settingsList);
 
         // TODO: Choose a better file path
@@ -54,49 +50,113 @@ protected void onActivityResult(int requestCode, int resultCode, android.content
             Trace.out("JSON", "error on write json");
         }
     }
-    ...
+//...
 }
-```
+``````
+{% endcapture %}{% capture second_snippet_ExampleSerialization_onActivityResult %}
+Kotlin
+---
+``````kotlin
+override fun onActivityResult(requestCode: Int, resultCode: Int, data: android.content.Intent) {
+    super.onActivityResult(requestCode, resultCode, data)
+
+    val EDITOR_RESULT = 2
+
+    if (resultCode == Activity.RESULT_OK && requestCode == EDITOR_RESULT) {
+        val settingsList = data.getParcelableExtra<SettingsList>(ImgLyIntent.SETTINGS_LIST)
+        val writer = PESDKFileWriter(settingsList)
+
+        // TODO: Choose a better file path
+        val file = File(Environment.getExternalStorageDirectory(), "staveState.pesdk")
+        try {
+            if (file.exists()) {
+                file.delete()
+            }
+            file.createNewFile()
+            writer.writeJson(file)
+            Trace.out("JSON", "json written")
+        } catch (e: IOException) {
+            e.printStackTrace()
+            Trace.out("JSON", "error on write json")
+        }
+
+    }
+    //...
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleSerialization_onActivityResult | push: second_snippet_ExampleSerialization_onActivityResult %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleSerialization_onActivityResult{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 ## Restoring the settings
 
-To set the initial editor settings, load the saved settings with a fresh `PESDKFileReader` object. This has to be done **before** the editor is presented. Here is an example, to demonstrate the process:
+To set the initial editor settings, load the saved settings with a fresh [`PESDKFileReader`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/serializer/_3/_0/_0/PESDKFileReader.html) object. This has to be done **before** the editor is presented. Here is an example, to demonstrate the process:
 
-```java
-SettingsList settingsList = createYourInitialSettingsList();
+{% capture first_snippet_ExampleSerialization_openEditor %}
+Java
+---
+``````java
+SettingsList settingsList = createInitialSettingsList();
 
-if (lastPicture != null) {
-    settingsList
-      .getSettingsModel(EditorLoadSettings.class)
-      .setImageSourcePath(lastPicture, true)
+int PESDK_RESULT = 1;
 
-      .getSettingsModel(EditorSaveSettings.class)
-      .setExportDir(Directory.DCIM, FOLDER)
-      .setExportPrefix("result_")
-      .setJpegQuality(80, true)
-      .setSavePolicy(EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT);
+// Set input image
+settingsList.getSettingsModel(EditorLoadSettings.class)
+  .setImageSource(inputImage);
 
-    // TODO: Choose a better file path
-    File file = new File(Environment.getExternalStorageDirectory(), "staveState.pesdk");
-    if (file.exists()) {
-        PESDKFileReader reader = new PESDKFileReader(settingsList);
-        try {
-            reader.readJson(file);
-        } catch (IOException e) {
-            Toast.makeText(MainActivity.this, "Error while opening json.", Toast.LENGTH_LONG).show();
-            e.printStackTrace();
-            return;
-        }
-    } else {
-        Toast.makeText(MainActivity.this, "No save state found.", Toast.LENGTH_LONG).show();
+// TODO: Choose a better file path
+File file = new File(Environment.getExternalStorageDirectory(), "staveState.pesdk");
+if (file.exists()) {
+    PESDKFileReader reader = new PESDKFileReader(settingsList);
+    try {
+        reader.readJson(file);
+    } catch (IOException e) {
+        Toast.makeText(this, "Error while opening json.", Toast.LENGTH_LONG).show();
+        e.printStackTrace();
         return;
     }
+} else {
+    Toast.makeText(this, "No save state found.", Toast.LENGTH_LONG).show();
+    return;
+}
 
-    new PhotoEditorBuilder(MainActivity.this)
-      .setSettingsList(settingsList)
-      .startActivityForResult(MainActivity.this, CAMERA_PREVIEW_RESULT);
+new PhotoEditorBuilder(this)
+  .setSettingsList(settingsList)
+  .startActivityForResult(this, PESDK_RESULT);
+``````
+{% endcapture %}{% capture second_snippet_ExampleSerialization_openEditor %}
+Kotlin
+---
+``````kotlin
+val settingsList = createInitialSettingsList()
+
+val PESDK_RESULT = 1
+
+// Set input image
+settingsList.getSettingsModel(EditorLoadSettings::class.java)!!
+  .setImageSource(inputImage)
+
+// TODO: Choose a better file path
+val file = File(Environment.getExternalStorageDirectory(), "staveState.pesdk")
+if (file.exists()) {
+    val reader = PESDKFileReader(settingsList)
+    try {
+        reader.readJson(file)
+    } catch (e: IOException) {
+        Toast.makeText(this, "Error while opening json.", Toast.LENGTH_LONG).show()
+        e.printStackTrace()
+        return
+    }
 
 } else {
-    Toast.makeText(MainActivity.this, "No save state image found.", Toast.LENGTH_LONG).show();
+    Toast.makeText(this, "No save state found.", Toast.LENGTH_LONG).show()
+    return
 }
-```
+
+PhotoEditorBuilder(this)
+  .setSettingsList(settingsList)
+  .startActivityForResult(this, PESDK_RESULT)
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleSerialization_openEditor | push: second_snippet_ExampleSerialization_openEditor %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleSerialization_openEditor{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}

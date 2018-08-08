@@ -26,7 +26,10 @@ Each mode has its own characteristics and will add a unique flavor to the final 
 
 Here is an example of how to add overlays:
 
-```java
+{% capture first_snippet_ExampleConfigUtility_configOverlay %}
+Java
+---
+``````java
 // Obtain the asset config from you settingsList
 AssetConfig assetConfig = settingsList.getConfig();
 
@@ -111,7 +114,98 @@ uiConfigOverlay.setOverlayList(
     ImageSource.create(R.drawable.imgly_overlay_vintage_thumb)
   )
 );
-```
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configOverlay %}
+Kotlin
+---
+``````kotlin
+// Add Assets
+settingsList.config.apply {
+    addAsset(
+      OverlayAsset.NONE_BACKDROP,
+      OverlayAsset(
+        "your-uniq-overlay-id-1",
+        ImageSource.create(R.drawable.imgly_overlay_golden),
+        BlendMode.LIGHTEN,
+        1f
+      ),
+      OverlayAsset(
+        "your-uniq-overlay-id-2",
+        ImageSource.create(R.drawable.imgly_overlay_lightleak1),
+        BlendMode.SCREEN,
+        1f
+      ),
+      OverlayAsset(
+        "your-uniq-overlay-id-3",
+        ImageSource.create(R.drawable.imgly_overlay_mosaic),
+        BlendMode.MULTIPLY,
+        1f
+      ),
+      OverlayAsset(
+        "your-uniq-overlay-id-4",
+        ImageSource.create(R.drawable.imgly_overlay_paper),
+        BlendMode.MULTIPLY,
+        1f
+      ),
+      OverlayAsset(
+        "your-uniq-overlay-id-5",
+        ImageSource.create(R.drawable.imgly_overlay_rain),
+        BlendMode.OVERLAY,
+        1f
+      ),
+      OverlayAsset(
+        "your-uniq-overlay-id-6",
+        ImageSource.create(R.drawable.imgly_overlay_vintage),
+        BlendMode.DARKEN,
+        1f
+      )
+    )
+}
+
+// Add Overlay items to the UI
+settingsList.getSettingsModel(UiConfigOverlay::class.java).apply {
+    setOverlayList(
+      OverlayItem(
+        OverlayAsset.NONE_BACKDROP_ID,
+        R.string.pesdk_overlay_asset_none,
+        ImageSource.create(R.drawable.imgly_icon_option_overlay_none)
+      ),
+      OverlayItem(
+        "your-uniq-overlay-id-1",
+        R.string.pesdk_overlay_asset_golden,
+        ImageSource.create(R.drawable.imgly_overlay_golden_thumb)
+      ),
+      OverlayItem(
+        "your-uniq-overlay-id-2",
+        R.string.pesdk_overlay_asset_lightleak1,
+        ImageSource.create(R.drawable.imgly_overlay_lightleak1_thumb)
+      ),
+      OverlayItem(
+        "your-uniq-overlay-id-3",
+        R.string.pesdk_overlay_asset_mosaic,
+        ImageSource.create(R.drawable.imgly_overlay_mosaic_thumb)
+      ),
+      OverlayItem(
+        "your-uniq-overlay-id-4",
+        R.string.pesdk_overlay_asset_paper,
+        ImageSource.create(R.drawable.imgly_overlay_paper_thumb)
+      ),
+      OverlayItem(
+        "your-uniq-overlay-id-5",
+        R.string.pesdk_overlay_asset_rain,
+        ImageSource.create(R.drawable.imgly_overlay_rain_thumb)
+      ),
+      OverlayItem(
+        "your-uniq-overlay-id-6",
+        R.string.pesdk_overlay_asset_vintage,
+        ImageSource.create(R.drawable.imgly_overlay_vintage_thumb)
+      )
+    )
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configOverlay | push: second_snippet_ExampleConfigUtility_configOverlay %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configOverlay{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 Please note that you have to set the default [`BlendModeAsset`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/config/BlendModeAsset.html) and intensity.
 We could show you the math for each of these modes, but that won't help to get a feel for the resulting visual effect. Therefore we encourage you to add your overlay 

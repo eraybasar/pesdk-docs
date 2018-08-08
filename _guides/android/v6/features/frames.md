@@ -19,7 +19,7 @@ published: true # Either published or not
 
 The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames. For the dynamic frames tool that works perfectly for creatives with repeatable or stretchable areas, we abandoned the 9-patch standard and replaced it with a novel and even more flexible 12-patch layout. The static frames tool can be used for complex and irregular creatives.
 
-The tool is implemented in the [`FrameEditorTool`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/sdk/tools/FrameEditorTool.html) class and displayed using the [`FrameToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/panels/FrameToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.
+The tool is implemented in the [`FrameEditorTool`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/sdk/tools/FrameEditorTool.html) class and displayed using the [`FrameToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/panels/FrameToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/styling) section.
 
 ## Add Dynamic frame assets
 
@@ -50,36 +50,39 @@ In order to change the available frames, rearrange or add new frames, start with
 
 > Please make sure you put the PNG files into the `res/raw` **or** the `res/drawable-nodpi` folder, otherwise the frame is scaled by Android.
 
-For dynamic frames each `FrameConfig` takes the following five parameters:
+For dynamic frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following five parameters:
 
 1. Frame identifier, this should be unique. It is currently used for serialization only
 2. Custom patch model, which describes the 12-patch layout
 3. Frame thickness, which is between > 0 and 1 \(100%\) 
 
-Each `CustomPatchFrameConfig` takes the following 5 parameters:
+Each [`CustomPatchFrameAsset`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/CustomPatchFrameAsset.html) takes the following 5 parameters:
 
-1. `FrameLayoutMode`, which describes the orientation \(`HorizontalInside` or `VerticalInside`\)
-2. Top `FrameImagGroup`
-3. Left `FrameImagGroup`
-4. Right `FrameImagGroup`
-5. Bottom `FrameImagGroup`
+1. [`FrameLayoutMode`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameLayoutMode.html), which describes the orientation \(`HorizontalInside` or `VerticalInside`\)
+2. Top [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
+3. Left [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
+4. Right [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
+5. Bottom [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
 
-Each `FrameImageGroup` takes the following 4 parameters:
+Each [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html) takes the following 4 parameters:
 
-1. \(Optional\) Start image tile `ImageSource`
-2. Middle tile `ImageSource`
-3. `FrameTileMode` of the middle tile \(`Stretch` or `Repeat`\)
-4. \(Optional\) End image tile `ImageSource`
+1. \(Optional\) Start image tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/decoder/ImageSource.html)
+2. Middle tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/decoder/ImageSource.html)
+3. [`FrameTileMode`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameTileMode.html) of the middle tile \(`Stretch` or `Repeat`\)
+4. \(Optional\) End image tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/decoder/ImageSource.html)
 
 A dynamic frame configuration could then look like this:
 
-```java
+{% capture first_snippet_ExampleConfigUtility_configDynamicFrame %}
+Java
+---
+``````java
 // Obtain the asset config from you settingsList
 AssetConfig assetConfig = settingsList.getConfig();
 
 // Add Assets
 assetConfig.addAsset(
-  new FrameItem(FrameConfig.NONE_FRAME_ID),
+  new FrameAsset("imgly_frame_none", null, 1f),
   new FrameAsset(
     "your_unique_frame_ID_1",
     new CustomPatchFrameAsset(
@@ -101,27 +104,78 @@ assetConfig.addAsset(
   ),
   new FrameAsset(
     "your_unique_frame_ID_2",
-      new CustomPatchFrameAsset(
-        FrameLayoutMode.VerticalInside,
-        new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top.png")), FrameTileMode.Repeat),
-        new FrameImageGroup(
-          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_left.png")),
-          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_left.png")), FrameTileMode.Stretch,
-          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_left.png"))
-        ),
-        new FrameImageGroup(
-          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_right.png")),
-          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_right.png")), FrameTileMode.Stretch,
-          ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_right.png"))
-        ),
-        new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom.png")), FrameTileMode.Repeat)
+    new CustomPatchFrameAsset(
+      FrameLayoutMode.VerticalInside,
+      new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top.png")), FrameTileMode.Repeat),
+      new FrameImageGroup(
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_left.png")),
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_left.png")), FrameTileMode.Stretch,
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_left.png"))
+      ),
+      new FrameImageGroup(
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_right.png")),
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_right.png")), FrameTileMode.Stretch,
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_right.png"))
+      ),
+      new FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom.png")), FrameTileMode.Repeat)
     ),
     0.1f
   )
 );
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configDynamicFrame %}
+Kotlin
+---
+``````kotlin
+// Obtain the asset config from you settingsList
+var assetConfig : AssetConfig = settingsList.getConfig()
 
-
-```
+// Add Assets
+assetConfig.addAsset(
+  FrameAsset("imgly_frame_none", null, 1f),
+  FrameAsset(
+    "your_unique_frame_ID_1",
+    CustomPatchFrameAsset(
+      FrameLayoutMode.HorizontalInside,
+      FrameImageGroup(ImageSource.create(R.drawable.imgly_frame_dia_top), FrameTileMode.Repeat),
+      FrameImageGroup(
+        ImageSource.create(R.drawable.imgly_frame_dia_top_left),
+        ImageSource.create(R.drawable.imgly_frame_dia_left), FrameTileMode.Stretch,
+        ImageSource.create(R.drawable.imgly_frame_dia_bottom_left)
+      ),
+      FrameImageGroup(
+        ImageSource.create(R.drawable.imgly_frame_dia_top_right),
+        ImageSource.create(R.drawable.imgly_frame_dia_right), FrameTileMode.Stretch,
+        ImageSource.create(R.drawable.imgly_frame_dia_bottom_right)
+      ),
+      FrameImageGroup(ImageSource.create(R.drawable.imgly_frame_dia_bottom), FrameTileMode.Repeat)
+    ),
+    0.075f
+  ),
+  FrameAsset(
+    "your_unique_frame_ID_2",
+    CustomPatchFrameAsset(
+      FrameLayoutMode.VerticalInside,
+      FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top.png")), FrameTileMode.Repeat),
+      FrameImageGroup(
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_left.png")),
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_left.png")), FrameTileMode.Stretch,
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_left.png"))
+      ),
+      FrameImageGroup(
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_top_right.png")),
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_right.png")), FrameTileMode.Stretch,
+        ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom_right.png"))
+      ),
+      FrameImageGroup(ImageSource.create(Uri.parse("https://content.mydomain/frames/flower_bottom.png")), FrameTileMode.Repeat)
+    ),
+    0.1f
+  )
+)
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configDynamicFrame | push: second_snippet_ExampleConfigUtility_configDynamicFrame %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configDynamicFrame{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 ## Static frames
 
@@ -129,7 +183,7 @@ Static frames hold several versions of the assets, i.e. one for each supported r
 
 ## Adding static frames
 
-For static frames each `FrameConfig` takes the following six parameters:
+For static frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following six parameters:
 
 1. Frame identifier, this must be unique.
 4. `Drawable` resource of the frame
@@ -138,7 +192,10 @@ For static frames each `FrameConfig` takes the following six parameters:
 
 A static frame configuration could then look like this:
 
-```java
+{% capture first_snippet_ExampleConfigUtility_configStaticFrame %}
+Java
+---
+``````java
 // Obtain the asset config from you settingsList
 AssetConfig assetConfig = settingsList.getConfig();
 
@@ -146,20 +203,57 @@ AssetConfig assetConfig = settingsList.getConfig();
 assetConfig.addAsset(
   new FrameAsset(
     "myUniqFrameId",
-    R.drawable.imgly_frame_dia,
-    new CropAspectConfig(16, 9),
+    R.drawable.imgly_frame_rainbow,
+    new CropAspectAsset("imgly_crop_1_1",1, 1, false),
     1
-  ),
-  ...
+  )
+//...
 );
-```
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configStaticFrame %}
+Kotlin
+---
+``````kotlin
+// Add Assets
+settingsList.config.apply {
+    addAsset(
+      FrameAsset(
+        "myUniqFrameId",
+        R.drawable.imgly_frame_rainbow,
+        CropAspectAsset("imgly_crop_1_1",1, 1, false),
+        1
+      )
+      //...
+    )
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configStaticFrame | push: second_snippet_ExampleConfigUtility_configStaticFrame %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configStaticFrame{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 
 ## Adding frames items to the UI
-```
+{% capture first_snippet_ExampleConfigUtility_configAddingFrameToUi %}
+Java
+---
+``````java
 UiConfigFrame uiConfigFrame = settingsList.getSettingsModel(UiConfigFrame.class);
 uiConfigFrame.setFrameList(
-  new FrameItem(FrameConfig.NONE_FRAME_ID, R.string.pesdk_frame_asset_none, ImageSource.create(R.drawable.imgly_icon_option_frame_none)),
-  new FrameItem("myUniqFrameId", R.string.pesdk_frame_asset_dia, ImageSource.create(R.drawable.my_frame_thumb))
+  new FrameItem("imgly_frame_none", R.string.pesdk_frame_button_none, ImageSource.create(R.drawable.imgly_icon_option_frame_none)),
+  new FrameItem("myUniqFrameId", R.string.pesdk_frame_asset_dia, ImageSource.create(R.drawable.imgly_frame_dia_thumb))
 );
-```
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configAddingFrameToUi %}
+Kotlin
+---
+``````kotlin
+settingsList.getSettingsModel(UiConfigFrame::class.java).apply {
+    setFrameList(
+      FrameItem("imgly_frame_none", R.string.pesdk_frame_button_none, ImageSource.create(R.drawable.imgly_icon_option_frame_none)),
+      FrameItem("myUniqFrameId", R.string.pesdk_frame_asset_dia, ImageSource.create(R.drawable.imgly_frame_dia_thumb))
+    )
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configAddingFrameToUi | push: second_snippet_ExampleConfigUtility_configAddingFrameToUi %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configAddingFrameToUi{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}

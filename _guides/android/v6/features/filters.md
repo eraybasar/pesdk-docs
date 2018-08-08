@@ -22,13 +22,16 @@ Our PhotoEditor SDK features more than 60 high-quality filters and enables you t
 
 To examine the included filters, you can download the {% include guides/android/example-app.md %} from the Play Store or clone our {% include guides/android/demo-repository.md %}.
 
-The backend settings are implemented in the [`FilterSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/FilterSettings.html) class and displayed using the [`FilterToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/FilterToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/styling) section.
+The backend settings are implemented in the [`FilterSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/FilterSettings.html) class and displayed using the [`FilterToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/FilterToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/styling) section.
 
 ## Add or remove predefined filters
 
 In order to change the available filters or rearrange them, start with a default [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use [`getSettingsModel(UiConfigText.class)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/model/state/UiConfigText.html) and the [`setFilterList(ly.img.android.pesdk.ui.panels.item.FilterItem...)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/model/state/UiConfigFilter.html) method to add your filter selection as a list of [`FilterItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/item/FilterItem.html) objects:
 
-```java
+{% capture first_snippet_ExampleConfigUtility_configFilterAssets %}
+Java
+---
+``````java
 ConfigMap<FilterAsset> filterAssetsMap = settingsList.getSettingsModel(AssetConfig.class).getAssetMap(FilterAsset.class);
 filterAssetsMap.add(FilterAsset.NONE_FILER);
 filterAssetsMap.add(new LutColorFilterAsset("my_own_lut_id", ImageSource.create(R.drawable.imgly_lut_ad1920_5_5_128), 5, 5, 128));
@@ -92,7 +95,81 @@ filterAssetsMap.add(new ColorFilterAssetTexas());
 filterAssetsMap.add(new ColorFilterAssetTwilight());
 filterAssetsMap.add(new ColorFilterAssetWinter());
 filterAssetsMap.add(new ColorFilterAssetX400());
-```
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configFilterAssets %}
+Kotlin
+---
+``````kotlin
+settingsList.getSettingsModel(AssetConfig::class.java).apply {
+    getAssetMap(FilterAsset::class.java).apply {
+        add(FilterAsset.NONE_FILER)
+        add(LutColorFilterAsset("my_own_lut_id", ImageSource.create(R.drawable.imgly_lut_ad1920_5_5_128), 5, 5, 128))
+        add(ColorFilterAssetAD1920())
+        add(ColorFilterAssetAncient())
+        add(ColorFilterAssetBleached())
+        add(ColorFilterAssetBleachedBlue())
+        add(ColorFilterAssetBlues())
+        add(ColorFilterAssetBlueShadows())
+        add(ColorFilterAssetBreeze())
+        add(ColorFilterAssetBW())
+        add(ColorFilterAssetCelsius())
+        add(ColorFilterAssetChest())
+        add(ColorFilterAssetClassic())
+        add(ColorFilterAssetColorful())
+        add(ColorFilterAssetCool())
+        add(ColorFilterAssetCottonCandy())
+        add(ColorFilterAssetCreamy())
+        add(ColorFilterAssetEighties())
+        add(ColorFilterAssetElder())
+        add(ColorFilterAssetEvening())
+        add(ColorFilterAssetFall())
+        add(ColorFilterAssetFixie())
+        add(ColorFilterAssetFood())
+        add(ColorFilterAssetFridge())
+        add(ColorFilterAssetFront())
+        add(ColorFilterAssetGlam())
+        add(ColorFilterAssetGobblin())
+        add(ColorFilterAssetHighCarb())
+        add(ColorFilterAssetHighContrast())
+        add(ColorFilterAssetK1())
+        add(ColorFilterAssetK2())
+        add(ColorFilterAssetK6())
+        add(ColorFilterAssetKDynamic())
+        add(ColorFilterAssetKeen())
+        add(ColorFilterAssetLenin())
+        add(ColorFilterAssetLitho())
+        add(ColorFilterAssetLomo())
+        add(ColorFilterAssetLomo100())
+        add(ColorFilterAssetLucid())
+        add(ColorFilterAssetMellow())
+        add(ColorFilterAssetNeat())
+        add(ColorFilterAssetNoGreen())
+        add(ColorFilterAssetOrchid())
+        add(ColorFilterAssetPale())
+        add(ColorFilterAssetPitched())
+        add(ColorFilterAssetPola669())
+        add(ColorFilterAssetPolaSx())
+        add(ColorFilterAssetPro400())
+        add(ColorFilterAssetQuozi())
+        add(ColorFilterAssetSepiahigh())
+        add(ColorFilterAssetSettled())
+        add(ColorFilterAssetSeventies())
+        add(ColorFilterAssetSin())
+        add(ColorFilterAssetSoft())
+        add(ColorFilterAssetSteel())
+        add(ColorFilterAssetSummer())
+        add(ColorFilterAssetSunset())
+        add(ColorFilterAssetTender())
+        add(ColorFilterAssetTexas())
+        add(ColorFilterAssetTwilight())
+        add(ColorFilterAssetWinter())
+        add(ColorFilterAssetX400())
+    }
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configFilterAssets | push: second_snippet_ExampleConfigUtility_configFilterAssets %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configFilterAssets{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 ## Response filters
 We use a technology called LUTs in order to add new filters to our SDK.
@@ -124,17 +201,20 @@ Typically those operations use surrounding the pixels to determine the color of 
 > __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you need to save your LUT as a PNG file.
  
 The last step is to add the filter to
-the list of available filters by creating a `LutColorFilter` object just as described above. The object takes the following three parameters:
+the list of available filters by creating a [`LutColorFilterAsset`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/filter/LutColorFilterAsset.html) object just as described above. The object takes the following three parameters:
 
 1. String resource identifier of the filters name, which will not be displayed in the default layout, but is used for Accessibility.
-2. Preview image resource for the `CameraPreview` activity. This image is replaced with a filtered version of the current image within the editor.
+2. Preview image resource for the [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewActivity.html). This image is replaced with a filtered version of the current image within the editor.
 3. Drawable-nodpi or Raw resource identifier of the PNG LUT.
 
 > __WARNING:__ Be sure to put the LUT PNG file in the 'res/drawable-nodpi' folder. Otherwise, the LUT will be scaled by the Android system. 
 
 Adding the custom filter to the available filters then looks like this:
 
-```java
+{% capture first_snippet_ExampleConfigUtility_configFilterUi %}
+Java
+---
+``````java
 DataSourceIdItemList<FilterItem> filterInUiList = settingsList.getSettingsModel(UiConfigFilter.class).getFilterList();
 filterInUiList.clear();
 filterInUiList.add(new FilterItem("my_own_lut_id", "My Filter"));
@@ -199,4 +279,77 @@ filterInUiList.add(new FilterItem(ColorFilterAssetTexas.ID, R.string.pesdk_filte
 filterInUiList.add(new FilterItem(ColorFilterAssetTwilight.ID, R.string.pesdk_filter_asset_twilight));
 filterInUiList.add(new FilterItem(ColorFilterAssetWinter.ID, R.string.pesdk_filter_asset_winter));
 filterInUiList.add(new FilterItem(ColorFilterAssetX400.ID, R.string.pesdk_filter_asset_x400));
-```
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configFilterUi %}
+Kotlin
+---
+``````kotlin
+settingsList.getSettingsModel(UiConfigFilter::class.java)!!.filterList.apply {
+    clear()
+    add(FilterItem("my_own_lut_id", "My Filter"))
+    add(FilterItem(FilterAsset.NONE_FILTER_ID, R.string.pesdk_filter_asset_none))
+    add(FilterItem(ColorFilterAssetAD1920.ID, R.string.pesdk_filter_asset_ad1920))
+    add(FilterItem(ColorFilterAssetAncient.ID, R.string.pesdk_filter_asset_ancient))
+    add(FilterItem(ColorFilterAssetBleached.ID, R.string.pesdk_filter_asset_bleached))
+    add(FilterItem(ColorFilterAssetBleachedBlue.ID, R.string.pesdk_filter_asset_bBlue))
+    add(FilterItem(ColorFilterAssetBlues.ID, R.string.pesdk_filter_asset_blues))
+    add(FilterItem(ColorFilterAssetBlueShadows.ID, R.string.pesdk_filter_asset_blueShade))
+    add(FilterItem(ColorFilterAssetBreeze.ID, R.string.pesdk_filter_asset_breeze))
+    add(FilterItem(ColorFilterAssetBW.ID, R.string.pesdk_filter_asset_bw))
+    add(FilterItem(ColorFilterAssetCelsius.ID, R.string.pesdk_filter_asset_celsius))
+    add(FilterItem(ColorFilterAssetChest.ID, R.string.pesdk_filter_asset_chest))
+    add(FilterItem(ColorFilterAssetClassic.ID, R.string.pesdk_filter_asset_classic))
+    add(FilterItem(ColorFilterAssetColorful.ID, R.string.pesdk_filter_asset_colorful))
+    add(FilterItem(ColorFilterAssetCool.ID, R.string.pesdk_filter_asset_cool))
+    add(FilterItem(ColorFilterAssetCottonCandy.ID, R.string.pesdk_filter_asset_candy))
+    add(FilterItem(ColorFilterAssetCreamy.ID, R.string.pesdk_filter_asset_creamy))
+    add(FilterItem(ColorFilterAssetEighties.ID, R.string.pesdk_filter_asset_80s))
+    add(FilterItem(ColorFilterAssetElder.ID, R.string.pesdk_filter_asset_elder))
+    add(FilterItem(ColorFilterAssetEvening.ID, R.string.pesdk_filter_asset_evening))
+    add(FilterItem(ColorFilterAssetFall.ID, R.string.pesdk_filter_asset_fall))
+    add(FilterItem(ColorFilterAssetFixie.ID, R.string.pesdk_filter_asset_fixie))
+    add(FilterItem(ColorFilterAssetFood.ID, R.string.pesdk_filter_asset_food))
+    add(FilterItem(ColorFilterAssetFridge.ID, R.string.pesdk_filter_asset_fridge))
+    add(FilterItem(ColorFilterAssetFront.ID, R.string.pesdk_filter_asset_front))
+    add(FilterItem(ColorFilterAssetGlam.ID, R.string.pesdk_filter_asset_glam))
+    add(FilterItem(ColorFilterAssetGobblin.ID, R.string.pesdk_filter_asset_goblin))
+    add(FilterItem(ColorFilterAssetHighCarb.ID, R.string.pesdk_filter_asset_carb))
+    add(FilterItem(ColorFilterAssetHighContrast.ID, R.string.pesdk_filter_asset_hicon))
+    add(FilterItem(ColorFilterAssetK1.ID, R.string.pesdk_filter_asset_k1))
+    add(FilterItem(ColorFilterAssetK2.ID, R.string.pesdk_filter_asset_k2))
+    add(FilterItem(ColorFilterAssetK6.ID, R.string.pesdk_filter_asset_k6))
+    add(FilterItem(ColorFilterAssetKDynamic.ID, R.string.pesdk_filter_asset_dynamic))
+    add(FilterItem(ColorFilterAssetKeen.ID, R.string.pesdk_filter_asset_keen))
+    add(FilterItem(ColorFilterAssetLenin.ID, R.string.pesdk_filter_asset_lenin))
+    add(FilterItem(ColorFilterAssetLitho.ID, R.string.pesdk_filter_asset_litho))
+    add(FilterItem(ColorFilterAssetLomo.ID, R.string.pesdk_filter_asset_lomo))
+    add(FilterItem(ColorFilterAssetLomo100.ID, R.string.pesdk_filter_asset_lomo100))
+    add(FilterItem(ColorFilterAssetLucid.ID, R.string.pesdk_filter_asset_lucid))
+    add(FilterItem(ColorFilterAssetMellow.ID, R.string.pesdk_filter_asset_mellow))
+    add(FilterItem(ColorFilterAssetNeat.ID, R.string.pesdk_filter_asset_neat))
+    add(FilterItem(ColorFilterAssetNoGreen.ID, R.string.pesdk_filter_asset_noGreen))
+    add(FilterItem(ColorFilterAssetOrchid.ID, R.string.pesdk_filter_asset_orchid))
+    add(FilterItem(ColorFilterAssetPale.ID, R.string.pesdk_filter_asset_pale))
+    add(FilterItem(ColorFilterAssetPitched.ID, R.string.pesdk_filter_asset_pitched))
+    add(FilterItem(ColorFilterAssetPola669.ID, R.string.pesdk_filter_asset_669))
+    add(FilterItem(ColorFilterAssetPolaSx.ID, R.string.pesdk_filter_asset_sx))
+    add(FilterItem(ColorFilterAssetPro400.ID, R.string.pesdk_filter_asset_pro400))
+    add(FilterItem(ColorFilterAssetQuozi.ID, R.string.pesdk_filter_asset_quozi))
+    add(FilterItem(ColorFilterAssetSepiahigh.ID, R.string.pesdk_filter_asset_sepiaHigh))
+    add(FilterItem(ColorFilterAssetSettled.ID, R.string.pesdk_filter_asset_settled))
+    add(FilterItem(ColorFilterAssetSeventies.ID, R.string.pesdk_filter_asset_70s))
+    add(FilterItem(ColorFilterAssetSin.ID, R.string.pesdk_filter_asset_sin))
+    add(FilterItem(ColorFilterAssetSoft.ID, R.string.pesdk_filter_asset_soft))
+    add(FilterItem(ColorFilterAssetSteel.ID, R.string.pesdk_filter_asset_steel))
+    add(FilterItem(ColorFilterAssetSummer.ID, R.string.pesdk_filter_asset_summer))
+    add(FilterItem(ColorFilterAssetSunset.ID, R.string.pesdk_filter_asset_sunset))
+    add(FilterItem(ColorFilterAssetTender.ID, R.string.pesdk_filter_asset_tender))
+    add(FilterItem(ColorFilterAssetTexas.ID, R.string.pesdk_filter_asset_texas))
+    add(FilterItem(ColorFilterAssetTwilight.ID, R.string.pesdk_filter_asset_twilight))
+    add(FilterItem(ColorFilterAssetWinter.ID, R.string.pesdk_filter_asset_winter))
+    add(FilterItem(ColorFilterAssetX400.ID, R.string.pesdk_filter_asset_x400))
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configFilterUi | push: second_snippet_ExampleConfigUtility_configFilterUi %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configFilterUi{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}

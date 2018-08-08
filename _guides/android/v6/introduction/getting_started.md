@@ -63,7 +63,8 @@ buildscript {
         maven { url 'https://artifactory.9elements.com/artifactory/imgly' }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:6.0.0'
+        // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
+        classpath 'ly.img.android.pesdk:plugin:6.0.1'
     }
 }
 
@@ -92,9 +93,6 @@ apply plugin: 'ly.img.android.pesdk'
 pesdkConfig {
 
     licencePath "LICENSE" // Name of the Licence file in the asset folder
-
-    // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-    pesdkVersion "6.0.0"
 
     // If you use another supportLibVersion ('com.android.support'), change this version here to update your own supportLibVersion
     supportLibVersion "27.1.1"
@@ -192,12 +190,12 @@ __Please take a look at the hint in the next step in order to integrate the Andr
 ## Integration
 
 In order to open the camera preview and pass the resulting image to the editor, create a
-`CameraPreviewBuilder` and start the `CameraPreviewActivity` with `startActivityForResult(activity, custom_id)`:
+[`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html) and start the [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewActivity.html) with `startActivityForResult(activity, custom_id)`:
 
 > __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
 as demonstrated in the following example. This ensures correct behavior on Android 6.0 and above.__
 
-{% capture first_snippet %}
+{% capture first_snippet_CameraDemoActivity %}
 Java
 ---
 ``````java
@@ -319,7 +317,7 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
     }
 }
 ``````
-{% endcapture %}{% capture second_snippet %}
+{% endcapture %}{% capture second_snippet_CameraDemoActivity %}
 Kotlin
 ---
 ``````kotlin
@@ -437,7 +435,7 @@ class KCameraDemoActivity : Activity(), PermissionRequest.Response {
 
 }
 ``````
-{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_CameraDemoActivity | push: second_snippet_CameraDemoActivity %}
 {% capture identifier %}{{page.title}}-{{page.version}}-CameraDemoActivity{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
@@ -445,7 +443,7 @@ class KCameraDemoActivity : Activity(), PermissionRequest.Response {
 
 If you want to open the editor directly with an existing image look at this example:
 
-{% capture first_snippet %}
+{% capture first_snippet_EditorDemoActivity %}
 Java
 ---
 ``````java
@@ -585,7 +583,7 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
     }
 }
 ``````
-{% endcapture %}{% capture second_snippet %}
+{% endcapture %}{% capture second_snippet_EditorDemoActivity %}
 Kotlin
 ---
 ``````kotlin
@@ -724,7 +722,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
 }
 ``````
-{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_EditorDemoActivity | push: second_snippet_EditorDemoActivity %}
 {% capture identifier %}{{page.title}}-{{page.version}}-EditorDemoActivity{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
