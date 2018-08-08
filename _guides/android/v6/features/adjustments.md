@@ -20,7 +20,7 @@ published: true # Either published or not
 
 Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast while allowing more expert users to fine-tune highlights, shadows and clarity.
 
-The backend settings are implemented in the [`ColorAdjustmentSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/ColorAdjustmentSettings.html) class and displayed using the [`AdjustmentToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/AdjustmentToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/styling) section.
+The backend settings are implemented in the [`ColorAdjustmentSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/ColorAdjustmentSettings.html) class and displayed using the [`AdjustmentToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/AdjustmentToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/styling) section.
 
 The available toolset consists of:
 

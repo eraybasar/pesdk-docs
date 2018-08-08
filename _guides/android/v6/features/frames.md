@@ -50,26 +50,26 @@ In order to change the available frames, rearrange or add new frames, start with
 
 > Please make sure you put the PNG files into the `res/raw` **or** the `res/drawable-nodpi` folder, otherwise the frame is scaled by Android.
 
-For dynamic frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following five parameters:
+For dynamic frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following five parameters:
 
 1. Frame identifier, this should be unique. It is currently used for serialization only
 2. Custom patch model, which describes the 12-patch layout
 3. Frame thickness, which is between > 0 and 1 \(100%\) 
 
-Each [`CustomPatchFrameAsset`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/CustomPatchFrameAsset.html) takes the following 5 parameters:
+Each [`CustomPatchFrameAsset`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/CustomPatchFrameAsset.html) takes the following 5 parameters:
 
-1. [`FrameLayoutMode`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameLayoutMode.html), which describes the orientation \(`HorizontalInside` or `VerticalInside`\)
-2. Top [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
-3. Left [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
-4. Right [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
-5. Bottom [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
+1. [`FrameLayoutMode`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/FrameLayoutMode.html), which describes the orientation \(`HorizontalInside` or `VerticalInside`\)
+2. Top [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
+3. Left [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
+4. Right [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
+5. Bottom [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/FrameImageGroup.html)
 
-Each [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameImageGroup.html) takes the following 4 parameters:
+Each [`FrameImageGroup`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/FrameImageGroup.html) takes the following 4 parameters:
 
-1. \(Optional\) Start image tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/decoder/ImageSource.html)
-2. Middle tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/decoder/ImageSource.html)
-3. [`FrameTileMode`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/frame/FrameTileMode.html) of the middle tile \(`Stretch` or `Repeat`\)
-4. \(Optional\) End image tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/decoder/ImageSource.html)
+1. \(Optional\) Start image tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/decoder/ImageSource.html)
+2. Middle tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/decoder/ImageSource.html)
+3. [`FrameTileMode`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/frame/FrameTileMode.html) of the middle tile \(`Stretch` or `Repeat`\)
+4. \(Optional\) End image tile [`ImageSource`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/decoder/ImageSource.html)
 
 A dynamic frame configuration could then look like this:
 
@@ -183,7 +183,7 @@ Static frames hold several versions of the assets, i.e. one for each supported r
 
 ## Adding static frames
 
-For static frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following six parameters:
+For static frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following six parameters:
 
 1. Frame identifier, this must be unique.
 4. `Drawable` resource of the frame

@@ -20,7 +20,7 @@ published: true # Either published or not
 A picture says more than a thousand words, however sometimes it still takes a few more.
 The robust text-design feature of the PhotoEditor SDK provides a simple and automated creative text layouting engine to any picture.
 
-The backend settings are implemented in the [`TextDesignLayerSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/layer/TextDesignLayerSettings.html) class and displayed using the [`TextDesignToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/TextDesignToolPanel.html).
+The backend settings are implemented in the [`TextDesignLayerSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/layer/TextDesignLayerSettings.html) class and displayed using the [`TextDesignToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/TextDesignToolPanel.html).
 If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/styling) section.
 
 ## TextDesign configuration

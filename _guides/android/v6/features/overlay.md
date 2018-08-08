@@ -207,6 +207,6 @@ settingsList.getSettingsModel(UiConfigOverlay::class.java).apply {
 {% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configOverlay{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-Please note that you have to set the default [`BlendModeAsset`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/config/BlendModeAsset.html) and intensity.
+Please note that you have to set the default [`BlendModeAsset`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/config/BlendModeAsset.html) and intensity.
 We could show you the math for each of these modes, but that won't help to get a feel for the resulting visual effect. Therefore we encourage you to add your overlay 
 with every initial mode and use the UI to play with the blend mode and intensities. 

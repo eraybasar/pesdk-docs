@@ -20,7 +20,7 @@ published: true # Either published or not
 
 Our transform tool unifies cropping, flipping and rotation operations in one feature. The PhotoEditor SDK holds various preset crop ratios (e.g. 16:9) that can easily be complemented by any crop ratio you deem necessary.
 
-The backend settings are implemented in the [`TransformSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/TransformSettings.html) class and displayed using the [`TransformToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/panels/TransformToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/styling) section.
+The backend settings are implemented in the [`TransformSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/TransformSettings.html) class and displayed using the [`TransformToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/TransformToolPanel.html). If you want to customize the appearance of this tool, take a look at the [styling]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/styling) section.
 
 As an example, you could create the following configuration:
 
@@ -31,8 +31,8 @@ Java
 // Obtain the asset config from you settingsList
 AssetConfig assetConfig = settingsList.getConfig();
 
-// Add aspect assets to backend
-assetConfig.addAsset(
+// Clear defaults and add aspect assets to the backend
+assetConfig.getAssetMap(CropAspectAsset.class).clear().add(
   CropAspectAsset.FREE_CROP,
   new CropAspectAsset("my_crop_1_1",1, 1, false),
   new CropAspectAsset("my_crop_16_9",16, 9, false),
@@ -46,7 +46,7 @@ assetConfig.addAsset(
 // Obtain the ui config from you settingsList
 UiConfigAspect uiConfigAspect = settingsList.getSettingsModel(UiConfigAspect.class);
 
-// Add Items to UI
+// Add aspect items to UI
 uiConfigAspect.setAspectList(
   new CropAspectItem("my_crop_free", R.string.pesdk_transform_button_freeCrop),
   new CropAspectItem("my_crop_1_1"),
@@ -64,7 +64,7 @@ Kotlin
 ``````kotlin
 // Add aspect assets to backend
 settingsList.config.apply {
-    addAsset(
+    getAssetMap(CropAspectAsset::class.java).clear().add(
       CropAspectAsset.FREE_CROP,
       CropAspectAsset("my_crop_1_1", 1, 1, false),
       CropAspectAsset("my_crop_16_9", 16, 9, false),
@@ -94,3 +94,81 @@ settingsList.config.apply {
 {% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configTransform{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
+## Forcing specific ratios
+
+In this case, you need to remove the CustomCrop option from the tool, to ensure that a user can’t remove the forced crop ratio afterward.
+In order to force your users to crop their image to one of the available crop ratios, you can look at the following code example.
+{% capture first_snippet_ExampleConfigUtility_configForceCrop %}
+Java
+---
+``````java
+// Remove default Assets and add your own aspects
+settingsList.getSettingsModel(AssetConfig.class).getAssetMap(CropAspectAsset.class)
+  .clear().add(
+  new CropAspectAsset("aspect_1_1", 1, 1, false),
+  new CropAspectAsset("aspect_16_9", 16, 9, false),
+  new CropAspectAsset("aspect_9_16", 9, 16, false)
+);
+
+// Add your own Asset to UI config and select the Force crop Mode.
+settingsList.getSettingsModel(UiConfigAspect.class).setAspectList(
+  new CropAspectItem("aspect_1_1"),
+  new CropAspectItem("aspect_16_9"),
+  new CropAspectItem("aspect_9_16")
+).setForceCropMode(
+  // This prevents that the Transform tool opens at start.
+  UiConfigAspect.ForceCrop.SHOW_TOOL_NEVER
+);
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configForceCrop %}
+Kotlin
+---
+``````kotlin
+// Remove default Assets and add your own aspects
+settingsList.getSettingsModel(AssetConfig::class.java).apply {
+    getAssetMap(CropAspectAsset::class.java)
+      .clear().add(
+        CropAspectAsset("aspect_1_1", 1, 1, false),
+        CropAspectAsset("aspect_16_9", 16, 9, false),
+        CropAspectAsset("aspect_9_16", 9, 16, false)
+      )
+}
+
+// Add your own Asset to UI config and select the Force crop Mode.
+settingsList.getSettingsModel(UiConfigAspect::class.java).apply {
+    setAspectList(
+      CropAspectItem("aspect_1_1"),
+      CropAspectItem("aspect_16_9"),
+      CropAspectItem("aspect_9_16")
+    )
+    forceCropMode = UiConfigAspect.ForceCrop.SHOW_TOOL_NEVER
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configForceCrop | push: second_snippet_ExampleConfigUtility_configForceCrop %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configForceCrop{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+You can also force a specific Aspect for Portrait and Landscape images Without removing the Free Crop option.
+{% capture first_snippet_ExampleConfigUtility_configShouldCropped %}
+Java
+---
+``````java
+// Set force crop by asset id, make sure you have added that asset.
+settingsList.getSettingsModel(TransformSettings.class).setForceCrop(
+  "aspect_16_9",
+  "aspect_9_16"
+
+);
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configShouldCropped %}
+Kotlin
+---
+``````kotlin
+// Set force crop by asset id, make sure you have added that asset.
+settingsList.getSettingsModel(TransformSettings::class.java).apply {
+    setForceCrop("aspect_16_9", "aspect_9_16")
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configShouldCropped | push: second_snippet_ExampleConfigUtility_configShouldCropped %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configShouldCropped{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}

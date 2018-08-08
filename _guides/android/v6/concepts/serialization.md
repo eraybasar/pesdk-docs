@@ -19,8 +19,8 @@ Our serialization functionality empowers you to save the current settings of the
 For details on the JSON structure, you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-3.0.0-beta.json){: download="schema-3.0.0-beta.json" } our schema.
 
 ## Saving the settings
-When the editor is closed, the [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) is parceled into the `android.content.Intent` data of `onActivityResult(int requestCode, int resultCode, android.content.Intent data)`
-You can parse the serialize and write settings by calling the `writeJson(File file)` method on a fresh [`PESDKFileWriter`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/serializer/_3/_0/_0/PESDKFileWriter.html) object.
+When the editor is closed, the [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) is parceled into the `android.content.Intent` data of `onActivityResult(int requestCode, int resultCode, android.content.Intent data)`
+You can parse the serialize and write settings by calling the `writeJson(File file)` method on a fresh [`PESDKFileWriter`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/serializer/_3/_0/_0/PESDKFileWriter.html) object.
 Here is some example code to get you started:
 
 {% capture first_snippet_ExampleSerialization_onActivityResult %}
@@ -90,7 +90,7 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: android.c
 
 ## Restoring the settings
 
-To set the initial editor settings, load the saved settings with a fresh [`PESDKFileReader`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/serializer/_3/_0/_0/PESDKFileReader.html) object. This has to be done **before** the editor is presented. Here is an example, to demonstrate the process:
+To set the initial editor settings, load the saved settings with a fresh [`PESDKFileReader`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/serializer/_3/_0/_0/PESDKFileReader.html) object. This has to be done **before** the editor is presented. Here is an example, to demonstrate the process:
 
 {% capture first_snippet_ExampleSerialization_openEditor %}
 Java

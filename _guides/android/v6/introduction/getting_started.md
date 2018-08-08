@@ -190,7 +190,7 @@ __Please take a look at the hint in the next step in order to integrate the Andr
 ## Integration
 
 In order to open the camera preview and pass the resulting image to the editor, create a
-[`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html) and start the [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/pesdk/ui/activity/CameraPreviewActivity.html) with `startActivityForResult(activity, custom_id)`:
+[`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html) and start the [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/activity/CameraPreviewActivity.html) with `startActivityForResult(activity, custom_id)`:
 
 > __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
 as demonstrated in the following example. This ensures correct behavior on Android 6.0 and above.__
