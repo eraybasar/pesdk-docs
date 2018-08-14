@@ -37,7 +37,7 @@ buildscript {
     dependencies {
 
         // And plugin dependency with the lates available version
-        classpath 'ly.img.android.pesdk:plugin:6.0.1'
+        classpath 'ly.img.android.pesdk:plugin:6.0.2'
 
         // Update you gradle version at least to v3.1.3
         classpath 'com.android.tools.build:gradle:3.1.3'
@@ -279,6 +279,9 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
                 sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(sourceURI));
             }
 
+            Log.i("PESDK", "Source image is located here " + sourceURI);
+            Log.i("PESDK", "Result image is located here " + resultURI);
+
             // TODO: Do something with the result image
 
             // OPTIONAL: read the latest state to save it as a serialisation
@@ -413,6 +416,9 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
                 // Scan source uri to show it up in the Gallery
                 sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(it))
             }
+
+            Log.i("PESDK", "Source image is located here $sourceURI")
+            Log.i("PESDK", "Result image is located here $resultURI")
 
             // TODO: Do something with the result image
 
