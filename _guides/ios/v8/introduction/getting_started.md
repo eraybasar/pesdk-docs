@@ -36,7 +36,7 @@ use_frameworks!
 pod 'PhotoEditorSDK'
 ```
 
-Then run `pod install`.
+To make sure you're fetching the latest SDK version, run `pod repo update`. Then run `pod install` to install the SDK.
 
 ## License file
 
