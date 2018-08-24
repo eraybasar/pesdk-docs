@@ -190,9 +190,9 @@ __Please take a look at the hint in the next step in order to integrate the Andr
 ## Integration
 
 In order to open the camera preview and pass the resulting image to the editor, create a
-[`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html) and start the [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/activity/CameraPreviewActivity.html) with `startActivityForResult(activity, custom_id)`:
+[`CameraPreviewBuilder`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html) and start the [`CameraPreviewActivity`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/activity/CameraPreviewActivity.html) with [`startActivityForResult(android.app.Activity, int)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/activity/CameraPreviewBuilder.html):
 
-> __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
+> __Please make sure you delegate the [`onRequestPermissionsResult()`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/utils/PermissionRequest.html) to [`onRequestPermissionsResult()`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/utils/PermissionRequest.html)
 as demonstrated in the following example. This ensures correct behavior on Android 6.0 and above.__
 
 {% capture first_snippet_CameraDemoActivity %}
@@ -471,10 +471,12 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
          * Show a hint to the user and try again. */
     }
 
-    public static int GALLERY_RESULT = 1;
     public static int PESDK_RESULT = 1;
+    public static int GALLERY_RESULT = 2;
 
     private SettingsList createPesdkSettingsList() {
+
+
 
         // Create a empty new SettingsList and apply the changes on this referance.
         SettingsList settingsList = new SettingsList();
@@ -599,8 +601,8 @@ Kotlin
 class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
     companion object {
-        const val GALLERY_RESULT = 1
         const val PESDK_RESULT = 1
+        const val GALLERY_RESULT = 2
     }
 
     // Important permission request for Android 6.0 and above, don't forget to add this!
@@ -659,7 +661,6 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         setContentView(R.layout.activity_main)
 
         openSystemGalleryToSelectAnImage()
-
     }
 
     fun openSystemGalleryToSelectAnImage() {

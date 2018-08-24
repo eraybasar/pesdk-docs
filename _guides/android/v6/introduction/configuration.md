@@ -45,10 +45,12 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
          * Show a hint to the user and try again. */
     }
 
-    public static int GALLERY_RESULT = 1;
     public static int PESDK_RESULT = 1;
+    public static int GALLERY_RESULT = 2;
 
     private SettingsList createPesdkSettingsList() {
+
+
 
         // Create a empty new SettingsList and apply the changes on this referance.
         SettingsList settingsList = new SettingsList();
@@ -173,8 +175,8 @@ Kotlin
 class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
     companion object {
-        const val GALLERY_RESULT = 1
         const val PESDK_RESULT = 1
+        const val GALLERY_RESULT = 2
     }
 
     // Important permission request for Android 6.0 and above, don't forget to add this!
@@ -233,7 +235,6 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         setContentView(R.layout.activity_main)
 
         openSystemGalleryToSelectAnImage()
-
     }
 
     fun openSystemGalleryToSelectAnImage() {
@@ -316,10 +317,10 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
 ![Editor Tools]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/screenshot_editor_toolbar.jpg){: width="360px"}
 
-In order to change the tools or rearrange them, use the `setTools()` method of the `PESDKConfig` object. Before this, you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
+In order to change the tools or rearrange them, use the [`setToolList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/model/state/UiConfigMainMenu.html) method of the [`UiConfigMainMenu`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/model/state/UiConfigMainMenu.html) object. Before this, you can use the `getTools()` method to get an `ArrayList` containing the default tools. You can use the `clear()` method to clear the list and refill it with your selection of tools in the preferred order or update it directly. You can also add custom tools by extending
 the `AbstractEditorTool` class.
 
-A single `EditorTool` object takes two parameters:
+A single [`ToolItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/item/ToolItem.html) object takes three parameters:
 
 1. ID of the tool panel
 2. The tool name

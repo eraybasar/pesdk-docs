@@ -46,7 +46,7 @@ The left and right group consist of a stretched border texture, and a start and 
 
 ## Adding dynamic frames
 
-In order to change the available frames, rearrange or add new frames, start with a default `PESDKConfig` as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Then use the `setFrameConfig()` method to update the configuration.
+In order to change the available frames or add new frames, start with a default [`AssetConfig`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/AssetConfig.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. Then use the [`setFrameList(FrameItem...)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/model/state/UiConfigFrame.html) method to update the configuration.
 
 > Please make sure you put the PNG files into the `res/raw` **or** the `res/drawable-nodpi` folder, otherwise the frame is scaled by Android.
 

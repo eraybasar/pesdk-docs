@@ -153,7 +153,7 @@ You can remove this line of code, and you can also remove the Application class 
 
 With v6 the internal package structure has changed a lot, sorry!
 
-To keep it simple, remove all old imports and rewrite your initialization SettingsList.
+To keep it simple, remove all old imports and rewrite your initialization [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/manager/SettingsList.html).
 Look the `createPesdkSettingsList()` method of the following example code to get a default configuration.
 
 p.s. If you do not apply any Assets to the UI, the tools are empty. This is not a bug ;-)
@@ -180,10 +180,12 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
          * Show a hint to the user and try again. */
     }
 
-    public static int GALLERY_RESULT = 1;
     public static int PESDK_RESULT = 1;
+    public static int GALLERY_RESULT = 2;
 
     private SettingsList createPesdkSettingsList() {
+
+
 
         // Create a empty new SettingsList and apply the changes on this referance.
         SettingsList settingsList = new SettingsList();
@@ -308,8 +310,8 @@ Kotlin
 class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
     companion object {
-        const val GALLERY_RESULT = 1
         const val PESDK_RESULT = 1
+        const val GALLERY_RESULT = 2
     }
 
     // Important permission request for Android 6.0 and above, don't forget to add this!
@@ -368,7 +370,6 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         setContentView(R.layout.activity_main)
 
         openSystemGalleryToSelectAnImage()
-
     }
 
     fun openSystemGalleryToSelectAnImage() {

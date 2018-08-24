@@ -20,7 +20,7 @@ For details on the JSON structure, you can [download]({{ site.baseurl }}/assets/
 
 ## Saving the settings
 When the editor is closed, the [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) is parceled into the `android.content.Intent` data of `onActivityResult(int requestCode, int resultCode, android.content.Intent data)`
-You can parse the serialize and write settings by calling the `writeJson(File file)` method on a fresh [`PESDKFileWriter`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/serializer/_3/_0/_0/PESDKFileWriter.html) object.
+You can parse the serialize and write settings by calling the [`writeJson(java.io.File)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/serializer/_3/_0/_0/PESDKFileWriter.html) method on a fresh [`PESDKFileWriter`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/serializer/_3/_0/_0/PESDKFileWriter.html) object.
 Here is some example code to get you started:
 
 {% capture first_snippet_ExampleSerialization_onActivityResult %}
