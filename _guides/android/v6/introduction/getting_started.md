@@ -64,19 +64,9 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:6.0.3'
+        classpath 'ly.img.android.pesdk:plugin:6.0.4'
     }
 }
-
-allprojects {
-    repositories {
-        jcenter()
-        google()
-        maven { url 'https://artifactory.9elements.com/artifactory/imgly' }
-    }
-}
-
-
 ```
 
 
