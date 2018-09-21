@@ -34,10 +34,28 @@ We highly recommend you to prefix your identifiers as well. For more information
 
 Here is an example of how to add an overlay.
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 let overlay = Overlay(identifier: "imgly_overlay_golden", displayName: "Golden".localized, url: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden", withExtension: "jpg"), thumbnailURL: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden_thumb", withExtension: "jpg"), initialBlendMode: .lighten)
 Overlay.all.append(overlay)
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKOverlay *overlay = [[PESDKOverlay alloc] initWithIdentifier:@"imgly_overlay_golden" displayName:@"Golden" url:[[NSBundle pesdkBundle] URLForResource:@"imgly_overlay_golden" withExtension:@"jpg"] thumbnailURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_overlay_golden_thumb" withExtension:@"jpg"] initialBlendMode:PESDKBlendModeLighten];
+PESDKOverlay.all = [PESDKOverlay.all arrayByAddingObject:overlay];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ADDOVERLAYS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
 Please note that you have to set the initial blend mode. That must be one of `normal`, `overlay`, `softLight`, `hardLight`, `multiply`, `darken`, `colorBurn`, `screen`, and `lighten`.
 We could show you the math for each of these modes, but that won't help to get a feel for the resulting visual effect. Therefore we encourage you to add your overlay
 with any initial mode, and use the UI to play with the blend mode and intensities.

@@ -29,6 +29,9 @@ The tool is implemented in the `FilterToolController` class and can be customize
 Every filter is represented by an instance of the `PhotoEffect` class. Said class also holds the `allEffects` array that allows you to access all available filters that ship with the SDK.
 The following example shows how a custom selection of filters can be set:
 
+{% capture first_snippet %}
+Swift
+---
 ```swift
 private let effects: [PhotoEffect] = [
   PhotoEffect(identifier: "K1", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k1_5_5_128", withExtension: "png"), displayName: "K1"),
@@ -40,6 +43,26 @@ private let effects: [PhotoEffect] = [
 
 PhotoEffect.allEffects = effects
 ```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+NSArray<PESDKPhotoEffect *> *effects = @[
+                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"K1" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k1_5_5_128" withExtension:@"png"] displayName:@"K1"],
+                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"K2" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k2_8_8_512" withExtension:@"png"] displayName:@"K2"],
+                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"K6" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k6_5_5_128" withExtension:@"png"] displayName:@"K6"],
+                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"Dynamic" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_kdynamic_5_5_128" withExtension:@"png"] displayName:@"Dynamic"],
+                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"Fridge" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_fridge_8_8_512" withExtension:@"png"] displayName:@"Fridge"]
+                                        ];
+PESDKPhotoEffect.allEffects = effects;
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ADDFILTERS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as in the filter tool. For more details on the filter preview when using the camera, take a look at the [camera]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/camera) section.
 
