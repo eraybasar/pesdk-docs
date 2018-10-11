@@ -29,7 +29,7 @@ The following software is required:
 * Android Studio 3.0+
 * Android Minimum SDK 16+ \(Android 4.1.0 released 27. Juni 2012\)
 * Gradle 3.0+
-* Android Build Tools 27.0.3+
+* Android Build Tools 28.0.3+
 * Android Support Repository 27.1.1+
 * License\*
 
@@ -64,7 +64,7 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:6.0.6'
+        classpath 'ly.img.android.pesdk:plugin:6.0.7'
     }
 }
 ```
@@ -133,11 +133,11 @@ pesdkConfig {
 
 // Do your Android Configurations... ex.
 android {
-    /* Set the compile SDK and the Build SDK min. at SDK 27 or grater.
+    /* Set the compile SDK and the Build SDK min. at SDK 28 or grater.
      * We can't provide support for Bugs, that are the result of older SDK versions.
      */
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         /*
