@@ -22,11 +22,11 @@ The PhotoEditor SDK exports edited images in the same resolution, as they were o
 
 With version 6 of our SDK, we introduced EXIF handling, meaning that all EXIF data of the input image are preserved.
 The reason why the EXIF data got lost in the first place, is that the `UIImage` class strips the EXIF data down to a minimal set.
-Therefore the input image must be passed in as a `Data` object to preserve all existing EXIF data. The following code sample demonstrates the process:
+Therefore the `Photo` object that you pass to the editor must be created from a `Data` or `URL` object to preserve all existing EXIF data. The following code sample demonstrates the process:
 
 ```swift
-let sampleImage = Data(contentsOf: Bundle.main.url(forResource: "exifSample", withExtension: "jpg")!)
-let photoEditViewController = PhotoEditViewController(data: sampleImage!)
+let photo = Photo(url: Bundle.main.url(forResource: "exifSample", withExtension: "jpg")!)
+let photoEditViewController = PhotoEditViewController(photoAsset: photo)
 ```
 
-Upon export, you have to use the `data` argument, passed by the `func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data)` method defined in the `PhotoEditViewControllerDelegate` protocol in order to preserve all EXIF data.
+Upon export, you have to use the `data` argument passed to the `func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data)` method defined in the `PhotoEditViewControllerDelegate` protocol in order to preserve all EXIF data, because as described above, the `UIImage` object does not contain the EXIF data anymore.

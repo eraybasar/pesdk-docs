@@ -203,7 +203,7 @@ The methods of the `PhotoEditViewControllerDelegate` protocol are designed to in
 
 The method that gets called when the user confirms the changes is
 `func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data)`.
-It provides the resulting image as an `UIImage` and a `Data` object. Please note that the EXIF data of the input image is only fully contained within the `Data` object. Please refer to the next section for more information about EXIF handling.
+It provides the resulting image as an `UIImage` and a `Data` object. Please note that the EXIF data of the input image is only fully contained within the `Data` object. Please refer to the [export]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/export) section for more information about EXIF handling.
 
 ## Embed in an UINavigationController
 
