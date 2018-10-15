@@ -75,69 +75,69 @@ You can create new View classes according to your own ideas. For access to the e
 The Example shows how to change the Export button and also changes the workflow a little bit.
 
 ```java
-{
+public class ExampleCustomExportButton extends Button implements View.OnClickListener {
 
-private UiStateMenu settings;
+    private UiStateMenu settings;
 
-public ExampleCustomExportButton(Context context) {
-    super(context);
-    init();
-}
+    public ExampleCustomExportButton(Context context) {
+        super(context);
+        init();
+    }
 
-public ExampleCustomExportButton(Context context, AttributeSet attrs) {
-    super(context, attrs);
-    init();
-}
+    public ExampleCustomExportButton(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
 
-public ExampleCustomExportButton(Context context, AttributeSet attrs, int defStyleAttr) {
-    super(context, attrs, defStyleAttr);
-    init();
-}
+    public ExampleCustomExportButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
 
-private void init() {
-    setText("Export Button");
-    setOnClickListener(this);
-}
+    private void init() {
+        setText("Export Button");
+        setOnClickListener(this);
+    }
 
-@MainThread
-@OnEvent(value = {
-  PESDKEvents.UiStateMenu_ENTER_TOOL,
-  PESDKEvents.UiStateMenu_LEAVE_TOOL,
-  PESDKEvents.UiStateMenu_LEAVE_AND_REVERT_TOOL
-}, triggerDelay = 30)
-protected void onToolChanged() {
-    AbstractToolPanel currentTool = settings != null ? settings.getCurrentTool() : null;
-    if (currentTool != null && currentTool.isAttached()) {
-        setVisibility(currentTool.isAcceptable() ? View.VISIBLE : View.GONE);
-        if (UiStateMenu.MAIN_TOOL_ID.equals(settings.getCurrentPanelData().getId())) {
-            setVisibility(View.VISIBLE);
-        } else {
-            setVisibility(View.INVISIBLE);
+    @MainThread
+    @OnEvent(value = {
+      PESDKEvents.UiStateMenu_ENTER_TOOL,
+      PESDKEvents.UiStateMenu_LEAVE_TOOL,
+      PESDKEvents.UiStateMenu_LEAVE_AND_REVERT_TOOL
+    }, triggerDelay = 30)
+    protected void onToolChanged() {
+        AbstractToolPanel currentTool = settings != null ? settings.getCurrentTool() : null;
+        if (currentTool != null && currentTool.isAttached()) {
+            setVisibility(currentTool.isAcceptable() ? View.VISIBLE : View.GONE);
+            if (UiStateMenu.MAIN_TOOL_ID.equals(settings.getCurrentPanelData().getId())) {
+                setVisibility(View.VISIBLE);
+            } else {
+                setVisibility(View.INVISIBLE);
+            }
         }
     }
-}
 
-@Override
-protected void onAttachedToWindow() {
-    super.onAttachedToWindow();
-    try {
-        StateHandler stateHandler = StateHandler.findInViewContext(getContext());
-        stateHandler.registerSettingsEventListener(this);
-        settings = stateHandler.getStateModel(UiStateMenu.class);
-    } catch (StateHandler.StateHandlerNotFoundException ignored) {
-        ignored.printStackTrace();
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        try {
+            StateHandler stateHandler = StateHandler.findInViewContext(getContext());
+            stateHandler.registerSettingsEventListener(this);
+            settings = stateHandler.getStateModel(UiStateMenu.class);
+        } catch (StateHandler.StateHandlerNotFoundException ignored) {
+            ignored.printStackTrace();
+        }
     }
-}
 
 
-@Override
-public void onClick(View view) {
-    settings.notifySaveClicked();
-}
+    @Override
+    public void onClick(View view) {
+        settings.notifySaveClicked();
+    }
 }
 ```
 
-After that you have to change the type of the View in the imgly_widget_actionbar.xml from AcceptButton to CustomAcceptButton and you have to add the new Button in the imgly_activity_photo_editor.xm.
+After that you have to change the type of the View in the imgly_widget_actionbar.xml from AcceptButton to CustomAcceptButton and you have to add the new Button in the imgly_activity_photo_editor.xml.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
