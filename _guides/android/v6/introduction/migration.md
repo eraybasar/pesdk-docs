@@ -32,12 +32,12 @@ buildscript {
 
         google() // Add the google maven repository if you not already have it.
         jcenter()
-        maven { url 'https://artifactory.9elements.com/artifactory/imgly' }
+        maven { url 'https://artifactory.img.ly/artifactory/imgly' }
     }
     dependencies {
 
         // And plugin dependency with the lates available version
-        classpath 'ly.img.android.pesdk:plugin:6.0.7'
+        classpath 'ly.img.android.pesdk:plugin:6.0.8'
 
         // Update you gradle version at least to v3.1.3
         classpath 'com.android.tools.build:gradle:3.1.3'
@@ -49,7 +49,6 @@ allprojects {
     repositories {
         google() // Add the google maven repository if you not already have it.
         jcenter()
-        maven { url 'https://artifactory.9elements.com/artifactory/imgly' }
     }
 }
 ```

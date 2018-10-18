@@ -68,11 +68,14 @@ Now you can edit all style attributes. It's also possible to override the style 
 
 ![Edit style]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_edit_style.png){: width="800px"}
 
-### Change interactive views
+### Custom view example
 
-If you want to change views in the sdk have no fear. Our Event system brings you the possibility to customize it with ease.
-You can create new View classes according to your own ideas. For access to the editor settings you need the state handler. For interactive vies you need a clickListener and to intercept the event system calls you can PESDKEvents.
-The Example shows how to change the Export button and also changes the workflow a little bit.
+If you want to change a view or you want to adjust the behavior of a view, you don't need to be afraid. Our event system gives you the opportunity to customize any interactive element with ease.
+First, create a new class that extends the desired view type. For interactive views like buttons, you have to implement the `OnClickListener` and set it to `setOnClickListener(this)` at the beginning.
+To get the status of the menu you need the `StateHandler`. You can access it as in the following example.
+Now you can write your own method that responds to the event calls. All events are listed in `PESDKEvents`. For example, event tags that belong to the state of the UI all start with `UiStateMenu_`.
+You also need a second class to replace the old view and modify its behavior. In this case, it is similar to the first class, but you have to reverse the visibility.
+The following example shows you how to create a new export button instead of the small button in the action bar.
 
 ```java
 public class ExampleCustomExportButton extends Button implements View.OnClickListener {
@@ -137,33 +140,8 @@ public class ExampleCustomExportButton extends Button implements View.OnClickLis
 }
 ```
 
-After that you have to change the type of the View in the imgly_widget_actionbar.xml from AcceptButton to CustomAcceptButton and you have to add the new Button in the imgly_activity_photo_editor.xml.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?attr/Imgly.PESDK.Widget.ActionBar">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp">
-        <ly.img.android.pesdk.ui.widgets.buttons.CancelButton
-            android:id="@+id/cancelButton"
-            style="?attr/Imgly.PESDK.Widget.ActionBar.Button.CancelButton" />
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <ly.img.android.pesdk.ui.widgets.buttons.CustomAcceptButton
-            android:id="@+id/acceptButton"
-            style="?attr/Imgly.PESDK.Widget.ActionBar.Button.AcceptButton" />
-    </LinearLayout>
-    <RelativeLayout
-        android:id="@+id/actionBarTitleBox"
-        style="?attr/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer">
-    </RelativeLayout>
-</RelativeLayout>
-```
+Now you need to change the type of view in the `imgly_widget_actionbar.xml` from `AcceptButton` to the name of your class. Then you have to add the new button in the file `imgly_activity_photo_editor.xml` to display it in the editor.
+Here are examples of what it can look like.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -182,11 +160,10 @@ After that you have to change the type of the View in the imgly_widget_actionbar
     <ly.img.android.pesdk.ui.widgets.ImgLyTitleBar
         android:id="@+id/imglyActionBar"
         style="?attr/Imgly.PESDK.Editor.Activity.ActionBar"/>
-    <ly.img.android.pesdk.ui.widgets.buttons.LoveItButton
+    <ly.img.android.pesdk.ui.widgets.buttons.ExampleCustomExportButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerHorizontal="true"/>
 </ly.img.android.pesdk.ui.widgets.EditorRootView>
 ```
 
