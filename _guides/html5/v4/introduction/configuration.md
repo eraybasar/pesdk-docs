@@ -55,7 +55,7 @@ DesktopUI
     * `enableExport` Boolean - Should the export button be displayed? Defaults to `true`. If set to `false`, export is still available via the API.
     * `smoothDownscaling` Boolean - Toggles smooth downscaling of images and sprites. Might have a negative impact on performance, therefor default is `false`.
     * `tools` Array - The enabled tools. Available are: `transform`, `filter`, `adjustments`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`
-    * `controlsOrder` Array - The order in which the controls are displayed. Available are `library`, `transform`, `filter`, `adjustments`, `focus`, `text`, `sticker`, `brush`, `frame` and `overlay`. Can be grouped in arrays which will be displayed with separators.
+    * `controlsOrder` Array - The order in which the controls are displayed. Available are `library`, `transform`, `filter`, `adjustments`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`. Can be grouped in arrays which will be displayed with separators.
     * `operationsOrder` Array - The order in which operations are added to the stack. Changing this may have a negative impact on performance.
     * `controlsOptions` Object - Objects passed to the controls. See [the documentation](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.Controls.html) for available controls and their options.
 
