@@ -44,6 +44,7 @@ ly.img.android.pesdk.backend.opengl.programs
 ly.img.android.pesdk.backend.operator
 ly.img.android.pesdk.backend.operator.export
 ly.img.android.pesdk.backend.operator.preview
+ly.img.android.pesdk.backend.programs
 ly.img.android.pesdk.backend.text
 ly.img.android.pesdk.backend.text_design.type
 ly.img.android.pesdk.backend.views
@@ -52,6 +53,7 @@ ly.img.android.pesdk.linker
 ly.img.android.pesdk.ui.activity
 ly.img.android.pesdk.ui.activity.widgets.buttons
 ly.img.android.pesdk.ui.adapter
+ly.img.android.pesdk.ui.model.constants
 ly.img.android.pesdk.ui.model.data
 ly.img.android.pesdk.ui.model.state
 ly.img.android.pesdk.ui.panels
