@@ -66,7 +66,7 @@ sdk.render()
 The canvas should now display your image with a filter on it.
 
 The available options of each operation are documented in our [API Documentation](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.Operations.html).
-We also created [a lot of beautiful filters]([API Documentation: PhotoEditorSDK.Filters](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.Filters.html) that you can use.
+We also created [a lot of beautiful filters](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.Filters.html) that you can use.
 
 
 ## Extending operations

@@ -150,20 +150,16 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 
 ### Filter name
 
-By default, our UI displays each filter's `defaultName` as the filter label. You can override this value for each filter by overriding or adding new keys to the `controls.filters.filters` object in the [Localization JSON]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization) file:
+By default, our UI displays each filter's `defaultName` as the filter label. You can override this value for each filter by overriding or adding new keys to the `pesdk.filter.asset` object in the [Localization JSON]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization) file:
 
 ```js
 {
-  "editor": {
-    "controls": {
+  "pesdk": {
+    "filter": {
       // ...
-      "filter": {
+      "asset": {
         // ...
-        "filters": {
-          // ...
-          "my_custom_lut": "Customly localized filter name"
-          // ...
-        }
+        "my_custom_lut": "Customly localized filter name"
         // ...
       }
       // ...
@@ -174,20 +170,17 @@ By default, our UI displays each filter's `defaultName` as the filter label. You
 
 ### Category name
 
-Same goes for the category name, the localization key for this is `controls.filters.categories`:
+Same goes for the category name, the localization key for this is `pesdk.filter.categories`:
 
 ```js
+
 {
-  "editor": {
-    "controls": {
+  "pesdk": {
+    "filter": {
       // ...
-      "filter": {
+      "asset": {
         // ...
-        "categories": {
-          // ...
-          "my_category": "Customly localized filter category name"
-          // ...
-        }
+        "my_category": "Customly localized filter category name"
         // ...
       }
       // ...
