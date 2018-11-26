@@ -32,11 +32,11 @@ A picture says more than a thousand words, however sometimes it still takes a fe
 
 You can add custom fonts by passing them using the `fonts` option.
 
-If `replaceFonts` is set to true, all default fonts are removed. If it is set to `false`, youur additional fonts are appended.
+If `replaceFonts` is set to true, all default fonts are removed. If it is set to `false`, your additional fonts are appended.
 
 # Text Metrics
 
-Due to the lack of support for font measurement and precise layouting, the SDK relies font metrics from the fonts used in the editor. These are provided for all default fonts and can be easily added along with your custom fonts.
+Due to the lack of support for font measurement and precise layouting, the SDK relies on font metrics from the fonts used in the editor. These are provided for all default fonts and can be easily added along with your custom fonts.
 
 **WARNING**: If you do not provide font metrics for your custom font, the SDK will issue a warning during load and you may experience cut off or jumping text. To quickly collect the required metrics, we recommend the [Opentype Font Inspector](https://opentype.js.org/font-inspector.html). Just upload your font file and extract `unitsPerEm` from the _Font Header table_, as well as `ascender` and `descender` from the _Horizontal Header Table_.
 
@@ -266,7 +266,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 
 ## Specifying the available fonts
 
-Per default, all existing font variations (including your own) are available to the user. To make only specific fonts available to the user, use the `availableFonts` option.
+Per default, all existing font variations (including your own) are available to the user. To make only specific fonts available to the user, use the `availableVariations` option.
 
 {% capture first_snippet %}
 DesktopUI

@@ -52,8 +52,8 @@ const editor = new PhotoEditorSDK.UI.DesktopUI({
               {
                 identifier: 'my_custom_ratio', // A unique identifier for this ratio
                 defaultName: 'Custom Ratio', // The default translation for this ratio
-                ratio: 5 / 4, // The image ratio (a floating point number)
-                dimensions: new PhotoEditorSDK.Math.Vector2(50, 40) // Optional fixed
+                ratio: 5 / 4, // The image aspect ratio (a floating point number)
+                dimensions: new PhotoEditorSDK.Math.Vector2(50, 40) // Optional fixed resolution
               }
             ]
           }
