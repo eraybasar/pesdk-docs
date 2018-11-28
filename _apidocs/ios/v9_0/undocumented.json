@@ -1,0 +1,89 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Assets/Vendor/Kingfisher/Image.swift",
+      "line": null,
+      "symbol": "DataProxy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Assets/Vendor/Kingfisher/ImageProcessor.swift",
+      "line": null,
+      "symbol": "RectCorner",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Assets/Vendor/Kingfisher/Kingfisher.swift",
+      "line": null,
+      "symbol": "KFColor",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Assets/Vendor/Kingfisher/Kingfisher.swift",
+      "line": null,
+      "symbol": "Kingfisher",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Assets/Vendor/Kingfisher/Kingfisher.swift",
+      "line": null,
+      "symbol": "Kingfisher",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Assets/Vendor/Kingfisher/Kingfisher.swift",
+      "line": null,
+      "symbol": "Kingfisher",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Assets/Vendor/Kingfisher/Kingfisher.swift",
+      "line": null,
+      "symbol": "Kingfisher",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Core/Configuration/FloatValue.swift",
+      "line": 12,
+      "symbol": "FloatValue",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Core/Configuration/FloatValue.swift",
+      "line": 13,
+      "symbol": "FloatValue.relative(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Core/Configuration/FloatValue.swift",
+      "line": 14,
+      "symbol": "FloatValue.absolute(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/Core/ViewControllers/SliderEditController.swift",
+      "line": 28,
+      "symbol": "SliderEditController.sliderContainerController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alx/Documents/Code/pesdk-ios/PhotoEditorSDK/Frontend/TextDesign/ViewControllers/TextDesignEditController.swift",
+      "line": 14,
+      "symbol": "TextDesignEditController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/alx/Documents/Code/pesdk-ios"
+}
