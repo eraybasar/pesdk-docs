@@ -1,17 +1,18 @@
 ---
+published: true # Either published or not
 layout: guides/content
-title: &title Getting Started # title as shown in the menu and
-order: 1
+title: &title Support # title as shown in the menu and
+
 menuitem: *title
+order: 4
 platform: ios
 version: v9
 category:
   - guide
-
+  - resource
 tags: &tags # tags that are necessary
   - photo editor
-
-published: true # Either published or not
 redirect_to:
-  - '/guides/ios/v9'
+  - https://support.photoeditorsdk.com
+
 ---

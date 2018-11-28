@@ -1,17 +1,17 @@
 ---
 layout: guides/content
-title: &title Getting Started # title as shown in the menu and
-order: 1
-menuitem: *title
+title: &title Api Docs # title as shown in the menu and
+
 platform: ios
 version: v9
 category:
   - guide
-
+  - resource
 tags: &tags # tags that are necessary
   - photo editor
 
 published: true # Either published or not
+
 redirect_to:
-  - '/guides/ios/v9'
+  - http://docs.photoeditorsdk.com/apidocs/ios/v9_0/
 ---

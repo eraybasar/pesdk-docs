@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not
 redirect_to:
-  - '/guides/ios/v9'
+  - '/guides/ios/v9/features/adjustments'
 ---
