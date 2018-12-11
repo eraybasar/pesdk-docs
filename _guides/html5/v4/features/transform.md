@@ -30,6 +30,30 @@ Our transform tool unifies cropping, flipping and rotation operations in one fea
 
 <!--The tool is implemented in the `TransformToolController` class and can be customized using the [`TransformToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/TransformToolControllerOptions.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. By modifying these options, you may customize the available transform actions and crop aspect ratios by adding or removing `CropAspect` and `TransformAction` objects from or to the corresponding arrays. All sliders and buttons can be customized as well. In order to disable free cropping and force the use of one of the available aspect ratios, set the `allowFreeCrop` property to `true`.-->
 
+## Configuration Options
+The transform user interface can be configured with the following options:
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const editor = new PhotoEditorSDK.UI.DesktopUI({
+  editor: {
+    controlsOptions: {
+      transform: {
+        categories: [],
+        replaceCategories: false, // Defines if categories are added or replaced
+        enableRotation: true, // Enables or disables the option to rotate the image
+        enableStraighten: true, // Enables or disables the option to straighten the image
+        enableFlip: true, // Enables or disables the option to flip the image
+        enaenableAcceptButtonbleFlip: false, // Enables or disables the option to show the accept button to exit the tool
+      }
+    }
+  }
+})
+```
+{% endcapture %}
+
 ## Adding custom crop ratios
 
 To add custom crop ratios, pass them using the `ratios` option. Ratios can be grouped in arrays, which will be displayed using separators.
