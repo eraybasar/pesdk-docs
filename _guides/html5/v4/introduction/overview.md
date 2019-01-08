@@ -19,7 +19,7 @@ published: true # Either published or not
 ---
 
 
-Our photo editor is a powerhorse. It comes with unmatched performance using WebGL as primary
+Our photo editor is a powerhouse. It comes with unmatched performance using WebGL as primary
 rendering engine, and canvas as fallback. All essential photo editing functions are bundled into a
 beautiful, simple and skinnable UI. The editor is easily extensible and customizable via API as
 described in the following sections.

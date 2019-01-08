@@ -48,7 +48,7 @@ editor.on('export', (result) => {
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-See the [documentation](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.html#$subsection:events) for available UI events.
+See the [documentation](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.html#Events) for available UI events.
 
 Some people use the `export` event to find out which operations the user has applied to the image:
 
