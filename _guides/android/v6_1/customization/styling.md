@@ -68,6 +68,21 @@ Now you can edit all style attributes. It's also possible to override the style 
 
 ![Edit style]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_edit_style.png){: width="800px"}
 
+If you want text instead of icons in the `ActionBar`, change the tag name in the button’s XML layout from ly.img.android.pesdk.ui.widgets.buttons.AcceptButton to ly.img.android.pesdk.ui.widgets.buttons.AcceptTextButton. The same works for the Cancel button, just use ly.img.android.pesdk.ui.widgets.buttons.CancelTextButton.
+The styling for the buttons may look like the following example.
+
+```xml
+<ly.img.android.pesdk.ui.widgets.buttons.AcceptTextButton
+    android:id="@+id/acceptButton"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:textSize="12sp"
+    android:textColor="@color/imgly_editor_text_color"
+    android:background="@drawable/imgly_button"
+    android:padding="8dp" />
+```
+
 ### Custom view example
 
 If you want to change a view or you want to adjust the behavior of a view, you don't need to be afraid. Our event system gives you the opportunity to customize any interactive element with ease.
