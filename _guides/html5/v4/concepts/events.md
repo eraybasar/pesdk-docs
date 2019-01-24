@@ -62,7 +62,7 @@ const editor = new PhotoEditorSDK.UI.DesktopUI(/* ... */)
 const events = PhotoEditorSDK.UI.DesktopUI.Events
 editor.on(events.EXPORT, (result, editor) => {
   // User has clicked export, find out what operations he used
-  const stack = editor.getOperationsStack()
+  const stack = editor.getSDK().getOperationsStack()
   console.log('User used operations:')
   stack.forEach((operation) => {
     console.log(operation.constructor.identifier)
@@ -79,7 +79,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI(/* ... */)
 const events = PhotoEditorSDK.UI.ReactUI.Events
 editor.on(events.EXPORT, (result, editor) => {
   // User has clicked export, find out what operations he used
-  const stack = editor.getOperationsStack()
+  const stack = editor.getSDK().getOperationsStack()
   console.log('User used operations:')
   stack.forEach((operation) => {
     console.log(operation.constructor.identifier)
