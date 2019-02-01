@@ -26,22 +26,23 @@ The tool is implemented in the `FilterToolController` class and can be customize
 
 ## Setting available filters
 
-Every filter is represented by an instance of the `PhotoEffect` class. Said class also holds the `allEffects` array that allows you to access all available filters that ship with the SDK.
+Every filter is represented by an instance of a subclass of the `Effect` class. Said class also holds the `all` array that allows you to access all available filters that ship with the SDK.
 The following example shows how a custom selection of filters can be set:
 
 {% capture first_snippet %}
 Swift
 ---
 ```swift
-private let effects: [PhotoEffect] = [
-  PhotoEffect(identifier: "K1", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k1_5_5_128", withExtension: "png"), displayName: "K1"),
-  PhotoEffect(identifier: "K2", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k2_8_8_512", withExtension: "png"), displayName: "K2"),
-  PhotoEffect(identifier: "K6", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k6_5_5_128", withExtension: "png"), displayName: "K6"),
-  PhotoEffect(identifier: "Dynamic", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_kdynamic_5_5_128", withExtension: "png"), displayName: "Dynamic"),
-  PhotoEffect(identifier: "Fridge", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_fridge_8_8_512", withExtension: "png"), displayName: "Fridge")
+let effects: [Effect] = [
+  NoEffect(),
+  LUTEffect(identifier: "imgly_lut_k1", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k1_5_5_128", withExtension: "png"), displayName: "K1"),
+  LUTEffect(identifier: "imgly_lut_k2", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k2_8_8_512", withExtension: "png"), displayName: "K2"),
+  LUTEffect(identifier: "imgly_lut_k6", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k6_5_5_128", withExtension: "png"), displayName: "K6"),
+  LUTEffect(identifier: "imgly_lut_dynamic", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_kdynamic_5_5_128", withExtension: "png"), displayName: "Dynamic"),
+  LUTEffect(identifier: "imgly_lut_fridge", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_fridge_8_8_512", withExtension: "png"), displayName: "Fridge")
 ]
 
-PhotoEffect.allEffects = effects
+Effect.all = effects
 ```
 {% endcapture %}
 
@@ -49,14 +50,16 @@ PhotoEffect.allEffects = effects
 Objective-C
 ---
 ```objc
-NSArray<PESDKPhotoEffect *> *effects = @[
-                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"K1" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k1_5_5_128" withExtension:@"png"] displayName:@"K1"],
-                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"K2" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k2_8_8_512" withExtension:@"png"] displayName:@"K2"],
-                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"K6" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k6_5_5_128" withExtension:@"png"] displayName:@"K6"],
-                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"Dynamic" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_kdynamic_5_5_128" withExtension:@"png"] displayName:@"Dynamic"],
-                                         [[PESDKPhotoEffect alloc] initWithIdentifier:@"Fridge" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_fridge_8_8_512" withExtension:@"png"] displayName:@"Fridge"]
-                                        ];
-PESDKPhotoEffect.allEffects = effects;
+NSArray<PESDKEffect *> *effects = @[
+  [[PESDKNoEffect alloc] init],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"K1" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k1_5_5_128" withExtension:@"png"] displayName:@"K1"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"K2" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k2_8_8_512" withExtension:@"png"] displayName:@"K2"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"K6" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k6_5_5_128" withExtension:@"png"] displayName:@"K6"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"Dynamic" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_kdynamic_5_5_128" withExtension:@"png"] displayName:@"Dynamic"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"Fridge" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_fridge_8_8_512" withExtension:@"png"] displayName:@"Fridge"]
+];
+
+PESDKEffect.all = effects;
 ```
 {% endcapture %}
 
@@ -64,7 +67,7 @@ PESDKPhotoEffect.allEffects = effects;
 {% capture identifier %}{{page.title}}-{{page.version}}-ADDFILTERS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-To add a custom filter, create an instance of a `PhotoEffect`, and add it to the `allEffects` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as in the filter tool. For more details on the filter preview when using the camera, take a look at the [camera]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/camera) section.
+To add a custom filter, create an instance of a `LUTEffect`, and add it to the `Effect.all` array. The array is shared across all tools. Therefore any filters added to the array become available in the live camera preview, as well as in the filter tool. For more details on the filter preview when using the camera, take a look at the [camera]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/camera) section.
 
 ## Response filters
 We use a technology called LUTs in order to add new filters to our SDK.

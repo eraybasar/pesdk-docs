@@ -52,4 +52,4 @@ To have a look at an example implementation please refer to {% include guides/io
 
 ## Live filter preview
 
-The live filter preview allows your users to test different filters on the current image. The available filters may be configured using the `PhotoEffect.allEffects` array as described in the [filters]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/filters) section or disabled as shown in the example above.
+The live filter preview allows your users to test different filters on the current image. The available filters may be configured using the `Effect.all` array as described in the [filters]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/features/filters) section or disabled as shown in the example above.
