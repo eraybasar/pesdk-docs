@@ -3572,6 +3572,8 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="PhotoEditorSDK.Operations.TransformOperation#calculateScale"><a href="PhotoEditorSDK.Operations.TransformOperation.html#calculateScale">calculateScale</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.TransformOperation#flip"><a href="PhotoEditorSDK.Operations.TransformOperation.html#flip">flip</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.TransformOperation#getNewDimensions"><a href="PhotoEditorSDK.Operations.TransformOperation.html#getNewDimensions">getNewDimensions</a></li>
@@ -3950,6 +3952,139 @@ operations.</p>
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="calculateScale">
+            
+            calculateScale<span class="signature">(<span class="optional">rotation</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/transform-operation/index.js, line 69
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Calculates the scale adjustment required to be applied
+to the current inputDimensions to fill the texture after
+a given rotation has been applied to the current dimensions</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>rotation</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    this._options.rotation
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The rotation in radians</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="flip">
             
             flip<span class="signature">(direction)</span>
@@ -3957,7 +4092,7 @@ operations.</p>
     
         
         <div class="tag-source">
-            sdk/operations/transform-operation/index.js, line 109
+            sdk/operations/transform-operation/index.js, line 115
         </div>
         
     </div>
@@ -4073,7 +4208,7 @@ operations.</p>
     
         
         <div class="tag-source">
-            sdk/operations/transform-operation/index.js, line 93
+            sdk/operations/transform-operation/index.js, line 99
         </div>
         
     </div>
@@ -4219,7 +4354,7 @@ has been applied</p>
     
         
         <div class="tag-source">
-            sdk/operations/transform-operation/index.js, line 126
+            sdk/operations/transform-operation/index.js, line 132
         </div>
         
     </div>
