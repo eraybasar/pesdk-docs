@@ -262,6 +262,10 @@
             
                 <li data-name="Operation#isDirtyForRenderer"><a href="Operation.html#isDirtyForRenderer">isDirtyForRenderer</a></li>
             
+                <li data-name="Operation#onAfterExport"><a href="Operation.html#onAfterExport">onAfterExport</a></li>
+            
+                <li data-name="Operation#onBeforeExport"><a href="Operation.html#onBeforeExport">onBeforeExport</a></li>
+            
                 <li data-name="Operation#render"><a href="Operation.html#render">render</a></li>
             
                 <li data-name="Operation#reset"><a href="Operation.html#reset">reset</a></li>
@@ -1594,6 +1598,29 @@
             </ul>
         </li>
     
+        <li class="item" data-name="PhotoEditorSDK.FilterPrimitives.DuoTone">
+            <span class="title">
+                <a href="PhotoEditorSDK.FilterPrimitives.DuoTone.html">FilterPrimitives.DuoTone</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="PhotoEditorSDK.FilterPrimitives.DuoTone#update"><a href="PhotoEditorSDK.FilterPrimitives.DuoTone.html#update">update</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="PhotoEditorSDK.FilterPrimitives.Gamma">
             <span class="title">
                 <a href="PhotoEditorSDK.FilterPrimitives.Gamma.html">FilterPrimitives.Gamma</a>
@@ -2001,6 +2028,29 @@
             <span class="subtitle">Members</span>
             
                 <li data-name="PhotoEditorSDK.Filters.ChestFilter.identifier"><a href="PhotoEditorSDK.Filters.ChestFilter.html#.identifier">identifier</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="PhotoEditorSDK.Filters.DuoToneFilter">
+            <span class="title">
+                <a href="PhotoEditorSDK.Filters.DuoToneFilter.html">Filters.DuoToneFilter</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="PhotoEditorSDK.Filters.DuoToneFilter.identifier"><a href="PhotoEditorSDK.Filters.DuoToneFilter.html#.identifier">identifier</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -4304,6 +4354,8 @@
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Controls.TransformControls.mapOperationsToSharedState"><a href="PhotoEditorSDK.UI.DesktopUI.Controls.TransformControls.html#.mapOperationsToSharedState">mapOperationsToSharedState</a></li>
             
+                <li data-name="PhotoEditorSDK.UI.DesktopUI.Controls.TransformControls#applyNewTransformOptions"><a href="PhotoEditorSDK.UI.DesktopUI.Controls.TransformControls.html#applyNewTransformOptions">applyNewTransformOptions</a></li>
+            
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Controls.TransformControls#fixTransform"><a href="PhotoEditorSDK.UI.DesktopUI.Controls.TransformControls.html#fixTransform">fixTransform</a></li>
             
             </ul>
@@ -5201,7 +5253,7 @@ operations.</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 241
+            sdk/core/operations/operation.js, line 271
         </div>
         
     </div>
@@ -5301,7 +5353,7 @@ operations.</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 259
+            sdk/core/operations/operation.js, line 289
         </div>
         
     </div>
@@ -5372,7 +5424,7 @@ operations.</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 249
+            sdk/core/operations/operation.js, line 279
         </div>
         
     </div>
@@ -5443,7 +5495,7 @@ operations.</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 219
+            sdk/core/operations/operation.js, line 249
         </div>
         
     </div>
@@ -5742,7 +5794,7 @@ would have after this operation has been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 210
+            sdk/core/operations/operation.js, line 240
         </div>
         
     </div>
@@ -5842,7 +5894,7 @@ would have after this operation has been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 180
+            sdk/core/operations/operation.js, line 210
         </div>
         
     </div>
@@ -5971,6 +6023,148 @@ would have after this operation has been applied</p>
     </tbody>
 </table>
 
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="onAfterExport">
+            
+            onAfterExport<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/operations/operation.js, line 175
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Is called after the SDK finishes exporting</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="onBeforeExport">
+            
+            onBeforeExport<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/operations/operation.js, line 168
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Is called before the SDK begins exporting</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
     
     
     
@@ -6132,7 +6326,7 @@ would have after this operation has been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 168
+            sdk/core/operations/operation.js, line 198
         </div>
         
     </div>
@@ -6203,7 +6397,7 @@ would have after this operation has been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 200
+            sdk/core/operations/operation.js, line 230
         </div>
         
     </div>
@@ -6354,7 +6548,7 @@ would have after this operation has been applied</p>
     
         
         <div class="tag-source">
-            sdk/core/operations/operation.js, line 191
+            sdk/core/operations/operation.js, line 221
         </div>
         
     </div>
