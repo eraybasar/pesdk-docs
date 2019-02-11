@@ -3,7 +3,13 @@
 ## Run locally
 The docs are generated using [Jekyll](https://jekyllrb.com/). In order to run them locally, install Jekyll:
 ```
-$ gem install jekyll bundler
+$ gem install --path=vendor
+```
+
+To build the site:
+
+```
+$ bundle exec jekyll build
 ```
 
 And launch it:
