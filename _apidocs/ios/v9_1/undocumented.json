@@ -2,28 +2,28 @@
   "warnings": [
     {
       "file": "/Users/alx/Documents/Code/img.ly/pesdk-ios/PhotoEditorSDK/Backend/Processing/GaussianFocusFilter.swift",
-      "line": 51,
+      "line": 50,
       "symbol": "GaussianFocusFilter.inputBlurQuality",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/alx/Documents/Code/img.ly/pesdk-ios/PhotoEditorSDK/Backend/Processing/GradientFocusFilter.swift",
-      "line": 66,
+      "line": 65,
       "symbol": "GradientFocusFilter.inputBlurQuality",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/alx/Documents/Code/img.ly/pesdk-ios/PhotoEditorSDK/Backend/Processing/LinearFocusFilter.swift",
-      "line": 67,
+      "line": 66,
       "symbol": "LinearFocusFilter.inputBlurQuality",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/alx/Documents/Code/img.ly/pesdk-ios/PhotoEditorSDK/Backend/Processing/RadialFocusFilter.swift",
-      "line": 72,
+      "line": 71,
       "symbol": "RadialFocusFilter.inputBlurQuality",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
