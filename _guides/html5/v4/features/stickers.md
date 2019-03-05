@@ -272,9 +272,38 @@ In order to correctly use stickers in our UI, you need to follow our Stickers JS
 }
 ```
 
+## Enable color customization
+
+By default, the sticker color cannot be changed in the UI. However, you can enable the option to add a tint color using the optional `tintMode` property of each sticker (Desktop UI only). 
+The possible values are `none` (default), `solid` and  `colorized`.
+
+Here is an example of the different tint modes (from left to right: `none`, `solid`, `colorized`):
+
+![TintModes]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/sticker_tint_modes.jpg){: .center-image style="padding: 20px; max-height: 400px;"}
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const sticker = {
+  identifier: 'imgly_sticker_emoticons_alien',
+  defaultName: 'Alien Emoticon',
+  tintMode: 'colorized' // Possible: 'none', 'solid', 'colorized'
+  images: {
+    ...
+  }
+}
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+
 ## Enable smooth downscaling
 
-Due to the nature of WebGL, downscaling images might result in pixellated images. You can avoid that by setting `smoothDownscaling` to `true`. Please note that this might impact performance of the editor, since the Editor now uses larger textures internally:
+Due to the nature of WebGL, downscaling images might result in pixelated images. You can avoid that by setting `smoothDownscaling` to `true`. Please note that this might impact performance of the editor, since the Editor now uses larger textures internally:
 
 
 {% capture first_snippet %}
