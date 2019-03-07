@@ -113,6 +113,7 @@ DesktopUI
         }
       })
     }
+    // image.crossOrigin = 'Anonymous'  // Setup CORS accordingly if needed
     image.src = './example.jpg'
   }
 </script>
@@ -144,6 +145,16 @@ ReactUI
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-02{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
+<div class="important-notice">
+<h4 id="cors">CORS</h4> 
+If you are loading images from external sources (e.g. from an AWS bucket), you need to first configure <b>Cross-Origin Resource Sharing</b> for both the server and the image. <br><br>
+Otherwise, you will see errors such as <br>
+<b><em>Failed to execute 'texImage2D' on 'WebGLRenderingContext': The cross-origin image at [...] may not be loaded.</em></b> <br>
+or <br>
+<b><em> Unable to get image data from canvas because the canvas has been tainted. </em></b> <br>
+<br>
+Please follow the instructions on how to properly configure CORS <a href="https://docs.photoeditorsdk.com/guides/html5/v4/resources/faq#cors--cross-origin-policy-issues">here</a>.
+</div>
 
 This was all required to get the PhotoEditor SDK up and running. For simplicity here is the whole source code of  the *html* file:
 
@@ -184,6 +195,7 @@ DesktopUI
             }
           })
         }
+        // image.crossOrigin = 'Anonymous'  // Setup CORS accordingly if needed
         image.src = './example.jpg'
       }
     </script>

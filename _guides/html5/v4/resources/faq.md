@@ -53,7 +53,7 @@ due to Cross-Origin Resource Sharing (CORS):
 
 * `Failed to execute 'texImage2D' on 'WebGLRenderingContext': The cross-origin image at [...] may not be loaded.`
 * `SECURITY_ERR: DOM Exception 18`
-* `Unable to get image data from canvas because the canvas as been tainted by cross-origin data.`
+* `Unable to get image data from canvas because the canvas has been tainted by cross-origin data.`
 
 In this case:
 

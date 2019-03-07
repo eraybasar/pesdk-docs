@@ -58,3 +58,13 @@ $mobileTopbarHeight: 64px
       +screen-min-small
         font-size: 22px
         line-height: 30px
+
+h1:target::before,
+h2:target::before,
+h3:target::before,
+h4:target::before,
+  content: ""
+  display: block
+  height: $topbarHeight
+  margin: -$topbarHeight 0 0
+
