@@ -36,9 +36,10 @@ Afterwards, you will be left with the following folder structure
     └── vendor
 ```
 
-The package contains three folders that you need to integrate to your project. The
-`assets` folder contains all assets required for the photoeditor, this includes for example assets for *frames*, *stickers* and the *ui*.
-Furthermore, The `css` folder containts all *stylesheets* for the PhotoEditor SDK UI. Last, the `js` folder contains all *javascript* sources of the editor and its dependencies.
+The package contains three folders that you need to integrate to your project.
+1. `assets` folder: It contains all assets required for the PhotoEditor, this includes for example assets for *frames*, *stickers* and the *ui*.
+1. `css` folder: It contains all *stylesheets* for the PhotoEditor SDK UI.
+1. `js` folder: It contains all *javascript* sources of the PhotoEditor and its dependencies.
 
 In order to get started, copy the folders `assets`, `css` and `js` into your project.
 Then include the SDK and the UI JavaScript files in your as well as the CSS files inside your `<head>` tag:
