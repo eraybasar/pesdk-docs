@@ -49,7 +49,7 @@ UiConfigAspect uiConfigAspect = settingsList.getSettingsModel(UiConfigAspect.cla
 // Add aspect items to UI
 uiConfigAspect.setAspectList(
   new CropResetItem(),
-  new CropAspectItem("my_crop_free", R.string.pesdk_transform_button_freeCrop),
+  new CropAspectItem("my_crop_free", R.string.pesdk_transform_button_freeCrop, ImageSource.create(R.drawable.imgly_icon_custom_crop)),
   new CropAspectItem("my_crop_1_1", R.string.pesdk_transform_button_squareCrop),
   new CropAspectItem("my_crop_16_9"),
   new CropAspectItem("my_crop_9_16"),
