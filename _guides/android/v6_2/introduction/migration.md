@@ -37,7 +37,7 @@ buildscript {
     dependencies {
 
         // And plugin dependency with the lates available version
-        classpath 'ly.img.android.pesdk:plugin:6.2.6'
+        classpath 'ly.img.android.pesdk:plugin:6.2.7'
 
         // Update you gradle version at least to v3.1.3
         classpath 'com.android.tools.build:gradle:3.1.3'
