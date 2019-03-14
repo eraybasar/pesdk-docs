@@ -4326,6 +4326,698 @@
     exports
     </h2>
     
+        <div class="class-description"><p>This manager keeps track of weight textures and creates/updates and
+fill them.</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/art-filter-operation/managers/texture-manager.js, line 23
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+        <div class="class-description"><p>Expects a 2D input shape representing an RGBA encoded image. The
+values will be expanded from the RGB to the R channel by forming the logical
+shape of [1, height, width, 3], which can then be used as an input
+for neural network structures.
+To ease implementation, we require the texture dimensions to match
+the inputs logical shape</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/art-filter-operation/filters/unpack-rgba-filter.js, line 26
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+        <div class="class-description"><p>A TensorFilterGraph consists of a set of operations, implemented using
+TensorFilter subclasses. Each filter has a set of inputs, a single
+output and is executed in a single draw call. As certain filters, e.g.
+a sum reduce, require multiple passes, the TensorFilterGraph holds a
+collection of such filters and manages their dependencies and required
+input textures.</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/art-filter-operation/tensor-filter-graph.js, line 39
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+        <div class="class-description"><p>To efficiently calculate the mean along a set of axes for a tensor with any number of channels,
+we divide the values by their count and sum up the result. The 'reduceSum' operation is performed
+by recursively applying the reduce filter, which sums up values in a certain window. This window
+is limited to a maximum size of 30x30 pixels. This allows making use of parallelism even though
+we're actually just calculating the mean of a large vector. To do so, the input is reshaped to
+a [inSize, batchSize] format and then fed to the GPU.</p>
+<p>As we need to build up our filter stack prior to evaluation, we'll have to calculate the input shape
+and resulting number of iterations for the ReduceSumFilter beforehand. To do this, we query the reduce
+filter for the required stack of filters and add them to the graph. Using a ReduceSumFilter directly
+is not recommended.</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/art-filter-operation/filters/reduce-sum-filter.js, line 33
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+        <div class="class-description"><p>Expects a 4D input shape representing an representing an RGB image. The
+values will be packed into an RGB representation, i.e. spread across the
+output textures RGB channels, for display within the SDK. Alpha is set
+to 1.0.</p>
+<p>Inputs: x - 4D tensor with 3 channels</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/art-filter-operation/filters/pack-rgba-filter.js, line 28
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+        <div class="class-description"><p>Performs addition of two tensors, requires both tensors to have
+the same shape. NO BROADCASTING.
+Inputs: x &amp; y (both 4D shapes)</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/art-filter-operation/filters/add-filter.js, line 24
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
         <div class="class-description"><p>Uses 'x', 'variance' and 'sum' inputs to perform instance normalization. 'variance' and 'sum' are
 previously executed filters which hold the variance of x and the sum of all values in x.</p>
 <p>Inputs: - x: 4D tensor</p>
@@ -4801,698 +5493,6 @@ the variance of x.</p></div>
         
         <div class="tag-source">
             sdk/operations/art-filter-operation/filters/variance-preparation-filter.js, line 23
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-        <div class="class-description"><p>This manager keeps track of weight textures and creates/updates and
-fill them.</p></div>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/art-filter-operation/managers/texture-manager.js, line 23
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-        <div class="class-description"><p>Expects a 2D input shape representing an RGBA encoded image. The
-values will be expanded from the RGB to the R channel by forming the logical
-shape of [1, height, width, 3], which can then be used as an input
-for neural network structures.
-To ease implementation, we require the texture dimensions to match
-the inputs logical shape</p></div>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/art-filter-operation/filters/unpack-rgba-filter.js, line 26
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-        <div class="class-description"><p>To efficiently calculate the mean along a set of axes for a tensor with any number of channels,
-we divide the values by their count and sum up the result. The 'reduceSum' operation is performed
-by recursively applying the reduce filter, which sums up values in a certain window. This window
-is limited to a maximum size of 30x30 pixels. This allows making use of parallelism even though
-we're actually just calculating the mean of a large vector. To do so, the input is reshaped to
-a [inSize, batchSize] format and then fed to the GPU.</p>
-<p>As we need to build up our filter stack prior to evaluation, we'll have to calculate the input shape
-and resulting number of iterations for the ReduceSumFilter beforehand. To do this, we query the reduce
-filter for the required stack of filters and add them to the graph. Using a ReduceSumFilter directly
-is not recommended.</p></div>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/art-filter-operation/filters/reduce-sum-filter.js, line 33
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-        <div class="class-description"><p>Expects a 4D input shape representing an representing an RGB image. The
-values will be packed into an RGB representation, i.e. spread across the
-output textures RGB channels, for display within the SDK. Alpha is set
-to 1.0.</p>
-<p>Inputs: x - 4D tensor with 3 channels</p></div>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/art-filter-operation/filters/pack-rgba-filter.js, line 28
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-        <div class="class-description"><p>Performs addition of two tensors, requires both tensors to have
-the same shape. NO BROADCASTING.
-Inputs: x &amp; y (both 4D shapes)</p></div>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/art-filter-operation/filters/add-filter.js, line 24
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-        <div class="class-description"><p>A TensorFilterGraph consists of a set of operations, implemented using
-TensorFilter subclasses. Each filter has a set of inputs, a single
-output and is executed in a single draw call. As certain filters, e.g.
-a sum reduce, require multiple passes, the TensorFilterGraph holds a
-collection of such filters and manages their dependencies and required
-input textures.</p></div>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/art-filter-operation/tensor-filter-graph.js, line 39
         </div>
         
     </div>
