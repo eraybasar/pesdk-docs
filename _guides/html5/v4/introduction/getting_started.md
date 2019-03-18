@@ -154,7 +154,7 @@ Otherwise, you will see errors such as <br>
 or <br>
 <b><em> Unable to get image data from canvas because the canvas has been tainted. </em></b> <br>
 <br>
-Please follow the instructions on how to properly configure CORS <a href="https://docs.photoeditorsdk.com/guides/html5/v4/resources/faq#cors--cross-origin-policy-issues">here</a>.
+Please follow the instructions on how to properly configure CORS <a href="https://docs.photoeditorsdk.com/guides/html5/v4/introduction/faq/how-do-i-setup-cors">here</a>.
 </div>
 
 This was all required to get the PhotoEditor SDK up and running. For simplicity here is the whole source code of  the *html* file:
