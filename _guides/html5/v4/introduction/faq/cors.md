@@ -10,6 +10,8 @@ tags: &tags # tags that are necessary
   - photo editor
 published: true
 faq: true
+faq-category: errors
+order: 0
 title: How do I setup CORS?
 ---
 
@@ -20,7 +22,7 @@ due to Cross-Origin Resource Sharing (CORS):
 * `SECURITY_ERR: DOM Exception 18`
 * `Unable to get image data from canvas because the canvas has been tainted by cross-origin data.`
 
-In this case:
+If you are loading images from external sources (e.g. from an AWS bucket), you need to first configure Cross-Origin Resource Sharing for __both__ the server and the image:
 
 * If you're loading images from S3, make sure you created a CORS policy for your S3 bucket (More information [here](http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html))
 * If you're loading images from your own server, make sure the CORS header is set (More information [here](http://enable-cors.org/server.html))

@@ -5,5 +5,5 @@ version: v4
 category:
   - guide
 redirect_to:
-  - '/guides/html5/v4/introduction/overview'
+  - '/guides/html5/v4/introduction/getting_started'
 ---

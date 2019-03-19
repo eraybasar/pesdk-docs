@@ -3,7 +3,7 @@ layout: guides/content
 title: &title FAQ # title as shown in the menu and
 description: A collection of frequently asked questions for the PhotoEditor SDK for HTML5 including browser support, known CORS issues and supported file formats.
 menuitem: *title
-order: 3
+order: 4
 platform: html5
 version: v4
 category:
@@ -15,10 +15,24 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-{% for page in site.guides %}
-{% if page.faq == true and page.platform == 'html5' %}
+{% assign faqPages = site.guides | where: "faq", true | where: "platform", "html5" | sort: "order" %}
 
+{% assign features = faqPages | where: "faq-category", "features" %}
+{% assign errors = faqPages | where: "faq-category", "errors" %}
+
+## Common Errors
+
+{% for page in errors %}
 [{{ page.title }}]({{ page.url }})
-
-{% endif %}
 {% endfor %}
+
+## Technical Capabilities
+
+{% for page in features %}
+[{{ page.title }}]({{ page.url }})
+{% endfor %}
+
+
+### Anything missing?
+
+Did you not find the answer to your question on this page? Feel free to [contact us](https://support.photoeditorsdk.com) and we will be more than happy to help!

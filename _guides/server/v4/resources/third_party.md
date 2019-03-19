@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: guides/content
 title: &title Third Party # title as shown in the menu and
 
@@ -16,4 +16,4 @@ published: true # Either published or not
 ---
 
 
-To bring you the best PhotoEditor SDK possible, we rely on some third party libraries.
+To bring you the best PhotoEditor SDK possible, we rely on some third party libraries. -->

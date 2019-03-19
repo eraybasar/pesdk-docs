@@ -10,6 +10,8 @@ tags: &tags # tags that are necessary
   - photo editor
 published: true
 faq: true
+faq-category: features
+order: 1
 title: Which browsers are supported?
 ---
 

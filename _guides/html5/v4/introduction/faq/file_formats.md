@@ -10,6 +10,8 @@ tags: &tags # tags that are necessary
   - photo editor
 published: true
 faq: true
+faq-category: features
+order: 2
 title: Which file formats are supported?
 ---
 

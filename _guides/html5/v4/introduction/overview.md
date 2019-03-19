@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: guides/content
 title: &title Overview # title as shown in the menu and
 description: The PhotoEditor SDK for HTML5 provides all the tools necessary to enhance your product with state-of-the-art photo editing features, effects, and assets.
@@ -56,4 +56,4 @@ Our photo editor consists of two parts:
 
   Our beautiful and fully customizable UI is based on React.JS. It's the top level of our SDK
   and it's incredibly easy to integrate into your website or web application - no matter if you're
-  already using React.JS or not. A few lines of JavaScript and you're ready to go.
+  already using React.JS or not. A few lines of JavaScript and you're ready to go. -->
