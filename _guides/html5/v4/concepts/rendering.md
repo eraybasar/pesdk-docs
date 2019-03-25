@@ -57,7 +57,7 @@ and pass the [`FridgeFilter`](https://docs.photoeditorsdk.com/apidocs/html5/v4/P
 ```js
 const sdk = /* ... (see previous section) */
 const filterOperation = new PhotoEditorSDK.Operations.FilterOperation(sdk, {
-  filter: new PhotoEditorSDK.Filters.FridgeFilter()
+  filter: new PhotoEditorSDK.Operations.FilterOperation.Filters.FridgeFilter()
 })
 sdk.addOperation(filterOperation)
 sdk.render()
