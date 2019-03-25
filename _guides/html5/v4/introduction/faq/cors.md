@@ -12,7 +12,7 @@ published: true
 faq: true
 faq-category: errors
 order: 0
-title: How do I setup CORS?
+title: CORS Setup
 ---
 
 The following error messages indicate that the image you have passed to the SDK could not be loaded

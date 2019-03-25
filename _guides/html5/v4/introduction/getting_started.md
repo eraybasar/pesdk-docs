@@ -171,7 +171,7 @@ or <br>
 Please follow the instructions on how to properly configure CORS <a href="{{site.baseurl}}/guides/html5/v4/introduction/faq/cors">here</a>.
 </div>
 
-## Congratulations
+## Ready to go!
 This was all that is necessary to get the PhotoEditor SDK up and running. For simplicity here is the whole source code of  the *html* file:
 
 {% capture first_snippet %}

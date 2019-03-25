@@ -12,7 +12,7 @@ published: true
 faq: true
 faq-category: features
 order: 2
-title: Which file formats are supported?
+title: Supported Image Formats
 ---
 
 For stickers, frames and overlays as well as uploaded files, the supported file formats vary per browser. There's

@@ -12,7 +12,7 @@ published: true
 faq: true
 faq-category: features
 order: 1
-title: Which browsers are supported?
+title: Supported Browsers
 ---
 
 WebGL Renderer:
