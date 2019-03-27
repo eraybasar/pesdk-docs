@@ -54,8 +54,64 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-The language objects should have the same structure as our default languages. Here is the English
-language object as an example:
+The language objects should have the same structure as our default languages. You'll find the Engligh language object at the bottom of the page. 
+
+## Changing Button Texts
+
+You can also use the localization feature to simply change the button text with any word (can be the same language). In this case you don't even have to supply the entire language object. It is enough to overwrite the words you want to change. 
+
+### Example
+Changing the export button to say "Save" instead of "Export":
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const editor = new PhotoEditorSDK.UI.DesktopUI({
+  extensions: {
+    languages: {
+      en: {
+        "pesdk": {
+          "editor": {
+            "button": {
+              "export": "Save"
+            }
+          }
+        }
+      }
+    }
+  }
+})
+```
+{% endcapture %}
+
+{% capture second_snippet %}
+ReactUI
+---
+```js
+const editor = new PhotoEditorSDK.UI.ReactUI({
+  extensions: {
+    languages: {
+      en: {
+        "pesdk": {
+          "editor": {
+            "button": {
+              "export": "Save"
+            }
+          }
+        }
+      }
+    }
+  }
+})
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Complete Language Object
 
 {% capture first_snippet %}
 DesktopUI

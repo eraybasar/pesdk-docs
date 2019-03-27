@@ -20,9 +20,8 @@ Our SDK provides all the tools necessary for adding photo editing capabilities t
 Additionally, we support adding stickers and text in a non-destructive manner, which means that you can change the position, size, scale and order at any given time, even after applying other effects or cropping the photo.
 
 <div class="documentation__disclaimer">
-<h4>License Terms</h4>
-Make sure you have a commercial license before releasing your app.
-A commercial license is required for any app or service that has any form of monetization: This includes free apps with in-app purchases or ad supported applications. Please get in touch if you want to purchase the commercial license.
+<h4 id="license-terms">Using a Trial License</h4>
+Make sure you have a standard license before releasing your app. A trial license is valid for only 30 days and will crash your app afterward. Your trial license should be removed before releasing your app.
 </div>
 
 ## Features

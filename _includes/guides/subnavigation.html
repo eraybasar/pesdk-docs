@@ -25,7 +25,7 @@
               <ul>
                 {% for p in intropages %}
                   <li class="documentation-subnavigation__list__item">
-                    {% if p.url == page.url %}
+                    {% if p.url == page.url or (page.faq and p.url contains 'faq') %}
                       <a class="is-active" href="{{site.baseurl}}{{p.url}}">{{p.menuitem}}</a>
                     {% else %}
                       <a href="{{site.baseurl}}{{p.url}}"> {{p.menuitem}} </a>

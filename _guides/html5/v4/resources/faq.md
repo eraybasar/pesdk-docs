@@ -1,5 +1,16 @@
 ---
 layout: guides/content
+platform: html5
+version: v4
+category:
+  - guide
+  - faq
+redirect_to:
+  - '/guides/html5/v4/introduction/faq/overview'
+---
+
+<!-- ---
+layout: guides/content
 title: &title FAQ # title as shown in the menu and
 description: A collection of frequently asked questions for the PhotoEditor SDK for HTML5 including browser support, known CORS issues and supported file formats.
 menuitem: *title
@@ -69,4 +80,4 @@ For stickers, frames and overlays as well as uploaded files, the supported file 
 a good and up-to-date list of supported file formats on [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).
 Basically, the best formats to use are JPEG and PNG.
 
-Due to browser limitations, PhotoEditorSDK for HTML5 can only export to JPEG and PNG.
+Due to browser limitations, PhotoEditorSDK for HTML5 can only export to JPEG and PNG. -->

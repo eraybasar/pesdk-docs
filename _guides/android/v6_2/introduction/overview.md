@@ -19,9 +19,8 @@ published: true # Either published or not
 The PhotoEditor SDK for Android provides tools for creating high fidelity photo editing applications with a big variety of filters that can be previewed in high quality and real-time. Unlike other Android apps, the PhotoEditor Android SDK allows a fast live preview of filters even when using high-resolution images up to the hardware limitations. It is written in high-level Java with Renderscript and allows for easy customization with your own XML based Layouts, Styles and Drawables.
 
 <div class="documentation__disclaimer">
-<h4>License Terms</h4>
-Make sure you have a commercial license before releasing your app.
-A commercial license is required for any app or service that has any form of monetization: This includes free apps with in-app purchases or ad-supported applications as well. Please contact us if you'd like to purchase the commercial license.
+<h4 id="license-terms">Using a Trial License</h4>
+Make sure you have a standard license before releasing your app. A trial license is valid for only 30 days and will crash your app afterward. Your trial license should be removed before releasing your app.
 </div>
 
 ### Features
