@@ -1,5 +1,15 @@
 ---
 layout: guides/content
+platform: html5
+version: v4
+category:
+  - guide
+redirect_to:
+  - '/guides/html5/v4/introduction/getting_started'
+---
+
+<!-- ---
+layout: guides/content
 title: &title Overview # title as shown in the menu and
 description: The PhotoEditor SDK for HTML5 provides all the tools necessary to enhance your product with state-of-the-art photo editing features, effects, and assets.
 menuitem: Overview
@@ -16,8 +26,10 @@ tags: &tags # tags that are necessary
   - photo editor
 
 published: false # Either published or not
----
-
+redirect_to:
+  - '/guides/html5/v4/introduction/getting_started'
+--- -->
+<!-- 
 
 Our photo editor is a powerhouse. It comes with unmatched performance using WebGL as primary
 rendering engine, and canvas as fallback. All essential photo editing functions are bundled into a
@@ -56,4 +68,4 @@ Our photo editor consists of two parts:
 
   Our beautiful and fully customizable UI is based on React.JS. It's the top level of our SDK
   and it's incredibly easy to integrate into your website or web application - no matter if you're
-  already using React.JS or not. A few lines of JavaScript and you're ready to go.
+  already using React.JS or not. A few lines of JavaScript and you're ready to go. -->
