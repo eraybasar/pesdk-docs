@@ -111,7 +111,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-## Language Object
+## Complete Language Object
 
 {% capture first_snippet %}
 DesktopUI

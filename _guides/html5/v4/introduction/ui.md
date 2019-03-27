@@ -29,4 +29,4 @@ The DesktopUI is the more advanced version with more features than the ReactUI. 
 
 Both UIs are built with [React](https://reactjs.org).
 
-We are currently working on a completely new UI system and will, therefore, only implement incremental changes or additions to our current UIs. At this point, we cannot give you a more advanced timeline when the new UI will operable.
+We are currently working on a completely new UI system and will, therefore, only implement incremental changes or additions to our current UIs. At this point, we cannot give you a more advanced timeline when the new UI will be operable.

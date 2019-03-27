@@ -17,7 +17,7 @@ published: true # Either published or not
 
 {% assign faqPages = site.guides | where: "faq", true | where: "platform", "html5" | sort: "order" %}
 
-{% assign features = faqPages | where: "faq-category", "features" %}
+{% assign general = faqPages | where: "faq-category", "general" %}
 {% assign errors = faqPages | where: "faq-category", "errors" %}
 {% assign license = faqPages | where: "faq-category", "license" %}
 
@@ -30,7 +30,7 @@ published: true # Either published or not
 
 ## General
 
-{% for page in features %}
+{% for page in general %}
 [{{ page.title }}]({{ page.url }})
 {% endfor %}
 

@@ -211,7 +211,7 @@ default value of `true` if the `dimensions` property is set, so you need to acti
 
 ## Apply Button in DesktopUI
 
-An optional apply button can be enabled that exits the tool.
+An optional apply button can be enabled that exits the transform tool and goes back to the default tool.
 
 {% capture first_snippet %}
 DesktopUI

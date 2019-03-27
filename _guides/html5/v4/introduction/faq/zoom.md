@@ -10,7 +10,7 @@ tags: &tags # tags that are necessary
   - photo editor
 published: true
 faq: true
-faq-category: features
+faq-category: general
 order: 3
 title: Zoom Limitations
 ---
