@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Demos # title as shown in the menu and
 description: For a straightforward integration of the PhotoEditor SDK, see our set of example integrations for various frameworks like React Native, Ionic or Cordova.
 menuitem: Demos
-order: 3
+order: 4
 platform: html5
 version: v4
 category:
@@ -18,6 +18,12 @@ status: draft
 
 
 Wether you just want to learn to use the PhotoEditor SDK or just see what can be build with it, we are providing some example integrations for various frameworks.
+
+## Support for Demos
+
+While we do provide these demo integrations, we need to also emphasize that we are only experts in iOS, Android and HTML5 and none of these frameworks. Therefore, we can only offer limited support for these types of integrations. 
+
+Please keep this in mind when making the decision what language or framework you'd like to use and how much support you might need from our end.
 
 ## Example Integrations
 
@@ -40,3 +46,5 @@ We are also providing the corresponding tutorials in our quickstart section [her
 
   * [Ruby on Rails]({{ site.baseurl }}/quickstarts/rails)
   * ...
+
+

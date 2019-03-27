@@ -3,7 +3,7 @@ layout: guides/content
 title: &title FAQ # title as shown in the menu and
 description: A collection of frequently asked questions for the PhotoEditor SDK for HTML5 including browser support, known CORS issues and supported file formats.
 menuitem: *title
-order: 4
+order: 5
 platform: html5
 version: v4
 category:
@@ -19,6 +19,20 @@ published: true # Either published or not
 
 {% assign features = faqPages | where: "faq-category", "features" %}
 {% assign errors = faqPages | where: "faq-category", "errors" %}
+{% assign license = faqPages | where: "faq-category", "license" %}
+
+
+## License
+
+{% for page in license %}
+[{{ page.title }}]({{ page.url }})
+{% endfor %}
+
+## General
+
+{% for page in features %}
+[{{ page.title }}]({{ page.url }})
+{% endfor %}
 
 ## Common Errors
 
@@ -26,11 +40,7 @@ published: true # Either published or not
 [{{ page.title }}]({{ page.url }})
 {% endfor %}
 
-## Technical Capabilities
 
-{% for page in features %}
-[{{ page.title }}]({{ page.url }})
-{% endfor %}
 
 
 ### Anything missing?

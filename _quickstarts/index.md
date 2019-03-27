@@ -9,10 +9,14 @@ tags: &tags # tags that are necessary
 published: true
 ---
 
-
 # Quickstarts
 
-Want to integrate the PhotoEditor SDK into your app and need a place to start thats specialized for your specific framework? Check out our quickstart guides for the most popular web and hybrid frameworks and we'll help you get started. Just select your framework below:
+Want to integrate the PhotoEditor SDK into your app and need a place to start thats specialized for your specific framework? Check out our quickstart guides for the most popular web and hybrid frameworks and we'll help you get started. Just select your framework below.
+
+## Mobile Wrappers for HTML5
+
+Due to technical limitations we strongly recommend using our native Android and iOS PhotoEditor SDK instead of the HTML5 PhotoEditor SDK with wrappers such as React Native, Cordova and Ionic for use on mobile devices. We can only provide limited support for such wrapper integrations.
+
 
 {:center: style="text-align: center"}
 

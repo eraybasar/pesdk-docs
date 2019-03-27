@@ -209,6 +209,30 @@ the resolution entirely. Due to backwards compatibility reasons, `forceDimension
 default value of `true` if the `dimensions` property is set, so you need to actively set it to 
 `false` if you are looking to make the suggested dimensions user-editable.
 
+## Apply Button in DesktopUI
+
+An optional apply button can be enabled that exits the tool.
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const editor = new PhotoEditorSDK.UI.DesktopUI({
+  editor: {
+    controlsOptions: {
+      transform: {
+        enableAcceptButton: false, // Enables or disables showing the accept button to exit the tool
+      }
+    }
+  }
+})
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS0{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
 ## Localization
 
 By default, our UI displays each ratio's `defaultName` as the ratio label. You can override this value for each ratio by overriding or adding new keys to the `controls.transform.ratios` object in the [Localization JSON]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization) file:

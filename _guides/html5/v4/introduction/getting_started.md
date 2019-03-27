@@ -19,9 +19,8 @@ published: true # Either published or not
 Integrating our editor into your web application is easy as pie. However, if you can't wait  to see the editor in action you can find a working demo integration [here](https://www.photoeditorsdk.com/html5-demo).
 
 <div class="documentation__disclaimer">
-<h4 id="license-terms">License Terms</h4>
-Make sure you have a commercial license before releasing your app.
-A commercial license is always required unless you are a non-profit company. Please <a href="https://www.photoeditorsdk.com/pricing">contact us</a> to get more information about the pricing options.
+<h4 id="license-terms">Using a Trial License</h4>
+Make sure you have a standard license before releasing your app. A trial license is valid for only 30 days and will crash your app afterward. Your trial license should be removed before releasing your app. More information can be found <a href="{{site.baseUrl}}/guides/html5/v4/introduction/faq/standard_or_trial_license">here</a>.
 </div>
 
 __Note:__ Since we're working with the latest web technologies, all code samples are using the
