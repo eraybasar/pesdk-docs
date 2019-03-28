@@ -20,7 +20,7 @@ Integrating our editor into your web application is easy as pie. However, if you
 
 <div class="documentation__disclaimer">
 <h4 id="license-terms">Using a Trial License</h4>
-Make sure you have a standard license before releasing your app. A trial license is valid for only 30 days and will crash your app afterward. Your trial license should be removed before releasing your app. More information can be found <a href="{{site.baseUrl}}/guides/html5/v4/introduction/faq/standard_or_trial_license">here</a>.
+Make sure you have a standard license before adding it properly to your running project. A trial license is valid for only 30 days and will afterwards disable the export function for your customers. Your trial license should therefore be removed and substituted by a standard license. More information can be found <a href="{{site.baseUrl}}/guides/html5/v4/introduction/faq/standard_or_trial_license">here</a>.
 </div>
 
 __Note:__ Since we're working with the latest web technologies, all code samples are using the
