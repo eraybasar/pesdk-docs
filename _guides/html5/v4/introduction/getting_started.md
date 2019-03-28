@@ -84,7 +84,7 @@ ReactUI
   <!-- PhotoEditor SDK-->
   <script src="js/PhotoEditorSDK.min.js"></script>
   <!-- PhotoEditor SDK UI -->
-  <script src="js/PhotoEditor.UI.ReactUI.min.js"></script>
+  <script src="js/PhotoEditorSDK.UI.ReactUI.min.js"></script>
   <link rel="stylesheet" href="css/PhotoEditorSDK.UI.ReactUI.min.css" />
 </head>
 ```
@@ -232,7 +232,7 @@ ReactUI
     <!-- PhotoEditor SDK-->
     <script src="js/PhotoEditorSDK.min.js"></script>
     <!-- PhotoEditor SDK UI -->
-    <script src="js/PhotoEditor.UI.ReactUI.min.js"></script>
+    <script src="js/PhotoEditorSDK.UI.ReactUI.min.js"></script>
     <link rel="stylesheet" href="css/PhotoEditorSDK.UI.ReactUI.min.css" />
   </head>
 
