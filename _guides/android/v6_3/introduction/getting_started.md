@@ -733,3 +733,8 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
 You can access the source code for our demo application from our {% include guides/android/demo-repository.md %}.
 
+## Integration Tutorial
+
+We made an awesome video tutorial for you.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FpmASFvgUdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
