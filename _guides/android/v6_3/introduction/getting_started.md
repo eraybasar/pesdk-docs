@@ -729,12 +729,12 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 {% capture identifier %}{{page.title}}-{{page.version}}-EditorDemoActivity{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-## Sample Application
-
-You can access the source code for our demo application from our {% include guides/android/demo-repository.md %}.
-
 ## Integration Tutorial
 
 We made an awesome video tutorial for you.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FpmASFvgUdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Sample Application
+
+You can access the source code for our demo application from our {% include guides/android/demo-repository.md %}.
