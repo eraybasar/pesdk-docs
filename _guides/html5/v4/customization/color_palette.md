@@ -19,7 +19,7 @@ published: true # Either published or not
 
 ![Color Palette]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/color_palette.png){: .center-image style="padding: 20px; max-height: 400px;"}
 
-Out PhotoEditorSDK comes with a color palette of 18 default colors out of the box. Additionally, the DesktopUI allows you to easily and individually customize these color palettes for each control that uses them.
+Our PhotoEditorSDK comes with a color palette of 18 default colors out of the box. Additionally, the DesktopUI allows you to easily and individually customize these color palettes for each control that uses them.
 
 A color palette is simply an array of `PhotoEditorSDK.Color` instances. You customize the palette per control using the `editor.controlsOptions` object in the [configuration options]({{site.baseUrl}}/guides/html5/v4/introduction/configuration) of the `DesktopUI`. You can specify as few or as many colors as you like.
 
