@@ -52,6 +52,8 @@ DesktopUI
       * `mobile` Number - Defaults to 5
     * `enableDrag` Boolean - Should the image be draggable? Defaults to `true`.
     * `enableZoom` Boolean - Should the image be zoomable? Defaults to `true`.
+    * `enablePositionSnapping` - Should snapping be enabled when positioning sprites? Defaults to `true`
+    * `enableRotationSnapping` - Should snapping be enabled when rotating sprites? Defaults to `true`
     * `enableExport` Boolean - Should the export button be displayed? Defaults to `true`. If set to `false`, export is still available via the API.
     * `smoothDownscaling` Boolean - Toggles smooth downscaling of images and sprites. Might have a negative impact on performance, therefor default is `false`.
     * `tools` Array - The enabled tools. Available are: `transform`, `filter`, `adjustments`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`
@@ -59,6 +61,17 @@ DesktopUI
     * `controlsOrder` Array - The order in which the controls are displayed. Available are `library`, `transform`, `filter`, `adjustments`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`. Can be grouped in arrays which will be displayed with separators.
     * `operationsOrder` Array - The order in which operations are added to the stack. Changing this may have a negative impact on performance.
     * `controlsOptions` Object - Objects passed to the controls. See [the documentation](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.Controls.html) for available controls and their options.
+    * `snappingOptions` Object - Options that control the snapping behaviour of sprites.
+      * `position` Object - Options that control the positional snapping of sprites
+        * `threshold` Number - At which threshold should sprites snap to the canvas snapping guides? (value in pixels). Defaults to 20
+        * `padding` Object - Defines the inset between the canvas frame and the corresponding snapping guides. The values are specified relative to the smaller side of the image. Setting `left`, `right`, `top` and `bottom` to 0 allows sprites to snap to the edges of the canvas.
+          * `left` Number - Defaults to 0.1
+          * `right` Number - Defaults to 0.1
+          * `top` Number - Defaults to 0.1
+          * `bottom` Number - Defaults to 0.1
+      * `rotation` Object - Options that control the rotational snapping of sprites
+        * `angles` Array - Angles to snap to while rotating a sprite. Defaults to `[0, 45, 90, 135, 180, 225, 270, 315]`
+        * `threshold` Number - At which threshold should the sprites snap to the next rotation snap point (value in pixels)
 
     * `export` Object
       * `format` String - The mime type of the exported image. Defaults to `image/png`. Available formats vary by browser.
