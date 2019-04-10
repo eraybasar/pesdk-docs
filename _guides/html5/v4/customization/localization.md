@@ -117,14 +117,15 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 DesktopUI
 ---
 ```json
-{ 
+{
   "pesdk": {
     "common": {
       "title": {
         "error": "Error"
       },
       "text": {
-        "loading": "Loading..."
+        "loading": "Loading...",
+        "updating": "Updating..."
       },
       "button": {
         "cancel": "Cancel"
@@ -133,6 +134,9 @@ DesktopUI
     "editor": {
       "button": {
         "export": "Export",
+        "save": "Save",
+        "load": "Load",
+        "close": "Close",
         "newImageChangesLostWarningYes": "Yes",
         "newImageChangesLostWarningNo": "No",
         "discardChangesWarningKeep": "Keep changes",
@@ -151,6 +155,8 @@ DesktopUI
         "imageResizedWarning_maxDimensions": "Due to hardware limitations your image has been resized to ${width}x${height} pixels.",
         "renderingError": "An error has occurred while rendering the image.",
         "exporting": "Exporting...",
+        "saving": "Saving...",
+        "loading": "Loading...",
         "resizing": "Resizing...",
         "loadingFonts": "Loading fonts...",
         "fontLoadingError": "The following fonts could not be loaded: ${fonts}.",
@@ -178,6 +184,9 @@ DesktopUI
     "transform": {
       "title": {
         "name": "Transform"
+      },
+      "dimensions": {
+        "lock": "Lock Resolution"
       },
       "button": {
         "reset": "Reset Default"
@@ -210,32 +219,32 @@ DesktopUI
     "filter": {
       "asset": {
         "identity": "None",
-        "imgly_lut_celsius": "Celsius",
-        "imgly_lut_chest": "Chest",
+        "imgly_lut_celsius": "Inferno",
+        "imgly_lut_chest": "Chestnut",
         "imgly_lut_fixie": "Fixie",
         "imgly_lut_fridge": "Fridge",
-        "imgly_lut_front": "Front",
-        "imgly_lut_k2": "K2",
+        "imgly_lut_front": "Sunny 70s",
+        "imgly_lut_k2": "Flat Black",
         "imgly_lut_mellow": "Mellow",
-        "imgly_lut_sin": "Sin",
-        "imgly_lut_texas": "Texas",
+        "imgly_lut_sin": "Hard Stuff",
+        "imgly_lut_texas": "Oltdtimer",
         "imgly_lut_ad1920": "1920 A.D.",
         "imgly_lut_ancient": "Ancient",
-        "imgly_lut_bleached": "Bleached",
+        "imgly_lut_bleached": "Kalmen",
         "imgly_lut_bleachedblue": "Bleached Blue",
-        "imgly_lut_blues": "Blues",
-        "imgly_lut_blueshadows": "Blue Shadows",
-        "imgly_lut_breeze": "Breeze",
-        "imgly_lut_bw": "B & W",
+        "imgly_lut_blues": "Polaroid",
+        "imgly_lut_blueshadows": "Zephyr",
+        "imgly_lut_breeze": "Levante",
+        "imgly_lut_bw": "Black & White",
         "imgly_lut_classic": "Classic",
         "imgly_lut_colorful": "Colorful",
-        "imgly_lut_cool": "Cool",
+        "imgly_lut_cool": "Snappy",
         "imgly_lut_cottoncandy": "Cotton Candy",
         "imgly_lut_creamy": "Creamy",
-        "imgly_lut_eighties": "Eighties",
-        "imgly_lut_elder": "Elder",
-        "imgly_lut_evening": "Evening",
-        "imgly_lut_fall": "Fall",
+        "imgly_lut_eighties": "Low Fire",
+        "imgly_lut_elder": "Colla",
+        "imgly_lut_evening": "Sunrise",
+        "imgly_lut_fall": "Moss",
         "imgly_lut_food": "Food",
         "imgly_lut_glam": "Glam",
         "imgly_lut_gobblin": "Gobblin",
@@ -243,33 +252,41 @@ DesktopUI
         "imgly_lut_highcontrast": "High Contrast",
         "imgly_lut_k1": "K1",
         "imgly_lut_k6": "K6",
-        "imgly_lut_kdynamic": "KDynamic",
+        "imgly_lut_kdynamic": "pebble",
         "imgly_lut_keen": "Keen",
-        "imgly_lut_lenin": "Lenin",
+        "imgly_lut_lenin": "Lemon",
         "imgly_lut_litho": "Litho",
         "imgly_lut_lomo100": "Lomo 100",
         "imgly_lut_lucid": "Lucid",
         "imgly_lut_neat": "Neat",
-        "imgly_lut_nogreen": "No Green",
-        "imgly_lut_orchid": "Orchid",
+        "imgly_lut_nogreen": "Pumpkin",
+        "imgly_lut_orchid": "Solanus",
         "imgly_lut_pale": "Pale",
         "imgly_lut_pitched": "Pitched",
-        "imgly_lut_plate": "Plate",
-        "imgly_lut_pola669": "Pola 669",
+        "imgly_lut_plate": "Wheathered",
+        "imgly_lut_pola669": "Green Gap",
         "imgly_lut_polasx": "Pola SX",
         "imgly_lut_pro400": "Pro 400",
         "imgly_lut_quozi": "Quozi",
-        "imgly_lut_sepiahigh": "Sepia High",
+        "imgly_lut_sepiahigh": "Sepia",
         "imgly_lut_settled": "Settled",
         "imgly_lut_seventies": "Seventies",
         "imgly_lut_soft": "Soft",
         "imgly_lut_steel": "Steel",
         "imgly_lut_summer": "Summer",
-        "imgly_lut_sunset": "Sunset",
+        "imgly_lut_sunset": "Golden",
         "imgly_lut_tender": "Tender",
         "imgly_lut_twilight": "Twilight",
-        "imgly_lut_winter": "Winter",
-        "imgly_lut_x400": "X400"
+        "imgly_lut_winter": "Softy",
+        "imgly_lut_x400": "Dusty",
+        "imgly_duotone_desert": "Desert",
+        "imgly_duotone_peach": "Peach",
+        "imgly_duotone_clash": "Clash",
+        "imgly_duotone_plum": "Plum",
+        "imgly_duotone_breezy": "Breezy",
+        "imgly_duotone_deepblue": "Deep Blue",
+        "imgly_duotone_frog": "Frog",
+        "imgly_duotone_sunset": "Sunset"
       },
       "title": {
         "name": "Filters"
@@ -292,7 +309,10 @@ DesktopUI
         "clarity": "Clarity",
         "exposure": "Exposure",
         "shadows": "Shadows",
-        "highlights": "Highlights"
+        "highlights": "Highlights",
+        "whites" : "Whites",
+        "blacks" : "Blacks",
+        "temperature" : "Temperature"
       }
     },
     "focus": {
@@ -328,7 +348,8 @@ DesktopUI
         "name": "Text Design"
       },
       "button": {
-        "invert": "Text as mask"
+        "invert": "Text as mask",
+        "new": "New Text Design"
       }
     },
     "sticker": {
@@ -456,6 +477,21 @@ DesktopUI
         "imgly_frame_wood_passepartout": "Wood Passepartout"
       }
     },
+    "artfilter": {
+      "title": {
+        "name": "Art Filters"
+      },
+      "asset": {
+        "none": "None",
+        "imgly_art_filter_june_tree": "Natasha Wescoat",
+        "imgly_art_filter_hive": "Hive",
+        "imgly_art_filter_udnie": "Udnie",
+        "imgly_art_filter_vince_low": "Vince Low",
+        "imgly_art_filter_mosaic": "Mosaic",
+        "imgly_art_filter_wave": "Wave",
+        "imgly_art_filter_watercolor": "Malikova Darya"
+      }
+    },
     "overlay": {
       "title": {
         "name": "Overlays",
@@ -497,6 +533,7 @@ DesktopUI
   }
 }
 
+
 ```
 {% endcapture %}
 
@@ -519,7 +556,10 @@ ReactUI
         "clarity": "Clarity",
         "exposure": "Exposure",
         "shadows": "Shadows",
-        "highlights": "Highlights"
+        "highlights": "Highlights",
+        "whites" : "Whites",
+        "blacks" : "Blacks",
+        "temperature" : "Temperature"
       }
     },
     "brush": {
@@ -584,32 +624,32 @@ ReactUI
       },
       "asset": {
         "identity": "None",
-        "imgly_lut_celsius": "Celsius",
-        "imgly_lut_chest": "Chest",
+        "imgly_lut_celsius": "Inferno",
+        "imgly_lut_chest": "Chestnut",
         "imgly_lut_fixie": "Fixie",
         "imgly_lut_fridge": "Fridge",
-        "imgly_lut_front": "Front",
-        "imgly_lut_k2": "K2",
+        "imgly_lut_front": "Sunny 70s",
+        "imgly_lut_k2": "Flat Black",
         "imgly_lut_mellow": "Mellow",
-        "imgly_lut_sin": "Sin",
-        "imgly_lut_texas": "Texas",
+        "imgly_lut_sin": "Hard Stuff",
+        "imgly_lut_texas": "Oltdtimer",
         "imgly_lut_ad1920": "1920 A.D.",
         "imgly_lut_ancient": "Ancient",
-        "imgly_lut_bleached": "Bleached",
+        "imgly_lut_bleached": "Kalmen",
         "imgly_lut_bleachedblue": "Bleached Blue",
-        "imgly_lut_blues": "Blues",
-        "imgly_lut_blueshadows": "Blue Shadows",
-        "imgly_lut_breeze": "Breeze",
-        "imgly_lut_bw": "B & W",
+        "imgly_lut_blues": "Polaroid",
+        "imgly_lut_blueshadows": "Zephyr",
+        "imgly_lut_breeze": "Levante",
+        "imgly_lut_bw": "Black & White",
         "imgly_lut_classic": "Classic",
         "imgly_lut_colorful": "Colorful",
-        "imgly_lut_cool": "Cool",
+        "imgly_lut_cool": "Snappy",
         "imgly_lut_cottoncandy": "Cotton Candy",
         "imgly_lut_creamy": "Creamy",
-        "imgly_lut_eighties": "Eighties",
-        "imgly_lut_elder": "Elder",
-        "imgly_lut_evening": "Evening",
-        "imgly_lut_fall": "Fall",
+        "imgly_lut_eighties": "Low Fire",
+        "imgly_lut_elder": "Colla",
+        "imgly_lut_evening": "Sunrise",
+        "imgly_lut_fall": "Moss",
         "imgly_lut_food": "Food",
         "imgly_lut_glam": "Glam",
         "imgly_lut_gobblin": "Gobblin",
@@ -617,39 +657,48 @@ ReactUI
         "imgly_lut_highcontrast": "High Contrast",
         "imgly_lut_k1": "K1",
         "imgly_lut_k6": "K6",
-        "imgly_lut_kdynamic": "KDynamic",
+        "imgly_lut_kdynamic": "pebble",
         "imgly_lut_keen": "Keen",
-        "imgly_lut_lenin": "Lenin",
+        "imgly_lut_lenin": "Lemon",
         "imgly_lut_litho": "Litho",
         "imgly_lut_lomo100": "Lomo 100",
         "imgly_lut_lucid": "Lucid",
         "imgly_lut_neat": "Neat",
-        "imgly_lut_nogreen": "No Green",
-        "imgly_lut_orchid": "Orchid",
+        "imgly_lut_nogreen": "Pumpkin",
+        "imgly_lut_orchid": "Solanus",
         "imgly_lut_pale": "Pale",
         "imgly_lut_pitched": "Pitched",
-        "imgly_lut_plate": "Plate",
-        "imgly_lut_pola669": "Pola 669",
+        "imgly_lut_plate": "Wheathered",
+        "imgly_lut_pola669": "Green Gap",
         "imgly_lut_polasx": "Pola SX",
         "imgly_lut_pro400": "Pro 400",
         "imgly_lut_quozi": "Quozi",
-        "imgly_lut_sepiahigh": "Sepia High",
+        "imgly_lut_sepiahigh": "Sepia",
         "imgly_lut_settled": "Settled",
         "imgly_lut_seventies": "Seventies",
         "imgly_lut_soft": "Soft",
         "imgly_lut_steel": "Steel",
         "imgly_lut_summer": "Summer",
-        "imgly_lut_sunset": "Sunset",
+        "imgly_lut_sunset": "Golden",
         "imgly_lut_tender": "Tender",
         "imgly_lut_twilight": "Twilight",
-        "imgly_lut_winter": "Winter",
-        "imgly_lut_x400": "X400",
+        "imgly_lut_winter": "Softy",
+        "imgly_lut_x400": "Dusty",
+        "imgly_duotone_desert": "Desert",
+        "imgly_duotone_peach": "Peach",
+        "imgly_duotone_clash": "Clash",
+        "imgly_duotone_plum": "Plum",
+        "imgly_duotone_breezy": "Breezy",
+        "imgly_duotone_deepblue": "Deep Blue",
+        "imgly_duotone_frog": "Frog",
+        "imgly_duotone_sunset": "Sunset",
         "imgly_filters_analog": "Analog",
         "imgly_filters_bw": "Black & White",
         "imgly_filters_retro": "Retro",
         "imgly_filters_special": "Special",
         "imgly_filters_summer": "Summer",
         "imgly_filters_winter": "Winter",
+        "imgly_filters_legacy": "Legacy",
         "all": "All"
       }
     },
@@ -765,6 +814,7 @@ ReactUI
     }
   }
 }
+
 ```
 {% endcapture %}
 
