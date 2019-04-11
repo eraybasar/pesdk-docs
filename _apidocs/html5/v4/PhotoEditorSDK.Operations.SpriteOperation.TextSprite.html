@@ -5724,7 +5724,389 @@
                         
                     
                 
+                
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
                 </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The text that should be rendered</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>position</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PhotoEditorSDK.Math.Vector2.html">PhotoEditorSDK.Math.Vector2</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    new Vector2(0.5, 0.5)
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The position of the text. Both x and y components are 
+                                     relative to the respective image dimensions.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fontSize</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0.1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The font size, relative to the shorter side of the image.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>lineHeight</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1.1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The line height, relative to the font size.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fontIdentifier</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Specifies the font that should be used.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>alignment</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    'center'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Specifies the horizontal text alignment of the text. 
+                                     Possible values are 'left', 'center' and 'right'.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PhotoEditorSDK.Color.html">PhotoEditorSDK.Color</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    Color.BLACK
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The color of the text.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>backgroundColor</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Color</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    Color.TRANSPARENT
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The background color of the text sprite.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>rotation</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The rotation of the text in radians.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>maxWidth</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0.5
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The maximum width of the text, relative to the image width.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
         </tr>
 	
 	
@@ -5800,7 +6182,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 112
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 124
         </div>
         
     </div>
@@ -5916,7 +6298,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 144
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 156
         </div>
         
     </div>
@@ -6032,7 +6414,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 132
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 144
         </div>
         
     </div>
@@ -6148,7 +6530,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 224
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 236
         </div>
         
     </div>
@@ -6219,7 +6601,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 82
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 94
         </div>
         
     </div>
@@ -6367,7 +6749,7 @@ the absolute text height.</p>
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 104
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 116
         </div>
         
     </div>
@@ -6535,7 +6917,7 @@ the absolute text height.</p>
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 59
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 71
         </div>
         
     </div>
@@ -6703,7 +7085,7 @@ the absolute text height.</p>
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 47
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 59
         </div>
         
     </div>
@@ -6883,7 +7265,7 @@ the absolute text height.</p>
     
         
         <div class="tag-source">
-            sdk/operations/sprite-operation/sprites/text-sprite.js, line 185
+            sdk/operations/sprite-operation/sprites/text-sprite.js, line 197
         </div>
         
     </div>
