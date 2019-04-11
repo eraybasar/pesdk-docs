@@ -312,29 +312,11 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-04{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-## Rotation snapping
+## Rotation snapping (ReactUI)
+
+__Note:__ The following options only apply to the ReactUI. Our DesktopUI offers significantly more snapping configuration options for both rotation and position, which you can find [here]({{site.baseUrl}}/guides/html5/v4/introduction/configuration).
 
 Our UI allows the user to freely rotate texts, which is nice, but it can be hard to hit the right rotation (e.g. exactly 90 degrees). To fix this, we added a customizable snapping feature that can be configured using the `snapRotation` and `snapRotationTolerance` options:
-
-{% capture first_snippet %}
-DesktopUI
----
-```js
-const editor = new PhotoEditorSDK.UI.DesktopUI({
-  editor: {
-    controlsOptions: {
-      text: {
-        // This value defines at what degrees rotation snapping should happen
-        snapRotation: 90,
-
-        // This value defines at what degrees *around* the `snapRotation` value snapping should happen
-        snapRotationTolerance: 5
-      }
-    }
-  }
-})
-```
-{% endcapture %}
 
 {% capture second_snippet %}
 ReactUI
@@ -356,7 +338,7 @@ const editor = new PhotoEditorSDK.UI.ReactUI({
 ```
 {% endcapture %}
 
-{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% assign snippets = "" | split: "" | push: second_snippet %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-05{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
