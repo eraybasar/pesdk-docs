@@ -1564,6 +1564,35 @@
             </ul>
         </li>
     
+        <li class="item" data-name="PhotoEditorSDK.Math.Range">
+            <span class="title">
+                <a href="PhotoEditorSDK.Math.Range.html">Math.Range</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="PhotoEditorSDK.Math.Range#contains"><a href="PhotoEditorSDK.Math.Range.html#contains">contains</a></li>
+            
+                <li data-name="PhotoEditorSDK.Math.Range#getLength"><a href="PhotoEditorSDK.Math.Range.html#getLength">getLength</a></li>
+            
+                <li data-name="PhotoEditorSDK.Math.Range#getMax"><a href="PhotoEditorSDK.Math.Range.html#getMax">getMax</a></li>
+            
+                <li data-name="PhotoEditorSDK.Math.Range#getMin"><a href="PhotoEditorSDK.Math.Range.html#getMin">getMin</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="PhotoEditorSDK.Math.Rectangle">
             <span class="title">
                 <a href="PhotoEditorSDK.Math.Rectangle.html">Math.Rectangle</a>
@@ -4993,6 +5022,8 @@
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getSDK"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getSDK">getSDK</a></li>
             
+                <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getSnappingOptions"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getSnappingOptions">getSnappingOptions</a></li>
+            
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getSnapshot"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getSnapshot">getSnapshot</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.Editor#getSpriteScale"><a href="PhotoEditorSDK.UI.DesktopUI.Editor.html#getSpriteScale">getSpriteScale</a></li>
@@ -6265,6 +6296,78 @@
 	
         <tr>
             
+                <td class="name"><code>enablePositionSnapping</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Should snapping be enabled when positioning sprites?</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>enableRotationSnapping</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Should snapping be enabled when rotating sprites?</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
                 <td class="name"><code>enableSave</code></td>
             
             
@@ -6833,6 +6936,482 @@
                     
                 
                 </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>snappingOptions</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Options that control the snapping behaviour of sprites</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>position</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Options that control the positional snapping of sprites</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>threshold</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    20
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>At which threshold should sprites snap to the canvas snapping guides? (value in px)</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>padding</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Defines the inset between the canvas frame and the corresponding snapping guides.
+                                                           The values are specified relative to the smaller side of the image. Setting <code>left</code>, <code>right</code>, <code>top</code> and <code>bottom</code>
+                                                           to 0 allows sprites to snap to the edges of the canvas.</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>left</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0.1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>right</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0.1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>top</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0.1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>left</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0.1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>rotation</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Options that control the rotational snapping of sprites</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>angles</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    [0, 45, 90, 135, 180, 225, 270, 315]
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>Angles to snap to while rotating a sprite</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>threshold</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    20
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>At which threshold should the sprites snap to the next rotation snap point (value in pixels)</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
         </tr>
 	
 	
@@ -8174,7 +8753,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 199
+            ui/desktop-ui/core/ui.jsx, line 216
         </div>
         
     </div>
@@ -8319,7 +8898,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 498
+            ui/desktop-ui/core/ui.jsx, line 544
         </div>
         
     </div>
@@ -8390,7 +8969,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 173
+            ui/desktop-ui/core/ui.jsx, line 190
         </div>
         
     </div>
@@ -8535,7 +9114,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 442
+            ui/desktop-ui/core/ui.jsx, line 488
         </div>
         
     </div>
@@ -8744,7 +9323,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 207
+            ui/desktop-ui/core/ui.jsx, line 224
         </div>
         
     </div>
@@ -8844,7 +9423,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 483
+            ui/desktop-ui/core/ui.jsx, line 529
         </div>
         
     </div>
@@ -8944,7 +9523,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 491
+            ui/desktop-ui/core/ui.jsx, line 537
         </div>
         
     </div>
@@ -9044,7 +9623,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 475
+            ui/desktop-ui/core/ui.jsx, line 521
         </div>
         
     </div>
@@ -9144,7 +9723,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 217
+            ui/desktop-ui/core/ui.jsx, line 234
         </div>
         
     </div>
@@ -9245,7 +9824,7 @@ serializing, deserializing and exporting.</p>
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 227
+            ui/desktop-ui/core/ui.jsx, line 244
         </div>
         
     </div>
@@ -9362,7 +9941,7 @@ in a ready state.</p>
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 134
+            ui/desktop-ui/core/ui.jsx, line 151
         </div>
         
     </div>
@@ -9433,7 +10012,7 @@ in a ready state.</p>
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 182
+            ui/desktop-ui/core/ui.jsx, line 199
         </div>
         
     </div>
@@ -9578,7 +10157,7 @@ in a ready state.</p>
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 190
+            ui/desktop-ui/core/ui.jsx, line 207
         </div>
         
     </div>
@@ -9678,7 +10257,7 @@ in a ready state.</p>
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 430
+            ui/desktop-ui/core/ui.jsx, line 476
         </div>
         
     </div>
@@ -9794,7 +10373,7 @@ in a ready state.</p>
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/ui.jsx, line 422
+            ui/desktop-ui/core/ui.jsx, line 468
         </div>
         
     </div>
