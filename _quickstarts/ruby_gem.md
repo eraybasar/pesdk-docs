@@ -32,10 +32,10 @@ We created a Ruby gem for easily integrating the PhotoEditor SDK for HTML5 in an
 2. Register javascript with the Rails asset pipeline. Open `/assets/javascripts/application.js` and insert the following lines 
     ```javascript
     ...
-    //= require react
-    //= require react-dom
+    //= require react.production.min
+    //= require react-dom.production.min
     //= require PhotoEditorSDK.min
-    //= require PhotoEditorReactUI.min
+    //= require PhotoEditorSDK.UI.ReactUI.min
     ...
     ```
 
@@ -43,7 +43,7 @@ We created a Ruby gem for easily integrating the PhotoEditor SDK for HTML5 in an
 Open `/assets/stylesheets/application.css` and insert the following lines
     ```css
     ...
-    *= require PhotoEditorReactUI
+    *= require PhotoEditorSDK.UI.ReactUI.min
     ...
     ```
 
@@ -54,12 +54,12 @@ Open `/assets/stylesheets/application.css` and insert the following lines
     ...
 
     window.onload = function () {
-      var apiKey = 'your-api-key', // <-- Please replace this with your API key
+      var license = 'license-string' // <- replace this with the content of your license file. The JSON-object needs to be in string format
 
       var container = document.getElementById('pesdk')  
       var editor = new PhotoEditorSDK.UI.ReactUI({
         container: container,
-        apiKey: apiKey,
+        license: license,
         assets: {
             baseUrl: '/assets', 
             resolver: function (path) { return path }
@@ -76,3 +76,10 @@ Open `/assets/stylesheets/application.css` and insert the following lines
     <div id="pesdk"  style="width: 1024px; height: 768px;">
     ...
     ```
+
+## Switch between React- and DesktopUI
+In order to use the DesktopUI instead of the ReactUI, you need to make some changes to your setup. Replace in point ...
+
+2.  `//= require PhotoEditorSDK.UI.ReactUI.min` with `//= require PhotoEditorSDK.UI.DesktopUI.min`
+3.  `*= require PhotoEditorSDK.UI.ReactUI.min` with `*= require PhotoEditorSDK.UI.DesktopUI.min`
+4.  `var editor = new PhotoEditorSDK.UI.ReactUI` with `var editor = new PhotoEditorSDK.UI.DesktopUI` in `home.js`
