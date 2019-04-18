@@ -6,7 +6,7 @@
     background: white
 
     +elementsWithBaseSelector($base, logo)
-      background-image: url($baseurl + '/assets/images/shared/pesdk_logo.png')
+      background-image: url($baseurl + '/assets/images/shared/pesdk_logo.svg')
 
   +screen-min-small
     position: fixed
@@ -22,7 +22,7 @@
     +screen-min-small
       height: 80px
 
-  
+
   +element(title)
     @extend .italic-font
     float: left
@@ -37,8 +37,8 @@
     color: $text-color
     border-left: 1px solid rgba($text-color, 0.5)
 
-    +screen-min-small 
-      line-height: 45px  
+    +screen-min-small
+      line-height: 45px
     &:hover
       text-decoration: none
 
@@ -47,12 +47,12 @@
     display: block
     width: 25px
     height: 25px
-    background: url($baseurl + '/assets/images/shared/pesdk_logo.png') no-repeat center center
+    background: url($baseurl + '/assets/images/shared/pesdk_logo.svg') no-repeat center center
     background-size: contain
-    +retina 
-      background-image: url($baseurl + '/assets/images/shared/pesdk_logo@2.png')
-      
+    +retina
+      background-image: url($baseurl + '/assets/images/shared/pesdk_logo.svg')
+
     +screen-min-small
       height: 42px
       width: 42px
-      
+

@@ -15,7 +15,7 @@ $spacing-unit:     30px;
 $white-color: #FFFFFF;
 $red-color: #C24288;
 $green-color: #42C24B;
-$blue-color: #4DADE9;
+$blue-color: #1d73ff;
 $pink-color: #9B207F;
 
 $light-grey-color: #F5F5F5;
@@ -24,8 +24,8 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 
-$blue-gradient: linear-gradient(to right top, #68E7FE, #367AD7);
-$pink-gradient: linear-gradient(to right top, #FC7394, $pink-color);
+$blue-gradient: #1d73ff;
+$pink-gradient: linear-gradient(to right top, #2677fd, #3000bb);
 
 
 $primary-color: $blue-color;
