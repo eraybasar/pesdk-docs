@@ -345,7 +345,8 @@ DesktopUI
     },
     "textdesign": {
       "title": {
-        "name": "Text Design"
+        "name": "Text Design",
+        "input": "Text"
       },
       "button": {
         "invert": "Text as mask",
