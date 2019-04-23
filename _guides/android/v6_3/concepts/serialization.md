@@ -16,7 +16,7 @@ published: true # Either published or not
 ---
 
 Our serialization functionality empowers you to save the current settings of the changes and recover it the next time the editor is opened again. The settings will be stored in a plain JSON file.
-For details on the JSON structure, you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-3.0.0-beta.json){: download="schema-3.0.0-beta.json" } our schema.
+For details on the JSON structure, you can [download]({{ site.baseurl }}/assets/downloads/serialization/schema-3.4.0.json){: download="schema-3.4.0.json" } our schema.
 
 ## Saving the settings
 When the editor is closed, the [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) is parceled into the `android.content.Intent` data of `onActivityResult(int requestCode, int resultCode, android.content.Intent data)`

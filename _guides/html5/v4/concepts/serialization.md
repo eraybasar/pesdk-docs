@@ -20,7 +20,7 @@ application states. This means that you can export the current state of the edit
 it later on.
 
 The serialization schema is specified
-[here]({{ site.baseurl }}/assets/downloads/serialization/schema-3.0.0.json){: download="schema-3.0.0.json" }.
+[here]({{ site.baseurl }}/assets/downloads/serialization/schema-3.4.0.json){: download="schema-3.4.0.json" }.
 
 ## Serialization
 

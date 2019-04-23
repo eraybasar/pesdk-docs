@@ -1,0 +1,1007 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "PESDK Serialization 3.4.0",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": ["html5", "ios", "android"]
+        },
+        "version": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "platform",
+        "version",
+        "createdAt"
+      ]
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string",
+          "description": "A base64 representation of the input image",
+          "media": {
+            "binaryEncoding": "base64"
+          }
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "width",
+        "height"
+      ]
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/operations/transformOperation"
+          },
+          {
+            "$ref": "#/definitions/operations/orientationOperation"
+          },
+          {
+            "$ref": "#/definitions/operations/filterOperation"
+          },
+          {
+            "$ref": "#/definitions/operations/adjustmentsOperation"
+          },
+          {
+            "$ref": "#/definitions/operations/spriteOperation"
+          },
+          {
+            "$ref": "#/definitions/operations/focusOperation"
+          },
+          {
+            "$ref": "#/definitions/operations/autoEnhancementOperation"
+          },
+          {
+            "$ref": "#/definitions/operations/artFilterOperation"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "image",
+    "operations"
+  ],
+  "definitions": {
+    "radians": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 6.29
+    },
+    "adjustmentValue": {
+      "type": "number",
+      "minimum": -1,
+      "maximum": 1,
+      "description": "Value for adjustment, relative to default value"
+    },
+    "normalizedNumber": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "blendMode": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "overlay",
+        "soft light",
+        "hard light",
+        "multiply",
+        "darken",
+        "color burn",
+        "screen",
+        "lighten"
+      ]
+    },
+    "positiveNumber": {
+      "type": "number",
+      "minimum": 0
+    },
+    "textAlignment": {
+      "type": "string",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "color": {
+      "type": "object",
+      "properties": {
+        "rgba": {
+          "$ref": "#/definitions/rgbaColor"
+        },
+        "srgba": {
+          "$ref": "#/definitions/srgbaColor"
+        }
+      },
+      "required": [
+        "rgba"
+      ]
+    },
+    "rgbaColor": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "$ref": "#/definitions/normalizedNumber"
+      }
+    },
+    "srgbaColor": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "number"
+      }
+    },
+    "vector2": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y"
+      ]
+    },
+    "positiveVector2": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "$ref": "#/definitions/positiveNumber"
+        },
+        "y": {
+          "$ref": "#/definitions/positiveNumber"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y"
+      ]
+    },
+    "brush": {
+      "type": "object",
+      "properties": {
+        "identifier": {
+          "type": "string"
+        },
+        "color": {
+          "$ref": "#/definitions/color"
+        },
+        "size": {
+          "$ref": "#/definitions/positiveNumber",
+          "description": "Brush size in pixels, relative to shortest edge of image"
+        },
+        "hardness": {
+          "$ref": "#/definitions/normalizedNumber",
+          "description": "Brush hardness, 1 being hard as in no smoothe edge, 0 being maximally smooth"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "color",
+        "size"
+      ]
+    },
+    "sprites": {
+      "sticker": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "sticker"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "identifier": {
+                "type": "string"
+              },
+              "dimensions": {
+                "$ref": "#/definitions/positiveVector2",
+                "description": "Sticker dimensions, relative to shortest side of the image (image dimensions range from 0 to 1)"
+              },
+              "position": {
+                "$ref": "#/definitions/vector2",
+                "description": "Sticker position, relative to image dimensions (image dimensions range form 0 to 1)"
+              },
+              "flipVertically": {
+                "type": "boolean"
+              },
+              "flipHorizontally": {
+                "type": "boolean"
+              },
+              "tintColor": {
+                "$ref": "#/definitions/color"
+              },
+              "rotation": {
+                "$ref": "#/definitions/radians"
+              },
+              "alpha": {
+                "$ref": "#/definitions/normalizedNumber",
+                "description": "The opacity of the sticker, ranging from 0 to 1"
+              },
+              "adjustments": {
+                "type": "object",
+                "properties": {
+                  "brightness": {
+                    "$ref": "#/definitions/adjustmentValue"
+                  },
+                  "saturation": {
+                    "$ref": "#/definitions/adjustmentValue"
+                  },
+                  "contrast": {
+                    "$ref": "#/definitions/adjustmentValue"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifier",
+              "dimensions",
+              "position",
+              "flipVertically",
+              "flipHorizontally"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "text": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "text"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "fontSize": {
+                "$ref": "#/definitions/positiveNumber",
+                "description": "Font size, relative to shortest edge of image"
+              },
+              "lineHeight": {
+                "$ref": "#/definitions/positiveNumber",
+                "description": "Line height, relative to font size. 0.5 means half line height."
+              },
+              "fontIdentifier": {
+                "type": "string"
+              },
+              "alignment": {
+                "$ref": "#/definitions/textAlignment"
+              },
+              "color": {
+                "$ref": "#/definitions/color"
+              },
+              "backgroundColor": {
+                "$ref": "#/definitions/color"
+              },
+              "position": {
+                "$ref": "#/definitions/vector2",
+                "description": "Text position, relative to image dimensions"
+              },
+              "rotation": {
+                "$ref": "#/definitions/radians"
+              },
+              "maxWidth": {
+                "$ref": "#/definitions/positiveNumber",
+                "description": "Maximum text area width, relative to shortest edge of image"
+              },
+              "flipHorizontally": {
+                "type": "boolean"
+              },
+              "flipVertically": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "text",
+              "fontSize",
+              "fontIdentifier",
+              "color",
+              "position",
+              "maxWidth",
+              "flipVertically",
+              "flipHorizontally"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "textdesign": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "textdesign"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "identifier": {
+                "type": "string"
+              },
+              "width": {
+                "$ref": "#/definitions/positiveNumber",
+                "description": "Maximum text area width, relative to shortest edge of image"
+              },
+              "inverted": {
+                "type": "boolean"
+              },
+              "seed": {
+                "type": "number"
+              },
+              "color": {
+                "$ref": "#/definitions/color"
+              },
+              "position": {
+                "$ref": "#/definitions/vector2",
+                "description": "Text position, relative to image dimensions"
+              },
+              "rotation": {
+                "$ref": "#/definitions/radians"
+              },
+              "flipHorizontally": {
+                "type": "boolean"
+              },
+              "flipVertically": {
+                "type": "boolean"
+              },
+              "padding": {
+                "$ref": "#/definitions/positiveNumber",
+                "description": "Maximum width of the padding around an inverted text design, relative to shortest edge of image"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "text",
+              "identifier",
+              "color",
+              "seed",
+              "position",
+              "width",
+              "flipVertically",
+              "flipHorizontally"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "brush": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "brush"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "paths": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "brush": {
+                      "$ref": "#/definitions/brush"
+                    },
+                    "points": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/vector2",
+                        "description": "Brush control point position, relative to shortest edge of image"
+                      }
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "brush",
+                    "points"
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "paths"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "frame": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "frame"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "identifier": {
+                "type": "string"
+              },
+              "size": {
+                "$ref": "#/definitions/positiveNumber"
+              },
+              "alpha": {
+                "$ref": "#/definitions/normalizedNumber"
+              },
+              "tintColor": {
+                "$ref": "#/definitions/color"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifier"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "overlay": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "overlay"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "intensity": {
+                "$ref": "#/definitions/normalizedNumber"
+              },
+              "blendMode": {
+                "$ref": "#/definitions/blendMode"
+              },
+              "identifier": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifier",
+              "blendMode",
+              "intensity"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      }
+    },
+    "operations": {
+      "transformOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "transform"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "$ref": "#/definitions/vector2",
+                "description": "Start position of crop, relative to image dimensions"
+              },
+              "end": {
+                "$ref": "#/definitions/vector2",
+                "description": "End position of crop, relative to image dimensions"
+              },
+              "dimensions": {
+                "$ref": "#/definitions/positiveVector2",
+                "description": "The dimensions the image should have after transforming"
+              },
+              "rotation": {
+                "$ref": "#/definitions/radians"
+              },
+              "meta": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "start",
+              "end"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "orientationOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "orientation"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "rotation": {
+                "type": "integer",
+                "multipleOf": 90,
+                "minimum": 0,
+                "maximum": 270
+              },
+              "flipVertically": {
+                "type": "boolean"
+              },
+              "flipHorizontally": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "filterOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "filter"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "identifier": {
+                "type": "string"
+              },
+              "intensity": {
+                "$ref": "#/definitions/normalizedNumber"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifier",
+              "intensity"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "adjustmentsOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "adjustments"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "brightness": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "saturation": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "contrast": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "exposure": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "shadows": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "highlights": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "clarity": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "gamma": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "blacks": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "whites": {
+                "$ref": "#/definitions/adjustmentValue"
+              },
+              "temperature": {
+                "$ref": "#/definitions/adjustmentValue"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "spriteOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "sprite"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "sprites": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/definitions/sprites/sticker"
+                    },
+                    {
+                      "$ref": "#/definitions/sprites/text"
+                    },
+                    {
+                      "$ref": "#/definitions/sprites/brush"
+                    },
+                    {
+                      "$ref": "#/definitions/sprites/overlay"
+                    },
+                    {
+                      "$ref": "#/definitions/sprites/frame"
+                    },
+                    {
+                      "$ref": "#/definitions/sprites/textdesign"
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "sprites"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "focusOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "focus"
+            ]
+          },
+          "options": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "radial"
+                    ]
+                  },
+                  "options": {
+                    "type": "object",
+                    "properties": {
+                      "start": {
+                        "$ref": "#/definitions/vector2",
+                        "description": "Start position of clear area, relative to image dimensions. This point marks the center of the circle."
+                      },
+                      "end": {
+                        "$ref": "#/definitions/vector2",
+                        "description": "End position of clear area, relative to image dimensions. This point sits on the edge of the circle."
+                      },
+                      "gradientRadius": {
+                        "$ref": "#/definitions/positiveNumber",
+                        "description": "Radius of blur area, relative to shortest image edge"
+                      },
+                      "blurRadius": {
+                        "$ref": "#/definitions/positiveNumber",
+                        "description": "Blur radius, relative to shortest image edge"
+                      }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                      "start",
+                      "end",
+                      "gradientRadius",
+                      "blurRadius"
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "type",
+                  "options"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "mirrored"
+                    ]
+                  },
+                  "options": {
+                    "type": "object",
+                    "properties": {
+                      "start": {
+                        "$ref": "#/definitions/vector2",
+                        "description": "Start position of clear area, relative to image dimensions"
+                      },
+                      "end": {
+                        "$ref": "#/definitions/vector2",
+                        "description": "End position of clear area, relative to image dimensions"
+                      },
+                      "blurRadius": {
+                        "$ref": "#/definitions/positiveNumber",
+                        "description": "Blur radius, relative to shortest image edge"
+                      },
+                      "size": {
+                        "$ref": "#/definitions/positiveNumber",
+                        "description": "Clear area size, relative to shrotest image edge"
+                      },
+                      "gradientSize": {
+                        "$ref": "#/definitions/positiveNumber",
+                        "description": "Gradient size, relative to shortest image edge"
+                      }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                      "start",
+                      "end",
+                      "blurRadius",
+                      "size",
+                      "gradientSize"
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "type",
+                  "options"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "linear"
+                    ]
+                  },
+                  "options": {
+                    "type": "object",
+                    "properties": {
+                      "start": {
+                        "$ref": "#/definitions/vector2",
+                        "description": "Start position of clear area, relative to image dimensions"
+                      },
+                      "end": {
+                        "$ref": "#/definitions/vector2",
+                        "description": "End position of clear area, relative to image dimensions"
+                      },
+                      "blurRadius": {
+                        "$ref": "#/definitions/positiveNumber",
+                        "description": "Blur radius, relative to shortest image edge"
+                      }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                      "start",
+                      "end",
+                      "blurRadius"
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "type",
+                  "options"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "gaussian"
+                    ]
+                  },
+                  "options": {
+                    "type": "object",
+                    "properties": {
+                      "blurRadius": {
+                        "$ref": "#/definitions/positiveNumber",
+                        "description": "Blur radius, relative to shortest image edge"
+                      }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                      "blurRadius"
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "type",
+                  "options"
+                ]
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "options"
+        ]
+      },
+      "autoEnhancementOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "autoEnhancement"
+            ]
+          }
+        }
+      },
+      "artFilterOperation": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "artFilter"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "identifier": {
+                "type": "string"
+              },
+              "intensity": {
+                "$ref": "#/definitions/normalizedNumber"
+              },
+              "blendMode": {
+                "$ref": "#/definitions/blendMode"
+              },
+              "tileEdgeLength": {
+                "$ref": "#/definitions/positiveNumber"
+              },
+              "overlappingFactor": {
+                "$ref": "#/definitions/normalizedNumber"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifier",
+              "blendMode",
+              "intensity",
+              "tileEdgeLength",
+              "overlappingFactor"
+            ]
+          }
+        },
+        "required": [
+          "type",
+          "options"
+        ]
+      }
+    }
+  }
+}
