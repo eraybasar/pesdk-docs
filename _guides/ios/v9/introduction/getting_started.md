@@ -99,6 +99,10 @@ This script will remove the simulator slices from the universal binary, because 
 
 3) If you are integrating the PhotoEditor SDK into an otherwise Objective-C only project you also have to set the `Always Embed Swift Standard Libraries` build setting in your project's `Build Settings` tab to `Yes`.
 
+4) To receive symbolicated crash logs, you need to include our debug symbols. Copy the `PhotoEditorSDK.framework.dSYM` file to your project's tree without adding it to any of your targets. Then add the copied file as an input file to the `Run Script Phase` of step 2.
+
+![Copy dSYM]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/copy-dsym.jpg)
+
 
 Our SDK provides two main view controllers. One to work with the camera and the other to edit an image.
 In the following section, we will first explain how the licensing works and then how the basic view controllers are set up. 
