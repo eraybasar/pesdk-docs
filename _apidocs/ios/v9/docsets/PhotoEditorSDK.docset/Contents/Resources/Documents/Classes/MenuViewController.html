@@ -1767,13 +1767,181 @@ if needed.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Reload%20API"></a>
+                <a name="//apple_ref/swift/Section/Reload API" class="dashAnchor"></a>
+                <a href="#/Reload%20API">
+                  <h3 class="section-name">Reload API</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)MenuViewController(im)reloadDataWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/reloadData(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)MenuViewController(im)reloadDataWithCompletion:">reloadData(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs an immediate reload of the menu.</p>
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    <p>If possible you should use <code><a href="../Classes/MenuViewController.html#/c:@M@PhotoEditorSDK@objc(cs)MenuViewController(im)performUpdatesWithAnimated:completion:">performUpdates(animated:completion:)</a></code> instead because
+it is less expensive.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">reloadData</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to execute when the reload completes. The passed <code>Bool</code>
+variable specifies whether or not the update animations completed successfully.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)MenuViewController(im)performUpdatesWithAnimated:completion:"></a>
+                    <a name="//apple_ref/swift/Method/performUpdates(animated:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)MenuViewController(im)performUpdatesWithAnimated:completion:">performUpdates(animated:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs an update from the previous state of the menu.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">performUpdates</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A flag indicating if the transition should be animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to edecuted when the updates complete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PhotoEditorSDK@objc(cs)MenuViewController(im)reloadMenuItems:"></a>
+                    <a name="//apple_ref/swift/Method/reloadMenuItems(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PhotoEditorSDK@objc(cs)MenuViewController(im)reloadMenuItems:">reloadMenuItems(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reloads the menu for only the specified menu items.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">reloadMenuItems</span><span class="p">(</span><span class="n">_</span> <span class="nv">menuItems</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Menu Items.html#/c:@M@PhotoEditorSDK@objc(pl)PESDKMenuItem">MenuItem</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>menuItems</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The menu items to reload.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-04-18)</p>
+      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-05-08)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
