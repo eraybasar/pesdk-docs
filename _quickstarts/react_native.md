@@ -30,7 +30,7 @@ Create a demo project using `react-native init <PROJECT_NAME>` and add follow th
 
 ## Bridging between React Native and the native SDKs
 
-To use the SDK from JavaScript you need to create modules that bridge between React Native and the PhotoEditor SDK. To ensure consistency we recommend to start with the iOS module and add the Android module, once iOS is fully functional. This way you can ensure API compatability across both modules, which makes accessing the modules from JavaScript much easier.
+To use the SDK from JavaScript you need to create modules that bridge between React Native and the PhotoEditor SDK. To ensure consistency we recommend to start with the iOS module and add the Android module, once iOS is fully functional. This way you can ensure API compatibility across both modules, which makes accessing the modules from JavaScript much easier.
 
 #### iOS Module
 
@@ -77,7 +77,7 @@ RCT_EXPORT_METHOD(present:(NSString *)path) {
 
 #### Opening the module from React Native
 
-Now you're ready to launch the PhotoEditor SDK from your React Native code. Just load the PESDK` module from React Natives `NativeModules` and call the `present(...)` method, we defined above:
+Now you're ready to launch the PhotoEditor SDK from your React Native code. Just load the `PESDK` module from React Natives `NativeModules` and call the `present(...)` method, we defined above:
 
 {% raw %}
 ```javascript
