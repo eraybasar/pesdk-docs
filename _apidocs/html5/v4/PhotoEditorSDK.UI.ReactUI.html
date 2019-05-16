@@ -4321,12 +4321,14 @@
             
             <span class="subtitle">Members</span>
             
-                <li data-name="Events"><a href="PhotoEditorSDK.UI.ReactUI.html#Events">Events</a></li>
-            
                 <li data-name="PhotoEditorSDK.UI.DesktopUI#identifier"><a href="PhotoEditorSDK.UI.DesktopUI.html#identifier">identifier</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
+            
+            <span class="subtitle">Typedefs</span>
+            
+                <li data-name="Events"><a href="PhotoEditorSDK.UI.ReactUI.html#Events">Events</a></li>
             
             </ul>
             <ul class="methods itemMembers">
@@ -4429,6 +4431,8 @@
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.BaseControls#onOperationUpdated"><a href="PhotoEditorSDK.UI.DesktopUI.BaseControls.html#onOperationUpdated">onOperationUpdated</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.BaseControls#setGlobalToolState"><a href="PhotoEditorSDK.UI.DesktopUI.BaseControls.html#setGlobalToolState">setGlobalToolState</a></li>
+            
+                <li data-name="PhotoEditorSDK.UI.DesktopUI.BaseControls#updateGlobalToolState"><a href="PhotoEditorSDK.UI.DesktopUI.BaseControls.html#updateGlobalToolState">updateGlobalToolState</a></li>
             
                 <li data-name="PhotoEditorSDK.UI.DesktopUI.BaseControls#updateSharedState"><a href="PhotoEditorSDK.UI.DesktopUI.BaseControls.html#updateSharedState">updateSharedState</a></li>
             
@@ -5102,12 +5106,14 @@
             
             <span class="subtitle">Members</span>
             
-                <li data-name="Events"><a href="PhotoEditorSDK.UI.ReactUI.html#Events">Events</a></li>
-            
                 <li data-name="PhotoEditorSDK.UI.ReactUI#identifier"><a href="PhotoEditorSDK.UI.ReactUI.html#identifier">identifier</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
+            
+            <span class="subtitle">Typedefs</span>
+            
+                <li data-name="Events"><a href="PhotoEditorSDK.UI.ReactUI.html#Events">Events</a></li>
             
             </ul>
             <ul class="methods itemMembers">
@@ -5607,7 +5613,7 @@
 
 <header>
     <h2>
-        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.UI.html">.UI</a>.</span>
+        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.UI.html">.UI</a>~</span>
     
     ReactUI
     </h2>
@@ -5626,12 +5632,12 @@
     <div class="nameContainer">
         <h4 class="name" id="ReactUI">
             
-            new PhotoEditorSDK.UI.ReactUI<span class="signature">(options, provider)</span>
+            new ReactUI<span class="signature">(options, provider)</span>
         </h4>
     
         
         <div class="tag-source">
-            ui/react-ui/ui.jsx, line 42
+            ui/react-ui/ui.jsx, line 115
         </div>
         
     </div>
@@ -6063,7 +6069,7 @@
                     
                 
                 <p>Should the header (with title text) be displayed?
-                                                Should only be set to <code>false</code> by licensees.</p></td>
+Should only be set to <code>false</code> by licensees.</p></td>
         </tr>
 	
 	
@@ -6204,7 +6210,7 @@
                     
                 
                 <p>The class providing all data
-                                                                for the photo roll</p></td>
+for the photo roll</p></td>
         </tr>
 	
 	
@@ -6393,7 +6399,7 @@
                     
                 
                 <p>If none is given, PhotoEditorSDK automatically
-  detects the current device's pixel ratio</p></td>
+detects the current device's pixel ratio</p></td>
         </tr>
 	
 	
@@ -6574,8 +6580,8 @@
                     
                 
                 <p>Should a message be displayed
-                                                      when the image has been scaled down
-                                                      for performance?</p></td>
+when the image has been scaled down
+for performance?</p></td>
         </tr>
 	
 	
@@ -6613,10 +6619,10 @@
                     
                 
                 <p>The order in which the controls are displayed.
-                                          Available are <code>transform</code>, <code>filter</code>,
-                                          <code>adjustments</code>, <code>text</code>, <code>sticker</code>, <code>brush</code>, <code>focus</code>,
-                                          <code>frame</code>. Can be grouped in arrays which will be
-                                          displayed with separators.</p></td>
+Available are <code>transform</code>, <code>filter</code>,
+<code>adjustments</code>, <code>text</code>, <code>sticker</code>, <code>brush</code>, <code>focus</code>,
+<code>frame</code>. Can be grouped in arrays which will be
+displayed with separators.</p></td>
         </tr>
 	
 	
@@ -6651,8 +6657,8 @@
                     
                 
                 <p>The order in which operations are added to
-                                             the stack. Changing this may affect the
-                                             performance.</p></td>
+the stack. Changing this may affect the
+performance.</p></td>
         </tr>
 	
 	
@@ -6687,8 +6693,8 @@
                     
                 
                 <p>Options that are passed to specific controls. See
-                                           the documentation for each control to learn more
-                                           about available values.</p></td>
+the documentation for each control to learn more
+about available values.</p></td>
         </tr>
 	
 	
@@ -6723,8 +6729,8 @@
                     
                 
                 <p>An array of objects specifying the controls
-                                                 the user needs to use before being able to
-                                                 use the actual editor.</p></td>
+the user needs to use before being able to
+use the actual editor.</p></td>
         </tr>
 	
 	
@@ -6759,7 +6765,7 @@
                     
                 
                 <p>If true, the editor will lauch to the transform tool
-                                               for cropping, before any other tool is allowed.</p></td>
+for cropping, before any other tool is allowed.</p></td>
         </tr>
 	
 	
@@ -7118,8 +7124,8 @@
                     
                 
                 <p>The basename
-                                                     of the exported file (file extension will
-                                                     be added automatically)</p></td>
+of the exported file (file extension will
+be added automatically)</p></td>
         </tr>
 	
 	
@@ -7156,7 +7162,7 @@
                     
                 
                 <p>The export quality (0...1, only supported
-                                               for JPG images)</p></td>
+for JPG images)</p></td>
         </tr>
 	
 	
@@ -7382,447 +7388,6 @@
         <h3 class="subsection-title">Members</h3>
 
         <dl>
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="Events">Events<span class="type-signature type object">Object</span> </h4>
-    </div>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Events used by the UI</p>
-    </div>
-    
-    
-    
-<dl class="details">
-    
-        
-        <h5 class="subsection-title">Properties:</h5>
-        
-        <dl>
-
-<table class="props">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>EXPORT</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when an image is exported from the editor</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>CLOSE</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the editor is closed</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>OPERATION_CREATED</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when an <a href="Operation.html">Operation</a> is created</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>OPERATION_UPDATED</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when an <a href="Operation.html">Operation</a> is updated</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>OPERATION_REMOVED</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when an <a href="Operation.html">Operation</a> is removed</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>EDITOR_READY</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the editor has finished loading and is ready to be used</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>WINDOW_RESIZE</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the window (not the editor) is resized</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>ZOOM_DONE</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the zoom level has finished changing</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>HISTORY_UNDO</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted after the last edit operation is undone</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>HISTORY_UPDATED</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the edit history is updated with a new snapshot</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>HISTORY_BEFORE_UNDO</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted before the last edit operation is undone</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>FEATURES_DISABLED</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when at least one editor feature has been disabled</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>FEATURES_ENABLED</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when editor features have been enabled</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>FEATURES_UPDATED</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the available editor features have changed</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>TRANSFORM_REAPPLY_RATIO</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the original transform ratio has been reapplied</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>COLORPICKER_OPEN</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Emitted when the color picker is opened</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table></dl>
-        
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-</dd>
-
-        
             
 <dt>
     <div class="nameContainer">
@@ -9361,6 +8926,451 @@ in a ready state.</p>
     
 
     
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        <dl>
+                
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="Events">Events<span class="type-signature type object">Object</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Events used by the UI</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>EXPORT</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when an image is exported from the editor</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>CLOSE</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the editor is closed</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>OPERATION_CREATED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when an <a href="Operation.html">Operation</a> is created</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>OPERATION_UPDATED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when an <a href="Operation.html">Operation</a> is updated</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>OPERATION_REMOVED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when an <a href="Operation.html">Operation</a> is removed</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>EDITOR_READY</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the editor has finished loading and is ready to be used</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>WINDOW_RESIZE</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the window (not the editor) is resized</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>ZOOM_DONE</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the zoom level has finished changing</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>HISTORY_UNDO</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted after the last edit operation is undone</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>HISTORY_UPDATED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the edit history is updated with a new snapshot</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>HISTORY_BEFORE_UNDO</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted before the last edit operation is undone</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>FEATURES_DISABLED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when at least one editor feature has been disabled</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>FEATURES_ENABLED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when editor features have been enabled</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>FEATURES_UPDATED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the available editor features have changed</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>TRANSFORM_REAPPLY_RATIO</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the original transform ratio has been reapplied</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>COLORPICKER_OPEN</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Emitted when the color picker is opened</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+            </dl>
+    
 
     
         <h3 class="subsection-title" id="$subsection:events">Events</h3>
@@ -9779,7 +9789,7 @@ in a ready state.</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a>
         </footer>
     </div>
 </div>
