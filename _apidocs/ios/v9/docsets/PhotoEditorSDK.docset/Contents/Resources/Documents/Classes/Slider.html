@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv9_6%2Fdocsets%2FPhotoEditorSDK%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv9_7%2Fdocsets%2FPhotoEditorSDK%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -818,6 +818,9 @@
                 <a class="nav-group-task-link" href="../Classes/DeviceOrientationController.html">DeviceOrientationController</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKDimmingView">DimmingView</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/EffectThumbnailRenderer.html">EffectThumbnailRenderer</a>
               </li>
               <li class="nav-group-task">
@@ -872,10 +875,22 @@
                 <a class="nav-group-task-link" href="../Classes/ImageAsset.html">ImageAsset</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Label.html">Label</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LineView.html">LineView</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKLinearGradientView">LinearGradientView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MainFlowController.html">MainFlowController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MarkerView.html">MarkerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MenuAccessoryContainerView.html">MenuAccessoryContainerView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MenuListSectionController.html">MenuListSectionController</a>
@@ -1020,6 +1035,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTextSpriteModel">_ObjCTextSpriteModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/_ObjCTheme.html">_ObjCTheme</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@PhotoEditorSDK@objc(cs)PESDKTransformModel">_ObjCTransformModel</a>
@@ -1294,6 +1312,9 @@
                 <a class="nav-group-task-link" href="../Structs/NeutralModelValues/Orientation.html">– Orientation</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Theme.html">Theme</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/UserInterfaceState.html">UserInterfaceState</a>
               </li>
               <li class="nav-group-task">
@@ -1376,7 +1397,8 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The color used to tint the thumb image. If no color is set, the default <code>tintColor</code> will be used.</p>
+                        <p>The color used to tint the thumb image. If no color is set, the default <code>tintColor</code> will be used.
+This property supports being set via a <code>UIAppearance</code> proxy.</p>
 
                       </div>
                       <div class="declaration">
@@ -1384,7 +1406,7 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
-<span class="kd">open</span> <span class="k">var</span> <span class="nv">thumbTintColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="kd">open</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">thumbTintColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1404,7 +1426,8 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The color used to tint the background color of the thumb.</p>
+                        <p>The color used to tint the background color of the thumb.
+This property supports being set via a <code>UIAppearance</code> proxy.</p>
 
                       </div>
                       <div class="declaration">
@@ -1412,7 +1435,7 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
-<span class="kd">open</span> <span class="k">var</span> <span class="nv">thumbBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="kd">open</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">thumbBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1432,7 +1455,8 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The color used to tint the filled track. If no color is set, the default <code>tintColor</code> will be used.</p>
+                        <p>The color used to tint the filled track. If no color is set, the default <code>tintColor</code> will be used.
+This property supports being set via a <code>UIAppearance</code> proxy.</p>
 
                       </div>
                       <div class="declaration">
@@ -1440,7 +1464,7 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
-<span class="kd">open</span> <span class="k">var</span> <span class="nv">filledTrackColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="kd">open</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">filledTrackColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1460,7 +1484,8 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The color used to tint the unfilled track.</p>
+                        <p>The color used to tint the unfilled track.
+This property supports being set via a <code>UIAppearance</code> proxy.</p>
 
                       </div>
                       <div class="declaration">
@@ -1468,7 +1493,7 @@ A vertical indicator, or neutral point, notes the default, unchanged value of th
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
-<span class="kd">open</span> <span class="k">var</span> <span class="nv">unfilledTrackColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="kd">open</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">unfilledTrackColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1902,7 +1927,7 @@ directly.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-05-08)</p>
+      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-05-16)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
