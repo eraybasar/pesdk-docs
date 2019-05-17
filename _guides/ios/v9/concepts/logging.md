@@ -31,4 +31,4 @@ For more details, take a look at the [`MasterLogger`]({{ site.baseurl }}/apidocs
 
 Here is an example for a simple log with warning as log-level.
 
-```MasterLogger.warn("This is my important warning !")```
+```MasterLogger.warn("This is my important warning!")```

@@ -33,7 +33,7 @@ At first sight the framework's size might seem very excessive with the `PhotoEdi
 
 ### Architectures
 
-The binary file of the PhotoEditor SDK includes slices for multiple architectures, namely i386, x64, armv7 and arm64. The slices for i386 and x64 are only used during development when you run your app in the iPhone simulator. When submitting your app to the App Store those slices will be removed from the binary automatically if you're using CocoaPods or followed our [manual integration guide]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/getting_started). Since each slice is a complete copy of the SDK's compiled source code, this step alone removes around 25 percent from the SDK's binary.
+The binary file of the PhotoEditor SDK includes slices for multiple architectures, namely i386, x64, armv7, and arm64. The slices for i386 and x64 are only used during development when you run your app in the iPhone simulator. When submitting your app to the App Store those slices will be removed from the binary automatically if you're using CocoaPods or followed our [manual integration guide]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/getting_started). Since each slice is a complete copy of the SDK's compiled source code, this step alone removes around 25 percent from the SDK's binary.
 
 The remaining 75 percent are made up of the armv7 and arm64 slices, which also contain bitcode. Bitcode is a large, unoptimized, intermediate representation of a compiled binary. While you should in general upload the bitcode slices to Apple, your users will not have to download them when installing your app.
 
@@ -53,7 +53,7 @@ xcrun bitcode_strip -r PhotoEditorSDK -o PhotoEditorSDK
 
 ### Swift
 
-Because the Swift ABI is not yet stable, each app that includes Swift bundles a version of the current Swift runtime. The PhotoEditor SDK is written in Swift and thus requires said Swift runtime to be included, even if you only use Objective-C in your own code. Unfortunately, the runtime adds a couple of megabyte to the App Store size. When the Swift binary interface stabilizes, the Swift runtime will become part of the host OS and this size increase of apps will no longer exist. Additionally Xcode 9 offers a new option to 'Strip Swift Symbols' when uploading a build to App Store Connect. This step will get rid of a few MB. 
+Because the Swift ABI is not yet stable, each app that includes Swift bundles a version of the current Swift runtime. The PhotoEditor SDK is written in Swift and thus requires said Swift runtime to be included, even if you only use Objective-C in your own code. Unfortunately, the runtime adds a couple of megabytes to the App Store size. When the Swift binary interface stabilizes, the Swift runtime will become part of the host OS and this size increase of apps will no longer exist. Additionally Xcode 9 offers a new option to 'Strip Swift Symbols' when uploading a build to App Store Connect. This step will get rid of a few MB. 
 
 Swift 4.1 also introduced a new compiler optimization mode called `-Osize`, which optimizes the generated binary for size with a minor speed tradeoff. Unfortunately there currently is a bug that leads to App Store Connect not accepting builds that include binaries built with that optimization mode when they also include bitcode. We've filed a bug report with Apple and will continue to build the binary with `-O` in the meantime.
 

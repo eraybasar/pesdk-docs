@@ -20,7 +20,7 @@ published: true # Either published or not
 Our SDK features more than 60 high-quality filters. The processing is lightning fast, and it's easy to add your own filters.
 You might think that adding your own filters is complicated or requires super math skills.
 Well, not at all. The way we realize filters makes it super easy. Actually, you don't have to code filters,
-you just need a program like Gimp of Photoshop. The only thing that needs to be done in code, is to add the filter you created.
+you just need a program like Gimp or Photoshop. The only thing that needs to be done in code, is to add the filter you created.
 
 The tool is implemented in the `FilterToolController` class and can be customized using the [`FilterToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/FilterToolControllerOptions.html). For details on how to modify the options, take a look at the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section.
 
