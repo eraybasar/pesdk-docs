@@ -22,7 +22,7 @@ To receive events you have to prepare an object that conforms to the [`Analytics
 This is a sample implementation for a Google Analytics tracker:
 
 ```swift
-class AnalyticsClient: PhotoEditorSDK.AnalyticsClient {
+class GoogleAnalyticsClient: NSObject, PhotoEditorSDK.AnalyticsClient {
   public func logScreenView(_ screenView: PESDKAnalyticsScreenViewName) {
     func parameters(forScreenName screenName: String) -> [NSObject: AnyObject] {
       return GAIDictionaryBuilder.createScreenView().set(screenName, forKey: kGAIScreenName).build() as [NSObject: AnyObject]
@@ -72,7 +72,7 @@ class AnalyticsClient: PhotoEditorSDK.AnalyticsClient {
     }
   }
 
-  public func logEvent(_ event: PESDKAnalyticsEventName, attributes: [PESDKAnalyticsEventAttributeName : Any]?) {
+  public func logEvent(_ event: PESDKAnalyticsEventName, attributes: [PESDKAnalyticsEventAttributeName: Any]?) {
   }
 }
 ```
@@ -84,7 +84,7 @@ Swift
 ---
 ```swift
 PESDK.analytics.isEnabled = true
-PESDK.analytics.addAnalyticsClient(AnalyticsClient())
+PESDK.analytics.addAnalyticsClient(GoogleAnalyticsClient())
 ```
 {% endcapture %}
 
@@ -93,7 +93,7 @@ Objective-C
 ---
 ```objc
 PESDK.analytics.isEnabled = YES;
-[PESDK.analytics addAnalyticsClient:[PESDKAnalyticsClient new]];
+[PESDK.analytics addAnalyticsClient:[GoogleAnalyticsClient new]];
 ```
 {% endcapture %}
 

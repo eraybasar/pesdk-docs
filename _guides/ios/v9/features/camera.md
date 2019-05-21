@@ -35,16 +35,16 @@ A more complex configuration, e.g. a camera without flash and filters, and limit
 
 ```swift
 let configuration = Configuration { builder in
-    builder.configureCameraViewController { options in
-        // Disable filters
-        options.showFilters = false
+  builder.configureCameraViewController { options in
+    // Disable filters
+    options.showFilters = false
 
-        // Force a selfie camera
-        options.allowedCameraPositions = [ .front ]
+    // Force a selfie camera
+    options.allowedCameraPositions = [ .front ]
 
-        // Disable flash
-        options.allowedFlashModes = [ .off ]
-    }
+    // Disable flash
+    options.allowedFlashModes = [ .off ]
+  }
 }
 ```
 

@@ -31,9 +31,9 @@ Swift
 ```swift
 PESDK.localizationDictionary = [
   "de": [
-    "No permission" : "Keine Berechtigung",
-    "Top left cropping area" : "Zuschneidebereich oben links",
-    "Settings" : "Einstellungen"
+    "No permission": "Keine Berechtigung",
+    "Top left cropping area": "Zuschneidebereich oben links",
+    "Settings": "Einstellungen"
   ]
 ]
 ```
@@ -43,15 +43,13 @@ PESDK.localizationDictionary = [
 Objective-C
 ---
 ```objc
-[PESDK setLocalizationDictionary:
- @{
-   @"de": @{
-     @"No permission" : @"Keine Berechtigung",
-     @"Top left cropping area" : @"Zuschneidebereich oben links",
-     @"Settings" : @"Einstellungen"
-   }
- }
-];
+[PESDK setLocalizationDictionary: @{
+  @"de": @{
+    @"No permission": @"Keine Berechtigung",
+    @"Top left cropping area": @"Zuschneidebereich oben links",
+    @"Settings": @"Einstellungen"
+  }
+}];
 ```
 {% endcapture %}
 

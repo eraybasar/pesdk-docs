@@ -56,7 +56,7 @@ TextDesign.all = textDesigns
 Objective-C
 ---
 ```objc
-NSMutableArray<PESDKTextDesign *> *textDesigns = @[
+NSArray<PESDKTextDesign *> *textDesigns = @[
   [[PESDKTextDesignBlocks alloc] init],
   [[PESDKTextDesignRotated alloc] init],
   [[PESDKTextDesignBlocksLight alloc] init],

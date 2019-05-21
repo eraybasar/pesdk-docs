@@ -46,7 +46,7 @@ Before using any components of the PhotoEditor SDK, you have to unlock the SDK u
 Swift
 ---
 ```swift
-func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
   if let licenseURL = Bundle.main.url(forResource: "license", withExtension: "") {
     PESDK.unlockWithLicense(at: licenseURL)
   }
