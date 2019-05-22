@@ -92,7 +92,7 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
 For more configuration examples, please refer to the examples shown below or take a look at the {% include guides/ios/demo-repository.md %}. Or take a look at our default configuration in action and check out our {% include guides/ios/example-app.md %}.
 
 
-### Using the closures
+## Using the closures
 
 Most configuration objects offer closures to setup UI elements individually.
 In that case, they usually come with an array of actions that determine the available actions.
