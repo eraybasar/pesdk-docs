@@ -34,16 +34,17 @@ public static var defaultItems: [PhotoEditMenuItem] {
     ToolMenuItem.createTransformToolItem(),
     ToolMenuItem.createFilterToolItem(),
     ToolMenuItem.createAdjustToolItem(),
+    ToolMenuItem.createFocusToolItem(),
     ToolMenuItem.createStickerToolItem(),
     ToolMenuItem.createTextToolItem(),
+    ToolMenuItem.createTextDesignToolItem(),
     ToolMenuItem.createOverlayToolItem(),
     ToolMenuItem.createFrameToolItem(),
     ToolMenuItem.createBrushToolItem(),
-    ToolMenuItem.createFocusToolItem(),
     ActionMenuItem.createMagicItem()
   ]
 
-  let photoEditMenuItems: [PhotoEditMenuItem] = menuItems.flatMap { menuItem in
+  let photoEditMenuItems: [PhotoEditMenuItem] = menuItems.compactMap { menuItem in
     switch menuItem {
     case let menuItem as ToolMenuItem:
       return .tool(menuItem)

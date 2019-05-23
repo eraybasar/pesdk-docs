@@ -21,7 +21,7 @@ Additionally, we support adding stickers and text in a non-destructive manner, w
 
 <div class="documentation__disclaimer">
 <h4 id="license-terms">Using a Trial License</h4>
-Make sure you have a standard license before releasing your app. A trial license is valid for only 30 days and will crash your app afterward. Your trial license should be removed before releasing your app.
+Make sure you have a standard license before releasing your app. A trial license is valid for only 30 days. An expired trial license will add a watermark on top of any photos that are displayed or exported. Your trial license should be removed before releasing your app.
 </div>
 
 ## Features

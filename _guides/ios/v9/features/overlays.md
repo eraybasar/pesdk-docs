@@ -38,7 +38,7 @@ Here is an example of how to add an overlay.
 Swift
 ---
 ```swift
-let overlay = Overlay(identifier: "imgly_overlay_golden", displayName: "Golden".localized, url: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden", withExtension: "jpg"), thumbnailURL: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden_thumb", withExtension: "jpg"), initialBlendMode: .lighten)
+let overlay = Overlay(identifier: "imgly_overlay_golden", displayName: "Golden", url: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden", withExtension: "jpg"), thumbnailURL: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden_thumb", withExtension: "jpg"), initialBlendMode: .lighten)
 Overlay.all.append(overlay)
 ```
 {% endcapture %}

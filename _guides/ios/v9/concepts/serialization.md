@@ -26,15 +26,15 @@ and save these to a file. Here is some example code to get you started:
 
 ```swift
 func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data) {
-    if let data = photoEditViewController.serializedSettings {
-      do {
-          try data?.write(to: dataFileURL, options: .atomic)
-      } catch {
-          print(error)
-      }
+  if let data = photoEditViewController.serializedSettings(withImageData: true) {
+    do {
+      try data.write(to: dataFileURL, options: .atomic)
+    } catch {
+      print(error)
     }
+  }
 
-    dismiss(animated: true, completion: nil)
+  dismiss(animated: true, completion: nil)
 }
 ```
 
@@ -44,11 +44,10 @@ To set the initial editor settings, you can deserialize a `Data` object containi
 
 ```swift
 let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: nil)
-if let model = deserializationResult.model, let image = deserializationResult.image {
-    photoEditViewController = PhotoEditViewController(photo: image, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
+if let model = deserializationResult.model, let photo = deserializationResult.photo {
+  let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
 
-    present(photoEditViewController, animated: true, completion: nil)
-  }
+  present(photoEditViewController, animated: true, completion: nil)
 }
 ```
 
@@ -56,9 +55,10 @@ To apply existing settings to a different image, you need to pass the new images
 
 ```swift
 if let inputImage = UIImage(named: "example_image"), let data = loadPredefinedSettingsData() {
+  let photo = Photo(image: inputImage)
   let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: inputImage.size)
   if let model = deserializationResult.model {
-    photoEditViewController = PhotoEditViewController(photo: inputImage, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
+    let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
 
     present(photoEditViewController, animated: true, completion: nil)
   }

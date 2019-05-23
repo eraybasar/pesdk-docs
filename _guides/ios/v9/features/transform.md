@@ -35,7 +35,7 @@ let configuration = Configuration { builder in
     options.allowedCropRatios = [
       CropAspect(width: 1, height: 1, localizedName: "Square", rotatable: false),
       CropAspect(width: 3, height: 2, localizedName: "Landscape", rotatable: false),
-      CropAspect(width: 2, height: 3, localizedName: "Portrait", rotatable: false),
+      CropAspect(width: 2, height: 3, localizedName: "Portrait", rotatable: false)
     ]
   }
 
@@ -58,10 +58,10 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
   [builder configureTransformToolController:^(PESDKTransformToolControllerOptionsBuilder * _Nonnull options) {
     options.allowFreeCrop = NO;
     options.allowedCropRatios = @[
-                                  [[PESDKCropAspect alloc] initWithWidth:1 height:1 localizedName:@"Square" rotatable:NO],
-                                  [[PESDKCropAspect alloc] initWithWidth:3 height:2 localizedName:@"Landscape" rotatable:NO],
-                                  [[PESDKCropAspect alloc] initWithWidth:2 height:3 localizedName:@"Portrait" rotatable:NO]
-                                  ];
+      [[PESDKCropAspect alloc] initWithWidth:1 height:1 localizedName:@"Square" rotatable:NO],
+      [[PESDKCropAspect alloc] initWithWidth:3 height:2 localizedName:@"Landscape" rotatable:NO],
+      [[PESDKCropAspect alloc] initWithWidth:2 height:3 localizedName:@"Portrait" rotatable:NO]
+    ];
   }];
 
   [builder configurePhotoEditorViewController:^(PESDKPhotoEditViewControllerOptionsBuilder * _Nonnull options) {
@@ -94,7 +94,7 @@ let configuration = Configuration { builder in
       CropAspect(width: 828, height: 315, localizedName: "Facebook Cover", rotatable: false),
       CropAspect(width: 2, height: 3, localizedName: "Twitter Post", rotatable: false),
       CropAspect(width: 1, height: 1, localizedName: "Linkedin Post", rotatable: false),
-      CropAspect(width: 1, height: 1, localizedName: "Instagram Post", rotatable: false),
+      CropAspect(width: 1, height: 1, localizedName: "Instagram Post", rotatable: false)
     ]
   }
 }
@@ -113,12 +113,12 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
   [builder configureTransformToolController:^(PESDKTransformToolControllerOptionsBuilder * _Nonnull options) {
     options.allowFreeCrop = YES;
     options.allowedCropRatios = @[
-                                  [[PESDKCropAspect alloc] initWithWidth:3 height:4 localizedName:@"Facebook Post" rotatable:NO],
-                                  [[PESDKCropAspect alloc] initWithWidth:828 height:315 localizedName:@"Facebook Cover" rotatable:NO],
-                                  [[PESDKCropAspect alloc] initWithWidth:2 height:3 localizedName:@"Twitter Post" rotatable:NO],
-                                  [[PESDKCropAspect alloc] initWithWidth:1 height:1 localizedName:@"Linkedin Post" rotatable:NO],
-                                  [[PESDKCropAspect alloc] initWithWidth:1 height:1 localizedName:@"Instagram Post" rotatable:NO]
-                                  ];
+      [[PESDKCropAspect alloc] initWithWidth:3 height:4 localizedName:@"Facebook Post" rotatable:NO],
+      [[PESDKCropAspect alloc] initWithWidth:828 height:315 localizedName:@"Facebook Cover" rotatable:NO],
+      [[PESDKCropAspect alloc] initWithWidth:2 height:3 localizedName:@"Twitter Post" rotatable:NO],
+      [[PESDKCropAspect alloc] initWithWidth:1 height:1 localizedName:@"Linkedin Post" rotatable:NO],
+      [[PESDKCropAspect alloc] initWithWidth:1 height:1 localizedName:@"Instagram Post" rotatable:NO]
+    ];
   }];
 }];
 

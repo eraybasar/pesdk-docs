@@ -17,7 +17,7 @@ tags: &tags # tags that are necessary
 ---
 
 The PhotoEditor SDK can be customized to meet your requirements. There are global settings to set things like
-the background color of the app, but also closures that allow an in-depth customization.
+the menu background color of the app, but also closures that allow an in-depth customization.
 Please note that by default the tint color determines the color of the icons.
 Of course, you are free to override that behavior.
 
@@ -31,13 +31,13 @@ To change the configuration of any module, you have to set up your own builder, 
 Swift
 ---
 ```swift
-...
-let configuration = Configuration() { builder in
-    builder.backgroundColor = .red
+// ...
+let configuration = Configuration { builder in
+  builder.theme.menuBackgroundColor = .red
 }
 
 let cameraViewController = CameraViewController(configuration: configuration)
-...
+// ...
 ```
 {% endcapture %}
 
@@ -45,14 +45,13 @@ let cameraViewController = CameraViewController(configuration: configuration)
 Objective-C
 ---
 ```objc
-...
+// ...
 PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:^(PESDKConfigurationBuilder * _Nonnull builder) {
-  builder.backgroundColor = UIColor.redColor;
+  builder.theme.menuBackgroundColor = UIColor.redColor;
 }];
 
 PESDKCameraViewController *cameraViewController = [[PESDKCameraViewController alloc] initWithConfiguration:configuration];
-...
-
+// ...
 ```
 {% endcapture %}
 
@@ -60,7 +59,7 @@ PESDKCameraViewController *cameraViewController = [[PESDKCameraViewController al
 {% capture identifier %}{{page.title}}-{{page.version}}-CONFIG{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-In order to modify the options of any specific tool, you need to modify the corresponding options using the same pattern. For example, changing the background color of the transform tool can be done using the following code:
+In order to modify the options of any specific tool, you need to modify the corresponding options using the same pattern. For example, changing the menu background color of the transform tool can be done using the following code:
 
 {% capture first_snippet %}
 Swift
@@ -68,7 +67,7 @@ Swift
 ```swift
 let configuration = Configuration { builder in
   builder.configureTransformToolController { options in
-    options.backgroundColor = .darkGray
+    options.menuBackgroundColor = .darkGray
   }
 }
 ```
@@ -80,7 +79,7 @@ Objective-C
 ```objc
 PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:^(PESDKConfigurationBuilder * _Nonnull builder) {
   [builder configureTransformToolController:^(PESDKTransformToolControllerOptionsBuilder * _Nonnull options) {
-    options.backgroundColor = UIColor.darkGrayColor;
+    options.menuBackgroundColor = UIColor.darkGrayColor;
   }];
 }];
 ```
@@ -93,7 +92,7 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
 For more configuration examples, please refer to the examples shown below or take a look at the {% include guides/ios/demo-repository.md %}. Or take a look at our default configuration in action and check out our {% include guides/ios/example-app.md %}.
 
 
-### Using the closures
+## Using the closures
 
 Most configuration objects offer closures to setup UI elements individually.
 In that case, they usually come with an array of actions that determine the available actions.
@@ -110,15 +109,16 @@ Swift
 builder.configurePhotoEditorViewController { options in
   options.actionButtonConfigurationClosure = { cell, menuItem in
     switch menuItem {
-      case .tool(let toolMenuItem):
-        if toolMenuItem.toolControllerClass == TransformToolController.self {
-          cell.imageView.image = ...
-        }
-      default:
-        break
+    case .tool(let toolMenuItem):
+      if toolMenuItem.toolControllerClass == TransformToolController.self {
+        cell.iconImageView.image = UIImage(named: "sample_image")
+        // ...
+      }
+    default:
+      break
     }
 
-    cell.captionTintColor = UIColor.red
+    cell.contentTintColor = .red
   }
 }
 ```
@@ -129,12 +129,13 @@ Objective-C
 ---
 ```objc
 [builder configurePhotoEditorViewController:^(PESDKPhotoEditViewControllerOptionsBuilder * _Nonnull options) {
-  options.actionButtonConfigurationBlock = ^(PESDKIconCaptionCollectionViewCell * _Nonnull cell, PESDKPhotoEditMenuItem * _Nonnull menuItem) {
+  options.actionButtonConfigurationBlock = ^(PESDKMenuCollectionViewCell * _Nonnull cell, PESDKPhotoEditMenuItem * _Nonnull menuItem) {
     if ([menuItem.toolMenuItem.title isEqualToString:@"Transform"]) {
-      cell.imageView.image = ...
+      cell.iconImageView.image = [UIImage imageNamed:@"sample_image"];
+      // ...
     }
 
-    cell.captionTintColor = UIColor.redColor;
+    cell.contentTintColor = UIColor.redColor;
   };
 }];
 ```

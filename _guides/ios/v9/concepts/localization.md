@@ -23,7 +23,7 @@ We also provide two properties to customize your localization, `PESDK.localizati
 
 ## Localization Dictionary
 
-The first method to add another language is to set `PESDK.localizationDictionary` to a dictionary containing your localizations. The key of the dictionary needs to be the locale that you want to add, the value should be another dictionary containing the string that needs to be localized as the key and the localized version as the value. And example for the German language might look like this:
+The first method to add another language is to set `PESDK.localizationDictionary` to a dictionary containing your localizations. The key of the dictionary needs to be the locale that you want to add, the value should be another dictionary containing the string that needs to be localized as the key and the localized version as the value. An example for the German language might look like this:
 
 {% capture first_snippet %}
 Swift
@@ -31,9 +31,9 @@ Swift
 ```swift
 PESDK.localizationDictionary = [
   "de": [
-    "No permission" : "Keine Berechtigung",
-    "Top left cropping area" : "Zuschneidebereich oben links",
-    "Settings" : "Einstellungen"
+    "No permission": "Keine Berechtigung",
+    "Top left cropping area": "Zuschneidebereich oben links",
+    "Settings": "Einstellungen"
   ]
 ]
 ```
@@ -43,15 +43,13 @@ PESDK.localizationDictionary = [
 Objective-C
 ---
 ```objc
-[PESDK setLocalizationDictionary:
- @{
-   @"de": @{
-     @"No permission" : @"Keine Berechtigung",
-     @"Top left cropping area" : @"Zuschneidebereich oben links",
-     @"Settings" : @"Einstellungen"
-   }
- }
-];
+[PESDK setLocalizationDictionary: @{
+  @"de": @{
+    @"No permission": @"Keine Berechtigung",
+    @"Top left cropping area": @"Zuschneidebereich oben links",
+    @"Settings": @"Einstellungen"
+  }
+}];
 ```
 {% endcapture %}
 

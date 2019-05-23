@@ -57,7 +57,7 @@ let stickers = [
   Bundle.main.url(forResource: "snowflake", withExtension: "png"),
   Bundle.main.url(forResource: "star", withExtension: "png"),
   Bundle.main.url(forResource: "teardrop", withExtension: "png")
-].flatMap { $0.map { Sticker(imageURL: $0, thumbnailURL: nil, identifier: $0.path) } }
+].compactMap { $0.map { Sticker(imageURL: $0, thumbnailURL: nil, identifier: $0.path) } }
 
 if let previewURL = Bundle.main.url(forResource: "face_decor", withExtension: "png") {
   categories.append(StickerCategory(title: "Oldschool", imageURL: previewURL, stickers: stickers))

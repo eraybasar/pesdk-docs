@@ -25,7 +25,7 @@ However, if you want full control over the SDK and the possibility to subclass c
 
 For more information about Swift and Objective-C interoperability please refer to [Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html).
 
-#### Prefixes
+## Prefixes
 
 With the introduction of modules in Swift, there is no need for class prefixes anymore, therefore we removed
 all class prefixes in Swift. For Objective-C, we added prefixed declarations. For example, the `CameraViewController` can be used from Objective-C and can be found under its alias `PESDKCameraViewController`.
