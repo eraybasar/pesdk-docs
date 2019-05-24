@@ -29,10 +29,11 @@ Open your project in Android Studio:
 
 ![Res Folder]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_res_files.png){: width="400px"}
 
-### Use light theme for UI
+### Use light theme UI color schema
 
-Open the `res/values/imgly_color.xml` in your project and use the following colors instead of the default color set to get a light themed UI.
-Due to a limitation of Android 4, it is currently not possible to change the colors theme at runtime, you need to add these colors at compile time.
+Follow these instruction, if you want to have light UI colors instead the the default black ones.
+Create a resource values file ex. `res/values/imgly_color.xml` in your project and copy these colors values to override the default color set.
+_Due to a limitation of Android 4, it is currently not possible to change the colors theme at runtime, you need to add these colors at compile time._
 
 ```xml
 <color name="imgly_transparent_color">#00000000</color>
