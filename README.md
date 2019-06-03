@@ -1,20 +1,25 @@
 # Documentation of the PhotoEditor SDK
 
 ## Run locally
-The docs are generated using [Jekyll](https://jekyllrb.com/). In order to run them locally, install Jekyll:
-```
-$ gem install --path=vendor
+
+The docs are generated using [Jekyll](https://jekyllrb.com/). In order to build
+and run them, install `bundler`, the Ruby dependency management tool, in your
+system.
+
+Then install the dependencies:
+```sh
+$ bundle install --path=vendor
 ```
 
 To build the site:
 
-```
+```sh
 $ bundle exec jekyll build
 ```
 
 And launch it:
 
-```
+```sh
 $ bundle exec jekyll serve
 ```
 
