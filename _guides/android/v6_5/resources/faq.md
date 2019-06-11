@@ -68,12 +68,12 @@ If this is not possible for any reason, you can see our configuration here. Make
 # Keep annotaions accessed by reflections.
 -keep class ly.img.android.pesdk.backend.model.constant.RevertStrategy { *; }
 
-# Keep PESDKInit access over reflections.
--keepclasseswithmembernames class * { @ly.img.android.PESDKInit *; }
+# Keep PESDKInit, accessed over reflections.
+-keep class ly.img.android.PESDKInit { *; }
 
- # -----------------------------------------------------------------------------#
-# --- We need this roules to workaround a memory issue in the support libary. ---#
- # -----------------------------------------------------------------------------#
+ # ----------------------------------------------------------------------------- #
+# --- We need this roules to workaround a memory issue in the support libary. --- #
+ # ----------------------------------------------------------------------------- #
 -keep class android.support.graphics.drawable.VectorDrawableCompat {
     private android.support.graphics.drawable.VectorDrawableCompat$VectorDrawableCompatState mVectorState;
 }
