@@ -32,7 +32,7 @@ Our Adjustment tool is our swiss army knife for image optimization. It offers es
 
 In order to enable or disable specific adjustments, simply pass the `availableAdjustments` option to
 the adjustments controls. This option should be an array of adjustment identifiers of which the following
-are available: `brightness`, `saturation`, `contrast`, `gamma`, `clarity`, `exposure`, `shadows`, `highlights`
+are available: `brightness`, `saturation`, `contrast`, `gamma`, `sharpness`, `clarity`, `exposure`, `shadows`, `highlights`, `whites`, `blacks`, `temperature`
 
 
 {% capture first_snippet %}
