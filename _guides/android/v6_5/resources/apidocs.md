@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 
 redirect_to: 
-  - /apidocs/android/v6_5/
+  - /apidocs/android/v6_4/
 ---
