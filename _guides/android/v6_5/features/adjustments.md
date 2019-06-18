@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Adjustments # title as shown in the menu and 
 description: The Adjustment tool set of the PhotoEditor SDK for Android offers essential and advanced editing functions like Brightness, Contrast, Saturation or Exposure
 menuitem: *title
-order: 3
+order: 0
 platform: android
 version: v6_5
 category: 

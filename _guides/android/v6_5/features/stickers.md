@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Stickers # title as shown in the menu and 
 description: The PhotoEditor SDK for Android ships with a preset sticker library containing emoticons and shapes. Learn how to add custom sticker packages to the library
 menuitem: *title
-order: 6
+order: 7
 platform: android
 version: v6_5
 category: 
@@ -188,3 +188,50 @@ settingsList.getSettingsModel(UiConfigSticker::class.java).apply {
 {% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configStickerUi | push: second_snippet_ExampleConfigUtility_configStickerUi %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configStickerUi{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Adding mandatory sticker
+
+To set adding stickers on images as a mandatory step, the application has to check if a sticker has been added to an edited image. For this you can check the layer list. To achieve this effect, add a custom `MyUiStateMenu` and override `UiStateMenu` like this:
+
+```java
+@ly.img.android.pesdk.annotations.StateEvents
+public class MyUiStateMenu extends UiStateMenu {
+ 
+    @Override
+    public void notifySaveClicked() {
+        List<LayerListSettings.LayerSettings> layerList = getStateModel(LayerListSettings.class).getLayerSettingsList();
+ 
+        boolean hasSticker = false;
+ 
+        for (int i = 0; i < layerList.size(); i++) {
+            if (layerList.get instanceof ImageStickerLayerSettings) { 
+                hasSticker = true;
+            }
+        }
+ 
+        if (hasSticker) { 
+            super.notifySaveClicked();
+        } else {
+            Toast.makeText(PESDK.getAppContext(), "You have to add a sticker!", Toast.LENGTH_LONG).show();
+        }
+ 
+    }
+ 
+    @MainThread
+    @OnEvent(value = PESDKEvents.LayerListSettings_SELECTED_LAYER, ignoreReverts = true)
+    protected void onLayerListSettingsChanged(LayerListSettings listSettings) {
+        super.onLayerListSettingsChanged(listSettings);
+    }
+ 
+}
+```
+
+Now you have to replace the old state class with the new one. You can do this in the `MainActivity` like this:
+
+```java
+StateHandler.replaceStateClass(UiStateMenu.class, MyUiStateMenu.class);
+```
+
+CAUTION: You must use SDK version v6.2.8 or later. An error occurred that did not allow you to change the status class correctly.
+
+To make 'adding mandatory stickers' skippable use a `AcceptTextButton` instead of an `AcceptButton` and then change the label (`R.string.pesdk_editor_accept`) to "Skip".

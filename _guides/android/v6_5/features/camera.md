@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Camera # title as shown in the menu and 
 description: The PhotoEditor SDK offers a camera implementation for Android to complement your editor, featuring essential camera components as well as live filters.
 menuitem: *title
-order: 0
+order: 2
 platform: android
 version: v6_5
 category: 
@@ -271,5 +271,11 @@ class KCameraDemoActivity : Activity(), PermissionRequest.Response {
 {% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_CameraDemoActivity | push: second_snippet_CameraDemoActivity %}
 {% capture identifier %}{{page.title}}-{{page.version}}-CameraDemoActivity{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+### Disable editor to open
+To prevent the 'editor screen' to open after taking a photo and to stay on 'capture mode' use this code:
+```
+settingsList.getSettingsModel(CameraSettings.class).setOpenEditorAfterCapture(false);
+```
 
 For more details, take a look at our [getting started]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/getting_started) section.

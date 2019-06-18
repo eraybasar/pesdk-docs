@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Migration from v5 # title as shown in the menu and
 description: Look for a straightforward migration of the PhotoEditor SDK v5.
 menuitem: *title
-order: 3
+order: 4
 platform: android
 version: v6_5
 category:
@@ -20,7 +20,7 @@ We try to keep the external api, as good as possible, but unfortunately this is 
 
 ## Migrate from v5 to v6
 
-## 1. Step, update the project `build.gradle`
+### 1. Step, update the project `build.gradle`
 
 Starting with v6 we have introduced a Gradle plugin, written in groovy to keep the integration as simple as possible for you.
 To enable this plugin you have to prepare you project `build.gradle` file at first.
@@ -37,7 +37,7 @@ buildscript {
     dependencies {
 
         // And plugin dependency with the lates available version
-        classpath 'ly.img.android.pesdk:plugin:6.5.0'
+        classpath 'ly.img.android.pesdk:plugin:6.5.1'
 
         // Update you gradle version at least to v3.1.3
         classpath 'com.android.tools.build:gradle:3.1.3'
@@ -53,7 +53,7 @@ allprojects {
 }
 ```
 
-## 2. Step, remove unused configs from your application `build.gradle`
+### 2. Step, remove unused configs from your application `build.gradle`
 
 Starting with v6, some of the configurations needed for the SDK are handled by the PESDK-Plugin itself.
 
@@ -76,7 +76,7 @@ dependencies {
 }
 ```
 
-## 3. Step apply the PESDK-Plugin to your application `build.gradle`
+### 3. Step apply the PESDK-Plugin to your application `build.gradle`
 
 Starting with v6, the SDK is split into separate modules, the plugin is set up and the required modules are defined.
 
@@ -446,4 +446,29 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 {% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_EditorDemoActivity | push: second_snippet_EditorDemoActivity %}
 {% capture identifier %}{{page.title}}-{{page.version}}-EditorDemoActivity{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Changed API
+
+The system has changed slightly with the SDK update to version 6 and in some cases there is no corresponding API. Here is a list of the most important API changes and some examples how to use it now:
+
+`PESDKConfig` ->    `TransformSettings`,
+                    `FilterSettings`,
+                    `ColorAdjustmentSettings`,
+                    `FocusSettings`,
+                    `ImageStickerLayerSettings`,
+                    `TextLayerSettings`,
+                    `TextDesignLayerSettings`,
+                    `OverlaySettings`,
+                    `FrameSettings`,
+                    `BrushSettings`
+                    
+`EditorMenuState` -> `UiStateMenu`
+
+`AbstractEditorTool` -> `AbstractToolPanel`
+
+`AspectConfigInterface` & `CropAspectConfig` -> `CropAspectAsset` & `UiConfigAspect`
+
+`PESDKEvents.EditorMenuState_TOOL_STACK_CHANGED` -> `PESDKEvents.UiStateMenu_TOOL_STACK_CHANGED`
+
+
 

@@ -1,9 +1,9 @@
 ---
 layout: guides/content
-title: &title Styling # title as shown in the menu and
+title: &title Interface # title as shown in the menu and
 
 menuitem: *title
-order: 0
+order: 1
 platform: android
 version: v6_5
 category:
@@ -15,25 +15,13 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
+The user interface can be customized in various ways with increasing complexity.
 
-It's easy to customize the PhotoEditor Android SDK's style.
-​All resource and style identifier can be overwritten. They have the prefix: `imgly_` e.g. `Imgly.`
-​
-### Download the Default Layout as Reference
-For an easy creation of a new interface design simply download our {% include guides/android/demo-repository.md %} and extract the `res` subfolder from the `default_res_files` folder.
+### Theming
 
-### Prepare your Project
-Copy and paste the downloaded files (only the files, not the folder) into the res folder of your own app module.
-
-Open your project in Android Studio:
-
-![Res Folder]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_res_files.png){: width="400px"}
-
-### Use light theme UI color schema
-
-Follow these instruction, if you want to have light UI colors instead the the default black ones.
-Create a resource values file ex. `res/values/imgly_color.xml` in your project and copy these colors values to override the default color set.
-_Due to a limitation of Android 4, it is currently not possible to change the colors theme at runtime, you need to add these colors at compile time._
+The default is a dark color theme but there is also a predefined light color theme which can be applied as follows:
+If you do not have already done, create a resource values file (`res/values/imgly_color.xml`) in your project and copy these color values to override the default color set.
+_Due to a limitation of Android 4, it is currently not possible to change the color theme at runtime, you need to add these colors at compile time._
 
 ```xml
 <color name="imgly_transparent_color">#00000000</color>
@@ -81,30 +69,13 @@ _Due to a limitation of Android 4, it is currently not possible to change the co
 <color name="imgly_camera_icon_color">#CCFFFFFF</color>
 ```
 
-### Change default icons
 
-You can add your own icons:
 
-![Icon size]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_icon_size.png){: width="400px"}
 
-Please make sure, that you overwrite the icon in all densities.
 
-* Put a 48x48px icon file into the drawable-mdpi folder (1.0x baseline) for medium-density
-* Put a 72x72px icon file into the drawable-hdpi folder \(1.5x) for high-density
-* Put a 96x96px icon file into the drawable-xhdpi folder (2.0x) for extra-high-density
-* Put a 180x180px icon file into the drawable-xxhdpi folder (3.0x) for extra-extra-high-density
-* Put a 192x192px icon file into the drawable-xxxhdpi folder (4.0x) for extra-extra-extra-high-density
 
-There are two special files inside this project: `imgly_icon_option_selected_color.png` and `imgly_icon_option_selected_color_bg.png`.
-Both combined will create an icon which will be used for both the fore- and background colorpicking for the sticker.
-
-The white color values from `imgly_icon_option_selected_color.png` replace and overlays the content from `imgly_icon_option_selected_color_bg.png` with the chosen color within the runtime.
-
-### Change default colors
-
-Open the `res/values/imgly_color.xml` in your project and edit the specific ARGB Hex value or double tap the color rect on the left side of the line to open the color picker
-
-![Colors]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_colors.png){: width="600px"}
+​All resource and style identifier can be overwritten. They have the prefix: `imgly_` e.g. `Imgly.`
+​
 
 ### Change Layout
 
@@ -231,12 +202,3 @@ Here are examples of what it can look like.
         android:layout_centerHorizontal="true"/>
 </ly.img.android.pesdk.ui.widgets.EditorRootView>
 ```
-
-
-### Declaring layout guides
-
-For more information look at the [Google Developer Guides]( http://developer.android.com/guide/topics/ui/declaring-layout.html).
-
-### See an example
-
-You can find a finished example with a customized design in our {% include guides/android/demo-repository.md %}. Just take a look at the `CustomizeLayoutExample` folder.

@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Overlays # title as shown in the menu and 
 
 menuitem: *title
-order: 7
+order: 6
 platform: android
 version: v6_5
 category: 

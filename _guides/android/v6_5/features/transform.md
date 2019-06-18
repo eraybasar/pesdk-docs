@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Transform # title as shown in the menu and 
 description: The transform tool of the PhotoEditor SDK for Android unifies cropping, flipping and rotation operations. Learn how to add custom crop ratios to the library
 menuitem: *title
-order: 4
+order: 10
 platform: android
 version: v6_5
 category: 

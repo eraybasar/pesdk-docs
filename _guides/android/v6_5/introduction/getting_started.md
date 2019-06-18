@@ -17,15 +17,25 @@ tags: &tags # tags that are necessary
 published: true # Either published or not 
 ---
 
-
 This document guides you through the process of integrating the PhotoEditor SDK into your Android
 application.
+
+<div class="documentation__disclaimer">
+<h4 id="androidx-news">Update for AndroidX</h4>
+Recently, we have come across a bug that, unfortunately, affects our PhotoEditor SDK for Android if it is being updated with AndroidX. After some investigation on this matter, we found out that Google knows about it, but has not yet been able to solve it. In this reference (https://issuetracker.google.com/issues/119582492) you will currently find further information. However, we are currently working on a fix by establishing a new renderer for this matter. *Generally, we’d kindly ask you to refrain from updating to Android X at this stage*. We will keep you posted once our solution for the PhotoEditor SDK allows you to use AndroidX without any constraints or concerns.
+</div>
 
 ## Integration Tutorial
 
 We made an awesome video tutorial for you.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FpmASFvgUdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div class="documentation__disclaimer">
+<h4 id="license-terms">Using a Trial License</h4>
+Make sure you have a standard license before adding it properly to your running project. A trial license is valid for only 30 days and will afterwards disable the export function for your customers. Your trial license should therefore be removed and substituted by a standard license. More information can be found <a href="{{site.baseUrl}}/guides/html5/v4/introduction/faq/standard_or_trial_license">here</a>.
+</div>
 
 ## Prerequisites
 
@@ -70,7 +80,7 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:6.5.0'
+        classpath 'ly.img.android.pesdk:plugin:6.5.1'
     }
 }
 ```

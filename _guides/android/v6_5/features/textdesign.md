@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Text Design # title as shown in the menu and
 description: The TextDesign tool of the PhotoEditor SDK for Android offers a automated text layouting engine.
 menuitem: *title
-order: 3
+order: 9
 platform: android
 version: v6_5
 category: 
@@ -77,3 +77,18 @@ settingsList.getSettingsModel(UiConfigTextDesign::class.java).apply {
 {% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configTextDesigns | push: second_snippet_ExampleConfigUtility_configTextDesigns %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configTextDesigns{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Initial Text Design 
+
+To determine a specific Text Design Item as the initial Text Design on opening the feature add the following code example:
+
+```java
+// Create TextDesignLayerSettings with some of the available Layouts ("TextDesign*()")
+TextDesignLayerSettings textDesignLayer = new TextDesignLayerSettings(new TextDesignBlocks());
+// Set a Text
+textDesignLayer.setText("Tap here to edit your text");
+// Set a fixed seed, to have always the same TextDesign Layout, otherwise, the seed is taken randomly, so the layout will switch randomly.
+textDesignLayer.setSeed(12345L);
+// Add the Layer to your settingsList
+settingsList.getSettingsModel(LayerListSettings.class).addLayer(textDesignLayer);
+```

@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Frames # title as shown in the menu and 
 description: The PhotoEditor SDK for Android provides a quick and easy way for adding frames to any creative. Learn how to add custom frame assets to the library.
 menuitem: *title
-order: 9
+order: 5
 platform: android
 version: v6_5
 category: 

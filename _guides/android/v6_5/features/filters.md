@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Filters # title as shown in the menu and 
 description: The PhotoEditor SDK for Android features more than 60 high-quality filters with lightning fast processing. Learn how to easily add your own custom filters.
 menuitem: *title
-order: 1
+order: 3
 platform: android
 version: v6_5
 category: 

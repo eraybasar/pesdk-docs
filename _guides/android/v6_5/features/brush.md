@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Brush # title as shown in the menu and 
 
 menuitem: *title
-order: 8
+order: 1
 platform: android
 version: v6_5
 category: 

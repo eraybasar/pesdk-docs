@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Text # title as shown in the menu and 
 description: The PhotoEditor SDK for Android ships with a robust tool that provides all necessary functions for quickly adding text. Learn how to add custom fonts.
 menuitem: *title
-order: 5
+order: 8
 platform: android
 version: v6_5
 category: 
@@ -27,7 +27,7 @@ The SDK comes with a predefined set of fonts, which you can examine in our demo 
 
 ![Editor Fonts]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/screenshot_text_fonts.jpg){: height="400px" .center-image}
 
-To add new fonts add them to the Assets
+To add new fonts add them to the Assets first. A good place to do that is the `MainActivity` when creating the `SettingsList`.
 
 {% capture first_snippet_ExampleConfigUtility_configFontAssets %}
 Java
@@ -96,7 +96,7 @@ settingsList.getSettingsModel(AssetConfig::class.java)!!.getAssetMap(FontAsset::
 {% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configFontAssets{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-In order to change the available fonts or rearrange them, start with a default [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use [`getSettingsModel(UiConfigText.class)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/model/state/UiConfigText.html) and the [`setFontList(ly.img.android.pesdk.ui.panels.item.FontItem...)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/model/state/UiConfigText.html) method to add your filter selection as a list of [`FontItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/item/FontItem.html) objects:
+In order to change the available fonts or rearrange them, start with a default [`SettingsList`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/manager/SettingsList.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section and use [`getSettingsModel(UiConfigText.class)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/model/state/UiConfigText.html) and the [`setFontList(ly.img.android.pesdk.ui.panels.item.FontItem...)`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/model/state/UiConfigText.html) method to add your font selection as a list of [`FontItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/item/FontItem.html) objects:
 
 {% capture first_snippet_ExampleConfigUtility_configTextUi %}
 Java
