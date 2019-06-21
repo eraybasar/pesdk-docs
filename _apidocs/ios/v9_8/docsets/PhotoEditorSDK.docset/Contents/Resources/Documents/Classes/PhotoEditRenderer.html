@@ -1954,9 +1954,9 @@ instance of <code>Data</code> once rendering is complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage2in2to10targetSize9transform15backgroundColor7nearest13forceCropHackSo7CIImageCSo11EAGLContextC_So6CGRectVSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgS2btF"></a>
-                    <a name="//apple_ref/swift/Method/drawOutputImage(in:to:targetSize:transform:backgroundColor:nearest:forceCropHack:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage2in2to10targetSize9transform15backgroundColor7nearest13forceCropHackSo7CIImageCSo11EAGLContextC_So6CGRectVSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgS2btF">drawOutputImage(in:to:targetSize:transform:backgroundColor:nearest:forceCropHack:)</a>
+                    <a name="/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage2in2to10targetSize9transform15backgroundColor0nH07nearest13forceCropHackSo7CIImageCSo11EAGLContextC_So6CGRectVSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgANSgS2btF"></a>
+                    <a name="//apple_ref/swift/Method/drawOutputImage(in:to:targetSize:transform:backgroundColor:backgroundImage:nearest:forceCropHack:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage2in2to10targetSize9transform15backgroundColor0nH07nearest13forceCropHackSo7CIImageCSo11EAGLContextC_So6CGRectVSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgANSgS2btF">drawOutputImage(in:to:targetSize:transform:backgroundColor:backgroundImage:nearest:forceCropHack:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1971,7 +1971,7 @@ instance of <code>Data</code> once rendering is complete.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">drawOutputImage</span><span class="p">(</span><span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">EAGLContext</span><span class="p">,</span> <span class="n">to</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">targetSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">transform</span><span class="p">:</span> <span class="kt">CGAffineTransform</span> <span class="o">=</span> <span class="kt">CGAffineTransform</span><span class="o">.</span><span class="n">identity</span><span class="p">,</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nearest</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">forceCropHack</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CIImage</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">drawOutputImage</span><span class="p">(</span><span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">EAGLContext</span><span class="p">,</span> <span class="n">to</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">targetSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">transform</span><span class="p">:</span> <span class="kt">CGAffineTransform</span> <span class="o">=</span> <span class="kt">CGAffineTransform</span><span class="o">.</span><span class="n">identity</span><span class="p">,</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">backgroundImage</span><span class="p">:</span> <span class="kt">CIImage</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nearest</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">forceCropHack</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CIImage</span></code></pre>
 
                         </div>
                       </div>
@@ -2035,7 +2035,19 @@ instance of <code>Data</code> once rendering is complete.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>An optional background color.</p>
+                                  <p>An optional background color with infinite extents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backgroundImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional background image which will be cropped to the output image extents and it will be visible in transparent areas of the output image.</p>
                                 </div>
                               </td>
                             </tr>
@@ -2193,9 +2205,9 @@ instance of <code>Data</code> once rendering is complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage3for2in2to12commandQueue10targetSize9transform15backgroundColor7nearest16presentAndCommit5labelAC15DrawReturnValueCSgSo9MTLDevice_p_So15CAMetalDrawable_pSo6CGRectVSo010MTLCommandM0_pSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgS2bSSSgtF"></a>
-                    <a name="//apple_ref/swift/Method/drawOutputImage(for:in:to:commandQueue:targetSize:transform:backgroundColor:nearest:presentAndCommit:label:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage3for2in2to12commandQueue10targetSize9transform15backgroundColor7nearest16presentAndCommit5labelAC15DrawReturnValueCSgSo9MTLDevice_p_So15CAMetalDrawable_pSo6CGRectVSo010MTLCommandM0_pSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgS2bSSSgtF">drawOutputImage(for:in:to:commandQueue:targetSize:transform:backgroundColor:nearest:presentAndCommit:label:)</a>
+                    <a name="/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage3for2in2to12commandQueue10targetSize9transform15backgroundColor0qH07nearest16presentAndCommit5labelAC15DrawReturnValueCSgSo9MTLDevice_p_So15CAMetalDrawable_pSo6CGRectVSo010MTLCommandM0_pSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgSo7CIImageCSgS2bSSSgtF"></a>
+                    <a name="//apple_ref/swift/Method/drawOutputImage(for:in:to:commandQueue:targetSize:transform:backgroundColor:backgroundImage:nearest:presentAndCommit:label:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14PhotoEditorSDK0A12EditRendererC15drawOutputImage3for2in2to12commandQueue10targetSize9transform15backgroundColor0qH07nearest16presentAndCommit5labelAC15DrawReturnValueCSgSo9MTLDevice_p_So15CAMetalDrawable_pSo6CGRectVSo010MTLCommandM0_pSo6CGSizeVSgSo17CGAffineTransformVSo7UIColorCSgSo7CIImageCSgS2bSSSgtF">drawOutputImage(for:in:to:commandQueue:targetSize:transform:backgroundColor:backgroundImage:nearest:presentAndCommit:label:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2211,7 +2223,7 @@ instance of <code>Data</code> once rendering is complete.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">open</span> <span class="kd">func</span> <span class="nf">drawOutputImage</span><span class="p">(</span><span class="k">for</span> <span class="nv">device</span><span class="p">:</span> <span class="kt">MTLDevice</span><span class="p">,</span> <span class="k">in</span> <span class="nv">drawable</span><span class="p">:</span> <span class="kt">CAMetalDrawable</span><span class="p">,</span> <span class="n">to</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">commandQueue</span><span class="p">:</span> <span class="kt">MTLCommandQueue</span><span class="p">,</span> <span class="nv">targetSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">transform</span><span class="p">:</span> <span class="kt">CGAffineTransform</span> <span class="o">=</span> <span class="kt">CGAffineTransform</span><span class="o">.</span><span class="n">identity</span><span class="p">,</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nearest</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">presentAndCommit</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">label</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/PhotoEditRenderer/DrawReturnValue.html">DrawReturnValue</a></span><span class="p">?</span></code></pre>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">drawOutputImage</span><span class="p">(</span><span class="k">for</span> <span class="nv">device</span><span class="p">:</span> <span class="kt">MTLDevice</span><span class="p">,</span> <span class="k">in</span> <span class="nv">drawable</span><span class="p">:</span> <span class="kt">CAMetalDrawable</span><span class="p">,</span> <span class="n">to</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">commandQueue</span><span class="p">:</span> <span class="kt">MTLCommandQueue</span><span class="p">,</span> <span class="nv">targetSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">transform</span><span class="p">:</span> <span class="kt">CGAffineTransform</span> <span class="o">=</span> <span class="kt">CGAffineTransform</span><span class="o">.</span><span class="n">identity</span><span class="p">,</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">backgroundImage</span><span class="p">:</span> <span class="kt">CIImage</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nearest</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">presentAndCommit</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">label</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/PhotoEditRenderer/DrawReturnValue.html">DrawReturnValue</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -2299,7 +2311,19 @@ instance of <code>Data</code> once rendering is complete.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>An optional background color.</p>
+                                  <p>An optional background color with infinite extents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backgroundImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional background image which will be cropped to the output image extents and it will be visible in transparent areas of the output image.</p>
                                 </div>
                               </td>
                             </tr>
@@ -2357,7 +2381,7 @@ instance of <code>Data</code> once rendering is complete.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-06-13)</p>
+      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-06-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
