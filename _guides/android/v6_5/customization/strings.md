@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title Changing strings # title as shown in the menu and
+title: &title Strings / Localization # title as shown in the menu and
 
 menuitem: *title
 order: 4

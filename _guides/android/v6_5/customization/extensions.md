@@ -17,6 +17,105 @@ published: true # Either published or not
 
 Our SDK is extremely customizable and extendable. If you want to add your own items, views or panels you can do it with extending our base classes.
 
+### Custom view example
+
+If you want to change a view or you want to adjust the behavior of a view, you don't need to be afraid. Our event system gives you the opportunity to customize any interactive element with ease.
+First, create a new class that extends the desired view type. For interactive views like buttons, you have to implement the `OnClickListener` and set it to `setOnClickListener(this)` at the beginning.
+To get the status of the menu you need the `StateHandler`. You can access it as in the following example.
+Now you can write your own method that responds to the event calls. All events are listed in `PESDKEvents`. For example, event tags that belong to the state of the UI all start with `UiStateMenu_`.
+You also need a second class to replace the old view and modify its behavior. In this case, it is similar to the first class, but you have to reverse the visibility.
+The following example shows you how to create a new export button instead of the small button in the action bar.
+
+```java
+public class ExampleCustomExportButton extends Button implements View.OnClickListener {
+
+    private UiStateMenu settings;
+
+    public ExampleCustomExportButton(Context context) {
+        super(context);
+        init();
+    }
+
+    public ExampleCustomExportButton(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public ExampleCustomExportButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+    private void init() {
+        setText("Export Button");
+        setOnClickListener(this);
+    }
+
+    @MainThread
+    @OnEvent(value = {
+      PESDKEvents.UiStateMenu_ENTER_TOOL,
+      PESDKEvents.UiStateMenu_LEAVE_TOOL,
+      PESDKEvents.UiStateMenu_LEAVE_AND_REVERT_TOOL
+    }, triggerDelay = 30)
+    protected void onToolChanged() {
+        AbstractToolPanel currentTool = settings != null ? settings.getCurrentTool() : null;
+        if (currentTool != null && currentTool.isAttached()) {
+            setVisibility(currentTool.isAcceptable() ? View.VISIBLE : View.GONE);
+            if (UiStateMenu.MAIN_TOOL_ID.equals(settings.getCurrentPanelData().getId())) {
+                setVisibility(View.VISIBLE);
+            } else {
+                setVisibility(View.INVISIBLE);
+            }
+        }
+    }
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        try {
+            StateHandler stateHandler = StateHandler.findInViewContext(getContext());
+            stateHandler.registerSettingsEventListener(this);
+            settings = stateHandler.getStateModel(UiStateMenu.class);
+        } catch (StateHandler.StateHandlerNotFoundException ignored) {
+            ignored.printStackTrace();
+        }
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        settings.notifySaveClicked();
+    }
+}
+```
+
+Now you need to change the type of view in the `imgly_widget_actionbar.xml` from `AcceptButton` to the name of your class. Then you have to add the new button in the file `imgly_activity_photo_editor.xml` to display it in the editor.
+Here are examples of what it can look like.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ly.img.android.pesdk.ui.widgets.EditorRootView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    style="@style/Imgly.PESDK.Editor.Activity">
+    <ly.img.android.pesdk.backend.views.EditorPreview
+        android:id="@+id/editorImageView"
+        style="@style/Imgly.PESDK.Editor.Activity.Preview"/>
+    <ly.img.android.pesdk.ui.widgets.ProgressView
+        style="@style/Imgly.PESDK.Editor.Activity.Progress"/>
+    <ly.img.android.pesdk.ui.widgets.ToolContainer
+        android:id="@+id/toolPanelContainer"
+        style="@style/Imgly.PESDK.Editor.Activity.ToolPanelContainer"/>
+    <ly.img.android.pesdk.ui.widgets.ImgLyTitleBar
+        android:id="@+id/imglyActionBar"
+        style="@style/Imgly.PESDK.Editor.Activity.ActionBar"/>
+    <ly.img.android.pesdk.ui.widgets.buttons.ExampleCustomExportButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+</ly.img.android.pesdk.ui.widgets.EditorRootView>
+```
+
 ### Locked custom Items
 To make certain items unavailable (lock an item) to the user, but let them still be visible you have to extend the regarding class following this example:
 

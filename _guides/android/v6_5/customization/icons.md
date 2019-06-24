@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title Changing icons # title as shown in the menu and
+title: &title Icons # title as shown in the menu and
 
 menuitem: *title
 order: 3

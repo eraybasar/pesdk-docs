@@ -12,7 +12,7 @@ published: true
 faq: true
 faq-category: general
 order: 4
-title: Video
+title: Video editing
 ---
 
 The PhotoEditor SDK is not capable of editing or recording videos. We are currently working on our own VideoEditor SDK wich will be capable of editing and recording videos.
