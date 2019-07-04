@@ -39,7 +39,7 @@ Now you can edit all style attributes. It's also possible to override the style 
 
 ![Edit style]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/imgly_edit_style.png){: width="800px"}
 
-If you want text instead of icons in the `ActionBar`, change the tag name in the button’s XML layout from ly.img.android.pesdk.ui.widgets.buttons.AcceptButton to ly.img.android.pesdk.ui.widgets.buttons.AcceptTextButton. The same works for the Cancel button, just use ly.img.android.pesdk.ui.widgets.buttons.CancelTextButton.
+If you want text instead of icons in the `ActionBar`, change the tag name in the button’s XML layout from `ly.img.android.pesdk.ui.widgets.buttons.AcceptButton` to `ly.img.android.pesdk.ui.widgets.buttons.AcceptTextButton`. The same works for the Cancel button, just use `ly.img.android.pesdk.ui.widgets.buttons.CancelTextButton`.
 The styling for the buttons may look like the following example.
 
 ```xml
