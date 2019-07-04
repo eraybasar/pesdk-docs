@@ -29,8 +29,7 @@ Recently, we have come across a bug that, unfortunately, affects our PhotoEditor
 
 We made an awesome video tutorial for you.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FpmASFvgUdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FpmASFvgUdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
 <div class="documentation__disclaimer">
 <h4 id="license-terms">Using a Trial License</h4>

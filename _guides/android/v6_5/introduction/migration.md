@@ -468,6 +468,8 @@ The system has changed slightly with the SDK update to version 6 and in some cas
 
 `AspectConfigInterface` & `CropAspectConfig` -> `CropAspectAsset` & `UiConfigAspect`
 
+`ImageStickerConfig` -> `ImageStickerAsset` & `UiConfigSticker`
+
 `PESDKEvents.EditorMenuState_TOOL_STACK_CHANGED` -> `PESDKEvents.UiStateMenu_TOOL_STACK_CHANGED`
 
 
