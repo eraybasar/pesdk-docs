@@ -1,5 +1,5 @@
 ---
 layout: default
 redirect_to:
-  - '/apidocs/android/v5/'
+  - '/apidocs/android/v6_5/'
 ---
