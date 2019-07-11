@@ -77,4 +77,5 @@ _Due to a limitation of Android 4, it is currently not possible to change the co
 <color name="imgly_icon_color_secondary">#99000000</color>
 <color name="imgly_camera_background_color">#FF000000</color>
 <color name="imgly_camera_icon_color">#CCFFFFFF</color>
+<color name="imgly_transform_background_color">#80000000</color>
 ```
