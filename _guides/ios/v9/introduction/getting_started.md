@@ -17,10 +17,13 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
+## Integration Tutorial
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AHzD4Mnm-NA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
 ## Requirements
 
-PhotoEditor SDK 8 requires Xcode 9.0, Swift 4.0 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
+PhotoEditor SDK 9 requires Xcode 10.0, Swift 4.2 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
 
 ## CocoaPods
 
