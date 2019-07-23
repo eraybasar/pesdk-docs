@@ -15,6 +15,10 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
+## Integration Tutorial
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ZfEN3LMJU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
 
 Integrating our editor into your web application is easy as pie. However, if you can't wait  to see the editor in action you can find a working demo integration [here](https://www.photoeditorsdk.com/html5-demo).
 
