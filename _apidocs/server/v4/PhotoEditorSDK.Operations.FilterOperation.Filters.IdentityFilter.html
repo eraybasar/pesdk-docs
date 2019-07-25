@@ -2296,6 +2296,8 @@
             
                 <li data-name="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack#isDirtyForRenderer"><a href="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack.html#isDirtyForRenderer">isDirtyForRenderer</a></li>
             
+                <li data-name="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack#isEmpty"><a href="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack.html#isEmpty">isEmpty</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack#push"><a href="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack.html#push">push</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack#render"><a href="PhotoEditorSDK.Operations.FilterOperation.Filter.PrimitivesStack.html#render">render</a></li>
@@ -3022,12 +3024,6 @@
             
             </ul>
             <ul class="methods itemMembers">
-            
-            <span class="subtitle">Methods</span>
-            
-                <li data-name="PhotoEditorSDK.Operations.FilterOperation.Filters.IdentityFilter#hasChanges"><a href="PhotoEditorSDK.Operations.FilterOperation.Filters.IdentityFilter.html#hasChanges">hasChanges</a></li>
-            
-                <li data-name="PhotoEditorSDK.Operations.FilterOperation.Filters.IdentityFilter#render"><a href="PhotoEditorSDK.Operations.FilterOperation.Filters.IdentityFilter.html#render">render</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -4370,7 +4366,7 @@
 
 <header>
     <h2>
-        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.Operations.html">.Operations</a><a href="PhotoEditorSDK.Operations.FilterOperation.html">.FilterOperation</a><a href="PhotoEditorSDK.Operations.FilterOperation.Filters.html">.Filters</a>.</span>
+        <span class="ancestors"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a><a href="PhotoEditorSDK.Operations.html">.Operations</a><a href="PhotoEditorSDK.Operations.FilterOperation.html">.FilterOperation</a><a href="PhotoEditorSDK.Operations.FilterOperation.Filters.html">.Filters</a>~</span>
     
     IdentityFilter
     </h2>
@@ -4389,12 +4385,12 @@
     <div class="nameContainer">
         <h4 class="name" id="IdentityFilter">
             
-            new PhotoEditorSDK.Operations.FilterOperation.Filters.IdentityFilter<span class="signature">()</span>
+            new IdentityFilter<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            sdk/operations/filter-operation/filters/identity-filter.js, line 25
+            sdk/operations/filter-operation/filters/identity-filter.js, line 27
         </div>
         
     </div>
@@ -4523,278 +4519,6 @@
         </dl>
     
 
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        <dl>
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="hasChanges">
-            
-            hasChanges<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Boolean}</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/filter-operation/filters/identity-filter.js, line 40
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Checks if the operation has changes/modifications</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        Boolean
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="render">
-            
-            render<span class="signature">(sdk, inputTexture)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/filter-operation/filters/identity-filter.js, line 32
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Renders the filter</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>sdk</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="PhotoEditorSDK.html">PhotoEditorSDK</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>inputTexture</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Engine.RenderTexture</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        Promise
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        </dl>
     
 
     
