@@ -15,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-{% assign faqPages = site.guides | where: "faq", true | where: "platform", "android" | sort: "order" %}
+{% assign faqPages = site.guides | where: "faq_v6_6", true | where: "platform", "android" | sort: "order" %}
 
 {% assign general = faqPages | where: "faq-category", "general" %}
 {% assign errors = faqPages | where: "faq-category", "errors" %}

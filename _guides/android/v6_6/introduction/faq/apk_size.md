@@ -9,7 +9,7 @@ version: v6_6
 tags: &tags # tags that are necessary
   - photo editor
 published: true
-faq: true
+faq_v6_6: true
 faq-category: general
 order: 0
 title: Reduce the file size of the SDK

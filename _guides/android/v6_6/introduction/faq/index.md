@@ -4,7 +4,7 @@ platform: android
 version: v6_6
 category:
   - guide
-  - faq
+  - faq_v6_6
 redirect_to:
   - '/guides/android/v6_6/introduction/faq/overview'
 ---

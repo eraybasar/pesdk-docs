@@ -9,7 +9,7 @@ version: v6_6
 tags: &tags # tags that are necessary
   - photo editor
 published: true
-faq: true
+faq_v6_6: true
 faq-category: errors
 order: 1
 title: Issue with Gradle plugin 3.4.0 and gradle 5.1.1
