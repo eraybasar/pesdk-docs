@@ -12,7 +12,7 @@ published: true
 faq_v6_6: true
 faq-category: general
 order: 4
-title: Taking several photos and open the editor screen afterwards.
+title: Taking several photos and open the editor screen afterwards
 ---
 
 
