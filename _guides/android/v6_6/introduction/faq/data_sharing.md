@@ -11,7 +11,7 @@ tags: &tags # tags that are necessary
 published: true
 faq_v6_6: true
 faq-category: general
-order: 3
+order: 5
 title: Data sharing
 ---
 

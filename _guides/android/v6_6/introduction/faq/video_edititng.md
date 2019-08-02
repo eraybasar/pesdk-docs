@@ -11,7 +11,7 @@ tags: &tags # tags that are necessary
 published: true
 faq_v6_6: true
 faq-category: general
-order: 4
+order: 6
 title: Video editing
 ---
 
