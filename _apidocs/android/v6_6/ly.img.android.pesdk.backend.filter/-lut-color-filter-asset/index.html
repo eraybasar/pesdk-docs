@@ -1,0 +1,602 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LutColorFilterAsset - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.filter</a>&nbsp;/&nbsp;<a href="./index.html">LutColorFilterAsset</a><br/>
+<br/>
+<h1>LutColorFilterAsset</h1>
+<code><span class="identifier">@RENDERSCRIPT_VERSION_MASTER</span> <span class="keyword">class </span><span class="identifier">LutColorFilterAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-filter-asset/index.html"><span class="identifier">FilterAsset</span></a><span class="symbol">, </span><a href="../-filter-asset/-filter-config-intensity/index.html"><span class="identifier">FilterAsset.FilterConfigIntensity</span></a></code>
+<p>Represents a "Look up table" (Lut) FilterAsset For Camera live Preview the filter is OpenGl Based but has also a Renderscript implementation to renderIfNeeded final images in full resolution.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">LutColorFilterAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">lutImageSource</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">, </span><span class="identifier">vTiles</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">hTiles</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">textureSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">LutColorFilterAsset</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-color-lut.html">getColorLut</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getColorLut</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<p>Return the Lut as Bitmap. Look at the imgly_lut_identity.png drawable to get a basic non changing LUT.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.config.AbstractAsset</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-default-intensity-value.html">getDefaultIntensityValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultIntensityValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-horizontal-tile-count.html">getHorizontalTileCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHorizontalTileCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-lut-bitmap.html">getLutBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLutBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-lut-cube.html">getLutCube</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLutCube</span><span class="symbol">(</span><span class="identifier">rs</span><span class="symbol">:</span>&nbsp;<span class="identifier">RenderScript</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Allocation</span></code>
+<p>Return the Renderscript LUT Allocation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-neutral-start-point.html">getNeutralStartPoint</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNeutralStartPoint</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-texture-size.html">getTextureSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTextureSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-vertical-tile-count.html">getVerticalTileCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getVerticalTileCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="preload-lut.html">preloadLut</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">preloadLut</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-image.html">renderImage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">previewRendering</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">allocationIn</span><span class="symbol">:</span>&nbsp;<span class="identifier">Allocation</span><span class="symbol">, </span><span class="identifier">allocationOut</span><span class="symbol">:</span>&nbsp;<span class="identifier">Allocation</span><span class="symbol">, </span><span class="identifier">intensity</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">previewMode</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">intensity</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">previewMode</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<p>Render the filter</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="unload-lut.html">unloadLut</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">unloadLut</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-a-d1920/index.html">ColorFilterAssetAD1920</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetAD1920</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-ancient/index.html">ColorFilterAssetAncient</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetAncient</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-bleached/index.html">ColorFilterAssetBleached</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetBleached</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-bleached-blue/index.html">ColorFilterAssetBleachedBlue</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetBleachedBlue</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-blues/index.html">ColorFilterAssetBlues</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetBlues</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-blue-shadows/index.html">ColorFilterAssetBlueShadows</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetBlueShadows</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-breeze/index.html">ColorFilterAssetBreeze</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetBreeze</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-b-w/index.html">ColorFilterAssetBW</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetBW</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-celsius/index.html">ColorFilterAssetCelsius</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetCelsius</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-chest/index.html">ColorFilterAssetChest</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetChest</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-classic/index.html">ColorFilterAssetClassic</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetClassic</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-colorful/index.html">ColorFilterAssetColorful</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetColorful</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-cool/index.html">ColorFilterAssetCool</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetCool</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-cotton-candy/index.html">ColorFilterAssetCottonCandy</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetCottonCandy</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-creamy/index.html">ColorFilterAssetCreamy</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetCreamy</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-eighties/index.html">ColorFilterAssetEighties</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetEighties</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-elder/index.html">ColorFilterAssetElder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetElder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-evening/index.html">ColorFilterAssetEvening</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetEvening</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-fall/index.html">ColorFilterAssetFall</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetFall</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-fixie/index.html">ColorFilterAssetFixie</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetFixie</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-food/index.html">ColorFilterAssetFood</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetFood</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-fridge/index.html">ColorFilterAssetFridge</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetFridge</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-front/index.html">ColorFilterAssetFront</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetFront</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-glam/index.html">ColorFilterAssetGlam</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetGlam</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-gobblin/index.html">ColorFilterAssetGobblin</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetGobblin</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-high-carb/index.html">ColorFilterAssetHighCarb</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetHighCarb</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-high-contrast/index.html">ColorFilterAssetHighContrast</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetHighContrast</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-k1/index.html">ColorFilterAssetK1</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetK1</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-k2/index.html">ColorFilterAssetK2</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetK2</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-k6/index.html">ColorFilterAssetK6</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetK6</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-k-dynamic/index.html">ColorFilterAssetKDynamic</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetKDynamic</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-keen/index.html">ColorFilterAssetKeen</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetKeen</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-lenin/index.html">ColorFilterAssetLenin</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetLenin</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-litho/index.html">ColorFilterAssetLitho</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetLitho</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-lomo/index.html">ColorFilterAssetLomo</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetLomo</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-lomo100/index.html">ColorFilterAssetLomo100</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetLomo100</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-lucid/index.html">ColorFilterAssetLucid</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetLucid</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-mellow/index.html">ColorFilterAssetMellow</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetMellow</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-neat/index.html">ColorFilterAssetNeat</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetNeat</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-no-green/index.html">ColorFilterAssetNoGreen</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetNoGreen</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-orchid/index.html">ColorFilterAssetOrchid</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetOrchid</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-pale/index.html">ColorFilterAssetPale</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetPale</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-pitched/index.html">ColorFilterAssetPitched</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetPitched</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-plate/index.html">ColorFilterAssetPlate</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetPlate</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-pola669/index.html">ColorFilterAssetPola669</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetPola669</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-pola-sx/index.html">ColorFilterAssetPolaSx</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetPolaSx</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-pro400/index.html">ColorFilterAssetPro400</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetPro400</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-quozi/index.html">ColorFilterAssetQuozi</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetQuozi</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-sepiahigh/index.html">ColorFilterAssetSepiahigh</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSepiahigh</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-settled/index.html">ColorFilterAssetSettled</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSettled</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-seventies/index.html">ColorFilterAssetSeventies</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSeventies</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-sin/index.html">ColorFilterAssetSin</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSin</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-soft/index.html">ColorFilterAssetSoft</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSoft</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-steel/index.html">ColorFilterAssetSteel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSteel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-summer/index.html">ColorFilterAssetSummer</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSummer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-sunset/index.html">ColorFilterAssetSunset</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetSunset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-tender/index.html">ColorFilterAssetTender</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetTender</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-texas/index.html">ColorFilterAssetTexas</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetTexas</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-twilight/index.html">ColorFilterAssetTwilight</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetTwilight</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-winter/index.html">ColorFilterAssetWinter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetWinter</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-color-filter-asset-x400/index.html">ColorFilterAssetX400</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorFilterAssetX400</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LutColorFilterAsset</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

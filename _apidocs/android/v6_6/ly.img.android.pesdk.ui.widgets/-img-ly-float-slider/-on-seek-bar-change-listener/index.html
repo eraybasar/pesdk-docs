@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ImgLyFloatSlider.OnSeekBarChangeListener - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.ui.widgets</a>&nbsp;/&nbsp;<a href="../index.html">ImgLyFloatSlider</a>&nbsp;/&nbsp;<a href="./index.html">OnSeekBarChangeListener</a><br/>
+<br/>
+<h1>OnSeekBarChangeListener</h1>
+<code><span class="keyword">interface </span><span class="identifier">OnSeekBarChangeListener</span></code>
+<p>A callback that notifies clients when the progress level has been changed. This includes changes that were initiated by the user through a touch gesture or arrow key/trackball as well as changes that were initiated programmatically.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-progress-changed.html">onProgressChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onProgressChanged</span><span class="symbol">(</span><span class="identifier">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">fromUser</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Notification that the progress level has changed. Clients can use the fromUser parameter to distinguish user-initiated changes from those that occurred programmatically.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-start-tracking-touch.html">onStartTrackingTouch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStartTrackingTouch</span><span class="symbol">(</span><span class="identifier">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Notification that the user has started a touch gesture. Clients may want to use this to disable advancing the seekbar.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-stop-tracking-touch.html">onStopTrackingTouch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStopTrackingTouch</span><span class="symbol">(</span><span class="identifier">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Notification that the user has finished a touch gesture. Clients may want to use this to re-enable advancing the seekbar.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

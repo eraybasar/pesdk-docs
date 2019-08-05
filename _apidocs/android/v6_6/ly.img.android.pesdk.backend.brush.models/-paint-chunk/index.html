@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PaintChunk - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.brush.models</a>&nbsp;/&nbsp;<a href="./index.html">PaintChunk</a><br/>
+<br/>
+<h1>PaintChunk</h1>
+<code><span class="keyword">class </span><span class="identifier">PaintChunk</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Parcelable</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-callback/index.html">Callback</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Callback</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PaintChunk</span><span class="symbol">(</span><span class="identifier">brush</span><span class="symbol">:</span>&nbsp;<a href="../-brush/index.html"><span class="identifier">Brush</span></a><span class="symbol">, </span><span class="identifier">points</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">PaintChunk</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-callback.html">addCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addCallback</span><span class="symbol">(</span><span class="identifier">callback</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">PaintChunk.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finish-chunk.html">finishChunk</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finishChunk</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-runtime-uniq-id.html">getRuntimeUniqId</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRuntimeUniqId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-finished.html">isFinished</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFinished</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-callback.html">removeCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeCallback</span><span class="symbol">(</span><span class="identifier">callback</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">PaintChunk.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="brush.html">brush</a></p>
+</td>
+<td>
+<code><span class="identifier">brush</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="points.html">points</a></p>
+</td>
+<td>
+<code><span class="identifier">points</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

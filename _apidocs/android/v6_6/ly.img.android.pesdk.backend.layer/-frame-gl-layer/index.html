@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FrameGlLayer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.layer</a>&nbsp;/&nbsp;<a href="./index.html">FrameGlLayer</a><br/>
+<br/>
+<h1>FrameGlLayer</h1>
+<code><span class="keyword">class </span><span class="identifier">FrameGlLayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.layer.base/-gl-layer/index.html"><span class="identifier">GlLayer</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.layer.base/-render-to-canvas-layer-i/index.html"><span class="identifier">RenderToCanvasLayerI</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FrameGlLayer</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">, </span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.FrameSettings</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-crop-rect.html">getCropRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCropRect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.chunk.MultiRect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame-destination-gl-safe.html">getFrameDestinationGlSafe</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrameDestinationGlSafe</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.chunk.MultiRect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame-destination-ui-safe.html">getFrameDestinationUiSafe</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrameDestinationUiSafe</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.chunk.MultiRect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-result-rect.html">getResultRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getResultRect</span><span class="symbol">(</span><span class="identifier">fullImageRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">subSample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-setup.html">glSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-enabled.html">isEnabled</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isEnabled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-relative-to-crop.html">isRelativeToCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isRelativeToCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="need-full-image-region.html">needFullImageRegion</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">needFullImageRegion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activated.html">onActivated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onActivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached-to-u-i.html">onAttachedToUI</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-config-change-event.html">onConfigChangeEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onConfigChangeEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-deactivated.html">onDeactivated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDeactivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-layer.html">onDrawLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDrawLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-u-i.html">onDrawUI</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDrawUI</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-motion-event.html">onMotionEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onMotionEvent</span><span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-settings-change-event.html">onSettingsChangeEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSettingsChangeEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="reload-frame.html">reloadFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">reloadFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-to-canvas.html">renderToCanvas</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">renderToCanvas</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">, </span><span class="identifier">fullImageRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">destRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">transformation</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.chunk.Transformation</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-crop-rect.html">setCropRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCropRect</span><span class="symbol">(</span><span class="identifier">cropRect</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.chunk.MultiRect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-image-rect.html">setImageRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setImageRect</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-o-u-t-e-r_-r-a-n-g-e_-d-r-a-g_-c-o-l-o-r.html">OUTER_RANGE_DRAG_COLOR</a></p>
+</td>
+<td>
+<code><span class="identifier">OUTER_RANGE_DRAG_COLOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-u-t-e-r_-r-a-n-g-e_-i-d-l-e_-c-o-l-o-r.html">OUTER_RANGE_IDLE_COLOR</a></p>
+</td>
+<td>
+<code><span class="identifier">OUTER_RANGE_IDLE_COLOR</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

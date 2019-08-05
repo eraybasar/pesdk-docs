@@ -1,3 +1,6 @@
+$dokka.format:html-as-java
+$dokka.linkExtension:html
+
 ly.img.android
 ly.img.android.acs
 ly.img.android.acs.constants

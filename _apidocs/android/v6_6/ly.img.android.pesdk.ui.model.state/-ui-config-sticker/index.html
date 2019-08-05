@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UiConfigSticker - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.model.state</a>&nbsp;/&nbsp;<a href="./index.html">UiConfigSticker</a><br/>
+<br/>
+<h1>UiConfigSticker</h1>
+<code><span class="keyword">class </span><span class="identifier">UiConfigSticker</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.Settings</span><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.ui.model.state.UiConfigSticker.Event</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">Parcelable</span></code>
+<p>Photo Editor Configuration file.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UiConfigSticker</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">UiConfigSticker</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sticker-color-list.html">getStickerColorList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStickerColorList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.utils/-data-source-array-list/index.html"><span class="identifier">DataSourceArrayList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sticker-list.html">getStickerList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStickerList</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.ui.panels.item/-sticker-category-item/index.html"><span class="identifier">StickerCategoryItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sticker-lists.html">getStickerLists</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStickerLists</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.ui.utils/-data-source-id-item-list/index.html"><span class="identifier">DataSourceIdItemList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-sticker-category-item/index.html"><span class="identifier">StickerCategoryItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-changes.html">hasChanges</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasChanges</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-sticker-color-list.html">setStickerColorList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setStickerColorList</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">stickerColorList</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.ui.panels.item.ColorItem</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setStickerColorList</span><span class="symbol">(</span><span class="identifier">stickerColorList</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-sticker-lists.html">setStickerLists</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setStickerLists</span><span class="symbol">(</span><span class="identifier">stickerLists</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-sticker-category-item/index.html"><span class="identifier">StickerCategoryItem</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setStickerLists</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">stickerLists</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.ui.panels.item.StickerCategoryItem</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

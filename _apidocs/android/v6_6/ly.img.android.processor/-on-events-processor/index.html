@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OnEventsProcessor - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.processor</a>&nbsp;/&nbsp;<a href="./index.html">OnEventsProcessor</a><br/>
+<br/>
+<h1>OnEventsProcessor</h1>
+<code><span class="identifier">@SupportedAnnotationTypes</span><span class="symbol">(</span>{"ly.img.android.pesdk.annotations.OnEvent"}<span class="symbol">)</span> <span class="identifier">@SupportedSourceVersion</span><span class="symbol">(</span>SourceVersion.RELEASE_8<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">OnEventsProcessor</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.AbstractProcessor</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-accessor-map-source.html">createAccessorMapSource</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">createAccessorMapSource</span><span class="symbol">(</span><span class="identifier">modulePackages</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">processingEnv</span><span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.ProcessingEnvironment</span><span class="symbol">, </span><span class="identifier">mainPackage</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">classAccessorMapPuts</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">roundEnvironment</span><span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.RoundEnvironment</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-supported-options.html">getSupportedOptions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSupportedOptions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.Set</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="init.html">init</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">init</span><span class="symbol">(</span><span class="identifier">processingEnv</span><span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.ProcessingEnvironment</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="process.html">process</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">process</span><span class="symbol">(</span><span class="identifier">set</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Set</span><span class="symbol">&lt;</span><span class="identifier">? extends javax.lang.model.element.TypeElement</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">roundEnvironment</span><span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.RoundEnvironment</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-a-c-c-e-s-s-o-r_-m-a-p_-c-l-a-s-s_-n-a-m-e.html">EVENT_ACCESSOR_MAP_CLASS_NAME</a></p>
+</td>
+<td>
+<code><span class="identifier">EVENT_ACCESSOR_MAP_CLASS_NAME</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-a-c-c-e-s-s-o-r_-m-a-p_-s-u-p-e-r_-c-l-a-s-s_-p-a-c-k-a-g-e.html">EVENT_ACCESSOR_MAP_SUPER_CLASS_PACKAGE</a></p>
+</td>
+<td>
+<code><span class="identifier">EVENT_ACCESSOR_MAP_SUPER_CLASS_PACKAGE</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

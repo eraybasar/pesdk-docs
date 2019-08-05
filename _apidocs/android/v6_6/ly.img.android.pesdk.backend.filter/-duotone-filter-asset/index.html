@@ -1,0 +1,183 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DuotoneFilterAsset - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.filter</a>&nbsp;/&nbsp;<a href="./index.html">DuotoneFilterAsset</a><br/>
+<br/>
+<h1>DuotoneFilterAsset</h1>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-filter-asset/index.html"><span class="identifier">FilterAsset</span></a><span class="symbol">, </span><a href="../-filter-asset/-filter-config-intensity/index.html"><span class="identifier">FilterAsset.FilterConfigIntensity</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DuotoneFilterAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">lightColor</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">darkColor</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">DuotoneFilterAsset</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.config.AbstractAsset</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-dark-color.html">getDarkColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDarkColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-default-intensity-value.html">getDefaultIntensityValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultIntensityValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-light-color.html">getLightColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLightColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-neutral-start-point.html">getNeutralStartPoint</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNeutralStartPoint</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-image.html">renderImage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">intensity</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">previewMode</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<p>Render the filter</p>
+<code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">allocationIn</span><span class="symbol">:</span>&nbsp;<span class="identifier">Allocation</span><span class="symbol">, </span><span class="identifier">allocationOut</span><span class="symbol">:</span>&nbsp;<span class="identifier">Allocation</span><span class="symbol">, </span><span class="identifier">intensity</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">previewMode</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-dark-color.html">setDarkColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDarkColor</span><span class="symbol">(</span><span class="identifier">darkColor</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-light-color.html">setLightColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setLightColor</span><span class="symbol">(</span><span class="identifier">lightColor</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-breezy/index.html">DuotoneFilterAssetBreezy</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetBreezy</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-clash/index.html">DuotoneFilterAssetClash</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetClash</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-deep-blue/index.html">DuotoneFilterAssetDeepBlue</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetDeepBlue</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-desert/index.html">DuotoneFilterAssetDesert</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetDesert</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-frog/index.html">DuotoneFilterAssetFrog</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetFrog</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-peach/index.html">DuotoneFilterAssetPeach</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetPeach</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-plum/index.html">DuotoneFilterAssetPlum</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetPlum</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.assets.filter.basic/-duotone-filter-asset-sunset/index.html">DuotoneFilterAssetSunset</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAssetSunset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DuotoneFilterAsset</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DataSourceArrayList - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">DataSourceArrayList</a><br/>
+<br/>
+<h1>DataSourceArrayList</h1>
+<code><span class="keyword">class </span><span class="identifier">DataSourceArrayList</span><span class="symbol">&lt;</span><span class="identifier">TYPE</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><span class="identifier">TYPE</span><span class="symbol">&gt;</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-callback/index.html">Callback</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Callback</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DataSourceArrayList</span><span class="symbol">(</span><span class="identifier">initialCapacity</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">DataSourceArrayList</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">DataSourceArrayList</span><span class="symbol">(</span><span class="identifier">c</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><span class="identifier">? extends TYPE</span><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add.html">add</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">add</span><span class="symbol">(</span><span class="identifier">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">TYPE</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">add</span><span class="symbol">(</span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">element</span><span class="symbol">:</span>&nbsp;<span class="identifier">TYPE</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-all.html">addAll</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addAll</span><span class="symbol">(</span><span class="identifier">c</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><span class="identifier">? extends TYPE</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addAll</span><span class="symbol">(</span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">c</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><span class="identifier">? extends TYPE</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-callback.html">addCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addCallback</span><span class="symbol">(</span><span class="identifier">callbacks</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">DataSourceArrayList.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="clear.html">clear</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-typed-data-source-array-list.html">createTypedDataSourceArrayList</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">createTypedDataSourceArrayList</span><span class="symbol">(</span><span class="identifier">parcel</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">loader</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.ClassLoader</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">DataSourceArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">createTypedDataSourceArrayList</span><span class="symbol">(</span><span class="identifier">parcel</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">creator</span><span class="symbol">:</span>&nbsp;<span class="identifier">Creator</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">DataSourceArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove.html">remove</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">remove</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">remove</span><span class="symbol">(</span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">TYPE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-all.html">removeAll</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeAll</span><span class="symbol">(</span><span class="identifier">c</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><span class="identifier">?</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-callback.html">removeCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeCallback</span><span class="symbol">(</span><span class="identifier">callbacks</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">DataSourceArrayList.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-range.html">removeRange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeRange</span><span class="symbol">(</span><span class="identifier">fromIndex</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">toIndex</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set.html">set</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier">list</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">&lt;</span><span class="identifier">TYPE</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">element</span><span class="symbol">:</span>&nbsp;<span class="identifier">TYPE</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">TYPE</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.ui.utils/-data-source-id-item-list/index.html">DataSourceIdItemList</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DataSourceIdItemList</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Created by svennahler on 07.12.17.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractIdItem - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels.item</a>&nbsp;/&nbsp;<a href="./index.html">AbstractIdItem</a><br/>
+<br/>
+<h1>AbstractIdItem</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractIdItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-item/index.html"><span class="identifier">AbstractItem</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AbstractIdItem</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractIdItem</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractIdItem</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">thumbnailSource</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractIdItem</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractIdItem</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">thumbnailSource</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractIdItem</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-data.html">getData</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.config.AbstractAsset</span><span class="symbol">&gt;</span> <span class="identifier">getData</span><span class="symbol">(</span><span class="identifier">configMap</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.linker/-config-map/index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-id.html">getId</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="id.html">id</a></p>
+</td>
+<td>
+<code><span class="identifier">id</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-r-i-g-i-n-a-l_-t-h-u-m-b-n-a-i-l_-s-i-z-e.html">ORIGINAL_THUMBNAIL_SIZE</a></p>
+</td>
+<td>
+<code><span class="identifier">ORIGINAL_THUMBNAIL_SIZE</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-blend-mode-item/index.html">BlendModeItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BlendModeItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-item/index.html">CropAspectItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CropAspectItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-filter-item/index.html">FilterItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FilterItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-folder-item/index.html">FolderItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FolderItem</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-font-item/index.html">FontItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FontItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-frame-item/index.html">FrameItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FrameItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-image-sticker-item/index.html">ImageStickerItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ImageStickerItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-overlay-item/index.html">OverlayItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">OverlayItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-sticker-category-item/index.html">StickerCategoryItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">StickerCategoryItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-item/index.html">TextDesignItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextDesignItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-tool-item/index.html">ToolItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ToolItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractIdItem</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

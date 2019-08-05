@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UiConfigAdjustment - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.model.state</a>&nbsp;/&nbsp;<a href="./index.html">UiConfigAdjustment</a><br/>
+<br/>
+<h1>UiConfigAdjustment</h1>
+<code><span class="keyword">class </span><span class="identifier">UiConfigAdjustment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.Settings</span><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.ui.model.state.UiConfigAdjustment.Event</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">Parcelable</span></code>
+<p>Photo Editor Configuration file.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UiConfigAdjustment</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">UiConfigAdjustment</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-option-list.html">getOptionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOptionList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.utils/-data-source-array-list/index.html"><span class="identifier">DataSourceArrayList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-adjust-option/index.html"><span class="identifier">AdjustOption</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-quick-option-list.html">getQuickOptionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getQuickOptionList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.utils/-data-source-array-list/index.html"><span class="identifier">DataSourceArrayList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-changes.html">hasChanges</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasChanges</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-option-list.html">setOptionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setOptionList</span><span class="symbol">(</span><span class="identifier">optionList</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-adjust-option/index.html"><span class="identifier">AdjustOption</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setOptionList</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">optionList</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.ui.panels.item.AdjustOption</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-quick-option-list.html">setQuickOptionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setQuickOptionList</span><span class="symbol">(</span><span class="identifier">quickOptionList</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setQuickOptionList</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">quickOptions</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.ui.panels.item.OptionItem</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

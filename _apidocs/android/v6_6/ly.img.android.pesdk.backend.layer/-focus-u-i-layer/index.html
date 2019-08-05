@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FocusUILayer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.layer</a>&nbsp;/&nbsp;<a href="./index.html">FocusUILayer</a><br/>
+<br/>
+<h1>FocusUILayer</h1>
+<code><span class="keyword">class </span><span class="identifier">FocusUILayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/index.html"><span class="identifier">UILayer</span></a></code>
+<p>Created by svennahler on 09.11.16.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FocusUILayer</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="do-respond-on-click.html">doRespondOnClick</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doRespondOnClick</span><span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-focus-center.html">drawFocusCenter</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">drawFocusCenter</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">, </span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">angle</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">maxSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-focus-outer-radius-thumb.html">drawFocusOuterRadiusThumb</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">drawFocusOuterRadiusThumb</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">, </span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">angle</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">centerOffset</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">alignment</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.layer.FocusUILayer.THUMB_ALIGNMENT</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-touched-thumb-type.html">getTouchedThumbType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTouchedThumbType</span><span class="symbol">(</span><span class="identifier">screenTouchPos</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.layer.FocusUILayer.FOCUS_THUMB_TYPE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-on-inner-radius-thumb.html">isOnInnerRadiusThumb</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isOnInnerRadiusThumb</span><span class="symbol">(</span><span class="identifier">screeTouchPos</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-on-outer-radius-thumb.html">isOnOuterRadiusThumb</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isOnOuterRadiusThumb</span><span class="symbol">(</span><span class="identifier">touchPos</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-relative-to-crop.html">isRelativeToCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isRelativeToCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="keep-positions-in-crop-range.html">keepPositionsInCropRange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">keepPositionsInCropRange</span><span class="symbol">(</span><span class="identifier">positions</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activated.html">onActivated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onActivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-deactivated.html">onDeactivated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDeactivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-u-i.html">onDrawUI</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDrawUI</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-focus-adjust.html">onFocusAdjust</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onFocusAdjust</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-focus-intensity-changed.html">onFocusIntensityChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onFocusIntensityChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-focus-mode-changed.html">onFocusModeChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onFocusModeChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-motion-event.html">onMotionEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onMotionEvent</span><span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="rotate-points-around-center.html">rotatePointsAroundCenter</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">rotatePointsAroundCenter</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">angle</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">points</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-image-rect.html">setImageRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setImageRect</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="show-indicator.html">showIndicator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">showIndicator</span><span class="symbol">(</span><span class="identifier">stay</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
