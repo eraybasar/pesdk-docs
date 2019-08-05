@@ -1,0 +1,312 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransformUILayer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.layer</a>&nbsp;/&nbsp;<a href="./index.html">TransformUILayer</a><br/>
+<br/>
+<h1>TransformUILayer</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TransformUILayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/index.html"><span class="identifier">UILayer</span></a></code>
+<p>Created by svennahler on 11.11.16.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TransformUILayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$<init>(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-b-o-r-d-e-r_-t-h-i-c-k-n-e-s-s.html">BORDER_THICKNESS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">BORDER_THICKNESS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-e-n-t-e-r_-l-i-n-e_-t-h-i-c-k-n-e-s-s.html">CENTER_LINE_THICKNESS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">CENTER_LINE_THICKNESS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-c-o-l-o-r.html">EDGE_COLOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_COLOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-h-e-i-g-h-t.html">EDGE_HEIGHT</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_HEIGHT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-t-h-i-c-k-n-e-s-s.html">EDGE_THICKNESS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_THICKNESS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-w-i-d-t-h.html">EDGE_WIDTH</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_WIDTH</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-c-o-l-o-r.html">LINE_COLOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">LINE_COLOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-h-e-i-g-h-t_-o-f-f-s-e-t.html">LINE_HEIGHT_OFFSET</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">LINE_HEIGHT_OFFSET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-w-i-d-t-h_-o-f-f-s-e-t.html">LINE_WIDTH_OFFSET</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">LINE_WIDTH_OFFSET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-i-n_-c-r-o-p_-r-e-c-t_-s-i-z-e.html">MIN_CROP_RECT_SIZE</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">MIN_CROP_RECT_SIZE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-u-t-e-r_-l-i-n-e_-c-o-l-o-r.html">OUTER_LINE_COLOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">OUTER_LINE_COLOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-u-t-e-r_-r-a-n-g-e_-c-o-l-o-r.html">OUTER_RANGE_COLOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">OUTER_RANGE_COLOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-o-u-c-h_-o-f-f-s-e-t.html">TOUCH_OFFSET</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">TOUCH_OFFSET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/stage.html">stage</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stage</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/transformation.html">transformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">transformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="do-respond-on-click.html">doRespondOnClick</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">doRespondOnClick</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$doRespondOnClick(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-crop-rect.html">getCropRect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCropRect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-touched-edge.html">getTouchedEdge</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTouchedEdge</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$getTouchedEdge(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.FloatArray)/cropRect">cropRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$getTouchedEdge(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.FloatArray)/pos">pos</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.constant/-rect-edge/index.html"><span class="identifier">RectEdge</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-finite.html">isFinite</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isFinite</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$isFinite(kotlin.Float)/f">f</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-relative-to-crop.html">isRelativeToCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isRelativeToCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activated.html">onActivated</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onActivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached-to-u-i.html">onAttachedToUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$onAttachedToUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-deactivated.html">onDeactivated</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDeactivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached-from-u-i.html">onDetachedFromUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$onDetachedFromUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-u-i.html">onDrawUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDrawUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$onDrawUI(Canvas)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-fit-rect-invalid-after-aspect-change.html">onFitRectInvalidAfterAspectChange</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onFitRectInvalidAfterAspectChange</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-fit-rect-invalid-after-rotation.html">onFitRectInvalidAfterRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onFitRectInvalidAfterRotation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-motion-event.html">onMotionEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onMotionEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$onMotionEvent(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-crop-rect.html">setCropRect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setCropRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setCropRect(ly.img.android.pesdk.backend.model.chunk.MultiRect)/cropRect">cropRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-edge-line-limit.html">setEdgeLineLimit</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setEdgeLineLimit</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setEdgeLineLimit(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.chunk.MultiRect)/transformation">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setEdgeLineLimit(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.chunk.MultiRect)/edge">edge</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-rect-edge/index.html"><span class="identifier">RectEdge</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setEdgeLineLimit(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.chunk.MultiRect)/originEdge">originEdge</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-rect-edge/index.html"><span class="identifier">RectEdge</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setEdgeLineLimit(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.constant.RectEdge, ly.img.android.pesdk.backend.model.chunk.MultiRect)/limitRect">limitRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-fit-rect.html">setFitRect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFitRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setFitRect(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.chunk.MultiRect)/transformation">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setFitRect(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.chunk.MultiRect)/screenRect">screenRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-image-rect.html">setImageRect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setImageRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TransformUILayer$setImageRect(Rect)/rect">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-stage-overlap.html">updateStageOverlap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateStageOverlap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/get-resources.html">getResources</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getResources</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Resources</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/on-size-changed.html">onSizeChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSizeChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$onSizeChanged(kotlin.Int, kotlin.Int)/w">w</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$onSizeChanged(kotlin.Int, kotlin.Int)/h">h</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/render-ui.html">renderUi</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">renderUi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer.base/-u-i-layer/set-transformation.html">setTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTransformation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$setTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation)/matrix">matrix</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

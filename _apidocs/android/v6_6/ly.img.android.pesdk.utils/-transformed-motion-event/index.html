@@ -1,0 +1,183 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransformedMotionEvent - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">TransformedMotionEvent</a><br/>
+<br/>
+<h1>TransformedMotionEvent</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TransformedMotionEvent</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-transform-diff/index.html">TransformDiff</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TransformDiff</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="calc-snap-area.html">calcSnapArea</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">calcSnapArea</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$calcSnapArea(kotlin.Float, kotlin.Float, kotlin.Float)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$calcSnapArea(kotlin.Float, kotlin.Float, kotlin.Float)/snapRangeInPixel">snapRangeInPixel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$calcSnapArea(kotlin.Float, kotlin.Float, kotlin.Float)/pixelDensity">pixelDensity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="distance.html">distance</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">distance</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$distance(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/pos1X">pos1X</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$distance(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/pos1Y">pos1Y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$distance(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/pos2X">pos2X</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$distance(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/pos2Y">pos2Y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">distance</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$distance(kotlin.FloatArray, kotlin.FloatArray)/pos1">pos1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$distance(kotlin.FloatArray, kotlin.FloatArray)/pos2">pos2</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-action-masked.html">getActionMasked</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getActionMasked</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Return the kind of action being performed. Consider using <code><a href="get-action-masked.html">#getActionMasked</a></code> and MotionEvent#getActionIndex to retrieve the separate masked action and pointer index.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-interpolated-position.html">getInterpolatedPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getInterpolatedPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$getInterpolatedPosition(kotlin.FloatArray)/dest">dest</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-pointer-count.html">getPointerCount</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPointerCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>The number of pointers of data contained in this event. Always &gt;= 1.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-position.html">getPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$getPosition(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$getPosition(kotlin.Int, kotlin.FloatArray)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$getPosition(kotlin.Int, kotlin.FloatArray)/dest">dest</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span></code>
+<p>Get the transformed pos of the point.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-raw-event.html">getRawEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getRawEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MotionEvent</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-screen-event.html">getScreenEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getScreenEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-transform-difference.html">getTransformDifference</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTransformDifference</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-transform-diff/index.html"><span class="identifier">TransformedMotionEvent.TransformDiff</span></a><span class="symbol">!</span></code>
+<p>Return the differences to the checkpoint. The initial values are (xDiff = 0, yDiff = 0; angleDiff = 0; distanceDiff, scale = 1)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="has-clicked.html">hasClicked</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasClicked</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Check if the event is a click.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="has-double-tapped.html">hasDoubleTapped</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasDoubleTapped</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-fixed-center-point.html">hasFixedCenterPoint</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasFixedCenterPoint</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Return if the event has a fixed center point to emulate a multitouch rotating and scaling Event.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="is-checkpoint.html">isCheckpoint</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isCheckpoint</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>If this return true you must saveImage your current state. The TransformDifference values will be at the start values. (xDiff = 0, yDiff = 0; angleDiff = 0; distanceDiff, scale = 1;)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="is-release.html">isRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="map-from-snap-system.html">mapFromSnapSystem</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">mapFromSnapSystem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$mapFromSnapSystem(kotlin.Float, kotlin.FloatArray, kotlin.Float)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$mapFromSnapSystem(kotlin.Float, kotlin.FloatArray, kotlin.Float)/sortedSnapPoints">sortedSnapPoints</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$mapFromSnapSystem(kotlin.Float, kotlin.FloatArray, kotlin.Float)/snapArea">snapArea</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="map-to-snap-system.html">mapToSnapSystem</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">mapToSnapSystem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$mapToSnapSystem(kotlin.Float, kotlin.FloatArray, kotlin.Float)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$mapToSnapSystem(kotlin.Float, kotlin.FloatArray, kotlin.Float)/sortedSnapPoints">sortedSnapPoints</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$mapToSnapSystem(kotlin.Float, kotlin.FloatArray, kotlin.Float)/snapArea">snapArea</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="obtain.html">obtain</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$obtain(MotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">MotionEvent</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$obtain(MotionEvent, Matrix)/event">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">MotionEvent</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$obtain(MotionEvent, Matrix)/matrix">matrix</span><span class="symbol">:</span>&nbsp;<span class="identifier">Matrix</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="recycle.html">recycle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-fixed-center-point.html">setFixedCenterPoint</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFixedCenterPoint</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$setFixedCenterPoint(kotlin.FloatArray)/pos">pos</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFixedCenterPoint</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$setFixedCenterPoint(kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedMotionEvent$setFixedCenterPoint(kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Set a center point to emulate a multitouch rotating and scaling Event</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StateEventsProcessor - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.processor</a>&nbsp;/&nbsp;<a href="./index.html">StateEventsProcessor</a><br/>
+<br/>
+<h1>StateEventsProcessor</h1>
+<code><span class="identifier">@SupportedAnnotationTypes</span><span class="symbol">(</span>["ly.img.android.pesdk.annotations.StateEvents", "ly.img.android.pesdk.annotations.EventDispatcher"]<span class="symbol">)</span> <span class="identifier">@SupportedSourceVersion</span><span class="symbol">(</span>SourceVersion.RELEASE_8<span class="symbol">)</span> <span class="identifier">@SupportedOptions</span><span class="symbol">(</span>["useAndroidX", "finalPackage"]<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">StateEventsProcessor</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html"><span class="identifier">AbstractProcessor</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">StateEventsProcessor</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-b-u-i-l-d_-c-o-n-f-i-g_-c-l-a-s-s_-n-a-m-e.html">BUILD_CONFIG_CLASS_NAME</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUILD_CONFIG_CLASS_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-c-l-a-s-s_-n-a-m-e.html">EVENT_CLASS_NAME</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EVENT_CLASS_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-i-n-t-e-r-f-a-c-e-s_-p-a-c-k-a-g-e.html">EVENT_INTERFACES_PACKAGE</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EVENT_INTERFACES_PACKAGE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-i-n-t-e-r-f-a-c-e-s_-p-r-e-f-i-x.html">EVENT_INTERFACES_PREFIX</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EVENT_INTERFACES_PREFIX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-p-a-c-k-a-g-e_-s-u-f-f-i-x.html">EVENT_PACKAGE_SUFFIX</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EVENT_PACKAGE_SUFFIX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-s-e-t_-s-u-p-e-r_-c-l-a-s-s_-n-a-m-e.html">EVENT_SET_SUPER_CLASS_NAME</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EVENT_SET_SUPER_CLASS_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-a-i-n_-t-h-r-e-a-d_-s-u-f-f-i-x.html">MAIN_THREAD_SUFFIX</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">MAIN_THREAD_SUFFIX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-t-a-t-e_-r-e-v-e-r-t_-e-v-e-n-t.html">STATE_REVERT_EVENT</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">STATE_REVERT_EVENT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="class-exists.html">classExists</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">classExists</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$classExists(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-imgly-main-package-names.html">findImglyMainPackageNames</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">findImglyMainPackageNames</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$findImglyMainPackageNames(javax.annotation.processing.ProcessingEnvironment, kotlin.String)/processingEnv">processingEnv</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html"><span class="identifier">ProcessingEnvironment</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$findImglyMainPackageNames(javax.annotation.processing.ProcessingEnvironment, kotlin.String)/mainPackage">mainPackage</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-main-package.html">getMainPackage</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getMainPackage</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$getMainPackage(javax.annotation.processing.RoundEnvironment)/roundEnvironment">roundEnvironment</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html"><span class="identifier">RoundEnvironment</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-supported-options.html">getSupportedOptions</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSupportedOptions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html"><span class="identifier">MutableSet</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="init.html">init</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">init</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$init(javax.annotation.processing.ProcessingEnvironment)/processingEnv">processingEnv</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html"><span class="identifier">ProcessingEnvironment</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="process.html">process</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">process</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$process(kotlin.collections.MutableSet((javax.lang.model.element.TypeElement)), javax.annotation.processing.RoundEnvironment)/set">set</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html"><span class="identifier">MutableSet</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeElement.html"><span class="identifier">TypeElement</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$process(kotlin.collections.MutableSet((javax.lang.model.element.TypeElement)), javax.annotation.processing.RoundEnvironment)/roundEnvironment">roundEnvironment</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html"><span class="identifier">RoundEnvironment</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="save-imgly-main-package-name.html">saveImglyMainPackageName</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">saveImglyMainPackageName</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$saveImglyMainPackageName(kotlin.String)/mainPackage">mainPackage</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="search-class-source.html">searchClassSource</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">searchClassSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$searchClassSource(java.util.ArrayList((kotlin.String)), javax.annotation.processing.ProcessingEnvironment, javax.annotation.processing.RoundEnvironment, kotlin.String, kotlin.String)/modulePackages">modulePackages</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$searchClassSource(java.util.ArrayList((kotlin.String)), javax.annotation.processing.ProcessingEnvironment, javax.annotation.processing.RoundEnvironment, kotlin.String, kotlin.String)/processingEnv">processingEnv</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html"><span class="identifier">ProcessingEnvironment</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$searchClassSource(java.util.ArrayList((kotlin.String)), javax.annotation.processing.ProcessingEnvironment, javax.annotation.processing.RoundEnvironment, kotlin.String, kotlin.String)/roundEnvironment">roundEnvironment</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html"><span class="identifier">RoundEnvironment</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$searchClassSource(java.util.ArrayList((kotlin.String)), javax.annotation.processing.ProcessingEnvironment, javax.annotation.processing.RoundEnvironment, kotlin.String, kotlin.String)/relativeClassPath">relativeClassPath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.processor.StateEventsProcessor$searchClassSource(java.util.ArrayList((kotlin.String)), javax.annotation.processing.ProcessingEnvironment, javax.annotation.processing.RoundEnvironment, kotlin.String, kotlin.String)/className">className</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html"><span class="identifier">MutableSet</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeElement.html"><span class="identifier">TypeElement</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

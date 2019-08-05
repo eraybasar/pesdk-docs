@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOUtils - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="./index.html">IOUtils</a><br/>
+<br/>
+<h1>IOUtils</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">IOUtils</span></code>
+<p>General IO stream manipulation utilities. </p>
+<p> This class provides static utility methods for input/output operations. </p>
+<ul> <li>closeQuietly - these methods close a stream ignoring nulls and exceptions </li>
+<li>toXxx/read - these methods read data from a stream </li>
+<li>write - these methods write data to a stream </li>
+<li>copy - these methods copy all the data from one stream to another </li>
+<li>contentEquals - these methods compare the content of two streams </li>
+</ul>
+ 
+<p> The byte-to-char methods and char-to-byte methods involve a conversion step. Two methods are provided in each case, one that uses the platform default encoding and the other which allows you to specify an encoding. You are encouraged to always specify an encoding because relying on the platform default can lead to unexpected results, for example when moving from development to production. </p>
+<p> All the methods in this class that read a stream are buffered internally. This means that there is no cause to use a <code>BufferedInputStream</code> or <code>BufferedReader</code>. The default buffer size of 4K has been shown to be efficient in tests. </p>
+<p> Wherever possible, the methods in this class do <em>not</em> flush or close the stream. This is to avoid making non-portable assumptions about the streams' origin and further use. Thus the caller is still responsible for closing streams after use. </p>
+<p> Origin of code: Excalibur.</p>
+<p><strong>Author</strong><br/>
+Peter Donald</p>
+<p><strong>Author</strong><br/>
+Jeff Turner</p>
+<p><strong>Author</strong><br/>
+Matthew Hawthorne</p>
+<p><strong>Author</strong><br/>
+Stephen Colebourne</p>
+<p><strong>Author</strong><br/>
+Gareth Davis</p>
+<p><strong>Author</strong><br/>
+Ian Springer</p>
+<p><strong>Author</strong><br/>
+Niall Pemberton</p>
+<p><strong>Author</strong><br/>
+Sandy McArthur</p>
+<p><strong>Version</strong><br/>
+$Id: IOUtils.java 481854 2006-12-03 18:30:07Z scolebourne $</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">IOUtils</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Instances should NOT be constructed in standard programming.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-d-i-r_-s-e-p-a-r-a-t-o-r.html">DIR_SEPARATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">DIR_SEPARATOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a></code>
+<p>The system directory separator character.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-i-r_-s-e-p-a-r-a-t-o-r_-u-n-i-x.html">DIR_SEPARATOR_UNIX</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">DIR_SEPARATOR_UNIX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a></code>
+<p>The Unix directory separator character.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-i-r_-s-e-p-a-r-a-t-o-r_-w-i-n-d-o-w-s.html">DIR_SEPARATOR_WINDOWS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">DIR_SEPARATOR_WINDOWS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a></code>
+<p>The Windows directory separator character.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-s-e-p-a-r-a-t-o-r.html">LINE_SEPARATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">LINE_SEPARATOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>The system line separator string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-s-e-p-a-r-a-t-o-r_-u-n-i-x.html">LINE_SEPARATOR_UNIX</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">LINE_SEPARATOR_UNIX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>The Unix line separator string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-s-e-p-a-r-a-t-o-r_-w-i-n-d-o-w-s.html">LINE_SEPARATOR_WINDOWS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">LINE_SEPARATOR_WINDOWS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>The Windows line separator string.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="close-quietly.html">closeQuietly</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">closeQuietly</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$closeQuietly(java.io.InputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Unconditionally close an <code>InputStream</code>. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">closeQuietly</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$closeQuietly(java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Unconditionally close an <code>OutputStream</code>. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="copy.html">copy</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.InputStream, java.io.OutputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.InputStream, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Copy bytes from an <code>InputStream</code> to an <code>OutputStream</code>. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.InputStream, java.io.Writer)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.InputStream, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Copy bytes from an <code>InputStream</code> to chars on a <code>Writer</code> using the default character encoding of the platform. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.InputStream, java.io.Writer, kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.InputStream, java.io.Writer, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.InputStream, java.io.Writer, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Copy bytes from an <code>InputStream</code> to chars on a <code>Writer</code> using the specified character encoding. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.Reader, java.io.Writer)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.Reader, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Copy chars from a <code>Reader</code> to a <code>Writer</code>. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.Reader, java.io.OutputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.Reader, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Copy chars from a <code>Reader</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform, and calling flush. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.Reader, java.io.OutputStream, kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.Reader, java.io.OutputStream, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copy(java.io.Reader, java.io.OutputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Copy chars from a <code>Reader</code> to bytes on an <code>OutputStream</code> using the specified character encoding, and calling flush. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="copy-large.html">copyLarge</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copyLarge</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.InputStream, java.io.OutputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.InputStream, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
+<p>Copy bytes from a large (over 2GB) <code>InputStream</code> to an <code>OutputStream</code>. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copyLarge</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.Reader, java.io.Writer)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.Reader, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
+<p>Copy chars from a large (over 2GB) <code>Reader</code> to a <code>Writer</code>. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Get the contents of an <code>InputStream</code> as a String using the default character encoding of the platform. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream, kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Get the contents of an <code>InputStream</code> as a String using the specified character encoding. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.Reader)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Get the contents of a <code>Reader</code> as a String. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="write.html">write</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes bytes from a <code>byte[]</code> to an <code>OutputStream</code>.</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes bytes from a <code>byte[]</code> to chars on a <code>Writer</code> using the default character encoding of the platform. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes bytes from a <code>byte[]</code> to chars on a <code>Writer</code> using the specified character encoding. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>char[]</code> to a <code>Writer</code> using the default character encoding of the platform.</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>char[]</code> to bytes on an <code>OutputStream</code>. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>char[]</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>String</code> to a <code>Writer</code>.</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>String</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>String</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>StringBuffer</code> to a <code>Writer</code>.</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>StringBuffer</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>StringBuffer</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

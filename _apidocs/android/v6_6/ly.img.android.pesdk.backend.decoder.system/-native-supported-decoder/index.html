@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NativeSupportedDecoder - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.decoder.system</a>&nbsp;/&nbsp;<a href="./index.html">NativeSupportedDecoder</a><br/>
+<br/>
+<h1>NativeSupportedDecoder</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">NativeSupportedDecoder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-raster-decoder/index.html"><span class="identifier">RasterDecoder</span></a></code>
+<p>Created by svennahler on 12.01.17.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">NativeSupportedDecoder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.system.NativeSupportedDecoder$<init>(Resources, kotlin.Int)/resources">resources</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.system.NativeSupportedDecoder$<init>(Resources, kotlin.Int)/resourceId">resourceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">NativeSupportedDecoder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.system.NativeSupportedDecoder$<init>(Resources, Uri)/resources">resources</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.system.NativeSupportedDecoder$<init>(Resources, Uri)/uri">uri</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="decode-as-bitmap.html">decodeAsBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">decodeAsBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.system.NativeSupportedDecoder$decodeAsBitmap(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.Int)/slice">slice</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.system.NativeSupportedDecoder$decodeAsBitmap(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.Int)/sampleSize">sampleSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="decode-size.html">decodeSize</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">decodeSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-drawable.html">getDrawable</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDrawable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Drawable</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.decoder/-raster-decoder/calculate-exact-sample.html">calculateExactSample</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateExactSample</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$calculateExactSample(kotlin.Float, kotlin.Float, kotlin.Boolean)/boundsWidth">boundsWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$calculateExactSample(kotlin.Float, kotlin.Float, kotlin.Boolean)/boundsHeight">boundsHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$calculateExactSample(kotlin.Float, kotlin.Float, kotlin.Boolean)/fitIntoBounds">fitIntoBounds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.decoder/-raster-decoder/calculate-image-slice.html">calculateImageSlice</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateImageSlice</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$calculateImageSlice(RectF, RectF)/bounds">bounds</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$calculateImageSlice(RectF, RectF)/region">region</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.decoder/-raster-decoder/get-bitmap.html">getBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/boundsWidth">boundsWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/boundsHeight">boundsHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/fitIntoBounds">fitIntoBounds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/state">state</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-drawable-state/index.html"><span class="identifier">DrawableState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$getBitmap(RectF, RectF)/bounds">bounds</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.RasterDecoder$getBitmap(RectF, RectF)/region">region</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.decoder/-raster-decoder/is-vector.html">isVector</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isVector</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

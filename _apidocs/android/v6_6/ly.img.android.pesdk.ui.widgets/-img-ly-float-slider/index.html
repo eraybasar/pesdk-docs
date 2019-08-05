@@ -1,0 +1,221 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ImgLyFloatSlider - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.widgets</a>&nbsp;/&nbsp;<a href="./index.html">ImgLyFloatSlider</a><br/>
+<br/>
+<h1>ImgLyFloatSlider</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ImgLyFloatSlider</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/index.html"><span class="identifier">ImgLyUIRelativeContainer</span></a><span class="symbol">, </span><span class="identifier">OnSeekBarChangeListener</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-on-seek-bar-change-listener/index.html">OnSeekBarChangeListener</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnSeekBarChangeListener</span></code>
+<p>A callback that notifies clients when the progress level has been changed. This includes changes that were initiated by the user through a touch gesture or arrow key/trackball as well as changes that were initiated programmatically.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ImgLyFloatSlider</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$<init>(Context)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ImgLyFloatSlider</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$<init>(Context, AttributeSet)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$<init>(Context, AttributeSet)/attrs">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ImgLyFloatSlider</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$<init>(Context, AttributeSet, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$<init>(Context, AttributeSet, kotlin.Int)/attrs">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$<init>(Context, AttributeSet, kotlin.Int)/defStyleAttr">defStyleAttr</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/ui-density.html">uiDensity</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">uiDensity</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="convert-from-range.html">convertFromRange</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">convertFromRange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertFromRange(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertFromRange(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Int)/minValue">minValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertFromRange(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Int)/maxValue">maxValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertFromRange(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Int)/steps">steps</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="convert-to-range.html">convertToRange</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">convertToRange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertToRange(kotlin.Int, kotlin.Float, kotlin.Float, kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertToRange(kotlin.Int, kotlin.Float, kotlin.Float, kotlin.Int)/minValue">minValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertToRange(kotlin.Int, kotlin.Float, kotlin.Float, kotlin.Int)/maxValue">maxValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$convertToRange(kotlin.Int, kotlin.Float, kotlin.Float, kotlin.Int)/steps">steps</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-max.html">getMax</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getMax</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-min.html">getMin</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getMin</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-percentage-progress.html">getPercentageProgress</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPercentageProgress</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Get the Progress in percent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-steps.html">getSteps</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSteps</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-value.html">getValue</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-progress-changed.html">onProgressChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onProgressChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$onProgressChanged(SeekBar, kotlin.Int, kotlin.Boolean)/seekBar">seekBar</span><span class="symbol">:</span>&nbsp;<span class="identifier">SeekBar</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$onProgressChanged(SeekBar, kotlin.Int, kotlin.Boolean)/progress">progress</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$onProgressChanged(SeekBar, kotlin.Int, kotlin.Boolean)/fromUser">fromUser</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-start-tracking-touch.html">onStartTrackingTouch</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onStartTrackingTouch</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$onStartTrackingTouch(SeekBar)/seekBar">seekBar</span><span class="symbol">:</span>&nbsp;<span class="identifier">SeekBar</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-stop-tracking-touch.html">onStopTrackingTouch</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onStopTrackingTouch</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$onStopTrackingTouch(SeekBar)/seekBar">seekBar</span><span class="symbol">:</span>&nbsp;<span class="identifier">SeekBar</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-touch-event.html">onTouchEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onTouchEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$onTouchEvent(MotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">MotionEvent</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-max.html">setMax</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setMax</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$setMax(kotlin.Float)/max">max</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-min.html">setMin</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setMin</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$setMin(kotlin.Float)/min">min</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-on-seek-bar-change-listener.html">setOnSeekBarChangeListener</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setOnSeekBarChangeListener</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$setOnSeekBarChangeListener(ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider.OnSeekBarChangeListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="-on-seek-bar-change-listener/index.html"><span class="identifier">ImgLyFloatSlider.OnSeekBarChangeListener</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-percentage-progress.html">setPercentageProgress</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPercentageProgress</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$setPercentageProgress(kotlin.Float)/percent">percent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Set the Progress in percent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-steps.html">setSteps</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSteps</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$setSteps(kotlin.Int)/steps">steps</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-value.html">setValue</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider$setValue(kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/on-attached-to-u-i.html">onAttachedToUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUIRelativeContainer$onAttachedToUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/on-attached-to-window.html">onAttachedToWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/on-detached-from-u-i.html">onDetachedFromUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUIRelativeContainer$onDetachedFromUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/on-detached-from-window.html">onDetachedFromWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

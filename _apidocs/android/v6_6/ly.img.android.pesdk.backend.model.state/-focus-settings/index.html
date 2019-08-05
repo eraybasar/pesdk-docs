@@ -1,0 +1,317 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FocusSettings - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.state</a>&nbsp;/&nbsp;<a href="./index.html">FocusSettings</a><br/>
+<br/>
+<h1>FocusSettings</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">FocusSettings</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-layer-list-settings/-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="-event/index.html"><span class="identifier">FocusSettings.Event</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p>Created by svennahler on 02.09.16.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-event/index.html">Event</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Event</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-o-d-e/index.html">MODE</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MODE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-scale-context/index.html">ScaleContext</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ScaleContext</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FocusSettings</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">FocusSettings</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/is-in-edit-mode.html">isInEditMode</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isInEditMode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-layer.html">createLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.layer.base/-layer-i/index.html"><span class="identifier">LayerI</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="generate-scaled-context.html">generateScaledContext</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">generateScaledContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$generateScaledContext(Rect)/rect">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="-scale-context/index.html"><span class="identifier">FocusSettings.ScaleContext</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus-angle.html">getFocusAngle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFocusAngle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus-inner-radius.html">getFocusInnerRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFocusInnerRadius</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus-intensity.html">getFocusIntensity</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFocusIntensity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Get blur intensity.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus-mode.html">getFocusMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFocusMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-m-o-d-e/index.html"><span class="identifier">FocusSettings.MODE</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus-outer-radius.html">getFocusOuterRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFocusOuterRadius</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus-x.html">getFocusX</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFocusX</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus-y.html">getFocusY</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFocusY</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layer-tool-id.html">getLayerToolId</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLayerToolId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-real-focus-outer-radius.html">getRealFocusOuterRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getRealFocusOuterRadius</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-singleton.html">isSingleton</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isSingleton</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="layer-canvas-mode.html">layerCanvasMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">layerCanvasMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-focus-inner-radius.html">setFocusInnerRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFocusInnerRadius</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusInnerRadius(kotlin.Double)/focusInnerRadius">focusInnerRadius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-focus-mode.html">setFocusMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFocusMode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusMode(ly.img.android.pesdk.backend.model.state.FocusSettings.MODE)/focusMode">focusMode</span><span class="symbol">:</span>&nbsp;<a href="-m-o-d-e/index.html"><span class="identifier">FocusSettings.MODE</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">FocusSettings</span></a><span class="symbol">!</span></code>
+<p>Set focus mode.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-focus-outer-radius.html">setFocusOuterRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFocusOuterRadius</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusOuterRadius(kotlin.Double)/focusOuterRadius">focusOuterRadius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-focus-position.html">setFocusPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFocusPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusPosition(kotlin.Double, kotlin.Double, kotlin.Float, kotlin.Double, kotlin.Double)/focusX">focusX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusPosition(kotlin.Double, kotlin.Double, kotlin.Float, kotlin.Double, kotlin.Double)/focusY">focusY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusPosition(kotlin.Double, kotlin.Double, kotlin.Float, kotlin.Double, kotlin.Double)/focusAngle">focusAngle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusPosition(kotlin.Double, kotlin.Double, kotlin.Float, kotlin.Double, kotlin.Double)/focusInnerRadius">focusInnerRadius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setFocusPosition(kotlin.Double, kotlin.Double, kotlin.Float, kotlin.Double, kotlin.Double)/focusOuterRadius">focusOuterRadius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">FocusSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-intensity.html">setIntensity</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setIntensity</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$setIntensity(kotlin.Float)/intensity">intensity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">FocusSettings</span></a><span class="symbol">!</span></code>
+<p>Set blur intensity.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.FocusSettings$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/bring-to-front.html">bringToFront</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">bringToFront</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/call-preview-dirty.html">callPreviewDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">callPreviewDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/cross-bind.html">crossBind</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">crossBind</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings$crossBind(ly.img.android.pesdk.backend.model.state.manager.SettingsHolderInterface)/settingsHolderInterface">settingsHolderInterface</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/exclude-in-parcel.html">excludeInParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">excludeInParcel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/get-layer.html">getLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.layer.base/-layer-i/index.html"><span class="identifier">LayerI</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/get-layer-list-settings.html">getLayerListSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLayerListSettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-layer-list-settings/index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/get-scale-down-factor.html">getScaleDownFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getScaleDownFactor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/is-in-edit-mode.html">isInEditMode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInEditMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-list-settings/-layer-settings/set-in-edit-mode.html">setInEditMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setInEditMode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings$setInEditMode(kotlin.Boolean)/isInEditMode">isInEditMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

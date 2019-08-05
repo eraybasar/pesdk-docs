@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ly.img.android.pesdk.backend.model.state.manager - </title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="./index.html">ly.img.android.pesdk.backend.model.state.manager</a><br/>
+<br/>
+<h2>Package ly.img.android.pesdk.backend.model.state.manager</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-event-handler-interface/index.html">EventHandlerInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">EventHandlerInterface</span></code>
+<p>Created by svennahler on 22.05.17.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-event-listener-interface/index.html">EventListenerInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">EventListenerInterface</span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p>Created by svennahler on 02.09.16.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-event-tracker/index.html">EventTracker</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">EventTracker</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><span class="identifier">Event</span><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p>Created by svennahler on 02.09.16.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-layer-list/index.html">LayerList</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LayerList</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../ly.img.android.pesdk.backend.model.state/-layer-list-settings/-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-revertible/index.html">Revertible</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Revertible</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p>Created by svennahler on 03.08.17.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-settings/index.html">Settings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Settings</span><span class="symbol">&lt;</span><span class="identifier">EventEnum</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><a href="-settings/index.html#EventEnum"><span class="identifier">EventEnum</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-cloneable/index.html"><span class="identifier">Cloneable</span></a><span class="symbol">, </span><span class="identifier">Parcelable</span></code>
+<p>Created by svennahler on 02.09.16.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-settings-holder-interface/index.html">SettingsHolderInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">SettingsHolderInterface</span></code>
+<p>Created by svennahler on 31.08.16.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-settings-list/index.html">SettingsList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">SettingsList</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Parcelable</span><span class="symbol">, </span><a href="-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a></code>
+<p>Created by svennahler on 31.08.16.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-state-handler/index.html">StateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">StateHandler</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../ly.img.android.pesdk.backend.model.state.manager.observ/-base-observable/index.html"><span class="identifier">BaseObservable</span></a><span class="symbol">, </span><span class="identifier">StateListenerInterface</span><span class="symbol">, </span><a href="-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-state-listener/index.html">StateListener</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">StateListener</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../ly.img.android.pesdk.backend.model.state.manager.observ/-observable/-on-property-changed-callback/index.html"><span class="identifier">Observable.OnPropertyChangedCallback</span></a><span class="symbol">, </span><span class="identifier">StateListenerInterface</span></code>
+<p>Created by svennahler on 02.09.16.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-state-observable/index.html">StateObservable</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">StateObservable</span><span class="symbol">&lt;</span><span class="identifier">EventEnum</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p>Created by svennahler on 02.09.16.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Annotations</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-main-thread-event-call/index.html">MainThreadEventCall</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MainThreadEventCall</span></code>
+<p>Created by svennahler on 31.01.17.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-work-thread-event-call/index.html">WorkThreadEventCall</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">WorkThreadEventCall</span></code>
+<p>Created by svennahler on 31.01.17.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
