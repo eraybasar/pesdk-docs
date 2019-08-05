@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RelativeRectAccurate.contains - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.chunk</a>&nbsp;/&nbsp;<a href="index.html">RelativeRectAccurate</a>&nbsp;/&nbsp;<a href="./contains.html">contains</a><br/>
+<br/>
+<h1>contains</h1>
+<code><span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Returns true if (x,y) is inside the rectangle. The left and top are considered to be inside, while the right and bottom are not. This means that for a x,y to be contained: left &lt;= x &lt; right and top &lt;= y &lt; bottom. An empty rectangle never contains any point.</p>
+<h3>Parameters</h3>
+<p><a name="x"></a>
+<code>x</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The X coordinate of the point being tested for containment</p>
+<p><a name="y"></a>
+<code>y</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The Y coordinate of the point being tested for containment</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">boolean</span><span class="symbol">:</span> true iff (x,y) are contained by the rectangle, where containment means left &lt;= x &lt; right and top &lt;= y &lt; bottom</p>
+<code><span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Returns true iff the 4 specified sides of a rectangle are inside or equal to this rectangle. i.e. is this rectangle a superset of the specified rectangle. An empty rectangle never contains another rectangle.</p>
+<h3>Parameters</h3>
+<p><a name="left"></a>
+<code>left</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The left side of the rectangle being tested for containment</p>
+<p><a name="top"></a>
+<code>top</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The top of the rectangle being tested for containment</p>
+<p><a name="right"></a>
+<code>right</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The right side of the rectangle being tested for containment</p>
+<p><a name="bottom"></a>
+<code>bottom</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The bottom of the rectangle being tested for containment</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">boolean</span><span class="symbol">:</span> true iff the the 4 specified sides of a rectangle are inside or equal to this rectangle</p>
+<code><span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<a href="index.html"><span class="identifier">RelativeRectAccurate</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Returns true iff the specified rectangle r is inside or equal to this rectangle. An empty rectangle never contains another rectangle.</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <a href="index.html"><span class="identifier">RelativeRectAccurate</span></a><span class="symbol">:</span> The rectangle being tested for containment.</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">boolean</span><span class="symbol">:</span> true iff the specified rectangle r is inside or equal to this rectangle</p>
+</BODY>
+</HTML>

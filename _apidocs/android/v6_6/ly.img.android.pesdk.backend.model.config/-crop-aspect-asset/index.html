@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CropAspectAsset - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.config</a>&nbsp;/&nbsp;<a href="./index.html">CropAspectAsset</a><br/>
+<br/>
+<h1>CropAspectAsset</h1>
+<code><span class="keyword">class </span><span class="identifier">CropAspectAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">CropAspectAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">cropWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">cropHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">fixedSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">CropAspectAsset</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-aspect.html">getAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAspect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code>
+<p>Get Aspect the ration or #CropAspectAsset.CUSTOM_ASPECT if it is custom aspect mode.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.config.AbstractAsset</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-crop-height.html">getCropHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCropHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-crop-width.html">getCropWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCropWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-equal-aspect.html">hasEqualAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasEqualAspect</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-specific-size.html">hasSpecificSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasSpecificSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-free-crop.html">isFreeCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFreeCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-r-e-e_-c-r-o-p.html">FREE_CROP</a></p>
+</td>
+<td>
+<code><span class="identifier">FREE_CROP</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-r-e-e_-c-r-o-p_-i-d.html">FREE_CROP_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">FREE_CROP_ID</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-e-s-e-t_-c-r-o-p_-i-d.html">RESET_CROP_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">RESET_CROP_ID</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
