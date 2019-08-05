@@ -18,8 +18,34 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">GlRawBitmap</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
-<code><span class="identifier">GlRawBitmap</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code></td>
+<code><span class="identifier">GlRawBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.GlRawBitmap$<init>(kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.GlRawBitmap$<init>(kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">GlRawBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.GlRawBitmap$<init>(kotlin.IntArray, kotlin.Int, kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.GlRawBitmap$<init>(kotlin.IntArray, kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.GlRawBitmap$<init>(kotlin.IntArray, kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="data.html">data</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">data</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="height.html">height</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -31,47 +57,21 @@
 <p><a href="create-bitmap.html">createBitmap</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">createBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code></td>
+<code><span class="keyword">fun </span><span class="identifier">createBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="create-rs-allocation.html">createRsAllocation</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">createRsAllocation</span><span class="symbol">(</span><span class="identifier">rs</span><span class="symbol">:</span>&nbsp;<span class="identifier">RenderScript</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Allocation</span></code></td>
+<code><span class="keyword">fun </span><span class="identifier">createRsAllocation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.GlRawBitmap$createRsAllocation(RenderScript)/rs">rs</span><span class="symbol">:</span>&nbsp;<span class="identifier">RenderScript</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Allocation</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-buffer.html">getBuffer</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getBuffer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.nio.IntBuffer</span></code></td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="data.html">data</a></p>
-</td>
-<td>
-<code><span class="identifier">data</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="height.html">height</a></p>
-</td>
-<td>
-<code><span class="identifier">height</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="width.html">width</a></p>
-</td>
-<td>
-<code><span class="identifier">width</span></code></td>
+<code><span class="keyword">fun </span><span class="identifier">getBuffer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/nio/IntBuffer.html"><span class="identifier">IntBuffer</span></a><span class="symbol">!</span></code></td>
 </tr>
 </tbody>
 </table>

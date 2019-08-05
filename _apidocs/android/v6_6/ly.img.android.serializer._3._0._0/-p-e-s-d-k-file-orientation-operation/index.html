@@ -8,10 +8,7 @@
 <a href="../index.html">ly.img.android.serializer._3._0._0</a>&nbsp;/&nbsp;<a href="./index.html">PESDKFileOrientationOperation</a><br/>
 <br/>
 <h1>PESDKFileOrientationOperation</h1>
-<code><span class="identifier">@JsonInclude</span><span class="symbol">(</span>JsonInclude.Include.NON_NULL<span class="symbol">)</span> <span class="identifier">@JsonPropertyOrder</span><span class="symbol">(</span>{
-    "type",
-    "options"
-}<span class="symbol">)</span> <span class="identifier">@JsonIgnoreProperties</span><span class="symbol">(</span>true<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">PESDKFileOrientationOperation</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PESDKFileOrientationOperation</span></code>
 <h3>Types</h3>
 <table>
 <tbody>
@@ -24,6 +21,18 @@
 </tr>
 </tbody>
 </table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PESDKFileOrientationOperation</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -32,14 +41,14 @@
 <p><a href="create-operation.html">createOperation</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">createOperation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-operation/index.html"><span class="identifier">PESDKFileOperation</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createOperation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-operation/index.html"><span class="identifier">PESDKFileOperation</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-options.html">getOptions</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getOptions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-orientation-options/index.html"><span class="identifier">PESDKFileOrientationOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getOptions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-orientation-options/index.html"><span class="identifier">PESDKFileOrientationOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -48,7 +57,7 @@
 <p><a href="get-type.html">getType</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-type/index.html"><span class="identifier">PESDKFileOrientationOperation.Type</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-type/index.html"><span class="identifier">PESDKFileOrientationOperation.Type</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -57,7 +66,7 @@
 <p><a href="set-options.html">setOptions</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setOptions</span><span class="symbol">(</span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-orientation-options/index.html"><span class="identifier">PESDKFileOrientationOptions</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileOrientationOperation</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setOptions</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileOrientationOperation$setOptions(ly.img.android.serializer._3._0._0.PESDKFileOrientationOptions)/options">options</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-orientation-options/index.html"><span class="identifier">PESDKFileOrientationOptions</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileOrientationOperation</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -66,7 +75,7 @@
 <p><a href="set-type.html">setType</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setType</span><span class="symbol">(</span><span class="identifier">type</span><span class="symbol">:</span>&nbsp;<a href="-type/index.html"><span class="identifier">PESDKFileOrientationOperation.Type</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileOrientationOperation</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setType</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileOrientationOperation$setType(ly.img.android.serializer._3._0._0.PESDKFileOrientationOperation.Type)/type">type</span><span class="symbol">:</span>&nbsp;<a href="-type/index.html"><span class="identifier">PESDKFileOrientationOperation.Type</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileOrientationOperation</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>

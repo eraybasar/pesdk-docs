@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.backend.operator.export</a>&nbsp;/&nbsp;<a href="./index.html">ImageLoadOperation</a><br/>
 <br/>
 <h1>ImageLoadOperation</h1>
-<code><span class="keyword">class </span><span class="identifier">ImageLoadOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.EditorLoadSettings</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ImageLoadOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state/-editor-load-settings/index.html"><span class="identifier">EditorLoadSettings</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
 <p>Source image load operator</p>
 <h3>Constructors</h3>
 <table>
@@ -22,6 +22,30 @@
 </tr>
 </tbody>
 </table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="fallback-source-decoder.html">fallbackSourceDecoder</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fallbackSourceDecoder</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-operation/-m-e-m-o-r-y_-m-a-t-h_-c-o-n-t-e-x-t.html">MEMORY_MATH_CONTEXT</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">MEMORY_MATH_CONTEXT</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html"><span class="identifier">MathContext</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -30,47 +54,125 @@
 <p><a href="do-operation.html">doOperation</a></p>
 </td>
 <td>
-<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.EditorLoadSettings</span><span class="symbol">, </span><span class="identifier">request</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-result-region-i/index.html"><span class="identifier">ResultRegionI</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-request-result-i/index.html"><span class="identifier">RequestResultI</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$doOperation(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.state.EditorLoadSettings, ly.img.android.pesdk.backend.model.chunk.ResultRegionI)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$doOperation(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.state.EditorLoadSettings, ly.img.android.pesdk.backend.model.chunk.ResultRegionI)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state/-editor-load-settings/index.html"><span class="identifier">EditorLoadSettings</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$doOperation(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.state.EditorLoadSettings, ly.img.android.pesdk.backend.model.chunk.ResultRegionI)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-result-region-i/index.html"><span class="identifier">ResultRegionI</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-request-result-i/index.html"><span class="identifier">RequestResultI</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-estimated-memory-consumption-factor.html">getEstimatedMemoryConsumptionFactor</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getEstimatedMemoryConsumptionFactor</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.EditorLoadSettings</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getEstimatedMemoryConsumptionFactor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$getEstimatedMemoryConsumptionFactor(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.state.EditorLoadSettings)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$getEstimatedMemoryConsumptionFactor(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.state.EditorLoadSettings)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state/-editor-load-settings/index.html"><span class="identifier">EditorLoadSettings</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-identifier.html">getIdentifier</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getIdentifier</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getIdentifier</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-result-rect.html">getResultRect</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getResultRect</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">subSample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getResultRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$getResultRect(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Float)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$getResultRect(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Float)/subSample">subSample</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-ready.html">isReady</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isReady</span><span class="symbol">(</span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.EditorLoadSettings</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isReady</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.ImageLoadOperation$isReady(ly.img.android.pesdk.backend.model.state.EditorLoadSettings)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state/-editor-load-settings/index.html"><span class="identifier">EditorLoadSettings</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 </tbody>
 </table>
-<h3>Other members</h3>
+<h3>Inherited Functions</h3>
 <table>
 <tbody>
 <tr>
 <td>
-<p><a href="fallback-source-decoder.html">fallbackSourceDecoder</a></p>
+<p><a href="../-operation/equals.html">equals</a></p>
 </td>
 <td>
-<code><span class="identifier">fallbackSourceDecoder</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/get-estimated-memory-consumption-factor.html">getEstimatedMemoryConsumptionFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getEstimatedMemoryConsumptionFactor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$getEstimatedMemoryConsumptionFactor(ly.img.android.pesdk.backend.operator.export.Operator)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/get-necessary-memory.html">getNecessaryMemory</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getNecessaryMemory</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$getNecessaryMemory(ly.img.android.pesdk.backend.operator.export.Operator)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/get-previous-result-rect.html">getPreviousResultRect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPreviousResultRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$getPreviousResultRect(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Float)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$getPreviousResultRect(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Float)/subSample">subSample</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPreviousResultRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$getPreviousResultRect(ly.img.android.pesdk.backend.operator.export.Operator)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/get-state.html">getState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$getState(ly.img.android.pesdk.backend.operator.export.Operator)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-operation/index.html#StateClass"><span class="identifier">StateClass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/is-cachable.html">isCachable</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isCachable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/operator-ready.html">operatorReady</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">operatorReady</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$operatorReady(ly.img.android.pesdk.backend.operator.export.Operator)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/request-source-answer.html">requestSourceAnswer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">requestSourceAnswer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$requestSourceAnswer(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.chunk.RequestI)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$requestSourceAnswer(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.chunk.RequestI)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-request-i/index.html"><span class="identifier">RequestI</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-source-request-answer-i/index.html"><span class="identifier">SourceRequestAnswerI</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/run-and-delegate.html">runAndDelegate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">runAndDelegate</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$runAndDelegate(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.chunk.ResultRegionI)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$runAndDelegate(ly.img.android.pesdk.backend.operator.export.Operator, ly.img.android.pesdk.backend.model.chunk.ResultRegionI)/resultRegion">resultRegion</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-result-region-i/index.html"><span class="identifier">ResultRegionI</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-request-result-i/index.html"><span class="identifier">RequestResultI</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/set-level-progress.html">setLevelProgress</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setLevelProgress</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$setLevelProgress(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Int, kotlin.Int, kotlin.Int)/operator">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$setLevelProgress(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Int, kotlin.Int, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$setLevelProgress(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Int, kotlin.Int, kotlin.Int)/stepCount">stepCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.export.Operation$setLevelProgress(ly.img.android.pesdk.backend.operator.export.Operator, kotlin.Int, kotlin.Int, kotlin.Int)/step">step</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-operation/to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
 </tr>
 </tbody>
 </table>

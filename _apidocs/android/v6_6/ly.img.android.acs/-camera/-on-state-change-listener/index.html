@@ -18,7 +18,7 @@
 <p><a href="on-cam-view-state-change.html">onCamViewStateChange</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onCamViewStateChange</span><span class="symbol">(</span><span class="identifier">state</span><span class="symbol">:</span>&nbsp;<a href="../-camera-state/index.html"><span class="identifier">Camera.CameraState</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onCamViewStateChange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.acs.Camera.OnStateChangeListener$onCamViewStateChange(ly.img.android.acs.Camera.CameraState)/state">state</span><span class="symbol">:</span>&nbsp;<a href="../-camera-state/index.html"><span class="identifier">Camera.CameraState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Will fire if Camera parameter state would change</p>
 </td>
 </tr>
@@ -32,14 +32,14 @@
 <p><a href="../../../ly.img.android.pesdk.ui.activity/-camera-preview-activity/index.html">CameraPreviewActivity</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">CameraPreviewActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.ui.activity/-img-ly-activity/index.html"><span class="identifier">ImgLyActivity</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../-camera-view/-capture-callback/index.html"><span class="identifier">CameraView.CaptureCallback</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CameraPreviewActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.ui.activity/-img-ly-activity/index.html"><span class="identifier">ImgLyActivity</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../-camera-view/-capture-callback/index.html"><span class="identifier">CameraView.CaptureCallback</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="../../-camera-view/index.html">CameraView</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">CameraView</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/index.html"><span class="identifier">ImgLyUIRelativeContainer</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.utils/-orientation-sensor/-orientation-listener/index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CameraView</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/index.html"><span class="identifier">ImgLyUIRelativeContainer</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.utils/-orientation-sensor/-orientation-listener/index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code></td>
 </tr>
 </tbody>
 </table>

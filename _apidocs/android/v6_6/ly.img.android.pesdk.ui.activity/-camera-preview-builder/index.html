@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.ui.activity</a>&nbsp;/&nbsp;<a href="./index.html">CameraPreviewBuilder</a><br/>
 <br/>
 <h1>CameraPreviewBuilder</h1>
-<code><span class="keyword">class </span><span class="identifier">CameraPreviewBuilder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-img-ly-intent/index.html"><span class="identifier">ImgLyIntent</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CameraPreviewBuilder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-img-ly-intent/index.html"><span class="identifier">ImgLyIntent</span></a></code>
 <h3>Constructors</h3>
 <table>
 <tbody>
@@ -17,8 +17,55 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">CameraPreviewBuilder</span><span class="symbol">(</span><span class="identifier">intent</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">)</span></code><br/>
-<code><span class="identifier">CameraPreviewBuilder</span><span class="symbol">(</span><span class="identifier">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">)</span></code></td>
+<code><span class="identifier">CameraPreviewBuilder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$<init>(android.content.Intent)/intent">intent</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">CameraPreviewBuilder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$<init>(Activity)/activity">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/activity-class.html">activityClass</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">activityClass</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/intent.html">intent</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">intent</span><span class="symbol">: </span><span class="identifier">Intent</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/-r-e-s-u-l-t_-i-m-a-g-e_-u-r-i.html">RESULT_IMAGE_URI</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">RESULT_IMAGE_URI</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/-s-e-t-t-i-n-g-s_-l-i-s-t.html">SETTINGS_LIST</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">SETTINGS_LIST</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/-s-o-u-r-c-e_-i-m-a-g-e_-u-r-i.html">SOURCE_IMAGE_URI</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">SOURCE_IMAGE_URI</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -30,9 +77,74 @@
 <p><a href="start-activity-for-result.html">startActivityForResult</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">, </span><span class="identifier">resultId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><span class="identifier">resultId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><span class="identifier">resultId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$startActivityForResult(Activity, kotlin.Int)/activity">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$startActivityForResult(Activity, kotlin.Int)/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$startActivityForResult(Fragment, kotlin.Int)/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$startActivityForResult(Fragment, kotlin.Int)/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$startActivityForResult(android.support.v4.app.Fragment, kotlin.Int)/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewBuilder$startActivityForResult(android.support.v4.app.Fragment, kotlin.Int)/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/create.html">create</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$create(android.content.Intent, java.lang.Class((kotlin.Any)))/intent">intent</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$create(android.content.Intent, java.lang.Class((kotlin.Any)))/activityClass">activityClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-intent/index.html"><span class="identifier">ImgLyIntent</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/internal_get-settings-list.html">internal_getSettingsList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">internal_getSettingsList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings-list/index.html"><span class="identifier">SettingsList</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/set-settings-list.html">setSettingsList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSettingsList</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$setSettingsList(ly.img.android.pesdk.backend.model.state.manager.SettingsList)/settingsList">settingsList</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings-list/index.html"><span class="identifier">SettingsList</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-intent/index.html"><span class="identifier">ImgLyIntent</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/start-activity-for-result.html">startActivityForResult</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(Activity, kotlin.Int, kotlin.Array((kotlin.String)))/activity">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(Activity, kotlin.Int, kotlin.Array((kotlin.String)))/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(Activity, kotlin.Int, kotlin.Array((kotlin.String)))/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(Fragment, kotlin.Int, kotlin.Array((kotlin.String)))/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(Fragment, kotlin.Int, kotlin.Array((kotlin.String)))/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(Fragment, kotlin.Int, kotlin.Array((kotlin.String)))/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(android.support.v4.app.Fragment, kotlin.Int, kotlin.Array((kotlin.String)))/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(android.support.v4.app.Fragment, kotlin.Int, kotlin.Array((kotlin.String)))/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(android.support.v4.app.Fragment, kotlin.Int, kotlin.Array((kotlin.String)))/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator, kotlin.Int, kotlin.Array((kotlin.String)))/delegator">delegator</span><span class="symbol">:</span>&nbsp;<a href="../-img-ly-intent/-result-delegator/index.html"><span class="identifier">ImgLyIntent.ResultDelegator</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator, kotlin.Int, kotlin.Array((kotlin.String)))/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$startActivityForResult(ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator, kotlin.Int, kotlin.Array((kotlin.String)))/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Start the Activity and return the result at the end.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/unwrap-bundle.html">unwrapBundle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Parcelable</span><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">unwrapBundle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$unwrapBundle(Bundle)/bundle">bundle</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-intent/unwrap-bundle.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/wrap-bundle.html">wrapBundle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">wrapBundle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$wrapBundle(Parcelable)/parcelable">parcelable</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcelable</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bundle</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-intent/write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>

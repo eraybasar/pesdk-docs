@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.ui.panels.item</a>&nbsp;/&nbsp;<a href="./index.html">ColorPipetteItem</a><br/>
 <br/>
 <h1>ColorPipetteItem</h1>
-<code><span class="keyword">class </span><span class="identifier">ColorPipetteItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-color-item/index.html"><span class="identifier">ColorItem</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ColorPipetteItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-color-item/index.html"><span class="identifier">ColorItem</span></a></code>
 <h3>Types</h3>
 <table>
 <tbody>
@@ -17,7 +17,7 @@
 <p><a href="-color-picker-asset/index.html">ColorPickerAsset</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">ColorPickerAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-color-asset/index.html"><span class="identifier">ColorAsset</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ColorPickerAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-color-asset/index.html"><span class="identifier">ColorAsset</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -29,9 +29,21 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">ColorPipetteItem</span><span class="symbol">(</span><span class="identifier">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span></code><br/>
-<code><span class="identifier">ColorPipetteItem</span><span class="symbol">(</span><span class="identifier">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
-<code><span class="identifier">ColorPipetteItem</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+<code><span class="identifier">ColorPipetteItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$<init>(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ColorPipetteItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$<init>(kotlin.Int)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ColorPipetteItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -43,125 +55,113 @@
 <p><a href="describe-contents.html">describeContents</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="equals.html">equals</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$equals(kotlin.Any)/o">o</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-data.html">getData</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getData</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.config/-color-asset/index.html"><span class="identifier">ColorAsset</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getData</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.config/-color-asset/index.html"><span class="identifier">ColorAsset</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-layout.html">getLayout</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-pipette-position-x.html">getPipettePositionX</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getPipettePositionX</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPipettePositionX</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-pipette-position-y.html">getPipettePositionY</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getPipettePositionY</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPipettePositionY</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-thumbnail-bitmap.html">getThumbnailBitmap</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="identifier">maxWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$getThumbnailBitmap(kotlin.Int)/maxWidth">maxWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-view-holder-class.html">getViewHolderClass</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getViewHolderClass</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.DataSourceViewHolder</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getViewHolderClass</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-data-source-view-holder/index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="hash-code.html">hashCode</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="has-last-pipette-position.html">hasLastPipettePosition</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">hasLastPipettePosition</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasLastPipettePosition</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="has-static-thumbnail.html">hasStaticThumbnail</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">hasStaticThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasStaticThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-selectable.html">isSelectable</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isSelectable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isSelectable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-color.html">setColor</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setColor</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setColor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$setColor(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-pipette-position-x.html">setPipettePositionX</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setPipettePositionX</span><span class="symbol">(</span><span class="identifier">pipettePositionX</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPipettePositionX</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$setPipettePositionX(kotlin.Float)/pipettePositionX">pipettePositionX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-pipette-position-y.html">setPipettePositionY</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setPipettePositionY</span><span class="symbol">(</span><span class="identifier">pipettePositionY</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPipettePositionY</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$setPipettePositionY(kotlin.Float)/pipettePositionY">pipettePositionY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="write-to-parcel.html">writeToParcel</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
-</td>
-<td>
-<code><span class="identifier">CREATOR</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ColorPipetteItem$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>

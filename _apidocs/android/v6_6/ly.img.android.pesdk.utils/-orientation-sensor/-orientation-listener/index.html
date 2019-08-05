@@ -17,7 +17,7 @@
 <p><a href="on-orientation-change.html">onOrientationChange</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onOrientationChange</span><span class="symbol">(</span><span class="identifier">screenOrientation</span><span class="symbol">:</span>&nbsp;<a href="../-screen-orientation/index.html"><span class="identifier">OrientationSensor.ScreenOrientation</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onOrientationChange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.OrientationSensor.OrientationListener$onOrientationChange(ly.img.android.pesdk.utils.OrientationSensor.ScreenOrientation)/screenOrientation">screenOrientation</span><span class="symbol">:</span>&nbsp;<a href="../-screen-orientation/index.html"><span class="identifier">OrientationSensor.ScreenOrientation</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -29,7 +29,7 @@
 <p><a href="../../../ly.img.android.pesdk.ui.widgets/-auto-rotate-image-source/index.html">AutoRotateImageSource</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">AutoRotateImageSource</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.ui.widgets/-image-source-view/index.html"><span class="identifier">ImageSourceView</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AutoRotateImageSource</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.ui.widgets/-image-source-view/index.html"><span class="identifier">ImageSourceView</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code>
 <p>Rotate on device rotation it use the OrientationSensor Class. To use it the OrientationSensor must be start on Activity resume and stop on Activity pause.</p>
 </td>
 </tr>
@@ -38,7 +38,7 @@
 <p><a href="../../../ly.img.android.pesdk.ui.widgets/-auto-rotate-layout/index.html">AutoRotateLayout</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">AutoRotateLayout</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RelativeLayout</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AutoRotateLayout</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RelativeLayout</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code>
 <p>Rotate on device rotation it use the OrientationSensor Class. To use it the OrientationSensor must be start on Activity resume and stop on Activity pause.</p>
 </td>
 </tr>
@@ -47,7 +47,7 @@
 <p><a href="../../../ly.img.android.pesdk.ui.widgets/-auto-rotate-text-view/index.html">AutoRotateTextView</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">AutoRotateTextView</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">TextView</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AutoRotateTextView</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">TextView</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code>
 <p>Rotate on device rotation it use the OrientationSensor Class. To use it the OrientationSensor must be start on Activity resume and stop on Activity pause.</p>
 </td>
 </tr>
@@ -56,7 +56,7 @@
 <p><a href="../../../ly.img.android.acs/-camera-view/index.html">CameraView</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">CameraView</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/index.html"><span class="identifier">ImgLyUIRelativeContainer</span></a><span class="symbol">, </span><a href="../../../ly.img.android.acs/-camera/-on-state-change-listener/index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CameraView</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-relative-container/index.html"><span class="identifier">ImgLyUIRelativeContainer</span></a><span class="symbol">, </span><a href="../../../ly.img.android.acs/-camera/-on-state-change-listener/index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code></td>
 </tr>
 </tbody>
 </table>

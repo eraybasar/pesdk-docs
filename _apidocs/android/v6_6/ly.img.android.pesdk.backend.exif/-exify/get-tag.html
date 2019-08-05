@@ -8,21 +8,24 @@
 <a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">Exify</a>&nbsp;/&nbsp;<a href="./get-tag.html">getTag</a><br/>
 <br/>
 <h1>getTag</h1>
-<code><span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<a name="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Returns the ExifTag in that tag's default IFD for a defined tag constant or null if none exists.</p>
 <h3>Parameters</h3>
 <p><a name="tagId"></a>
-<code>tagId</code> - <span class="identifier">int</span><span class="symbol">:</span> a defined tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
+<code>tagId</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> a defined tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
 <p><strong>Return</strong><br/>
-<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">:</span> an <code><a href="../-exif-tag-info/index.html">ExifTagInfo</a></code> or null if none exists.</p>
-<code><span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">:</span> an <code><a href="../-exif-tag-info/index.html">ExifTagInfo</a></code> or null if none exists.</p>
+<a name="ly.img.android.pesdk.backend.exif.Exify$getTag(ly.img.android.pesdk.backend.exif.Exify.TAG)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Returns the ExifTag in that tag's default IFD for a defined tag constant or null if none exists.</p>
 <h3>Parameters</h3>
 <p><a name="tag"></a>
-<code>tag</code> - <a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">:</span> a defined tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
+<code>tag</code> - <a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">:</span> a defined tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
 <p><strong>Return</strong><br/>
-<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">:</span> an <code><a href="../-exif-tag-info/index.html">ExifTagInfo</a></code> or null if none exists.</p>
-<code><span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">:</span> an <code><a href="../-exif-tag-info/index.html">ExifTagInfo</a></code> or null if none exists.</p>
+<a name="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int, kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Gets an ExifTag for an IFD other than the tag's default.</p>
 <p><strong>See Also</strong><br/>
 <a href="./get-tag.html">#getTag</a></p>

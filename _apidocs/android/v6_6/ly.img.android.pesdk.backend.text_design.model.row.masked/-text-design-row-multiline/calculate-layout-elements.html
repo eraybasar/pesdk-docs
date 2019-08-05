@@ -8,7 +8,9 @@
 <a href="../index.html">ly.img.android.pesdk.backend.text_design.model.row.masked</a>&nbsp;/&nbsp;<a href="index.html">TextDesignRowMultiline</a>&nbsp;/&nbsp;<a href="./calculate-layout-elements.html">calculateLayoutElements</a><br/>
 <br/>
 <h1>calculateLayoutElements</h1>
-<code><span class="identifier">@NotNull</span> <span class="keyword">protected</span> <span class="keyword">fun </span><span class="identifier">calculateLayoutElements</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.List</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code>
+<a name="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$calculateLayoutElements()"></a>
+<code><span class="keyword">protected</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateLayoutElements</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code>
+<p>Overrides <a href="../../ly.img.android.pesdk.backend.text_design.model.row.defaults/-text-design-row-single/calculate-layout-elements.html">TextDesignRowSingle.calculateLayoutElements</a></p>
 <p>This method creates and returns all the <code>TextDesignElement</code>s in this row based on the passed
 <code>size.width</code>. It must not rely on the height because this has not been calculated - in fact
 the height has to be derived from the width within this method. That means that this method

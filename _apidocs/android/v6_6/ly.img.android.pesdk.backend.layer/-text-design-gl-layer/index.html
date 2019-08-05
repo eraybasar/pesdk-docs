@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.backend.layer</a>&nbsp;/&nbsp;<a href="./index.html">TextDesignGlLayer</a><br/>
 <br/>
 <h1>TextDesignGlLayer</h1>
-<code><span class="identifier">@SuppressLint</span><span class="symbol">(</span>ViewConstructor<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">TextDesignGlLayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.layer.base/-gl-layer/index.html"><span class="identifier">GlLayer</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.layer.base/-render-to-canvas-layer-i/index.html"><span class="identifier">RenderToCanvasLayerI</span></a><span class="symbol">, </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.EventListenerInterface</span><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.Event</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TextDesignGlLayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.layer.base/-gl-layer/index.html"><span class="identifier">GlLayer</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.layer.base/-render-to-canvas-layer-i/index.html"><span class="identifier">RenderToCanvasLayerI</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-event-listener-interface/index.html"><span class="identifier">EventListenerInterface</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.layer/-text-design-layer-settings/-event/index.html"><span class="identifier">TextDesignLayerSettings.Event</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
 <h3>Constructors</h3>
 <table>
 <tbody>
@@ -17,7 +17,117 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">TextDesignGlLayer</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">, </span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings</span><span class="symbol">)</span></code></td>
+<code><span class="identifier">TextDesignGlLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$<init>(ly.img.android.pesdk.backend.model.state.manager.StateHandler, ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$<init>(ly.img.android.pesdk.backend.model.state.manager.StateHandler, ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.layer/-text-design-layer-settings/index.html"><span class="identifier">TextDesignLayerSettings</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-b-o-r-d-e-r_-t-h-i-c-k-n-e-s-s.html">BORDER_THICKNESS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">BORDER_THICKNESS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-a-c-h-e_-t-h-r-e-s-h-o-l-d.html">CACHE_THRESHOLD</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">CACHE_THRESHOLD</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-c-o-l-o-r.html">EDGE_COLOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_COLOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-h-e-i-g-h-t.html">EDGE_HEIGHT</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_HEIGHT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-t-h-i-c-k-n-e-s-s.html">EDGE_THICKNESS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_THICKNESS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-d-g-e_-w-i-d-t-h.html">EDGE_WIDTH</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">EDGE_WIDTH</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-c-o-l-o-r.html">LINE_COLOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">LINE_COLOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-h-e-i-g-h-t_-o-f-f-s-e-t.html">LINE_HEIGHT_OFFSET</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">LINE_HEIGHT_OFFSET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-n-e_-w-i-d-t-h_-o-f-f-s-e-t.html">LINE_WIDTH_OFFSET</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">LINE_WIDTH_OFFSET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-u-t-s-i-d-e_-c-o-l-o-r_-r-g-b-a.html">OUTSIDE_COLOR_RGBA</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">OUTSIDE_COLOR_RGBA</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-a-d-d-i-n-g_-t-h-u-m-b_-o-f-f-s-e-t_-i-n_-d-p.html">PADDING_THUMB_OFFSET_IN_DP</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">PADDING_THUMB_OFFSET_IN_DP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="padding-thumb-shortening-factor.html">paddingThumbShorteningFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">paddingThumbShorteningFactor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-n-a-p_-r-a-n-g-e_-i-n_-d-p.html">SNAP_RANGE_IN_DP</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">SNAP_RANGE_IN_DP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-o-r-t-e-d_-s-n-a-p_-p-o-i-n-t-s.html">SORTED_SNAP_POINTS</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">SORTED_SNAP_POINTS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-o-u-c-h_-o-f-f-s-e-t_-i-n_-d-p.html">TOUCH_OFFSET_IN_DP</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">TOUCH_OFFSET_IN_DP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -29,307 +139,209 @@
 <p><a href="do-respond-on-click.html">doRespondOnClick</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">doRespondOnClick</span><span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">doRespondOnClick</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$doRespondOnClick(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="draw-padding-thumb.html">drawPaddingThumb</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">drawPaddingThumb</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">, </span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">angle</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">centerOffset</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">alignment</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.layer.TextDesignGlLayer.THUMB_ALIGNMENT</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">drawPaddingThumb</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawPaddingThumb(Canvas, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, ly.img.android.pesdk.backend.layer.TextDesignGlLayer.THUMB_ALIGNMENT)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawPaddingThumb(Canvas, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, ly.img.android.pesdk.backend.layer.TextDesignGlLayer.THUMB_ALIGNMENT)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawPaddingThumb(Canvas, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, ly.img.android.pesdk.backend.layer.TextDesignGlLayer.THUMB_ALIGNMENT)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawPaddingThumb(Canvas, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, ly.img.android.pesdk.backend.layer.TextDesignGlLayer.THUMB_ALIGNMENT)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawPaddingThumb(Canvas, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, ly.img.android.pesdk.backend.layer.TextDesignGlLayer.THUMB_ALIGNMENT)/centerOffset">centerOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawPaddingThumb(Canvas, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, ly.img.android.pesdk.backend.layer.TextDesignGlLayer.THUMB_ALIGNMENT)/alignment">alignment</span><span class="symbol">:</span>&nbsp;<span class="identifier">THUMB_ALIGNMENT</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="draw-sticker-slice.html">drawStickerSlice</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">drawStickerSlice</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">, </span><span class="identifier">region</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">fullRange</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">drawStickerSlice</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawStickerSlice(Canvas, RectF, RectF)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawStickerSlice(Canvas, RectF, RectF)/region">region</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$drawStickerSlice(Canvas, RectF, RectF)/fullRange">fullRange</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-result-rect.html">getResultRect</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getResultRect</span><span class="symbol">(</span><span class="identifier">fullImageRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">subSample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getResultRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$getResultRect(Rect, kotlin.Float)/fullImageRegion">fullImageRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$getResultRect(Rect, kotlin.Float)/subSample">subSample</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-sticker-destination-rect.html">getStickerDestinationRect</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getStickerDestinationRect</span><span class="symbol">(</span><span class="identifier">scaleContext</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.ScaleContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStickerDestinationRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$getStickerDestinationRect(ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.ScaleContext)/scaleContext">scaleContext</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.layer/-text-design-layer-settings/-scale-context/index.html"><span class="identifier">TextDesignLayerSettings.ScaleContext</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-sticker-padding-rect.html">getStickerPaddingRect</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getStickerPaddingRect</span><span class="symbol">(</span><span class="identifier">scaleContext</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.ScaleContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStickerPaddingRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$getStickerPaddingRect(ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.ScaleContext)/scaleContext">scaleContext</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.layer/-text-design-layer-settings/-scale-context/index.html"><span class="identifier">TextDesignLayerSettings.ScaleContext</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-touched-edge.html">getTouchedEdge</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTouchedEdge</span><span class="symbol">(</span><span class="identifier">pos</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.constant.RectEdge</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTouchedEdge</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$getTouchedEdge(kotlin.FloatArray)/pos">pos</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.constant/-rect-edge/index.html"><span class="identifier">RectEdge</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="gl-setup.html">glSetup</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-in-bitmap.html">isInBitmap</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isInBitmap</span><span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isInBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$isInBitmap(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-on-padding-thumb.html">isOnPaddingThumb</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isOnPaddingThumb</span><span class="symbol">(</span><span class="identifier">screenTouchPos</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isOnPaddingThumb</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$isOnPaddingThumb(kotlin.FloatArray)/screenTouchPos">screenTouchPos</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-relative-to-crop.html">isRelativeToCrop</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isRelativeToCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isRelativeToCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="load-bitmap-cache.html">loadBitmapCache</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">loadBitmapCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">loadBitmapCache</span><span class="symbol">(</span><span class="identifier">pixelSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">loadBitmapCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">loadBitmapCache</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$loadBitmapCache(kotlin.Long)/pixelSize">pixelSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="need-full-image-region.html">needFullImageRegion</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">needFullImageRegion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">needFullImageRegion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-activated.html">onActivated</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onActivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onActivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-attached-to-u-i.html">onAttachedToUI</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$onAttachedToUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-deactivated.html">onDeactivated</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onDeactivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDeactivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-detached-from-u-i.html">onDetachedFromUI</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onDetachedFromUI</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$onDetachedFromUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-draw-layer.html">onDrawLayer</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onDrawLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDrawLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-draw-u-i.html">onDrawUI</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onDrawUI</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDrawUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$onDrawUI(Canvas)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-flip-image.html">onFlipImage</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onFlipImage</span><span class="symbol">(</span><span class="identifier">transformSettings</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.TransformSettings</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onFlipImage</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$onFlipImage(ly.img.android.pesdk.backend.model.state.TransformSettings)/transformSettings">transformSettings</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state/-transform-settings/index.html"><span class="identifier">TransformSettings</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-motion-event.html">onMotionEvent</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onMotionEvent</span><span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onMotionEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$onMotionEvent(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="on-state-change-event.html">onStateChangeEvent</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onStateChangeEvent</span><span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.Event</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onStateChangeEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$onStateChangeEvent(ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.Event)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.layer/-text-design-layer-settings/-event/index.html"><span class="identifier">TextDesignLayerSettings.Event</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="refresh.html">refresh</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">refresh</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">refresh</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="render-to-canvas.html">renderToCanvas</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">renderToCanvas</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">, </span><span class="identifier">fullImageRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">destRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">renderToCanvas</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$renderToCanvas(Canvas, Rect, Rect, ly.img.android.pesdk.backend.model.chunk.Transformation)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$renderToCanvas(Canvas, Rect, Rect, ly.img.android.pesdk.backend.model.chunk.Transformation)/fullImageRegion">fullImageRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$renderToCanvas(Canvas, Rect, Rect, ly.img.android.pesdk.backend.model.chunk.Transformation)/destRegion">destRegion</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$renderToCanvas(Canvas, Rect, Rect, ly.img.android.pesdk.backend.model.chunk.Transformation)/transformation">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="rotate-points-around-center.html">rotatePointsAroundCenter</a></p>
 </td>
 <td>
-<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">rotatePointsAroundCenter</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">angle</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">points</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">rotatePointsAroundCenter</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$rotatePointsAroundCenter(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.FloatArray)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$rotatePointsAroundCenter(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.FloatArray)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$rotatePointsAroundCenter(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.FloatArray)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$rotatePointsAroundCenter(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.FloatArray)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-image-dimensions.html">setImageDimensions</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setImageDimensions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setImageDimensions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-image-rect.html">setImageRect</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setImageRect</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setImageRect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$setImageRect(Rect)/rect">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-sticker-matrix.html">setStickerMatrix</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setStickerMatrix</span><span class="symbol">(</span><span class="identifier">stickerMatrix</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">, </span><span class="identifier">scaleContext</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.ScaleContext</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setStickerMatrix</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$setStickerMatrix(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.ScaleContext)/stickerMatrix">stickerMatrix</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.TextDesignGlLayer$setStickerMatrix(ly.img.android.pesdk.backend.model.chunk.Transformation, ly.img.android.pesdk.backend.model.state.layer.TextDesignLayerSettings.ScaleContext)/scaleContext">scaleContext</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.layer/-text-design-layer-settings/-scale-context/index.html"><span class="identifier">TextDesignLayerSettings.ScaleContext</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>
-<h3>Other members</h3>
+<h3>Inherited Functions</h3>
 <table>
 <tbody>
 <tr>
 <td>
-<p><a href="-b-o-r-d-e-r_-t-h-i-c-k-n-e-s-s.html">BORDER_THICKNESS</a></p>
+<p><a href="../../ly.img.android.pesdk.backend.layer.base/-gl-layer/gl-draw-layer.html">glDrawLayer</a></p>
 </td>
 <td>
-<code><span class="identifier">BORDER_THICKNESS</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-c-a-c-h-e_-t-h-r-e-s-h-o-l-d.html">CACHE_THRESHOLD</a></p>
-</td>
-<td>
-<code><span class="identifier">CACHE_THRESHOLD</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-e-d-g-e_-c-o-l-o-r.html">EDGE_COLOR</a></p>
-</td>
-<td>
-<code><span class="identifier">EDGE_COLOR</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-e-d-g-e_-h-e-i-g-h-t.html">EDGE_HEIGHT</a></p>
-</td>
-<td>
-<code><span class="identifier">EDGE_HEIGHT</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-e-d-g-e_-t-h-i-c-k-n-e-s-s.html">EDGE_THICKNESS</a></p>
-</td>
-<td>
-<code><span class="identifier">EDGE_THICKNESS</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-e-d-g-e_-w-i-d-t-h.html">EDGE_WIDTH</a></p>
-</td>
-<td>
-<code><span class="identifier">EDGE_WIDTH</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-l-i-n-e_-c-o-l-o-r.html">LINE_COLOR</a></p>
-</td>
-<td>
-<code><span class="identifier">LINE_COLOR</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-l-i-n-e_-h-e-i-g-h-t_-o-f-f-s-e-t.html">LINE_HEIGHT_OFFSET</a></p>
-</td>
-<td>
-<code><span class="identifier">LINE_HEIGHT_OFFSET</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-l-i-n-e_-w-i-d-t-h_-o-f-f-s-e-t.html">LINE_WIDTH_OFFSET</a></p>
-</td>
-<td>
-<code><span class="identifier">LINE_WIDTH_OFFSET</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-o-u-t-s-i-d-e_-c-o-l-o-r_-r-g-b-a.html">OUTSIDE_COLOR_RGBA</a></p>
-</td>
-<td>
-<code><span class="identifier">OUTSIDE_COLOR_RGBA</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-p-a-d-d-i-n-g_-t-h-u-m-b_-o-f-f-s-e-t_-i-n_-d-p.html">PADDING_THUMB_OFFSET_IN_DP</a></p>
-</td>
-<td>
-<code><span class="identifier">PADDING_THUMB_OFFSET_IN_DP</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="padding-thumb-shortening-factor.html">paddingThumbShorteningFactor</a></p>
-</td>
-<td>
-<code><span class="identifier">paddingThumbShorteningFactor</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-s-n-a-p_-r-a-n-g-e_-i-n_-d-p.html">SNAP_RANGE_IN_DP</a></p>
-</td>
-<td>
-<code><span class="identifier">SNAP_RANGE_IN_DP</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-s-o-r-t-e-d_-s-n-a-p_-p-o-i-n-t-s.html">SORTED_SNAP_POINTS</a></p>
-</td>
-<td>
-<code><span class="identifier">SORTED_SNAP_POINTS</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-o-u-c-h_-o-f-f-s-e-t_-i-n_-d-p.html">TOUCH_OFFSET_IN_DP</a></p>
-</td>
-<td>
-<code><span class="identifier">TOUCH_OFFSET_IN_DP</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">glDrawLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlLayer$glDrawLayer(kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlLayer$glDrawLayer(kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>

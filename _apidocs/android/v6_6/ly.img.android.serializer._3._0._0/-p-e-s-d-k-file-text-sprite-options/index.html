@@ -8,20 +8,7 @@
 <a href="../index.html">ly.img.android.serializer._3._0._0</a>&nbsp;/&nbsp;<a href="./index.html">PESDKFileTextSpriteOptions</a><br/>
 <br/>
 <h1>PESDKFileTextSpriteOptions</h1>
-<code><span class="identifier">@JsonInclude</span><span class="symbol">(</span>JsonInclude.Include.NON_NULL<span class="symbol">)</span> <span class="identifier">@JsonPropertyOrder</span><span class="symbol">(</span>{
-    "text",
-    "fontSize",
-    "lineHeight",
-    "fontIdentifier",
-    "alignment",
-    "color",
-    "backgroundColor",
-    "position",
-    "rotation",
-    "maxWidth",
-    "flipHorizontally",
-    "flipVertically"
-}<span class="symbol">)</span> <span class="identifier">@JsonIgnoreProperties</span><span class="symbol">(</span>true<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">PESDKFileTextSpriteOptions</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PESDKFileTextSpriteOptions</span></code>
 <h3>Types</h3>
 <table>
 <tbody>
@@ -34,6 +21,18 @@
 </tr>
 </tbody>
 </table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PESDKFileTextSpriteOptions</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -42,21 +41,21 @@
 <p><a href="get-alignment.html">getAlignment</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getAlignment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-alignment/index.html"><span class="identifier">PESDKFileTextSpriteOptions.Alignment</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAlignment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-alignment/index.html"><span class="identifier">PESDKFileTextSpriteOptions.Alignment</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-background-color.html">getBackgroundColor</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getBackgroundColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBackgroundColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-color.html">getColor</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -65,7 +64,7 @@
 <p><a href="get-flip-horizontally.html">getFlipHorizontally</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getFlipHorizontally</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFlipHorizontally</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -74,7 +73,7 @@
 <p><a href="get-flip-vertically.html">getFlipVertically</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getFlipVertically</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFlipVertically</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -83,7 +82,7 @@
 <p><a href="get-font-identifier.html">getFontIdentifier</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getFontIdentifier</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFontIdentifier</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -92,7 +91,7 @@
 <p><a href="get-font-size.html">getFontSize</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getFontSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Double</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFontSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -101,14 +100,14 @@
 <p><a href="get-line-height.html">getLineHeight</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLineHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Double</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLineHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-max-width.html">getMaxWidth</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getMaxWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Double</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getMaxWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -117,7 +116,7 @@
 <p><a href="get-position.html">getPosition</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getPosition</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-vector/index.html"><span class="identifier">PESDKFileVector</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPosition</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-p-e-s-d-k-file-vector/index.html"><span class="identifier">PESDKFileVector</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -126,14 +125,14 @@
 <p><a href="get-rotation.html">getRotation</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getRotation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Double</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getRotation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-text.html">getText</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getText</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getText</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -142,21 +141,21 @@
 <p><a href="set-alignment.html">setAlignment</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setAlignment</span><span class="symbol">(</span><span class="identifier">alignment</span><span class="symbol">:</span>&nbsp;<a href="-alignment/index.html"><span class="identifier">PESDKFileTextSpriteOptions.Alignment</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setAlignment</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setAlignment(ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions.Alignment)/alignment">alignment</span><span class="symbol">:</span>&nbsp;<a href="-alignment/index.html"><span class="identifier">PESDKFileTextSpriteOptions.Alignment</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-background-color.html">setBackgroundColor</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setBackgroundColor</span><span class="symbol">(</span><span class="identifier">backgroundColor</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setBackgroundColor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setBackgroundColor(ly.img.android.serializer._3._0._0.PESDKFileSuperColor)/backgroundColor">backgroundColor</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-color.html">setColor</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setColor</span><span class="symbol">(</span><span class="identifier">color</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setColor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setColor(ly.img.android.serializer._3._0._0.PESDKFileSuperColor)/color">color</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-super-color/index.html"><span class="identifier">PESDKFileSuperColor</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -165,7 +164,7 @@
 <p><a href="set-flip-horizontally.html">setFlipHorizontally</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setFlipHorizontally</span><span class="symbol">(</span><span class="identifier">flipHorizontally</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Boolean</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFlipHorizontally</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setFlipHorizontally(kotlin.Boolean)/flipHorizontally">flipHorizontally</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -174,7 +173,7 @@
 <p><a href="set-flip-vertically.html">setFlipVertically</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setFlipVertically</span><span class="symbol">(</span><span class="identifier">flipVertically</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Boolean</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFlipVertically</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setFlipVertically(kotlin.Boolean)/flipVertically">flipVertically</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -183,7 +182,7 @@
 <p><a href="set-font-identifier.html">setFontIdentifier</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setFontIdentifier</span><span class="symbol">(</span><span class="identifier">fontIdentifier</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFontIdentifier</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setFontIdentifier(kotlin.String)/fontIdentifier">fontIdentifier</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -192,7 +191,7 @@
 <p><a href="set-font-size.html">setFontSize</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setFontSize</span><span class="symbol">(</span><span class="identifier">fontSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFontSize</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setFontSize(kotlin.Double)/fontSize">fontSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -201,14 +200,14 @@
 <p><a href="set-line-height.html">setLineHeight</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setLineHeight</span><span class="symbol">(</span><span class="identifier">lineHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setLineHeight</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setLineHeight(kotlin.Double)/lineHeight">lineHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-max-width.html">setMaxWidth</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setMaxWidth</span><span class="symbol">(</span><span class="identifier">maxWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setMaxWidth</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setMaxWidth(kotlin.Double)/maxWidth">maxWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -217,7 +216,7 @@
 <p><a href="set-position.html">setPosition</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setPosition</span><span class="symbol">(</span><span class="identifier">position</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-vector/index.html"><span class="identifier">PESDKFileVector</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setPosition(ly.img.android.serializer._3._0._0.PESDKFileVector)/position">position</span><span class="symbol">:</span>&nbsp;<a href="../-p-e-s-d-k-file-vector/index.html"><span class="identifier">PESDKFileVector</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -226,14 +225,14 @@
 <p><a href="set-rotation.html">setRotation</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setRotation</span><span class="symbol">(</span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setRotation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setRotation(kotlin.Double)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-text.html">setText</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setText</span><span class="symbol">(</span><span class="identifier">text</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setText</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileTextSpriteOptions$setText(kotlin.String)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileTextSpriteOptions</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>

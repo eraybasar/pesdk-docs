@@ -8,14 +8,15 @@
 <a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">Exify</a>&nbsp;/&nbsp;<a href="./get-date-time.html">getDateTime</a><br/>
 <br/>
 <h1>getDateTime</h1>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDateTime</span><span class="symbol">(</span><span class="identifier">dateTimeString</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">timeZone</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.TimeZone</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.Date</span></code>
+<a name="ly.img.android.pesdk.backend.exif.Exify$getDateTime(kotlin.String, java.util.TimeZone)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDateTime</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDateTime(kotlin.String, java.util.TimeZone)/dateTimeString">dateTimeString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDateTime(kotlin.String, java.util.TimeZone)/timeZone">timeZone</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html"><span class="identifier">TimeZone</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">!</span></code>
 <p>Given an exif date time, like {@see #ExifTagKey.DATE_TIME} or {@see #ExifTagKey.DATE_TIME_DIGITIZED} returns a java Date object</p>
 <h3>Parameters</h3>
 <p><a name="dateTimeString"></a>
-<code>dateTimeString</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> one of the value of {@see #ExifTagKey.DATE_TIME} or {@see #ExifTagKey.DATE_TIME_DIGITIZED}</p>
+<code>dateTimeString</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> one of the value of {@see #ExifTagKey.DATE_TIME} or {@see #ExifTagKey.DATE_TIME_DIGITIZED}</p>
 <p><a name="timeZone"></a>
-<code>timeZone</code> - <span class="identifier">java.util.TimeZone</span><span class="symbol">:</span> the target timezone</p>
+<code>timeZone</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html"><span class="identifier">TimeZone</span></a><span class="symbol">!</span><span class="symbol">:</span> the target timezone</p>
 <p><strong>Return</strong><br/>
-<span class="identifier">java.util.Date</span><span class="symbol">:</span> the parsed date</p>
+<a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">!</span><span class="symbol">:</span> the parsed date</p>
 </BODY>
 </HTML>

@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">ThreadUtils</a><br/>
 <br/>
 <h1>ThreadUtils</h1>
-<code><span class="keyword">class </span><span class="identifier">ThreadUtils</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ThreadUtils</span></code>
 <p>This class test if Main runPipline</p>
 <h3>Types</h3>
 <table>
@@ -18,35 +18,47 @@
 <p><a href="-main-thread-runnable/index.html">MainThreadRunnable</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">MainThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.utils.ThreadUtils.Task</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">MainThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Task</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="-replace-gl-thread-runnable/index.html">ReplaceGlThreadRunnable</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ReplaceGlThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.utils.ThreadUtils.GlThreadRunnable</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ReplaceGlThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GlThreadRunnable</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="-replace-thread-runnable/index.html">ReplaceThreadRunnable</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ReplaceThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ReplaceThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">WorkerThreadRunnable</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="-sequenced-gl-thread-runnable/index.html">SequencedGlThreadRunnable</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">SequencedGlThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.utils.ThreadUtils.GlThreadRunnable</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">SequencedGlThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GlThreadRunnable</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="-sequenced-thread-runnable/index.html">SequencedThreadRunnable</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">SequencedThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">SequencedThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">WorkerThreadRunnable</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-p-u_-c-o-r-e_-c-o-u-n-t.html">CPU_CORE_COUNT</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CPU_CORE_COUNT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +70,7 @@
 <p><a href="add-task.html">addTask</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">addTask</span><span class="symbol">(</span><span class="identifier">runnable</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addTask</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$addTask(ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable)/runnable">runnable</span><span class="symbol">:</span>&nbsp;<span class="identifier">WorkerThreadRunnable</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Run parallel in background but serialized executed in a group.</p>
 </td>
 </tr>
@@ -67,42 +79,42 @@
 <p><a href="create-gl-worker.html">createGlWorker</a></p>
 </td>
 <td>
-<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">createGlWorker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createGlWorker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="finalize.html">finalize</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-worker.html">getWorker</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getWorker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ThreadUtils</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getWorker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ThreadUtils</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="init-gl-worker.html">initGlWorker</a></p>
 </td>
 <td>
-<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">initGlWorker</span><span class="symbol">(</span><span class="identifier">egl</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGL10</span><span class="symbol">, </span><span class="identifier">renderContext</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLContext</span><span class="symbol">, </span><span class="identifier">display</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLDisplay</span><span class="symbol">, </span><span class="identifier">eglConfig</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">, </span><span class="identifier">version</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">initGlWorker</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$initGlWorker(EGL10, EGLContext, EGLDisplay, EGLConfig, kotlin.Int)/egl">egl</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGL10</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$initGlWorker(EGL10, EGLContext, EGLDisplay, EGLConfig, kotlin.Int)/renderContext">renderContext</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLContext</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$initGlWorker(EGL10, EGLContext, EGLDisplay, EGLConfig, kotlin.Int)/display">display</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLDisplay</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$initGlWorker(EGL10, EGLContext, EGLDisplay, EGLConfig, kotlin.Int)/eglConfig">eglConfig</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$initGlWorker(EGL10, EGLContext, EGLDisplay, EGLConfig, kotlin.Int)/version">version</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-running.html">isRunning</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isRunning</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isRunning</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="post-to-main-thread.html">postToMainThread</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">postToMainThread</span><span class="symbol">(</span><span class="identifier">runnable</span><span class="symbol">:</span>&nbsp;<a href="-main-thread-runnable/index.html"><span class="identifier">ThreadUtils.MainThreadRunnable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">postToMainThread</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$postToMainThread(ly.img.android.pesdk.utils.ThreadUtils.MainThreadRunnable)/runnable">runnable</span><span class="symbol">:</span>&nbsp;<a href="-main-thread-runnable/index.html"><span class="identifier">ThreadUtils.MainThreadRunnable</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Run Ui operation on the main thread at the next UI Frame.</p>
 </td>
 </tr>
@@ -111,14 +123,14 @@
 <p><a href="release-gl-worker.html">releaseGlWorker</a></p>
 </td>
 <td>
-<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">releaseGlWorker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">releaseGlWorker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="run-on-main-thread.html">runOnMainThread</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">runOnMainThread</span><span class="symbol">(</span><span class="identifier">runnable</span><span class="symbol">:</span>&nbsp;<a href="-main-thread-runnable/index.html"><span class="identifier">ThreadUtils.MainThreadRunnable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">runOnMainThread</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils$runOnMainThread(ly.img.android.pesdk.utils.ThreadUtils.MainThreadRunnable)/runnable">runnable</span><span class="symbol">:</span>&nbsp;<a href="-main-thread-runnable/index.html"><span class="identifier">ThreadUtils.MainThreadRunnable</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Run Ui operation on the main thread at the next UI Frame or instant if the execution thread already the main thread.</p>
 </td>
 </tr>
@@ -127,21 +139,9 @@
 <p><a href="this-is-ui-thread.html">thisIsUiThread</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">thisIsUiThread</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">thisIsUiThread</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Check if this is the Ui thread.</p>
 </td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="-c-p-u_-c-o-r-e_-c-o-u-n-t.html">CPU_CORE_COUNT</a></p>
-</td>
-<td>
-<code><span class="identifier">CPU_CORE_COUNT</span></code></td>
 </tr>
 </tbody>
 </table>

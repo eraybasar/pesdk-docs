@@ -8,29 +8,31 @@
 <a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="index.html">BitmapFactoryUtils</a>&nbsp;/&nbsp;<a href="./decode-file.html">decodeFile</a><br/>
 <br/>
 <h1>decodeFile</h1>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decodeFile</span><span class="symbol">(</span><span class="identifier">filename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">minSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">square</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<a name="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decodeFile</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean)/filename">filename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean)/minSize">minSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean)/square">square</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code>
 <p>Decode a image file into a Bitmap.</p>
 <h3>Parameters</h3>
 <p><a name="filename"></a>
-<code>filename</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> image file path.</p>
+<code>filename</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> image file path.</p>
 <p><a name="minSize"></a>
-<code>minSize</code> - <span class="identifier">int</span><span class="symbol">:</span> minWidth the image must have.</p>
+<code>minSize</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> minWidth the image must have.</p>
 <p><a name="square"></a>
-<code>square</code> - <span class="identifier">boolean</span><span class="symbol">:</span> width and height of the image should be same.</p>
+<code>square</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">:</span> width and height of the image should be same.</p>
 <p><strong>Return</strong><br/>
-<span class="identifier">Bitmap</span><span class="symbol">:</span> the sourceType file decoded with a minimum sample size.</p>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decodeFile</span><span class="symbol">(</span><span class="identifier">filename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">minSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">square</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">, </span><span class="identifier">fixRotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<span class="identifier">Bitmap</span><span class="symbol">!</span><span class="symbol">:</span> the sourceType file decoded with a minimum sample size.</p>
+<a name="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decodeFile</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/filename">filename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/minSize">minSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/square">square</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.BitmapFactoryUtils$decodeFile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Boolean)/fixRotation">fixRotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code>
 <p>Decode a image file into a Bitmap.</p>
 <h3>Parameters</h3>
 <p><a name="filename"></a>
-<code>filename</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> image file path.</p>
+<code>filename</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> image file path.</p>
 <p><a name="minSize"></a>
-<code>minSize</code> - <span class="identifier">int</span><span class="symbol">:</span> minWidth the image must have.</p>
+<code>minSize</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> minWidth the image must have.</p>
 <p><a name="square"></a>
-<code>square</code> - <span class="identifier">boolean</span><span class="symbol">:</span> width and height of the image should be same.</p>
+<code>square</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">:</span> width and height of the image should be same.</p>
 <p><a name="fixRotation"></a>
-<code>fixRotation</code> - <span class="identifier">boolean</span><span class="symbol">:</span> fix image rotation based on the exif orientation information.</p>
+<code>fixRotation</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">:</span> fix image rotation based on the exif orientation information.</p>
 <p><strong>Return</strong><br/>
-<span class="identifier">Bitmap</span><span class="symbol">:</span> the sourceType file decoded with a minimum sample size.</p>
+<span class="identifier">Bitmap</span><span class="symbol">!</span><span class="symbol">:</span> the sourceType file decoded with a minimum sample size.</p>
 </BODY>
 </HTML>

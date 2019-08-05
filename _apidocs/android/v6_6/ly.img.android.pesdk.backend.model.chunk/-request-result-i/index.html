@@ -18,42 +18,42 @@
 <p><a href="get-byte-size.html">getByteSize</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getByteSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getByteSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-request-answer.html">getRequestAnswer</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getRequestAnswer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-source-request-answer-i/index.html"><span class="identifier">SourceRequestAnswerI</span></a></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getRequestAnswer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-source-request-answer-i/index.html"><span class="identifier">SourceRequestAnswerI</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-only-memory-holder.html">isOnlyMemoryHolder</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isOnlyMemoryHolder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isOnlyMemoryHolder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="mark-invalid.html">markInvalid</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">markInvalid</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">markInvalid</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="recycle.html">recycle</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-result.html">setResult</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setResult</span><span class="symbol">(</span><span class="identifier">result</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RequestResultI$setResult(Bitmap)/result">result</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@
 <p><a href="../-request-result/index.html">RequestResult</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">RequestResult</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RequestResultI</span></a><span class="symbol">, </span><a href="../-source-request-answer-i/index.html"><span class="identifier">SourceRequestAnswerI</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">RequestResult</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RequestResultI</span></a><span class="symbol">, </span><a href="../-source-request-answer-i/index.html"><span class="identifier">SourceRequestAnswerI</span></a></code>
 <p>Created by svennahler on 23.08.16.</p>
 </td>
 </tr>

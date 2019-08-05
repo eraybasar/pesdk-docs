@@ -10,6 +10,46 @@
 <h1>CustomPatchLayout</h1>
 <code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">CustomPatchLayout</span></code>
 <p>Created by svennahler on 14.12.16.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">CustomPatchLayout</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Created by svennahler on 14.12.16.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="guide.html">guide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">guide</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="short-side.html">shortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">shortSide</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="size.html">size</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">size</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -18,96 +58,70 @@
 <p><a href="calculate-bottom-group.html">calculateBottomGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateBottomGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateBottomGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="calculate-left-group.html">calculateLeftGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateLeftGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateLeftGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="calculate-right-group.html">calculateRightGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateRightGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateRightGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="calculate-top-group.html">calculateTopGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateTopGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">calculateTopGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="create-rect-from-size.html">createRectFromSize</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">createRectFromSize</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">RectF</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">createRectFromSize</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.frame.CustomPatchLayout$createRectFromSize(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.frame.CustomPatchLayout$createRectFromSize(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.frame.CustomPatchLayout$createRectFromSize(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.frame.CustomPatchLayout$createRectFromSize(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">RectF</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-bottom-group.html">getBottomGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getBottomGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBottomGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-left-group.html">getLeftGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLeftGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLeftGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-right-group.html">getRightGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getRightGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getRightGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-top-group.html">getTopGroup</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTopGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group.html"><span class="identifier">CustomPatchLayoutGroup</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTopGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom-patch-layout-group/index.html"><span class="identifier">CustomPatchLayoutGroup</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-size.html">setSize</a></p>
 </td>
 <td>
-<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">setSize</span><span class="symbol">(</span><span class="identifier">size</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">relativeScale</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="guide.html">guide</a></p>
-</td>
-<td>
-<code><span class="identifier">guide</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="short-side.html">shortSide</a></p>
-</td>
-<td>
-<code><span class="identifier">shortSide</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="size.html">size</a></p>
-</td>
-<td>
-<code><span class="identifier">size</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSize</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.frame.CustomPatchLayout$setSize(Rect, kotlin.Float)/size">size</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.frame.CustomPatchLayout$setSize(Rect, kotlin.Float)/relativeScale">relativeScale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -119,7 +133,7 @@
 <p><a href="../-custom-patch-layout-horizontal-inside/index.html">CustomPatchLayoutHorizontalInside</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">CustomPatchLayoutHorizontalInside</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CustomPatchLayout</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CustomPatchLayoutHorizontalInside</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CustomPatchLayout</span></a></code>
 <p>Created by svennahler on 14.12.16.</p>
 </td>
 </tr>
@@ -128,7 +142,7 @@
 <p><a href="../-custom-patch-layout-vertical-inside/index.html">CustomPatchLayoutVerticalInside</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">CustomPatchLayoutVerticalInside</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CustomPatchLayout</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CustomPatchLayoutVerticalInside</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CustomPatchLayout</span></a></code>
 <p>Created by svennahler on 14.12.16.</p>
 </td>
 </tr>

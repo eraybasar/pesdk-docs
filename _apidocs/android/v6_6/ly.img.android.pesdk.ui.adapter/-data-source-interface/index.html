@@ -17,9 +17,9 @@
 <p><a href="get-layout.html">getLayout</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Get the default layout res id of the list item view.</p>
-<code><span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="identifier">flavor</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceInterface$getLayout(kotlin.String)/flavor">flavor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Get the flavored layout res id of the list item view.</p>
 </td>
 </tr>
@@ -28,7 +28,7 @@
 <p><a href="get-name.html">getName</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Get the Name</p>
 </td>
 </tr>
@@ -37,7 +37,7 @@
 <p><a href="get-view-holder-class.html">getViewHolderClass</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getViewHolderClass</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.DataSourceViewHolder</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getViewHolderClass</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-data-source-list-adapter/-data-source-view-holder/index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code>
 <p>Get the class of a ViewHolder to Display in List</p>
 </td>
 </tr>
@@ -46,21 +46,21 @@
 <p><a href="is-dirty.html">isDirty</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-selectable.html">isSelectable</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isSelectable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isSelectable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-dirty-flag.html">setDirtyFlag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setDirtyFlag</span><span class="symbol">(</span><span class="identifier">isDirty</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setDirtyFlag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceInterface$setDirtyFlag(kotlin.Boolean)/isDirty">isDirty</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>

@@ -18,7 +18,6 @@
 <p><a href="-a-u-t-o.html">AUTO</a></p>
 </td>
 <td>
-<p>Scene mode is off.</p>
 </td>
 </tr>
 <tr>
@@ -26,7 +25,6 @@
 <p><a href="-a-c-t-i-o-n.html">ACTION</a></p>
 </td>
 <td>
-<p>Take photos of fast moving objects. Same as <code><a href="-s-p-o-r-t-s.html"> </a></code>.</p>
 </td>
 </tr>
 <tr>
@@ -34,7 +32,6 @@
 <p><a href="-p-o-r-t-r-a-i-t.html">PORTRAIT</a></p>
 </td>
 <td>
-<p>Take people pictures.</p>
 </td>
 </tr>
 <tr>
@@ -42,7 +39,6 @@
 <p><a href="-l-a-n-d-s-c-a-p-e.html">LANDSCAPE</a></p>
 </td>
 <td>
-<p>Take pictures on distant objects.</p>
 </td>
 </tr>
 <tr>
@@ -57,7 +53,6 @@
 <p><a href="-n-i-g-h-t_-p-o-r-t-r-a-i-t.html">NIGHT_PORTRAIT</a></p>
 </td>
 <td>
-<p>Take people pictures at night.</p>
 </td>
 </tr>
 <tr>
@@ -65,7 +60,6 @@
 <p><a href="-t-h-e-a-t-r-e.html">THEATRE</a></p>
 </td>
 <td>
-<p>Take photos in a theater. Flash light is off.</p>
 </td>
 </tr>
 <tr>
@@ -73,7 +67,6 @@
 <p><a href="-b-e-a-c-h.html">BEACH</a></p>
 </td>
 <td>
-<p>Take pictures on the beach.</p>
 </td>
 </tr>
 <tr>
@@ -81,7 +74,6 @@
 <p><a href="-s-n-o-w.html">SNOW</a></p>
 </td>
 <td>
-<p>Take pictures on the snow.</p>
 </td>
 </tr>
 <tr>
@@ -89,7 +81,6 @@
 <p><a href="-s-u-n-s-e-t.html">SUNSET</a></p>
 </td>
 <td>
-<p>Take sunset photos.</p>
 </td>
 </tr>
 <tr>
@@ -97,7 +88,6 @@
 <p><a href="-s-t-e-a-d-y_-p-h-o-t-o.html">STEADY_PHOTO</a></p>
 </td>
 <td>
-<p>Avoid blurry pictures (for example, due to hand shake).</p>
 </td>
 </tr>
 <tr>
@@ -105,7 +95,6 @@
 <p><a href="-f-i-r-e-w-o-r-k-s.html">FIREWORKS</a></p>
 </td>
 <td>
-<p>For shooting firework displays.</p>
 </td>
 </tr>
 <tr>
@@ -113,7 +102,6 @@
 <p><a href="-s-p-o-r-t-s.html">SPORTS</a></p>
 </td>
 <td>
-<p>Take photos of fast moving objects. Same as <code><a href="-a-c-t-i-o-n.html"> </a></code>.</p>
 </td>
 </tr>
 <tr>
@@ -121,7 +109,6 @@
 <p><a href="-p-a-r-t-y.html">PARTY</a></p>
 </td>
 <td>
-<p>Take indoor low-light shot.</p>
 </td>
 </tr>
 <tr>
@@ -129,7 +116,6 @@
 <p><a href="-c-a-n-d-l-e-l-i-g-h-t.html">CANDLELIGHT</a></p>
 </td>
 <td>
-<p>Capture the naturally warm color of scenes lit by candles.</p>
 </td>
 </tr>
 <tr>
@@ -137,7 +123,6 @@
 <p><a href="-b-a-r-c-o-d-e.html">BARCODE</a></p>
 </td>
 <td>
-<p>Applications are looking for a barcode. Camera driver will be optimized for barcode reading.</p>
 </td>
 </tr>
 <tr>
@@ -145,8 +130,26 @@
 <p><a href="-h-d-r.html">HDR</a></p>
 </td>
 <td>
-<p>Capture a scene using high dynamic range imaging techniques. The camera will return an image that has an extended dynamic range compared to a regular capture. Capturing such an image may take longer than a regular capture.</p>
 </td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-f-a-l-l-b-a-c-k_-l-i-s-t.html">FALLBACK_LIST</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">FALLBACK_LIST</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="value.html">value</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">value</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -158,26 +161,7 @@
 <p><a href="get.html">get</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier">string</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SceneMode</span></a></code></td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="-f-a-l-l-b-a-c-k_-l-i-s-t.html">FALLBACK_LIST</a></p>
-</td>
-<td>
-<code><span class="identifier">FALLBACK_LIST</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="value.html">value</a></p>
-</td>
-<td>
-<code><span class="identifier">value</span></code></td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.acs.constants.SceneMode$get(kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SceneMode</span></a><span class="symbol">!</span></code></td>
 </tr>
 </tbody>
 </table>

@@ -18,7 +18,7 @@
 <p><a href="on-progress-changed.html">onProgressChanged</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onProgressChanged</span><span class="symbol">(</span><span class="identifier">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">fromUser</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onProgressChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider.OnSeekBarChangeListener$onProgressChanged(ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider, kotlin.Float, kotlin.Boolean)/seekBar">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider.OnSeekBarChangeListener$onProgressChanged(ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider, kotlin.Float, kotlin.Boolean)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider.OnSeekBarChangeListener$onProgressChanged(ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider, kotlin.Float, kotlin.Boolean)/fromUser">fromUser</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Notification that the progress level has changed. Clients can use the fromUser parameter to distinguish user-initiated changes from those that occurred programmatically.</p>
 </td>
 </tr>
@@ -27,7 +27,7 @@
 <p><a href="on-start-tracking-touch.html">onStartTrackingTouch</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onStartTrackingTouch</span><span class="symbol">(</span><span class="identifier">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onStartTrackingTouch</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider.OnSeekBarChangeListener$onStartTrackingTouch(ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider)/seekBar">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Notification that the user has started a touch gesture. Clients may want to use this to disable advancing the seekbar.</p>
 </td>
 </tr>
@@ -36,7 +36,7 @@
 <p><a href="on-stop-tracking-touch.html">onStopTrackingTouch</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">onStopTrackingTouch</span><span class="symbol">(</span><span class="identifier">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onStopTrackingTouch</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider.OnSeekBarChangeListener$onStopTrackingTouch(ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider)/seekBar">seekBar</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">ImgLyFloatSlider</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Notification that the user has finished a touch gesture. Clients may want to use this to re-enable advancing the seekbar.</p>
 </td>
 </tr>

@@ -8,7 +8,7 @@
 <a href="../../index.html">ly.img.android.pesdk.ui.activity</a>&nbsp;/&nbsp;<a href="../index.html">ImgLyIntent</a>&nbsp;/&nbsp;<a href="./index.html">ResultDelegator</a><br/>
 <br/>
 <h1>ResultDelegator</h1>
-<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">ResultDelegator</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ResultDelegator</span></code>
 <h3>Constructors</h3>
 <table>
 <tbody>
@@ -17,9 +17,9 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">ResultDelegator</span><span class="symbol">(</span><span class="identifier">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">)</span></code><br/>
-<code><span class="identifier">ResultDelegator</span><span class="symbol">(</span><span class="identifier">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">)</span></code><br/>
-<code><span class="identifier">ResultDelegator</span><span class="symbol">(</span><span class="identifier">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">)</span></code></td>
+<code><span class="identifier">ResultDelegator</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator$<init>(Activity)/activity">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ResultDelegator</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator$<init>(android.support.v4.app.Fragment)/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ResultDelegator</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator$<init>(Fragment)/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -31,42 +31,42 @@
 <p><a href="get-context.html">getContext</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Context</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Context</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="permission-denied.html">permissionDenied</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">permissionDenied</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">permissionDenied</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="permission-granted.html">permissionGranted</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">permissionGranted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">permissionGranted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="raw.html">raw</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">raw</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Object</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">raw</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="request-permissions.html">requestPermissions</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">requestPermissions</span><span class="symbol">(</span><span class="identifier">permissions</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">requestCode</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">requestPermissions</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator$requestPermissions(kotlin.Array((kotlin.String)), kotlin.Int)/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator$requestPermissions(kotlin.Array((kotlin.String)), kotlin.Int)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="start-activity-for-result.html">startActivityForResult</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier">intent</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">, </span><span class="identifier">resultId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startActivityForResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator$startActivityForResult(Intent, kotlin.Int)/intent">intent</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyIntent.ResultDelegator$startActivityForResult(Intent, kotlin.Int)/resultId">resultId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>

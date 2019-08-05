@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.backend.text_design.model.row.masked</a>&nbsp;/&nbsp;<a href="./index.html">TextDesignRowMultiline</a><br/>
 <br/>
 <h1>TextDesignRowMultiline</h1>
-<code><span class="keyword">class </span><span class="identifier">TextDesignRowMultiline</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-text-design-row-masked/index.html"><span class="identifier">TextDesignRowMasked</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TextDesignRowMultiline</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-text-design-row-masked/index.html"><span class="identifier">TextDesignRowMasked</span></a></code>
 <p>Created by svennahler on 16.04.18.</p>
 <h3>Constructors</h3>
 <table>
@@ -18,9 +18,103 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">TextDesignRowMultiline</span><span class="symbol">(</span><span class="identifier">words</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.type/-words/index.html"><span class="identifier">Words</span></a><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">attributes</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model.config/-text-design-attributes/index.html"><span class="identifier">TextDesignAttributes</span></a><span class="symbol">, </span><span class="identifier">image</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">, </span><span class="identifier">imageInsets</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">capInsets</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">, </span><span class="identifier">backgroundColor</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">centerOffset</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">sizeToFitContent</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">, </span><span class="identifier">textScaleFactor</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">minimumHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">centeredVertically</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span></code>
+<code><span class="identifier">TextDesignRowMultiline</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/words">words</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.type/-words/index.html"><span class="identifier">Words</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/attributes">attributes</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model.config/-text-design-attributes/index.html"><span class="identifier">TextDesignAttributes</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/imageInsets">imageInsets</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/capInsets">capInsets</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/backgroundColor">backgroundColor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/centerOffset">centerOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0f<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/sizeToFitContent">sizeToFitContent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/textScaleFactor">textScaleFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.95f<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/minimumHeight">minimumHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0f<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes, ly.img.android.pesdk.backend.decoder.ImageSource, ly.img.android.pesdk.backend.model.chunk.MultiRect, , kotlin.Int, kotlin.Float, kotlin.Boolean, kotlin.Float, kotlin.Float, kotlin.Boolean)/centeredVertically">centeredVertically</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span></code>
 <p>Created by svennahler on 16.04.18.</p>
 </td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="centered-vertically.html">centeredVertically</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">centeredVertically</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="center-offset.html">centerOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">centerOffset</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="minimum-height.html">minimumHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minimumHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="size-to-fit-content.html">sizeToFitContent</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sizeToFitContent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="text-scale-factor.html">textScaleFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">textScaleFactor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/auto-adjust-text-color.html">autoAdjustTextColor</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">autoAdjustTextColor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/background-color.html">backgroundColor</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">backgroundColor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/cap-insets.html">capInsets</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">capInsets</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/image.html">image</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">image</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/is-masked.html">isMasked</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isMasked</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/is-used-in-inverted-layout.html">isUsedInInvertedLayout</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isUsedInInvertedLayout</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/text-frame.html">textFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">textFrame</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -32,7 +126,7 @@
 <p><a href="calculate-layout-elements.html">calculateLayoutElements</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">calculateLayoutElements</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.List</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateLayoutElements</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code>
 <p>This method creates and returns all the <code>TextDesignElement</code>s in this row based on the passed
 <code>size.width</code>. It must not rely on the height because this has not been calculated - in fact
 the height has to be derived from the width within this method. That means that this method
@@ -41,101 +135,63 @@ should update <code>size.height</code> to a height that it needs to draw its con
 </tr>
 <tr>
 <td>
-<p><a href="get-centered-vertically.html">getCenteredVertically</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">getCenteredVertically</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="get-center-offset.html">getCenterOffset</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">getCenterOffset</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="get-minimum-height.html">getMinimumHeight</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">getMinimumHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="get-size-to-fit-content.html">getSizeToFitContent</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">getSizeToFitContent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="get-text-scale-factor.html">getTextScaleFactor</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">getTextScaleFactor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
-</tr>
-<tr>
-<td>
 <p><a href="render.html">render</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="set-centered-vertically.html">setCenteredVertically</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">setCenteredVertically</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="set-center-offset.html">setCenterOffset</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">setCenterOffset</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="set-minimum-height.html">setMinimumHeight</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">setMinimumHeight</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="set-size-to-fit-content.html">setSizeToFitContent</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">setSizeToFitContent</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="set-text-scale-factor.html">setTextScaleFactor</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">setTextScaleFactor</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$render()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="text-bounds-of-element.html">textBoundsOfElement</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">textBoundsOfElement</span><span class="symbol">(</span><span class="identifier">layoutElement</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">fun </span><span class="identifier">textBoundsOfElement</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$textBoundsOfElement(ly.img.android.pesdk.backend.text_design.model.TextDesignElement)/layoutElement">layoutElement</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-float3.html"><span class="identifier">Float3</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="text-frame.html">textFrame</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">textFrame</span><span class="symbol">(</span><span class="identifier">element</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">, </span><span class="identifier">fontSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">textFrame</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$textFrame(ly.img.android.pesdk.backend.text_design.model.TextDesignElement, kotlin.Float)/element">element</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$textFrame(ly.img.android.pesdk.backend.text_design.model.TextDesignElement, kotlin.Float)/fontSize">fontSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="text-style-for-font.html">textStyleForFont</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">textStyleForFont</span><span class="symbol">(</span><span class="identifier">font</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-font-asset/index.html"><span class="identifier">FontAsset</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+<code><span class="keyword">fun </span><span class="identifier">textStyleForFont</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMultiline$textStyleForFont(ly.img.android.pesdk.backend.model.config.FontAsset)/font">font</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-font-asset/index.html"><span class="identifier">FontAsset</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/did-render.html">didRender</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">didRender</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMasked$didRender()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row-masked/will-render.html">willRender</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">willRender</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.masked.TextDesignRowMasked$willRender()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.MultiRect)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code></td>
 </tr>
 </tbody>
 </table>

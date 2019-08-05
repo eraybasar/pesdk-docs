@@ -8,11 +8,7 @@
 <a href="../index.html">ly.img.android.serializer._3._0._0</a>&nbsp;/&nbsp;<a href="./index.html">PESDKFileMeta</a><br/>
 <br/>
 <h1>PESDKFileMeta</h1>
-<code><span class="identifier">@JsonInclude</span><span class="symbol">(</span>JsonInclude.Include.NON_NULL<span class="symbol">)</span> <span class="identifier">@JsonPropertyOrder</span><span class="symbol">(</span>{
-    "platform",
-    "version",
-    "createdAt"
-}<span class="symbol">)</span> <span class="identifier">@JsonIgnoreProperties</span><span class="symbol">(</span>true<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">PESDKFileMeta</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PESDKFileMeta</span></code>
 <h3>Types</h3>
 <table>
 <tbody>
@@ -25,6 +21,18 @@
 </tr>
 </tbody>
 </table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PESDKFileMeta</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -33,7 +41,7 @@
 <p><a href="get-created-at.html">getCreatedAt</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getCreatedAt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCreatedAt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -42,14 +50,14 @@
 <p><a href="get-created-at-date.html">getCreatedAtDate</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getCreatedAtDate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.Date</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCreatedAtDate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-platform.html">getPlatform</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getPlatform</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-platform/index.html"><span class="identifier">PESDKFileMeta.Platform</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPlatform</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-platform/index.html"><span class="identifier">PESDKFileMeta.Platform</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -58,7 +66,7 @@
 <p><a href="get-version.html">getVersion</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -67,7 +75,7 @@
 <p><a href="set-created-at.html">setCreatedAt</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setCreatedAt</span><span class="symbol">(</span><span class="identifier">createdAt</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Date</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileMeta</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setCreatedAt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileMeta$setCreatedAt(java.util.Date)/createdAt">createdAt</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileMeta</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -76,7 +84,7 @@
 <p><a href="set-platform.html">setPlatform</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setPlatform</span><span class="symbol">(</span><span class="identifier">platform</span><span class="symbol">:</span>&nbsp;<a href="-platform/index.html"><span class="identifier">PESDKFileMeta.Platform</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileMeta</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPlatform</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileMeta$setPlatform(ly.img.android.serializer._3._0._0.PESDKFileMeta.Platform)/platform">platform</span><span class="symbol">:</span>&nbsp;<a href="-platform/index.html"><span class="identifier">PESDKFileMeta.Platform</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileMeta</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>
@@ -85,7 +93,7 @@
 <p><a href="set-version.html">setVersion</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setVersion</span><span class="symbol">(</span><span class="identifier">version</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileMeta</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setVersion</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.serializer._3._0._0.PESDKFileMeta$setVersion(kotlin.String)/version">version</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PESDKFileMeta</span></a><span class="symbol">!</span></code>
 <p>(Required)</p>
 </td>
 </tr>

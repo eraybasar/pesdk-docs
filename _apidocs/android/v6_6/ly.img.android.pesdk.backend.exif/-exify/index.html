@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="./index.html">Exify</a><br/>
 <br/>
 <h1>Exify</h1>
-<code><span class="keyword">class </span><span class="identifier">Exify</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Exify</span></code>
 <p>This class provides methods and constants for reading and writing jpeg file metadata. It contains a collection of ExifTags, and a collection of definitions for creating valid ExifTags. The collection of ExifTags can be updated by: reading new ones from a file, deleting or adding existing ones, or building new ExifTags from a tag definition. These ExifTags can be written to a valid jpeg image as exif metadata. </p>
  Each ExifTag has a tag ID (TID) and is stored in a specific image file directory (IFD) as specified by the exif standard. A tag definition can be looked up with a constant that is a combination of TID and IFD. This definition has information about the type, number of components, and valid IFDs for a ExifTagKey.
 <p><strong>See Also</strong><br/>
@@ -352,6 +352,48 @@
 </tr>
 </tbody>
 </table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-d-e-f-a-u-l-t_-b-y-t-e_-o-r-d-e-r.html">DEFAULT_BYTE_ORDER</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">DEFAULT_BYTE_ORDER</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteOrder.html"><span class="identifier">ByteOrder</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-e-f-i-n-i-t-i-o-n_-n-u-l-l.html">DEFINITION_NULL</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">DEFINITION_NULL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-f-d_-n-u-l-l.html">IFD_NULL</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">IFD_NULL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="s-banned-defines.html">sBannedDefines</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">sBannedDefines</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/HashSet.html"><span class="identifier">HashSet</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code>
+<p>Tags with definitions that cannot be overridden (banned defines).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-a-g_-n-u-l-l.html">TAG_NULL</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TAG_NULL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -360,7 +402,7 @@
 <p><a href="add-date-time-stamp-tag.html">addDateTimeStampTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">addDateTimeStampTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">, </span><span class="identifier">timestamp</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">, </span><span class="identifier">timezone</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.TimeZone</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addDateTimeStampTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$addDateTimeStampTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Long, java.util.TimeZone)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$addDateTimeStampTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Long, java.util.TimeZone)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$addDateTimeStampTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Long, java.util.TimeZone)/timezone">timezone</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html"><span class="identifier">TimeZone</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Creates, formats, and sets the DateTimeStamp tag for one of: {@see #ExifTagKey.DATE_TIME}, {@see #ExifTagKey.DATE_TIME_DIGITIZED}, {@see #ExifTagKey.DATE_TIME_ORIGINAL}.</p>
 </td>
 </tr>
@@ -369,7 +411,7 @@
 <p><a href="add-gps-date-time-stamp-tag.html">addGpsDateTimeStampTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">addGpsDateTimeStampTag</span><span class="symbol">(</span><span class="identifier">timestamp</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addGpsDateTimeStampTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$addGpsDateTimeStampTag(kotlin.Long)/timestamp">timestamp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Creates and sets the GPS timestamp ExifTagKey.</p>
 </td>
 </tr>
@@ -378,7 +420,7 @@
 <p><a href="add-gps-tags.html">addGpsTags</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">addGpsTags</span><span class="symbol">(</span><span class="identifier">latitude</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">longitude</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addGpsTags</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$addGpsTags(kotlin.Double, kotlin.Double)/latitude">latitude</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$addGpsTags(kotlin.Double, kotlin.Double)/longitude">longitude</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Creates and sets all to the GPS tags for a give latitude and longitude.</p>
 </td>
 </tr>
@@ -387,9 +429,9 @@
 <p><a href="build-tag.html">buildTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">buildTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Any)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Any)/val">val</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Creates a tag for a defined tag constant in the tag's default IFD.</p>
-<code><span class="keyword">fun </span><span class="identifier">buildTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(kotlin.Int, kotlin.Int, kotlin.Any)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(kotlin.Int, kotlin.Int, kotlin.Any)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(kotlin.Int, kotlin.Int, kotlin.Any)/val">val</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Creates a tag for a defined tag constant in a given IFD if that IFD is allowed for the ExifTagKey. This method will fail anytime the appropriate <code><a href="../-exif-tag-info/set-value.html">ExifTagInfo#setValue</a></code> for this tag's datatype would fail.</p>
 </td>
 </tr>
@@ -398,15 +440,15 @@
 <p><a href="build-uninitialized-tag.html">buildUninitializedTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">buildUninitializedTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">buildUninitializedTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildUninitializedTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildUninitializedTag(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildUninitializedTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildUninitializedTag(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="clear-exif.html">clearExif</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">clearExif</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">clearExif</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Clears this ExifInterface object's existing exif tags.</p>
 </td>
 </tr>
@@ -415,14 +457,14 @@
 <p><a href="close-silently.html">closeSilently</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">closeSilently</span><span class="symbol">(</span><span class="identifier">c</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Closeable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">closeSilently</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$closeSilently(java.io.Closeable)/c">c</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="convert-lat-or-long-to-double.html">convertLatOrLongToDouble</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">convertLatOrLongToDouble</span><span class="symbol">(</span><span class="identifier">coordinate</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">reference</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">convertLatOrLongToDouble</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$convertLatOrLongToDouble(kotlin.Array((ly.img.android.pesdk.backend.exif.Rational)), kotlin.String)/coordinate">coordinate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$convertLatOrLongToDouble(kotlin.Array((ly.img.android.pesdk.backend.exif.Rational)), kotlin.String)/reference">reference</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
 <p>Gets the double representation of the GPS latitude or longitude coordinate.</p>
 </td>
 </tr>
@@ -431,7 +473,7 @@
 <p><a href="define-tag.html">defineTag</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">defineTag</span><span class="symbol">(</span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">defineTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$defineTag(kotlin.Int, kotlin.Short)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$defineTag(kotlin.Int, kotlin.Short)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Returns the constant representing a tag with a given TID and default IFD.</p>
 </td>
 </tr>
@@ -440,10 +482,10 @@
 <p><a href="delete-tag.html">deleteTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">deleteTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">deleteTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">deleteTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$deleteTag(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">deleteTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$deleteTag(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Removes the ExifTag for a tag constant from that tag's default IFD.</p>
-<code><span class="keyword">fun </span><span class="identifier">deleteTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">deleteTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$deleteTag(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$deleteTag(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Removes the ExifTag for a tag constant from the given IFD.</p>
 </td>
 </tr>
@@ -452,7 +494,7 @@
 <p><a href="get-actual-tag-count.html">getActualTagCount</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getActualTagCount</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getActualTagCount</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getActualTagCount(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getActualTagCount(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the number of elements for an ExifTag in a given IFD.</p>
 </td>
 </tr>
@@ -461,21 +503,21 @@
 <p><a href="get-allowed-ifd-flags-from-info.html">getAllowedIfdFlagsFromInfo</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getAllowedIfdFlagsFromInfo</span><span class="symbol">(</span><span class="identifier">info</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getAllowedIfdFlagsFromInfo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getAllowedIfdFlagsFromInfo(kotlin.Int)/info">info</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-allowed-ifds-from-info.html">getAllowedIfdsFromInfo</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getAllowedIfdsFromInfo</span><span class="symbol">(</span><span class="identifier">info</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getAllowedIfdsFromInfo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getAllowedIfdsFromInfo(kotlin.Int)/info">info</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-all-tags.html">getAllTags</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getAllTags</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.List</span><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAllTags</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code>
 <p>Get the exif tags in this ExifInterface object or null if none exist.</p>
 </td>
 </tr>
@@ -484,7 +526,7 @@
 <p><a href="get-altitude.html">getAltitude</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getAltitude</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAltitude</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getAltitude(kotlin.Double)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
 <p>Return the altitude in meters. If the exif tag does not exist, return defaultValue.</p>
 </td>
 </tr>
@@ -493,7 +535,7 @@
 <p><a href="get-aperture-size.html">getApertureSize</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getApertureSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getApertureSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
 <p>Return the aperture size, if present, 0 if missing</p>
 </td>
 </tr>
@@ -502,14 +544,14 @@
 <p><a href="get-component-count-from-info.html">getComponentCountFromInfo</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getComponentCountFromInfo</span><span class="symbol">(</span><span class="identifier">info</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getComponentCountFromInfo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getComponentCountFromInfo(kotlin.Int)/info">info</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-date-time.html">getDateTime</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDateTime</span><span class="symbol">(</span><span class="identifier">dateTimeString</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">timeZone</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.TimeZone</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.Date</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDateTime</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDateTime(kotlin.String, java.util.TimeZone)/dateTimeString">dateTimeString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDateTime(kotlin.String, java.util.TimeZone)/timeZone">timeZone</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html"><span class="identifier">TimeZone</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">!</span></code>
 <p>Given an exif date time, like {@see #ExifTagKey.DATE_TIME} or {@see #ExifTagKey.DATE_TIME_DIGITIZED} returns a java Date object</p>
 </td>
 </tr>
@@ -518,8 +560,8 @@
 <p><a href="get-defined-tag-count.html">getDefinedTagCount</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getDefinedTagCount</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getDefinedTagCount</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDefinedTagCount</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDefinedTagCount(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDefinedTagCount</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDefinedTagCount(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the defined number of elements for a ExifTagKey.</p>
 </td>
 </tr>
@@ -528,7 +570,7 @@
 <p><a href="get-defined-tag-default-ifd.html">getDefinedTagDefaultIfd</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getDefinedTagDefaultIfd</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDefinedTagDefaultIfd</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDefinedTagDefaultIfd(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the default IFD for a ExifTagKey.</p>
 </td>
 </tr>
@@ -537,7 +579,7 @@
 <p><a href="get-defined-tag-type.html">getDefinedTagType</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getDefinedTagType</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDefinedTagType</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getDefinedTagType(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
 <p>Gets the defined type for a ExifTagKey.</p>
 </td>
 </tr>
@@ -546,14 +588,14 @@
 <p><a href="get-flags-from-allowed-ifds.html">getFlagsFromAllowedIfds</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getFlagsFromAllowedIfds</span><span class="symbol">(</span><span class="identifier">allowedIfds</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getFlagsFromAllowedIfds</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getFlagsFromAllowedIfds(kotlin.IntArray)/allowedIfds">allowedIfds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-image-size.html">getImageSize</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getImageSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getImageSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code>
 <p>Returns the Image size as decoded from the SOF marker</p>
 </td>
 </tr>
@@ -562,7 +604,7 @@
 <p><a href="get-jpeg-process.html">getJpegProcess</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getJpegProcess</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getJpegProcess</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
 <p>this gives information about the process used to create the JPEG file. Possible values are: <ul> <li>'0' Unknown</li>
  <li>'192' Baseline</li>
  <li>'193' Extended sequential</li>
@@ -586,7 +628,7 @@
 <p><a href="get-latitude.html">getLatitude</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLatitude</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLatitude</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Returns a formatted String with the latitude representation: 39° 8' 16.8" N</p>
 </td>
 </tr>
@@ -595,7 +637,7 @@
 <p><a href="get-lat-long-as-doubles.html">getLatLongAsDoubles</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLatLongAsDoubles</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">double</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLatLongAsDoubles</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html"><span class="identifier">DoubleArray</span></a><span class="symbol">!</span></code>
 <p>Gets the GPS latitude and longitude as a pair of doubles from this ExifInterface object's tags, or null if the necessary tags do not exist.</p>
 </td>
 </tr>
@@ -604,7 +646,7 @@
 <p><a href="get-lens-model-description.html">getLensModelDescription</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLensModelDescription</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLensModelDescription</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Returns the lens model as string if any of the tags {@see #ExifTagKey.LENS_MODEL} or {@see #ExifTagKey.LENS_SPECS} are found</p>
 </td>
 </tr>
@@ -613,7 +655,7 @@
 <p><a href="get-longitude.html">getLongitude</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getLongitude</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLongitude</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Returns a formatted String with the longitude representation: 77° 37' 51.6" W</p>
 </td>
 </tr>
@@ -622,7 +664,7 @@
 <p><a href="get-orientation-value-for-rotation.html">getOrientationValueForRotation</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getOrientationValueForRotation</span><span class="symbol">(</span><span class="identifier">degrees</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getOrientationValueForRotation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getOrientationValueForRotation(kotlin.Int)/degrees">degrees</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
 <p>Returns the Orientation ExifTag value for a given number of degrees.</p>
 </td>
 </tr>
@@ -631,7 +673,7 @@
 <p><a href="get-quality-guess.html">getQualityGuess</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getQualityGuess</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getQualityGuess</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Returns the JPEG quality used to generate the image or 0 if not found</p>
 </td>
 </tr>
@@ -640,7 +682,7 @@
 <p><a href="get-resolution-unit.html">getResolutionUnit</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getResolutionUnit</span><span class="symbol">(</span><span class="identifier">resolution</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getResolutionUnit</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getResolutionUnit(kotlin.Int)/resolution">resolution</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
 <p>Given the value from {@see #ExifTagKey.FOCAL_PLANE_RESOLUTION_UNIT} or {@see #ExifTagKey.RESOLUTION_UNIT} this method will return the corresponding value in millimeters</p>
 </td>
 </tr>
@@ -649,7 +691,7 @@
 <p><a href="get-rotation-for-orientation-value.html">getRotationForOrientationValue</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getRotationForOrientationValue</span><span class="symbol">(</span><span class="identifier">orientation</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getRotationForOrientationValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getRotationForOrientationValue(kotlin.Short)/orientation">orientation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Returns the rotation degrees corresponding to an ExifTag Orientation value.</p>
 </td>
 </tr>
@@ -658,10 +700,10 @@
 <p><a href="get-tag.html">getTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Returns the ExifTag in that tag's default IFD for a defined tag constant or null if none exists.</p>
-<code><span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTag(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Gets an ExifTag for an IFD other than the tag's default.</p>
 </td>
 </tr>
@@ -670,108 +712,108 @@
 <p><a href="get-tag-byte-value.html">getTagByteValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagByteValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Byte</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagByteValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Byte</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagByteValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Byte</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagByteValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValue(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagByteValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValue(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagByteValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValue(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValue(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-byte-values.html">getTagByteValues</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagByteValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagByteValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagByteValues</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagByteValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValues(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValues(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagByteValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValues(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagByteValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagByteValues(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-definition.html">getTagDefinition</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagDefinition</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">, </span><span class="identifier">defaultIfd</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagDefinition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinition(kotlin.Short, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinition(kotlin.Short, kotlin.Int)/defaultIfd">defaultIfd</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-definition-for-tag.html">getTagDefinitionForTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagDefinitionForTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagDefinitionForTag</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">, </span><span class="identifier">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">, </span><span class="identifier">count</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifd</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagDefinitionForTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinitionForTag(ly.img.android.pesdk.backend.exif.ExifTagInfo)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagDefinitionForTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinitionForTag(kotlin.Short, kotlin.Short, kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinitionForTag(kotlin.Short, kotlin.Short, kotlin.Int, kotlin.Int)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinitionForTag(kotlin.Short, kotlin.Short, kotlin.Int, kotlin.Int)/count">count</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinitionForTag(kotlin.Short, kotlin.Short, kotlin.Int, kotlin.Int)/ifd">ifd</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-definitions-for-tag-id.html">getTagDefinitionsForTagId</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagDefinitionsForTagId</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagDefinitionsForTagId</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagDefinitionsForTagId(kotlin.Short)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-info.html">getTagInfo</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagInfo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SparseIntArray</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagInfo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SparseIntArray</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-int-value.html">getTagIntValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagIntValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Integer</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagIntValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Integer</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagIntValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Integer</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagIntValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValue(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagIntValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValue(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagIntValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValue(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValue(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-int-values.html">getTagIntValues</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagIntValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagIntValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagIntValues</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagIntValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValues(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValues(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagIntValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValues(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagIntValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagIntValues(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-long-value.html">getTagLongValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagLongValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Long</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagLongValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Long</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagLongValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Long</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagLongValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValue(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagLongValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValue(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagLongValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValue(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValue(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-long-values.html">getTagLongValues</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagLongValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">long</span><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagLongValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">long</span><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagLongValues</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">long</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagLongValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValues(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValues(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html"><span class="identifier">LongArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagLongValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValues(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html"><span class="identifier">LongArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagLongValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagLongValues(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html"><span class="identifier">LongArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-rational-value.html">getTagRationalValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagRationalValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagRationalValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagRationalValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagRationalValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValue(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagRationalValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValue(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagRationalValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValue(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValue(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-rational-values.html">getTagRationalValues</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagRationalValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagRationalValues</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagRationalValues</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagRationalValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValues(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValues(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagRationalValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValues(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagRationalValues</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagRationalValues(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tags-for-ifd-id.html">getTagsForIfdId</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagsForIfdId</span><span class="symbol">(</span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.List</span><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagsForIfdId</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagsForIfdId(kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code>
 <p>Returns a list of ExifTags that share an IFD (which can be obtained by calling <code><a href="get-true-ifd.html">#getTrueIfd(int)</a></code> on a defined tag constant) or null if none exist.</p>
 </td>
 </tr>
@@ -780,7 +822,7 @@
 <p><a href="get-tags-for-tag-id.html">getTagsForTagId</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagsForTagId</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.List</span><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagsForTagId</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagsForTagId(kotlin.Short)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code>
 <p>Returns a list of ExifTags that share a TID (which can be obtained by calling <code><a href="get-true-tag-key.html">#getTrueTagKey</a></code> on a defined tag constant) or null if none exist.</p>
 </td>
 </tr>
@@ -789,19 +831,19 @@
 <p><a href="get-tag-string-value.html">getTagStringValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagStringValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagStringValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagStringValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagStringValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagStringValue(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagStringValue(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagStringValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagStringValue(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagStringValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagStringValue(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-value.html">getTagValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Object</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getTagValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Object</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagValue(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagValue(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span></code>
 <p>Returns the value of the ExifTag in that tag's default IFD for a defined tag constant or null if none exists or the value could not be cast into the return type.</p>
-<code><span class="keyword">fun </span><span class="identifier">getTagValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Object</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagValue(kotlin.Int, kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagValue(kotlin.Int, kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span></code>
 <p>Gets a tag value for an IFD other than the tag's default.</p>
 </td>
 </tr>
@@ -810,7 +852,7 @@
 <p><a href="get-thumbnail.html">getThumbnail</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code>
 <p>Returns the thumbnail if it is jpeg compressed, or null if none exists.</p>
 </td>
 </tr>
@@ -819,7 +861,7 @@
 <p><a href="get-thumbnail-bitmap.html">getThumbnailBitmap</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code>
 <p>Returns the thumbnail from IFD1 as a bitmap, or null if none exists.</p>
 </td>
 </tr>
@@ -828,7 +870,7 @@
 <p><a href="get-thumbnail-bytes.html">getThumbnailBytes</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getThumbnailBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code>
 <p>Returns the thumbnail from IFD1 as a byte array, or null if none exists. The bytes may either be an uncompressed strip as specified in the exif standard or a jpeg compressed image.</p>
 </td>
 </tr>
@@ -837,8 +879,8 @@
 <p><a href="get-true-ifd.html">getTrueIfd</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueIfd</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code><br/>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueIfd</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueIfd</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTrueIfd(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueIfd</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTrueIfd(kotlin.Int)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Returns the default IFD for a tag constant.</p>
 </td>
 </tr>
@@ -847,8 +889,8 @@
 <p><a href="get-true-tag-key.html">getTrueTagKey</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueTagKey</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code><br/>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueTagKey</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueTagKey</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTrueTagKey(ly.img.android.pesdk.backend.exif.Exify.TAG)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTrueTagKey</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTrueTagKey(kotlin.Int)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
 <p>Returns the TID for a tag constant.</p>
 </td>
 </tr>
@@ -857,14 +899,14 @@
 <p><a href="get-type-from-info.html">getTypeFromInfo</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTypeFromInfo</span><span class="symbol">(</span><span class="identifier">info</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getTypeFromInfo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTypeFromInfo(kotlin.Int)/info">info</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-user-comment.html">getUserComment</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getUserComment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUserComment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Decodes the user comment tag into string as specified in the EXIF standard. Returns null if decoding failed.</p>
 </td>
 </tr>
@@ -873,7 +915,7 @@
 <p><a href="has-thumbnail.html">hasThumbnail</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">hasThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Check if thumbnail exists.</p>
 </td>
 </tr>
@@ -882,14 +924,14 @@
 <p><a href="is-ifd-allowed.html">isIfdAllowed</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isIfdAllowed</span><span class="symbol">(</span><span class="identifier">info</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifd</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isIfdAllowed</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$isIfdAllowed(kotlin.Int, kotlin.Int)/info">info</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$isIfdAllowed(kotlin.Int, kotlin.Int)/ifd">ifd</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-offset-tag.html">isOffsetTag</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isOffsetTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isOffsetTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$isOffsetTag(kotlin.Short)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Returns true if tag TID is one of the following: {@see #ExifTagKey.EXIF_IFD}, {@see #ExifTagKey.GPS_IFD}, {@see #ExifTagKey.JPEG_INTERCHANGE_FORMAT}, {@see #ExifTagKey.STRIP_OFFSETS}, {@see #ExifTagKey.INTEROPERABILITY_IFD} </p>
 </td>
 </tr>
@@ -898,7 +940,7 @@
 <p><a href="is-tag-count-defined.html">isTagCountDefined</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isTagCountDefined</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isTagCountDefined</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$isTagCountDefined(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Checks whether a tag has a defined number of elements.</p>
 </td>
 </tr>
@@ -907,7 +949,7 @@
 <p><a href="is-thumbnail-compressed.html">isThumbnailCompressed</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isThumbnailCompressed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isThumbnailCompressed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Check if thumbnail is compressed.</p>
 </td>
 </tr>
@@ -916,9 +958,9 @@
 <p><a href="read-exif.html">readExif</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">inFileName</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.String, kotlin.Int)/inFileName">inFileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.String, kotlin.Int)/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Reads the exif tags from a file, clearing this ExifInterface object's existing exif tags.</p>
-<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">inStream</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(java.io.InputStream, kotlin.Int)/inStream">inStream</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(java.io.InputStream, kotlin.Int)/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Reads the exif tags from an InputStream, clearing this ExifInterface object's existing exif tags. <pre><code>
           ExifInterface exif = new ExifInterface();
           exif.readExif( stream, Options.OPTION_IFD_0 | Options.OPTION_IFD_1 | Options.OPTION_IFD_EXIF );
@@ -926,7 +968,7 @@
           // to request all the options use the OPTION_ALL bit mask
           exif.readExif( stream, Options.OPTION_ALL );
       </code></pre></p>
-<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">jpeg</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.ByteArray, kotlin.Int)/jpeg">jpeg</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.ByteArray, kotlin.Int)/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Reads the exif tags from a byte array, clearing this ExifInterface object's existing exif tags.</p>
 </td>
 </tr>
@@ -935,7 +977,7 @@
 <p><a href="remove-compressed-thumbnail.html">removeCompressedThumbnail</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">removeCompressedThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeCompressedThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Clears the compressed thumbnail if it exists.</p>
 </td>
 </tr>
@@ -944,7 +986,7 @@
 <p><a href="remove-tag-definition.html">removeTagDefinition</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">removeTagDefinition</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeTagDefinition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$removeTagDefinition(kotlin.Int)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Removes a tag definition for given defined tag constant.</p>
 </td>
 </tr>
@@ -953,7 +995,7 @@
 <p><a href="reset-tag-definitions.html">resetTagDefinitions</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">resetTagDefinitions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">resetTagDefinitions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Resets tag definitions to the default ones.</p>
 </td>
 </tr>
@@ -962,9 +1004,9 @@
 <p><a href="set-compressed-thumbnail.html">setCompressedThumbnail</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setCompressedThumbnail</span><span class="symbol">(</span><span class="identifier">thumb</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setCompressedThumbnail</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setCompressedThumbnail(Bitmap)/thumb">thumb</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets the thumbnail to be a jpeg compressed bitmap. Clears any prior thumbnail.</p>
-<code><span class="keyword">fun </span><span class="identifier">setCompressedThumbnail</span><span class="symbol">(</span><span class="identifier">thumb</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setCompressedThumbnail</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setCompressedThumbnail(kotlin.ByteArray)/thumb">thumb</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets the thumbnail to be a jpeg compressed image. Clears any prior thumbnail.</p>
 </td>
 </tr>
@@ -973,7 +1015,7 @@
 <p><a href="set-exif.html">setExif</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setExif</span><span class="symbol">(</span><span class="identifier">tags</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setExif(kotlin.collections.MutableCollection((ly.img.android.pesdk.backend.exif.ExifTagInfo)))/tags">tags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Sets the exif tags, clearing this ExifInterface object's existing exif tags.</p>
 </td>
 </tr>
@@ -982,7 +1024,7 @@
 <p><a href="set-tag.html">setTag</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setTag</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTag(ly.img.android.pesdk.backend.exif.ExifTagInfo)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
 <p>Puts an ExifTag into this ExifInterface object's tags, removing a previous ExifTag with the same TID and IFD. The IFD it is put into will be the one the tag was created with in <code><a href="build-tag.html">#buildTag</a></code>.</p>
 </td>
 </tr>
@@ -991,7 +1033,7 @@
 <p><a href="set-tag-definition.html">setTagDefinition</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setTagDefinition</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">, </span><span class="identifier">defaultIfd</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">tagType</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">, </span><span class="identifier">defaultComponentCount</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">, </span><span class="identifier">allowedIfds</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTagDefinition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagDefinition(kotlin.Short, kotlin.Int, kotlin.Short, kotlin.Short, kotlin.IntArray)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagDefinition(kotlin.Short, kotlin.Int, kotlin.Short, kotlin.Short, kotlin.IntArray)/defaultIfd">defaultIfd</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagDefinition(kotlin.Short, kotlin.Int, kotlin.Short, kotlin.Short, kotlin.IntArray)/tagType">tagType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagDefinition(kotlin.Short, kotlin.Int, kotlin.Short, kotlin.Short, kotlin.IntArray)/defaultComponentCount">defaultComponentCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagDefinition(kotlin.Short, kotlin.Int, kotlin.Short, kotlin.Short, kotlin.IntArray)/allowedIfds">allowedIfds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Creates a new tag definition in this ExifInterface object for a given TID and default IFD. Creating a definition with the same TID and default IFD as a previous definition will override it.</p>
 </td>
 </tr>
@@ -1000,7 +1042,7 @@
 <p><a href="set-tags.html">setTags</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setTags</span><span class="symbol">(</span><span class="identifier">tags</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTags</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTags(kotlin.collections.MutableCollection((ly.img.android.pesdk.backend.exif.ExifTagInfo)))/tags">tags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Puts a collection of ExifTags into this ExifInterface objects's tags. Any previous ExifTags with the same TID and IFDs will be removed.</p>
 </td>
 </tr>
@@ -1009,10 +1051,10 @@
 <p><a href="set-tag-value.html">setTagValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagValue(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Any)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagValue(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Any)/val">val</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagValue(kotlin.Int, kotlin.Any)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagValue(kotlin.Int, kotlin.Any)/val">val</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets the value of an ExifTag if it exists it's default IFD. The value must be the correct type and length for that ExifExifTagKey.</p>
-<code><span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagValue(kotlin.Int, kotlin.Int, kotlin.Any)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagValue(kotlin.Int, kotlin.Int, kotlin.Any)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$setTagValue(kotlin.Int, kotlin.Int, kotlin.Any)/val">val</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets the value of an ExifTag if it exists in the given IFD. The value must be the correct type and length for that ExifExifTagKey.</p>
 </td>
 </tr>
@@ -1021,59 +1063,17 @@
 <p><a href="to-bit-array.html">toBitArray</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toBitArray</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toBitArray</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$toBitArray(kotlin.Short)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="write-exif.html">writeExif</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier">dstFilename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier">srcFilename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">dstFilename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">dstFilename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">dstFilename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">quality</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="-d-e-f-a-u-l-t_-b-y-t-e_-o-r-d-e-r.html">DEFAULT_BYTE_ORDER</a></p>
-</td>
-<td>
-<code><span class="identifier">DEFAULT_BYTE_ORDER</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-d-e-f-i-n-i-t-i-o-n_-n-u-l-l.html">DEFINITION_NULL</a></p>
-</td>
-<td>
-<code><span class="identifier">DEFINITION_NULL</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-i-f-d_-n-u-l-l.html">IFD_NULL</a></p>
-</td>
-<td>
-<code><span class="identifier">IFD_NULL</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="s-banned-defines.html">sBannedDefines</a></p>
-</td>
-<td>
-<code><span class="identifier">sBannedDefines</span></code>
-<p>Tags with definitions that cannot be overridden (banned defines).</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-a-g_-n-u-l-l.html">TAG_NULL</a></p>
-</td>
-<td>
-<code><span class="identifier">TAG_NULL</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(kotlin.String)/dstFilename">dstFilename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(kotlin.String, kotlin.String)/srcFilename">srcFilename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(kotlin.String, kotlin.String)/dstFilename">dstFilename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(java.io.InputStream, kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(java.io.InputStream, kotlin.String)/dstFilename">dstFilename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(Bitmap, kotlin.String, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(Bitmap, kotlin.String, kotlin.Int)/dstFilename">dstFilename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$writeExif(Bitmap, kotlin.String, kotlin.Int)/quality">quality</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>

@@ -10,22 +10,35 @@
 <h1>SeedRandom</h1>
 <code><span class="keyword">interface </span><span class="identifier">SeedRandom</span></code>
 <p>Created by svennahler on 23.05.18.</p>
-<h3>Functions</h3>
+<h3>Properties</h3>
 <table>
 <tbody>
 <tr>
 <td>
-<p><a href="get-seed.html">getSeed</a></p>
+<p><a href="seed.html">seed</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSeed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">var </span><span class="identifier">seed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../also-add-to.html">alsoAddTo</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">SeedRandom</span></a><span class="symbol">&gt;</span> <a href="../also-add-to.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">alsoAddTo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random$alsoAddTo(ly.img.android.pesdk.backend.random.alsoAddTo.A, ((ly.img.android.pesdk.backend.random.SeedRandom)))/pool">pool</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">SeedRandom</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../also-add-to.html#A"><span class="identifier">A</span></a></code></td>
 </tr>
 <tr>
 <td>
-<p><a href="set-seed.html">setSeed</a></p>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setSeed</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.MultiRect)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code></td>
 </tr>
 </tbody>
 </table>

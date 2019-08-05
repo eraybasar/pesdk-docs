@@ -17,14 +17,14 @@
 <p><a href="-default-add-vpa-listener/index.html">DefaultAddVpaListener</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">DefaultAddVpaListener</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.ui.animators.BaseItemAnimator.VpaListenerAdapter</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DefaultAddVpaListener</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">VpaListenerAdapter</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="-default-remove-vpa-listener/index.html">DefaultRemoveVpaListener</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">DefaultRemoveVpaListener</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.ui.animators.BaseItemAnimator.VpaListenerAdapter</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DefaultRemoveVpaListener</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">VpaListenerAdapter</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -40,6 +40,32 @@
 </tr>
 </tbody>
 </table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-animations.html">addAnimations</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">addAnimations</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="interpolator.html">interpolator</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">interpolator</span><span class="symbol">: </span><span class="identifier">Interpolator</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-animations.html">removeAnimations</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">removeAnimations</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -48,110 +74,84 @@
 <p><a href="animate-add.html">animateAdd</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">animateAdd</span><span class="symbol">(</span><span class="identifier">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">animateAdd</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateAdd(RecyclerView.ViewHolder)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="animate-add-impl.html">animateAddImpl</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">animateAddImpl</span><span class="symbol">(</span><span class="identifier">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">count</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">animateAddImpl</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateAddImpl(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateAddImpl(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateAddImpl(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int)/count">count</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="animate-change.html">animateChange</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">animateChange</span><span class="symbol">(</span><span class="identifier">oldHolder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">newHolder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">fromX</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">fromY</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">toX</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">toY</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">animateChange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateChange(RecyclerView.ViewHolder, RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/oldHolder">oldHolder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateChange(RecyclerView.ViewHolder, RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/newHolder">newHolder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateChange(RecyclerView.ViewHolder, RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/fromX">fromX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateChange(RecyclerView.ViewHolder, RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/fromY">fromY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateChange(RecyclerView.ViewHolder, RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/toX">toX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateChange(RecyclerView.ViewHolder, RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/toY">toY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="animate-move.html">animateMove</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">animateMove</span><span class="symbol">(</span><span class="identifier">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">fromX</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">fromY</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">toX</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">toY</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">animateMove</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateMove(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateMove(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/fromX">fromX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateMove(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/fromY">fromY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateMove(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/toX">toX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateMove(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/toY">toY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="animate-remove.html">animateRemove</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">animateRemove</span><span class="symbol">(</span><span class="identifier">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">animateRemove</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateRemove(RecyclerView.ViewHolder)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="animate-remove-impl.html">animateRemoveImpl</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">animateRemoveImpl</span><span class="symbol">(</span><span class="identifier">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">count</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">animateRemoveImpl</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateRemoveImpl(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateRemoveImpl(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$animateRemoveImpl(RecyclerView.ViewHolder, kotlin.Int, kotlin.Int)/count">count</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="end-animation.html">endAnimation</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">endAnimation</span><span class="symbol">(</span><span class="identifier">item</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">endAnimation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$endAnimation(RecyclerView.ViewHolder)/item">item</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="end-animations.html">endAnimations</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">endAnimations</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">endAnimations</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="is-running.html">isRunning</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">isRunning</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isRunning</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="pre-animate-add-impl.html">preAnimateAddImpl</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">preAnimateAddImpl</span><span class="symbol">(</span><span class="identifier">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">preAnimateAddImpl</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$preAnimateAddImpl(RecyclerView.ViewHolder)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="pre-animate-remove-impl.html">preAnimateRemoveImpl</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">preAnimateRemoveImpl</span><span class="symbol">(</span><span class="identifier">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">preAnimateRemoveImpl</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.animators.BaseItemAnimator$preAnimateRemoveImpl(RecyclerView.ViewHolder)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="run-pending-animations.html">runPendingAnimations</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">runPendingAnimations</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="add-animations.html">addAnimations</a></p>
-</td>
-<td>
-<code><span class="identifier">addAnimations</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="interpolator.html">interpolator</a></p>
-</td>
-<td>
-<code><span class="identifier">interpolator</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="remove-animations.html">removeAnimations</a></p>
-</td>
-<td>
-<code><span class="identifier">removeAnimations</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">runPendingAnimations</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@
 <p><a href="../-left-to-right-animator/index.html">LeftToRightAnimator</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">LeftToRightAnimator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BaseItemAnimator</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">LeftToRightAnimator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BaseItemAnimator</span></a></code></td>
 </tr>
 </tbody>
 </table>

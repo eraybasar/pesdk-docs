@@ -8,19 +8,21 @@
 <a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">Exify</a>&nbsp;/&nbsp;<a href="./read-exif.html">readExif</a><br/>
 <br/>
 <h1>readExif</h1>
-<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">inFileName</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<a name="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.String, kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.String, kotlin.Int)/inFileName">inFileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.String, kotlin.Int)/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Reads the exif tags from a file, clearing this ExifInterface object's existing exif tags.</p>
 <h3>Parameters</h3>
 <p><a name="inFileName"></a>
-<code>inFileName</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> a string representing the filepath to jpeg file.</p>
+<code>inFileName</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> a string representing the filepath to jpeg file.</p>
 <p><a name="options"></a>
-<code>options</code> - <span class="identifier">int</span><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
+<code>options</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
 <h3>Exceptions</h3>
 <p><a name="IOException"></a>
 <code>IOException</code> - </p>
 <p><strong>See Also</strong><br/>
 <a href="./read-exif.html">#readExif(InputStream, int)</a></p>
-<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">inStream</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<a name="ly.img.android.pesdk.backend.exif.Exify$readExif(java.io.InputStream, kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(java.io.InputStream, kotlin.Int)/inStream">inStream</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(java.io.InputStream, kotlin.Int)/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Reads the exif tags from an InputStream, clearing this ExifInterface object's existing exif tags. <pre><code>
           ExifInterface exif = new ExifInterface();
           exif.readExif( stream, Options.OPTION_IFD_0 | Options.OPTION_IFD_1 | Options.OPTION_IFD_EXIF );
@@ -30,19 +32,20 @@
       </code></pre></p>
 <h3>Parameters</h3>
 <p><a name="inStream"></a>
-<code>inStream</code> - <span class="identifier">java.io.InputStream</span><span class="symbol">:</span> an InputStream containing a jpeg compressed image.</p>
+<code>inStream</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> an InputStream containing a jpeg compressed image.</p>
 <p><a name="options"></a>
-<code>options</code> - <span class="identifier">int</span><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
+<code>options</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
 <h3>Exceptions</h3>
 <p><a name="IOException"></a>
 <code>IOException</code> - </p>
-<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">jpeg</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<a name="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.ByteArray, kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.ByteArray, kotlin.Int)/jpeg">jpeg</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$readExif(kotlin.ByteArray, kotlin.Int)/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Reads the exif tags from a byte array, clearing this ExifInterface object's existing exif tags.</p>
 <h3>Parameters</h3>
 <p><a name="jpeg"></a>
-<code>jpeg</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">:</span> a byte array containing a jpeg compressed image.</p>
+<code>jpeg</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">:</span> a byte array containing a jpeg compressed image.</p>
 <p><a name="options"></a>
-<code>options</code> - <span class="identifier">int</span><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
+<code>options</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
 <h3>Exceptions</h3>
 <p><a name="IOException"></a>
 <code>IOException</code> - </p>

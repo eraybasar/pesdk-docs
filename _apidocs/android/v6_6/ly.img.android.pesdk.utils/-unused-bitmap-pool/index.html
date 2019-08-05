@@ -8,7 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">UnusedBitmapPool</a><br/>
 <br/>
 <h1>UnusedBitmapPool</h1>
-<code><span class="keyword">class </span><span class="identifier">UnusedBitmapPool</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">UnusedBitmapPool</span></code>
 <p>Created by svennahler on 20.01.17.</p>
 <h3>Functions</h3>
 <table>
@@ -18,30 +18,30 @@
 <p><a href="create-bitmap.html">createBitmap</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">createBitmap</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">Config</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">createBitmap</span><span class="symbol">(</span><span class="identifier">size</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$createBitmap(kotlin.Int, kotlin.Int, Bitmap.Config)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$createBitmap(kotlin.Int, kotlin.Int, Bitmap.Config)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$createBitmap(kotlin.Int, kotlin.Int, Bitmap.Config)/config">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">Config</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$createBitmap(ly.img.android.pesdk.backend.model.ImageSize)/size">size</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get.html">get</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">UnusedBitmapPool</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">UnusedBitmapPool</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-bitmap.html">getBitmap</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">Config</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier">size</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$getBitmap(kotlin.Int, kotlin.Int, Bitmap.Config)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$getBitmap(kotlin.Int, kotlin.Int, Bitmap.Config)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$getBitmap(kotlin.Int, kotlin.Int, Bitmap.Config)/config">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">Config</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$getBitmap(ly.img.android.pesdk.backend.model.ImageSize)/size">size</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="recycle.html">recycle</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">UnusedBitmapPool</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.UnusedBitmapPool$recycle(Bitmap)/bitmap">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">UnusedBitmapPool</span></a><span class="symbol">!</span></code></td>
 </tr>
 </tbody>
 </table>

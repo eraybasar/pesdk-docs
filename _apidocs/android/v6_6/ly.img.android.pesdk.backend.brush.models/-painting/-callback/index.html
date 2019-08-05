@@ -17,28 +17,28 @@
 <p><a href="painting-chunk-create.html">paintingChunkCreate</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">paintingChunkCreate</span><span class="symbol">(</span><span class="identifier">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">, </span><span class="identifier">newChunk</span><span class="symbol">:</span>&nbsp;<a href="../../-paint-chunk/index.html"><span class="identifier">PaintChunk</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">paintingChunkCreate</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.models.Painting.Callback$paintingChunkCreate(ly.img.android.pesdk.backend.brush.models.Painting, ly.img.android.pesdk.backend.brush.models.PaintChunk)/painting">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.brush.models.Painting.Callback$paintingChunkCreate(ly.img.android.pesdk.backend.brush.models.Painting, ly.img.android.pesdk.backend.brush.models.PaintChunk)/newChunk">newChunk</span><span class="symbol">:</span>&nbsp;<a href="../../-paint-chunk/index.html"><span class="identifier">PaintChunk</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="painting-chunk-destroy.html">paintingChunkDestroy</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">paintingChunkDestroy</span><span class="symbol">(</span><span class="identifier">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">, </span><span class="identifier">removedChunk</span><span class="symbol">:</span>&nbsp;<a href="../../-paint-chunk/index.html"><span class="identifier">PaintChunk</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">paintingChunkDestroy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.models.Painting.Callback$paintingChunkDestroy(ly.img.android.pesdk.backend.brush.models.Painting, ly.img.android.pesdk.backend.brush.models.PaintChunk)/painting">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.brush.models.Painting.Callback$paintingChunkDestroy(ly.img.android.pesdk.backend.brush.models.Painting, ly.img.android.pesdk.backend.brush.models.PaintChunk)/removedChunk">removedChunk</span><span class="symbol">:</span>&nbsp;<a href="../../-paint-chunk/index.html"><span class="identifier">PaintChunk</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="painting-chunk-list-changed.html">paintingChunkListChanged</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">paintingChunkListChanged</span><span class="symbol">(</span><span class="identifier">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">paintingChunkListChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.models.Painting.Callback$paintingChunkListChanged(ly.img.android.pesdk.backend.brush.models.Painting)/painting">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="painting-has-changed.html">paintingHasChanged</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">paintingHasChanged</span><span class="symbol">(</span><span class="identifier">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">paintingHasChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.models.Painting.Callback$paintingHasChanged(ly.img.android.pesdk.backend.brush.models.Painting)/painting">painting</span><span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Painting</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -50,14 +50,14 @@
 <p><a href="../../../ly.img.android.pesdk.backend.layer/-paint-gl-layer/index.html">PaintGlLayer</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">PaintGlLayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.backend.layer.base/-gl-layer/index.html"><span class="identifier">GlLayer</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.backend.layer.base/-render-to-canvas-layer-i/index.html"><span class="identifier">RenderToCanvasLayerI</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">Painting.Callback</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PaintGlLayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.backend.layer.base/-gl-layer/index.html"><span class="identifier">GlLayer</span></a><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.backend.layer.base/-render-to-canvas-layer-i/index.html"><span class="identifier">RenderToCanvasLayerI</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">Painting.Callback</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="../../../ly.img.android.pesdk.backend.brush.views/-paint-preview/index.html">PaintPreview</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">PaintPreview</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FrameLayout</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">Painting.Callback</span></a><span class="symbol">, </span><a href="../../-paint-chunk/-callback/index.html"><span class="identifier">PaintChunk.Callback</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PaintPreview</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FrameLayout</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">Painting.Callback</span></a><span class="symbol">, </span><a href="../../-paint-chunk/-callback/index.html"><span class="identifier">PaintChunk.Callback</span></a></code></td>
 </tr>
 </tbody>
 </table>

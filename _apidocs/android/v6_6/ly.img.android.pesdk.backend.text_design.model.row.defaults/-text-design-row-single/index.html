@@ -8,19 +8,7 @@
 <a href="../index.html">ly.img.android.pesdk.backend.text_design.model.row.defaults</a>&nbsp;/&nbsp;<a href="./index.html">TextDesignRowSingle</a><br/>
 <br/>
 <h1>TextDesignRowSingle</h1>
-<code><span class="keyword">class </span><span class="identifier">TextDesignRowSingle</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-text-design-row/index.html"><span class="identifier">TextDesignRow</span></a></code>
-<h3>Types</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="-companion.html">Companion</a></p>
-</td>
-<td>
-<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
-</tr>
-</tbody>
-</table>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TextDesignRowSingle</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-text-design-row/index.html"><span class="identifier">TextDesignRow</span></a></code>
 <h3>Constructors</h3>
 <table>
 <tbody>
@@ -29,7 +17,80 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">TextDesignRowSingle</span><span class="symbol">(</span><span class="identifier">words</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.type/-words/index.html"><span class="identifier">Words</span></a><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">attributes</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model.config/-text-design-attributes/index.html"><span class="identifier">TextDesignAttributes</span></a><span class="symbol">)</span></code></td>
+<code><span class="identifier">TextDesignRowSingle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRowSingle$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes)/words">words</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.type/-words/index.html"><span class="identifier">Words</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRowSingle$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRowSingle$<init>(ly.img.android.pesdk.backend.text_design.type.Words, kotlin.Float, ly.img.android.pesdk.backend.text_design.model.config.TextDesignAttributes)/attributes">attributes</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model.config/-text-design-attributes/index.html"><span class="identifier">TextDesignAttributes</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="image-insets.html">imageInsets</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">imageInsets</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-text-design-row/attributes.html">attributes</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">attributes</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.text_design.model.config/-text-design-attributes/index.html"><span class="identifier">TextDesignAttributes</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/elements.html">elements</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">elements</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/frame.html">frame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">frame</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/shearing-angle.html">shearingAngle</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">shearingAngle</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/size.html">size</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">size</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.text_design.model/-size-value/index.html"><span class="identifier">SizeValue</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/text-frame.html">textFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">textFrame</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/words.html">words</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">words</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.text_design.type/-words/index.html"><span class="identifier">Words</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -41,45 +102,77 @@
 <p><a href="calculate-layout-elements.html">calculateLayoutElements</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">calculateLayoutElements</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.List</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateLayoutElements</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code>
 <p>This method creates and returns all the <code>TextDesignElement</code>s in this row based on the passed
 <code>size.width</code>. It must not rely on the height because this has not been calculated - in fact
 the height has to be derived from the width within this method. That means that this method
 should update <code>size.height</code> to a height that it needs to draw its contents into.</p>
 </td>
 </tr>
-<tr>
-<td>
-<p><a href="get-image-insets.html">getImageInsets</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">getImageInsets</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="set-image-insets.html">setImageInsets</a></p>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="identifier">setImageInsets</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
-</tr>
 </tbody>
 </table>
-<h3>Other members</h3>
+<h3>Inherited Functions</h3>
 <table>
 <tbody>
 <tr>
 <td>
-<p><a href="-companion.html">Companion</a></p>
+<p><a href="../-text-design-row/did-render.html">didRender</a></p>
 </td>
 <td>
-<code><span class="identifier">Companion</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">didRender</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRow$didRender()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/layout.html">layout</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">layout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRow$render()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/text-frame.html">textFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">textFrame</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRow$textFrame(ly.img.android.pesdk.backend.text_design.model.TextDesignElement, kotlin.Float)/element">element</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRow$textFrame(ly.img.android.pesdk.backend.text_design.model.TextDesignElement, kotlin.Float)/fontSize">fontSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-row/will-render.html">willRender</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">willRender</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.text_design.model.row.defaults.TextDesignRow$willRender()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
 <tr>
 <td>
 <p><a href="-r-e-n-d-e-r_-f-o-n-t_-s-i-z-e.html">RENDER_FONT_SIZE</a></p>
 </td>
 <td>
-<code><span class="identifier">RENDER_FONT_SIZE</span></code></td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">RENDER_FONT_SIZE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.MultiRect)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -91,14 +184,14 @@ should update <code>size.height</code> to a height that it needs to draw its con
 <p><a href="../../ly.img.android.pesdk.backend.text_design.model.row.image/-text-design-row-image/index.html">TextDesignRowImage</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">TextDesignRowImage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TextDesignRowSingle</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TextDesignRowImage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TextDesignRowSingle</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="../../ly.img.android.pesdk.backend.text_design.model.row.masked/-text-design-row-masked/index.html">TextDesignRowMasked</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">TextDesignRowMasked</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TextDesignRowSingle</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TextDesignRowMasked</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TextDesignRowSingle</span></a></code>
 <p>Created by svennahler on 16.04.18.</p>
 </td>
 </tr>

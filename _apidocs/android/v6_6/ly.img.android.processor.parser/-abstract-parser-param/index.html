@@ -10,6 +10,32 @@
 <h1>AbstractParserParam</h1>
 <code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractParserParam</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-parser/index.html"><span class="identifier">AbstractParser</span></a></code>
 <p>Created by svennahler on 28.02.17.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AbstractParserParam</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Created by svennahler on 28.02.17.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-abstract-parser/-w-h-i-t-e_-s-p-a-c-e_-r-e-g-e-x.html">WHITE_SPACE_REGEX</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">WHITE_SPACE_REGEX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -18,35 +44,61 @@
 <p><a href="concat-command.html">concatCommand</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">concatCommand</span><span class="symbol">(</span><span class="identifier">oldCommand</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">newCommand</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">concatCommand</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParserParam$concatCommand(kotlin.String, kotlin.String)/oldCommand">oldCommand</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.processor.parser.AbstractParserParam$concatCommand(kotlin.String, kotlin.String)/newCommand">newCommand</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-above-index.html">getAboveIndex</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getAboveIndex</span><span class="symbol">(</span><span class="identifier">code</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAboveIndex</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParserParam$getAboveIndex(kotlin.String)/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-command.html">getCommand</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getCommand</span><span class="symbol">(</span><span class="identifier">command</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-command/index.html"><span class="identifier">Command</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCommand</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParserParam$getCommand(kotlin.String)/command">command</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-command/index.html"><span class="identifier">Command</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-identifier.html">getIdentifier</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getIdentifier</span><span class="symbol">(</span><span class="identifier">command</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getIdentifier</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParserParam$getIdentifier(kotlin.String)/command">command</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-type.html">getType</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getType</span><span class="symbol">(</span><span class="identifier">command</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getType</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParserParam$getType(kotlin.String)/command">command</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-abstract-parser/get-above-code.html">getAboveCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAboveCode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParser$getAboveCode(kotlin.String)/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-abstract-parser/get-raw-command-str.html">getRawCommandStr</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRawCommandStr</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParser$getRawCommandStr(kotlin.String)/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-abstract-parser/match.html">match</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">match</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.processor.parser.AbstractParser$match(kotlin.String)/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -76,7 +128,7 @@
 <p><a href="../-parser-param-const/index.html">ParserParamConst</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">ParserParamConst</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractParserParam</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ParserParamConst</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractParserParam</span></a></code>
 <p>Created by svennahler on 28.02.17.</p>
 </td>
 </tr>
@@ -85,7 +137,7 @@
 <p><a href="../-parser-param-uniform/index.html">ParserParamUniform</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">ParserParamUniform</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractParserParam</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ParserParamUniform</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractParserParam</span></a></code>
 <p>Created by svennahler on 28.02.17.</p>
 </td>
 </tr>
@@ -94,7 +146,7 @@
 <p><a href="../-parser-param-varying/index.html">ParserParamVarying</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">ParserParamVarying</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractParserParam</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ParserParamVarying</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractParserParam</span></a></code>
 <p>Created by svennahler on 28.02.17.</p>
 </td>
 </tr>

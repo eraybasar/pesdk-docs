@@ -1,14 +1,35 @@
-$dokka.format:html-as-java
+$dokka.format:html
 $dokka.linkExtension:html
-
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMax(kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/but-max.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMax(kotlin.Int, kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/but-max.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMin(kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/but-min.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMin(kotlin.Int, kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/but-min.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$firstHeight#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/first-height.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$firstWidth#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/first-width.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$height#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/height.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$requireAssetById(ly.img.android.pesdk.backend.model.state.AssetConfig, kotlin.reflect.KClass((ly.img.android.pesdk.kotlin_extension.requireAssetById.T)), kotlin.String)ly.img.android.pesdk.kotlin_extension/ly.img.android.pesdk.backend.model.state.-asset-config/require-asset-by-id.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$scaleAll(kotlin.FloatArray, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/scale-all.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$secondHeight#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/second-height.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$secondWidth#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/second-width.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$w#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/w.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$width#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/width.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$x#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/x.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$x2#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/x2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$y#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/y.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$y2#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/y2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$z#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/z.html
 ly.img.android
 ly.img.android.acs
 ly.img.android.acs.constants
 ly.img.android.acs.opengl.renderer
 ly.img.android.acs.opengl.textures
 ly.img.android.opengl
+ly.img.android.opengl.canvas
 ly.img.android.opengl.programs
 ly.img.android.opengl.renderer
+ly.img.android.opengl.textures
+ly.img.android.pesdk.annotations
+ly.img.android.pesdk.annotations.gl
 ly.img.android.pesdk.assets.filter.basic
 ly.img.android.pesdk.assets.font.basic
 ly.img.android.pesdk.assets.font.text_design
@@ -16,6 +37,7 @@ ly.img.android.pesdk.assets.frame.basic
 ly.img.android.pesdk.assets.overlay.basic
 ly.img.android.pesdk.assets.sticker.emoticons
 ly.img.android.pesdk.assets.sticker.shapes
+ly.img.android.pesdk.backend.annotations
 ly.img.android.pesdk.backend.brush
 ly.img.android.pesdk.backend.brush.drawer
 ly.img.android.pesdk.backend.brush.models
@@ -33,6 +55,11 @@ ly.img.android.pesdk.backend.layer.base
 ly.img.android.pesdk.backend.model
 ly.img.android.pesdk.backend.model.chunk
 ly.img.android.pesdk.backend.model.config
+ly.img.android.pesdk.backend.model.constant
+ly.img.android.pesdk.backend.model.state
+ly.img.android.pesdk.backend.model.state.layer
+ly.img.android.pesdk.backend.model.state.manager
+ly.img.android.pesdk.backend.model.state.manager.observ
 ly.img.android.pesdk.backend.opengl.programs
 ly.img.android.pesdk.backend.operator
 ly.img.android.pesdk.backend.operator.export

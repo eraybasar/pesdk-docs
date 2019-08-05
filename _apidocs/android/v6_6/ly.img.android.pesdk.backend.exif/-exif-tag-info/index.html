@@ -8,10 +8,87 @@
 <a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="./index.html">ExifTagInfo</a><br/>
 <br/>
 <h1>ExifTagInfo</h1>
-<code><span class="keyword">class </span><span class="identifier">ExifTagInfo</span></code>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ExifTagInfo</span></code>
 <p>This class stores information of an EXIF tag. For more information about defined EXIF tags, please read the Jeita EXIF 2.2 standard. Tags should be instantiated using <code><a href="../-exify/build-tag.html">Exify#buildTag</a></code>.</p>
 <p><strong>See Also</strong><br/>
 <a href="../-exify/index.html">Exify</a></p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-a-s-c-i-i.html">TYPE_ASCII</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_ASCII</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The ASCII type in the EXIF standard. An 8-bit byte containing one 7-bit ASCII code. The final byte is terminated with NULL.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-l-o-n-g.html">TYPE_LONG</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_LONG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The SLONG type in the EXIF standard. A 32-bit (4-byte) signed integer (2's complement notation).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">TYPE_RATIONAL</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_RATIONAL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The SRATIONAL type of EXIF standard. It consists of two SLONGs. The first one is the numerator and the second one is the denominator.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">TYPE_UNDEFINED</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_UNDEFINED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The UNDEFINED type in the EXIF standard. An 8-bit byte that can take any value depending on the field definition.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">TYPE_UNSIGNED_BYTE</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_UNSIGNED_BYTE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The BYTE type in the EXIF standard. An 8-bit unsigned integer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">TYPE_UNSIGNED_LONG</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_UNSIGNED_LONG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The LONG type in the EXIF standard. A 32-bit (4-byte) unsigned integer</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">TYPE_UNSIGNED_RATIONAL</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_UNSIGNED_RATIONAL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The RATIONAL type of EXIF standard. It consists of two LONGs. The first one is the numerator and the second one expresses the denominator.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">TYPE_UNSIGNED_SHORT</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">TYPE_UNSIGNED_SHORT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
+<p>The SHORT type in the EXIF standard. A 16-bit (2-byte) unsigned integer</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h3>Functions</h3>
 <table>
 <tbody>
@@ -20,14 +97,14 @@
 <p><a href="equals.html">equals</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="force-get-value-as-long.html">forceGetValueAsLong</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">forceGetValueAsLong</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">forceGetValueAsLong</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$forceGetValueAsLong(kotlin.Long)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
 <p>Gets a long representation of the value.</p>
 </td>
 </tr>
@@ -36,7 +113,7 @@
 <p><a href="force-get-value-as-string.html">forceGetValueAsString</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">forceGetValueAsString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">forceGetValueAsString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Gets a string representation of the value.</p>
 </td>
 </tr>
@@ -45,7 +122,7 @@
 <p><a href="force-set-component-count.html">forceSetComponentCount</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">forceSetComponentCount</span><span class="symbol">(</span><span class="identifier">count</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">forceSetComponentCount</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$forceSetComponentCount(kotlin.Int)/count">count</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Sets the component count of this tag. Call this function before setValue() if the length of value does not match the component count.</p>
 </td>
 </tr>
@@ -54,9 +131,9 @@
 <p><a href="get-bytes.html">getBytes</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getBytes</span><span class="symbol">(</span><span class="identifier">buf</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBytes</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray)/buf">buf</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Equivalent to getBytes(buffer, 0, buffer.length).</p>
-<code><span class="keyword">fun </span><span class="identifier">getBytes</span><span class="symbol">(</span><span class="identifier">buf</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">offset</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">length</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBytes</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray, kotlin.Int, kotlin.Int)/buf">buf</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray, kotlin.Int, kotlin.Int)/length">length</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Gets the <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> data.</p>
 </td>
 </tr>
@@ -65,7 +142,7 @@
 <p><a href="get-component-count.html">getComponentCount</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getComponentCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getComponentCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the component count of this tag.</p>
 </td>
 </tr>
@@ -74,7 +151,7 @@
 <p><a href="get-data-size.html">getDataSize</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getDataSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDataSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the total data size in bytes of the value of this tag.</p>
 </td>
 </tr>
@@ -83,7 +160,7 @@
 <p><a href="get-data-type.html">getDataType</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getDataType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDataType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
 <p>Gets the data type of this tag</p>
 </td>
 </tr>
@@ -92,7 +169,7 @@
 <p><a href="get-element-size.html">getElementSize</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getElementSize</span><span class="symbol">(</span><span class="identifier">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getElementSize</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getElementSize(kotlin.Short)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the element size of the given data type in bytes.</p>
 </td>
 </tr>
@@ -101,7 +178,7 @@
 <p><a href="get-ifd.html">getIfd</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getIfd</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getIfd</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Returns the ID of the IFD this tag belongs to.</p>
 </td>
 </tr>
@@ -110,7 +187,7 @@
 <p><a href="get-offset.html">getOffset</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getOffset</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getOffset</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the offset of this tag. This is only valid if this data size &gt; 4 and contains an offset to the location of the actual value.</p>
 </td>
 </tr>
@@ -119,7 +196,7 @@
 <p><a href="get-rational.html">getRational</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getRational</span><span class="symbol">(</span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getRational</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getRational(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span></code>
 <p>Gets the <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code> data.</p>
 </td>
 </tr>
@@ -128,7 +205,7 @@
 <p><a href="get-string.html">getString</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Gets the <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code> data.</p>
 </td>
 </tr>
@@ -137,14 +214,14 @@
 <p><a href="get-string-byte.html">getStringByte</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getStringByte</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStringByte</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="get-tag-id.html">getTagId</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getTagId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">short</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code>
 <p>Gets the TID of this tag.</p>
 </td>
 </tr>
@@ -153,7 +230,7 @@
 <p><a href="get-value.html">getValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Object</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span></code>
 <p>Gets the tag's value or null if none exists.</p>
 </td>
 </tr>
@@ -162,7 +239,7 @@
 <p><a href="get-value-as-byte.html">getValueAsByte</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsByte</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">byte</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">byte</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsByte</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getValueAsByte(kotlin.Byte)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a></code>
 <p>Gets the value as a byte. If there are more than 1 bytes in this value, gets the first byte. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code>.</p>
 </td>
 </tr>
@@ -171,7 +248,7 @@
 <p><a href="get-value-as-bytes.html">getValueAsBytes</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code>
 <p>Gets the value as a byte array. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code>.</p>
 </td>
 </tr>
@@ -180,7 +257,7 @@
 <p><a href="get-value-as-int.html">getValueAsInt</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsInt</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsInt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getValueAsInt(kotlin.Int)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
 <p>Gets the value as an int. If there are more than 1 ints in this value, gets the first one. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</p>
 </td>
 </tr>
@@ -189,7 +266,7 @@
 <p><a href="get-value-as-ints.html">getValueAsInts</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsInts</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsInts</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span></code>
 <p>Gets the value as an array of ints. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</p>
 </td>
 </tr>
@@ -198,7 +275,7 @@
 <p><a href="get-value-as-long.html">getValueAsLong</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsLong</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsLong</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getValueAsLong(kotlin.Long)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
 <p>Gets the value or null if none exists. If there are more than 1 longs in this value, gets the first one. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</p>
 </td>
 </tr>
@@ -207,7 +284,7 @@
 <p><a href="get-value-as-longs.html">getValueAsLongs</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsLongs</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">long</span><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsLongs</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html"><span class="identifier">LongArray</span></a><span class="symbol">!</span></code>
 <p>Gets the value as an array of longs. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</p>
 </td>
 </tr>
@@ -216,8 +293,8 @@
 <p><a href="get-value-as-rational.html">getValueAsRational</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsRational</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsRational</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsRational</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getValueAsRational(kotlin.Long)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsRational</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getValueAsRational(ly.img.android.pesdk.backend.exif.Rational)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span></code>
 <p>Gets the value as a Rational. If there are more than 1 Rationals in this value, gets the first one. This method should be used for tags of type <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code>.</p>
 </td>
 </tr>
@@ -226,7 +303,7 @@
 <p><a href="get-value-as-rationals.html">getValueAsRationals</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsRationals</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">&gt;</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsRationals</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code>
 <p>Gets the value as an array of Rationals. This method should be used for tags of type <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code>.</p>
 </td>
 </tr>
@@ -235,8 +312,8 @@
 <p><a href="get-value-as-string.html">getValueAsString</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsString</span><span class="symbol">(</span><span class="identifier">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">getValueAsString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsString</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getValueAsString(kotlin.String)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAsString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
 <p>Gets the value as a String. This method should be used for tags of type <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code>.</p>
 </td>
 </tr>
@@ -245,7 +322,7 @@
 <p><a href="get-value-at.html">getValueAt</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getValueAt</span><span class="symbol">(</span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getValueAt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getValueAt(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
 <p>Gets the value for type <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code>, <code><a href="-t-y-p-e_-l-o-n-g.html">#TYPE_LONG</a></code>, <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>, or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>. For <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code>, call <code><a href="get-rational.html">#getRational(int)</a></code> instead.</p>
 </td>
 </tr>
@@ -254,14 +331,14 @@
 <p><a href="has-defined-count.html">hasDefinedCount</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">hasDefinedCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasDefinedCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="has-value.html">hasValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">hasValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Returns true if this ExifTag contains value; otherwise, this tag will contain an offset value that is determined when the tag is written.</p>
 </td>
 </tr>
@@ -270,7 +347,7 @@
 <p><a href="is-valid-ifd.html">isValidIfd</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isValidIfd</span><span class="symbol">(</span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isValidIfd</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$isValidIfd(kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Returns true if the given IFD is a valid IFD.</p>
 </td>
 </tr>
@@ -279,7 +356,7 @@
 <p><a href="is-valid-type.html">isValidType</a></p>
 </td>
 <td>
-<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isValidType</span><span class="symbol">(</span><span class="identifier">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isValidType</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$isValidType(kotlin.Short)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Returns true if a given type is a valid tag type.</p>
 </td>
 </tr>
@@ -288,21 +365,21 @@
 <p><a href="set-has-defined-count.html">setHasDefinedCount</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setHasDefinedCount</span><span class="symbol">(</span><span class="identifier">d</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setHasDefinedCount</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setHasDefinedCount(kotlin.Boolean)/d">d</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-ifd.html">setIfd</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setIfd</span><span class="symbol">(</span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setIfd</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setIfd(kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="set-offset.html">setOffset</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setOffset</span><span class="symbol">(</span><span class="identifier">offset</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setOffset</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setOffset(kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
 <p>Sets the offset of this tag.</p>
 </td>
 </tr>
@@ -311,7 +388,7 @@
 <p><a href="set-time-value.html">setTimeValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setTimeValue</span><span class="symbol">(</span><span class="identifier">time</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTimeValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setTimeValue(kotlin.Long)/time">time</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets a timestamp to this tag. The method converts the timestamp with the format of "yyyy:MM:dd kk:mm:ss" and calls <code><a href="set-value.html">#setValue(String)</a></code>. This method will fail if the data type is not <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code> or the component count of this tag is not 20 or undefined.</p>
 </td>
 </tr>
@@ -320,60 +397,60 @@
 <p><a href="set-value.html">setValue</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.IntArray)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets integer values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>, or <code><a href="-t-y-p-e_-l-o-n-g.html">#TYPE_LONG</a></code>.</li>
  <li>The value overflows.</li>
  <li>The value.length does NOT match the component count in the definition for this tag.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets integer value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, or <code><a href="-t-y-p-e_-l-o-n-g.html">#TYPE_LONG</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>, or <code><a href="-t-y-p-e_-l-o-n-g.html">#TYPE_LONG</a></code>.</li>
  <li>The value overflows.</li>
  <li>The component count in the definition of this tag is not 1.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">long</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.LongArray)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html"><span class="identifier">LongArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets long values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</li>
  <li>The value overflows.</li>
  <li>The value.length does NOT match the component count in the definition for this tag.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.Long)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets long values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</li>
  <li>The value overflows.</li>
  <li>The component count in the definition for this tag is not 1.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.Array((ly.img.android.pesdk.backend.exif.Rational)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets Rational values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code>, or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code> or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>.</li>
  <li>The value overflows.</li>
  <li>The value.length does NOT match the component count in the definition for this tag.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(ly.img.android.pesdk.backend.exif.Rational)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets a Rational value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code>, or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code> or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>.</li>
  <li>The value overflows.</li>
  <li>The component count in the definition for this tag is not 1.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">offset</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">length</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.ByteArray, kotlin.Int, kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.ByteArray, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.ByteArray, kotlin.Int, kotlin.Int)/length">length</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets byte values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> .</li>
  <li>The length does NOT match the component count in the definition for this tag.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.ByteArray)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Equivalent to setValue(value, 0, value.length).</p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">byte</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.Byte)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets byte value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> .</li>
  <li>The component count in the definition for this tag is not 1.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.Any)/obj">obj</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets the value for this tag using an appropriate setValue method for the given object. This method will fail if: <ul> <li>The corresponding setValue method for the class of the object passed in would fail.</li>
  <li>There is no obvious way to cast the object passed in into an EXIF tag type.</li>
  </ul>
 </p>
-<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$setValue(kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
 <p>Sets a string value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code>. The string is converted to an ASCII string. Characters that cannot be converted are replaced with '?'. The length of the string must be equal to either (component count -1) or (component count). The final byte will be set to the string null terminator '\0', overwriting the last character in the string if the value.length is equal to the component count. This method will fail if: <ul> <li>The data type is not <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code>.</li>
  <li>The length of the string is not equal to (component count -1) or (component count) in the definition for this tag.</li>
  </ul>
@@ -385,84 +462,7 @@
 <p><a href="to-string.html">toString</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
-</tr>
-</tbody>
-</table>
-<h3>Other members</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-a-s-c-i-i.html">TYPE_ASCII</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_ASCII</span></code>
-<p>The ASCII type in the EXIF standard. An 8-bit byte containing one 7-bit ASCII code. The final byte is terminated with NULL.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-l-o-n-g.html">TYPE_LONG</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_LONG</span></code>
-<p>The SLONG type in the EXIF standard. A 32-bit (4-byte) signed integer (2's complement notation).</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">TYPE_RATIONAL</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_RATIONAL</span></code>
-<p>The SRATIONAL type of EXIF standard. It consists of two SLONGs. The first one is the numerator and the second one is the denominator.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">TYPE_UNDEFINED</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_UNDEFINED</span></code>
-<p>The UNDEFINED type in the EXIF standard. An 8-bit byte that can take any value depending on the field definition.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">TYPE_UNSIGNED_BYTE</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_UNSIGNED_BYTE</span></code>
-<p>The BYTE type in the EXIF standard. An 8-bit unsigned integer.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">TYPE_UNSIGNED_LONG</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_UNSIGNED_LONG</span></code>
-<p>The LONG type in the EXIF standard. A 32-bit (4-byte) unsigned integer</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">TYPE_UNSIGNED_RATIONAL</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_UNSIGNED_RATIONAL</span></code>
-<p>The RATIONAL type of EXIF standard. It consists of two LONGs. The first one is the numerator and the second one expresses the denominator.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">TYPE_UNSIGNED_SHORT</a></p>
-</td>
-<td>
-<code><span class="identifier">TYPE_UNSIGNED_SHORT</span></code>
-<p>The SHORT type in the EXIF standard. A 16-bit (2-byte) unsigned integer</p>
-</td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
 </tr>
 </tbody>
 </table>
