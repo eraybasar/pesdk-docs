@@ -35,11 +35,11 @@ Swift
 ```swift
 let effects: [Effect] = [
   NoEffect(),
-  LUTEffect(identifier: "imgly_lut_k1", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k1_5_5_128", withExtension: "png"), displayName: "K1"),
-  LUTEffect(identifier: "imgly_lut_k2", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k2_8_8_512", withExtension: "png"), displayName: "K2"),
-  LUTEffect(identifier: "imgly_lut_k6", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_k6_5_5_128", withExtension: "png"), displayName: "K6"),
-  LUTEffect(identifier: "imgly_lut_dynamic", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_kdynamic_5_5_128", withExtension: "png"), displayName: "Dynamic"),
-  LUTEffect(identifier: "imgly_lut_fridge", lutURL: Bundle.pesdkBundle.url(forResource: "imgly_lut_fridge_8_8_512", withExtension: "png"), displayName: "Fridge")
+  LUTEffect(identifier: "imgly_lut_k1", lutURL: Bundle.imglyBundle.url(forResource: "imgly_lut_k1_5_5_128", withExtension: "png"), displayName: "K1"),
+  LUTEffect(identifier: "imgly_lut_k2", lutURL: Bundle.imglyBundle.url(forResource: "imgly_lut_k2_8_8_512", withExtension: "png"), displayName: "K2"),
+  LUTEffect(identifier: "imgly_lut_k6", lutURL: Bundle.imglyBundle.url(forResource: "imgly_lut_k6_5_5_128", withExtension: "png"), displayName: "K6"),
+  LUTEffect(identifier: "imgly_lut_dynamic", lutURL: Bundle.imglyBundle.url(forResource: "imgly_lut_kdynamic_5_5_128", withExtension: "png"), displayName: "Dynamic"),
+  LUTEffect(identifier: "imgly_lut_fridge", lutURL: Bundle.imglyBundle.url(forResource: "imgly_lut_fridge_8_8_512", withExtension: "png"), displayName: "Fridge")
 ]
 
 Effect.all = effects
@@ -52,11 +52,11 @@ Objective-C
 ```objc
 NSArray<PESDKEffect *> *effects = @[
   [[PESDKNoEffect alloc] init],
-  [[PESDKLUTEffect alloc] initWithIdentifier:@"K1" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k1_5_5_128" withExtension:@"png"] displayName:@"K1"],
-  [[PESDKLUTEffect alloc] initWithIdentifier:@"K2" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k2_8_8_512" withExtension:@"png"] displayName:@"K2"],
-  [[PESDKLUTEffect alloc] initWithIdentifier:@"K6" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_k6_5_5_128" withExtension:@"png"] displayName:@"K6"],
-  [[PESDKLUTEffect alloc] initWithIdentifier:@"Dynamic" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_kdynamic_5_5_128" withExtension:@"png"] displayName:@"Dynamic"],
-  [[PESDKLUTEffect alloc] initWithIdentifier:@"Fridge" lutURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_lut_fridge_8_8_512" withExtension:@"png"] displayName:@"Fridge"]
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"K1" lutURL:[[NSBundle imglyBundle] URLForResource:@"imgly_lut_k1_5_5_128" withExtension:@"png"] displayName:@"K1"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"K2" lutURL:[[NSBundle imglyBundle] URLForResource:@"imgly_lut_k2_8_8_512" withExtension:@"png"] displayName:@"K2"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"K6" lutURL:[[NSBundle imglyBundle] URLForResource:@"imgly_lut_k6_5_5_128" withExtension:@"png"] displayName:@"K6"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"Dynamic" lutURL:[[NSBundle imglyBundle] URLForResource:@"imgly_lut_kdynamic_5_5_128" withExtension:@"png"] displayName:@"Dynamic"],
+  [[PESDKLUTEffect alloc] initWithIdentifier:@"Fridge" lutURL:[[NSBundle imglyBundle] URLForResource:@"imgly_lut_fridge_8_8_512" withExtension:@"png"] displayName:@"Fridge"]
 ];
 
 PESDKEffect.all = effects;

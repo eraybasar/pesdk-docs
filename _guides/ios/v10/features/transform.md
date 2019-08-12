@@ -39,7 +39,7 @@ let configuration = Configuration { builder in
     ]
   }
 
-  builder.configurePhotoEditorViewController { options in
+  builder.configurePhotoEditViewController { options in
     options.forceCropMode = true
   }
 }
@@ -64,7 +64,7 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
     ];
   }];
 
-  [builder configurePhotoEditorViewController:^(PESDKPhotoEditViewControllerOptionsBuilder * _Nonnull options) {
+  [builder configurePhotoEditViewController:^(PESDKPhotoEditViewControllerOptionsBuilder * _Nonnull options) {
     options.forceCropMode = YES;
   }];
 }];

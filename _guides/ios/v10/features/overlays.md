@@ -38,7 +38,7 @@ Here is an example of how to add an overlay.
 Swift
 ---
 ```swift
-let overlay = Overlay(identifier: "imgly_overlay_golden", displayName: "Golden", url: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden", withExtension: "jpg"), thumbnailURL: Bundle.pesdkBundle.url(forResource: "imgly_overlay_golden_thumb", withExtension: "jpg"), initialBlendMode: .lighten)
+let overlay = Overlay(identifier: "imgly_overlay_golden", displayName: "Golden", url: Bundle.imglyBundle.url(forResource: "imgly_overlay_golden", withExtension: "jpg"), thumbnailURL: Bundle.imglyBundle.url(forResource: "imgly_overlay_golden_thumb", withExtension: "jpg"), initialBlendMode: .lighten)
 Overlay.all.append(overlay)
 ```
 {% endcapture %}
@@ -47,7 +47,7 @@ Overlay.all.append(overlay)
 Objective-C
 ---
 ```objc
-PESDKOverlay *overlay = [[PESDKOverlay alloc] initWithIdentifier:@"imgly_overlay_golden" displayName:@"Golden" url:[[NSBundle pesdkBundle] URLForResource:@"imgly_overlay_golden" withExtension:@"jpg"] thumbnailURL:[[NSBundle pesdkBundle] URLForResource:@"imgly_overlay_golden_thumb" withExtension:@"jpg"] initialBlendMode:PESDKBlendModeLighten];
+PESDKOverlay *overlay = [[PESDKOverlay alloc] initWithIdentifier:@"imgly_overlay_golden" displayName:@"Golden" url:[[NSBundle imglyBundle] URLForResource:@"imgly_overlay_golden" withExtension:@"jpg"] thumbnailURL:[[NSBundle imglyBundle] URLForResource:@"imgly_overlay_golden_thumb" withExtension:@"jpg"] initialBlendMode:PESDKBlendModeLighten];
 PESDKOverlay.all = [PESDKOverlay.all arrayByAddingObject:overlay];
 ```
 {% endcapture %}

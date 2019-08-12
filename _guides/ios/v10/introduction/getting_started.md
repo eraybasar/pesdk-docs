@@ -23,7 +23,7 @@ published: true # Either published or not
 
 ## Requirements
 
-PhotoEditor SDK 9 requires Xcode 10.0, Swift 4.2 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
+PhotoEditor SDK 10 requires Xcode 10.3, Swift 5.0 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
 
 ## CocoaPods
 

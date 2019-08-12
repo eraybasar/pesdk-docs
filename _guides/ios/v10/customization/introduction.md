@@ -106,7 +106,7 @@ you have to check the menu item and set the image accordingly.
 Swift
 ---
 ```swift
-builder.configurePhotoEditorViewController { options in
+builder.configurePhotoEditViewController { options in
   options.actionButtonConfigurationClosure = { cell, menuItem in
     switch menuItem {
     case .tool(let toolMenuItem):
@@ -128,7 +128,7 @@ builder.configurePhotoEditorViewController { options in
 Objective-C
 ---
 ```objc
-[builder configurePhotoEditorViewController:^(PESDKPhotoEditViewControllerOptionsBuilder * _Nonnull options) {
+[builder configurePhotoEditViewController:^(PESDKPhotoEditViewControllerOptionsBuilder * _Nonnull options) {
   options.actionButtonConfigurationBlock = ^(PESDKMenuCollectionViewCell * _Nonnull cell, PESDKPhotoEditMenuItem * _Nonnull menuItem) {
     if ([menuItem.toolMenuItem.title isEqualToString:@"Transform"]) {
       cell.iconImageView.image = [UIImage imageNamed:@"sample_image"];

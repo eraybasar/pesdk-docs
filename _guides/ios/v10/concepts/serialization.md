@@ -45,7 +45,19 @@ To set the initial editor settings, you can deserialize a `Data` object containi
 ```swift
 let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: nil)
 if let model = deserializationResult.model, let photo = deserializationResult.photo {
-  let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
+  let photoAsset: Photo
+
+  if let url = photo.url {
+    photoAsset = Photo(url: url)
+  } else if let data = photo.data {
+    photoAsset = Photo(data: data)
+  } else if let image = photo.image {
+    photoAsset = Photo(image: image)
+  } else {
+    fatalError()
+  }
+
+  let photoEditViewController = PhotoEditViewController(photoAsset: photoAsset, configuration: Configuration(), photoEditModel: model)
 
   present(photoEditViewController, animated: true, completion: nil)
 }
@@ -58,7 +70,7 @@ if let inputImage = UIImage(named: "example_image"), let data = loadPredefinedSe
   let photo = Photo(image: inputImage)
   let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: inputImage.size)
   if let model = deserializationResult.model {
-    let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: Configuration(), menuItems: PhotoEditMenuItem.defaultItems, photoEditModel: model)
+    let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: Configuration(), photoEditModel: model)
 
     present(photoEditViewController, animated: true, completion: nil)
   }

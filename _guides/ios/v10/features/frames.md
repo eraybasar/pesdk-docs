@@ -40,15 +40,15 @@ Swift
 let frame = Frame(identifier: "imgly_frame_blackwood", tolerance: 0.1)
 frame.accessibilityLabel = "Black wood frame"
 
-if let url1 = Bundle.pesdkBundle.url(forResource: "imgly_frame_blackwood1_1", withExtension: "png") {
+if let url1 = Bundle.imglyBundle.url(forResource: "imgly_frame_blackwood1_1", withExtension: "png") {
   frame.addImage(url1, thumbnailURL: nil, forRatio: 1)
 }
 
-if let url46 = Bundle.pesdkBundle.url(forResource: "imgly_frame_blackwood4_6", withExtension: "png") {
+if let url46 = Bundle.imglyBundle.url(forResource: "imgly_frame_blackwood4_6", withExtension: "png") {
   frame.addImage(url46, thumbnailURL: nil, forRatio: 4.0 / 6.0)
 }
 
-if let url64 = Bundle.pesdkBundle.url(forResource: "imgly_frame_blackwood6_4", withExtension: "png") {
+if let url64 = Bundle.imglyBundle.url(forResource: "imgly_frame_blackwood6_4", withExtension: "png") {
   frame.addImage(url64, thumbnailURL: nil, forRatio: 6.0 / 4.0)
 }
 ```
@@ -110,28 +110,28 @@ Swift
 ```swift
 let config = CustomPatchConfiguration()
 
-if let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top", withExtension: "png") {
+if let midURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_top", withExtension: "png") {
   let topImageGroup = FrameImageGroup(startImageURL: nil, midImageURL: midURL, endImageURL: nil)
   config.topImageGroup = topImageGroup
 }
 
-if let startURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top_left", withExtension: "png"),
-  let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_left", withExtension: "png"),
-  let endURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom_left", withExtension: "png") {
+if let startURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_top_left", withExtension: "png"),
+  let midURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_left", withExtension: "png"),
+  let endURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_bottom_left", withExtension: "png") {
   let leftImageGroup = FrameImageGroup(startImageURL: startURL, midImageURL: midURL, endImageURL: endURL)
   leftImageGroup.midImageMode = .stretch
   config.leftImageGroup = leftImageGroup
 }
 
-if let startURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_top_right", withExtension: "png"),
-  let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_right", withExtension: "png"),
-  let endURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom_right", withExtension: "png") {
+if let startURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_top_right", withExtension: "png"),
+  let midURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_right", withExtension: "png"),
+  let endURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_bottom_right", withExtension: "png") {
   let rightImageGroup = FrameImageGroup(startImageURL: startURL, midImageURL: midURL, endImageURL: endURL)
   rightImageGroup.midImageMode = .stretch
   config.rightImageGroup = rightImageGroup
 }
 
-if let midURL = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_bottom", withExtension: "png") {
+if let midURL = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_bottom", withExtension: "png") {
   let bottomImageGroup = FrameImageGroup(startImageURL: nil, midImageURL: midURL, endImageURL: nil)
   config.bottomImageGroup = bottomImageGroup
 }
@@ -186,7 +186,7 @@ And the code to create the `Frame` object looks like this
 Swift
 ---
 ```swift
-if let url = Bundle.pesdkBundle.url(forResource: "imgly_frame_dia_thumbnail", withExtension: "png") {
+if let url = Bundle.imglyBundle.url(forResource: "imgly_frame_dia_thumbnail", withExtension: "png") {
   let dynamicFrame = Frame(frameBuilder: builder, relativeScale: 0.075, thumbnailURL: url, identifier: "imgly_frame_dia")
   dynamicFrame.accessibilityLabel = "Dia frame"
 }

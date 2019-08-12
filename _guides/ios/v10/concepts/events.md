@@ -22,7 +22,7 @@ To receive events you have to prepare an object that conforms to the [`Analytics
 This is a sample implementation for a Google Analytics tracker:
 
 ```swift
-class GoogleAnalyticsClient: NSObject, PhotoEditorSDK.AnalyticsClient {
+class GoogleAnalyticsClient: NSObject, ImglyKit.AnalyticsClient {
   public func logScreenView(_ screenView: PESDKAnalyticsScreenViewName) {
     func parameters(forScreenName screenName: String) -> [NSObject: AnyObject] {
       return GAIDictionaryBuilder.createScreenView().set(screenName, forKey: kGAIScreenName).build() as [NSObject: AnyObject]
@@ -83,8 +83,8 @@ Prior to presenting any PhotoEditor SDK related view controllers, you would then
 Swift
 ---
 ```swift
-PESDK.analytics.isEnabled = true
-PESDK.analytics.addAnalyticsClient(GoogleAnalyticsClient())
+IMGLY.analytics.isEnabled = true
+IMGLY.analytics.addAnalyticsClient(GoogleAnalyticsClient())
 ```
 {% endcapture %}
 
@@ -92,8 +92,8 @@ PESDK.analytics.addAnalyticsClient(GoogleAnalyticsClient())
 Objective-C
 ---
 ```objc
-PESDK.analytics.isEnabled = YES;
-[PESDK.analytics addAnalyticsClient:[GoogleAnalyticsClient new]];
+IMGLY.analytics.isEnabled = YES;
+[IMGLY.analytics addAnalyticsClient:[GoogleAnalyticsClient new]];
 ```
 {% endcapture %}
 
