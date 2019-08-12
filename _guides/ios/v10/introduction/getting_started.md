@@ -86,14 +86,14 @@ The following examples demonstrates how to unlock the SDK.
 
 If you prefer not to use CocoaPods, you can integrate PhotoEditor SDK into your project manually via a dynamic framework.
 
-1) Download the SDK [here](https://github.com/imgly/pesdk-ios-build/releases/latest), then simply drag `PhotoEditorSDK.framework` into the `Embedded Binaries` section of your target:
+1) Download the SDK [here](https://github.com/imgly/pesdk-ios-build/releases/latest), then simply drag `ImglyKit.framework` as well as `PhotoEditorSDK.framework` into the `Embedded Binaries` section of your target:
 
 ![Embedded Binaries]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/embedded-binaries.jpg)
 
 2) Open your project's `Build Phases` tab and add a new `Run Script Phase` somewhere below the `Embed Frameworks` phase. Then copy the following line into the newly created build phase's text field:
 
 ```bash
-bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/PhotoEditorSDK.framework/strip-framework.sh"
+bash "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/ImglyKit.framework/strip-framework.sh"
 ```
 
 ![Run Script Phase]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/run-script-phase.jpg)
@@ -102,7 +102,7 @@ This script will remove the simulator slices from the universal binary, because 
 
 3) If you are integrating the PhotoEditor SDK into an otherwise Objective-C only project you also have to set the `Always Embed Swift Standard Libraries` build setting in your project's `Build Settings` tab to `Yes`.
 
-4) To receive symbolicated crash logs, you need to include our debug symbols. Copy the `PhotoEditorSDK.framework.dSYM` file to your project's tree without adding it to any of your targets. Then add the copied file as an input file to the `Run Script Phase` of step 2.
+4) To receive symbolicated crash logs, you need to include our debug symbols. Copy the `ImglyKit.framework.dSYM` and `PhotoEditorSDK.framework.dSYM` file to your project's tree without adding it to any of your targets. Then add the copied file as an input file to the `Run Script Phase` of step 2.
 
 ![Copy dSYM]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/copy-dsym.jpg)
 

@@ -17,7 +17,7 @@ tags: &tags # tags that are necessary
 ---
 
 
-`PhotoEditViewController` has a constructor which takes an array of `PhotoEditMenuItem`s.
+`PhotoEditViewControllerOptions` has a property which takes an array of `PhotoEditMenuItem`s.
 
 `PhotoEditMenuItem` is an enum with two possible cases.
 1. `case tool(ToolMenuItem)` represents a tool that can be pushed onto the stack. It has a `ToolMenuItem` as an associated value, which has a title, an icon and the class of the tool that should be instantiated.
