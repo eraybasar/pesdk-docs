@@ -38,20 +38,4 @@ Make sure you have a standard license before releasing your app. A trial license
 * Objective-C support: All of our public API is Objective-C compatible.
 * Fast: Our renderer uses hardware acceleration and the GPU, which makes it lightning fast.
 
-### New in Version 8.0
-
-* Written in Swift 4.0.
-* Cross-platform serialization and deserialization support.
-* More stable and uses less memory while generating better-looking images.
-* More customization options.
-* Undo and redo support across all tools.
-
-### New in Version 7.0
-
-* New stickers, frames and fonts.
-* The SDK has been rebranded to `PhotoEditorSDK`.
-* We now include the dSYM and bcsymbolmap files in the SDK for better debugging.
-* Faster and better-looking adjustments.
-* Faster and better-looking filters.
-
 ![Product]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/product.jpg)
