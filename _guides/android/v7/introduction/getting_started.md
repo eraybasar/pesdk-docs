@@ -108,7 +108,6 @@ imglyConfig {
     // Define the modules you are need
     modules {
         // Add all the UI modules you are need
-        include 'ui:video-trim'
         include 'ui:core'
         include 'ui:text'
         include 'ui:focus'
