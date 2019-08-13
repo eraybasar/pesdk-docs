@@ -92,14 +92,14 @@ You will also have to add the pesdk plugin and PESDKConfig into your module's `b
 apply plugin: 'com.android.application'
 
 // Apply the PESDKPlugin
-apply plugin: 'ly.img.android.pesdk'
+apply plugin: 'ly.img.android.sdk'
 
 // Configure the PESDKPlugin
-pesdkConfig {
+imglyConfig {
 
     pesdk {
         enabled true 
-        licencePath 'vesdk_android_license.dms'
+        licencePath 'pesdk_android_license.dms'
     }
 
     // If you use another supportLibVersion ('com.android.support'), change this version here to update your own supportLibVersion
