@@ -143,6 +143,30 @@ Swift
 ---
 ```swift
 let cameraViewController = CameraViewController()
+cameraViewController.dataCompletionBlock = { [unowned cameraViewController] data in
+  guard let data = data else {
+    return
+  }
+
+  let photo = Photo(data: data)
+  let photoEditViewController = PhotoEditViewController(photoAsset: photo)
+  photoEditViewController.delegate = self
+
+  cameraViewController.present(photoEditViewController, animated: true, completion: nil)
+}
+
+cameraViewController.completionBlock = { image, _ in
+  guard let image = image else {
+    return
+  }
+
+  let photo = Photo(image: image)
+  let photoEditViewController = PhotoEditViewController(photoAsset: photo)
+  photoEditViewController.delegate = self
+
+  cameraViewController.present(photoEditViewController, animated: true, completion: nil)
+}
+
 present(cameraViewController, animated: true, completion: nil)
 ```
 {% endcapture %}
@@ -152,6 +176,24 @@ Objective-C
 ---
 ```objc
 PESDKCameraViewController *cameraViewController = [[PESDKCameraViewController alloc] init];
+__weak PESDKCameraViewController *weakCameraViewController = cameraViewController;
+
+[cameraViewController setDataCompletionBlock:^(NSData * _Nullable data) {
+  PESDKPhoto *photo = [[PESDKPhoto alloc] initWithData:data];
+  PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhotoAsset:photo configuration:[PESDKConfiguration new]];
+  photoEditViewController.delegate = self;
+
+  [weakCameraViewController presentViewController:photoEditViewController animated:YES completion:nil];
+}];
+
+[cameraViewController setCompletionBlock:^(UIImage * _Nullable image, NSURL * _Nullable url) {
+  PESDKPhoto *photo = [[PESDKPhoto alloc] initWithImage:image];
+  PESDKPhotoEditViewController *photoEditViewController = [[PESDKPhotoEditViewController alloc] initWithPhotoAsset:photo configuration:[PESDKConfiguration new]];
+  photoEditViewController.delegate = self;
+
+  [weakCameraViewController presentViewController:photoEditViewController animated:YES completion:nil];
+}];
+
 [self presentViewController:cameraViewController animated:YES completion:nil];
 ```
 {% endcapture %}
@@ -160,7 +202,7 @@ PESDKCameraViewController *cameraViewController = [[PESDKCameraViewController al
 {% capture identifier %}{{page.title}}-{{page.version}}-CAMERA{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-The `CameraViewController` has a `completionBlock` property. When it is set to `nil`, the photo is passed to the `PhotoEditViewController`, which is then presented modally.
+The `CameraViewController` has a `completionBlock` and a `dataCompletionBlock` property, which must be used to get a reference to the photo and present the editor.
 
 ## Add a PhotoEditViewController
 
