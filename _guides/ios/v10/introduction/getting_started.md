@@ -77,7 +77,7 @@ Objective-C
 
 The license is digitally signed so it can not be altered without becoming invalid.
 Our sample app comes with its own license, so you can try that right away.
-To try our SDK in your own app, you'll have to request a trial license because a license is bound to a bundle identifier. You can request a demo license at [https://account.photoeditorsdk.com/signup](https://account.photoeditorsdk.com/signup).
+To try our SDK in your own app, you'll have to request a trial license because a license is bound to a bundle identifier. You can request a demo license at [https://account.photoeditorsdk.com/signup](https://account.photoeditorsdk.com/signup?product=pesdk).
 
 Once you retrieved the license file it can be used to unlock the view controller.
 The following examples demonstrates how to unlock the SDK.
