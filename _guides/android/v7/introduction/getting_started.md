@@ -79,7 +79,7 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:7.0.0'
+        classpath 'ly.img.android.pesdk:plugin:7.0.1'
     }
 }
 ```
@@ -341,7 +341,7 @@ class KCameraDemoActivity : Activity(), PermissionRequest.Response {
     // If you have included our asset Packs and you want to use our default UI you also need to add them to the UI config,
     // otherwise they are only available for the backend link serialisation.
     // See the specific feature sections of our guides if you want to know how to add your own assets.
-    private fun createPesdkSettingsList() = SettingsList()
+    private fun createPesdkSettingsList() = PhotoEditorSettingsList()
       .configure<UiConfigFilter> {
           it.setFilterList(FilterPackBasic.getFilterPack())
       }
