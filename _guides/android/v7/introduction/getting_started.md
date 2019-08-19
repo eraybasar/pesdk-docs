@@ -79,7 +79,7 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:7.0.1'
+        classpath 'ly.img.android.pesdk:plugin:7.0.2'
     }
 }
 ```
@@ -655,7 +655,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         }
     }
 
-    fun openEditor(inputImage: Uri) {
+    fun openEditor(inputImage: Uri?) {
         val settingsList = createPesdkSettingsList()
 
         settingsList.configure<LoadSettings> {
@@ -670,21 +670,21 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
     }
 
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (resultCode == RESULT_OK && requestCode == GALLERY_RESULT) {
             // Open Editor with some uri in this case with an image selected from the system gallery.
-            openEditor(data.data!!)
+            openEditor(data?.data)
 
         } else if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) { // Editor has saved an Image.
 
-            val resultURI = data.getParcelableExtra<Uri?>(ImgLyIntent.RESULT_IMAGE_URI)?.also {
+            val resultURI = data?.getParcelableExtra<Uri?>(ImgLyIntent.RESULT_IMAGE_URI)?.also {
                 // Scan result uri to show it up in the Gallery
                 sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(it))
             }
 
-            val sourceURI = data.getParcelableExtra<Uri?>(ImgLyIntent.SOURCE_IMAGE_URI)?.also {
+            val sourceURI = data?.getParcelableExtra<Uri?>(ImgLyIntent.SOURCE_IMAGE_URI)?.also {
                 // Scan source uri to show it up in the Gallery
                 sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(it))
             }
@@ -695,7 +695,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
             // TODO: Do something with the result image
 
             // OPTIONAL: read the latest state to save it as a serialisation
-            val lastState = data.getParcelableExtra<SettingsList>(ImgLyIntent.SETTINGS_LIST)
+            val lastState = data?.getParcelableExtra<SettingsList>(ImgLyIntent.SETTINGS_LIST)
             try {
                 PESDKFileWriter(lastState).writeJson(File(
                   Environment.getExternalStorageDirectory(),
@@ -707,7 +707,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
         } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
             // Editor was canceled
-            val sourceURI = data.getParcelableExtra<Uri?>(ImgLyIntent.SOURCE_IMAGE_URI)
+            val sourceURI = data?.getParcelableExtra<Uri?>(ImgLyIntent.SOURCE_IMAGE_URI)
             // TODO: Do something with the source...
         }
     }
