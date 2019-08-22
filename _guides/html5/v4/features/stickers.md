@@ -301,6 +301,63 @@ const sticker = {
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 
+## Enable non-uniform sticker resizing
+
+By default, stickers keep their aspect ratio when they are being resized. However, you can also allow each individual sticker to resize freely,
+by setting its `resizeMode` property to `unrestricted` (DesktopUI only):
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const sticker = {
+  identifier: 'my_custom_sticker_id',
+  defaultName: 'My Sticker',
+  resizeMode: 'unrestricted' // Possible: 'keepAspect', 'unrestricted'
+  images: {
+    ...
+  }
+}
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+It is also possible to easily override this property for the default stickers that are shipped with the PhotoEditor SDK using the editor configuration.
+The following example does this for our square shape, which allows it to now be resized to any arbitrary rectangle:
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const editor = new PhotoEditorSDK.UI.DesktopUI({
+  editor: {
+    controlsOptions: {
+      sticker: {
+        categories: [
+          {
+            identifier: 'imgly_sticker_shapes',
+            stickers: [
+              {
+                identifier: 'imgly_sticker_shapes_badge_01',
+                resizeMode: 'unrestricted'
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+})
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
 ## Enable smooth downscaling
 
 Due to the nature of WebGL, downscaling images might result in pixelated images. You can avoid that by setting `smoothDownscaling` to `true`. Please note that this might impact performance of the editor, since the Editor now uses larger textures internally:
