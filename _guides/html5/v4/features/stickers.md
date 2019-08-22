@@ -165,9 +165,42 @@ editor.getEditor().addSticker('some_category', sticker)
 This will add a new sticker called 'Other Custom Sticker' to the 'some_category' sticker
 category.
 
+## Custom sticker upload by end users
+
+By default end users are able to upload their own images as custom stickers into the sticker tool of our editor using the "Upload" button (DesktopUI only). Once uploaded, they will all appear in a new category called "Custom" (localizable with the `pesdk.sticker.asset.imgly_sticker_custom` key). 
+
+You can configure the tint mode of all of these custom stickers with the `sticker.customStickerTintMode` controls option. You can find more information
+on sticker tint modes in the [Enable color customization](#enable-color-customization) section.
+
+Please note that these types of custom stickers are always included in serialization files, which can increase the size of such a serialization
+by quite a lot. 
+
+If you don't want the custom sticker upload feature to be enabled, you can simply disable it by setting the `sticker.customUploadDisabled` controls option to `true`.
+
+{% capture first_snippet %}
+DesktopUI
+---
+```js
+const editor = new PhotoEditorSDK.UI.DesktopUI({
+  editor: {
+    controlsOptions: {
+      sticker: {
+        customUploadDisabled: true, // false is the default
+        customStickerTintMode: 'colorized' // 'none' is the default
+      }
+    }
+  }
+})
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
 ## Specifying the available stickers
 
-Per default, all existing stickers (including your own) are available to the user. To make only specific stickers available to the user, use the `availableStickers` option.
+By default, all existing stickers (including your own) are available to the user. To make only specific stickers available to the user, use the `availableStickers` option.
 
 
 {% capture first_snippet %}

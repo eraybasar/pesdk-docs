@@ -368,6 +368,7 @@ DesktopUI
         "fill": "Fill"
       },
       "asset": {
+        "imgly_sticker_custom": "Eigene Sticker",
         "imgly_sticker_emoticons": "Emoticons",
         "imgly_sticker_emoticons_alien": "Alien",
         "imgly_sticker_emoticons_angel": "Angel",
