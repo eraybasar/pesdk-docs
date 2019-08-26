@@ -22,7 +22,7 @@ application.
 
 <div class="documentation__disclaimer">
 <h4 id="androidx-news">Update for AndroidX</h4>
-Recently, we have come across a bug that, unfortunately, affects our PhotoEditor SDK for Android if it is being updated with AndroidX. After some investigation on this matter, we found out that Google knows about it, but has not yet been able to solve it. In this reference (https://issuetracker.google.com/issues/119582492) you will currently find further information. However, we are currently working on a fix by establishing a new renderer for this matter. *Generally, we’d kindly ask you to refrain from updating to Android X at this stage*. We will keep you posted once our solution for the PhotoEditor SDK allows you to use AndroidX without any constraints or concerns.
+You are now able to use AndroidX without affecting our PhotoEditor SDK. Google provides a new build tools version which fixes the bug. So please use buildToolsVersion '29.0.2' when you are using AndroidX.
 </div>
 
 ## Integration Tutorial
@@ -149,8 +149,8 @@ android {
     /* Set the compile SDK and the Build SDK min. at SDK 28 or grater.
      * We can't provide support for Bugs, that are the result of older SDK versions.
      */
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
         /*
