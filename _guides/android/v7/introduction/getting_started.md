@@ -22,7 +22,7 @@ application.
 
 <div class="documentation__disclaimer">
 <h4 id="androidx-news">Update for AndroidX</h4>
-Sie können nun AndroidX verwenden, ohne unser PhotoEditor SDK zu beeinträchtigen. Google bietet eine neue Version der Build-Tools an, die den Fehler behebt. Verwenden Sie daher bitte buildToolsVersion '29.0.2', wenn Sie AndroidX verwenden.
+You are now able to use AndroidX without affecting our PhotoEditor SDK. Google provides a new build tools version which fixes the bug. So please use buildToolsVersion '29.0.2' when you are using AndroidX.
 </div>
 
 ## Integration Tutorial
