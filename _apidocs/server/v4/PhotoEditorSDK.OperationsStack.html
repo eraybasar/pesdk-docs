@@ -3876,6 +3876,8 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite#_getTempCanvas"><a href="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.html#_getTempCanvas">_getTempCanvas</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite#applyFlip"><a href="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.html#applyFlip">applyFlip</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite#applyRotation"><a href="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.html#applyRotation">applyRotation</a></li>
@@ -4216,6 +4218,8 @@
                 <li data-name="PhotoEditorSDK.OperationsStack#get"><a href="PhotoEditorSDK.OperationsStack.html#get">get</a></li>
             
                 <li data-name="PhotoEditorSDK.OperationsStack#getByIdentifier"><a href="PhotoEditorSDK.OperationsStack.html#getByIdentifier">getByIdentifier</a></li>
+            
+                <li data-name="PhotoEditorSDK.OperationsStack#getIndexByIdentifier"><a href="PhotoEditorSDK.OperationsStack.html#getIndexByIdentifier">getIndexByIdentifier</a></li>
             
                 <li data-name="PhotoEditorSDK.OperationsStack#getStack"><a href="PhotoEditorSDK.OperationsStack.html#getStack">getStack</a></li>
             
@@ -5139,7 +5143,7 @@
     <div class="nameContainer">
         <h4 class="name" id="getByIdentifier">
             
-            getByIdentifier<span class="signature">(string)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{PhotoEditorSDK.Operation}</span>
+            getByIdentifier<span class="signature">(identifier)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{PhotoEditorSDK.Operation}</span>
         </h4>
     
         
@@ -5186,13 +5190,13 @@
 	
         <tr>
             
-                <td class="name"><code>string</code></td>
+                <td class="name"><code>identifier</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">identifier</span>
+<span class="param-type">string</span>
 
 
             
@@ -5282,6 +5286,152 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="getIndexByIdentifier">
+            
+            getIndexByIdentifier<span class="signature">(identifier)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/core/lib/operations-stack.js, line 252
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Returns the index in the stack of the first operation with the given identifier.
+Returns -1 if no such operation exists.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>identifier</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        number
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="getStack">
             
             getStack<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;PhotoEditorSDK.Operation>}</span>
@@ -5289,7 +5439,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/operations-stack.js, line 310
+            sdk/core/lib/operations-stack.js, line 320
         </div>
         
     </div>
@@ -5489,7 +5639,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/operations-stack.js, line 251
+            sdk/core/lib/operations-stack.js, line 261
         </div>
         
     </div>
@@ -5792,7 +5942,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/operations-stack.js, line 282
+            sdk/core/lib/operations-stack.js, line 292
         </div>
         
     </div>
@@ -5908,7 +6058,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/operations-stack.js, line 298
+            sdk/core/lib/operations-stack.js, line 308
         </div>
         
     </div>
@@ -6192,7 +6342,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/operations-stack.js, line 269
+            sdk/core/lib/operations-stack.js, line 279
         </div>
         
     </div>

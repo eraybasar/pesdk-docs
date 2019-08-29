@@ -3876,6 +3876,8 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite#_getTempCanvas"><a href="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.html#_getTempCanvas">_getTempCanvas</a></li>
+            
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite#applyFlip"><a href="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.html#applyFlip">applyFlip</a></li>
             
                 <li data-name="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite#applyRotation"><a href="PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.html#applyRotation">applyRotation</a></li>
@@ -4216,6 +4218,8 @@
                 <li data-name="PhotoEditorSDK.OperationsStack#get"><a href="PhotoEditorSDK.OperationsStack.html#get">get</a></li>
             
                 <li data-name="PhotoEditorSDK.OperationsStack#getByIdentifier"><a href="PhotoEditorSDK.OperationsStack.html#getByIdentifier">getByIdentifier</a></li>
+            
+                <li data-name="PhotoEditorSDK.OperationsStack#getIndexByIdentifier"><a href="PhotoEditorSDK.OperationsStack.html#getIndexByIdentifier">getIndexByIdentifier</a></li>
             
                 <li data-name="PhotoEditorSDK.OperationsStack#getStack"><a href="PhotoEditorSDK.OperationsStack.html#getStack">getStack</a></li>
             
@@ -4825,12 +4829,12 @@
     <div class="nameContainer">
         <h4 class="name" id="add">
             
-            add<span class="signature">(variation)</span>
+            add<span class="signature">(operation)</span>
         </h4>
     
         
         <div class="tag-source">
-            server/lib/font-loader/loaders/base-font-loader.js, line 26
+            server/lib/editor/operations.js, line 45
         </div>
         
     </div>
@@ -4841,7 +4845,7 @@
     
     
     <div class="description">
-        <p>Adds the given font to the list of fonts to load</p>
+        <p>Adds the given operation to the stack</p>
     </div>
     
 
@@ -4872,13 +4876,13 @@
 	
         <tr>
             
-                <td class="name"><code>variation</code></td>
+                <td class="name"><code>operation</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">PhotoEditorSDK.Operation</span>
 
 
             
@@ -4941,12 +4945,12 @@
     <div class="nameContainer">
         <h4 class="name" id="add">
             
-            add<span class="signature">(operation)</span>
+            add<span class="signature">(variation)</span>
         </h4>
     
         
         <div class="tag-source">
-            server/lib/editor/operations.js, line 45
+            server/lib/font-loader/loaders/base-font-loader.js, line 26
         </div>
         
     </div>
@@ -4957,7 +4961,7 @@
     
     
     <div class="description">
-        <p>Adds the given operation to the stack</p>
+        <p>Adds the given font to the list of fonts to load</p>
     </div>
     
 
@@ -4988,13 +4992,13 @@
 	
         <tr>
             
-                <td class="name"><code>operation</code></td>
+                <td class="name"><code>variation</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">PhotoEditorSDK.Operation</span>
+<span class="param-type">Object</span>
 
 
             
@@ -5162,7 +5166,7 @@
     
         
         <div class="tag-source">
-            server/lib/font-loader/loaders/base-font-loader.js, line 40
+            sdk/core/lib/pot-renderer.js, line 90
         </div>
         
     </div>
@@ -5173,7 +5177,7 @@
     
     
     <div class="description">
-        <p>Disposes the observers</p>
+        <p>Disposes this POT renderers</p>
     </div>
     
 
@@ -5233,7 +5237,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/pot-renderer.js, line 90
+            server/lib/font-loader/loaders/base-font-loader.js, line 40
         </div>
         
     </div>
@@ -5244,7 +5248,7 @@
     
     
     <div class="description">
-        <p>Disposes this POT renderers</p>
+        <p>Disposes the observers</p>
     </div>
     
 
@@ -6616,77 +6620,6 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
     <div class="nameContainer">
         <h4 class="name" id="load">
             
-            load<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            server/lib/font-loader/loaders/base-font-loader.js, line 33
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Loads the fonts</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="load">
-            
             load<span class="signature">(fonts)</span>
         </h4>
     
@@ -6756,6 +6689,77 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
 	
 	</tbody>
 </table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="load">
+            
+            load<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            server/lib/font-loader/loaders/base-font-loader.js, line 33
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Loads the fonts</p>
+    </div>
+    
+
+    
+    
+    
+    
     
     
     
