@@ -140,8 +140,8 @@ android {
     /* Set the compile SDK and the Build SDK min. at SDK 28 or grater.
      * We can't provide support for Bugs, that are the result of older SDK versions.
      */
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
         /*
