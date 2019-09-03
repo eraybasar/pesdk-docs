@@ -1,5 +1,5 @@
 ---
 layout: default
 redirect_to:
-  - '/apidocs/ios/v10_0/'
+  - '/apidocs/ios/v10_1/'
 ---
