@@ -5618,6 +5618,8 @@
     exports
     </h2>
     
+        <div class="class-description"><p>A component that performs hit testing and canvas dragging behaviour.</p></div>
+    
 </header>
 
 <article>
@@ -5635,7 +5637,7 @@
     
         
         <div class="tag-source">
-            sdk/operations/art-filter-operation/filters/pad-utils.js, line 4
+            ui/desktop-ui/core/components/screens/editor/controls/canvas-controls-component.jsx, line 35
         </div>
         
     </div>
@@ -5727,8 +5729,6 @@
     exports
     </h2>
     
-        <div class="class-description"><p>A component that performs hit testing and canvas dragging behaviour.</p></div>
-    
 </header>
 
 <article>
@@ -5746,7 +5746,7 @@
     
         
         <div class="tag-source">
-            ui/desktop-ui/core/components/screens/editor/controls/canvas-controls-component.jsx, line 35
+            sdk/operations/art-filter-operation/filters/pad-utils.js, line 4
         </div>
         
     </div>
