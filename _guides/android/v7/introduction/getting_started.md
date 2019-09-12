@@ -44,7 +44,7 @@ The following software is required:
 * Android Studio 3.0+
 * Android Minimum SDK 16+ \(Android 4.1.0 released 27. Juni 2012\)
 * Gradle 3.0+
-* Android Build Tools 28.0.3+
+* Android Build Tools 29.0.2+
 * Android Support Repository 28.0.0+
 * License\*
 
@@ -79,7 +79,7 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:7.0.3'
+        classpath 'ly.img.android.pesdk:plugin:7.0.4'
     }
 }
 ```
@@ -137,7 +137,7 @@ imglyConfig {
 
 // Do your Android Configurations... ex.
 android {
-    /* Set the compile SDK and the Build SDK min. at SDK 28 or grater.
+    /* Set the compile SDK and the Build SDK min. at SDK 29 or grater.
      * We can't provide support for Bugs, that are the result of older SDK versions.
      */
     compileSdkVersion 29
@@ -153,8 +153,8 @@ android {
         /* Set the minimum supported SDK Version to 18 (Android 4.3.0) or higher */ 
         minSdkVersion 18
 
-        /* Set the target SDK Version at minimum to 28 or higher */
-        targetSdkVersion 28
+        /* Set the target SDK Version at minimum to 29 or higher */
+        targetSdkVersion 29
 
         /* Set your own Version Code and Version Name */
         versionCode 1
