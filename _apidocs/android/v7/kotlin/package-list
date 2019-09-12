@@ -1,0 +1,174 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$a#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/a.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$b#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/b.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMax(kotlin.Double, kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/but-max.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMax(kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/but-max.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMax(kotlin.Int, kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/but-max.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMax(kotlin.Long, kotlin.Long)ly.img.android.pesdk.kotlin_extension/kotlin.-long/but-max.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMin(kotlin.Double, kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/but-min.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMin(kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/but-min.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMin(kotlin.Int, kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/but-min.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$butMin(kotlin.Long, kotlin.Long)ly.img.android.pesdk.kotlin_extension/kotlin.-long/but-min.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$ceilToInt(kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/ceil-to-int.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$ceilToInt(kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/ceil-to-int.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$ceilToLong(kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/ceil-to-long.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$color(kotlin.Long)ly.img.android.pesdk.kotlin_extension/kotlin.-long/color.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$copyFrom(kotlin.FloatArray, kotlin.FloatArray)ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/copy-from.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$downscaleToMultipleOf(kotlin.Double, kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/downscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$downscaleToMultipleOf(kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/downscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$downscaleToMultipleOf(kotlin.Int, kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/downscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$downscaleToMultipleOf(kotlin.Long, kotlin.Long)ly.img.android.pesdk.kotlin_extension/kotlin.-long/downscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$firstHeight#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/first-height.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$firstWidth#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/first-width.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$g#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/g.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$hasFlag(kotlin.Int, kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/has-flag.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$hasFlag(kotlin.Long, kotlin.Long)ly.img.android.pesdk.kotlin_extension/kotlin.-long/has-flag.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$height#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/height.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$ifNotFinite(kotlin.Double, kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/if-not-finite.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$ifNotFinite(kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/if-not-finite.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$isNotFinite(kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/is-not-finite.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$mapPointsBy(kotlin.FloatArray, kotlin.Function1((, kotlin.Unit)))ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/map-points-by.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$mapPointsWith(kotlin.FloatArray, )ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/map-points-with.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$pow2(kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/pow2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$pow2(kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/pow2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$pow2(kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/pow2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$pow2(kotlin.Long)ly.img.android.pesdk.kotlin_extension/kotlin.-long/pow2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$r#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/r.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$scaleAll(kotlin.FloatArray, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/scale-all.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$secondHeight#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/second-height.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$secondWidth#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/second-width.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$set(kotlin.FloatArray, kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/set.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$set(kotlin.FloatArray, kotlin.Float, kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/set.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$set(kotlin.FloatArray, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/set.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$set(kotlin.FloatArray, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float-array/set.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$setFalseIfTrueAndDo(java.util.concurrent.atomic.AtomicBoolean, kotlin.Function0((kotlin.Unit)))ly.img.android.pesdk.kotlin_extension/java.util.concurrent.atomic.-atomic-boolean/set-false-if-true-and-do.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$setTrueIfFalseAndDo(java.util.concurrent.atomic.AtomicBoolean, kotlin.Function0((kotlin.Unit)))ly.img.android.pesdk.kotlin_extension/java.util.concurrent.atomic.-atomic-boolean/set-true-if-false-and-do.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$upscaleToMultipleOf(kotlin.Double, kotlin.Double)ly.img.android.pesdk.kotlin_extension/kotlin.-double/upscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$upscaleToMultipleOf(kotlin.Float, kotlin.Float)ly.img.android.pesdk.kotlin_extension/kotlin.-float/upscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$upscaleToMultipleOf(kotlin.Int, kotlin.Int)ly.img.android.pesdk.kotlin_extension/kotlin.-int/upscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$upscaleToMultipleOf(kotlin.Long, kotlin.Long)ly.img.android.pesdk.kotlin_extension/kotlin.-long/upscale-to-multiple-of.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$w#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/w.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$waitUntilFalse(java.util.concurrent.atomic.AtomicBoolean)ly.img.android.pesdk.kotlin_extension/java.util.concurrent.atomic.-atomic-boolean/wait-until-false.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$waitUntilTrue(java.util.concurrent.atomic.AtomicBoolean)ly.img.android.pesdk.kotlin_extension/java.util.concurrent.atomic.-atomic-boolean/wait-until-true.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$width#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/width.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$x#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/x.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$x1#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/x1.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$x2#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/x2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$x3#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/x3.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$x4#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/x4.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$y#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/y.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$y1#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/y1.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$y2#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/y2.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$y3#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/y3.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$y4#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/y4.html
+$dokka.location:ly.img.android.pesdk.kotlin_extension$z#kotlin.FloatArrayly.img.android.pesdk.kotlin_extension/kotlin.-float-array/z.html
+$dokka.location:ly.img.android.processor$combineToString(kotlin.Array((ly.img.android.processor.combineToString.T)), kotlin.String, kotlin.String, kotlin.Function1((ly.img.android.processor.combineToString.T, kotlin.String)))ly.img.android.processor/kotlin.-array/combine-to-string.html
+$dokka.location:ly.img.android.processor$combineToString(kotlin.collections.Iterable((ly.img.android.processor.combineToString.T)), kotlin.String, kotlin.String, kotlin.Function1((ly.img.android.processor.combineToString.T, kotlin.String)))ly.img.android.processor/kotlin.collections.-iterable/combine-to-string.html
+$dokka.location:ly.img.android.processor$contains(kotlin.collections.Iterable((ly.img.android.processor.contains.T)), kotlin.collections.Collection((ly.img.android.processor.contains.T)))ly.img.android.processor/kotlin.collections.-iterable/contains.html
+$dokka.location:ly.img.android.processor$isString(javax.lang.model.element.Element)ly.img.android.processor/javax.lang.model.element.-element/is-string.html
+ly.img.android
+ly.img.android.acs
+ly.img.android.acs.constants
+ly.img.android.acs.opengl.renderer
+ly.img.android.acs.opengl.textures
+ly.img.android.opengl
+ly.img.android.opengl.canvas
+ly.img.android.opengl.egl
+ly.img.android.opengl.programs
+ly.img.android.opengl.textures
+ly.img.android.pesdk
+ly.img.android.pesdk.annotations
+ly.img.android.pesdk.annotations.gl
+ly.img.android.pesdk.assets.filter.basic
+ly.img.android.pesdk.assets.font.basic
+ly.img.android.pesdk.assets.font.text_design
+ly.img.android.pesdk.assets.frame.basic
+ly.img.android.pesdk.assets.overlay.basic
+ly.img.android.pesdk.assets.sticker.emoticons
+ly.img.android.pesdk.assets.sticker.shapes
+ly.img.android.pesdk.backend.annotations
+ly.img.android.pesdk.backend.brush
+ly.img.android.pesdk.backend.brush.drawer
+ly.img.android.pesdk.backend.brush.models
+ly.img.android.pesdk.backend.decoder
+ly.img.android.pesdk.backend.decoder.system
+ly.img.android.pesdk.backend.decoder.vector
+ly.img.android.pesdk.backend.encoder.jpeg
+ly.img.android.pesdk.backend.encoder.video
+ly.img.android.pesdk.backend.exif
+ly.img.android.pesdk.backend.exif.modes
+ly.img.android.pesdk.backend.filter
+ly.img.android.pesdk.backend.frame
+ly.img.android.pesdk.backend.layer
+ly.img.android.pesdk.backend.layer.base
+ly.img.android.pesdk.backend.model
+ly.img.android.pesdk.backend.model.chunk
+ly.img.android.pesdk.backend.model.config
+ly.img.android.pesdk.backend.model.constant
+ly.img.android.pesdk.backend.model.state
+ly.img.android.pesdk.backend.model.state.layer
+ly.img.android.pesdk.backend.model.state.manager
+ly.img.android.pesdk.backend.model.state.manager.observ
+ly.img.android.pesdk.backend.opengl.programs
+ly.img.android.pesdk.backend.operator
+ly.img.android.pesdk.backend.operator.preview
+ly.img.android.pesdk.backend.operator.rox
+ly.img.android.pesdk.backend.operator.rox.models
+ly.img.android.pesdk.backend.operator.rox.saver
+ly.img.android.pesdk.backend.overlay
+ly.img.android.pesdk.backend.programs
+ly.img.android.pesdk.backend.random
+ly.img.android.pesdk.backend.text
+ly.img.android.pesdk.backend.text_design
+ly.img.android.pesdk.backend.text_design.kotlin_extension
+ly.img.android.pesdk.backend.text_design.layout
+ly.img.android.pesdk.backend.text_design.layout.legacy
+ly.img.android.pesdk.backend.text_design.model
+ly.img.android.pesdk.backend.text_design.model.background
+ly.img.android.pesdk.backend.text_design.model.config
+ly.img.android.pesdk.backend.text_design.model.row.defaults
+ly.img.android.pesdk.backend.text_design.model.row.image
+ly.img.android.pesdk.backend.text_design.model.row.masked
+ly.img.android.pesdk.backend.text_design.type
+ly.img.android.pesdk.backend.views
+ly.img.android.pesdk.backend.views.abstracts
+ly.img.android.pesdk.kotlin_extension
+ly.img.android.pesdk.linker
+ly.img.android.pesdk.ui
+ly.img.android.pesdk.ui.activity
+ly.img.android.pesdk.ui.activity.widgets.buttons
+ly.img.android.pesdk.ui.adapter
+ly.img.android.pesdk.ui.adjustment
+ly.img.android.pesdk.ui.all
+ly.img.android.pesdk.ui.animators
+ly.img.android.pesdk.ui.animators.holder
+ly.img.android.pesdk.ui.brush
+ly.img.android.pesdk.ui.filter
+ly.img.android.pesdk.ui.focus
+ly.img.android.pesdk.ui.frame
+ly.img.android.pesdk.ui.layer
+ly.img.android.pesdk.ui.model.constants
+ly.img.android.pesdk.ui.model.data
+ly.img.android.pesdk.ui.model.state
+ly.img.android.pesdk.ui.overlay
+ly.img.android.pesdk.ui.panels
+ly.img.android.pesdk.ui.panels.item
+ly.img.android.pesdk.ui.photo_main
+ly.img.android.pesdk.ui.sticker
+ly.img.android.pesdk.ui.text
+ly.img.android.pesdk.ui.text_design
+ly.img.android.pesdk.ui.transform
+ly.img.android.pesdk.ui.utils
+ly.img.android.pesdk.ui.video_main
+ly.img.android.pesdk.ui.video_trim
+ly.img.android.pesdk.ui.view
+ly.img.android.pesdk.ui.viewholder
+ly.img.android.pesdk.ui.widgets
+ly.img.android.pesdk.ui.widgets.buttons
+ly.img.android.pesdk.ui.widgets.colorpicker
+ly.img.android.pesdk.utils
+ly.img.android.processor
+ly.img.android.processor.parser
+ly.img.android.serializer._3._0._0
+ly.img.android.utils

@@ -1,0 +1,173 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlOperation - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.preview</a>&nbsp;/&nbsp;<a href="./index.html">GlOperation</a><br/>
+<br/>
+<h1>GlOperation</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span></code>
+<p>Abstract Operation</p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-callback/index.html">Callback</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Callback</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlOperation</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="bind-state-handler.html">bindStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bindStateHandler</span><span class="symbol">(</span><span class="identifier">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="do-operation.html">doOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier">texture</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.textures.GlTexture</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="flag-as-dirty.html">flagAsDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">flagAsDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-setup.html">glSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-dirty.html">isDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-release.html">onRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier">texture</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.textures.GlTexture</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code>
+<p>Start the Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-callback.html">setCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCallback</span><span class="symbol">(</span><span class="identifier">callback</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">GlOperation.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-size.html">setSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSize</span><span class="symbol">(</span><span class="identifier">stageWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">stageHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="need-setup.html">needSetup</a></p>
+</td>
+<td>
+<code><span class="identifier">needSetup</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stage-height.html">stageHeight</a></p>
+</td>
+<td>
+<code><span class="identifier">stageHeight</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stage-width.html">stageWidth</a></p>
+</td>
+<td>
+<code><span class="identifier">stageWidth</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-gl-camera-input-correction-operation/index.html">GlCameraInputCorrectionOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlCameraInputCorrectionOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-filter-operation/index.html">GlFilterOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlFilterOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-screen-operation/index.html">GlScreenOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlScreenOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlOperation</span></a></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

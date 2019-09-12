@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ThreadUtils.WorkerThreadRunnable - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="../index.html">ThreadUtils</a>&nbsp;/&nbsp;<a href="./index.html">WorkerThreadRunnable</a><br/>
+<br/>
+<h1>WorkerThreadRunnable</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">WorkerThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-task/index.html"><span class="identifier">ThreadUtils.Task</span></a></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">WorkerThreadRunnable</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable$<init>(kotlin.String)/groupId">groupId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="do-replace-task.html">doReplaceTask</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">doReplaceTask</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="invoke.html">invoke</a></p>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">invoke</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="run.html">run</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">run</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="run-on-ui.html">runOnUi</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">runOnUi</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable$runOnUi(ly.img.android.pesdk.utils.ThreadUtils.MainThreadRunnable)/runnable">runnable</span><span class="symbol">:</span>&nbsp;<a href="../-main-thread-runnable/index.html"><span class="identifier">ThreadUtils.MainThreadRunnable</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="sleep.html">sleep</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sleep</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.ThreadUtils.WorkerThreadRunnable$sleep(kotlin.Int)/milies">milies</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-replace-thread-runnable/index.html">ReplaceThreadRunnable</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ReplaceThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ThreadUtils.WorkerThreadRunnable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-sequenced-thread-runnable/index.html">SequencedThreadRunnable</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">SequencedThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ThreadUtils.WorkerThreadRunnable</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

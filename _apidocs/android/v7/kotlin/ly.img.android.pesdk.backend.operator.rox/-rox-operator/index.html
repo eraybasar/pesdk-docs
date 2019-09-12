@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RoxOperator - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.rox</a>&nbsp;/&nbsp;<a href="./index.html">RoxOperator</a><br/>
+<br/>
+<h1>RoxOperator</h1>
+<code><span class="keyword">class </span><span class="identifier">RoxOperator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.canvas/-gl-object/index.html"><span class="identifier">GlObject</span></a><span class="symbol">, </span><a href="../-rox-operation/-callback/index.html"><span class="identifier">RoxOperation.Callback</span></a></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-callback/index.html">Callback</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Callback</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RoxOperator</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.rox.RoxOperator$<init>(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="state-handler.html">stateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">stateHandler</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="on-dirty-flag.html">onDirtyFlag</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDirtyFlag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.rox.RoxOperator$onDirtyFlag(ly.img.android.pesdk.backend.operator.rox.RoxOperation)/operation">operation</span><span class="symbol">:</span>&nbsp;<a href="../-rox-operation/index.html"><span class="identifier">RoxOperation</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-rebound.html">onRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-release.html">onRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.rox.RoxOperator$render(kotlin.Boolean)/isPreview">isPreview</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-callback.html">setCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCallback</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.rox.RoxOperator$setCallback(ly.img.android.pesdk.backend.operator.rox.RoxOperator.Callback)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">RoxOperator.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-export-operations.html">setExportOperations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setExportOperations</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.backend.operator.rox.RoxOperator$setExportOperations(kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.operator.rox.RoxOperation)))))/operations">operations</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-rox-operation/index.html"><span class="identifier">RoxOperation</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-operations.html">setOperations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setOperations</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.backend.operator.rox.RoxOperator$setOperations(kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.operator.rox.RoxOperation)))))/operations">operations</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-rox-operation/index.html"><span class="identifier">RoxOperation</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/free-up.html">freeUp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">freeUp</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$freeUp(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/queue-destroy.html">queueDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$queueDestroy(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/queue-rebound.html">queueRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/rebound-gl-context.html">reboundGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reboundGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/release-gl-context.html">releaseGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">releaseGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

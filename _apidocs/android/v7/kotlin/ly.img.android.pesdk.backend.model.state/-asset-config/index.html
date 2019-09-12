@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetConfig - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.state</a>&nbsp;/&nbsp;<a href="./index.html">AssetConfig</a><br/>
+<br/>
+<h1>AssetConfig</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AssetConfig</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><span class="identifier">Event</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">Parcelable</span></code>
+<p>Photo Editor Configuration file.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AssetConfig</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AssetConfig</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/revertible-fields.html">revertibleFields</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">revertibleFields</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">!</span><span class="symbol">,</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-revertible-field/index.html"><span class="identifier">Settings.RevertibleField</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-s-t-a-t-e_-r-e-v-e-r-t-e-d.html">STATE_REVERTED</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">STATE_REVERTED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add-asset.html">addAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addAsset</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$addAsset(kotlin.Array((ly.img.android.pesdk.backend.model.config.AbstractAsset)))/configs">configs</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-asset-by-id.html">getAssetById</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">getAssetById</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$getAssetById(java.lang.Class((ly.img.android.pesdk.backend.model.state.AssetConfig.getAssetById.T)), kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="get-asset-by-id.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$getAssetById(java.lang.Class((ly.img.android.pesdk.backend.model.state.AssetConfig.getAssetById.T)), kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="get-asset-by-id.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-asset-map.html">getAssetMap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">getAssetMap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$getAssetMap(java.lang.Class((ly.img.android.pesdk.backend.model.state.AssetConfig.getAssetMap.T)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="get-asset-map.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.linker/-config-map/index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><a href="get-asset-map.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-changes.html">hasChanges</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasChanges</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="require-asset-by-id.html">requireAssetById</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">requireAssetById</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$requireAssetById(java.lang.Class((ly.img.android.pesdk.backend.model.state.AssetConfig.requireAssetById.T)), kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="require-asset-by-id.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$requireAssetById(java.lang.Class((ly.img.android.pesdk.backend.model.state.AssetConfig.requireAssetById.T)), kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="require-asset-by-id.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$writeToParcel(Parcel, kotlin.Int)/parcel">parcel</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.AssetConfig$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/create-save-state.html">createSaveState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createSaveState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-save-state/index.html"><span class="identifier">Settings.SaveState</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/dispatch-event.html">dispatchEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispatchEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.Settings$dispatchEvent(kotlin.String)/eventId">eventId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-frozen-settings.html">getFrozenSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">StateClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">getFrozenSettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-frozen-settings.html#StateClass"><span class="identifier">StateClass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-settings-model.html">getSettingsModel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">StateClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">getSettingsModel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.Settings$getSettingsModel(java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings.getSettingsModel.StateClass)))/settingsClass">settingsClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-settings-model.html#StateClass"><span class="identifier">StateClass</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-settings-model.html#StateClass"><span class="identifier">StateClass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/is-frozen.html">isFrozen</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isFrozen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/is-revertible.html">isRevertible</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isRevertible</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/on-bind.html">onBind</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBind</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.Settings$onBind(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/revert-state.html">revertState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">revertState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">revertState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.Settings$revertState(ly.img.android.pesdk.backend.model.state.manager.Settings.SaveState)/saveState">saveState</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-save-state/index.html"><span class="identifier">Settings.SaveState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/save-init-state.html">saveInitState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveInitState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/save-state.html">saveState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/require-asset-by-id.html">requireAssetById</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">&gt;</span> <a href="./index.html"><span class="identifier">AssetConfig</span></a><span class="symbol">.</span><span class="identifier">requireAssetById</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$requireAssetById(ly.img.android.pesdk.backend.model.state.AssetConfig, kotlin.reflect.KClass((ly.img.android.pesdk.kotlin_extension.requireAssetById.T)), kotlin.String)/classRef">classRef</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.kotlin_extension/require-asset-by-id.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$requireAssetById(ly.img.android.pesdk.backend.model.state.AssetConfig, kotlin.reflect.KClass((ly.img.android.pesdk.kotlin_extension.requireAssetById.T)), kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/require-asset-by-id.html#T"><span class="identifier">T</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

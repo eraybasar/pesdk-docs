@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Exify.setTagValue - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">Exify</a>&nbsp;/&nbsp;<a href="./set-tag-value.html">setTagValue</a><br/>
+<br/>
+<h1>setTagValue</h1>
+<code><span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets the value of an ExifTag if it exists it's default IFD. The value must be the correct type and length for that ExifExifTagKey.</p>
+<h3>Parameters</h3>
+<p><a name="tag"></a>
+<code>tag</code> - <a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">:</span> a tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
+<p><a name="val"></a>
+<code>val</code> - <span class="identifier">java.lang.Object</span><span class="symbol">:</span> the value to set.</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">boolean</span><span class="symbol">:</span> true if success, false if the ExifTag doesn't exist or the value is the wrong type/length.</p>
+<code><span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets the value of an ExifTag if it exists it's default IFD. The value must be the correct type and length for that ExifExifTagKey.</p>
+<h3>Parameters</h3>
+<p><a name="tagId"></a>
+<code>tagId</code> - <span class="identifier">int</span><span class="symbol">:</span> a tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
+<p><a name="val"></a>
+<code>val</code> - <span class="identifier">java.lang.Object</span><span class="symbol">:</span> the value to set.</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">boolean</span><span class="symbol">:</span> true if success, false if the ExifTag doesn't exist or the value is the wrong type/length.</p>
+<code><span class="keyword">fun </span><span class="identifier">setTagValue</span><span class="symbol">(</span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">val</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets the value of an ExifTag if it exists in the given IFD. The value must be the correct type and length for that ExifExifTagKey.</p>
+<h3>Parameters</h3>
+<p><a name="tagId"></a>
+<code>tagId</code> - <span class="identifier">int</span><span class="symbol">:</span> a tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
+<p><a name="ifdId"></a>
+<code>ifdId</code> - <span class="identifier">int</span><span class="symbol">:</span> the IFD that the ExifTag is in.</p>
+<p><a name="val"></a>
+<code>val</code> - <span class="identifier">java.lang.Object</span><span class="symbol">:</span> the value to set.</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">boolean</span><span class="symbol">:</span> true if success, false if the ExifTag doesn't exist or the value is the wrong type/length.</p>
+<p><strong>See Also</strong><br/>
+<a href="./set-tag-value.html">#setTagValue</a></p>
+</BODY>
+</HTML>

@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransformedVector.TransformableValue - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="../index.html">TransformedVector</a>&nbsp;/&nbsp;<a href="./index.html">TransformableValue</a><br/>
+<br/>
+<h1>TransformableValue</h1>
+<code><span class="keyword">protected</span> <span class="keyword">class </span><span class="identifier">TransformableValue</span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">, </span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TransformableValue</span><span class="symbol">(</span><span class="identifier">$outer</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">? super T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">? extends T</span><span class="symbol">, </span><span class="identifier">updateFromRaw</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-on-set.html">getOnSet</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOnSet</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-update-from-raw.html">getUpdateFromRaw</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUpdateFromRaw</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="symbol">(</span><span class="identifier">T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-value.html">getValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getValue</span><span class="symbol">(</span><span class="identifier">thisRef</span><span class="symbol">:</span>&nbsp;<span class="identifier">R</span><span class="symbol">, </span><span class="identifier">property</span><span class="symbol">:</span>&nbsp;<span class="identifier">KProperty</span><span class="symbol">&lt;</span><span class="identifier">?</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-dirty.html">isDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-dirty.html">setDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDirty</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-on-set.html">setOnSet</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setOnSet</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-updated-flag.html">setUpdatedFlag</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUpdatedFlag</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-update-from-raw.html">setUpdateFromRaw</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUpdateFromRaw</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">? super T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">? extends T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-value.html">setValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">thisRef</span><span class="symbol">:</span>&nbsp;<span class="identifier">R</span><span class="symbol">, </span><span class="identifier">property</span><span class="symbol">:</span>&nbsp;<span class="identifier">KProperty</span><span class="symbol">&lt;</span><span class="identifier">?</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

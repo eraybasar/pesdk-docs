@@ -1,0 +1,411 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlTexture - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.textures</a>&nbsp;/&nbsp;<a href="./index.html">GlTexture</a><br/>
+<br/>
+<h1>GlTexture</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.canvas/-gl-object/index.html"><span class="identifier">GlObject</span></a></code>
+<h3>Annotations</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-filtering/index.html">Filtering</a></p>
+</td>
+<td>
+<code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Filtering</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-slot/index.html">Slot</a></p>
+</td>
+<td>
+<code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Slot</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-wrap/index.html">Wrap</a></p>
+</td>
+<td>
+<code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Wrap</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlTexture</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$<init>(kotlin.Int)/textureTarget">textureTarget</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="_texture-handle.html">_textureHandle</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">_textureHandle</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="change-count.html">changeCount</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">changeCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="down-scale-filtering.html">downScaleFiltering</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">downScaleFiltering</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="height.html">height</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="horizontal-wrap.html">horizontalWrap</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">horizontalWrap</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-attached.html">isAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isAttached</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-external-texture.html">isExternalTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">isExternalTexture</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="texture-handle.html">textureHandle</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">textureHandle</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="texture-height.html">textureHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">textureHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="texture-target.html">textureTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">textureTarget</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="texture-width.html">textureWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">textureWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="up-scale-filtering.html">upScaleFiltering</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">upScaleFiltering</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="vertical-wrap.html">verticalWrap</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">verticalWrap</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="attach.html">attach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="bind-texture.html">bindTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">bindTexture</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$bindTexture(kotlin.Int, kotlin.Int)/uniform">uniform</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$bindTexture(kotlin.Int, kotlin.Int)/slot">slot</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">bindTexture</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$bindTexture(kotlin.Int)/slot">slot</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="change-behave.html">changeBehave</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">changeBehave</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$changeBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/downScaleFiltering">downScaleFiltering</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$changeBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/upScaleFiltering">upScaleFiltering</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$changeBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/horizontalWrap">horizontalWrap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$changeBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/verticalWrap">verticalWrap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="mark-dirty.html">markDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">markDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attach.html">onAttach</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onAttach</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$onAttach(kotlin.Int)/handle">handle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-rebound.html">onRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-release.html">onRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-behave.html">setBehave</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setBehave</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int)/filtering">filtering</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int)/wrap">wrap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;GLES20.GL_CLAMP_TO_EDGE<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setBehave</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int, kotlin.Int)/downScaleFiltering">downScaleFiltering</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int, kotlin.Int)/upScaleFiltering">upScaleFiltering</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int, kotlin.Int)/wrap">wrap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setBehave</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/downScaleFiltering">downScaleFiltering</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/upScaleFiltering">upScaleFiltering</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/horizontalWrap">horizontalWrap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture$setBehave(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/verticalWrap">verticalWrap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="texture-changed.html">textureChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">textureChanged</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-mipmap-if-needed.html">updateMipmapIfNeeded</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateMipmapIfNeeded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="use-mipmap.html">useMipmap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">useMipmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/free-up.html">freeUp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">freeUp</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$freeUp(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/queue-destroy.html">queueDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$queueDestroy(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/queue-rebound.html">queueRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/rebound-gl-context.html">reboundGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reboundGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/release-gl-context.html">releaseGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">releaseGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="max-frame-buffer-size.html">maxFrameBufferSize</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">maxFrameBufferSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="max-texture-size.html">maxTextureSize</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">maxTextureSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="max-texture-units.html">maxTextureUnits</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">maxTextureUnits</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="max-view-port-size.html">maxViewPortSize</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">maxViewPortSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-filter-mode-without-mipmap.html">getFilterModeWithoutMipmap</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFilterModeWithoutMipmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture.Companion$getFilterModeWithoutMipmap(kotlin.Int)/filterMode">filterMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-mipmap-filter-mode.html">isMipmapFilterMode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isMipmapFilterMode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture.Companion$isMipmapFilterMode(kotlin.Int)/filterMode">filterMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="upscale-value-to-pow-of-two.html">upscaleValueToPowOfTwo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">upscaleValueToPowOfTwo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlTexture.Companion$upscaleValueToPowOfTwo(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.acs.opengl.textures/-gl-camera-texture/index.html">GlCameraTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlCameraTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlTexture</span></a><span class="symbol">, </span><span class="identifier">OnFrameAvailableListener</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-frame-buffer-texture/index.html">GlFrameBufferTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlFrameBufferTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlTexture</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-image-texture/index.html">GlImageTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlImageTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlTexture</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-surface-texture/index.html">GlSurfaceTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlSurfaceTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlTexture</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

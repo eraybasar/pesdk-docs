@@ -1,0 +1,377 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TextOptionToolPanel - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels</a>&nbsp;/&nbsp;<a href="./index.html">TextOptionToolPanel</a><br/>
+<br/>
+<h1>TextOptionToolPanel</h1>
+<code><span class="keyword">class </span><span class="identifier">TextOptionToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-tool-panel/index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span></code>
+<p>Tool view to add and control Text-Stickers.</p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-text-sticker-align-option/index.html">TextStickerAlignOption</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">TextStickerAlignOption</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-text-sticker-option/index.html"><span class="identifier">TextOptionToolPanel.TextStickerOption</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-text-sticker-color-option/index.html">TextStickerColorOption</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">TextStickerColorOption</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-text-sticker-option/index.html"><span class="identifier">TextOptionToolPanel.TextStickerOption</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-text-sticker-option/index.html">TextStickerOption</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">TextStickerOption</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-text-sticker-quick-option/index.html">TextStickerQuickOption</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">TextStickerQuickOption</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TextOptionToolPanel</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="bring-sticker-to-front.html">bringStickerToFront</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bringStickerToFront</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="change-quick-option-visibility.html">changeQuickOptionVisibility</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">changeQuickOptionVisibility</span><span class="symbol">(</span><span class="identifier">menuState</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.model.state/-ui-state-menu/index.html"><span class="identifier">UiStateMenu</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-exit-animator.html">createExitAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createExitAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-option-list.html">createOptionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createOptionList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-quick-option-list.html">createQuickOptionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createQuickOptionList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-show-animator.html">createShowAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createShowAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-sticker.html">deleteSticker</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteSticker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="flip-sticker.html">flipSticker</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">flipSticker</span><span class="symbol">(</span><span class="identifier">vertical</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-current-text-sticker-config.html">getCurrentTextStickerConfig</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCurrentTextStickerConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.config/-text-sticker-config/index.html"><span class="identifier">TextStickerConfig</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-current-text-sticker-settings.html">getCurrentTextStickerSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCurrentTextStickerSettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.layer.TextLayerSettings</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-history-settings.html">getHistorySettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHistorySettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.state.manager.Settings</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layout-resource.html">getLayoutResource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLayoutResource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-menu-state.html">getMenuState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMenuState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.ui.model.state/-ui-state-menu/index.html"><span class="identifier">UiStateMenu</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-before-detach.html">onBeforeDetach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBeforeDetach</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">, </span><span class="identifier">revertChanges</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-double-tapped.html">onDoubleTapped</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDoubleTapped</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-history-changed.html">onHistoryChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onHistoryChanged</span><span class="symbol">(</span><span class="identifier">historyState</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.HistoryState</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-item-click.html">onItemClick</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onItemClick</span><span class="symbol">(</span><span class="identifier">entity</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="open-add-new-text.html">openAddNewText</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">openAddNewText</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="open-text-edit.html">openTextEdit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">openTextEdit</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="refresh.html">refresh</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">refresh</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="select-background-color.html">selectBackgroundColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">selectBackgroundColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="select-color.html">selectColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">selectColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="select-font.html">selectFont</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">selectFont</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-align.html">setAlign</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAlign</span><span class="symbol">(</span><span class="identifier">align</span><span class="symbol">:</span>&nbsp;<span class="identifier">Align</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="straighten-sticker.html">straightenSticker</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">straightenSticker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="toggle-align.html">toggleAlign</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toggleAlign</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-ui.html">updateUi</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateUi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-a-d-d.html">OPTION_ADD</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_ADD</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-a-l-i-g-n.html">OPTION_ALIGN</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_ALIGN</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-b-g_-c-o-l-o-r.html">OPTION_BG_COLOR</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_BG_COLOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-c-o-l-o-r.html">OPTION_COLOR</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_COLOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-d-e-l-e-t-e.html">OPTION_DELETE</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_DELETE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-e-d-i-t.html">OPTION_EDIT</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_EDIT</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-f-l-i-p_-h.html">OPTION_FLIP_H</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_FLIP_H</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-f-l-i-p_-v.html">OPTION_FLIP_V</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_FLIP_V</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-f-o-n-t.html">OPTION_FONT</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_FONT</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-r-e-d-o.html">OPTION_REDO</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_REDO</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-s-t-r-a-i-g-h-t-e-n.html">OPTION_STRAIGHTEN</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_STRAIGHTEN</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-t-o_-f-r-o-n-t.html">OPTION_TO_FRONT</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_TO_FRONT</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n_-u-n-d-o.html">OPTION_UNDO</a></p>
+</td>
+<td>
+<code><span class="identifier">OPTION_UNDO</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-o-o-l_-i-d.html">TOOL_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">TOOL_ID</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ui-state-text.html">uiStateText</a></p>
+</td>
+<td>
+<code><span class="identifier">uiStateText</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

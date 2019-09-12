@@ -1,0 +1,448 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransformedVector - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">TransformedVector</a><br/>
+<br/>
+<h1>TransformedVector</h1>
+<code><span class="keyword">class </span><span class="identifier">TransformedVector</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-resettable/index.html"><span class="identifier">Resettable</span></a></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion/index.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/index.html"><span class="identifier">Recycler</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">TransformedVector</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-transformable-float/index.html">TransformableFloat</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">TransformableFloat</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-transformable-value/index.html">TransformableValue</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TransformableValue</span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">, </span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TransformedVector</span><span class="symbol">(</span><span class="identifier">isAtomic</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">TransformedVector</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-also-recyclable.html">getAlsoRecyclable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAlsoRecyclable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-destination-height.html">getDestinationHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDestinationHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-destination-position-x.html">getDestinationPositionX</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDestinationPositionX</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-destination-position-y.html">getDestinationPositionY</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDestinationPositionY</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-destination-radius.html">getDestinationRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDestinationRadius</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-destination-rotation.html">getDestinationRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDestinationRotation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-destination-width.html">getDestinationWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDestinationWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-lock.html">getLock</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLock</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.concurrent.locks.ReentrantLock</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-height-long-side.html">getRelativeSourceHeightLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourceHeightLongSide</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-height-short-side.html">getRelativeSourceHeightShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourceHeightShortSide</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-position-x.html">getRelativeSourcePositionX</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourcePositionX</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-position-y.html">getRelativeSourcePositionY</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourcePositionY</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-radius-long-side.html">getRelativeSourceRadiusLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourceRadiusLongSide</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-radius-short-side.html">getRelativeSourceRadiusShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourceRadiusShortSide</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-width-long-side.html">getRelativeSourceWidthLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourceWidthLongSide</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-relative-source-width-short-side.html">getRelativeSourceWidthShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRelativeSourceWidthShortSide</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-source-height.html">getSourceHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSourceHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-source-position-x.html">getSourcePositionX</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSourcePositionX</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-source-position-y.html">getSourcePositionY</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSourcePositionY</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-source-radius.html">getSourceRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSourceRadius</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-source-rotation.html">getSourceRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSourceRotation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-source-width.html">getSourceWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSourceWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-atomic.html">isAtomic</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isAtomic</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="recycle.html">recycle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="reset.html">reset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reset</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="respect-lock.html">respectLock</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">respectLock</span><span class="symbol">(</span><span class="identifier">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-also-recyclable.html">setAlsoRecyclable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAlsoRecyclable</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-atomic.html">setAtomic</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAtomic</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination.html">setDestination</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestination</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">radius</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setDestination</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-height.html">setDestinationHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationHeight</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-position.html">setDestinationPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationPosition</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-position-offset.html">setDestinationPositionOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationPositionOffset</span><span class="symbol">(</span><span class="identifier">offsetX</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">offsetY</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-radius.html">setDestinationRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationRadius</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-rotation.html">setDestinationRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationRotation</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-width.html">setDestinationWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationWidth</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source.html">setRelativeSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSource</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSource</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">radius</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSource</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-height-long-side.html">setRelativeSourceHeightLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourceHeightLongSide</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-height-short-side.html">setRelativeSourceHeightShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourceHeightShortSide</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-position.html">setRelativeSourcePosition</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourcePosition</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-radius-long-side.html">setRelativeSourceRadiusLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourceRadiusLongSide</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-radius-short-side.html">setRelativeSourceRadiusShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourceRadiusShortSide</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-width-long-side.html">setRelativeSourceWidthLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourceWidthLongSide</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-width-short-side.html">setRelativeSourceWidthShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourceWidthShortSide</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source.html">setSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">radius</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">rotation</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-height.html">setSourceHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourceHeight</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-position.html">setSourcePosition</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourcePosition</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-position-offset.html">setSourcePositionOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourcePositionOffset</span><span class="symbol">(</span><span class="identifier">offsetX</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">offsetY</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-radius.html">setSourceRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourceRadius</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-rotation.html">setSourceRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourceRotation</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-width.html">setSourceWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourceWidth</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-transformation.html">updateTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier">source</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">destination</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">, </span><span class="identifier">sourceContextWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">sourceContextHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">, </span><span class="identifier">sourceContextWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">sourceContextHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">, </span><span class="identifier">sourceContextWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">sourceContextHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

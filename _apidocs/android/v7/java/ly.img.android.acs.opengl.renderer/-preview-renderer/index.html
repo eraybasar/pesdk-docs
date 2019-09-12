@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PreviewRenderer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.acs.opengl.renderer</a>&nbsp;/&nbsp;<a href="./index.html">PreviewRenderer</a><br/>
+<br/>
+<h1>PreviewRenderer</h1>
+<code><span class="keyword">class </span><span class="identifier">PreviewRenderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.egl/-renderer/index.html"><span class="identifier">Renderer</span></a><span class="symbol">, </span><a href="../../ly.img.android.acs.opengl.textures/-gl-camera-texture/-on-frame-available-listener/index.html"><span class="identifier">GlCameraTexture.OnFrameAvailableListener</span></a></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-renderer-callback/index.html">RendererCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">RendererCallback</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PreviewRenderer</span><span class="symbol">(</span><span class="identifier">callback</span><span class="symbol">:</span>&nbsp;<a href="-renderer-callback/index.html"><span class="identifier">PreviewRenderer.RendererCallback</span></a><span class="symbol">, </span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="on-draw-frame.html">onDrawFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">onDrawFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-frame-available.html">onFrameAvailable</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">onFrameAvailable</span><span class="symbol">(</span><span class="identifier">cameraTexture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs.opengl.textures/-gl-camera-texture/index.html"><span class="identifier">GlCameraTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-start-preview.html">onStartPreview</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStartPreview</span><span class="symbol">(</span><span class="identifier">camera</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs/-camera/index.html"><span class="identifier">Camera</span></a><span class="symbol">, </span><span class="identifier">faceMirror</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-changed.html">onSurfaceChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSurfaceChanged</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-created.html">onSurfaceCreated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSurfaceCreated</span><span class="symbol">(</span><span class="identifier">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="release.html">release</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">release</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

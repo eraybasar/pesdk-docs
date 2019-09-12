@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AutoRotateImageSource - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.widgets</a>&nbsp;/&nbsp;<a href="./index.html">AutoRotateImageSource</a><br/>
+<br/>
+<h1>AutoRotateImageSource</h1>
+<code><span class="keyword">class </span><span class="identifier">AutoRotateImageSource</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-image-source-view/index.html"><span class="identifier">ImageSourceView</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.utils/-orientation-sensor/-orientation-listener/index.html"><span class="identifier">OrientationSensor.OrientationListener</span></a></code>
+<p>Rotate on device rotation it use the OrientationSensor Class. To use it the OrientationSensor must be start on Activity resume and stop on Activity pause.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AutoRotateImageSource</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AutoRotateImageSource</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AutoRotateImageSource</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">, </span><span class="identifier">defStyleAttr</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="on-attached-to-window.html">onAttachedToWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttachedToWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached-from-window.html">onDetachedFromWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetachedFromWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-orientation-change.html">onOrientationChange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onOrientationChange</span><span class="symbol">(</span><span class="identifier">screenOrientation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-orientation-sensor/-screen-orientation/index.html"><span class="identifier">OrientationSensor.ScreenOrientation</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Would be set by the OrientationSensor Event.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.ui.widgets.buttons/-accept-button/index.html">AcceptButton</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">AcceptButton</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AutoRotateImageSource</span></a><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.ui.widgets.buttons/-cancel-button/index.html">CancelButton</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CancelButton</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AutoRotateImageSource</span></a><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

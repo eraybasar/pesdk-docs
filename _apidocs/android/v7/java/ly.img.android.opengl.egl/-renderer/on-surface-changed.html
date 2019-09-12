@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Renderer.onSurfaceChanged - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="index.html">Renderer</a>&nbsp;/&nbsp;<a href="./on-surface-changed.html">onSurfaceChanged</a><br/>
+<br/>
+<h1>onSurfaceChanged</h1>
+<code><span class="keyword">fun </span><span class="identifier">onSurfaceChanged</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Called when the surface changed size. </p>
+<p> Called after the surface is created and whenever the OpenGL ES surface size changes. </p>
+<p> Typically you will set your viewport here. If your camera is fixed then you could also set your projection matrix here: </p>
+<pre><code>
+      void onSurfaceChanged(GL10 gl, int width, int height) {
+          gl.glViewport(0, 0, width, height);
+          // for a fixed camera, set the projection too
+          float ratio = (float) width / height;
+          gl.glMatrixMode(GL10.GL_PROJECTION);
+          gl.glLoadIdentity();
+          gl.glFrustumf(-ratio, ratio, -1, 1, 1, 10);
+      }
+      </code></pre>
+<h3>Parameters</h3>
+<p><a name="width"></a>
+<code>width</code> - <span class="identifier">int</span><span class="symbol">:</span> </p>
+<p><a name="height"></a>
+<code>height</code> - <span class="identifier">int</span><span class="symbol">:</span> </p>
+</BODY>
+</HTML>

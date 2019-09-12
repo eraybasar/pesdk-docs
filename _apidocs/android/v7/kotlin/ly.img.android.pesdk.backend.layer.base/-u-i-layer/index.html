@@ -1,0 +1,223 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UILayer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.layer.base</a>&nbsp;/&nbsp;<a href="./index.html">UILayer</a><br/>
+<br/>
+<h1>UILayer</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">UILayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-layer-base/index.html"><span class="identifier">LayerBase</span></a></code>
+<p></p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UILayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$<init>(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="stage.html">stage</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stage</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="transformation.html">transformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">transformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-layer-base/is-attached.html">isAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isAttached</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/is-enabled.html">isEnabled</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isEnabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/show-state.html">showState</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">showState</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/state-handler.html">stateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">stateHandler</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/ui-density.html">uiDensity</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">uiDensity</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/will-draw-ui.html">willDrawUi</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">willDrawUi</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-resources.html">getResources</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getResources</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Resources</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activated.html">onActivated</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onActivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-deactivated.html">onDeactivated</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDeactivated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-u-i.html">onDrawUI</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDrawUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$onDrawUI(Canvas)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-motion-event.html">onMotionEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onMotionEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$onMotionEvent(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-size-changed.html">onSizeChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSizeChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$onSizeChanged(kotlin.Int, kotlin.Int)/w">w</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$onSizeChanged(kotlin.Int, kotlin.Int)/h">h</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-transformation-updated.html">onTransformationUpdated</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onTransformationUpdated</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.UILayer$onTransformationUpdated(ly.img.android.pesdk.backend.model.state.EditorShowState)/showState">showState</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state/-editor-show-state/index.html"><span class="identifier">EditorShowState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-ui.html">renderUi</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">renderUi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-layer-base/on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/on-attached-to-u-i.html">onAttachedToUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.LayerBase$onAttachedToUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/on-detached-from-u-i.html">onDetachedFromUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.LayerBase$onDetachedFromUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-base/post-invalidate-ui.html">postInvalidateUi</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">postInvalidateUi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer/-color-pipette-u-i-layer/index.html">ColorPipetteUILayer</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorPipetteUILayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">UILayer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer/-focus-u-i-layer/index.html">FocusUILayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">FocusUILayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">UILayer</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer/-transform-u-i-layer/index.html">TransformUILayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TransformUILayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">UILayer</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

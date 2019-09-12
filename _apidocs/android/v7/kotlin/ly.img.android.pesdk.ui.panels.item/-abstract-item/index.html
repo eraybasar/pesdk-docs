@@ -1,0 +1,236 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractItem - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels.item</a>&nbsp;/&nbsp;<a href="./index.html">AbstractItem</a><br/>
+<br/>
+<h1>AbstractItem</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.adapter/-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AbstractItem</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$<init>(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$<init>(kotlin.String, ly.img.android.pesdk.backend.decoder.ImageSource)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$<init>(kotlin.String, ly.img.android.pesdk.backend.decoder.ImageSource)/thumbnailSource">thumbnailSource</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$<init>(kotlin.Int)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$<init>(kotlin.Int, ly.img.android.pesdk.backend.decoder.ImageSource)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$<init>(kotlin.Int, ly.img.android.pesdk.backend.decoder.ImageSource)/thumbnailSource">thumbnailSource</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-f-l-a-v-o-r_-o-p-t-i-o-n_-l-i-s-t.html">FLAVOR_OPTION_LIST</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">FLAVOR_OPTION_LIST</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-l-a-v-o-r_-o-p-t-i-o-n_-l-i-s-t_-f-o-l-d-e-r_-s-u-b-i-t-e-m.html">FLAVOR_OPTION_LIST_FOLDER_SUBITEM</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">FLAVOR_OPTION_LIST_FOLDER_SUBITEM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-l-a-v-o-r_-q-u-i-c-k_-o-p-t-i-o-n_-l-i-s-t.html">FLAVOR_QUICK_OPTION_LIST</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">FLAVOR_QUICK_OPTION_LIST</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-l-a-v-o-r_-q-u-i-c-k_-o-p-t-i-o-n_-l-i-s-t_-f-o-l-d-e-r_-s-u-b-i-t-e-m.html">FLAVOR_QUICK_OPTION_LIST_FOLDER_SUBITEM</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">FLAVOR_QUICK_OPTION_LIST_FOLDER_SUBITEM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-dirty.html">isDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isDirty</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-r-i-g-i-n-a-l_-t-h-u-m-b-n-a-i-l_-s-i-z-e.html">ORIGINAL_THUMBNAIL_SIZE</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">ORIGINAL_THUMBNAIL_SIZE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$equals(kotlin.Any)/o">o</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layout.html">getLayout</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLayout</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$getLayout(kotlin.String)/flavor">flavor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-name.html">getName</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Get the Name</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-thumbnail-bitmap.html">getThumbnailBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code>
+<p>Return Thumbnail in full size.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$getThumbnailBitmap(kotlin.Int)/maxWidth">maxWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code>
+<p>Return the Thumbnail, do not call in Main Thread and use #getThumbnailResId() if #hasStaticThumbnail</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-thumbnail-res-id.html">getThumbnailResId</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailResId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Get the static thumbnail drawable resource id if exist.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-thumbnail-source.html">getThumbnailSource</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getThumbnailSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-view-holder-class.html">getViewHolderClass</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getViewHolderClass</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-data-source-view-holder/index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-static-thumbnail.html">hasStaticThumbnail</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasStaticThumbnail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Check if it has a static thumbnail drawable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="is-clickable.html">isClickable</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isClickable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-dirty.html">isDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-dirty-flag.html">setDirtyFlag</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setDirtyFlag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$setDirtyFlag(kotlin.Boolean)/isDirty">isDirty</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-name.html">setName</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setName</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$setName(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.AbstractItem$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-interface/is-selectable.html">isSelectable</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isSelectable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-abstract-id-item/index.html">AbstractIdItem</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractIdItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-abstract-special-item/index.html">AbstractSpecialItem</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractSpecialItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-color-item/index.html">ColorItem</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ColorItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractItem</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-option-item/index.html">OptionItem</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">OptionItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractItem</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

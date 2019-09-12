@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Renderer.onSurfaceChanged - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="index.html">Renderer</a>&nbsp;/&nbsp;<a href="./on-surface-changed.html">onSurfaceChanged</a><br/>
+<br/>
+<h1>onSurfaceChanged</h1>
+<a name="ly.img.android.opengl.egl.Renderer$onSurfaceChanged(kotlin.Int, kotlin.Int)"></a>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onSurfaceChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.egl.Renderer$onSurfaceChanged(kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.egl.Renderer$onSurfaceChanged(kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called when the surface changed size. </p>
+<p> Called after the surface is created and whenever the OpenGL ES surface size changes. </p>
+<p> Typically you will set your viewport here. If your camera is fixed then you could also set your projection matrix here: </p>
+<pre><code>
+      void onSurfaceChanged(GL10 gl, int width, int height) {
+          gl.glViewport(0, 0, width, height);
+          // for a fixed camera, set the projection too
+          float ratio = (float) width / height;
+          gl.glMatrixMode(GL10.GL_PROJECTION);
+          gl.glLoadIdentity();
+          gl.glFrustumf(-ratio, ratio, -1, 1, 1, 10);
+      }
+      </code></pre>
+<h3>Parameters</h3>
+<p><a name="width"></a>
+<code>width</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> </p>
+<p><a name="height"></a>
+<code>height</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> </p>
+</BODY>
+</HTML>

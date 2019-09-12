@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Renderer.onSurfaceCreated - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="index.html">Renderer</a>&nbsp;/&nbsp;<a href="./on-surface-created.html">onSurfaceCreated</a><br/>
+<br/>
+<h1>onSurfaceCreated</h1>
+<code><span class="keyword">fun </span><span class="identifier">onSurfaceCreated</span><span class="symbol">(</span><span class="identifier">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Called when the surface is created or recreated. </p>
+<p> Called when the rendering thread starts and whenever the EGL context is lost. The EGL context will typically be lost when the Android device awakes after going to sleep. </p>
+<p> Since this method is called at the beginning of rendering, as well as every time the EGL context is lost, this method is a convenient place to put code to create resources that need to be created when the rendering starts, and that need to be recreated when the EGL context is lost. Textures are an example of a resource that you might want to create here. </p>
+<p> Note that when the EGL context is lost, all OpenGL resources associated with that context will be automatically deleted. You do not need to call the corresponding "glDelete" methods such as glDeleteTextures to manually delete these lost resources. </p>
+<h3>Parameters</h3>
+<p><a name="config"></a>
+<code>config</code> - <span class="identifier">EGLConfig</span><span class="symbol">:</span> the EGLConfig of the created surface. Can be used to create matching pbuffers.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExifTagInfo.setValue - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">ExifTagInfo</a>&nbsp;/&nbsp;<a href="./set-value.html">setValue</a><br/>
+<br/>
+<h1>setValue</h1>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets integer values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>, or <code><a href="-t-y-p-e_-l-o-n-g.html">#TYPE_LONG</a></code>.</li>
+ <li>The value overflows.</li>
+ <li>The value.length does NOT match the component count in the definition for this tag.</li>
+ </ul>
+</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets integer value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, or <code><a href="-t-y-p-e_-l-o-n-g.html">#TYPE_LONG</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-s-h-o-r-t.html">#TYPE_UNSIGNED_SHORT</a></code>, <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>, or <code><a href="-t-y-p-e_-l-o-n-g.html">#TYPE_LONG</a></code>.</li>
+ <li>The value overflows.</li>
+ <li>The component count in the definition of this tag is not 1.</li>
+ </ul>
+</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">long</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets long values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</li>
+ <li>The value overflows.</li>
+ <li>The value.length does NOT match the component count in the definition for this tag.</li>
+ </ul>
+</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets long values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-l-o-n-g.html">#TYPE_UNSIGNED_LONG</a></code>.</li>
+ <li>The value overflows.</li>
+ <li>The component count in the definition for this tag is not 1.</li>
+ </ul>
+</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets Rational values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code>, or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code> or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>.</li>
+ <li>The value overflows.</li>
+ <li>The value.length does NOT match the component count in the definition for this tag.</li>
+ </ul>
+</p>
+<p><strong>See Also</strong><br/>
+<a href="../-rational/index.html">Rational</a></p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<a href="../-rational/index.html"><span class="identifier">Rational</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets a Rational value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code>, or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-r-a-t-i-o-n-a-l.html">#TYPE_UNSIGNED_RATIONAL</a></code> or <code><a href="-t-y-p-e_-r-a-t-i-o-n-a-l.html">#TYPE_RATIONAL</a></code>.</li>
+ <li>The value overflows.</li>
+ <li>The component count in the definition for this tag is not 1.</li>
+ </ul>
+</p>
+<p><strong>See Also</strong><br/>
+<a href="../-rational/index.html">Rational</a></p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">offset</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">length</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets byte values into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> .</li>
+ <li>The length does NOT match the component count in the definition for this tag.</li>
+ </ul>
+</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Equivalent to setValue(value, 0, value.length).</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">byte</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets byte value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code>. This method will fail if: <ul> <li>The component type of this tag is not <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> .</li>
+ <li>The component count in the definition for this tag is not 1.</li>
+ </ul>
+</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets the value for this tag using an appropriate setValue method for the given object. This method will fail if: <ul> <li>The corresponding setValue method for the class of the object passed in would fail.</li>
+ <li>There is no obvious way to cast the object passed in into an EXIF tag type.</li>
+ </ul>
+</p>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Sets a string value into this tag. This method should be used for tags of type <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code>. The string is converted to an ASCII string. Characters that cannot be converted are replaced with '?'. The length of the string must be equal to either (component count -1) or (component count). The final byte will be set to the string null terminator '\0', overwriting the last character in the string if the value.length is equal to the component count. This method will fail if: <ul> <li>The data type is not <code><a href="-t-y-p-e_-a-s-c-i-i.html">#TYPE_ASCII</a></code> or <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code>.</li>
+ <li>The length of the string is not equal to (component count -1) or (component count) in the definition for this tag.</li>
+ </ul>
+</p>
+</BODY>
+</HTML>

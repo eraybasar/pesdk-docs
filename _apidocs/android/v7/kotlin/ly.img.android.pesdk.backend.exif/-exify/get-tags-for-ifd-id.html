@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Exify.getTagsForIfdId - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">Exify</a>&nbsp;/&nbsp;<a href="./get-tags-for-ifd-id.html">getTagsForIfdId</a><br/>
+<br/>
+<h1>getTagsForIfdId</h1>
+<a name="ly.img.android.pesdk.backend.exif.Exify$getTagsForIfdId(kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTagsForIfdId</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$getTagsForIfdId(kotlin.Int)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code>
+<p>Returns a list of ExifTags that share an IFD (which can be obtained by calling <code><a href="get-true-ifd.html">#getTrueIfd(int)</a></code> on a defined tag constant) or null if none exist.</p>
+<h3>Parameters</h3>
+<p><a name="ifdId"></a>
+<code>ifdId</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> an IFD as defined in the exif standard (or with <code><a href="define-tag.html">#defineTag</a></code>).</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">:</span> a List of <code><a href="../-exif-tag-info/index.html">ExifTagInfo</a></code>s.</p>
+</BODY>
+</HTML>

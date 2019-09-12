@@ -1,0 +1,192 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ly.img.android.pesdk.backend.model.state.manager - </title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="./index.html">ly.img.android.pesdk.backend.model.state.manager</a><br/>
+<br/>
+<h2>Package ly.img.android.pesdk.backend.model.state.manager</h2>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="$-event-set/index.html">$EventSet</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">$EventSet</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../ly.img.android.pesdk.backend.model/-event-set-interface/index.html"><span class="identifier">EventSetInterface</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-event-caller/index.html">EventCaller</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">EventCaller</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-event-handler-interface/index.html">EventHandlerInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">EventHandlerInterface</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-event-listener-interface/index.html">EventListenerInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">EventListenerInterface</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-event-tracker/index.html">EventTracker</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">EventTracker</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><span class="identifier">Event</span><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-imgly-event-dispatcher/index.html">ImglyEventDispatcher</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ImglyEventDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-event-handler-interface/index.html"><span class="identifier">EventHandlerInterface</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-imgly-settings/index.html">ImglySettings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ImglySettings</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-imgly-state/index.html">ImglyState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ImglyState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-layer-list/index.html">LayerList</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LayerList</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../ly.img.android.pesdk.backend.model.state/-layer-list-settings/-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-revertible/index.html">Revertible</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Revertible</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-settings/index.html">Settings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Settings</span><span class="symbol">&lt;</span><span class="identifier">EventEnum</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><a href="-settings/index.html#EventEnum"><span class="identifier">EventEnum</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-cloneable/index.html"><span class="identifier">Cloneable</span></a><span class="symbol">, </span><span class="identifier">Parcelable</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-settings-holder-interface/index.html">SettingsHolderInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">SettingsHolderInterface</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-settings-list/index.html">SettingsList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">SettingsList</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Parcelable</span><span class="symbol">, </span><a href="-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-state-handler/index.html">StateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">StateHandler</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">StateListenerInterface</span><span class="symbol">, </span><a href="-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-state-handler-bindable/index.html">StateHandlerBindable</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">StateHandlerBindable</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-state-observable/index.html">StateObservable</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">StateObservable</span><span class="symbol">&lt;</span><span class="identifier">EventEnum</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Annotations</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-main-thread-event-call/index.html">MainThreadEventCall</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MainThreadEventCall</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-work-thread-event-call/index.html">WorkThreadEventCall</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">WorkThreadEventCall</span></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="configure.html">configure</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="-settings-list/index.html"><span class="identifier">SettingsList</span></a><span class="symbol">.</span><span class="identifier">configure</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager$configure(ly.img.android.pesdk.backend.model.state.manager.SettingsList, kotlin.Function1((ly.img.android.pesdk.backend.model.state.manager.configure.T, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="configure.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-settings-list/index.html"><span class="identifier">SettingsList</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="state-handler-resolve.html">stateHandlerResolve</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="-state-handler-bindable/index.html"><span class="identifier">StateHandlerBindable</span></a><span class="symbol">.</span><span class="identifier">stateHandlerResolve</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="-state-handler-bindable/index.html"><span class="identifier">StateHandlerBindable</span></a><span class="symbol">.</span><span class="identifier">stateHandlerResolve</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager$stateHandlerResolve(ly.img.android.pesdk.backend.model.state.manager.StateHandlerBindable, ly.img.android.pesdk.backend.model.state.manager.stateHandlerResolve.T)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">stateHandlerResolve</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">stateHandlerResolve</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager$stateHandlerResolve(ly.img.android.pesdk.backend.model.state.manager.StateObservable((kotlin.Enum((kotlin.Enum(()))))), ly.img.android.pesdk.backend.model.state.manager.stateHandlerResolve.T)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
