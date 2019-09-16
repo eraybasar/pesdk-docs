@@ -313,7 +313,8 @@ DesktopUI
         "highlights": "Highlights",
         "whites" : "Whites",
         "blacks" : "Blacks",
-        "temperature" : "Temperature"
+        "temperature" : "Temperature",
+        "sharpness": "Sharpness"
       }
     },
     "focus": {
@@ -561,7 +562,8 @@ ReactUI
         "highlights": "Highlights",
         "whites" : "Whites",
         "blacks" : "Blacks",
-        "temperature" : "Temperature"
+        "temperature" : "Temperature",
+        "sharpness": "Sharpness"
       }
     },
     "brush": {
