@@ -34,6 +34,15 @@ whitelist:
   - jekyll-sitemap
 # include: ['_pages']
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - _apidocs/android/v*
+  - _apidocs/ios/v*
+  - _apidocs/html5/v*
+  - _apidocs/server/v*
+
 host: 0.0.0.0
 port: 5000
 

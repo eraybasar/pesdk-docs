@@ -20,6 +20,7 @@ GEM
     faraday (0.12.0.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.11.1)
+    fileutils (1.2.0)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     github-pages (134)
@@ -194,7 +195,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fileutils
   github-pages
+  json
 
 BUNDLED WITH
-  2.0.1
+   2.0.2
