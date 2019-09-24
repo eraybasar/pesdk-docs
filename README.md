@@ -17,10 +17,18 @@ To build the site:
 $ bundle exec jekyll build
 ```
 
-And launch it:
+And launch it with:
 
 ```sh
-$ bundle exec jekyll serve
+$ bundle exec jekyll serve --config _config.yml,_config_dev.yml
+```
+
+which will use the custom plugin `copy_static_apidocs.rb` to accelerate the build step.
+
+GitHub will deploy the page with the `--safe` option turned on which will disable the custom plugin and thus should not exclude the API docs:
+
+```sh
+$ bundle exec jekyll serve --safe true
 ```
 
 ## Definition of Meta tags

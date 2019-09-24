@@ -23,7 +23,7 @@ github_username:  imgly
 sass:
   sass_dir: _sass
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-gist
@@ -33,6 +33,11 @@ whitelist:
   - jekyll-gist
   - jekyll-sitemap
 # include: ['_pages']
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
 
 host: 0.0.0.0
 port: 5000

@@ -1,0 +1,5 @@
+exclude:
+  - _apidocs/android/v*
+  - _apidocs/ios/v*
+  - _apidocs/html5/v*
+  - _apidocs/server/v*
