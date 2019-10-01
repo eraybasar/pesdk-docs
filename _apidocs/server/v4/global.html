@@ -4312,6 +4312,39 @@
             </ul>
         </li>
     
+        <li class="item" data-name="SemanticVersion">
+            <span class="title">
+                <a href="SemanticVersion.html">SemanticVersion</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="SemanticVersion#major"><a href="SemanticVersion.html#major">major</a></li>
+            
+                <li data-name="SemanticVersion#minor"><a href="SemanticVersion.html#minor">minor</a></li>
+            
+                <li data-name="SemanticVersion#patch"><a href="SemanticVersion.html#patch">patch</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="SemanticVersion#equals"><a href="SemanticVersion.html#equals">equals</a></li>
+            
+                <li data-name="SemanticVersion#isMoreRecentThan"><a href="SemanticVersion.html#isMoreRecentThan">isMoreRecentThan</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="Server">
             <span class="title">
                 <a href="Server.html">Server</a>
@@ -4428,6 +4461,51 @@
         <h3 class="subsection-title">Members</h3>
 
         <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="correctSemVerPattern"><span class="type-signature ">constant</span>correctSemVerPattern</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>eslint-disable</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
             
 <dt>
     <div class="nameContainer">
@@ -4829,12 +4907,12 @@
     <div class="nameContainer">
         <h4 class="name" id="add">
             
-            add<span class="signature">(operation)</span>
+            add<span class="signature">(variation)</span>
         </h4>
     
         
         <div class="tag-source">
-            server/lib/editor/operations.js, line 45
+            server/lib/font-loader/loaders/base-font-loader.js, line 26
         </div>
         
     </div>
@@ -4845,7 +4923,7 @@
     
     
     <div class="description">
-        <p>Adds the given operation to the stack</p>
+        <p>Adds the given font to the list of fonts to load</p>
     </div>
     
 
@@ -4876,13 +4954,13 @@
 	
         <tr>
             
-                <td class="name"><code>operation</code></td>
+                <td class="name"><code>variation</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">PhotoEditorSDK.Operation</span>
+<span class="param-type">Object</span>
 
 
             
@@ -4945,12 +5023,12 @@
     <div class="nameContainer">
         <h4 class="name" id="add">
             
-            add<span class="signature">(variation)</span>
+            add<span class="signature">(operation)</span>
         </h4>
     
         
         <div class="tag-source">
-            server/lib/font-loader/loaders/base-font-loader.js, line 26
+            server/lib/editor/operations.js, line 45
         </div>
         
     </div>
@@ -4961,7 +5039,7 @@
     
     
     <div class="description">
-        <p>Adds the given font to the list of fonts to load</p>
+        <p>Adds the given operation to the stack</p>
     </div>
     
 
@@ -4992,13 +5070,13 @@
 	
         <tr>
             
-                <td class="name"><code>variation</code></td>
+                <td class="name"><code>operation</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">PhotoEditorSDK.Operation</span>
 
 
             
@@ -5166,7 +5244,7 @@
     
         
         <div class="tag-source">
-            server/lib/font-loader/loaders/base-font-loader.js, line 40
+            sdk/core/lib/pot-renderer.js, line 90
         </div>
         
     </div>
@@ -5177,7 +5255,7 @@
     
     
     <div class="description">
-        <p>Disposes the observers</p>
+        <p>Disposes this POT renderers</p>
     </div>
     
 
@@ -5237,7 +5315,7 @@
     
         
         <div class="tag-source">
-            sdk/core/lib/pot-renderer.js, line 90
+            server/lib/font-loader/loaders/base-font-loader.js, line 40
         </div>
         
     </div>
@@ -5248,7 +5326,7 @@
     
     
     <div class="description">
-        <p>Disposes this POT renderers</p>
+        <p>Disposes the observers</p>
     </div>
     
 
@@ -6620,12 +6698,12 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
     <div class="nameContainer">
         <h4 class="name" id="load">
             
-            load<span class="signature">()</span>
+            load<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
         </h4>
     
         
         <div class="tag-source">
-            server/lib/font-loader/loaders/base-font-loader.js, line 33
+            server/lib/frame.js, line 34
         </div>
         
     </div>
@@ -6636,7 +6714,7 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
     
     
     <div class="description">
-        <p>Loads the fonts</p>
+        <p>Loads the images of this frame</p>
     </div>
     
 
@@ -6680,6 +6758,35 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
     
     
     
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Promise
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
     
     
     
@@ -6807,12 +6914,12 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
     <div class="nameContainer">
         <h4 class="name" id="load">
             
-            load<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
+            load<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            server/lib/frame.js, line 34
+            server/lib/font-loader/loaders/base-font-loader.js, line 33
         </div>
         
     </div>
@@ -6823,7 +6930,7 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
     
     
     <div class="description">
-        <p>Loads the images of this frame</p>
+        <p>Loads the fonts</p>
     </div>
     
 
@@ -6867,35 +6974,6 @@ the existing operation. Otherwise, it creates and returns a new one.</p>
     
     
     
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        Promise
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
     
     
     

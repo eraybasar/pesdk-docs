@@ -267,6 +267,44 @@
             </ul>
         </li>
     
+        <li class="item" data-name="module.exports">
+            <span class="title">
+                <a href="module.html#.exports">exports</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="module.exports">
+            <span class="title">
+                <a href="module.html#.exports">exports</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="Operation">
             <span class="title">
                 <a href="Operation.html">Operation</a>
@@ -4330,7 +4368,7 @@
             
             <span class="subtitle">Typedefs</span>
             
-                <li data-name="Events"><a href="PhotoEditorSDK.UI.DesktopUI.html#Events">Events</a></li>
+                <li data-name="Events"><a href="PhotoEditorSDK.UI.ReactUI.html#Events">Events</a></li>
             
             </ul>
             <ul class="methods itemMembers">
@@ -5115,7 +5153,7 @@
             
             <span class="subtitle">Typedefs</span>
             
-                <li data-name="Events"><a href="PhotoEditorSDK.UI.DesktopUI.html#Events">Events</a></li>
+                <li data-name="Events"><a href="PhotoEditorSDK.UI.ReactUI.html#Events">Events</a></li>
             
             </ul>
             <ul class="methods itemMembers">
@@ -5602,12 +5640,286 @@
             </ul>
         </li>
     
+        <li class="item" data-name="SemanticVersion">
+            <span class="title">
+                <a href="SemanticVersion.html">SemanticVersion</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="SemanticVersion#major"><a href="SemanticVersion.html#major">major</a></li>
+            
+                <li data-name="SemanticVersion#minor"><a href="SemanticVersion.html#minor">minor</a></li>
+            
+                <li data-name="SemanticVersion#patch"><a href="SemanticVersion.html#patch">patch</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="SemanticVersion#equals"><a href="SemanticVersion.html#equals">equals</a></li>
+            
+                <li data-name="SemanticVersion#isMoreRecentThan"><a href="SemanticVersion.html#isMoreRecentThan">isMoreRecentThan</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
     </ul>
 </div>
 
     <div class="main">
         <h1 class="page-title" data-filename="module.html#.exports">Class: exports</h1>
         
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+        <div class="class-description"><p>Renders a watermark image with a clickable link.</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/react-ui/components/watermark-link.jsx, line 31
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>props.link</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    LINK_TO_PESDK_PAGE
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The link which should be opened on click.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>props.countCalls</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    DEFAULT_LIMIT
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>How many times the link should be opened.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>props.img</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The image source that should be displayed.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
 
 
 
@@ -5761,6 +6073,247 @@
     
     
     
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+        <div class="class-description"><p>Renders a watermark image with a clickable link.</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/desktop-ui/core/components/watermark-link.jsx, line 32
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>props.link</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    LINK_TO_PESDK_PAGE
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The link which should be opened on click.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>props.countCalls</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    DEFAULT_LIMIT
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>How many times the link should be opened.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>props.img</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The image source that should be displayed.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
