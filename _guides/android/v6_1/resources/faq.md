@@ -24,7 +24,7 @@ Unfortunately, this is a bug in gradle and java
 ```
 wget https://raw.githubusercontent.com/escline/InstallCert/master/InstallCert.java
 javac InstallCert.java
-java InstallCert artifactory.9elements.com
+java InstallCert artifactory.img.ly
 ```
 
 2. Navigate in the Console to your project folder and clear the gradle cache.

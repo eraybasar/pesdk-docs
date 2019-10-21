@@ -55,7 +55,7 @@ allprojects {
     repositories {
         jcenter()
         maven {
-             url "https://artifactory.9elements.com/artifactory/imgly"
+             url "https://artifactory.img.ly/artifactory/imgly"
         }
     }
 }
