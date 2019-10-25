@@ -296,4 +296,4 @@ UINavigationController *navigationController = [[UINavigationController alloc] i
 {% capture identifier %}{{page.title}}-{{page.version}}-NAVIGATION{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-To try these examples, and find out about more options please take a look at the sample project provided [here](https://github.com/imgly/pesdk-ios-examples).
+To try these examples, and find out about more options please take a look at the sample project provided in the {% include guides/ios/demo-repository.md %}.

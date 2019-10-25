@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Text # title as shown in the menu and
 description: The PhotoEditor SDK for iOS ships with a robust tool that provides all necessary functions for quickly adding text. Learn how to add custom fonts.
 menuitem: *title
-order: 4
+order: 8
 platform: ios
 version: v10
 category:

@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Text Design # title as shown in the menu and
 description: The PhotoEditor SDK for iOS ships with a robust Text Design Tool that merges input text with typography, creating stunning designs for a multitude of use-cases. 
 menuitem: *title
-order: 4
+order: 9
 platform: ios
 version: v10
 category:

@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Camera # title as shown in the menu and
 description: The PhotoEditor SDK offers a camera implementation for iOS to complement your editor, featuring essential camera components as well as live filters.
 menuitem: *title
-order: 0
+order: 2
 platform: ios
 version: v10
 category:

@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Overlays # title as shown in the menu and
 
 menuitem: *title
-order: 1
+order: 6
 platform: ios
 version: v10
 category:

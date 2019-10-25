@@ -27,7 +27,7 @@ The `.tool` case can be used to present any subclass of `PhotoEditToolController
 Here is the code for the current default set of menu items:
 
 ```swift
-/// Creates the default menu items (transform, filter, adjust, sticker, text, overlay, frame,
+/// Creates the default menu items (transform, filter, adjust, sticker, text, text design, overlay, frame,
 /// brush, focus and auto enhancement)
 public static var defaultItems: [PhotoEditMenuItem] {
   let menuItems: [MenuItem?] = [
