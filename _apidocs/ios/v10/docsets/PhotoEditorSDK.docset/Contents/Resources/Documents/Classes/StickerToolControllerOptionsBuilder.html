@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_3%2Fdocsets%2FPhotoEditorSDK%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_4%2Fdocsets%2FPhotoEditorSDK%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -1007,6 +1007,9 @@
                 <a class="nav-group-task-link" href="../Classes/StampGenerator.html">StampGenerator</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKStickerCategoryActionMenuItem">StickerCategoryActionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/StickerOptionsToolControllerOptionsBuilder.html">StickerOptionsToolControllerOptionsBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1605,7 +1608,8 @@ each sticker button and has the button and its corresponding sticker as paramete
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The index of the sticker category that should be selected when initially presenting the tool.
-If this index is larger than the number of available categories, the first category will be used.</p>
+If this index is larger than the number of available categories, the first category will be used.
+Default is <code>0</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1613,6 +1617,62 @@ If this index is larger than the number of available categories, the first categ
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">defaultStickerCategoryIndex</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ImglyKit@objc(cs)PESDKStickerToolControllerOptionsBuilder(py)personalStickersEnabled"></a>
+                    <a name="//apple_ref/swift/Property/personalStickersEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKStickerToolControllerOptionsBuilder(py)personalStickersEnabled">personalStickersEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the user can create personal stickers from the device&rsquo;s photo library. If <code>true</code> an action button is added as first item in the menu in front of the sticker categories which modally presents an <code>UIImagePickerController</code>
+for personal sticker creation. Personal stickers will be added to a personal sticker category which will be added between the action button and the regular sticker categories if it does not exist.
+Default is <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">personalStickersEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ImglyKit@objc(cs)PESDKStickerToolControllerOptionsBuilder(py)defaultPersonalStickerTintMode"></a>
+                    <a name="//apple_ref/swift/Property/defaultPersonalStickerTintMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKStickerToolControllerOptionsBuilder(py)defaultPersonalStickerTintMode">defaultPersonalStickerTintMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default tint mode for personal stickers. Default is <code><a href="../Enums/StickerTintMode.html#/c:@M@ImglyKit@E@PESDKStickerTintMode@PESDKStickerTintModeNone">StickerTintMode.none</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">defaultPersonalStickerTintMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/StickerTintMode.html">StickerTintMode</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1627,7 +1687,7 @@ If this index is larger than the number of available categories, the first categ
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-10-24)</p>
+      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-11-04)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

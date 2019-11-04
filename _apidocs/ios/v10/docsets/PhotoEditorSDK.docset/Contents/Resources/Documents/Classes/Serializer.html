@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_3%2Fdocsets%2FPhotoEditorSDK%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_4%2Fdocsets%2FPhotoEditorSDK%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -1007,6 +1007,9 @@
                 <a class="nav-group-task-link" href="../Classes/StampGenerator.html">StampGenerator</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKStickerCategoryActionMenuItem">StickerCategoryActionMenuItem</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/StickerOptionsToolControllerOptionsBuilder.html">StickerOptionsToolControllerOptionsBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1494,6 +1497,10 @@
                       <div class="abstract">
                         <p>Serializes a <code><a href="../Structs/PhotoEditModel.html">PhotoEditModel</a></code> object into a <code>Data</code> object.</p>
 
+<p>If the model contains embedded personal assets they will be sourced from <code>AssetCatalog.shared</code> and downloaded if necessary.
+If possible use <code>serialize(_ model: PhotoEditModel, with photo: PhotoRepresentation, includeImageData: Bool, assetCatalog: AssetCatalog, assetManager: AssetManager)</code>
+instead and provide the <code><a href="../Classes/AssetManager.html">AssetManager</a></code> so that cached data can be used if available.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -1553,6 +1560,104 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8ImglyKit10SerializerC9serialize_4with16includeImageData12assetCatalog0I7Manager10Foundation0H0VSgAA14PhotoEditModelV_AA0M14Representation_pSbAA05AssetJ0CAA0qK0CtFZ"></a>
+                    <a name="//apple_ref/swift/Method/serialize(_:with:includeImageData:assetCatalog:assetManager:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8ImglyKit10SerializerC9serialize_4with16includeImageData12assetCatalog0I7Manager10Foundation0H0VSgAA14PhotoEditModelV_AA0M14Representation_pSbAA05AssetJ0CAA0qK0CtFZ">serialize(_:with:includeImageData:assetCatalog:assetManager:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Serializes a <code><a href="../Structs/PhotoEditModel.html">PhotoEditModel</a></code> object into a <code>Data</code> object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">serialize</span><span class="p">(</span><span class="n">_</span> <span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Structs/PhotoEditModel.html">PhotoEditModel</a></span><span class="p">,</span> <span class="n">with</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PhotoRepresentation.html">PhotoRepresentation</a></span><span class="p">,</span> <span class="nv">includeImageData</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">assetCatalog</span><span class="p">:</span> <span class="kt"><a href="../Classes/AssetCatalog.html">AssetCatalog</a></span><span class="p">,</span> <span class="nv">assetManager</span><span class="p">:</span> <span class="kt"><a href="../Classes/AssetManager.html">AssetManager</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>model</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The model to serialize.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>photo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Protocols/PhotoRepresentation.html">PhotoRepresentation</a></code> object to pass to the serializer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>includeImageData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to include the image data in the returned <code>Data</code> object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetCatalog</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/AssetCatalog.html">AssetCatalog</a></code> that is used to find personal assets that need to be embedded in the serialization.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetManager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/AssetManager.html">AssetManager</a></code> that is used to find personal asset data that needs to be embedded in the serialization.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The serialized <code><a href="../Structs/PhotoEditModel.html">PhotoEditModel</a></code> object, optionally also containing the photo.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -1561,7 +1666,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-10-24)</p>
+      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-11-04)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
