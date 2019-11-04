@@ -43,7 +43,8 @@ func photoEditViewController(_ photoEditViewController: PhotoEditViewController,
 To set the initial editor settings, you can deserialize a `Data` object containing a previously serialized settings file using the `Deserializer` class. A settings file contains the serialized `PhotoEditModel` and the original input image as a `UIImage` object. After a successful deserialization, both of these are returned in a `DeserializationResult` object and may be used to fully restore the previous editing state. This can be done by using the deserialized image and model to initialize and present a new `PhotoEditViewController` instance:
 
 ```swift
-let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: nil)
+let assetCatalog = AssetCatalog.sharedItems
+let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: nil, assetCatalog: assetCatalog)
 if let model = deserializationResult.model, let photo = deserializationResult.photo {
   let photoAsset: Photo
 
@@ -57,7 +58,10 @@ if let model = deserializationResult.model, let photo = deserializationResult.ph
     fatalError()
   }
 
-  let photoEditViewController = PhotoEditViewController(photoAsset: photoAsset, configuration: Configuration(), photoEditModel: model)
+  let configuration = Configuration { builder in
+    builder.assetCatalog = assetCatalog
+  }
+  let photoEditViewController = PhotoEditViewController(photoAsset: photoAsset, configuration: configuration, photoEditModel: model)
 
   present(photoEditViewController, animated: true, completion: nil)
 }
@@ -68,9 +72,13 @@ To apply existing settings to a different image, you need to pass the new images
 ```swift
 if let inputImage = UIImage(named: "example_image"), let data = loadPredefinedSettingsData() {
   let photo = Photo(image: inputImage)
-  let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: inputImage.size)
+  let assetCatalog = AssetCatalog.sharedItems
+  let deserializationResult = Deserializer.deserialize(data: data, imageDimensions: inputImage.size, assetCatalog: assetCatalog)
   if let model = deserializationResult.model {
-    let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: Configuration(), photoEditModel: model)
+    let configuration = Configuration { builder in
+      builder.assetCatalog = assetCatalog
+    }
+    let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: configuration, photoEditModel: model)
 
     present(photoEditViewController, animated: true, completion: nil)
   }
