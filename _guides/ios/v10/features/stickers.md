@@ -29,7 +29,7 @@ The tool is implemented in the `StickerToolController` class and can be customiz
 Stickers are inserted into the SDK using the static property `StickerCategory.all`, which is an array of `StickerCategory` objects.
 A `StickerCategory` object holds the metadata of a sticker category, such as its preview image or the title and has an array of `Sticker` objects,
 which again hold the metadata for a `Sticker`, such as its `imageURL` and `thumbnailURL`. The `Sticker` class can handle local and remote resources.
-Supported formats are jpeg and png
+Supported formats are jpeg and png.
 
 {% capture first_snippet %}
 Swift
@@ -107,4 +107,46 @@ PESDKStickerCategory.all = [categories copy];
 
 {% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ADDSTICKERS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+## Personal stickers
+
+This feature is disabled by default. It can be configured with [`StickerToolControllerOptions.personalStickersEnabled`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/StickerToolControllerOptions.html#/c:@M@ImglyKit@objc(cs)PESDKStickerToolControllerOptions(py)personalStickersEnabled).
+If enabled the end user can create personal stickers from the device's photo library. A button is added as first item
+in the menu in front of the sticker categories which modally presents an image selection dialog for personal sticker creation.
+Personal stickers will be added to a personal sticker category called "Custom" with the identifier `"imgly_sticker_category_personal"`. The personal sticker category will be added between the button and the regular sticker categories if it does not exist.
+
+You can configure the tint mode of all of these personal stickers with the [`StickerToolControllerOptions.defaultPersonalStickerTintMode`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/StickerToolControllerOptions.html#/c:@M@ImglyKit@objc(cs)PESDKStickerToolControllerOptions(py)defaultPersonalStickerTintMode) option.
+
+Please note that these types of personal stickers are always included in serialization files, which can increase the size of such a serialization
+by quite a lot. 
+
+{% capture first_snippet %}
+Swift
+---
+```swift
+let configuration = Configuration { builder in
+  builder.configureStickerToolController { options in
+    options.personalStickersEnabled = true
+    options.defaultPersonalStickerTintMode = .none
+  }
+}
+```
+{% endcapture %}
+
+{% capture second_snippet %}
+Objective-C
+---
+```objc
+PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:^(PESDKConfigurationBuilder * _Nonnull builder) {
+  [builder configureStickerToolController:^(PESDKStickerToolControllerOptionsBuilder * _Nonnull options) {
+    options.personalStickersEnabled = YES;
+    options.defaultPersonalStickerTintMode = PESDKStickerTintModeNone;
+  }];
+}];
+```
+{% endcapture %}
+
+{% assign snippets = "" | split: "" | push: first_snippet | push: second_snippet %}
+{% capture identifier %}{{page.title}}-{{page.version}}-PERSONALSTICKERS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}

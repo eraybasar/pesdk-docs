@@ -23,7 +23,7 @@ published: true # Either published or not
 
 ## Requirements
 
-PhotoEditor SDK 10 requires Xcode 11.0, Swift 5.1 and iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
+The latest stable release of PhotoEditor SDK requires the latest stable release of Xcode and Swift. Please see the [changelog](https://github.com/imgly/pesdk-ios-build/blob/master/CHANGELOG.md) for details. PhotoEditor SDK requires iOS 9 and above. If you have to use older versions of Swift or support older versions of iOS, please have a look at previous versions.
 
 ## CocoaPods
 
