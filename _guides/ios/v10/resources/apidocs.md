@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 
 redirect_to:
-  - http://docs.videoeditorsdk.com/apidocs/ios/v10_4/
+  - http://docs.photoeditorsdk.com/apidocs/ios/v10_4/
 ---
