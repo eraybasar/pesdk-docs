@@ -112,7 +112,7 @@ PESDKStickerCategory.all = [categories copy];
 ## Personal stickers
 
 This feature is disabled by default. It can be configured with [`StickerToolControllerOptions.personalStickersEnabled`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/StickerToolControllerOptions.html#/c:@M@ImglyKit@objc(cs)PESDKStickerToolControllerOptions(py)personalStickersEnabled).
-If enabled the end user can create personal stickers from the device's photo library. A button is added as first item
+If enabled, the end user can create personal stickers from the device's photo library. A button is added as first item
 in the menu in front of the sticker categories which modally presents an image selection dialog for personal sticker creation.
 Personal stickers will be added to a personal sticker category called "Custom" with the identifier `"imgly_sticker_category_personal"`. The personal sticker category will be added between the button and the regular sticker categories if it does not exist.
 
