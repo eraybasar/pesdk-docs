@@ -29,7 +29,7 @@ Here is the code for the current default set of menu items:
 ```swift
 /// Creates the default menu items (transform, filter, adjust, sticker, text, text design, overlay, frame,
 /// brush, focus and auto enhancement)
-public static var defaultItems: [PhotoEditMenuItem] {
+func createDefaultItems() -> [PhotoEditMenuItem] {
   let menuItems: [MenuItem?] = [
     ToolMenuItem.createTransformToolItem(),
     ToolMenuItem.createFilterToolItem(),
@@ -57,4 +57,13 @@ public static var defaultItems: [PhotoEditMenuItem] {
 
   return photoEditMenuItems
 }
+
+/// Initialize and configure a `PhotoEditViewController` with the menu items defined above
+let configuration = Configuration { builder in
+  builder.configurePhotoEditViewController { options in
+    options.menuItems = createDefaultItems()
+  }
+}
+let photoEditViewController = PhotoEditViewController(photoAsset: photo, configuration: configuration)
+// ...
 ```
