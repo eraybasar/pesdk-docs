@@ -50,7 +50,7 @@ In order to change the available frames or add new frames, start with a default 
 
 > Please make sure you put the PNG files into the `res/raw` **or** the `res/drawable-nodpi` folder, otherwise the frame is scaled by Android.
 
-For dynamic frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following five parameters:
+For dynamic frames each [`FrameItem`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/item/FrameItem.html) takes the following 3 parameters:
 
 1. Frame identifier, this should be unique. It is currently used for serialization only
 2. Custom patch model, which describes the 12-patch layout
