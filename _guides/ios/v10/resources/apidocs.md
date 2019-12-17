@@ -13,5 +13,5 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 
 redirect_to:
-  - http://docs.photoeditorsdk.com/apidocs/ios/v10_6/
+  - http://docs.photoeditorsdk.com/apidocs/ios/v10_7/
 ---
