@@ -236,24 +236,9 @@
             </span>
             <ul class="members itemMembers">
             
-            </ul>
-            <ul class="typedefs itemMembers">
+            <span class="subtitle">Members</span>
             
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="module.exports">
-            <span class="title">
-                <a href="module.html#.exports">exports</a>
-                
-            </span>
-            <ul class="members itemMembers">
+                <li data-name="module.exports#update"><a href="module.html#.exports#update">update</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -274,6 +259,10 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="module.exports#update"><a href="module.html#.exports#update">update</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -292,6 +281,33 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="module.exports#update"><a href="module.html#.exports#update">update</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="module.exports">
+            <span class="title">
+                <a href="module.html#.exports">exports</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="module.exports#update"><a href="module.html#.exports#update">update</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -5689,6 +5705,166 @@
     exports
     </h2>
     
+        <div class="class-description"><p>A component that performs hit testing and canvas dragging behaviour.</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            ui/desktop-ui/core/components/screens/editor/controls/canvas-controls-component.jsx, line 35
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="update">update</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Updates the dimensions and stuff</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
         <div class="class-description"><p>Renders a watermark image with a clickable link.</p></div>
     
 </header>
@@ -5908,62 +6084,22 @@
     
 
     
+        <h3 class="subsection-title">Members</h3>
 
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-        <div class="class-description"><p>A component that performs hit testing and canvas dragging behaviour.</p></div>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
+        <dl>
+            
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            ui/desktop-ui/core/components/screens/editor/controls/canvas-controls-component.jsx, line 35
-        </div>
-        
+        <h4 class="name" id="update">update</h4>
     </div>
-
+    
     
 </dt>
 <dd>
     
-    
-
-    
-    
-    
-    
+    <div class="description">
+        <p>Updates the dimensions and stuff</p>
+    </div>
     
     
     
@@ -5993,140 +6129,9 @@
 
     
     
-
-    
-
-    
-    
-    
-    
-    
-    
-    
 </dd>
 
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-<section>
-
-<header>
-    <h2>
-    exports
-    </h2>
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id=".exports">
-            
-            new module.exports<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            sdk/operations/art-filter-operation/filters/pad-utils.js, line 4
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
+        </dl>
     
 
     
@@ -6368,6 +6373,213 @@
 
     
 
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="update">update</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Updates the dimensions and stuff</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+<section>
+
+<header>
+    <h2>
+    exports
+    </h2>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".exports">
+            
+            new module.exports<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            sdk/operations/art-filter-operation/filters/pad-utils.js, line 4
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="update">update</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Updates the dimensions and stuff</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
     
 
     
