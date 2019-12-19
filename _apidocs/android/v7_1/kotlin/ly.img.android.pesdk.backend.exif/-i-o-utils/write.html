@@ -1,0 +1,212 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOUtils.write - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">IOUtils</a>&nbsp;/&nbsp;<a href="./write.html">write</a><br/>
+<br/>
+<h1>write</h1>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.OutputStream)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes bytes from a <code>byte[]</code> to an <code>OutputStream</code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the byte array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes bytes from a <code>byte[]</code> to chars on a <code>Writer</code> using the default character encoding of the platform. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(byte[])">String#String(byte[])</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the byte array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer, kotlin.String)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.ByteArray, java.io.Writer, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes bytes from a <code>byte[]</code> to chars on a <code>Writer</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(byte[], java.lang.String)">String#String(byte[], String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the byte array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.Writer)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>char[]</code> to a <code>Writer</code> using the default character encoding of the platform.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the char array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>char[]</code> to bytes on an <code>OutputStream</code>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(char[])">String#String(char[])</a></code> and <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes()">String#getBytes()</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the char array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream, kotlin.String)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.CharArray, java.io.OutputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>char[]</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(char[])">String#String(char[])</a></code> and <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes(java.lang.String)">String#getBytes(String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html"><span class="identifier">CharArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the char array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.Writer)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>String</code> to a <code>Writer</code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>String</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>String</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes()">String#getBytes()</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>String</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream, kotlin.String)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(kotlin.String, java.io.OutputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>String</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes(java.lang.String)">String#getBytes(String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>String</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.Writer)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.Writer)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>StringBuffer</code> to a <code>Writer</code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>StringBuffer</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>StringBuffer</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes()">String#getBytes()</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>StringBuffer</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream, kotlin.String)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream, kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream, kotlin.String)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$write(java.lang.StringBuffer, java.io.OutputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Writes chars from a <code>StringBuffer</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes(java.lang.String)">String#getBytes(String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html"><span class="identifier">StringBuffer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>StringBuffer</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+</BODY>
+</HTML>

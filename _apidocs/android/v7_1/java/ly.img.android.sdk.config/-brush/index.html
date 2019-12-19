@@ -1,0 +1,238 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Brush - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.sdk.config</a>&nbsp;/&nbsp;<a href="./index.html">Brush</a><br/>
+<br/>
+<h1>Brush</h1>
+<code><span class="keyword">class </span><span class="identifier">Brush</span></code>
+<p>Configuration options for <code>Tool.BRUSH</code>.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Brush</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Configuration options for <code>Tool.BRUSH</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="apply-on.html">applyOn</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">applyOn</span><span class="symbol">(</span><span class="identifier">settingsList</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.SettingsList</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-actions.html">getActions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getActions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-brush-action/index.html"><span class="identifier">BrushAction</span></a><span class="symbol">&gt;</span></code>
+<p>Defines all allowed actions for the brush tool menu. Only buttons for allowed actions are
+visible and shown in the given order.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-canvas-actions.html">getCanvasActions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCanvasActions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-brush-canvas-action/index.html"><span class="identifier">BrushCanvasAction</span></a><span class="symbol">&gt;</span></code>
+<p>Defines all allowed actions for the brush tool that are displayed as overlay buttons on
+the canvas.
+Only buttons for allowed actions are visible.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-colors.html">getColors</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getColors</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-color-palette/index.html"><span class="identifier">ColorPalette</span></a><span class="symbol">&gt;</span></code>
+<p>Defines all available colors that can be applied to the brush.
+The color pipette is always added.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-default-color.html">getDefaultColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-color/index.html"><span class="identifier">Color</span></a></code>
+<p>Defines the default brush color.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-default-hardness.html">getDefaultHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultHardness</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Float</span></code>
+<p>The default hardness factor of the brush.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-default-size.html">getDefaultSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Float</span></code>
+<p>The default size of the brush. This value is measured in relation to the
+smaller side of the image that the user is editing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-maximum-hardness.html">getMaximumHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMaximumHardness</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Float</span></code>
+<p>The maximum hardness factor a brush can have.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-maximum-size.html">getMaximumSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMaximumSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Float</span></code>
+<p>The maximum size that a brush can have. This value is measured in relation to the
+smaller side of the image that the user is editing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-minimum-hardness.html">getMinimumHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMinimumHardness</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Float</span></code>
+<p>The minimum hardness factor a brush can have.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-minimum-size.html">getMinimumSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMinimumSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Float</span></code>
+<p>The minimum size that a brush can have. This value is measured in relation to the
+smaller side of the image that the user is editing. If the value is <code>null</code> the
+minimum brush size is set to the absolute size of a single pixel of the edited image.
+The default value is 0 and will mean, 1 Pixel at the minimum.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-actions.html">setActions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setActions</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-brush-action/index.html"><span class="identifier">BrushAction</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Defines all allowed actions for the brush tool menu. Only buttons for allowed actions are
+visible and shown in the given order.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-canvas-actions.html">setCanvasActions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCanvasActions</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-brush-canvas-action/index.html"><span class="identifier">BrushCanvasAction</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Defines all allowed actions for the brush tool that are displayed as overlay buttons on
+the canvas.
+Only buttons for allowed actions are visible.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-colors.html">setColors</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setColors</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-color-palette/index.html"><span class="identifier">ColorPalette</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Defines all available colors that can be applied to the brush.
+The color pipette is always added.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-default-color.html">setDefaultColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDefaultColor</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-color/index.html"><span class="identifier">Color</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Defines the default brush color.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-default-hardness.html">setDefaultHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDefaultHardness</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The default hardness factor of the brush.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-default-size.html">setDefaultSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDefaultSize</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The default size of the brush. This value is measured in relation to the
+smaller side of the image that the user is editing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-maximum-hardness.html">setMaximumHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMaximumHardness</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The maximum hardness factor a brush can have.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-maximum-size.html">setMaximumSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMaximumSize</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The maximum size that a brush can have. This value is measured in relation to the
+smaller side of the image that the user is editing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-minimum-hardness.html">setMinimumHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMinimumHardness</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The minimum hardness factor a brush can have.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-minimum-size.html">setMinimumSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMinimumSize</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The minimum size that a brush can have. This value is measured in relation to the
+smaller side of the image that the user is editing. If the value is <code>null</code> the
+minimum brush size is set to the absolute size of a single pixel of the edited image.
+The default value is 0 and will mean, 1 Pixel at the minimum.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

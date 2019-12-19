@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NativeVideoEncoder - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.encoder.video</a>&nbsp;/&nbsp;<a href="./index.html">NativeVideoEncoder</a><br/>
+<br/>
+<h1>NativeVideoEncoder</h1>
+<code><span class="keyword">class </span><span class="identifier">NativeVideoEncoder</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion/index.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">NativeVideoEncoder</span><span class="symbol">(</span><span class="identifier">audioSourceUri</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">, </span><span class="identifier">outputFilePath</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">frameRate</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">bitRate</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">mimeType</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">containerFormat</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">audioStartAtNanosecond</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">, </span><span class="identifier">audioEndAtNanosecond</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">, </span><span class="identifier">iFrameIntervalInSeconds</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add-frame.html">addFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addFrame</span><span class="symbol">(</span><span class="identifier">texture</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.textures.GlTexture</span><span class="symbol">, </span><span class="identifier">presentationTimeNanoseconds</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="copy-one-audio-frame-to-muxer.html">copyOneAudioFrameToMuxer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">copyOneAudioFrameToMuxer</span><span class="symbol">(</span><span class="identifier">maxPresentationTimeInNanoseconds</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">, </span><span class="identifier">sendEndOfStream</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Copy one Audio frame from input to output.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="disable.html">disable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="enable.html">enable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finalize-video.html">finalizeVideo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalizeVideo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-audio-encoder-input-buffers.html">getAudioEncoderInputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAudioEncoderInputBuffers</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-input-buffer-compat/index.html"><span class="identifier">InputBufferCompat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-audio-encoder-output-buffers.html">getAudioEncoderOutputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAudioEncoderOutputBuffers</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-output-buffer-compat/index.html"><span class="identifier">OutputBufferCompat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-presentation-time.html">getPresentationTime</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPresentationTime</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-video-encoder-output-buffers.html">getVideoEncoderOutputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getVideoEncoderOutputBuffers</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-output-buffer-compat/index.html"><span class="identifier">OutputBufferCompat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-audio-encoder-input-buffers.html">setAudioEncoderInputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAudioEncoderInputBuffers</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-input-buffer-compat/index.html"><span class="identifier">InputBufferCompat</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-audio-encoder-output-buffers.html">setAudioEncoderOutputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAudioEncoderOutputBuffers</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-output-buffer-compat/index.html"><span class="identifier">OutputBufferCompat</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-presentation-time.html">setPresentationTime</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setPresentationTime</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-video-encoder-output-buffers.html">setVideoEncoderOutputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setVideoEncoderOutputBuffers</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-output-buffer-compat/index.html"><span class="identifier">OutputBufferCompat</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

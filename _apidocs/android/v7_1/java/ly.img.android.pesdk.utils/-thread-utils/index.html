@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ThreadUtils - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">ThreadUtils</a><br/>
+<br/>
+<h1>ThreadUtils</h1>
+<code><span class="keyword">class </span><span class="identifier">ThreadUtils</span></code>
+<p>This class test if Main runPipline</p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion/index.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-main-thread-runnable/index.html">MainThreadRunnable</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">MainThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-task/index.html"><span class="identifier">ThreadUtils.Task</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-replace-thread-runnable/index.html">ReplaceThreadRunnable</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ReplaceThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-worker-thread-runnable/index.html"><span class="identifier">ThreadUtils.WorkerThreadRunnable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-sequenced-thread-runnable/index.html">SequencedThreadRunnable</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">SequencedThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-worker-thread-runnable/index.html"><span class="identifier">ThreadUtils.WorkerThreadRunnable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-task/index.html">Task</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Task</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Runnable</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-worker-thread-runnable/index.html">WorkerThreadRunnable</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">WorkerThreadRunnable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-task/index.html"><span class="identifier">ThreadUtils.Task</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add-task.html">addTask</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addTask</span><span class="symbol">(</span><span class="identifier">runnable</span><span class="symbol">:</span>&nbsp;<a href="-worker-thread-runnable/index.html"><span class="identifier">ThreadUtils.WorkerThreadRunnable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Run parallel in background but serialized executed in a group.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

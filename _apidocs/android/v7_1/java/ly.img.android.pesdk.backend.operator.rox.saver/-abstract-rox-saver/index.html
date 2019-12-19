@@ -1,0 +1,185 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractRoxSaver - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.rox.saver</a>&nbsp;/&nbsp;<a href="./index.html">AbstractRoxSaver</a><br/>
+<br/>
+<h1>AbstractRoxSaver</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractRoxSaver</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandlerBindable</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-setup-init/index.html">SetupInit</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SetupInit</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AbstractRoxSaver</span><span class="symbol">(</span><span class="identifier">saveOperation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox/-rox-save-operation/index.html"><span class="identifier">RoxSaveOperation</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="do-a-chunk-of-work.html">doAChunkOfWork</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doAChunkOfWork</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finishing-export.html">finishingExport</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">finishingExport</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-iteration-step.html">getIterationStep</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getIterationStep</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="interrupt-chunk-bench.html">interruptChunkBench</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">interruptChunkBench</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-finished.html">isFinished</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFinished</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-started.html">isStarted</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isStarted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="process-chunk.html">processChunk</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">processChunk</span><span class="symbol">(</span><span class="identifier">iterationStep</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="request-tile.html">requestTile</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestTile</span><span class="symbol">(</span><span class="identifier">area</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">sampling</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-iteration-step.html">setIterationStep</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setIterationStep</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-state-handler.html">setStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setStateHandler</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-chunk-bench.html">startChunkBench</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">startChunkBench</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-export.html">startExport</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">startExport</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-preview-texture.html">updatePreviewTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updatePreviewTexture</span><span class="symbol">(</span><span class="identifier">glTexture</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.textures.GlTexture</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-rox-saver-j-p-e-g/index.html">RoxSaverJPEG</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxSaverJPEG</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractRoxSaver</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-saver-p-n-g/index.html">RoxSaverPNG</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxSaverPNG</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractRoxSaver</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-saver-video/index.html">RoxSaverVideo</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxSaverVideo</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractRoxSaver</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

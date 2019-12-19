@@ -1,0 +1,132 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ConfigMap - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.linker</a>&nbsp;/&nbsp;<a href="./index.html">ConfigMap</a><br/>
+<br/>
+<h1>ConfigMap</h1>
+<code><span class="keyword">class </span><span class="identifier">ConfigMap</span><span class="symbol">&lt;</span><span class="identifier">Data</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Iterable</span><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">Iterable</span><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">KMappedMarker</span></code>
+<p></p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion/index.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ConfigMap</span><span class="symbol">(</span><span class="identifier">typeClass</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ConfigMap</span><span class="symbol">(</span><span class="identifier">parcel</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add.html">add</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">add</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">Data</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span></code>
+<p>Add an AssetConfig</p>
+<code><span class="keyword">fun </span><span class="identifier">add</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">dataList</span><span class="symbol">:</span>&nbsp;<span class="identifier">Data</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-or-replace.html">addOrReplace</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><s><span class="identifier">addOrReplace</span></s><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">dataList</span><span class="symbol">:</span>&nbsp;<span class="identifier">Data</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span></code><code><span class="keyword">fun </span><s><span class="identifier">addOrReplace</span></s><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">Data</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span></code>
+<p>USE WITH CAUTION!
+This add or replace an AssetConfig</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="add-to-versioning.html">addToVersioning</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addToVersioning</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">Data</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="clear.html">clear</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get.html">get</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Data</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">version</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-sem-version/index.html"><span class="identifier">SemVersion</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Data</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="iterator.html">iterator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">iterator</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.Iterator</span><span class="symbol">&lt;</span><span class="identifier">Data</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove.html">remove</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">remove</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">parcel</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

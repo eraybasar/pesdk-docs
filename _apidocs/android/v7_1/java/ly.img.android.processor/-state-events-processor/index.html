@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StateEventsProcessor - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.processor</a>&nbsp;/&nbsp;<a href="./index.html">StateEventsProcessor</a><br/>
+<br/>
+<h1>StateEventsProcessor</h1>
+<code><span class="identifier">@SupportedAnnotationTypes</span><span class="symbol">(</span>("ly.img.android.pesdk.annotations.LegacyEvent","ly.img.android.pesdk.annotations.ImglyEvents", "ly.img.android.pesdk.annotations.StateEvents", "ly.img.android.pesdk.annotations.EventDispatcher")<span class="symbol">, </span>("ly.img.android.pesdk.annotations.LegacyEvent","ly.img.android.pesdk.annotations.ImglyEvents", "ly.img.android.pesdk.annotations.StateEvents", "ly.img.android.pesdk.annotations.EventDispatcher")<span class="symbol">, </span>("ly.img.android.pesdk.annotations.LegacyEvent","ly.img.android.pesdk.annotations.ImglyEvents", "ly.img.android.pesdk.annotations.StateEvents", "ly.img.android.pesdk.annotations.EventDispatcher")<span class="symbol">, </span>("ly.img.android.pesdk.annotations.LegacyEvent","ly.img.android.pesdk.annotations.ImglyEvents", "ly.img.android.pesdk.annotations.StateEvents", "ly.img.android.pesdk.annotations.EventDispatcher")<span class="symbol">)</span> <span class="identifier">@SupportedSourceVersion</span><span class="symbol">(</span>SourceVersion.RELEASE_8<span class="symbol">)</span> <span class="identifier">@SupportedOptions</span><span class="symbol">(</span>("useAndroidX", "finalPackage")<span class="symbol">, </span>("useAndroidX", "finalPackage")<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">StateEventsProcessor</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.AbstractProcessor</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion/index.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">StateEventsProcessor</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-supported-options.html">getSupportedOptions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSupportedOptions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.Set</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="init.html">init</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">init</span><span class="symbol">(</span><span class="identifier">processingEnv</span><span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.ProcessingEnvironment</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="process.html">process</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">process</span><span class="symbol">(</span><span class="identifier">set</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Set</span><span class="symbol">&lt;</span><span class="identifier">? extends javax.lang.model.element.TypeElement</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">roundEnvironment</span><span class="symbol">:</span>&nbsp;<span class="identifier">javax.annotation.processing.RoundEnvironment</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-d-i-s-p-a-t-c-h-e-r_-c-l-a-s-s_-n-a-m-e.html">EVENT_DISPATCHER_CLASS_NAME</a></p>
+</td>
+<td>
+<code><span class="identifier">EVENT_DISPATCHER_CLASS_NAME</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-i-n-t-e-r-f-a-c-e-s_-p-a-c-k-a-g-e.html">EVENT_INTERFACES_PACKAGE</a></p>
+</td>
+<td>
+<code><span class="identifier">EVENT_INTERFACES_PACKAGE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-i-n-t-e-r-f-a-c-e-s_-p-r-e-f-i-x.html">EVENT_INTERFACES_PREFIX</a></p>
+</td>
+<td>
+<code><span class="identifier">EVENT_INTERFACES_PREFIX</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-v-e-n-t_-p-a-c-k-a-g-e_-s-u-f-f-i-x.html">EVENT_PACKAGE_SUFFIX</a></p>
+</td>
+<td>
+<code><span class="identifier">EVENT_PACKAGE_SUFFIX</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-n-t-e-r-f-a-c-e_-n-a-m-e_-m-a-i-n_-t-h-r-e-a-d.html">INTERFACE_NAME_MAIN_THREAD</a></p>
+</td>
+<td>
+<code><span class="identifier">INTERFACE_NAME_MAIN_THREAD</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-n-t-e-r-f-a-c-e_-n-a-m-e_-s-y-n-c-h-r-o-n-y.html">INTERFACE_NAME_SYNCHRONY</a></p>
+</td>
+<td>
+<code><span class="identifier">INTERFACE_NAME_SYNCHRONY</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-e-g-a-c-y_-e-v-e-n-t_-c-l-a-s-s_-n-a-m-e.html">LEGACY_EVENT_CLASS_NAME</a></p>
+</td>
+<td>
+<code><span class="identifier">LEGACY_EVENT_CLASS_NAME</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-f-f-i-x_-m-a-i-n_-t-h-r-e-a-d.html">SUFFIX_MAIN_THREAD</a></p>
+</td>
+<td>
+<code><span class="identifier">SUFFIX_MAIN_THREAD</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-f-f-i-x_-s-y-n-c-h-r-o-n-y.html">SUFFIX_SYNCHRONY</a></p>
+</td>
+<td>
+<code><span class="identifier">SUFFIX_SYNCHRONY</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

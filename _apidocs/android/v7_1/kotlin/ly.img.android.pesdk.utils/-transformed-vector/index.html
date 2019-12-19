@@ -1,0 +1,412 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransformedVector - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">TransformedVector</a><br/>
+<br/>
+<h1>TransformedVector</h1>
+<code><span class="keyword">class </span><span class="identifier">TransformedVector</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-resettable/index.html"><span class="identifier">Resettable</span></a></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion/index.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">companion</span> <span class="keyword">object </span><span class="identifier">Companion</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/index.html"><span class="identifier">Recycler</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">TransformedVector</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-transformable-float/index.html">TransformableFloat</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">inner</span> <span class="keyword">class </span><span class="identifier">TransformableFloat</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-transformable-value/index.html">TransformableValue</a></p>
+</td>
+<td>
+<code><span class="keyword">inner</span> <span class="keyword">class </span><span class="identifier">TransformableValue</span><span class="symbol">&lt;</span><span class="keyword">in</span>&nbsp;<span class="identifier">R</span><span class="symbol">, </span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TransformedVector</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$<init>(kotlin.Boolean)/isAtomic">isAtomic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="also-recyclable.html">alsoRecyclable</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">alsoRecyclable</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destination-height.html">destinationHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">destinationHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destination-position-x.html">destinationPositionX</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">destinationPositionX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destination-position-y.html">destinationPositionY</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">destinationPositionY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destination-radius.html">destinationRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">destinationRadius</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destination-rotation.html">destinationRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">destinationRotation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destination-width.html">destinationWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">destinationWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-atomic.html">isAtomic</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isAtomic</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="lock.html">lock</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">lock</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantLock.html"><span class="identifier">ReentrantLock</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-height-long-side.html">relativeSourceHeightLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">relativeSourceHeightLongSide</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-height-short-side.html">relativeSourceHeightShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">relativeSourceHeightShortSide</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-position-x.html">relativeSourcePositionX</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">relativeSourcePositionX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-position-y.html">relativeSourcePositionY</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">relativeSourcePositionY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-radius-long-side.html">relativeSourceRadiusLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">relativeSourceRadiusLongSide</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-radius-short-side.html">relativeSourceRadiusShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">relativeSourceRadiusShortSide</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-width-long-side.html">relativeSourceWidthLongSide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">relativeSourceWidthLongSide</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="relative-source-width-short-side.html">relativeSourceWidthShortSide</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">relativeSourceWidthShortSide</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-height.html">sourceHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sourceHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-position-x.html">sourcePositionX</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">sourcePositionX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-position-y.html">sourcePositionY</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">sourcePositionY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-radius.html">sourceRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sourceRadius</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-rotation.html">sourceRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sourceRotation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-width.html">sourceWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sourceWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="recycle.html">recycle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="reset.html">reset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reset</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="respect-lock.html">respectLock</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">respectLock</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$respectLock(kotlin.Function0((kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination.html">setDestination</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestination</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setDestination</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestination(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-position.html">setDestinationPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestinationPosition(kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestinationPosition(kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-destination-position-offset.html">setDestinationPositionOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDestinationPositionOffset</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestinationPositionOffset(kotlin.Float, kotlin.Float)/offsetX">offsetX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setDestinationPositionOffset(kotlin.Float, kotlin.Float)/offsetY">offsetY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source.html">setRelativeSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Double.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Double.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Double.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Double.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Double.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Double.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Double.NaN<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSource(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Float.NaN<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-relative-source-position.html">setRelativeSourcePosition</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRelativeSourcePosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSourcePosition(kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setRelativeSourcePosition(kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source.html">setSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourcePositionX<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourcePositionY<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourceRotation<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourcePositionX<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourcePositionY<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourceRotation<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourcePositionX<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourcePositionY<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSource(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.sourceRotation<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-position.html">setSourcePosition</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourcePosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSourcePosition(kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSourcePosition(kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-position-offset.html">setSourcePositionOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSourcePositionOffset</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSourcePositionOffset(kotlin.Float, kotlin.Float)/offsetX">offsetX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$setSourcePositionOffset(kotlin.Float, kotlin.Float)/offsetY">offsetY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-transformation.html">updateTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.MultiRect, ly.img.android.pesdk.backend.model.chunk.MultiRect)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.MultiRect, ly.img.android.pesdk.backend.model.chunk.MultiRect)/destination">destination</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Int, kotlin.Int)/transformation">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Int, kotlin.Int)/sourceContextWidth">sourceContextWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Int, kotlin.Int)/sourceContextHeight">sourceContextHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Float, kotlin.Float)/transformation">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Float, kotlin.Float)/sourceContextWidth">sourceContextWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Float, kotlin.Float)/sourceContextHeight">sourceContextHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">updateTransformation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Double, kotlin.Double)/transformation">transformation</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Double, kotlin.Double)/sourceContextWidth">sourceContextWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.utils.TransformedVector$updateTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation, kotlin.Double, kotlin.Double)/sourceContextHeight">sourceContextHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/on-recycle.html">onRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRecycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="obtain.html">obtain</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TransformedVector</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Companion Object Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/obtain-in.html">obtainIn</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">obtainIn</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.Recycler$obtainIn(ly.img.android.pesdk.backend.model.chunk.RecyclerMark)/pool">pool</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler-mark/index.html"><span class="identifier">RecyclerMark</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/index.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/recycle.html">recycle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.Recycler$recycle(ly.img.android.pesdk.backend.model.chunk.Recycler.T)/obj">obj</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/index.html#T"><span class="identifier">T</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/wasted-object-detected.html">wastedObjectDetected</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">wastedObjectDetected</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.Recycler$wastedObjectDetected(ly.img.android.pesdk.backend.model.chunk.Recycler.T)/obj">obj</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler/index.html#T"><span class="identifier">T</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/recycle-after.html">recycleAfter</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/recycle-after.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">recycleAfter</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$recycleAfter(ly.img.android.pesdk.backend.model.chunk.recycleAfter.T, kotlin.Function1((ly.img.android.pesdk.backend.model.chunk.recycleAfter.T, ly.img.android.pesdk.backend.model.chunk.recycleAfter.R)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/recycle-after.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/recycle-after.html#R"><span class="identifier">R</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/set-recycler.html">setRecycler</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/set-recycler.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">setRecycler</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$setRecycler(ly.img.android.pesdk.backend.model.chunk.setRecycler.A, ly.img.android.pesdk.backend.model.chunk.RecyclerMark)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recycler-mark/index.html"><span class="identifier">RecyclerMark</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

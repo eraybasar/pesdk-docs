@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RequestI - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.rox.models</a>&nbsp;/&nbsp;<a href="./index.html">RequestI</a><br/>
+<br/>
+<h1>RequestI</h1>
+<code><span class="keyword">interface </span><span class="identifier">RequestI</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a></code>
+<p></p>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="as-requested.html">asRequested</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">asRequested</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-requested/index.html"><span class="identifier">Requested</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="concat-transformation.html">concatTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">concatTransformation</span><span class="symbol">(</span><span class="identifier">matrix</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-is-preview-mode.html">setIsPreviewMode</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setIsPreviewMode</span><span class="symbol">(</span><span class="identifier">previewMode</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-region.html">setRegion</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setRegion</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setRegion</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">sourceSample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">offset</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setRegion</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setRegion</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">sourceSample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">offset</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-sampling.html">setSourceSampling</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setSourceSampling</span><span class="symbol">(</span><span class="identifier">sourceResize</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source-scale.html">setSourceScale</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setSourceScale</span><span class="symbol">(</span><span class="identifier">sourceResize</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-transformation.html">setTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setTransformation</span><span class="symbol">(</span><span class="identifier">matrix</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RequestI</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-request/index.html">Request</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Request</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RequestI</span></a><span class="symbol">, </span><a href="../-requested/index.html"><span class="identifier">Requested</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

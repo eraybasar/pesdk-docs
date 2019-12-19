@@ -1,0 +1,113 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OverlayToolPanel - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels</a>&nbsp;/&nbsp;<a href="./index.html">OverlayToolPanel</a><br/>
+<br/>
+<h1>OverlayToolPanel</h1>
+<code><span class="keyword">class </span><span class="identifier">OverlayToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-tool-panel/index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code>
+<p>Tool view to select a image filter</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">OverlayToolPanel</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="create-exit-animator.html">createExitAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createExitAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-show-animator.html">createShowAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createShowAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-history-settings.html">getHistorySettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHistorySettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.state.manager.Settings</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layout-resource.html">getLayoutResource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLayoutResource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-on-seek-bar-thumb-leaved.html">onOnSeekBarThumbLeaved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onOnSeekBarThumbLeaved</span><span class="symbol">(</span><span class="identifier">bar</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/index.html"><span class="identifier">SeekSlider</span></a><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-on-seek-bar-value-change.html">onOnSeekBarValueChange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onOnSeekBarValueChange</span><span class="symbol">(</span><span class="identifier">bar</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/index.html"><span class="identifier">SeekSlider</span></a><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-overlay-settings.html">updateOverlaySettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateOverlaySettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-h-i-d-e_-b-l-e-n-d_-m-o-d-e_-a-f-t-e-r_-t-i-m-e.html">HIDE_BLEND_MODE_AFTER_TIME</a></p>
+</td>
+<td>
+<code><span class="identifier">HIDE_BLEND_MODE_AFTER_TIME</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-o-o-l_-i-d.html">TOOL_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">TOOL_ID</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

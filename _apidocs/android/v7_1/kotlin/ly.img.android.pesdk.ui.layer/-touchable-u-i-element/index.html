@@ -1,0 +1,479 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TouchableUIElement - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.layer</a>&nbsp;/&nbsp;<a href="./index.html">TouchableUIElement</a><br/>
+<br/>
+<h1>TouchableUIElement</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">TouchableUIElement</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-u-i-element/index.html"><span class="identifier">UIElement</span></a></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TouchableUIElement</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="id.html">id</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="touchable.html">touchable</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">touchable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-u-i-element/contrast-referance-color.html">contrastReferanceColor</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">contrastReferanceColor</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-color-value.html"><span class="identifier">ColorValue</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/draw-with-contrast.html">drawWithContrast</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">drawWithContrast</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/height.html">height</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/inverted-local-transformation.html">invertedLocalTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">invertedLocalTransformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/inverted-transformation.html">invertedTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">invertedTransformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/inverted-world-transformation.html">invertedWorldTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">invertedWorldTransformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/local-transformation.html">localTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">localTransformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/main-color.html">mainColor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">mainColor</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-color-value.html"><span class="identifier">ColorValue</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/min-height.html">minHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/min-width.html">minWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/min-world-height.html">minWorldHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minWorldHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/min-world-width.html">minWorldWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minWorldWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/paint.html">paint</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">paint</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/pivot-point.html">pivotPoint</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pivotPoint</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/pos.html">pos</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">pos</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/relative-pivot.html">relativePivot</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">relativePivot</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/rotation.html">rotation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">rotation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/transformation.html">transformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">transformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/ui-density.html">uiDensity</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">uiDensity</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/visible.html">visible</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">visible</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-height.html">worldHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">worldHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-pivot-point.html">worldPivotPoint</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">worldPivotPoint</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-pos.html">worldPos</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">worldPos</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-pos-backing-field.html">worldPosBackingField</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">worldPosBackingField</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-rotation.html">worldRotation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">worldRotation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-transformation.html">worldTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">worldTransformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-width.html">worldWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">worldWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-x.html">worldX</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">worldX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/world-y.html">worldY</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">worldY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/x.html">x</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">x</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/y.html">y</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">y</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="can-respond-to-touch-at.html">canRespondToTouchAt</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">canRespondToTouchAt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$canRespondToTouchAt(kotlin.FloatArray)/screenPos">screenPos</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">canRespondToTouchAt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$canRespondToTouchAt(kotlin.Float, kotlin.Float)/screenPosX">screenPosX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$canRespondToTouchAt(kotlin.Float, kotlin.Float)/screenPosY">screenPosY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-touch-distance-in-pixel.html">getTouchDistanceInPixel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTouchDistanceInPixel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$getTouchDistanceInPixel(kotlin.FloatArray)/screenPos">screenPos</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getTouchDistanceInPixel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$getTouchDistanceInPixel(kotlin.Float, kotlin.Float)/screenPosX">screenPosX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$getTouchDistanceInPixel(kotlin.Float, kotlin.Float)/screenPosY">screenPosY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-touch-inside-tolerance.html">isTouchInsideTolerance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isTouchInsideTolerance</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$isTouchInsideTolerance(kotlin.FloatArray)/screenPos">screenPos</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isTouchInsideTolerance</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$isTouchInsideTolerance(kotlin.Float, kotlin.Float)/screenPosX">screenPosX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.layer.TouchableUIElement$isTouchInsideTolerance(kotlin.Float, kotlin.Float)/screenPosY">screenPosY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-u-i-element/draw.html">draw</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">draw</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$draw()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/make-contrast-to.html">makeContrastTo</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">makeContrastTo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$makeContrastTo(kotlin.Int)/contrastReferanceColor">contrastReferanceColor</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/-color-value.html"><span class="identifier">ColorValue</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/map-rotation-from-local-to-world.html">mapRotationFromLocalToWorld</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mapRotationFromLocalToWorld</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$mapRotationFromLocalToWorld(kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/map-rotation-from-world-to-local.html">mapRotationFromWorldToLocal</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mapRotationFromWorldToLocal</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$mapRotationFromWorldToLocal(kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/map-size-from-local-to-world.html">mapSizeFromLocalToWorld</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mapSizeFromLocalToWorld</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$mapSizeFromLocalToWorld(kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/map-size-from-world-to-local.html">mapSizeFromWorldToLocal</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mapSizeFromWorldToLocal</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$mapSizeFromWorldToLocal(kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/obtain-local-bounds.html">obtainLocalBounds</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">obtainLocalBounds</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/obtain-local-to-world-transformed-vector.html">obtainLocalToWorldTransformedVector</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">obtainLocalToWorldTransformedVector</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/on-dirty-world.html">onDirtyWorld</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDirtyWorld</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/on-draw.html">onDraw</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDraw</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$onDraw()/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/reset-contrast.html">resetContrast</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">resetContrast</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/set-pos.html">setPos</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPos</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setPos(kotlin.FloatArray)/pos">pos</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPos</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setPos(kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setPos(kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/set-size.html">setSize</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSize</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setSize(kotlin.Float, kotlin.Float)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setSize(kotlin.Float, kotlin.Float)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-element/set-world-pos.html">setWorldPos</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setWorldPos</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setWorldPos(kotlin.FloatArray)/pos">pos</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/-float2.html"><span class="identifier">Float2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setWorldPos</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setWorldPos(kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.layer.UIElement$setWorldPos(kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-t-o-u-c-h_-t-o-l-e-r-a-n-c-e_-i-n_-d-p.html">TOUCH_TOLERANCE_IN_DP</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">TOUCH_TOLERANCE_IN_DP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-arrow-thumb-u-i-element/index.html">ArrowThumbUIElement</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ArrowThumbUIElement</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TouchableUIElement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-edge-u-i-element/index.html">EdgeUIElement</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">EdgeUIElement</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TouchableUIElement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-line-u-i-element/index.html">LineUIElement</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LineUIElement</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TouchableUIElement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rect-u-i-element/index.html">RectUIElement</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RectUIElement</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TouchableUIElement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-u-i-group-element/index.html">UIGroupElement</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">UIGroupElement</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TouchableUIElement</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

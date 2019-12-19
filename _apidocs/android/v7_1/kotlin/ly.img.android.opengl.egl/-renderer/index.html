@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Renderer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="./index.html">Renderer</a><br/>
+<br/>
+<h1>Renderer</h1>
+<code><span class="keyword">interface </span><span class="identifier">Renderer</span></code>
+<p>A generic renderer interface. </p>
+<p> The renderer is responsible for making OpenGL calls to render a frame. </p>
+<p> GLSurfaceView clients typically create their own classes that implement this interface, and then call GLSurfaceView#setRenderer to register the renderer with the GLSurfaceView. </p>
+<p> </p>
+ Developer Guides 
+<p>For more information about how to use OpenGL, read the <a href="{@docRoot}guide/topics/graphics/opengl.html">OpenGL</a> developer guide.</p>
+  Threading The renderer will be called on a separate thread, so that rendering performance is decoupled from the UI thread. Clients typically need to communicate with the renderer from the UI thread, because that's where input events are received. Clients can communicate using any of the standard Java techniques for cross-thread communication, or they can use the {GLSurfaceView#queueEvent(Runnable)} convenience method. 
+<p> </p>
+EGL Context Lost There are situations where the EGL rendering context will be lost. This typically happens when device wakes up after going to sleep. When the EGL context is lost, all OpenGL resources (such as textures) that are associated with that context will be automatically deleted. In order to keep rendering correctly, a renderer must recreate any lost resources that it still needs. The <code><a href="on-surface-created.html">#onSurfaceCreated(EGLConfig)</a></code> method is a convenient place to do this.
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="on-draw-frame.html">onDrawFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDrawFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called to draw the current frame. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-changed.html">onSurfaceChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onSurfaceChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.egl.Renderer$onSurfaceChanged(kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.egl.Renderer$onSurfaceChanged(kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called when the surface changed size. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-created.html">onSurfaceCreated</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onSurfaceCreated</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.egl.Renderer$onSurfaceCreated(EGLConfig)/config">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called when the surface is created or recreated. </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.acs.opengl.renderer/-preview-renderer/index.html">PreviewRenderer</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PreviewRenderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Renderer</span></a><span class="symbol">, </span><a href="../../ly.img.android.acs.opengl.textures/-gl-camera-texture/-on-frame-available-listener/index.html"><span class="identifier">GlCameraTexture.OnFrameAvailableListener</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,332 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SaveSettings - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.state</a>&nbsp;/&nbsp;<a href="./index.html">SaveSettings</a><br/>
+<br/>
+<h1>SaveSettings</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">SaveSettings</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/index.html"><span class="identifier">ImglySettings</span></a></code>
+<p></p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-event/index.html">Event</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Event</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-on-image-saved/index.html">OnImageSaved</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnImageSaved</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-save-policy/index.html">SavePolicy</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SavePolicy</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Annotations</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-f-o-r-m-a-t/index.html">FORMAT</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FORMAT</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SaveSettings</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">SaveSettings</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/change-marker-list.html">changeMarkerList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">changeMarkerList</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/has-revertible-values.html">hasRevertibleValues</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">hasRevertibleValues</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-s-t-a-t-e_-r-e-v-e-r-t-e-d.html">STATE_REVERTED</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">STATE_REVERTED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="determined-export-format.html">determinedExportFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">determinedExportFormat</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Get the Export Format with determined AUTO value. @see #getExportFormat() This has to be executed in a background thread.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="generate-output-file-path.html">generateOutputFilePath</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">generateOutputFilePath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-exif-mode.html">getExifMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getExifMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.exif.modes/-exif-mode/index.html"><span class="identifier">ExifMode</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-export-format.html">getExportFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getExportFormat</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Get the Export Format without determined AUTO value. @see #determinedExportFormat()</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-export-operator-classes.html">getExportOperatorClasses</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getExportOperatorClasses</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox/-rox-operation/index.html"><span class="identifier">RoxOperation</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-jpeg-quality.html">getJpegQuality</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getJpegQuality</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-save-policy.html">getSavePolicy</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSavePolicy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-save-policy/index.html"><span class="identifier">SaveSettings.SavePolicy</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-always-use-img-ly-encoder.html">isAlwaysUseImgLyEncoder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isAlwaysUseImgLyEncoder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-export-necessary.html">isExportNecessary</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isExportNecessary</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-in-export-mode.html">isInExportMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isInExportMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-export-done.html">notifyExportDone</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyExportDone</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="save-image.html">saveImage</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveImage</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$saveImage(ly.img.android.pesdk.backend.model.state.SaveSettings.OnImageSaved)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="-on-image-saved/index.html"><span class="identifier">SaveSettings.OnImageSaved</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveImage</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$saveImage(ly.img.android.pesdk.backend.model.state.SaveSettings.OnImageSaved, ly.img.android.pesdk.backend.model.state.ProgressState.OnImageSaveProgress)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="-on-image-saved/index.html"><span class="identifier">SaveSettings.OnImageSaved</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$saveImage(ly.img.android.pesdk.backend.model.state.SaveSettings.OnImageSaved, ly.img.android.pesdk.backend.model.state.ProgressState.OnImageSaveProgress)/onImageSaveProgress">onImageSaveProgress</span><span class="symbol">:</span>&nbsp;<a href="../-progress-state/-on-image-save-progress/index.html"><span class="identifier">ProgressState.OnImageSaveProgress</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-exif-mode.html">setExifMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setExifMode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExifMode(ly.img.android.pesdk.backend.exif.modes.ExifMode)/exifMode">exifMode</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.exif.modes/-exif-mode/index.html"><span class="identifier">ExifMode</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-export-dir.html">setExportDir</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setExportDir</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExportDir(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setExportDir</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExportDir(ly.img.android.pesdk.backend.model.constant.Directory.EnvironmentDir, kotlin.String)/directory">directory</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-directory/-environment-dir/index.html"><span class="identifier">Directory.EnvironmentDir</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExportDir(ly.img.android.pesdk.backend.model.constant.Directory.EnvironmentDir, kotlin.String)/folderName">folderName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code>
+<p>Set the Export directory save path of the captured image.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setExportDir</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExportDir(ly.img.android.pesdk.backend.model.constant.Directory.EnvironmentDirApi19, kotlin.String)/directory">directory</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-directory/-environment-dir-api19.html"><span class="identifier">Directory.EnvironmentDirApi19</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExportDir(ly.img.android.pesdk.backend.model.constant.Directory.EnvironmentDirApi19, kotlin.String)/folderName">folderName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code>
+<p>!!!Do not use Directory.DOCUMENTS until API 19.!!! </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-export-format.html">setExportFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setExportFormat</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExportFormat(kotlin.Int)/exportFormat">exportFormat</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-export-prefix.html">setExportPrefix</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setExportPrefix</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setExportPrefix(kotlin.String)/prefix">prefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code>
+<p>Set the image save name prefix.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-jpeg-quality.html">setJpegQuality</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setJpegQuality</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setJpegQuality(kotlin.Int, kotlin.Boolean)/jpegQuality">jpegQuality</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setJpegQuality(kotlin.Int, kotlin.Boolean)/alwaysUseImgLyEncoder">alwaysUseImgLyEncoder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setJpegQuality</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setJpegQuality(kotlin.Int)/jpegQuality">jpegQuality</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-output-file-path.html">setOutputFilePath</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setOutputFilePath</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setOutputFilePath(kotlin.String)/outputPath">outputPath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code>
+<p>Set Output path without File Extension</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-save-policy.html">setSavePolicy</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSavePolicy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$setSavePolicy(ly.img.android.pesdk.backend.model.state.SaveSettings.SavePolicy)/savePolicy">savePolicy</span><span class="symbol">:</span>&nbsp;<a href="-save-policy/index.html"><span class="identifier">SaveSettings.SavePolicy</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SaveSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.SaveSettings$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/create-value-dump.html">createValueDump</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createValueDump</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/is-allowed-with-licensed.html">isAllowedWithLicensed</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isAllowedWithLicensed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/restore-value-dump.html">restoreValueDump</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">restoreValueDump</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$restoreValueDump(kotlin.Array((kotlin.Any)))/dump">dump</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html">value</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">value</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/persistent">persistent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/revertStrategy">revertStrategy</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-revert-strategy/index.html"><span class="identifier">RevertStrategy</span></a>&nbsp;<span class="symbol">=</span>&nbsp;RevertStrategy.PRIMITIVE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/isHasChangesMarker">isHasChangesMarker</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/callOnChange">callOnChange</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/-value/index.html"><span class="identifier">ImglySettings.Value</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">value</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/persistent">persistent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/revertStrategy">revertStrategy</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-revert-strategy/index.html"><span class="identifier">RevertStrategy</span></a>&nbsp;<span class="symbol">=</span>&nbsp;RevertStrategy.PRIMITIVE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/isHasChangesMarker">isHasChangesMarker</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/callOnChange">callOnChange</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/-value/index.html"><span class="identifier">ImglySettings.Value</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-photo-editor-save-settings/index.html">PhotoEditorSaveSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PhotoEditorSaveSettings</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">SaveSettings</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

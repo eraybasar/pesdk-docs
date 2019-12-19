@@ -1,0 +1,132 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NativeVideoEncoder - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.encoder.video</a>&nbsp;/&nbsp;<a href="./index.html">NativeVideoEncoder</a><br/>
+<br/>
+<h1>NativeVideoEncoder</h1>
+<code><span class="keyword">class </span><span class="identifier">NativeVideoEncoder</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">NativeVideoEncoder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/audioSourceUri">audioSourceUri</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/outputFilePath">outputFilePath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1280<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;720<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/frameRate">frameRate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;30<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/bitRate">bitRate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DEFAULT_BITRATE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/mimeType">mimeType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DEFAULT_MIME_TYPE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/containerFormat">containerFormat</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/audioStartAtNanosecond">audioStartAtNanosecond</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0L<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/audioEndAtNanosecond">audioEndAtNanosecond</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0L<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$<init>(, kotlin.String, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.String, kotlin.Int, kotlin.Long, kotlin.Long, kotlin.Int)/iFrameIntervalInSeconds">iFrameIntervalInSeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DEFAULT_IFRAME_INTERVAL<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="audio-encoder-input-buffers.html">audioEncoderInputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">audioEncoderInputBuffers</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-input-buffer-compat/index.html"><span class="identifier">InputBufferCompat</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="audio-encoder-output-buffers.html">audioEncoderOutputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">audioEncoderOutputBuffers</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-output-buffer-compat/index.html"><span class="identifier">OutputBufferCompat</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="presentation-time.html">presentationTime</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">presentationTime</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="video-encoder-output-buffers.html">videoEncoderOutputBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">videoEncoderOutputBuffers</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-output-buffer-compat/index.html"><span class="identifier">OutputBufferCompat</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add-frame.html">addFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addFrame</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$addFrame(ly.img.android.opengl.textures.GlTexture, kotlin.Long)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$addFrame(ly.img.android.opengl.textures.GlTexture, kotlin.Long)/presentationTimeNanoseconds">presentationTimeNanoseconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="copy-one-audio-frame-to-muxer.html">copyOneAudioFrameToMuxer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">copyOneAudioFrameToMuxer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$copyOneAudioFrameToMuxer(kotlin.Long, kotlin.Boolean)/maxPresentationTimeInNanoseconds">maxPresentationTimeInNanoseconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Long.MAX_VALUE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.NativeVideoEncoder$copyOneAudioFrameToMuxer(kotlin.Long, kotlin.Boolean)/sendEndOfStream">sendEndOfStream</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Copy one Audio frame from input to output.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="disable.html">disable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="enable.html">enable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finalize-video.html">finalizeVideo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalizeVideo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

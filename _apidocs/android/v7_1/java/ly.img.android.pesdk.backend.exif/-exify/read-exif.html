@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Exify.readExif - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">Exify</a>&nbsp;/&nbsp;<a href="./read-exif.html">readExif</a><br/>
+<br/>
+<h1>readExif</h1>
+<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">inFileName</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Reads the exif tags from a file, clearing this ExifInterface object's existing exif tags.</p>
+<h3>Parameters</h3>
+<p><a name="inFileName"></a>
+<code>inFileName</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> a string representing the filepath to jpeg file.</p>
+<p><a name="options"></a>
+<code>options</code> - <span class="identifier">int</span><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
+<h3>Exceptions</h3>
+<p><a name="IOException"></a>
+<code>IOException</code> - </p>
+<p><strong>See Also</strong><br/>
+<a href="./read-exif.html">#readExif(InputStream, int)</a></p>
+<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">inStream</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Reads the exif tags from an InputStream, clearing this ExifInterface object's existing exif tags. <pre><code>
+          ExifInterface exif = new ExifInterface();
+          exif.readExif( stream, Options.OPTION_IFD_0 | Options.OPTION_IFD_1 | Options.OPTION_IFD_EXIF );
+          ...
+          // to request all the options use the OPTION_ALL bit mask
+          exif.readExif( stream, Options.OPTION_ALL );
+      </code></pre></p>
+<h3>Parameters</h3>
+<p><a name="inStream"></a>
+<code>inStream</code> - <span class="identifier">java.io.InputStream</span><span class="symbol">:</span> an InputStream containing a jpeg compressed image.</p>
+<p><a name="options"></a>
+<code>options</code> - <span class="identifier">int</span><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
+<h3>Exceptions</h3>
+<p><a name="IOException"></a>
+<code>IOException</code> - </p>
+<code><span class="keyword">fun </span><span class="identifier">readExif</span><span class="symbol">(</span><span class="identifier">jpeg</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Reads the exif tags from a byte array, clearing this ExifInterface object's existing exif tags.</p>
+<h3>Parameters</h3>
+<p><a name="jpeg"></a>
+<code>jpeg</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">:</span> a byte array containing a jpeg compressed image.</p>
+<p><a name="options"></a>
+<code>options</code> - <span class="identifier">int</span><span class="symbol">:</span> bit flag which defines which type of tags to process, see <code><a href="-options/index.html">Exify.Options</a></code></p>
+<h3>Exceptions</h3>
+<p><a name="IOException"></a>
+<code>IOException</code> - </p>
+<p><strong>See Also</strong><br/>
+<a href="./read-exif.html">#readExif(InputStream, int)</a></p>
+</BODY>
+</HTML>

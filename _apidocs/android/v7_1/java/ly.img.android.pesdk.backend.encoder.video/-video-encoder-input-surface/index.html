@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VideoEncoderInputSurface - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.encoder.video</a>&nbsp;/&nbsp;<a href="./index.html">VideoEncoderInputSurface</a><br/>
+<br/>
+<h1>VideoEncoderInputSurface</h1>
+<code><span class="keyword">class </span><span class="identifier">VideoEncoderInputSurface</span></code>
+<p>Holds state associated with a Surface used for MediaCodec encoder input.</p>
+<p>The constructor takes a Surface obtained from MediaCodec.createInputSurface(), and uses that
+to create an EGL window surface.  Calls to eglSwapBuffers() cause a frame of data to be sent
+to the video encoder.</p>
+<p>This object owns the Surface -- releasing this will release the Surface too.</p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">VideoEncoderInputSurface</span><span class="symbol">(</span><span class="identifier">surface</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span></code>
+<p>Holds state associated with a Surface used for MediaCodec encoder input.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="disable.html">disable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">disable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="enable.html">enable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Makes our EGL context and surface current.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="release.html">release</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">release</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Discards all resources held by this class, notably the EGL context.  Also releases the
+Surface that was passed to our constructor.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-presentation-time.html">setPresentationTime</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setPresentationTime</span><span class="symbol">(</span><span class="identifier">nanosecs</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Sends the presentation time stamp to EGL.  Time is expressed in nanoseconds.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="swap-buffers.html">swapBuffers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">swapBuffers</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Calls eglSwapBuffers.  Use this to "publish" the current frame.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

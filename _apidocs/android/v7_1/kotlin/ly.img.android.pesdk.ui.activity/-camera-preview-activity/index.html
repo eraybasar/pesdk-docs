@@ -1,0 +1,370 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CameraPreviewActivity - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.activity</a>&nbsp;/&nbsp;<a href="./index.html">CameraPreviewActivity</a><br/>
+<br/>
+<h1>CameraPreviewActivity</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CameraPreviewActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-img-ly-activity/index.html"><span class="identifier">ImgLyActivity</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.acs/-camera-view/-capture-callback/index.html"><span class="identifier">CameraView.CaptureCallback</span></a><span class="symbol">, </span><a href="../../ly.img.android.acs/-camera/-on-state-change-listener/index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">CameraPreviewActivity</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-r-e-s-u-l-t_-e-d-i-t-o-r_-d-o-n-e.html">RESULT_EDITOR_DONE</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">RESULT_EDITOR_DONE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-e-s-u-l-t_-l-o-a-d_-i-m-a-g-e.html">RESULT_LOAD_IMAGE</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">RESULT_LOAD_IMAGE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/cache-size-in-m-b.html">cacheSizeInMB</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">cacheSizeInMB</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-filter-settings.html">getFilterSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFilterSettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state/-filter-settings/index.html"><span class="identifier">FilterSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activity-result.html">onActivityResult</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onActivityResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onActivityResult(kotlin.Int, kotlin.Int, Intent)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onActivityResult(kotlin.Int, kotlin.Int, Intent)/resultCode">resultCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onActivityResult(kotlin.Int, kotlin.Int, Intent)/data">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-back-pressed.html">onBackPressed</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBackPressed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-cam-view-state-change.html">onCamViewStateChange</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCamViewStateChange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onCamViewStateChange(ly.img.android.acs.Camera.CameraState)/state">state</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs/-camera/-camera-state/index.html"><span class="identifier">Camera.CameraState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-click-filter-button.html">onClickFilterButton</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onClickFilterButton</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onClickFilterButton(ly.img.android.pesdk.ui.activity.widgets.buttons.ExpandToggleButton, kotlin.Boolean)/showFilterButton">showFilterButton</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.activity.widgets.buttons/-expand-toggle-button/index.html"><span class="identifier">ExpandToggleButton</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onClickFilterButton(ly.img.android.pesdk.ui.activity.widgets.buttons.ExpandToggleButton, kotlin.Boolean)/isChecked">isChecked</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onCreate(Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-image-captured.html">onImageCaptured</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onImageCaptured</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onImageCaptured(kotlin.String)/outputPath">outputPath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-image-capture-error.html">onImageCaptureError</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onImageCaptureError</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onImageCaptureError(java.lang.Exception)/exception">exception</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html"><span class="identifier">Exception</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-image-ready.html">onImageReady</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onImageReady</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onImageReady(Uri, Uri, ly.img.android.pesdk.backend.model.state.SaveSettings.SavePolicy)/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onImageReady(Uri, Uri, ly.img.android.pesdk.backend.model.state.SaveSettings.SavePolicy)/output">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onImageReady(Uri, Uri, ly.img.android.pesdk.backend.model.state.SaveSettings.SavePolicy)/savePolicy">savePolicy</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state/-save-settings/-save-policy/index.html"><span class="identifier">SaveSettings.SavePolicy</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-item-click.html">onItemClick</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onItemClick</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onItemClick(ly.img.android.pesdk.ui.panels.item.AbstractIdItem)/item">item</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-on-seek-bar-thumb-leaved.html">onOnSeekBarThumbLeaved</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onOnSeekBarThumbLeaved</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onOnSeekBarThumbLeaved(ly.img.android.pesdk.ui.widgets.SeekSlider, kotlin.Float)/bar">bar</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/index.html"><span class="identifier">SeekSlider</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onOnSeekBarThumbLeaved(ly.img.android.pesdk.ui.widgets.SeekSlider, kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-on-seek-bar-value-change.html">onOnSeekBarValueChange</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onOnSeekBarValueChange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onOnSeekBarValueChange(ly.img.android.pesdk.ui.widgets.SeekSlider, kotlin.Float)/bar">bar</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/index.html"><span class="identifier">SeekSlider</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onOnSeekBarValueChange(ly.img.android.pesdk.ui.widgets.SeekSlider, kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-open-gallery.html">onOpenGallery</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onOpenGallery</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onOpenGallery(ly.img.android.pesdk.ui.activity.widgets.buttons.GalleryButton)/button">button</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.activity.widgets.buttons/-gallery-button/index.html"><span class="identifier">GalleryButton</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-pause.html">onPause</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onPause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-request-permissions-result.html">onRequestPermissionsResult</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRequestPermissionsResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onRequestPermissionsResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onRequestPermissionsResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onRequestPermissionsResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/grantResults">grantResults</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-start.html">onStart</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onStart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-stop.html">onStop</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onStop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-switch-camera.html">onSwitchCamera</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSwitchCamera</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onSwitchCamera(View)/switchButton">switchButton</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-take-picture.html">onTakePicture</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onTakePicture</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onTakePicture(View)/button">button</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-toggle-flash-light.html">onToggleFlashLight</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onToggleFlashLight</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onToggleFlashLight(View)/flashButton">flashButton</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-toggle-hdr.html">onToggleHdr</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onToggleHdr</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onToggleHdr(ToggleButton, kotlin.Boolean)/hdrButton">hdrButton</span><span class="symbol">:</span>&nbsp;<span class="identifier">ToggleButton</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onToggleHdr(ToggleButton, kotlin.Boolean)/isChecked">isChecked</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-window-focus-changed.html">onWindowFocusChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onWindowFocusChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.CameraPreviewActivity$onWindowFocusChanged(kotlin.Boolean)/hasFocus">hasFocus</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/create-styled-context.html">createStyledContext</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createStyledContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$createStyledContext(kotlin.Int)/styleId">styleId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-activity/-img-ly-context-theme-wrapper/index.html"><span class="identifier">ImgLyActivity.ImgLyContextThemeWrapper</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">createStyledContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$createStyledContext(Context, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$createStyledContext(Context, kotlin.Int)/styleId">styleId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-activity/-img-ly-context-theme-wrapper/index.html"><span class="identifier">ImgLyActivity.ImgLyContextThemeWrapper</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/create-styled-inflater.html">createStyledInflater</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createStyledInflater</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$createStyledInflater(kotlin.Int)/styleId">styleId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LayoutInflater</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">createStyledInflater</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$createStyledInflater(Context, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$createStyledInflater(Context, kotlin.Int)/styleId">styleId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LayoutInflater</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/find-editor-preview.html">findEditorPreview</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">findEditorPreview</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$findEditorPreview(ViewGroup)/container">container</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewGroup</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.views/-editor-preview/index.html"><span class="identifier">EditorPreview</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/find-view.html">findView</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">ViewClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">findView</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$findView(kotlin.Int)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-activity/find-view.html#ViewClass"><span class="identifier">ViewClass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-activity-result.html">getActivityResult</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getActivityResult</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$getActivityResult(Intent, ly.img.android.pesdk.ui.activity.ImgLyActivity.OnActivityResult)/intent">intent</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$getActivityResult(Intent, ly.img.android.pesdk.ui.activity.ImgLyActivity.OnActivityResult)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../-img-ly-activity/-on-activity-result/index.html"><span class="identifier">ImgLyActivity.OnActivityResult</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-config.html">getConfig</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state/-asset-config/index.html"><span class="identifier">AssetConfig</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-editor-preview.html">getEditorPreview</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getEditorPreview</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.views/-editor-preview/index.html"><span class="identifier">EditorPreview</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-img-ly-intent.html">getImgLyIntent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getImgLyIntent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-intent/index.html"><span class="identifier">ImgLyIntent</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-inflater.html">getInflater</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getInflater</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LayoutInflater</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getInflater</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$getInflater(Context)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LayoutInflater</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-product.html">getProduct</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getProduct</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android/-i-m-g-l-y-product/index.html"><span class="identifier">IMGLYProduct</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-styled-context.html">getStyledContext</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getStyledContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$getStyledContext(Context)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-img-ly-activity/-img-ly-context-theme-wrapper/index.html"><span class="identifier">ImgLyActivity.ImgLyContextThemeWrapper</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/get-styled-inflater.html">getStyledInflater</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getStyledInflater</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$getStyledInflater(Context, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$getStyledInflater(Context, kotlin.Int)/styleId">styleId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LayoutInflater</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/install-cache.html">installCache</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">installCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/on-destroy.html">onDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDestroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/on-restore-instance-state.html">onRestoreInstanceState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRestoreInstanceState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$onRestoreInstanceState(Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/on-save-instance-state.html">onSaveInstanceState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSaveInstanceState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$onSaveInstanceState(Bundle)/outState">outState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/read-state-handler.html">readStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">readStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/remove-cache.html">removeCache</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-img-ly-activity/set-theme.html">setTheme</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTheme</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.activity.ImgLyActivity$setTheme(kotlin.Int)/resourceId">resourceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

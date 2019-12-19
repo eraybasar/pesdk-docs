@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOUtils.toString - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">IOUtils</a>&nbsp;/&nbsp;<a href="./to-string.html">toString</a><br/>
+<br/>
+<h1>toString</h1>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Get the contents of an <code>InputStream</code> as a String using the default character encoding of the platform. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedInputStream</code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>InputStream</code> to read from</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the requested String</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream, kotlin.String)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream, kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.InputStream, kotlin.String)/encoding">encoding</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Get the contents of an <code>InputStream</code> as a String using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedInputStream</code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>InputStream</code> to read from</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the requested String</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.Reader)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$toString(java.io.Reader)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Get the contents of a <code>Reader</code> as a String. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedReader</code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Reader</code> to read from</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the requested String</p>
+</BODY>
+</HTML>

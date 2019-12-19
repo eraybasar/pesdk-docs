@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VideoEncoderInputSurface.<init> - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.encoder.video</a>&nbsp;/&nbsp;<a href="index.html">VideoEncoderInputSurface</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ly.img.android.pesdk.backend.encoder.video.VideoEncoderInputSurface$&lt;init&gt;()"></a>
+<code><span class="identifier">VideoEncoderInputSurface</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.encoder.video.VideoEncoderInputSurface$<init>()/surface">surface</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span></code>
+<p>Holds state associated with a Surface used for MediaCodec encoder input.</p>
+<p>The constructor takes a Surface obtained from MediaCodec.createInputSurface(), and uses that
+to create an EGL window surface.  Calls to eglSwapBuffers() cause a frame of data to be sent
+to the video encoder.</p>
+<p>This object owns the Surface -- releasing this will release the Surface too.</p>
+</BODY>
+</HTML>

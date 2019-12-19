@@ -1,0 +1,242 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UiConfigBrush - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.model.state</a>&nbsp;/&nbsp;<a href="./index.html">UiConfigBrush</a><br/>
+<br/>
+<h1>UiConfigBrush</h1>
+<code><span class="keyword">class </span><span class="identifier">UiConfigBrush</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/index.html"><span class="identifier">ImglySettings</span></a></code>
+<p>Photo Editor Configuration file.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UiConfigBrush</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiConfigBrush$<init>()/parcel">parcel</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code>
+<p>Photo Editor Configuration file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="brush-color-list.html">brushColorList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">brushColorList</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="maximum-hardness.html">maximumHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">maximumHardness</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>The maximum hardness factor a brush can have.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="maximum-size.html">maximumSize</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">maximumSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>The maximum size that a brush can have. This value is measured in relation to the
+smaller side of the image that the user is editing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="minimum-hardness.html">minimumHardness</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minimumHardness</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>The minimum hardness factor a brush can have.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="minimum-size.html">minimumSize</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minimumSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>The minimum size that a brush can have. This value is measured in relation to the
+smaller side of the image that the user is editing. If the value is <code>null</code> the
+minimum brush size is set to the absolute size of a single pixel of the edited image.
+0 will mean, 1 Pixel at the minimum.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="option-list.html">optionList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">optionList</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="quick-option-list.html">quickOptionList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">quickOptionList</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/change-marker-list.html">changeMarkerList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">changeMarkerList</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/has-revertible-values.html">hasRevertibleValues</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">hasRevertibleValues</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-default-brush-color.html">getDefaultBrushColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultBrushColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-changes.html">hasChanges</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasChanges</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-brush-color-list.html">setBrushColorList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setBrushColorList</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiConfigBrush$setBrushColorList(ly.img.android.pesdk.utils.DataSourceArrayList((ly.img.android.pesdk.ui.panels.item.ColorItem)))/brushColorList">brushColorList</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-data-source-array-list/index.html"><span class="identifier">DataSourceArrayList</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">UiConfigBrush</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setBrushColorList</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiConfigBrush$setBrushColorList(kotlin.Array((ly.img.android.pesdk.ui.panels.item.ColorItem)))/brushColorList">brushColorList</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">UiConfigBrush</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-default-brush-color.html">setDefaultBrushColor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDefaultBrushColor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiConfigBrush$setDefaultBrushColor(kotlin.Int)/defaultColor">defaultColor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">UiConfigBrush</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/create-value-dump.html">createValueDump</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createValueDump</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/is-allowed-with-licensed.html">isAllowedWithLicensed</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isAllowedWithLicensed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/restore-value-dump.html">restoreValueDump</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">restoreValueDump</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$restoreValueDump(kotlin.Array((kotlin.Any)))/dump">dump</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html">value</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">value</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/persistent">persistent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/revertStrategy">revertStrategy</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-revert-strategy/index.html"><span class="identifier">RevertStrategy</span></a>&nbsp;<span class="symbol">=</span>&nbsp;RevertStrategy.PRIMITIVE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/isHasChangesMarker">isHasChangesMarker</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/callOnChange">callOnChange</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/-value/index.html"><span class="identifier">ImglySettings.Value</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">value</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/persistent">persistent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/revertStrategy">revertStrategy</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-revert-strategy/index.html"><span class="identifier">RevertStrategy</span></a>&nbsp;<span class="symbol">=</span>&nbsp;RevertStrategy.PRIMITIVE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/isHasChangesMarker">isHasChangesMarker</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/callOnChange">callOnChange</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/-value/index.html"><span class="identifier">ImglySettings.Value</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$writeToParcel(, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$writeToParcel(, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/state-handler-resolve.html">stateHandlerResolve</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">stateHandlerResolve</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">stateHandlerResolve</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager$stateHandlerResolve(ly.img.android.pesdk.backend.model.state.manager.StateObservable((kotlin.Enum((kotlin.Enum(()))))), ly.img.android.pesdk.backend.model.state.manager.stateHandlerResolve.T)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/state-handler-resolve.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

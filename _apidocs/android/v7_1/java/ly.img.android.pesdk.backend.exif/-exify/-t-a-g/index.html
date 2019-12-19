@@ -1,0 +1,1110 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Exify.TAG - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="../index.html">Exify</a>&nbsp;/&nbsp;<a href="./index.html">TAG</a><br/>
+<br/>
+<h1>TAG</h1>
+<code><span class="keyword">class </span><span class="identifier">TAG</span></code>
+<h3>Enum Values</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-i-m-a-g-e_-w-i-d-t-h.html">IMAGE_WIDTH</a></p>
+</td>
+<td>
+<p>Tag constants for Jeita EXIF 2.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-m-a-g-e_-l-e-n-g-t-h.html">IMAGE_LENGTH</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-b-i-t-s_-p-e-r_-s-a-m-p-l-e.html">BITS_PER_SAMPLE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-o-m-p-r-e-s-s-i-o-n.html">COMPRESSION</a></p>
+</td>
+<td>
+<p>Value is unsigned int. (Read only tag) The compression scheme used for the image data. When a primary image is JPEG compressed, this designation is not necessary and is omitted. When thumbnails use JPEG compression, this tag value is set to 6. <ul> <li>1 = uncompressed</li>
+ <li>6 = JPEG compression (thumbnails only)</li>
+ <li>Other = reserved</li>
+</ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-h-o-t-o-m-e-t-r-i-c_-i-n-t-e-r-p-r-e-t-a-t-i-o-n.html">PHOTOMETRIC_INTERPRETATION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-m-a-g-e_-d-e-s-c-r-i-p-t-i-o-n.html">IMAGE_DESCRIPTION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-a-k-e.html">MAKE</a></p>
+</td>
+<td>
+<p>Value is ascii string The manufacturer of the recording equipment. This is the manufacturer of the DSC, scanner, video digitizer or other equipment that generated the image. When the field is left blank, it is treated as unknown.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-o-d-e-l.html">MODEL</a></p>
+</td>
+<td>
+<p>Value is ascii string The model name or model number of the equipment. This is the model name of number of the DSC, scanner, video digitizer or other equipment that generated the image. When the field is left blank, it is treated as unknown.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-t-r-i-p_-o-f-f-s-e-t-s.html">STRIP_OFFSETS</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-r-i-e-n-t-a-t-i-o-n.html">ORIENTATION</a></p>
+</td>
+<td>
+<p>Value is int The orientation of the camera relative to the scene, when the image was captured. The start point of stored data is: <ul> <li>'0' undefined</li>
+ <li>'1' normal</li>
+ <li>'2' flip horizontal</li>
+ <li>'3' rotate 180</li>
+ <li>'4' flip vertical</li>
+ <li>'5' transpose, flipped about top-left &lt;--&gt; bottom-right axis</li>
+ <li>'6' rotate 90 cw</li>
+ <li>'7' transverse, flipped about top-right &lt;--&gt; bottom-left axis</li>
+ <li>'8' rotate 270</li>
+ <li>'9' undefined</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-a-m-p-l-e-s_-p-e-r_-p-i-x-e-l.html">SAMPLES_PER_PIXEL</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-o-w-s_-p-e-r_-s-t-r-i-p.html">ROWS_PER_STRIP</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-t-r-i-p_-b-y-t-e_-c-o-u-n-t-s.html">STRIP_BYTE_COUNTS</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-n-t-e-r-o-p_-v-e-r-s-i-o-n.html">INTEROP_VERSION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-x_-r-e-s-o-l-u-t-i-o-n.html">X_RESOLUTION</a></p>
+</td>
+<td>
+<p>Value is unsigned double. Display/Print resolution of image. Large number of digicam uses 1/72inch, but it has no mean because personal computer doesn't use this value to display/print out.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-y_-r-e-s-o-l-u-t-i-o-n.html">Y_RESOLUTION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-l-a-n-a-r_-c-o-n-f-i-g-u-r-a-t-i-o-n.html">PLANAR_CONFIGURATION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-e-s-o-l-u-t-i-o-n_-u-n-i-t.html">RESOLUTION_UNIT</a></p>
+</td>
+<td>
+<p>Value is unsigned int. Unit of XResolution(0x011a)/YResolution(0x011b) <ul> <li>'1' means no-unit ( use inch )</li>
+ <li>'2' inch</li>
+ <li>'3' centimeter</li>
+ <li>'4' millimeter</li>
+ <li>'5' micrometer</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-r-a-n-s-f-e-r_-f-u-n-c-t-i-o-n.html">TRANSFER_FUNCTION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-o-f-t-w-a-r-e.html">SOFTWARE</a></p>
+</td>
+<td>
+<p>Value is ascii string Shows firmware(internal software of digicam) version number.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-a-t-e_-t-i-m-e.html">DATE_TIME</a></p>
+</td>
+<td>
+<p>Value is ascii string (20) Date/Time of image was last modified. Data format is "YYYY:MM:DD HH:MM:SS"+0x00, total 20bytes. In usual, it has the same value of DateTimeOriginal(0x9003)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-a-r-t-i-s-t.html">ARTIST</a></p>
+</td>
+<td>
+<p>Vallue is ascii String This tag records the name of the camera owner, photographer or image creator. The detailed format is not specified, but it is recommended that the information be written as in the example below for ease of Interoperability. When the field is left blank, it is treated as unknown.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-w-h-i-t-e_-p-o-i-n-t.html">WHITE_POINT</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-r-i-m-a-r-y_-c-h-r-o-m-a-t-i-c-i-t-i-e-s.html">PRIMARY_CHROMATICITIES</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-y_-c-b_-c-r_-c-o-e-f-f-i-c-i-e-n-t-s.html">Y_CB_CR_COEFFICIENTS</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-y_-c-b_-c-r_-s-u-b_-s-a-m-p-l-i-n-g.html">Y_CB_CR_SUB_SAMPLING</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-y_-c-b_-c-r_-p-o-s-i-t-i-o-n-i-n-g.html">Y_CB_CR_POSITIONING</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-e-f-e-r-e-n-c-e_-b-l-a-c-k_-w-h-i-t-e.html">REFERENCE_BLACK_WHITE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-o-p-y-r-i-g-h-t.html">COPYRIGHT</a></p>
+</td>
+<td>
+<p>Values is ascii string Shows copyright information</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-x-i-f_-i-f-d.html">EXIF_IFD</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-i-f-d.html">GPS_IFD</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-j-p-e-g_-i-n-t-e-r-c-h-a-n-g-e_-f-o-r-m-a-t.html">JPEG_INTERCHANGE_FORMAT</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-j-p-e-g_-i-n-t-e-r-c-h-a-n-g-e_-f-o-r-m-a-t_-l-e-n-g-t-h.html">JPEG_INTERCHANGE_FORMAT_LENGTH</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-x-p-o-s-u-r-e_-t-i-m-e.html">EXPOSURE_TIME</a></p>
+</td>
+<td>
+<p>Value is unsigned double Exposure time (reciprocal of shutter speed). Unit is second</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f_-n-u-m-b-e-r.html">F_NUMBER</a></p>
+</td>
+<td>
+<p>Value is unsigned double The actual F-number(F-stop) of lens when the image was taken</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-x-p-o-s-u-r-e_-p-r-o-g-r-a-m.html">EXPOSURE_PROGRAM</a></p>
+</td>
+<td>
+<p>Value is unsigned int. Exposure program that the camera used when image was taken. <ul> <li>'1' means manual control</li>
+ <li>'2' program normal</li>
+ <li>'3' aperture priority</li>
+ <li>'4' shutter priority</li>
+ <li>'5' program creative (slow program)</li>
+ <li>'6' program action(high-speed program)</li>
+ <li>'7' portrait mode</li>
+ <li>'8' landscape mode.</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-p-e-c-t-r-a-l_-s-e-n-s-i-t-i-v-i-t-y.html">SPECTRAL_SENSITIVITY</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-s-o_-s-p-e-e-d_-r-a-t-i-n-g-s.html">ISO_SPEED_RATINGS</a></p>
+</td>
+<td>
+<p>Value is unsigned int. CCD sensitivity equivalent to Ag-Hr film speedrate. Indicates the ISO Speed and ISO Latitude of the camera or input device as specified in ISO 12232</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-o-e-c-f.html">OECF</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-x-i-f_-v-e-r-s-i-o-n.html">EXIF_VERSION</a></p>
+</td>
+<td>
+<p>ASCII string (4). The version of this standard supported. Nonexistence of this field is taken to mean nonconformance to the standard (see section 4.2). Conformance to this standard is indicated by recording "0220" as 4-byte ASCII</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-a-t-e_-t-i-m-e_-o-r-i-g-i-n-a-l.html">DATE_TIME_ORIGINAL</a></p>
+</td>
+<td>
+<p>Value is ascii string (20) Date/Time of original image taken. This value should not be modified by user program.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-a-t-e_-t-i-m-e_-d-i-g-i-t-i-z-e-d.html">DATE_TIME_DIGITIZED</a></p>
+</td>
+<td>
+<p>Value is ascii string (20) Date/Time of image digitized. Usually, it contains the same value of DateTimeOriginal(0x9003).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-o-m-p-o-n-e-n-t-s_-c-o-n-f-i-g-u-r-a-t-i-o-n.html">COMPONENTS_CONFIGURATION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-o-m-p-r-e-s-s-e-d_-b-i-t-s_-p-e-r_-p-i-x-e-l.html">COMPRESSED_BITS_PER_PIXEL</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-h-u-t-t-e-r_-s-p-e-e-d_-v-a-l-u-e.html">SHUTTER_SPEED_VALUE</a></p>
+</td>
+<td>
+<p>Value is signed double. Shutter speed. To convert this value to ordinary 'Shutter Speed'; calculate this value's power of 2, then reciprocal. For example, if value is '4', shutter speed is 1/(2^4)=1/16 second.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-a-p-e-r-t-u-r-e_-v-a-l-u-e.html">APERTURE_VALUE</a></p>
+</td>
+<td>
+<p>Value is unsigned double The actual aperture value of lens when the image was taken. To convert this value to ordinary F-number(F-stop), calculate this value's power of root 2 (=1.4142). For example, if value is '5', F-number is 1.4142^5 = F5.6 </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-b-r-i-g-h-t-n-e-s-s_-v-a-l-u-e.html">BRIGHTNESS_VALUE</a></p>
+</td>
+<td>
+<p>Value is signed double Brightness of taken subject, unit is EV.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-x-p-o-s-u-r-e_-b-i-a-s_-v-a-l-u-e.html">EXPOSURE_BIAS_VALUE</a></p>
+</td>
+<td>
+<p>Value is signed double. The exposure bias. The unit is the APEX value. Ordinarily it is given in the range of -99.99 to 99.99</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-a-x_-a-p-e-r-t-u-r-e_-v-a-l-u-e.html">MAX_APERTURE_VALUE</a></p>
+</td>
+<td>
+<p>Value is unsigned double. Maximum aperture value of lens. You can convert to F-number by calculating power of root 2 (same process of ApertureValue(0x9202). </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-b-j-e-c-t_-d-i-s-t-a-n-c-e.html">SUBJECT_DISTANCE</a></p>
+</td>
+<td>
+<p>Value if signed double. Distance to focus point, unit is meter. If value &lt; 0 then focus point is infinite</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-e-t-e-r-i-n-g_-m-o-d-e.html">METERING_MODE</a></p>
+</td>
+<td>
+<p>Value is unsigned int. Exposure metering method: <ul> <li>0 = unknown</li>
+ <li>1 = Average</li>
+ <li>2 = CenterWeightedAverage</li>
+ <li>3 = Spot</li>
+ <li>4 = MultiSpot</li>
+ <li>5 = Pattern</li>
+ <li>6 = Partial</li>
+ <li>Other = reserved</li>
+ <li>255 = other</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-i-g-h-t_-s-o-u-r-c-e.html">LIGHT_SOURCE</a></p>
+</td>
+<td>
+<p>Value is unsigned int. Light sourceType, actually this means white balance setting. <ul> <li>0 = means auto</li>
+ <li>1 = Daylight</li>
+ <li>2 = Fluorescent</li>
+ <li>3 = Tungsten (incandescent light)</li>
+ <li>4 = Flash</li>
+ <li>9 = Fine weather</li>
+ <li>10 = Cloudy weather</li>
+ <li>11 = Shade</li>
+ <li>12 = Daylight fluorescent (D 5700 - 7100K)</li>
+ <li>13 = Day white fluorescent (N 4600 - 5400K)</li>
+ <li>14 = Cool white fluorescent (W 3900 - 4500K)</li>
+ <li>15 = White fluorescent (WW 3200 - 3700K)</li>
+ <li>17 = Standard light A</li>
+ <li>18 = Standard light B</li>
+ <li>19 = Standard light C</li>
+ <li>20 = D55</li>
+ <li>21 = D65</li>
+ <li>22 = D75</li>
+ <li>23 = D50</li>
+ <li>24 = ISO studio tungsten</li>
+ <li>255 = other light sourceType</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-l-a-s-h.html">FLASH</a></p>
+</td>
+<td>
+<p>Value is unsigned integer The 8 bits can be extracted and evaluated in this way: <ol> <li>Bit 0 indicates the flash firing status</li>
+ <li>bits 1 and 2 indicate the flash return status</li>
+ <li>bits 3 and 4 indicate the flash mode</li>
+ <li>bit 5 indicates whether the flash function is present</li>
+ <li>and bit 6 indicates "red eye" mode</li>
+ <li>bit 7 unused</li>
+ </ol>
+ </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-o-c-a-l_-l-e-n-g-t-h.html">FOCAL_LENGTH</a></p>
+</td>
+<td>
+<p>Value is unsigned double Focal length of lens used to take image. Unit is millimeter.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-b-j-e-c-t_-a-r-e-a.html">SUBJECT_AREA</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-a-k-e-r_-n-o-t-e.html">MAKER_NOTE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-u-s-e-r_-c-o-m-m-e-n-t.html">USER_COMMENT</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-b_-s-e-c_-t-i-m-e.html">SUB_SEC_TIME</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-b_-s-e-c_-t-i-m-e_-o-r-i-g-i-n-a-l.html">SUB_SEC_TIME_ORIGINAL</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-b_-s-e-c_-t-i-m-e_-d-i-g-i-t-i-z-e-d.html">SUB_SEC_TIME_DIGITIZED</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-l-a-s-h-p-i-x_-v-e-r-s-i-o-n.html">FLASHPIX_VERSION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-o-l-o-r_-s-p-a-c-e.html">COLOR_SPACE</a></p>
+</td>
+<td>
+<p>Value is int. Normally sRGB (=1) is used to define the color space based on the PC monitor conditions and environment. If a color space other than sRGB is used, Uncalibrated (=FFFF.H) is set. Image data recorded as Uncalibrated can be treated as sRGB when it is converted to Flashpix. On sRGB see Annex E. <ul> <li>'1' = sRGB</li>
+ <li>'FFFF' = Uncalibrated</li>
+ <li>'other' = Reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-i-x-e-l_-x_-d-i-m-e-n-s-i-o-n.html">PIXEL_X_DIMENSION</a></p>
+</td>
+<td>
+<p>Value is unsigned int. Specific to compressed data; the valid width of the meaningful image. When a compressed file is recorded, the valid width of the meaningful image shall be recorded in this tag, whether or not there is padding data or a restart marker. This tag should not exist in an uncompressed file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-i-x-e-l_-y_-d-i-m-e-n-s-i-o-n.html">PIXEL_Y_DIMENSION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-e-l-a-t-e-d_-s-o-u-n-d_-f-i-l-e.html">RELATED_SOUND_FILE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-n-t-e-r-o-p-e-r-a-b-i-l-i-t-y_-i-f-d.html">INTEROPERABILITY_IFD</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-l-a-s-h_-e-n-e-r-g-y.html">FLASH_ENERGY</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-p-a-t-i-a-l_-f-r-e-q-u-e-n-c-y_-r-e-s-p-o-n-s-e.html">SPATIAL_FREQUENCY_RESPONSE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-o-c-a-l_-p-l-a-n-e_-x_-r-e-s-o-l-u-t-i-o-n.html">FOCAL_PLANE_X_RESOLUTION</a></p>
+</td>
+<td>
+<p>Value is unsigned double. Indicates the number of pixels in the image width (X) direction per FocalPlaneResolutionUnit on the camera focal plane. CCD's pixel density</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-o-c-a-l_-p-l-a-n-e_-y_-r-e-s-o-l-u-t-i-o-n.html">FOCAL_PLANE_Y_RESOLUTION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-o-c-a-l_-p-l-a-n-e_-r-e-s-o-l-u-t-i-o-n_-u-n-i-t.html">FOCAL_PLANE_RESOLUTION_UNIT</a></p>
+</td>
+<td>
+<p>Value is unsigned int. Unit of FocalPlaneXResoluton/FocalPlaneYResolution. <ul> <li>'1' means no-unit</li>
+ <li>'2' inch</li>
+ <li>'3' centimeter</li>
+ <li>'4' millimeter</li>
+ <li>'5' micrometer</li>
+ </ul>
+ </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-b-j-e-c-t_-l-o-c-a-t-i-o-n.html">SUBJECT_LOCATION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-x-p-o-s-u-r-e_-i-n-d-e-x.html">EXPOSURE_INDEX</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-n-s-i-n-g_-m-e-t-h-o-d.html">SENSING_METHOD</a></p>
+</td>
+<td>
+<p>Value is unsigned int. Indicates the image sensor type on the camera or input device. The values are as follows: <ul> <li>1 = Not defined</li>
+ <li>2 = One-chip color area sensor</li>
+ <li>3 = Two-chip color area sensor JEITA CP-3451 - 41</li>
+ <li>4 = Three-chip color area sensor</li>
+ <li>5 = Color sequential area sensor</li>
+ <li>7 = Trilinear sensor</li>
+ <li>8 = Color sequential linear sensor</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-i-l-e_-s-o-u-r-c-e.html">FILE_SOURCE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-c-e-n-e_-t-y-p-e.html">SCENE_TYPE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-f-a_-p-a-t-t-e-r-n.html">CFA_PATTERN</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-u-s-t-o-m_-r-e-n-d-e-r-e-d.html">CUSTOM_RENDERED</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-x-p-o-s-u-r-e_-m-o-d-e.html">EXPOSURE_MODE</a></p>
+</td>
+<td>
+<p>Value is int. This tag indicates the exposure mode set when the image was shot. In auto-bracketing mode, the camera shoots a series of frames of the same scene at different exposure settings. <ul> <li>0 = Auto exposure</li>
+ <li>1 = Manual exposure</li>
+ <li>2 = Auto bracket</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-w-h-i-t-e_-b-a-l-a-n-c-e.html">WHITE_BALANCE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-i-g-i-t-a-l_-z-o-o-m_-r-a-t-i-o.html">DIGITAL_ZOOM_RATIO</a></p>
+</td>
+<td>
+<p>Value is double. This tag indicates the digital zoom ratio when the image was shot. If the numerator of the recorded value is 0, this indicates that digital zoom was not used</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-f-o-c-a-l_-l-e-n-g-t-h_-i-n_35_-m-m_-f-i-l-e.html">FOCAL_LENGTH_IN_35_MM_FILE</a></p>
+</td>
+<td>
+<p>Value is unsigned int. This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. Exif 2.2 tag, usually not present, it can be calculated by: </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-c-e-n-e_-c-a-p-t-u-r-e_-t-y-p-e.html">SCENE_CAPTURE_TYPE</a></p>
+</td>
+<td>
+<p>Value is int. This tag indicates the type of scene that was shot. It can also be used to record the mode in which the image was shot. Note that this differs from the scene type (SceneType) tag. <ul> <li>0 = Standard</li>
+ <li>1 = Landscape</li>
+ <li>2 = Portrait</li>
+ <li>3 = Night scene</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-a-i-n_-c-o-n-t-r-o-l.html">GAIN_CONTROL</a></p>
+</td>
+<td>
+<p>Value is int. This tag indicates the degree of overall image gain adjustment. <ul> <li>0 = None</li>
+ <li>1 = Low gain up</li>
+ <li>2 = High gain up</li>
+ <li>3 = Low gain down</li>
+ <li>4 = High gain down</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-o-n-t-r-a-s-t.html">CONTRAST</a></p>
+</td>
+<td>
+<p>Value is int. This tag indicates the direction of contrast processing applied by the camera when the image was shot. <ul> <li>0 = Normal</li>
+ <li>1 = Soft</li>
+ <li>2 = Hard</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-a-t-u-r-a-t-i-o-n.html">SATURATION</a></p>
+</td>
+<td>
+<p>Value is int. This tag indicates the direction of saturation processing applied by the camera when the image was shot. <ul> <li>0 = Normal</li>
+ <li>1 = Low saturation</li>
+ <li>2 = High saturation</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-h-a-r-p-n-e-s-s.html">SHARPNESS</a></p>
+</td>
+<td>
+<p>Value is int. This tag indicates the direction of sharpness processing applied by the camera when the image was shot <ul> <li>0 = Normal</li>
+ <li>1 = Soft</li>
+ <li>2 = Hard</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-d-e-v-i-c-e_-s-e-t-t-i-n-g_-d-e-s-c-r-i-p-t-i-o-n.html">DEVICE_SETTING_DESCRIPTION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-u-b-j-e-c-t_-d-i-s-t-a-n-c-e_-r-a-n-g-e.html">SUBJECT_DISTANCE_RANGE</a></p>
+</td>
+<td>
+<p>Value is int. This tag indicates the distance to the subject. <ul> <li>0 = unknown</li>
+ <li>1 = Macro</li>
+ <li>2 = Close view</li>
+ <li>3 = Distant view</li>
+ <li>Other = reserved</li>
+ </ul>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-m-a-g-e_-u-n-i-q-u-e_-i-d.html">IMAGE_UNIQUE_ID</a></p>
+</td>
+<td>
+<p><code><a href="../../-exif-tag-info/-t-y-p-e_-a-s-c-i-i.html">ExifTagInfo#TYPE_ASCII</a></code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-e-n-s_-s-p-e-c-s.html">LENS_SPECS</a></p>
+</td>
+<td>
+<p>Lens Specifications. The value it's a 4 rational containing: <ol> <li>Minimum focal length (in mm)</li>
+ <li>Maximum focal length (in mm)</li>
+ <li>Minimum F Number in the minimum focal length</li>
+ <li>Maximum F Number in the maximum focal length</li>
+ </ol>
+ </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-e-n-s_-m-a-k-e.html">LENS_MAKE</a></p>
+</td>
+<td>
+<p>Lens maker <code><a href="../../-exif-tag-info/-t-y-p-e_-a-s-c-i-i.html">ExifTagInfo#TYPE_ASCII</a></code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-l-e-n-s_-m-o-d-e-l.html">LENS_MODEL</a></p>
+</td>
+<td>
+<p>Lens model name and number <code><a href="../../-exif-tag-info/-t-y-p-e_-a-s-c-i-i.html">ExifTagInfo#TYPE_ASCII</a></code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-n-s-i-t-i-v-i-t-y_-t-y-p-e.html">SENSITIVITY_TYPE</a></p>
+</td>
+<td>
+<p>The SensitivityType tag indicates which one of the parameters of ISO12232 is the PhotographicSensitivity tag. Although it is an optional tag, it should be recorded when a PhotographicSensitivity tag is recorded. Value = 4, 5, 6, or 7 may be used in case that the values of plural parameters are the same. Values: <ul> <li>0: Unknown</li>
+ <li>1: Standardoutputsensitivity(SOS)</li>
+ <li>2: Recommended exposure index (REI)</li>
+ <li>3: ISOspeed</li>
+ <li>4: Standard output sensitivity (SOS) and recommended exposure index (REI)</li>
+ <li>5: Standardoutputsensitivity(SOS)andISOspeed</li>
+ <li>6: Recommendedexposureindex(REI)andISOspeed</li>
+ <li>7: Standard output sensitivity (SOS) and recommended exposure index (REI) and ISO speed</li>
+ <li>Other: Reserved</li>
+ </ul>
+ </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-v-e-r-s-i-o-n_-i-d.html">GPS_VERSION_ID</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-l-a-t-i-t-u-d-e_-r-e-f.html">GPS_LATITUDE_REF</a></p>
+</td>
+<td>
+<p>Value is string(1) Indicates whether the latitude is north or south latitude. The ASCII value 'N' indicates north latitude, and 'S' is south latitude.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-l-a-t-i-t-u-d-e.html">GPS_LATITUDE</a></p>
+</td>
+<td>
+<p>Value is string. Indicates the latitude. The latitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. If latitude is expressed as degrees, minutes and seconds, a typical format would be dd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format would be dd/1,mmmm/100,0/1.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-l-o-n-g-i-t-u-d-e_-r-e-f.html">GPS_LONGITUDE_REF</a></p>
+</td>
+<td>
+<p>Value is string(1) Indicates whether the longitude is east or west longitude. ASCII 'E' indicates east longitude, and 'W' is west longitude.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-l-o-n-g-i-t-u-d-e.html">GPS_LONGITUDE</a></p>
+</td>
+<td>
+<p>Value is string. Indicates the longitude. The longitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. If longitude is expressed as degrees, minutes and seconds, a typical format would be ddd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format would be ddd/1,mmmm/100,0/1.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-a-l-t-i-t-u-d-e_-r-e-f.html">GPS_ALTITUDE_REF</a></p>
+</td>
+<td>
+<p>Value is byte Indicates the altitude used as the reference altitude. If the reference is sea level and the altitude is above sea level, 0 is given. If the altitude is below sea level, a value of 1 is given and the altitude is indicated as an absolute value in the GPSAltitude tag. The reference unit is meters. Note that this tag is BYTE type, unlike other reference tags</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-a-l-t-i-t-u-d-e.html">GPS_ALTITUDE</a></p>
+</td>
+<td>
+<p>Value is string. Indicates the altitude based on the reference in GPSAltitudeRef. Altitude is expressed as one RATIONAL value. The reference unit is meters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-t-i-m-e_-s-t-a-m-p.html">GPS_TIME_STAMP</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-s-a-t-t-e-l-l-i-t-e-s.html">GPS_SATTELLITES</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-s-t-a-t-u-s.html">GPS_STATUS</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-m-e-a-s-u-r-e_-m-o-d-e.html">GPS_MEASURE_MODE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-o-p.html">GPS_DOP</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-s-p-e-e-d_-r-e-f.html">GPS_SPEED_REF</a></p>
+</td>
+<td>
+<p>Value is string(1). Indicates the unit used to express the GPS receiver speed of movement. 'K' 'M' and 'N' represents kilometers per hour, miles per hour, and knots.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-s-p-e-e-d.html">GPS_SPEED</a></p>
+</td>
+<td>
+<p>Value is string. Indicates the speed of GPS receiver movement</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-t-r-a-c-k_-r-e-f.html">GPS_TRACK_REF</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-t-r-a-c-k.html">GPS_TRACK</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-i-m-g_-d-i-r-e-c-t-i-o-n_-r-e-f.html">GPS_IMG_DIRECTION_REF</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-i-m-g_-d-i-r-e-c-t-i-o-n.html">GPS_IMG_DIRECTION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-m-a-p_-d-a-t-u-m.html">GPS_MAP_DATUM</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-l-a-t-i-t-u-d-e_-r-e-f.html">GPS_DEST_LATITUDE_REF</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-l-a-t-i-t-u-d-e.html">GPS_DEST_LATITUDE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-l-o-n-g-i-t-u-d-e_-r-e-f.html">GPS_DEST_LONGITUDE_REF</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-l-o-n-g-i-t-u-d-e.html">GPS_DEST_LONGITUDE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-b-e-a-r-i-n-g_-r-e-f.html">GPS_DEST_BEARING_REF</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-b-e-a-r-i-n-g.html">GPS_DEST_BEARING</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-d-i-s-t-a-n-c-e_-r-e-f.html">GPS_DEST_DISTANCE_REF</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-e-s-t_-d-i-s-t-a-n-c-e.html">GPS_DEST_DISTANCE</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-p-r-o-c-e-s-s-i-n-g_-m-e-t-h-o-d.html">GPS_PROCESSING_METHOD</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-a-r-e-a_-i-n-f-o-r-m-a-t-i-o-n.html">GPS_AREA_INFORMATION</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-a-t-e_-s-t-a-m-p.html">GPS_DATE_STAMP</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-p-s_-d-i-f-f-e-r-e-n-t-i-a-l.html">GPS_DIFFERENTIAL</a></p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-n-t-e-r-o-p-e-r-a-b-i-l-i-t-y_-i-n-d-e-x.html">INTEROPERABILITY_INDEX</a></p>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="define-tag.html">defineTag</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">defineTag</span><span class="symbol">(</span><span class="identifier">ifdId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">tagId</span><span class="symbol">:</span>&nbsp;<span class="identifier">short</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

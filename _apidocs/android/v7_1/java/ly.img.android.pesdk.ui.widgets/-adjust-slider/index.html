@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AdjustSlider - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.widgets</a>&nbsp;/&nbsp;<a href="./index.html">AdjustSlider</a><br/>
+<br/>
+<h1>AdjustSlider</h1>
+<code><span class="keyword">class </span><span class="identifier">AdjustSlider</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">TextView</span></code>
+<p></p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-adjust-bar-change-listener/index.html">AdjustBarChangeListener</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">AdjustBarChangeListener</span></code>
+<p>A callback that notifies clients when the progress level has been changed. This includes changes that were initiated by the user through a touch gesture or arrow key/trackball as well as changes that were initiated programmatically.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AdjustSlider</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AdjustSlider</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AdjustSlider</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">, </span><span class="identifier">defStyleAttr</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="dispatch-draw.html">dispatchDraw</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchDraw</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-dots.html">drawDots</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">drawDots</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">length</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">angle</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-max.html">getMax</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMax</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-min.html">getMin</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMin</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-value.html">getValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-size-changed.html">onSizeChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSizeChanged</span><span class="symbol">(</span><span class="identifier">w</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">h</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">oldw</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">oldh</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-touch-event.html">onTouchEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onTouchEvent</span><span class="symbol">(</span><span class="identifier">rawEvent</span><span class="symbol">:</span>&nbsp;<span class="identifier">MotionEvent</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-change-listener.html">setChangeListener</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setChangeListener</span><span class="symbol">(</span><span class="identifier">listener</span><span class="symbol">:</span>&nbsp;<a href="-adjust-bar-change-listener/index.html"><span class="identifier">AdjustSlider.AdjustBarChangeListener</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-max.html">setMax</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMax</span><span class="symbol">(</span><span class="identifier">max</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-min.html">setMin</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMin</span><span class="symbol">(</span><span class="identifier">min</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-value.html">setValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setValue</span><span class="symbol">(</span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">fromUser</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-label.html">updateLabel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateLabel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-e-n-t-e-r_-t-i-c-k_-h-e-i-g-h-t.html">CENTER_TICK_HEIGHT</a></p>
+</td>
+<td>
+<code><span class="identifier">CENTER_TICK_HEIGHT</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-c-e-n-t-e-r_-t-i-c-k_-w-i-d-t-h.html">CENTER_TICK_WIDTH</a></p>
+</td>
+<td>
+<code><span class="identifier">CENTER_TICK_WIDTH</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-n-d-i-c-a-t-o-r_-c-o-l-o-r.html">INDICATOR_COLOR</a></p>
+</td>
+<td>
+<code><span class="identifier">INDICATOR_COLOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-o-l-i-d.html">SOLID</a></p>
+</td>
+<td>
+<code><span class="identifier">SOLID</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-e-x-t_-b-g_-c-l-e-a-r.html">TEXT_BG_CLEAR</a></p>
+</td>
+<td>
+<code><span class="identifier">TEXT_BG_CLEAR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-i-c-k_-d-i-s-t-a-n-c-e.html">TICK_DISTANCE</a></p>
+</td>
+<td>
+<code><span class="identifier">TICK_DISTANCE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-i-c-k_-s-i-z-e.html">TICK_SIZE</a></p>
+</td>
+<td>
+<code><span class="identifier">TICK_SIZE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-r-a-n-s-p-a-r-e-n-t.html">TRANSPARENT</a></p>
+</td>
+<td>
+<code><span class="identifier">TRANSPARENT</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

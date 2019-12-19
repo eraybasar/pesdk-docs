@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TextToolPanel - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels</a>&nbsp;/&nbsp;<a href="./index.html">TextToolPanel</a><br/>
+<br/>
+<h1>TextToolPanel</h1>
+<code><span class="keyword">class </span><span class="identifier">TextToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-tool-panel/index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><span class="identifier">OnGlobalLayoutListener</span><span class="symbol">, </span><span class="identifier">OnEditorActionListener</span></code>
+<p>Tool view to add and control Text-Stickers.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TextToolPanel</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="check-keyboard-height.html">checkKeyboardHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">checkKeyboardHeight</span><span class="symbol">(</span><span class="identifier">check</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-exit-animator.html">createExitAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createExitAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-show-animator.html">createShowAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createShowAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-history-settings.html">getHistorySettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHistorySettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.state.manager.Settings</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layout-resource.html">getLayoutResource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLayoutResource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-before-detach.html">onBeforeDetach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBeforeDetach</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">, </span><span class="identifier">revertChanges</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-editor-action.html">onEditorAction</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onEditorAction</span><span class="symbol">(</span><span class="identifier">v</span><span class="symbol">:</span>&nbsp;<span class="identifier">TextView</span><span class="symbol">, </span><span class="identifier">actionId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">KeyEvent</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-global-layout.html">onGlobalLayout</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onGlobalLayout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-text-changed.html">onTextChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onTextChanged</span><span class="symbol">(</span><span class="identifier">text</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="switch-keyboard-visibility.html">switchKeyboardVisibility</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">switchKeyboardVisibility</span><span class="symbol">(</span><span class="identifier">enable</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-t-o-o-l_-i-d.html">TOOL_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">TOOL_ID</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

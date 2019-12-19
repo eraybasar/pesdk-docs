@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PseudoRandom - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.random</a>&nbsp;/&nbsp;<a href="./index.html">PseudoRandom</a><br/>
+<br/>
+<h1>PseudoRandom</h1>
+<code><span class="keyword">class </span><span class="identifier">PseudoRandom</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-seed-random/index.html"><span class="identifier">SeedRandom</span></a></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">Companion</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PseudoRandom</span><span class="symbol">(</span><span class="identifier">seed</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">PseudoRandom</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-seed.html">getSeed</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSeed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="next.html">next</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="identifier">range</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="identifier">range</span><span class="symbol">:</span>&nbsp;<span class="identifier">IntRange</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="identifier">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">to</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="next-bool.html">nextBool</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">nextBool</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="next-float.html">nextFloat</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">nextFloat</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pick-next.html">pickNext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">pickNext</span><span class="symbol">(</span><span class="identifier">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">pickNext</span><span class="symbol">(</span><span class="identifier">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">&lt;</span><span class="identifier">? extends T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-seed.html">setSeed</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSeed</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">long</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-companion.html">Companion</a></p>
+</td>
+<td>
+<code><span class="identifier">Companion</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-a-x.html">MAX</a></p>
+</td>
+<td>
+<code><span class="identifier">MAX</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-e-d_-d-i-v-i-d-e-r.html">SEED_DIVIDER</a></p>
+</td>
+<td>
+<code><span class="identifier">SEED_DIVIDER</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-e-d_-h-i-g-h_-m-u-l-t-i-p-l-y.html">SEED_HIGH_MULTIPLY</a></p>
+</td>
+<td>
+<code><span class="identifier">SEED_HIGH_MULTIPLY</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-e-d_-l-o-w_-m-u-l-t-i-p-l-y.html">SEED_LOW_MULTIPLY</a></p>
+</td>
+<td>
+<code><span class="identifier">SEED_LOW_MULTIPLY</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
