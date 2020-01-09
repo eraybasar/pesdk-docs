@@ -15,32 +15,39 @@
 <tbody>
 <tr>
 <td>
-<p><a href="get-e-g-l-context.html">getEGLContext</a></p>
+<p><a href="free-memory.html">freeMemory</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">getEGLContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EGLContext</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">freeMemory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-egl-context.html">getEglContext</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getEglContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="queue-destroy.html">queueDestroy</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
-<code><span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">, </span><span class="identifier">sync</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">, </span><span class="identifier">sync</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="queue-rebound.html">queueRebound</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">queueRebound</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">queueRebound</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="run-with-gl-context.html">runWithGlContext</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">runWithGlContext</span><span class="symbol">(</span><span class="identifier">runnable</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Runnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">runWithGlContext</span><span class="symbol">(</span><span class="identifier">runnable</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Runnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
 </tr>
 </tbody>
 </table>
