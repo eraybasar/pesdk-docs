@@ -18,7 +18,7 @@ published: true # Either published or not
 
 ## 1. Update the Plugin to v7  
 Please ensure that our artifactory.img.ly repository is listed in your repositories in the project's `build.gradle` file,
-and you use at least v7.1.5 of the SDK.
+and you use at least v7.1.6 of the SDK.
 
 ```groovy
 // Add the PESDK repository and plugin dependency
@@ -30,7 +30,7 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:7.1.5'
+        classpath 'ly.img.android.pesdk:plugin:7.1.6'
     }
 }
 ```
