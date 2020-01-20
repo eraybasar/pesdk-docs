@@ -174,8 +174,8 @@ settingsList.getSettingsModel(TransformSettings::class.java).apply {
 
 ## Adding masked crops
 
-It is possible to define crops which behave as a mask. This masks can be circular or rectangular but with rounded edges.
-Furthermore the color of the border can be defined and there is an option to force the masked to be exported or only shown in the Editor.
+It is possible to define crops that behave like a mask. These masks can be circular or rectangular, but with rounded edges.
+In addition, the color of the frame can be defined and the export of the mask forced or only displayed in the editor.
 
 The `MaskedCropAspectAsset` can be configured with the following parameters:
 
