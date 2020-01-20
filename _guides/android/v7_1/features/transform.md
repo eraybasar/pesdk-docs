@@ -170,3 +170,69 @@ settingsList.getSettingsModel(TransformSettings::class.java).apply {
 {% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configShouldCropped | push: second_snippet_ExampleConfigUtility_configShouldCropped %}
 {% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configShouldCropped{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
+
+## Adding masked crops
+
+It is possible to define crops which behave as a mask. This masks can be circular or rectangular but with rounded edges.
+Furthermore the color of the border can be defined and there is an option to force the masked to be exported or only shown in the Editor.
+
+The `MaskedCropAspectAsset` can be configured with the following parameters:
+
+1. Identifier, this should be unique. It is used for serialization and connects the `Asset` with the `Item`.
+2. Width is the horizontal size of the crop.
+3. Height is the vertical size of the crop.
+4. A boolean which defines if the crop should have fixed pixel values.
+5. A boolean which defines if the crop mask should be exported or only shown in the editor.
+6. (Optional) The color of the mask border. Takes the editor's background color as default.
+7. (Optional) The corner radius of the mask. The default value is 0.5 which is a circular mask.
+
+{% capture first_snippet_ExampleConfigUtility_configCropMask %}
+Java
+---
+``````java
+// Obtain the asset config from you settingsList
+AssetConfig assetConfig = settingsList.getConfig();
+
+// Add new aspect assets to the backend
+assetConfig.getAssetMap(CropAspectAsset.class).add(
+        new MaskedCropAspectAsset("my_crop_mask_circular_1_1", 1, 1, false, true),
+        new MaskedCropAspectAsset("my_crop_mask_1_1", 1, 1, false, false, Color.BLACK, 0.2f),
+        new MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true)
+);
+
+// Obtain the ui config from you settingsList
+UiConfigAspect uiConfigAspect = settingsList.getSettingsModel(UiConfigAspect.class);
+
+// Add aspect items to UI
+uiConfigAspect.setAspectList(
+        new CropMaskItem("my_crop_mask_circular_1_1", "Circle"),
+        new CropMaskItem("my_crop_mask_1_1", "Rounded"),
+        new CropMaskItem("my_crop_mask_4_3", "4:3 Mask")
+);
+``````
+{% endcapture %}{% capture second_snippet_ExampleConfigUtility_configCropMask %}
+Kotlin
+---
+``````kotlin
+// Add new aspect assets to the backend
+settingsList.config.apply {
+    getAssetMap(CropAspectAsset::class.java).clear().add(
+            MaskedCropAspectAsset("my_crop_mask_circular_1_1", 1, 1, false, true),
+            MaskedCropAspectAsset("my_crop_mask_1_1", 1, 1, false, false, Color.BLACK, 0.2f),
+            MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true)
+    )
+}
+
+// Add aspect items to UI
+settingsList.getSettingsModel(UiConfigAspect::class.java).apply {
+    setAspectList(
+        CropMaskItem("my_crop_mask_circular_1_1", "Circle"),
+        CropMaskItem("my_crop_mask_1_1", "Rounded"),
+        CropMaskItem("my_crop_mask_4_3", "4:3 Mask")
+    )
+}
+``````
+{% endcapture %}{% assign snippets = "" | split: "" | push: first_snippet_ExampleConfigUtility_configCropMask | push: second_snippet_ExampleConfigUtility_configCropMask %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ExampleConfigUtility_configCropMask{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
