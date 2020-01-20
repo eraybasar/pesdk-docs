@@ -196,9 +196,9 @@ AssetConfig assetConfig = settingsList.getConfig();
 
 // Add new aspect assets to the backend
 assetConfig.getAssetMap(CropAspectAsset.class).add(
-        new MaskedCropAspectAsset("my_crop_mask_circular_1_1", 1, 1, false, true),
-        new MaskedCropAspectAsset("my_crop_mask_1_1", 1, 1, false, false, Color.BLACK, 0.2f),
-        new MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true)
+        new MaskedCropAspectAsset("my_crop_mask_circ_1_1", 1, 1, false, true),
+        new MaskedCropAspectAsset("my_crop_mask_round_1_1", 1, 1, false, false, 0.2f),
+        new MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true, Color.RED)
 );
 
 // Obtain the ui config from you settingsList
@@ -206,8 +206,8 @@ UiConfigAspect uiConfigAspect = settingsList.getSettingsModel(UiConfigAspect.cla
 
 // Add aspect items to UI
 uiConfigAspect.setAspectList(
-        new CropMaskItem("my_crop_mask_circular_1_1", "Circle"),
-        new CropMaskItem("my_crop_mask_1_1", "Rounded"),
+        new CropMaskItem("my_crop_mask_circ_1_1", "Circle"),
+        new CropMaskItem("my_crop_mask_round_1_1", "Rounded"),
         new CropMaskItem("my_crop_mask_4_3", "4:3 Mask")
 );
 ``````
@@ -218,17 +218,17 @@ Kotlin
 // Add new aspect assets to the backend
 settingsList.config.apply {
     getAssetMap(CropAspectAsset::class.java).clear().add(
-            MaskedCropAspectAsset("my_crop_mask_circular_1_1", 1, 1, false, true),
-            MaskedCropAspectAsset("my_crop_mask_1_1", 1, 1, false, false, Color.BLACK),
-            MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true, 0.2f)
+            MaskedCropAspectAsset("my_crop_mask_circ_1_1", 1, 1, false, true),
+            MaskedCropAspectAsset("my_crop_mask_round_1_1", 1, 1, false, false, 0.2f),
+            MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true, Color.RED)
     )
 }
 
 // Add aspect items to UI
 settingsList.getSettingsModel(UiConfigAspect::class.java).apply {
     setAspectList(
-        CropMaskItem("my_crop_mask_circular_1_1", "Circle"),
-        CropMaskItem("my_crop_mask_1_1", "Rounded"),
+        CropMaskItem("my_crop_mask_circ_1_1", "Circle"),
+        CropMaskItem("my_crop_mask_round_1_1", "Rounded"),
         CropMaskItem("my_crop_mask_4_3", "4:3 Mask")
     )
 }
