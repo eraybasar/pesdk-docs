@@ -219,8 +219,8 @@ Kotlin
 settingsList.config.apply {
     getAssetMap(CropAspectAsset::class.java).clear().add(
             MaskedCropAspectAsset("my_crop_mask_circular_1_1", 1, 1, false, true),
-            MaskedCropAspectAsset("my_crop_mask_1_1", 1, 1, false, false, Color.BLACK, 0.2f),
-            MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true)
+            MaskedCropAspectAsset("my_crop_mask_1_1", 1, 1, false, false, Color.BLACK),
+            MaskedCropAspectAsset("my_crop_mask_4_3", 4, 3, false, true, 0.2f)
     )
 }
 
