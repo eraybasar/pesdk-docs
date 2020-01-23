@@ -79,7 +79,7 @@ buildscript {
     }
     dependencies {
         // Insert the latest SDK version number here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-        classpath 'ly.img.android.pesdk:plugin:7.1.6'
+        classpath 'ly.img.android.pesdk:plugin:7.1.8'
         // Add the Kotlin plugin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.61"  
     }
