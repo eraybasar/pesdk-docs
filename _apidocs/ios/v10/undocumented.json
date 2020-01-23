@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/sascha/Projects/imgly/pesdk-ios/ImglyKit/Objective-C/LicenseProductObjC.swift",
-      "line": 12,
-      "symbol": "_ObjCLicenseProduct",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    }
+
   ],
-  "source_directory": "/Users/sascha/Projects/imgly/pesdk-ios"
+  "source_directory": "/Users/alx/Documents/Code/img.ly/pesdk-ios"
 }

@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           PhotoEditorSDK Docs
         </a>
-         (99% documented)
+         (100% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -821,7 +821,7 @@
                 <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKBrush">Brush</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKBrushColorToolControllerOptionsBuilder">BrushColorToolControllerOptionsBuilder</a>
+                <a class="nav-group-task-link" href="../Classes/BrushColorToolControllerOptionsBuilder.html">BrushColorToolControllerOptionsBuilder</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/BrushToolControllerOptionsBuilder.html">BrushToolControllerOptionsBuilder</a>
@@ -1076,7 +1076,7 @@
                 <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKAdjustmentModel">_ObjCAdjustmentModel</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKBrushSpriteModel">_ObjCBrushSpriteModel</a>
+                <a class="nav-group-task-link" href="../Classes/_ObjCBrushSpriteModel.html">_ObjCBrushSpriteModel</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKEffectFilterModel">_ObjCEffectFilterModel</a>
@@ -1100,7 +1100,7 @@
                 <a class="nav-group-task-link" href="../Classes/_ObjCPhotoEditMenuItem.html">_ObjCPhotoEditMenuItem</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKPhotoEditModel">_ObjCPhotoEditModel</a>
+                <a class="nav-group-task-link" href="../Classes/_ObjCPhotoEditModel.html">_ObjCPhotoEditModel</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other%20Classes.html#/c:@M@ImglyKit@objc(cs)PESDKSpriteModel">_ObjCSpriteModel</a>
@@ -1217,9 +1217,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/TransformAction.html">TransformAction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Enums.html#/c:@M@ImglyKit@E@PESDKLicenseProduct">_ObjCLicenseProduct</a>
               </li>
             </ul>
           </li>
@@ -1470,7 +1467,7 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>IMGLY</h1>
               <div class="declaration">
                 <div class="language">
@@ -1619,6 +1616,8 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Classes/IMGLY.html">IMGLY</a></span><span class="o">.</span><span class="kt">Error</span><span class="p">:</span> <span class="kt">LocalizedError</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Classes/IMGLY.html">IMGLY</a></span><span class="o">.</span><span class="kt">Error</span><span class="p">:</span> <span class="kt">CustomNSError</span></code></pre>
 
                         </div>
                       </div>
@@ -1901,7 +1900,7 @@ view as long as it adopts the <code><a href="../Protocols/ProgressView.html">Pro
                       <div class="abstract">
                         <p>Allows to set a custom dictionary that contains dictionaries with language locales.
 Will override localization found in the bundle, if a value is found.
-Falls back to <q>en</q> if localization key is not found in dictionary.</p>
+Falls back to &ldquo;en&rdquo; if localization key is not found in dictionary.</p>
 
                       </div>
                       <div class="declaration">
@@ -1974,9 +1973,9 @@ If this block is <code>nil</code>, the image from the PhotoEditorSDK.bundle will
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8ImglyKit5IMGLYC19renderPipelineBlockSo7CIImageCAF_So15PESDKRenderModeVSgtcSgvpZ"></a>
+                    <a name="/"></a>
                     <a name="//apple_ref/swift/Variable/renderPipelineBlock" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8ImglyKit5IMGLYC19renderPipelineBlockSo7CIImageCAF_So15PESDKRenderModeVSgtcSgvpZ">renderPipelineBlock</a>
+                    <a class="token" href="#/">renderPipelineBlock</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2056,8 +2055,7 @@ across the whole framework with any public class.</p>
     <p class="aside-title">Throws</p>
     Throws an error if the replacing class is not a subclass of the builting class.
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     Only set from the main thread, before you first use the object. Set up your class overrides before calling any other methods.
 
@@ -2164,8 +2162,8 @@ across the whole framework with any public class.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2019-12-17)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-01-23)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
