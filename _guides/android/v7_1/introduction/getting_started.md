@@ -33,7 +33,7 @@ We made an awesome video tutorial for you.
 
 <div class="documentation__disclaimer">
 <h4 id="license-terms">Using a Trial License</h4>
-Make sure you have a standard license before adding it properly to your running project. A trial license is valid for only 30 days and will afterwards disable the export function for your customers. Your trial license should therefore be removed and substituted by a standard license. More information can be found <a href="{{site.baseUrl}}/guides/html5/v4/introduction/faq/standard_or_trial_license">here</a>.
+Make sure you have a standard license before adding it properly to your running project. A trial license is valid for only 30 days and will afterwards disable the export function for your customers. Your trial license should therefore be removed and substituted by a standard license. More information can be found <a href="{{site.baseUrl}}/guides/{{page.platform}}/{{page.version}}/introduction/faq/standard_or_trial_license">here</a>.
 </div>
 
 ## Prerequisites
@@ -48,7 +48,7 @@ The following software is required:
 * Android Support Repository 28.0.0+
 * License\*
 
-\*You will need a **valid license file** in order to use the PhotoEditor SDK in your own application. You can request a trial license at [here](https://www.photoeditorsdk.com/users/new). As our {% include guides/android/example-app.md %} comes bundled with its own license, you can use this right away, if you just want to take a quick look.
+\*You will need a **valid license file** in order to use the PhotoEditor SDK in your own application. You can request a trial license at [here](https://account.photoeditorsdk.com/signup/). As our {% include guides/android/example-app.md %} comes bundled with its own license, you can use this right away, if you just want to take a quick look.
 
 ## Supported Android versions
 
@@ -61,7 +61,7 @@ compiled with `Build-API` and `targetSdkVersion` Level 27+ to support Android 8.
 Before using any components of the PhotoEditor SDK, you have to add your license file to your applications assets folder.
 The expected default name of the license file is "LICENSE". In order to change this, see licencePath option of PESDKConfig in your gradle file.  
 
-The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license that's bound to your bundle identifier. You can start a trial [here](https://www.photoeditorsdk.com/users/new) and download your license file from your [dashboard](https://www.photoeditorsdk.com/dashboard).
+The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license that's bound to your bundle identifier. You can start a trial [here](https://account.photoeditorsdk.com/signup/) and download your license file from your [dashboard](https://account.photoeditorsdk.com/dashboard/subscriptions).
 
 Once the license file has been added the application will validate its presence upon launch.
 
