@@ -48,7 +48,7 @@ The following software is required:
 * Android Support Repository 27.1.1+
 * License\*
 
-\*You will need a **valid license file** in order to use the PhotoEditor SDK in your own application. You can request a trial license at [here](https://www.photoeditorsdk.com/users/new). As our {% include guides/android/example-app.md %} comes bundled with its own license, you can use this right away, if you just want to take a quick look.
+\*You will need a **valid license file** in order to use the PhotoEditor SDK in your own application. You can request a trial license at [here](https://account.photoeditorsdk.com/signup/). As our {% include guides/android/example-app.md %} comes bundled with its own license, you can use this right away, if you just want to take a quick look.
 
 ## Supported Android versions
 
@@ -61,7 +61,7 @@ compiled with `Build-API` and `targetSdkVersion` Level 27+ to support Android 8.
 Before using any components of the PhotoEditor SDK, you have to add your license file to your applications assets folder.
 The expected default name of the license file is "LICENSE". In order to change this, see licencePath option of PESDKConfig in your gradle file.  
 
-The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license that's bound to your bundle identifier. You can start a trial [here](https://www.photoeditorsdk.com/users/new) and download your license file from your [dashboard](https://www.photoeditorsdk.com/dashboard).
+The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license that's bound to your bundle identifier. You can start a trial [here](https://account.photoeditorsdk.com/signup/) and download your license file from your [dashboard](https://account.photoeditorsdk.com/dashboard/subscriptions).
 
 Once the license file has been added the application will validate its presence upon launch.
 
