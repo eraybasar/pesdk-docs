@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PseudoRandom - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.random</a>&nbsp;/&nbsp;<a href="./index.html">PseudoRandom</a><br/>
+<br/>
+<h1>PseudoRandom</h1>
+<code><span class="keyword">class </span><span class="identifier">PseudoRandom</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-seed-random/index.html"><span class="identifier">SeedRandom</span></a></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PseudoRandom</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random.PseudoRandom$<init>(kotlin.Long)/seed">seed</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;System.nanoTime()<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="seed.html">seed</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">seed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="next.html">next</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random.PseudoRandom$next(kotlin.Int)/range">range</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random.PseudoRandom$next(kotlin.ranges.IntRange)/range">range</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int-range/index.html"><span class="identifier">IntRange</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random.PseudoRandom$next(kotlin.Int, kotlin.Int)/from">from</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.random.PseudoRandom$next(kotlin.Int, kotlin.Int)/to">to</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="next-bool.html">nextBool</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">nextBool</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="next-float.html">nextFloat</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">nextFloat</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pick-next.html">pickNext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">pickNext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random.PseudoRandom$pickNext(kotlin.Array((ly.img.android.pesdk.backend.random.PseudoRandom.pickNext.T)))/from">from</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="pick-next.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="pick-next.html#T"><span class="identifier">T</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">pickNext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random.PseudoRandom$pickNext(kotlin.collections.List((ly.img.android.pesdk.backend.random.PseudoRandom.pickNext.T)))/from">from</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="pick-next.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="pick-next.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-m-a-x.html">MAX</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">MAX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-e-d_-d-i-v-i-d-e-r.html">SEED_DIVIDER</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">SEED_DIVIDER</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-e-d_-h-i-g-h_-m-u-l-t-i-p-l-y.html">SEED_HIGH_MULTIPLY</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">SEED_HIGH_MULTIPLY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-e-d_-l-o-w_-m-u-l-t-i-p-l-y.html">SEED_LOW_MULTIPLY</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">SEED_LOW_MULTIPLY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../also-add-to.html">alsoAddTo</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-seed-random/index.html"><span class="identifier">SeedRandom</span></a><span class="symbol">&gt;</span> <a href="../also-add-to.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">alsoAddTo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.random$alsoAddTo(ly.img.android.pesdk.backend.random.alsoAddTo.A, ((ly.img.android.pesdk.backend.random.SeedRandom)))/pool">pool</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="../-seed-random/index.html"><span class="identifier">SeedRandom</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../also-add-to.html#A"><span class="identifier">A</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.MultiRect)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

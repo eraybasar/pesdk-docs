@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExifTagInfo.getBytes - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">ExifTagInfo</a>&nbsp;/&nbsp;<a href="./get-bytes.html">getBytes</a><br/>
+<br/>
+<h1>getBytes</h1>
+<a name="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray)"></a>
+<code><span class="keyword">protected</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBytes</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray)/buf">buf</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Equivalent to getBytes(buffer, 0, buffer.length).</p>
+<a name="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray, kotlin.Int, kotlin.Int)"></a>
+<code><span class="keyword">protected</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBytes</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray, kotlin.Int, kotlin.Int)/buf">buf</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.ExifTagInfo$getBytes(kotlin.ByteArray, kotlin.Int, kotlin.Int)/length">length</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Gets the <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code> data.</p>
+<h3>Parameters</h3>
+<p><a name="buf"></a>
+<code>buf</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the byte array in which to store the bytes read.</p>
+<p><a name="offset"></a>
+<code>offset</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> the initial position in buffer to store the bytes.</p>
+<p><a name="length"></a>
+<code>length</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> the maximum number of bytes to store in buffer. If length &gt; component count, only the valid bytes will be stored.</p>
+<h3>Exceptions</h3>
+<p><a name="IllegalArgumentException"></a>
+<code>IllegalArgumentException</code> - If the type is NOT <code><a href="-t-y-p-e_-u-n-d-e-f-i-n-e-d.html">#TYPE_UNDEFINED</a></code> or <code><a href="-t-y-p-e_-u-n-s-i-g-n-e-d_-b-y-t-e.html">#TYPE_UNSIGNED_BYTE</a></code>.</p>
+</BODY>
+</HTML>

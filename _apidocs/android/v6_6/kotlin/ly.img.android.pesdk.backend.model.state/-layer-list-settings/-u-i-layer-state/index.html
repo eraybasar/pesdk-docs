@@ -1,0 +1,174 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LayerListSettings.UILayerState - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.backend.model.state</a>&nbsp;/&nbsp;<a href="../index.html">LayerListSettings</a>&nbsp;/&nbsp;<a href="./index.html">UILayerState</a><br/>
+<br/>
+<h1>UILayerState</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">UILayerState</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UILayerState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings.UILayerState$<init>(java.lang.Class((kotlin.Enum((kotlin.Enum(()))))))/enumClass">enumClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">UILayerState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings.UILayerState$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-layer-settings/is-in-edit-mode.html">isInEditMode</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isInEditMode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="exclude-in-parcel.html">excludeInParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">excludeInParcel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-in-edit-mode.html">setInEditMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setInEditMode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings.UILayerState$setInEditMode(kotlin.Boolean)/isInEditMode">isInEditMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-layer-settings/bring-to-front.html">bringToFront</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">bringToFront</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/call-preview-dirty.html">callPreviewDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">callPreviewDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/create-layer.html">createLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../../ly.img.android.pesdk.backend.layer.base/-layer-i/index.html"><span class="identifier">LayerI</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/cross-bind.html">crossBind</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">crossBind</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings$crossBind(ly.img.android.pesdk.backend.model.state.manager.SettingsHolderInterface)/settingsHolderInterface">settingsHolderInterface</span><span class="symbol">:</span>&nbsp;<a href="../../../ly.img.android.pesdk.backend.model.state.manager/-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/get-layer.html">getLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../../ly.img.android.pesdk.backend.layer.base/-layer-i/index.html"><span class="identifier">LayerI</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/get-layer-list-settings.html">getLayerListSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLayerListSettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/get-layer-tool-id.html">getLayerToolId</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLayerToolId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/get-scale-down-factor.html">getScaleDownFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getScaleDownFactor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/is-in-edit-mode.html">isInEditMode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInEditMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/is-singleton.html">isSingleton</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isSingleton</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/layer-canvas-mode.html">layerCanvasMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">layerCanvasMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-settings/on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../-color-pipette-state/index.html">ColorPipetteState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ColorPipetteState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LayerListSettings.UILayerState</span></a><span class="symbol">&lt;</span><a href="../../-color-pipette-state/-event/index.html"><span class="identifier">ColorPipetteState.Event</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../../ly.img.android.pesdk.utils/-time-out/-callback/index.html"><span class="identifier">TimeOut.Callback</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractAsset - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.config</a>&nbsp;/&nbsp;<a href="./index.html">AbstractAsset</a><br/>
+<br/>
+<h1>AbstractAsset</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Parcelable</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AbstractAsset</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.AbstractAsset$<init>(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractAsset</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.AbstractAsset$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.AbstractAsset$equals(kotlin.Any)/o">o</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-id.html">getId</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-id-without-version.html">getIdWithoutVersion</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getIdWithoutVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-legacy-version.html">getLegacyVersion</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLegacyVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-sem-version/index.html"><span class="identifier">SemVersion</span></a><span class="symbol">!</span></code>
+<p>Returns the latest supported Version of this Asset or null if it is the latest version of this assets</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.AbstractAsset$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.AbstractAsset$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-blend-mode-asset/index.html">BlendModeAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">BlendModeAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-color-asset/index.html">ColorAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ColorAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/index.html">CropAspectAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CropAspectAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.filter/-filter-asset/index.html">FilterAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">FilterAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code>
+<p>Represents the Image-Filter base file. For Camera live Preview the filter is OpenGl Based but has also a Renderscript implementation to triggerOperatorsIfNeeded final images in full resolution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-font-asset/index.html">FontAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">FontAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-frame-asset/index.html">FrameAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">FrameAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-image-sticker-asset/index.html">ImageStickerAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ImageStickerAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-overlay-asset/index.html">OverlayAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">OverlayAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.ui.model.data/-panel-data/index.html">PanelData</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PanelData</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.text_design.layout/-text-design/index.html">TextDesign</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">TextDesign</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.ui.model.data/-title-data/index.html">TitleData</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TitleData</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractAsset</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PaintChunkDrawer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.brush.drawer</a>&nbsp;/&nbsp;<a href="./index.html">PaintChunkDrawer</a><br/>
+<br/>
+<h1>PaintChunkDrawer</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PaintChunkDrawer</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PaintChunkDrawer</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">PaintChunkDrawer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$<init>(ly.img.android.pesdk.backend.brush.models.PaintChunk, ly.img.android.pesdk.utils.RelativeContext)/chunk">chunk</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.brush.models/-paint-chunk/index.html"><span class="identifier">PaintChunk</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$<init>(ly.img.android.pesdk.backend.brush.models.PaintChunk, ly.img.android.pesdk.utils.RelativeContext)/relativeContext">relativeContext</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-relative-context/index.html"><span class="identifier">RelativeContext</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="draw-gl.html">drawGl</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">drawGl</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$drawGl(Matrix, kotlin.Float, kotlin.IntArray)/matrix">matrix</span><span class="symbol">:</span>&nbsp;<span class="identifier">Matrix</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$drawGl(Matrix, kotlin.Float, kotlin.IntArray)/startLength">startLength</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$drawGl(Matrix, kotlin.Float, kotlin.IntArray)/limit">limit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-painted-layer.html">drawPaintedLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">drawPaintedLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$drawPaintedLayer(Canvas)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-path.html">drawPath</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">drawPath</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$drawPath(Canvas, kotlin.Float)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$drawPath(Canvas, kotlin.Float)/startLength">startLength</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-approximately-point-count.html">getApproximatelyPointCount</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getApproximatelyPointCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-bounds.html">getBounds</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBounds</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-chunk-draw-gl-program.html">getChunkDrawGlProgram</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChunkDrawGlProgram</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.brush.drawer.PaintChunkDrawer$getChunkDrawGlProgram(ly.img.android.opengl.textures.GlTexture)/chunkTexture">chunkTexture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.opengl.canvas/-gl-program/index.html"><span class="identifier">GlProgram</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layer-paint.html">getLayerPaint</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLayerPaint</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Paint</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="setup-for-gl.html">setupForGl</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setupForGl</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

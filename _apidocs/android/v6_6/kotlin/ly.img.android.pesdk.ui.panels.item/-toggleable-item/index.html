@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ToggleableItem - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels.item</a>&nbsp;/&nbsp;<a href="./index.html">ToggleableItem</a><br/>
+<br/>
+<h1>ToggleableItem</h1>
+<code><span class="keyword">interface </span><span class="identifier">ToggleableItem</span><span class="symbol">&lt;</span><span class="identifier">ITEM</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-current-item.html">getCurrentItem</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getCurrentItem</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="index.html#ITEM"><span class="identifier">ITEM</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-ids.html">getIds</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getIds</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html"><span class="identifier">MutableSet</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="includes-id.html">includesId</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">includesId</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ToggleableItem$includesId(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="next.html">next</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">next</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-by-id.html">setById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setById</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.panels.item.ToggleableItem$setById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-toggle-aspect-item/index.html">ToggleAspectItem</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ToggleAspectItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-item/index.html"><span class="identifier">CropAspectItem</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">ToggleableItem</span></a><span class="symbol">&lt;</span><a href="../-crop-aspect-item/index.html"><span class="identifier">CropAspectItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

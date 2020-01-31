@@ -1,0 +1,334 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LayerListSettings - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.state</a>&nbsp;/&nbsp;<a href="./index.html">LayerListSettings</a><br/>
+<br/>
+<h1>LayerListSettings</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">LayerListSettings</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="-event/index.html"><span class="identifier">LayerListSettings.Event</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-event/index.html">Event</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Event</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-layer-settings/index.html">LayerSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">LayerSettings</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="-layer-settings/index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-static-layer-referance/index.html">StaticLayerReferance</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">StaticLayerReferance</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-u-i-layer-state/index.html">UILayerState</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">UILayerState</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="-u-i-layer-state/index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">LayerListSettings</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">LayerListSettings</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/is-revertible.html">isRevertible</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isRevertible</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/revertible-fields.html">revertibleFields</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">revertibleFields</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">!</span><span class="symbol">,</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-revertible-field/index.html"><span class="identifier">Settings.RevertibleField</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-s-t-a-t-e_-r-e-v-e-r-t-e-d.html">STATE_REVERTED</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">STATE_REVERTED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add-and-select-layer.html">addAndSelectLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addAndSelectLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$addAndSelectLayer(ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/layerSettings">layerSettings</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-layer.html">addLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$addLayer(kotlin.Int, ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/pos">pos</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$addLayer(kotlin.Int, ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/layerSettings">layerSettings</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$addLayer(ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/layerSettings">layerSettings</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="bring-layer-to-front.html">bringLayerToFront</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">bringLayerToFront</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$bringLayerToFront(ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="call-preview-dirty.html">callPreviewDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">callPreviewDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="clone-layer-settings-list.html">cloneLayerSettingsList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">cloneLayerSettingsList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="deselect.html">deselect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">deselect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$deselect(ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-active.html">getActive</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getActive</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-background-color.html">getBackgroundColor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBackgroundColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-background-color-int.html">getBackgroundColorInt</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBackgroundColorInt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layer-settings-list.html">getLayerSettingsList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getLayerSettingsList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-selected.html">getSelected</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSelected</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-z-index-of.html">getZIndexOf</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getZIndexOf</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$getZIndexOf(ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind.html">onBind</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBind</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$onBind(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-layer.html">removeLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$removeLayer(ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/layerSettings">layerSettings</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-active.html">setActive</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setActive</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$setActive(ly.img.android.pesdk.backend.model.state.LayerListSettings.UILayerState((kotlin.Enum((kotlin.Enum(()))))))/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="-u-i-layer-state/index.html"><span class="identifier">LayerListSettings.UILayerState</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-background-r-g-b-color.html">setBackgroundRGBColor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setBackgroundRGBColor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$setBackgroundRGBColor(kotlin.Int)/backgroundColor">backgroundColor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setBackgroundRGBColor</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$setBackgroundRGBColor(kotlin.FloatArray)/backgroundColor">backgroundColor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-selected.html">setSelected</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSelected</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$setSelected(ly.img.android.pesdk.backend.model.state.LayerListSettings.LayerSettings((kotlin.Enum((kotlin.Enum(()))))))/selected">selected</span><span class="symbol">:</span>&nbsp;<a href="-layer-settings/index.html"><span class="identifier">LayerListSettings.LayerSettings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LayerListSettings</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.LayerListSettings$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/create-save-state.html">createSaveState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createSaveState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-save-state/index.html"><span class="identifier">Settings.SaveState</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-frozen-settings.html">getFrozenSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">StateClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">getFrozenSettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-frozen-settings.html#StateClass"><span class="identifier">StateClass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-settings-model.html">getSettingsModel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">StateClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">getSettingsModel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.Settings$getSettingsModel(java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings.getSettingsModel.StateClass)))/settingsClass">settingsClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-settings-model.html#StateClass"><span class="identifier">StateClass</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/get-settings-model.html#StateClass"><span class="identifier">StateClass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/has-changes.html">hasChanges</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasChanges</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/has-revertable-state.html">hasRevertableState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasRevertableState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/is-frozen.html">isFrozen</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isFrozen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/is-revertible.html">isRevertible</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isRevertible</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/revert-state.html">revertState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">revertState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">revertState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.Settings$revertState(ly.img.android.pesdk.backend.model.state.manager.Settings.SaveState)/saveState">saveState</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-save-state/index.html"><span class="identifier">Settings.SaveState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/save-init-state.html">saveInitState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveInitState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/save-state.html">saveState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

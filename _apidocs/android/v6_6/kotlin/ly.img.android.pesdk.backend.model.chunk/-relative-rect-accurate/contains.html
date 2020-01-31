@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RelativeRectAccurate.contains - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.chunk</a>&nbsp;/&nbsp;<a href="index.html">RelativeRectAccurate</a>&nbsp;/&nbsp;<a href="./contains.html">contains</a><br/>
+<br/>
+<h1>contains</h1>
+<a name="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Returns true if (x,y) is inside the rectangle. The left and top are considered to be inside, while the right and bottom are not. This means that for a x,y to be contained: left &lt;= x &lt; right and top &lt;= y &lt; bottom. An empty rectangle never contains any point.</p>
+<h3>Parameters</h3>
+<p><a name="x"></a>
+<code>x</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">:</span> The X coordinate of the point being tested for containment</p>
+<p><a name="y"></a>
+<code>y</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">:</span> The Y coordinate of the point being tested for containment</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">:</span> true iff (x,y) are contained by the rectangle, where containment means left &lt;= x &lt; right and top &lt;= y &lt; bottom</p>
+<a name="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal)/left">left</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal)/top">top</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal)/right">right</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal)/bottom">bottom</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Returns true iff the 4 specified sides of a rectangle are inside or equal to this rectangle. i.e. is this rectangle a superset of the specified rectangle. An empty rectangle never contains another rectangle.</p>
+<h3>Parameters</h3>
+<p><a name="left"></a>
+<code>left</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">:</span> The left side of the rectangle being tested for containment</p>
+<p><a name="top"></a>
+<code>top</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">:</span> The top of the rectangle being tested for containment</p>
+<p><a name="right"></a>
+<code>right</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">:</span> The right side of the rectangle being tested for containment</p>
+<p><a name="bottom"></a>
+<code>bottom</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span><span class="symbol">:</span> The bottom of the rectangle being tested for containment</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">:</span> true iff the the 4 specified sides of a rectangle are inside or equal to this rectangle</p>
+<a name="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate$contains(ly.img.android.pesdk.backend.model.chunk.RelativeRectAccurate)/r">r</span><span class="symbol">:</span>&nbsp;<a href="index.html"><span class="identifier">RelativeRectAccurate</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Returns true iff the specified rectangle r is inside or equal to this rectangle. An empty rectangle never contains another rectangle.</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <a href="index.html"><span class="identifier">RelativeRectAccurate</span></a><span class="symbol">!</span><span class="symbol">:</span> The rectangle being tested for containment.</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">:</span> true iff the specified rectangle r is inside or equal to this rectangle</p>
+</BODY>
+</HTML>

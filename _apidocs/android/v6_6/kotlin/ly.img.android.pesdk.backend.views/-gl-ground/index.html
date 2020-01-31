@@ -1,0 +1,340 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlGround - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.views</a>&nbsp;/&nbsp;<a href="./index.html">GlGround</a><br/>
+<br/>
+<h1>GlGround</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlGround</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/index.html"><span class="identifier">ImgLyUISurfaceView</span></a><span class="symbol">, </span><span class="identifier">Renderer</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.operator.preview/-gl-operator/-callback/index.html"><span class="identifier">GlOperator.Callback</span></a></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlGround</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$<init>(Context)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">GlGround</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$<init>(Context, AttributeSet)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$<init>(Context, AttributeSet)/attrs">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">GlGround</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$<init>(Context, AttributeSet, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$<init>(Context, AttributeSet, kotlin.Int)/attrs">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$<init>(Context, AttributeSet, kotlin.Int)/defStyleAttr">defStyleAttr</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="gl-safe-transformation.html">glSafeTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">glSafeTransformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-m-a-x_-z-o-o-m.html">MAX_ZOOM</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">var </span><span class="identifier">MAX_ZOOM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stage.html">stage</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stage</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ui-safe-transformation.html">uiSafeTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">uiSafeTransformation</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/is-attached.html">isAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isAttached</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/show-state.html">showState</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">showState</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state/-editor-show-state/index.html"><span class="identifier">EditorShowState</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/ui-density.html">uiDensity</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">uiDensity</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/will-draw-ui.html">willDrawUi</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">willDrawUi</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-setup.html">glSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="invalidate.html">invalidate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">invalidate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached-to-u-i.html">onAttachedToUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onAttachedToUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached-from-u-i.html">onDetachedFromUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onDetachedFromUI(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw.html">onDraw</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDraw</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onDraw(Canvas)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-frame.html">onDrawFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDrawFrame</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onDrawFrame(GL10)/gl">gl</span><span class="symbol">:</span>&nbsp;<span class="identifier">GL10</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-layer.html">onDrawLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDrawLayer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-result-dirty.html">onResultDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onResultDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-size-changed.html">onSizeChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSizeChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/w">w</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/h">h</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/oldw">oldw</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/oldh">oldh</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-changed.html">onSurfaceChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSurfaceChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSurfaceChanged(GL10, kotlin.Int, kotlin.Int)/gl">gl</span><span class="symbol">:</span>&nbsp;<span class="identifier">GL10</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSurfaceChanged(GL10, kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSurfaceChanged(GL10, kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-created.html">onSurfaceCreated</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSurfaceCreated</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSurfaceCreated(GL10, EGLConfig)/gl">gl</span><span class="symbol">:</span>&nbsp;<span class="identifier">GL10</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onSurfaceCreated(GL10, EGLConfig)/config">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-touch-event.html">onTouchEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onTouchEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onTouchEvent(MotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">MotionEvent</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onTouchEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onTouchEvent(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-transformation-changes.html">onTransformationChanges</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onTransformationChanges</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$onTransformationChanges(ly.img.android.pesdk.backend.model.state.EditorShowState)/showState">showState</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state/-editor-show-state/index.html"><span class="identifier">EditorShowState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="preview-force-rendering.html">previewForceRendering</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">previewForceRendering</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-offscreen.html">renderOffscreen</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">renderOffscreen</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.GlGround$renderOffscreen(kotlin.Boolean)/cropToFit">cropToFit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-offscreen-from-gl-main-thread.html">renderOffscreenFromGlMainThread</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">renderOffscreenFromGlMainThread</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-stage-overlap.html">updateStageOverlap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateStageOverlap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/on-attached-to-window.html">onAttachedToWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/on-detached-from-window.html">onDetachedFromWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/on-draw-u-i.html">onDrawUI</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDrawUI</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$onDrawUI(Canvas)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/on-pause.html">onPause</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onPause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/post-invalidate-ui.html">postInvalidateUi</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">postInvalidateUi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/request-render.html">requestRender</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">requestRender</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/run-with-gl-context.html">runWithGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">runWithGlContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$runWithGlContext(java.lang.Runnable)/runnable">runnable</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Runnable.html"><span class="identifier">Runnable</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/set-will-draw-ui.html">setWillDrawUi</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setWillDrawUi</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$setWillDrawUi(kotlin.Boolean)/willDrawUi">willDrawUi</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/surface-changed.html">surfaceChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">surfaceChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$surfaceChanged(SurfaceHolder, kotlin.Int, kotlin.Int, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">SurfaceHolder</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$surfaceChanged(SurfaceHolder, kotlin.Int, kotlin.Int, kotlin.Int)/format">format</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$surfaceChanged(SurfaceHolder, kotlin.Int, kotlin.Int, kotlin.Int)/w">w</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$surfaceChanged(SurfaceHolder, kotlin.Int, kotlin.Int, kotlin.Int)/h">h</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/surface-created.html">surfaceCreated</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">surfaceCreated</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$surfaceCreated(SurfaceHolder)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">SurfaceHolder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/surface-destroyed.html">surfaceDestroyed</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">surfaceDestroyed</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.views.abstracts.ImgLyUISurfaceView$surfaceDestroyed(SurfaceHolder)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">SurfaceHolder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-editor-preview/index.html">EditorPreview</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">EditorPreview</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlGround</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

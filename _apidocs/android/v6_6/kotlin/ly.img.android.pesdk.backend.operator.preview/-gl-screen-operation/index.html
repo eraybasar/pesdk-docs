@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlScreenOperation - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.preview</a>&nbsp;/&nbsp;<a href="./index.html">GlScreenOperation</a><br/>
+<br/>
+<h1>GlScreenOperation</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlScreenOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-gl-operation/index.html"><span class="identifier">GlOperation</span></a></code>
+<p>Abstract Operation</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlScreenOperation</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-gl-operation/need-setup.html">needSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">needSetup</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/stage-height.html">stageHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stageHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/stage-width.html">stageWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stageWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="do-operation.html">doOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlScreenOperation$doOperation(ly.img.android.opengl.textures.GlTexture)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlScreenOperation$doOperation(ly.img.android.opengl.textures.GlTexture, kotlin.Boolean, ly.img.android.opengl.textures.GlFrameBufferTexture)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlScreenOperation$doOperation(ly.img.android.opengl.textures.GlTexture, kotlin.Boolean, ly.img.android.opengl.textures.GlFrameBufferTexture)/renderOffscreen">renderOffscreen</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlScreenOperation$doOperation(ly.img.android.opengl.textures.GlTexture, kotlin.Boolean, ly.img.android.opengl.textures.GlFrameBufferTexture)/offscreenTexture">offscreenTexture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-frame-buffer-texture/index.html"><span class="identifier">GlFrameBufferTexture</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlScreenOperation$render(ly.img.android.opengl.textures.GlTexture, kotlin.Boolean)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlScreenOperation$render(ly.img.android.opengl.textures.GlTexture, kotlin.Boolean)/renderToScreen">renderToScreen</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-gl-operation/bind-state-handler.html">bindStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bindStateHandler</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlOperation$bindStateHandler(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/flag-as-dirty.html">flagAsDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">flagAsDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/gl-setup.html">glSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/is-dirty.html">isDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/is-source-dirty.html">isSourceDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isSourceDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/on-release.html">onRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/remove-dirty-flag.html">removeDirtyFlag</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeDirtyFlag</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/remove-source-dirty-flag.html">removeSourceDirtyFlag</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeSourceDirtyFlag</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlOperation$render(ly.img.android.opengl.textures.GlTexture)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span></code>
+<p>Start the Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/set-callback.html">setCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setCallback</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlOperation$setCallback(ly.img.android.pesdk.backend.operator.preview.GlOperation.Callback)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../-gl-operation/-callback/index.html"><span class="identifier">GlOperation.Callback</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/set-size.html">setSize</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSize</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlOperation$setSize(kotlin.Int, kotlin.Int)/stageWidth">stageWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.operator.preview.GlOperation$setSize(kotlin.Int, kotlin.Int)/stageHeight">stageHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-operation/to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-gl-camera-draw-operation/index.html">GlCameraDrawOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlCameraDrawOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlScreenOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-operation/index.html">GlLayerOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlLayerOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlScreenOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

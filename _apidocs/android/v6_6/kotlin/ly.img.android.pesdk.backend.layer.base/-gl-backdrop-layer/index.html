@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlBackdropLayer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.layer.base</a>&nbsp;/&nbsp;<a href="./index.html">GlBackdropLayer</a><br/>
+<br/>
+<h1>GlBackdropLayer</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlBackdropLayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-gl-layer-base/index.html"><span class="identifier">GlLayerBase</span></a></code>
+<p></p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlBackdropLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlBackdropLayer$<init>(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/stage.html">stage</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stage</span><span class="symbol">: </span><span class="identifier">Rect</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/transformation-gl-safe.html">transformationGlSafe</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">transformationGlSafe</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/transformation-ui-safe.html">transformationUiSafe</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">transformationUiSafe</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="gl-draw-layer.html">glDrawLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">glDrawLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlBackdropLayer$glDrawLayer(ly.img.android.opengl.textures.GlTexture, kotlin.Int, kotlin.Int)/backgroundTexture">backgroundTexture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlBackdropLayer$glDrawLayer(ly.img.android.opengl.textures.GlTexture, kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlBackdropLayer$glDrawLayer(ly.img.android.opengl.textures.GlTexture, kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-setup.html">glSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="need-backdrop.html">needBackdrop</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">needBackdrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-layer.html">onDrawLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDrawLayer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlBackdropLayer$onDrawLayer(ly.img.android.opengl.textures.GlTexture)/backgroundTexture">backgroundTexture</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.textures/-gl-texture/index.html"><span class="identifier">GlTexture</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/do-respond-on-click.html">doRespondOnClick</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">doRespondOnClick</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlLayerBase$doRespondOnClick(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/get-resources.html">getResources</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getResources</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Resources</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/on-motion-event.html">onMotionEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onMotionEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlLayerBase$onMotionEvent(ly.img.android.pesdk.utils.TransformedMotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-transformed-motion-event/index.html"><span class="identifier">TransformedMotionEvent</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-base/set-transformation.html">setTransformation</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTransformation</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.layer.base.GlLayerBase$setTransformation(ly.img.android.pesdk.backend.model.chunk.Transformation)/matrix">matrix</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-transformation/index.html"><span class="identifier">Transformation</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.layer/-overlay-gl-layer/index.html">OverlayGlLayer</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">OverlayGlLayer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlBackdropLayer</span></a><span class="symbol">, </span><a href="../-render-to-bitmap-layer-i/index.html"><span class="identifier">RenderToBitmapLayerI</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-event-listener-interface/index.html"><span class="identifier">EventListenerInterface</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state/-overlay-settings/-event/index.html"><span class="identifier">OverlaySettings.Event</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

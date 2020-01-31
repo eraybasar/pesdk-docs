@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Exify.buildTag - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">Exify</a>&nbsp;/&nbsp;<a href="./build-tag.html">buildTag</a><br/>
+<br/>
+<h1>buildTag</h1>
+<a name="ly.img.android.pesdk.backend.exif.Exify$buildTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Any)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Any)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(ly.img.android.pesdk.backend.exif.Exify.TAG, kotlin.Any)/val">val</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
+<p>Creates a tag for a defined tag constant in the tag's default IFD.</p>
+<h3>Parameters</h3>
+<p><a name="tag"></a>
+<code>tag</code> - <a href="-t-a-g/index.html"><span class="identifier">Exify.TAG</span></a><span class="symbol">!</span><span class="symbol">:</span> a tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
+<p><a name="val"></a>
+<code>val</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">:</span> the tag's value.</p>
+<p><strong>Return</strong><br/>
+<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">:</span> an ExifTag object.</p>
+<a name="ly.img.android.pesdk.backend.exif.Exify$buildTag(kotlin.Int, kotlin.Int, kotlin.Any)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildTag</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(kotlin.Int, kotlin.Int, kotlin.Any)/tagId">tagId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(kotlin.Int, kotlin.Int, kotlin.Any)/ifdId">ifdId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.Exify$buildTag(kotlin.Int, kotlin.Int, kotlin.Any)/val">val</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span></code>
+<p>Creates a tag for a defined tag constant in a given IFD if that IFD is allowed for the ExifTagKey. This method will fail anytime the appropriate <code><a href="../-exif-tag-info/set-value.html">ExifTagInfo#setValue</a></code> for this tag's datatype would fail.</p>
+<h3>Parameters</h3>
+<p><a name="tagId"></a>
+<code>tagId</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> a tag constant, e.g. {@see #ExifTagKey.IMAGE_WIDTH}.</p>
+<p><a name="ifdId"></a>
+<code>ifdId</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> the IFD that the tag should be in.</p>
+<p><a name="val"></a>
+<code>val</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">:</span> the value of the tag to set.</p>
+<p><strong>Return</strong><br/>
+<a href="../-exif-tag-info/index.html"><span class="identifier">ExifTagInfo</span></a><span class="symbol">!</span><span class="symbol">:</span> an ExifTag object or null if one could not be constructed.</p>
+<p><strong>See Also</strong><br/>
+<a href="./build-tag.html">#buildTag</a></p>
+</BODY>
+</HTML>

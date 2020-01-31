@@ -1,0 +1,206 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UiState - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.model.state</a>&nbsp;/&nbsp;<a href="./index.html">UiState</a><br/>
+<br/>
+<h1>UiState</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">UiState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><a href="-event/index.html"><span class="identifier">UiState.Event</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code>
+<p></p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-event/index.html">Event</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Event</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UiState</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/is-config-object.html">isConfigObject</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isConfigObject</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add-panel.html">addPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">addPanel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiState$addPanel(ly.img.android.pesdk.ui.model.data.PanelData)/panels">panels</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.model.data/-panel-data/index.html"><span class="identifier">PanelData</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-title.html">addTitle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">addTitle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiState$addTitle(ly.img.android.pesdk.ui.model.data.TitleData)/title">title</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.model.data/-title-data/index.html"><span class="identifier">TitleData</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-panel-data.html">getPanelData</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getPanelData</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiState$getPanelData(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.ui.model.data/-panel-data/index.html"><span class="identifier">PanelData</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-title.html">getTitle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTitle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.ui.model.data/-title-data/index.html"><span class="identifier">TitleData</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-tool-state.html">getToolState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getToolState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-panels.html">setPanels</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setPanels</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiState$setPanels(ly.img.android.pesdk.linker.ConfigMap((ly.img.android.pesdk.ui.model.data.PanelData)))/panels">panels</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.linker/-config-map/index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.model.data/-panel-data/index.html"><span class="identifier">PanelData</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-titles.html">setTitles</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setTitles</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiState$setTitles(ly.img.android.pesdk.linker.ConfigMap((ly.img.android.pesdk.ui.model.data.TitleData)))/titles">titles</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.linker/-config-map/index.html"><span class="identifier">ConfigMap</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.model.data/-title-data/index.html"><span class="identifier">TitleData</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-tool-state.html">setToolState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setToolState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiState$setToolState(kotlin.String)/toolState">toolState</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setToolState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.model.state.UiState$setToolState(ly.img.android.pesdk.ui.model.state.UiStateMenu)/menuState">menuState</span><span class="symbol">:</span>&nbsp;<a href="../-ui-state-menu/index.html"><span class="identifier">UiStateMenu</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/add-callback.html">addCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addCallback</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$addCallback(ly.img.android.pesdk.backend.model.state.manager.StateListenerInterface)/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="identifier">StateListenerInterface</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addCallback</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$addCallback(ly.img.android.pesdk.backend.model.state.manager.EventListenerInterface((ly.img.android.pesdk.backend.model.state.manager.StateObservable.EventEnum)))/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-event-listener-interface/index.html"><span class="identifier">EventListenerInterface</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html#EventEnum"><span class="identifier">EventEnum</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/get-settings-handler.html">getSettingsHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSettingsHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/get-settings-holder.html">getSettingsHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSettingsHolder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/get-state-model.html">getStateModel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">StateClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span> <span class="identifier">getStateModel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$getStateModel(java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.StateObservable.getStateModel.StateClass)))/stateClass">stateClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/get-state-model.html#StateClass"><span class="identifier">StateClass</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/get-state-model.html#StateClass"><span class="identifier">StateClass</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStateModel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$getStateModel(kotlin.String)/stateClass">stateClass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html"><span class="identifier">StateObservable</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/has-model-non-default-value.html">hasModelNonDefaultValue</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasModelNonDefaultValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$hasModelNonDefaultValue(kotlin.String)/stateClass">stateClass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasModelNonDefaultValue</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$hasModelNonDefaultValue(java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))/stateClass">stateClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/has-state-handler.html">hasStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/is-frozen.html">isFrozen</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isFrozen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/notify-property-changed.html">notifyPropertyChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyPropertyChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$notifyPropertyChanged(ly.img.android.pesdk.backend.model.state.manager.StateObservable.EventEnum)/field">field</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html#EventEnum"><span class="identifier">EventEnum</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/on-bind.html">onBind</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBind</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$onBind(ly.img.android.pesdk.backend.model.state.manager.StateHandler)/stateHandler">stateHandler</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler/index.html"><span class="identifier">StateHandler</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">onBind</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$onBind(ly.img.android.pesdk.backend.model.state.manager.SettingsHolderInterface)/settingsList">settingsList</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings-holder-interface/index.html"><span class="identifier">SettingsHolderInterface</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/remove-callback.html">removeCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeCallback</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$removeCallback(ly.img.android.pesdk.backend.model.state.manager.EventListenerInterface((ly.img.android.pesdk.backend.model.state.manager.StateObservable.EventEnum)))/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-event-listener-interface/index.html"><span class="identifier">EventListenerInterface</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/index.html#EventEnum"><span class="identifier">EventEnum</span></a><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeCallback</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$removeCallback(ly.img.android.pesdk.backend.model.state.manager.StateListenerInterface)/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="identifier">StateListenerInterface</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-observable/write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.StateObservable$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

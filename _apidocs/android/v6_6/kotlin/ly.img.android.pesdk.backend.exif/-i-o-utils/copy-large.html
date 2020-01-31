@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOUtils.copyLarge - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">IOUtils</a>&nbsp;/&nbsp;<a href="./copy-large.html">copyLarge</a><br/>
+<br/>
+<h1>copyLarge</h1>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.InputStream, java.io.OutputStream)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copyLarge</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.InputStream, java.io.OutputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.InputStream, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
+<p>Copy bytes from a large (over 2GB) <code>InputStream</code> to an <code>OutputStream</code>. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedInputStream</code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>InputStream</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">:</span> the number of bytes copied</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.3</p>
+<a name="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.Reader, java.io.Writer)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copyLarge</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.Reader, java.io.Writer)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.exif.IOUtils$copyLarge(java.io.Reader, java.io.Writer)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
+<p>Copy chars from a large (over 2GB) <code>Reader</code> to a <code>Writer</code>. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedReader</code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Reader</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <a href="https://docs.oracle.com/javase/6/docs/api/java/io/Writer.html"><span class="identifier">Writer</span></a><span class="symbol">!</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Return</strong><br/>
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">:</span> the number of characters copied</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.3</p>
+</BODY>
+</HTML>
