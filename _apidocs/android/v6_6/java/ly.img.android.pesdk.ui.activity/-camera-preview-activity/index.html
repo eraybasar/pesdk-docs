@@ -1,0 +1,198 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CameraPreviewActivity - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.activity</a>&nbsp;/&nbsp;<a href="./index.html">CameraPreviewActivity</a><br/>
+<br/>
+<h1>CameraPreviewActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">CameraPreviewActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-img-ly-activity/index.html"><span class="identifier">ImgLyActivity</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.acs/-camera-view/-capture-callback/index.html"><span class="identifier">CameraView.CaptureCallback</span></a><span class="symbol">, </span><a href="../../ly.img.android.acs/-camera/-on-state-change-listener/index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-filter-settings.html">getFilterSettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFilterSettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.FilterSettings</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activity-result.html">onActivityResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onActivityResult</span><span class="symbol">(</span><span class="identifier">requestCode</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">resultCode</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-back-pressed.html">onBackPressed</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBackPressed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-cam-view-state-change.html">onCamViewStateChange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCamViewStateChange</span><span class="symbol">(</span><span class="identifier">state</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs/-camera/-camera-state/index.html"><span class="identifier">Camera.CameraState</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-click-filter-button.html">onClickFilterButton</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onClickFilterButton</span><span class="symbol">(</span><span class="identifier">showFilterButton</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.activity.widgets.buttons/-expand-toggle-button/index.html"><span class="identifier">ExpandToggleButton</span></a><span class="symbol">, </span><span class="identifier">isChecked</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-image-captured.html">onImageCaptured</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onImageCaptured</span><span class="symbol">(</span><span class="identifier">outputPath</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-image-capture-error.html">onImageCaptureError</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onImageCaptureError</span><span class="symbol">(</span><span class="identifier">exception</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Exception</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-image-ready.html">onImageReady</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onImageReady</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">, </span><span class="identifier">savePolicy</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.EditorSaveSettings.SavePolicy</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-item-click.html">onItemClick</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onItemClick</span><span class="symbol">(</span><span class="identifier">item</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-on-seek-bar-thumb-leaved.html">onOnSeekBarThumbLeaved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onOnSeekBarThumbLeaved</span><span class="symbol">(</span><span class="identifier">bar</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/index.html"><span class="identifier">SeekSlider</span></a><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-on-seek-bar-value-change.html">onOnSeekBarValueChange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onOnSeekBarValueChange</span><span class="symbol">(</span><span class="identifier">bar</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/index.html"><span class="identifier">SeekSlider</span></a><span class="symbol">, </span><span class="identifier">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-open-gallery.html">onOpenGallery</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onOpenGallery</span><span class="symbol">(</span><span class="identifier">button</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.activity.widgets.buttons/-gallery-button/index.html"><span class="identifier">GalleryButton</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-pause.html">onPause</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-request-permissions-result.html">onRequestPermissionsResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRequestPermissionsResult</span><span class="symbol">(</span><span class="identifier">requestCode</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">permissions</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">grantResults</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-start.html">onStart</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-stop.html">onStop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-switch-camera.html">onSwitchCamera</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSwitchCamera</span><span class="symbol">(</span><span class="identifier">switchButton</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-take-picture.html">onTakePicture</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onTakePicture</span><span class="symbol">(</span><span class="identifier">button</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-toggle-flash-light.html">onToggleFlashLight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onToggleFlashLight</span><span class="symbol">(</span><span class="identifier">flashButton</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-toggle-hdr.html">onToggleHdr</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onToggleHdr</span><span class="symbol">(</span><span class="identifier">hdrButton</span><span class="symbol">:</span>&nbsp;<span class="identifier">ToggleButton</span><span class="symbol">, </span><span class="identifier">isChecked</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-window-focus-changed.html">onWindowFocusChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onWindowFocusChanged</span><span class="symbol">(</span><span class="identifier">hasFocus</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-r-e-s-u-l-t_-e-d-i-t-o-r_-d-o-n-e.html">RESULT_EDITOR_DONE</a></p>
+</td>
+<td>
+<code><span class="identifier">RESULT_EDITOR_DONE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-e-s-u-l-t_-l-o-a-d_-i-m-a-g-e.html">RESULT_LOAD_IMAGE</a></p>
+</td>
+<td>
+<code><span class="identifier">RESULT_LOAD_IMAGE</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

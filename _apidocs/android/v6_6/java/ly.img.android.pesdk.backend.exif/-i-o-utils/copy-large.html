@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOUtils.copyLarge - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">IOUtils</a>&nbsp;/&nbsp;<a href="./copy-large.html">copyLarge</a><br/>
+<br/>
+<h1>copyLarge</h1>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copyLarge</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code>
+<p>Copy bytes from a large (over 2GB) <code>InputStream</code> to an <code>OutputStream</code>. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedInputStream</code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.InputStream</span><span class="symbol">:</span> the <code>InputStream</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">long</span><span class="symbol">:</span> the number of bytes copied</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.3</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copyLarge</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Reader</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">long</span></code>
+<p>Copy chars from a large (over 2GB) <code>Reader</code> to a <code>Writer</code>. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedReader</code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.Reader</span><span class="symbol">:</span> the <code>Reader</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">long</span><span class="symbol">:</span> the number of characters copied</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.3</p>
+</BODY>
+</HTML>

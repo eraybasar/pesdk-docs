@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlRenderer - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.renderer</a>&nbsp;/&nbsp;<a href="./index.html">GlRenderer</a><br/>
+<br/>
+<h1>GlRenderer</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlRenderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Renderer</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlRenderer</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="on-draw-frame.html">onDrawFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDrawFrame</span><span class="symbol">(</span><span class="identifier">gl</span><span class="symbol">:</span>&nbsp;<span class="identifier">GL10</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDrawFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-changed.html">onSurfaceChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSurfaceChanged</span><span class="symbol">(</span><span class="identifier">gl</span><span class="symbol">:</span>&nbsp;<span class="identifier">GL10</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onSurfaceChanged</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-surface-created.html">onSurfaceCreated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSurfaceCreated</span><span class="symbol">(</span><span class="identifier">gl</span><span class="symbol">:</span>&nbsp;<span class="identifier">GL10</span><span class="symbol">, </span><span class="identifier">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onSurfaceCreated</span><span class="symbol">(</span><span class="identifier">config</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.acs.opengl.renderer/-preview-renderer/index.html">PreviewRenderer</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PreviewRenderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlRenderer</span></a><span class="symbol">, </span><a href="../../ly.img.android.acs.opengl.textures/-gl-camera-texture/-on-frame-available-listener/index.html"><span class="identifier">GlCameraTexture.OnFrameAvailableListener</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

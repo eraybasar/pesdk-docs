@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Operator - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.export</a>&nbsp;/&nbsp;<a href="./index.html">Operator</a><br/>
+<br/>
+<h1>Operator</h1>
+<code><span class="keyword">class </span><span class="identifier">Operator</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="../-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&gt;</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-callback/index.html">Callback</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Callback</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Operator</span><span class="symbol">(</span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">, </span><span class="identifier">isPreviewOperator</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add.html">add</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><s><span class="identifier">add</span></s><span class="symbol">(</span><span class="identifier">operationClassName</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.operator.export.Operation</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
+<code><span class="keyword">fun </span><s><span class="identifier">add</span></s><span class="symbol">(</span><span class="identifier">operationClassName</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
+<code><span class="keyword">fun </span><s><span class="identifier">add</span></s><span class="symbol">(</span><span class="identifier">operation</span><span class="symbol">:</span>&nbsp;<a href="../-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-all.html">addAll</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><s><span class="identifier">addAll</span></s><span class="symbol">(</span><span class="identifier">collection</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.operator.export.Operation</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="bind-operation.html">bindOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bindOperation</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">operations</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.operator.export.Operation</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">bindOperation</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">operations</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">bindOperation</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier">operations</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Class</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="first.html">first</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">first</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-operation/index.html"><span class="identifier">Operation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="last.html">last</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">last</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-operation/index.html"><span class="identifier">Operation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="lower.html">lower</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lower</span><span class="symbol">(</span><span class="identifier">operation</span><span class="symbol">:</span>&nbsp;<a href="../-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-operation/index.html"><span class="identifier">Operation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="release.html">release</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">release</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove.html">remove</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><s><span class="identifier">remove</span></s><span class="symbol">(</span><span class="identifier">object</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-all.html">removeAll</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><s><span class="identifier">removeAll</span></s><span class="symbol">(</span><span class="identifier">collection</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.Collection</span><span class="symbol">&lt;</span><span class="identifier">?</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-result.html">renderResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">renderResult</span><span class="symbol">(</span><span class="identifier">callback</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">Operator.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-priority-table-class.html">setPriorityTableClass</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setPriorityTableClass</span><span class="symbol">(</span><span class="identifier">priorityTableClass</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends java.lang.Enum</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

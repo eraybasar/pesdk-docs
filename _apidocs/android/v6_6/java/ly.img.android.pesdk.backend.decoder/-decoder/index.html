@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Decoder - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.decoder</a>&nbsp;/&nbsp;<a href="./index.html">Decoder</a><br/>
+<br/>
+<h1>Decoder</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Decoder</span></code>
+<p></p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-s-o-u-r-c-e/index.html">SOURCE</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SOURCE</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Decoder</span><span class="symbol">(</span><span class="identifier">resources</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">, </span><span class="identifier">resourceId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">Decoder</span><span class="symbol">(</span><span class="identifier">resources</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">, </span><span class="identifier">uri</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="create-cache.html">createCache</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">createCache</span><span class="symbol">(</span><span class="identifier">uri</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="decode-size.html">decodeSize</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">decodeSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="fallback-crop.html">fallbackCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">fallbackCrop</span><span class="symbol">(</span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">slice</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">sampleSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-bitmap.html">getBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier">boundsWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">boundsHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">fitIntoBounds</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">, </span><span class="identifier">state</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.constant.DrawableState</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier">bounds</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">region</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-drawable.html">getDrawable</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getDrawable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Drawable</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-input-stream.html">getInputStream</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInputStream</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.io.InputStream</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getInputStream</span><span class="symbol">(</span><span class="identifier">uri</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.io.InputStream</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-resources.html">getResources</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getResources</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Resources</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-size.html">getSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-uncached-input-stream.html">getUncachedInputStream</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getUncachedInputStream</span><span class="symbol">(</span><span class="identifier">uri</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.io.InputStream</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-uri.html">getUri</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUri</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Uri</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-stateful.html">isStateful</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isStateful</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-vector.html">isVector</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isVector</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="recycle.html">recycle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="resource-to-uri.html">resourceToUri</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">resourceToUri</span><span class="symbol">(</span><span class="identifier">resources</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">, </span><span class="identifier">resID</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Uri</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-e-n-a-b-l-e_-h-a-r-d_-c-a-c-h-e.html">ENABLE_HARD_CACHE</a></p>
+</td>
+<td>
+<code><span class="identifier">ENABLE_HARD_CACHE</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="resource-id.html">resourceId</a></p>
+</td>
+<td>
+<code><span class="identifier">resourceId</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-type.html">sourceType</a></p>
+</td>
+<td>
+<code><span class="identifier">sourceType</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-null-decoder/index.html">NullDecoder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NullDecoder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Decoder</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-raster-decoder/index.html">RasterDecoder</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">RasterDecoder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Decoder</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-vector-decoder/index.html">VectorDecoder</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">VectorDecoder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Decoder</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

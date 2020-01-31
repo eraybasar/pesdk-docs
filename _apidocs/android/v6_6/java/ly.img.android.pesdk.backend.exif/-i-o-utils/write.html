@@ -1,0 +1,200 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOUtils.write - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">IOUtils</a>&nbsp;/&nbsp;<a href="./write.html">write</a><br/>
+<br/>
+<h1>write</h1>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes bytes from a <code>byte[]</code> to an <code>OutputStream</code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">:</span> the byte array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes bytes from a <code>byte[]</code> to chars on a <code>Writer</code> using the default character encoding of the platform. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(byte[])">String#String(byte[])</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">:</span> the byte array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">, </span><span class="identifier">encoding</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes bytes from a <code>byte[]</code> to chars on a <code>Writer</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(byte[], java.lang.String)">String#String(byte[], String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">byte</span><span class="symbol">&gt;</span><span class="symbol">:</span> the byte array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">char</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>char[]</code> to a <code>Writer</code> using the default character encoding of the platform.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">char</span><span class="symbol">&gt;</span><span class="symbol">:</span> the char array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">char</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>char[]</code> to bytes on an <code>OutputStream</code>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(char[])">String#String(char[])</a></code> and <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes()">String#getBytes()</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">char</span><span class="symbol">&gt;</span><span class="symbol">:</span> the char array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">char</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">, </span><span class="identifier">encoding</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>char[]</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#<init>(char[])">String#String(char[])</a></code> and <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes(java.lang.String)">String#getBytes(String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">char</span><span class="symbol">&gt;</span><span class="symbol">:</span> the char array to write, do not modify during output, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>String</code> to a <code>Writer</code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the <code>String</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>String</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes()">String#getBytes()</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the <code>String</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">, </span><span class="identifier">encoding</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>String</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes(java.lang.String)">String#getBytes(String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the <code>String</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.StringBuffer</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>StringBuffer</code> to a <code>Writer</code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">java.lang.StringBuffer</span><span class="symbol">:</span> the <code>StringBuffer</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.StringBuffer</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>StringBuffer</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes()">String#getBytes()</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">java.lang.StringBuffer</span><span class="symbol">:</span> the <code>StringBuffer</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.StringBuffer</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">, </span><span class="identifier">encoding</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Writes chars from a <code>StringBuffer</code> to bytes on an <code>OutputStream</code> using the specified character encoding. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#getBytes(java.lang.String)">String#getBytes(String)</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="data"></a>
+<code>data</code> - <span class="identifier">java.lang.StringBuffer</span><span class="symbol">:</span> the <code>StringBuffer</code> to write, null ignored</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+</BODY>
+</HTML>

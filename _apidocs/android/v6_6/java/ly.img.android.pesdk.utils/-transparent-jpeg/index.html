@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransparentJpeg - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.utils</a>&nbsp;/&nbsp;<a href="./index.html">TransparentJpeg</a><br/>
+<br/>
+<h1>TransparentJpeg</h1>
+<code><span class="keyword">class </span><span class="identifier">TransparentJpeg</span></code>
+<p>A lib that saves an ARGB Bitmap separated as RGB an Alpha Chanel in separate jpeg files.</p>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="combination-exists.html">combinationExists</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">combinationExists</span><span class="symbol">(</span><span class="identifier">dir</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.File</span><span class="symbol">, </span><span class="identifier">filename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">cleanupIfNot</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Check if the RGB and ALPHA channel's exists</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="combine-color-with-mask.html">combineColorWithMask</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">combineColorWithMask</span><span class="symbol">(</span><span class="identifier">rgbBitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">maskBitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<p>Load the RGB and ALPHA channel and combine them into one Bitmap.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-transparent-jpeg.html">deleteTransparentJpeg</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">deleteTransparentJpeg</span><span class="symbol">(</span><span class="identifier">dir</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.File</span><span class="symbol">, </span><span class="identifier">filename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Delete the RGB and ALPHA Jpeg.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="load-transparent-jpeg.html">loadTransparentJpeg</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">loadTransparentJpeg</span><span class="symbol">(</span><span class="identifier">dir</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.File</span><span class="symbol">, </span><span class="identifier">filename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code>
+<p>Load the RGB and ALPHA channel and combine them into one Bitmap.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-transparent-jpeg.html">saveTransparentJpeg</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">saveTransparentJpeg</span><span class="symbol">(</span><span class="identifier">dir</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.File</span><span class="symbol">, </span><span class="identifier">filename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">saveTransparentJpeg</span><span class="symbol">(</span><span class="identifier">dir</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.File</span><span class="symbol">, </span><span class="identifier">filename</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">glRawBitmap</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl/-gl-raw-bitmap/index.html"><span class="identifier">GlRawBitmap</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Save ARGB Bitmap in two JPEG files</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

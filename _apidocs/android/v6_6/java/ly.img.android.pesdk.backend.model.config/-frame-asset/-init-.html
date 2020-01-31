@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FrameAsset.<init> - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.config</a>&nbsp;/&nbsp;<a href="index.html">FrameAsset</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">@DrawableRes</span> <span class="identifier">frameId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">@Nullable</span> <span class="identifier">aspectConfig</span><span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">, </span><span class="identifier">groupId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code>
+<p>Creates a Frame Config</p>
+<h3>Parameters</h3>
+<p><a name="frameId"></a>
+<code>frameId</code> - <span class="identifier">int</span><span class="symbol">:</span> the frame image resource</p>
+<p><a name="aspectConfig"></a>
+<code>aspectConfig</code> - <a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">:</span> the aspect that enable this frame.</p>
+<p><a name="groupId"></a>
+<code>groupId</code> - <span class="identifier">int</span><span class="symbol">:</span> the group number to identifier a equal frame with different aspect. If the crop aspect changed the unfitting frame are replaced with a frame that fit the aspect and has the same group id.</p>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameConfig</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">)</span></code>
+<p>Creates a Frame Config with unspecific aspect</p>
+<h3>Parameters</h3>
+<p><a name="frameConfig"></a>
+<code>frameConfig</code> - <a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">:</span> the frame image resource</p>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameConfig</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">, </span><span class="identifier">fixedRelativeScale</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span></code>
+<p>Creates a Frame Config with unspecific aspect</p>
+<h3>Parameters</h3>
+<p><a name="frameConfig"></a>
+<code>frameConfig</code> - <a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">:</span> the frame image resource</p>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameConfig</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">, </span><span class="identifier">fixedRelativeScale</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">scaleIsFixed</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span></code>
+<p>Creates a Frame Config with unspecific aspect</p>
+<h3>Parameters</h3>
+<p><a name="frameConfig"></a>
+<code>frameConfig</code> - <a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">:</span> the frame image resource</p>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">@DrawableRes</span> <span class="identifier">frameId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">@DrawableRes</span> <span class="identifier">frameMaskId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">@Nullable</span> <span class="identifier">aspectConfig</span><span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">, </span><span class="identifier">groupId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code>
+<p>Creates a Frame Config</p>
+<h3>Parameters</h3>
+<p><a name="frameId"></a>
+<code>frameId</code> - <span class="identifier">int</span><span class="symbol">:</span> the frame image resource</p>
+<p><a name="frameMaskId"></a>
+<code>frameMaskId</code> - <span class="identifier">int</span><span class="symbol">:</span> the mask of this frame as a blank and white image, full black are 100% transparent full white are opaque. this is Usefull for use JPEG's frames. <strong>!!!</strong> NOTE: if, your mask is an PNG image, you need to saveImage it as an 24bit or 32bit png and add an extra pixel line with rainbow colors, this is because Android itself has an bug <strong>!!!</strong></p>
+<p><a name="aspectConfig"></a>
+<code>aspectConfig</code> - <a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">:</span> the aspect that enable this frame.</p>
+<p><a name="groupId"></a>
+<code>groupId</code> - <span class="identifier">int</span><span class="symbol">:</span> the group number to identifier a equal frame with different aspect. If the crop aspect changed the unfitting frame are replaced with a frame that fit the aspect and has the same group id.</p>
+<code><span class="keyword">protected</span> <span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code>
+</BODY>
+</HTML>

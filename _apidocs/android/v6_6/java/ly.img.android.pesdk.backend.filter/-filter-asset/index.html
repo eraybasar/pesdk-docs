@@ -1,0 +1,183 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FilterAsset - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.filter</a>&nbsp;/&nbsp;<a href="./index.html">FilterAsset</a><br/>
+<br/>
+<h1>FilterAsset</h1>
+<code><span class="keyword">class </span><span class="identifier">FilterAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a></code>
+<p>Represents the Image-Filter base file. For Camera live Preview the filter is OpenGl Based but has also a Renderscript implementation to triggerOperatorsIfNeeded final images in full resolution.</p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-filter-config-intensity/index.html">FilterConfigIntensity</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">FilterConfigIntensity</span></code>
+<p>Implement this interface if a Filter has Intensity Control</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FilterAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">FilterAsset</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.config.AbstractAsset</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-default-intensity-value.html">getDefaultIntensityValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultIntensityValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-neutral-start-point.html">getNeutralStartPoint</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNeutralStartPoint</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-intensity-config.html">hasIntensityConfig</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasIntensityConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Check if the Filter has Intensity Control</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw.html">onDraw</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDraw</span><span class="symbol">(</span><span class="identifier">program</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlProgram</span><span class="symbol">, </span><span class="identifier">intensity</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="preload-lut.html">preloadLut</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">preloadLut</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="release.html">release</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">release</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-image.html">renderImage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">previewRendering</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">bitmap</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">, </span><span class="identifier">intensity</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">previewRendering</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">renderImage</span><span class="symbol">(</span><span class="identifier">allocation</span><span class="symbol">:</span>&nbsp;<span class="identifier">Allocation</span><span class="symbol">, </span><span class="identifier">intensity</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">previewMode</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Allocation</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="unload-lut.html">unloadLut</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">unloadLut</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-n-o-n-e_-f-i-l-e-r.html">NONE_FILER</a></p>
+</td>
+<td>
+<code><span class="identifier">NONE_FILER</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-n-o-n-e_-f-i-l-t-e-r_-i-d.html">NONE_FILTER_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">NONE_FILTER_ID</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-duotone-filter-asset/index.html">DuotoneFilterAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DuotoneFilterAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">FilterAsset</span></a><span class="symbol">, </span><a href="-filter-config-intensity/index.html"><span class="identifier">FilterAsset.FilterConfigIntensity</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-filter-asset-hatch/index.html">FilterAssetHatch</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FilterAssetHatch</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">FilterAsset</span></a></code>
+<p>Represents the Image-Filter base file. For Camera live Preview the filter is OpenGl Based but has also a Renderscript implementation to triggerOperatorsIfNeeded final images in full resolution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-lut-color-filter-asset/index.html">LutColorFilterAsset</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LutColorFilterAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">FilterAsset</span></a><span class="symbol">, </span><a href="-filter-config-intensity/index.html"><span class="identifier">FilterAsset.FilterConfigIntensity</span></a></code>
+<p>Represents a "Look up table" (Lut) FilterAsset For Camera live Preview the filter is OpenGl Based but has also a Renderscript implementation to renderIfNeeded final images in full resolution.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ly.img.android.pesdk.backend.operator.export - </title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="./index.html">ly.img.android.pesdk.backend.operator.export</a><br/>
+<br/>
+<h2>Package ly.img.android.pesdk.backend.operator.export</h2>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-chunk-intermediary/index.html">ChunkIntermediary</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ChunkIntermediary</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-clarity-operation/index.html">ClarityOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ClarityOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.ColorAdjustmentSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-color-adjustment-operation/index.html">ColorAdjustmentOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorAdjustmentOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.ColorAdjustmentSettings</span><span class="symbol">&gt;</span></code>
+<p>Color transformation operation, it allows to triggerOperatorsIfNeeded a ultra fast instant preview of color transformation changes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-filter-operation/index.html">FilterOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FilterOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.FilterSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-focus-operation/index.html">FocusOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FocusOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.FocusSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-image-load-operation/index.html">ImageLoadOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ImageLoadOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.EditorLoadSettings</span><span class="symbol">&gt;</span></code>
+<p>Source image load operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-image-save-operation/index.html">ImageSaveOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ImageSaveOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.EditorSaveSettings</span><span class="symbol">&gt;</span></code>
+<p>Operator to show preview result in the editor.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-layer-operation/index.html">LayerOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LayerOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.LayerListSettings</span><span class="symbol">&gt;</span></code>
+<p>Sticker operator with instant preview.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-operation/index.html">Operation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Operation</span><span class="symbol">&lt;</span><span class="identifier">StateClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateObservable</span><span class="symbol">&gt;</span></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-operator/index.html">Operator</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Operator</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">java.util.ArrayList</span><span class="symbol">&lt;</span><a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-sharpness-operation/index.html">SharpnessOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SharpnessOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.ColorAdjustmentSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-transform-operation/index.html">TransformOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TransformOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.TransformSettings</span><span class="symbol">&gt;</span></code>
+<p>Chunk Operator to show preview result in the editor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

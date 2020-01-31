@@ -1,0 +1,233 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Operation - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.export</a>&nbsp;/&nbsp;<a href="./index.html">Operation</a><br/>
+<br/>
+<h1>Operation</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Operation</span><span class="symbol">&lt;</span><span class="identifier">StateClass</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateObservable</span><span class="symbol">&gt;</span></code>
+<p>Abstract Operation</p>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="do-operation.html">doOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">StateClass</span><span class="symbol">, </span><span class="identifier">request</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-result-region-i/index.html"><span class="identifier">ResultRegionI</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-request-result-i/index.html"><span class="identifier">RequestResultI</span></a></code>
+<p>Start the Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-estimated-memory-consumption-factor.html">getEstimatedMemoryConsumptionFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getEstimatedMemoryConsumptionFactor</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">stateClass</span><span class="symbol">:</span>&nbsp;<span class="identifier">StateClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getEstimatedMemoryConsumptionFactor</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-identifier.html">getIdentifier</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getIdentifier</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-necessary-memory.html">getNecessaryMemory</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNecessaryMemory</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-previous-result-rect.html">getPreviousResultRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPreviousResultRect</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">subSample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getPreviousResultRect</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-result-rect.html">getResultRect</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getResultRect</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">subSample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state.html">getState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getState</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">StateClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-cachable.html">isCachable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isCachable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-ready.html">isReady</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isReady</span><span class="symbol">(</span><span class="identifier">settings</span><span class="symbol">:</span>&nbsp;<span class="identifier">StateClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="operator-ready.html">operatorReady</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">operatorReady</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="request-source-answer.html">requestSourceAnswer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestSourceAnswer</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">request</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-request-i/index.html"><span class="identifier">RequestI</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-source-request-answer-i/index.html"><span class="identifier">SourceRequestAnswerI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="run-and-delegate.html">runAndDelegate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">runAndDelegate</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">resultRegion</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-result-region-i/index.html"><span class="identifier">ResultRegionI</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-request-result-i/index.html"><span class="identifier">RequestResultI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-level-progress.html">setLevelProgress</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setLevelProgress</span><span class="symbol">(</span><span class="identifier">operator</span><span class="symbol">:</span>&nbsp;<a href="../-operator/index.html"><span class="identifier">Operator</span></a><span class="symbol">, </span><span class="identifier">level</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">stepCount</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">step</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-m-e-m-o-r-y_-m-a-t-h_-c-o-n-t-e-x-t.html">MEMORY_MATH_CONTEXT</a></p>
+</td>
+<td>
+<code><span class="identifier">MEMORY_MATH_CONTEXT</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-clarity-operation/index.html">ClarityOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ClarityOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.ColorAdjustmentSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-color-adjustment-operation/index.html">ColorAdjustmentOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorAdjustmentOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.ColorAdjustmentSettings</span><span class="symbol">&gt;</span></code>
+<p>Color transformation operation, it allows to triggerOperatorsIfNeeded a ultra fast instant preview of color transformation changes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-filter-operation/index.html">FilterOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FilterOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.FilterSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-focus-operation/index.html">FocusOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FocusOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.FocusSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-image-load-operation/index.html">ImageLoadOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ImageLoadOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.EditorLoadSettings</span><span class="symbol">&gt;</span></code>
+<p>Source image load operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-image-save-operation/index.html">ImageSaveOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ImageSaveOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.EditorSaveSettings</span><span class="symbol">&gt;</span></code>
+<p>Operator to show preview result in the editor.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-layer-operation/index.html">LayerOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LayerOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.LayerListSettings</span><span class="symbol">&gt;</span></code>
+<p>Sticker operator with instant preview.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-sharpness-operation/index.html">SharpnessOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SharpnessOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.ColorAdjustmentSettings</span><span class="symbol">&gt;</span></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-transform-operation/index.html">TransformOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TransformOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Operation</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.backend.model.state.TransformSettings</span><span class="symbol">&gt;</span></code>
+<p>Chunk Operator to show preview result in the editor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

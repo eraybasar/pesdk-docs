@@ -1,0 +1,312 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DataSourceListAdapter.DataSourceViewHolder - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.ui.adapter</a>&nbsp;/&nbsp;<a href="../index.html">DataSourceListAdapter</a>&nbsp;/&nbsp;<a href="./index.html">DataSourceViewHolder</a><br/>
+<br/>
+<h1>DataSourceViewHolder</h1>
+<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">DataSourceViewHolder</span><span class="symbol">&lt;</span><span class="identifier">ITEM</span><span class="symbol">, </span><span class="identifier">ASYNC_DATA</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DataSourceViewHolder</span><span class="symbol">(</span><span class="identifier">itemView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="bind-data.html">bindData</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bindData</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">ITEM</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">bindData</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">ITEM</span><span class="symbol">, </span><span class="identifier">asyncData</span><span class="symbol">:</span>&nbsp;<span class="identifier">ASYNC_DATA</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-async-data.html">createAsyncData</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createAsyncData</span><span class="symbol">(</span><span class="identifier">item</span><span class="symbol">:</span>&nbsp;<span class="identifier">ITEM</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ASYNC_DATA</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="dispatch-invalidate.html">dispatchInvalidate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchInvalidate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="dispatch-on-item-click.html">dispatchOnItemClick</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchOnItemClick</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="dispatch-selection.html">dispatchSelection</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchSelection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-in-vertical-layout.html">isInVerticalLayout</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInVerticalLayout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached-to-list.html">onAttachedToList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttachedToList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached-from-list.html">onDetachedFromList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetachedFromList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-in-vertical-layout.html">setInVerticalLayout</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setInVerticalLayout</span><span class="symbol">(</span><span class="identifier">inVerticalLayout</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-selected-state.html">setSelectedState</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setSelectedState</span><span class="symbol">(</span><span class="identifier">selected</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="click-listener.html">clickListener</a></p>
+</td>
+<td>
+<code><span class="identifier">clickListener</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-attached.html">isAttached</a></p>
+</td>
+<td>
+<code><span class="identifier">isAttached</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-in-vertical-layout.html">isInVerticalLayout</a></p>
+</td>
+<td>
+<code><span class="identifier">isInVerticalLayout</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="receive-touches.html">receiveTouches</a></p>
+</td>
+<td>
+<code><span class="identifier">receiveTouches</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="selection-listener.html">selectionListener</a></p>
+</td>
+<td>
+<code><span class="identifier">selectionListener</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="state-handler.html">stateHandler</a></p>
+</td>
+<td>
+<code><span class="identifier">stateHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ui-density.html">uiDensity</a></p>
+</td>
+<td>
+<code><span class="identifier">uiDensity</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-blend-mode-view-holder/index.html">BlendModeViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BlendModeViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-abstract-item/index.html"><span class="identifier">AbstractItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-color-view-holder/index.html">ColorViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-crop-view-holder/index.html">CropViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CropViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-crop-aspect-item/index.html"><span class="identifier">CropAspectItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-default-view-holder/index.html">DefaultViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DefaultViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-abstract-item/index.html"><span class="identifier">AbstractItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-divider-view-holder/index.html">DividerViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DividerViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><span class="identifier">java.lang.Object</span><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-folder-view-holder/index.html">FolderViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FolderViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-folder-item/index.html"><span class="identifier">FolderItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-font-preview-view-holder/index.html">FontPreviewViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FontPreviewViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-font-preview-item/index.html"><span class="identifier">FontPreviewItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-font-view-holder/index.html">FontViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FontViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-font-item/index.html"><span class="identifier">FontItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-frame-view-holder/index.html">FrameViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FrameViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-frame-item/index.html"><span class="identifier">FrameItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-image-filter-view-holder/index.html">ImageFilterViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ImageFilterViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-filter-item/index.html"><span class="identifier">FilterItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-overlay-view-holder/index.html">OverlayViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">OverlayViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-overlay-item/index.html"><span class="identifier">OverlayItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Bitmap</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-small-color-view-holder/index.html">SmallColorViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SmallColorViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-space-fill-view-holder/index.html">SpaceFillViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SpaceFillViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-space-item/index.html"><span class="identifier">SpaceItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-text-design-color-view-holder/index.html">TextDesignColorViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextDesignColorViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../../ly.img.android.pesdk.ui.viewholder/-text-design-view-holder/index.html">TextDesignViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextDesignViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a><span class="symbol">&lt;</span><a href="../../../ly.img.android.pesdk.ui.panels.item/-text-design-item/index.html"><span class="identifier">TextDesignItem</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">java.lang.Void</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,268 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FrameAsset - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.config</a>&nbsp;/&nbsp;<a href="./index.html">FrameAsset</a><br/>
+<br/>
+<h1>FrameAsset</h1>
+<code><span class="keyword">class </span><span class="identifier">FrameAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">aspectConfig</span><span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">, </span><span class="identifier">groupId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">frameMaskId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">aspectConfig</span><span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">, </span><span class="identifier">groupId</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code>
+<p>Creates a Frame Config</p>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameConfig</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameConfig</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">, </span><span class="identifier">fixedRelativeScale</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">id</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">frameConfig</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a><span class="symbol">, </span><span class="identifier">fixedRelativeScale</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">scaleIsFixed</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span></code>
+<p>Creates a Frame Config with unspecific aspect</p>
+<code><span class="identifier">FrameAsset</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="calculate-inner-rect.html">calculateInnerRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">calculateInnerRect</span><span class="symbol">(</span><span class="identifier">inputFullRect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">calculateInnerRect</span><span class="symbol">(</span><span class="identifier">inputFullRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-relative-rect-fast/index.html"><span class="identifier">RelativeRectFast</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-relative-rect-accurate/index.html"><span class="identifier">RelativeRectAccurate</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="calculate-outer-offset-and-scale.html">calculateOuterOffsetAndScale</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">calculateOuterOffsetAndScale</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="calculate-outer-rect.html">calculateOuterRect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">calculateOuterRect</span><span class="symbol">(</span><span class="identifier">inputFullRect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">calculateOuterRect</span><span class="symbol">(</span><span class="identifier">inputFullRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-relative-rect-fast/index.html"><span class="identifier">RelativeRectFast</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-relative-rect-accurate/index.html"><span class="identifier">RelativeRectAccurate</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="calculate-scale.html">calculateScale</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">calculateScale</span><span class="symbol">(</span><span class="identifier">inputFullRect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">calculateScale</span><span class="symbol">(</span><span class="identifier">inputFullRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-relative-rect-fast/index.html"><span class="identifier">RelativeRectFast</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-aspect.html">getAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAspect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.config.AbstractAsset</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-crop-height.html">getCropHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCropHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-crop-width.html">getCropWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCropWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-fixed-relative-scale.html">getFixedRelativeScale</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFixedRelativeScale</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame-aspect.html">getFrameAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrameAspect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.math.BigDecimal</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame-config.html">getFrameConfig</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrameConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.frame/-custom-patch-frame-asset/index.html"><span class="identifier">CustomPatchFrameAsset</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame-limit.html">getFrameLimit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrameLimit</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame-mask-source.html">getFrameMaskSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrameMaskSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a></code>
+<p>This can get a separate mask ImageSource, it can be also null.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame-source.html">getFrameSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrameSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a></code>
+<p>Get frame image source, it can be null. can be a non transparent source @see #getFrameMaskSource()</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-group-id.html">getGroupId</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getGroupId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-image-limit.html">getImageLimit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getImageLimit</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code>
+<p>Gets the Region of the Image.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-outer-limit.html">getOuterLimit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOuterLimit</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-equal-aspect.html">hasEqualAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasEqualAspect</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-fixed-relative-scale.html">hasFixedRelativeScale</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasFixedRelativeScale</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-mask.html">hasMask</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasMask</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-specific-size.html">hasSpecificSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasSpecificSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-aspect-fitting-frame.html">isAspectFittingFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isAspectFittingFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-free-crop.html">isFreeCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFreeCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-non-frame.html">isNonFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isNonFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier">flags</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-n-o-n-e_-f-r-a-m-e.html">NONE_FRAME</a></p>
+</td>
+<td>
+<code><span class="identifier">NONE_FRAME</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-n-o-n-e_-f-r-a-m-e_-i-d.html">NONE_FRAME_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">NONE_FRAME_ID</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

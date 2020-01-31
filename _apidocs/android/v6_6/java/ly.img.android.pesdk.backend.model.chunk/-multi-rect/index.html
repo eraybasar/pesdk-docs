@@ -1,0 +1,494 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MultiRect - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.chunk</a>&nbsp;/&nbsp;<a href="./index.html">MultiRect</a><br/>
+<br/>
+<h1>MultiRect</h1>
+<code><span class="keyword">class </span><span class="identifier">MultiRect</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span></code>
+<p></p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MultiRect</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">MultiRect</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">MultiRect</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">MultiRect</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">MultiRect</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="add-margin.html">addMargin</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addMargin</span><span class="symbol">(</span><span class="identifier">margin</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addMargin</span><span class="symbol">(</span><span class="identifier">marginX</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">marginY</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addMargin</span><span class="symbol">(</span><span class="identifier">marginLeft</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">marginTop</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">marginRight</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">marginBottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="calculate-aspect.html">calculateAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">calculateAspect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ceil-to-multi-of8.html">ceilToMultiOf8</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">ceilToMultiOf8</span><span class="symbol">(</span><span class="identifier">number</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="flip-horizontal.html">flipHorizontal</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">flipHorizontal</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="flip-vertical.html">flipVertical</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">flipVertical</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="forced-recycle.html">forcedRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">forcedRecycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="generate-centered-rect.html">generateCenteredRect</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">generateCenteredRect</span><span class="symbol">(</span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">imageWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">imageHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">bounds</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">generateCenteredRect</span><span class="symbol">(</span><span class="identifier">imageWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">imageHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">bounds</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">generateCenteredRect</span><span class="symbol">(</span><span class="identifier">imageWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">imageHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">viewWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">viewHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">generateCenteredRect</span><span class="symbol">(</span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">imageWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">imageHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">viewWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">viewHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">generateCenteredRect</span><span class="symbol">(</span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">imageWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">imageHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">viewWidth</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">viewHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">, </span><span class="identifier">fitInside</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code>
+<p>Gets the rectangular position of a Bitmap if it were placed inside a View with scale type set to ImageView.ScaleType.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-aspect.html">getAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAspect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">double</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-bottom.html">getBottom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getBottom</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-edge-pos.html">getEdgePos</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getEdgePos</span><span class="symbol">(</span><span class="identifier">edge</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.constant.RectEdge</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-edges.html">getEdges</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getEdges</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getEdges</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getEdges</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">shape</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getEdges</span><span class="symbol">(</span><span class="identifier">rect</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">shape</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getEdges</span><span class="symbol">(</span><span class="identifier">shape</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-height.html">getHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-left.html">getLeft</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLeft</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-origen-and-size-roundend.html">getOrigenAndSizeRoundend</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOrigenAndSizeRoundend</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-right.html">getRight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-rounded.html">getRounded</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRounded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-round-out.html">getRoundOut</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRoundOut</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-top.html">getTop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-width.html">getWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-fixed-aspect-ration.html">hasFixedAspectRation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasFixedAspectRation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="inset.html">inset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">inset</span><span class="symbol">(</span><span class="identifier">dx</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">dy</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="intersect.html">intersect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">intersect</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">intersect</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="i-set-center.html">iSetCenter</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">iSetCenter</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-finite.html">isFinite</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">isFinite</span><span class="symbol">(</span><span class="identifier">f</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="obtain.html">obtain</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtain</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="obtain-empty.html">obtainEmpty</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">obtainEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="offset.html">offset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">offset</span><span class="symbol">(</span><span class="identifier">dx</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">dy</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="offset-to.html">offsetTo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">offsetTo</span><span class="symbol">(</span><span class="identifier">newLeft</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">newTop</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="permanent.html">permanent</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">permanent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">permanent</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">permanent</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">permanent</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">permanent</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="read-from-parcel.html">readFromParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readFromParcel</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="recycle.html">recycle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="rounded.html">rounded</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">rounded</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="round-out.html">roundOut</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">roundOut</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Rect</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="round-values.html">roundValues</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">roundValues</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="sample-size.html">sampleSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sampleSize</span><span class="symbol">(</span><span class="identifier">sample</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="scale-centered.html">scaleCentered</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">scaleCentered</span><span class="symbol">(</span><span class="identifier">scale</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">scaleCentered</span><span class="symbol">(</span><span class="identifier">scaleX</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">scaleY</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="scale-size.html">scaleSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">scaleSize</span><span class="symbol">(</span><span class="identifier">scaleX</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">scaleY</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">scaleSize</span><span class="symbol">(</span><span class="identifier">scale</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="scale-width.html">scaleWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">scaleWidth</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set.html">set</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier">src</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MultiRect</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier">src</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier">src</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-aspect.html">setAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAspect</span><span class="symbol">(</span><span class="identifier">aspect</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-bottom.html">setBottom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setBottom</span><span class="symbol">(</span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-center.html">setCenter</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCenter</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-edge-offset-to.html">setEdgeOffsetTo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setEdgeOffsetTo</span><span class="symbol">(</span><span class="identifier">edge</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.constant.RectEdge</span><span class="symbol">, </span><span class="identifier">pos</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setEdgeOffsetTo</span><span class="symbol">(</span><span class="identifier">edge</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.constant.RectEdge</span><span class="symbol">, </span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-edge-pos.html">setEdgePos</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setEdgePos</span><span class="symbol">(</span><span class="identifier">edge</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.constant.RectEdge</span><span class="symbol">, </span><span class="identifier">pos</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setEdgePos</span><span class="symbol">(</span><span class="identifier">edge</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.constant.RectEdge</span><span class="symbol">, </span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-empty.html">setEmpty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-fixed-aspect-ration.html">setFixedAspectRation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setFixedAspectRation</span><span class="symbol">(</span><span class="identifier">fixedAspectRation</span><span class="symbol">:</span>&nbsp;<span class="identifier">double</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setFixedAspectRation</span><span class="symbol">(</span><span class="identifier">fixedAspectRation</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-height.html">setHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setHeight</span><span class="symbol">(</span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-intersect.html">setIntersect</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setIntersect</span><span class="symbol">(</span><span class="identifier">a</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-left.html">setLeft</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setLeft</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-limits.html">setLimits</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setLimits</span><span class="symbol">(</span><span class="identifier">maxLimits</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setLimits</span><span class="symbol">(</span><span class="identifier">maxLimits</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">fixedEdge</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.constant.RectEdge</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setLimits</span><span class="symbol">(</span><span class="identifier">maxLimits</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-min-size.html">setMinSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMinSize</span><span class="symbol">(</span><span class="identifier">minSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-min-size-unlimited.html">setMinSizeUnlimited</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMinSizeUnlimited</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-right.html">setRight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRight</span><span class="symbol">(</span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-size.html">setSize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSize</span><span class="symbol">(</span><span class="identifier">height</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-top.html">setTop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTop</span><span class="symbol">(</span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-width.html">setWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setWidth</span><span class="symbol">(</span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="sort.html">sort</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sort</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-shape.html">toShape</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toShape</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="union.html">union</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">union</span><span class="symbol">(</span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">union</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">union</span><span class="symbol">(</span><span class="identifier">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="identifier">CREATOR</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

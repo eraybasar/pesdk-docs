@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RelativeRectAccurate.<init> - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.chunk</a>&nbsp;/&nbsp;<a href="index.html">RelativeRectAccurate</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Create a new empty BigRect. All coordinates are initialized to 0.</p>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">ref</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">ref</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span></code><br/>
+<code><span class="keyword">protected</span> <span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">)</span></code><code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">@NonNull</span> <span class="identifier">left</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">@NonNull</span> <span class="identifier">top</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">@NonNull</span> <span class="identifier">right</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">@NonNull</span> <span class="identifier">bottom</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">, </span><span class="identifier">@NonNull</span> <span class="identifier">sourceAspect</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.math.BigDecimal</span><span class="symbol">)</span></code>
+<p>Create a new rectangle with the specified coordinates. Note: no range checking is performed, so the caller must ensure that left &lt;= right and top &lt;= bottom.</p>
+<h3>Parameters</h3>
+<p><a name="left"></a>
+<code>left</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The X coordinate of the left side of the rectangle</p>
+<p><a name="top"></a>
+<code>top</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The Y coordinate of the top of the rectangle</p>
+<p><a name="right"></a>
+<code>right</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The X coordinate of the right side of the rectangle</p>
+<p><a name="bottom"></a>
+<code>bottom</code> - <span class="identifier">java.math.BigDecimal</span><span class="symbol">:</span> The Y coordinate of the bottom of the rectangle</p>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<a href="index.html"><span class="identifier">RelativeRectAccurate</span></a><span class="symbol">)</span></code>
+<p>Create a new rectangle, initialized with the values in the specified rectangle (which is left unmodified).</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <a href="index.html"><span class="identifier">RelativeRectAccurate</span></a><span class="symbol">:</span> The rectangle whose coordinates are copied into the new rectangle.</p>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<a href="../-relative-rect-fast/index.html"><span class="identifier">RelativeRectFast</span></a><span class="symbol">)</span></code>
+<p>Create a new rectangle, initialized with the values in the specified rectangle (which is left unmodified).</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <a href="../-relative-rect-fast/index.html"><span class="identifier">RelativeRectFast</span></a><span class="symbol">:</span> The rectangle whose coordinates are copied into the new rectangle.</p>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">ref</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span></code>
+<p>Create a new rectangle, initialized with the values in the specified rectangle (which is left unmodified).</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <span class="identifier">Rect</span><span class="symbol">:</span> The rectangle whose coordinates are copied into the new rectangle.</p>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">ref</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">, </span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span></code>
+<p>Create a new rectangle, initialized with the values in the specified rectangle (which is left unmodified).</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <span class="identifier">RectF</span><span class="symbol">:</span> The rectangle whose coordinates are copied into the new rectangle.</p>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">ref</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">Rect</span><span class="symbol">)</span></code>
+<p>Create a new rectangle, initialized with the values in the specified rectangle (which is left unmodified).</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <span class="identifier">Rect</span><span class="symbol">:</span> The rectangle whose coordinates are copied into the new rectangle.</p>
+<code><span class="identifier">RelativeRectAccurate</span><span class="symbol">(</span><span class="identifier">ref</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">, </span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">)</span></code>
+<p>Create a new rectangle, initialized with the values in the specified rectangle (which is left unmodified).</p>
+<h3>Parameters</h3>
+<p><a name="r"></a>
+<code>r</code> - <span class="identifier">RectF</span><span class="symbol">:</span> The rectangle whose coordinates are copied into the new rectangle.</p>
+</BODY>
+</HTML>
