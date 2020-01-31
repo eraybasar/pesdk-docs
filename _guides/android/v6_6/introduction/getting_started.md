@@ -33,7 +33,7 @@ We made an awesome video tutorial for you.
 
 <div class="documentation__disclaimer">
 <h4 id="license-terms">Using a Trial License</h4>
-Make sure you have a standard license before adding it properly to your running project. A trial license is valid for only 30 days and will afterwards disable the export function for your customers. Your trial license should therefore be removed and substituted by a standard license. More information can be found <a href="{{site.baseUrl}}/guides/html5/v4/introduction/faq/standard_or_trial_license">here</a>.
+Make sure you have a standard license before adding it properly to your running project. A trial license is valid for only 30 days and will afterwards disable the export function for your customers. Your trial license should therefore be removed and substituted by a standard license. More information can be found <a href="{{site.baseUrl}}/guides/android/v6_6/introduction/faq/standard_or_trial_license">here</a>.
 </div>
 
 ## Prerequisites
