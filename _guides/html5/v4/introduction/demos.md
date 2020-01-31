@@ -21,7 +21,7 @@ Wether you just want to learn to use the PhotoEditor SDK or just see what can be
 
 ## Support for Demos
 
-While we do provide these demo integrations, we need to also emphasize that we are only experts in natve iOS, Android and HTML5 and none of these frameworks. Therefore, we can only offer limited support for these types of integrations. 
+While we do provide these demo integrations, we need to also emphasize that we are only experts in native iOS, Android and HTML5 and none of these frameworks. Therefore, we can only offer limited support for these types of integrations. 
 
 Please keep this in mind when making the decision what language or framework you'd like to use and how much support you might need from our end.
 
