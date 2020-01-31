@@ -19,7 +19,7 @@ published: true # Either published or not
 
 A picture says more than a thousand words, however sometimes it still takes a few more. The robust text feature of the PhotoEditor SDK provides all necessary functions for quickly adding text to any picture or creative. The corresponding font library can easily be exchanged, reduced, or expanded.
 
-The backend settings for the Layer are implemented in the [`TextLayerSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/layer/TextLayerSettings.html) class and displayed using the [`TextToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/TextToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
+The backend settings for the Layer are implemented in the [`TextLayerSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/layer/TextLayerSettings.html) class and displayed using the [`TextToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/TextToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{site.baseurl}}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
 
 ## Adding and removing fonts
 

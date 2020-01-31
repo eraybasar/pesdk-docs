@@ -20,7 +20,7 @@ published: true # Either published or not
 
 The high performant brush engine of the PhotoEditor SDK is optimized for touch screen interaction and supports different brush strokes that can be edited in terms of thickness and color.
 
-The backend settings are implemented in the [`BrushSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/BrushSettings.html) class and displayed using the [`BrushToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/BrushToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
+The backend settings are implemented in the [`BrushSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/BrushSettings.html) class and displayed using the [`BrushToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/BrushToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{site.baseurl}}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
 
 Example: How to set the default brush values:
 

@@ -22,7 +22,7 @@ Our PhotoEditor SDK features more than 60 high-quality filters and enables you t
 
 To examine the included filters, you can download the {% include guides/android/example-app.md %} from the Play Store or clone our {% include guides/android/demo-repository.md %}.
 
-The backend settings are implemented in the [`FilterSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/FilterSettings.html) class and displayed using the [`FilterToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/FilterToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
+The backend settings are implemented in the [`FilterSettings`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/backend/model/state/FilterSettings.html) class and displayed using the [`FilterToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/index.html?ly/img/android/pesdk/ui/panels/FilterToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{site.baseurl}}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
 
 ## Add or remove predefined filters
 

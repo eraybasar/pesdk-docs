@@ -37,7 +37,7 @@ buildscript {
     dependencies {
 
         // And plugin dependency with the lates available version
-        classpath 'ly.img.android.pesdk:plugin:6.6.1'
+        classpath 'ly.img.android.pesdk:plugin:6.6.4'
 
         // Update you gradle version at least to v3.1.3
         classpath 'com.android.tools.build:gradle:3.1.3'
@@ -385,7 +385,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
     }
 
 
-    fun openEditor(inputImage: Uri) {
+    fun openEditor(inputImage: Uri?) {
         val settingsList = createPesdkSettingsList().apply {
             getSettingsModel(EditorLoadSettings::class.java).apply {
                 imageSource = inputImage

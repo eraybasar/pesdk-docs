@@ -19,7 +19,7 @@ published: true # Either published or not
 
 The PhotoEditor SDK includes a versatile frame tool that works with any given photo size or ratio and provides two distinct options to apply frames. For the dynamic frames tool that works perfectly for creatives with repeatable or stretchable areas, we abandoned the 9-patch standard and replaced it with a novel and even more flexible 12-patch layout. The static frames tool can be used for complex and irregular creatives.
 
-The tool is implemented in the [`FrameEditorTool`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/sdk/tools/FrameEditorTool.html) class and displayed using the [`FrameToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/panels/FrameToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
+The tool is implemented in the [`FrameEditorTool`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/sdk/tools/FrameEditorTool.html) class and displayed using the [`FrameToolPanel`]({{site.baseurl}}/apidocs/{{page.platform}}/{{page.version}}/ly/img/android/ui/panels/FrameToolPanel.html). If you want to customize the appearance of this tool, take a look at the [customization]({{site.baseurl}}/guides/{{page.platform}}/{{page.version}}/customization/introduction) section.
 
 ## Add Dynamic frame assets
 

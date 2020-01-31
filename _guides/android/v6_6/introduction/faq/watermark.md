@@ -17,4 +17,4 @@ title: Watermark on exported images
 
 When the License File is excluded from the build, you still will be able to export the images, but the image will be exported with a watermark on it.
 
-Please find more information on how to download and include the license file [here]({{site.baseUrl}}/guides/android/v6_5/introduction/faq/download_license).
+Please find more information on how to download and include the license file [here]({{site.baseUrl}}/guides/android/v6_6/introduction/faq/download_license).

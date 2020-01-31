@@ -251,7 +251,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
     }
 
 
-    fun openEditor(inputImage: Uri) {
+    fun openEditor(inputImage: Uri?) {
         val settingsList = createPesdkSettingsList().apply {
             getSettingsModel(EditorLoadSettings::class.java).apply {
                 imageSource = inputImage
