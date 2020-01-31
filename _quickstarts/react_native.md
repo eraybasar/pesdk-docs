@@ -17,4 +17,7 @@ published: true
 
 # Getting Started with React Native
 
-Please use our official [React Native module for PhotoEditor SDK](https://github.com/imgly/pesdk-react-native) which is available via NPM as [`react-native-photoeditorsdk`](https://www.npmjs.com/package/react-native-photoeditorsdk). There is also an [example project](https://github.com/imgly/pesdk-react-native-demo) which demonstrates how to use the React Native module for PhotoEditor SDK. 
+We created a fully-fledged [React Native module for PhotoEditor SDK](https://github.com/imgly/pesdk-react-native) which is available via NPM as [`react-native-photoeditorsdk`](https://www.npmjs.com/package/react-native-photoeditorsdk).
+This wrapper library provides most customization options of our native SDK's without having to leave the JavaScript coding and tooling environment. Please find more information in the accompanying [readme](https://github.com/imgly/pesdk-react-native/blob/master/README.md) about how to integrate the module, the module's [API](https://github.com/imgly/pesdk-react-native/blob/master/index.d.ts), the available [customization & configuration options](https://github.com/imgly/pesdk-react-native/blob/master/configuration.ts) in JavaScript as well as how to make use of native customization options beyond the options exposed to JavaScript.
+
+There is also an [example project](https://github.com/imgly/pesdk-react-native-demo) which demonstrates how to use the React Native module for PhotoEditor SDK.
