@@ -1,0 +1,6 @@
+---
+layout: guides/content
+redirect_to:
+  - '/guides/html5/v5/concepts/events'
+version: v5
+---
