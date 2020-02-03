@@ -1,0 +1,108 @@
+---
+layout: guides/content
+title: &title Adjustments # title as shown in the menu and
+description: The Adjustment tool set of the PhotoEditor SDK for HTML5 offers essential and advanced editing functions like Brightness, Contrast, Saturation or Exposure.
+menuitem: Adjustments
+order: 2
+platform: html5
+version: v5
+category:
+  - guide
+  - feature
+tags:
+  - photo editor
+published: true # Either published or not
+---
+
+<!-- ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg){: .center-image style="padding: 20px; max-height: 400px;"} -->
+
+{% capture image_desktop %}
+{{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg
+{% endcapture %}
+{% capture image_react %}
+{{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}_react.jpg
+{% endcapture %}
+
+{% assign images = "" | split: "" | push: image_desktop | push: image_react %}
+{% include image_carousel.html images=images %}
+
+Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
+
+# Specifying the available adjustments
+
+This example shows the default adjustment configuration.
+In order to enable or disable specific adjustments, simply pass the `categories` option to the adjustments controls. The items will be displyed in the order mentioned by the configuration.
+If `categories: [{ identifier: 'basic' }]` is given without any items, editor will include all the existing basic adjustments under that category
+If `flattenCategories` is set to true, all enabled adjustments will be shown in the top-level of the adjust selection tool, which effectively hides the categories
+
+---
+```js
+const editor = new PhotoEditorSDKUI({
+  adjustment: {
+    categories: [
+      {
+        identifier: 'basic',
+        items: [
+          { identifier: 'brightness' },
+          { identifier: 'saturation' },
+          { identifier: 'contrast' },
+          { identifier: 'gamma' }
+        ]
+      },
+      {
+        identifier: 'refinements',
+        items: [
+          { identifier: 'clarity' },
+          { identifier: 'exposure' },
+          { identifier: 'shadows' },
+          { identifier: 'highlights' },
+          { identifier: 'whites' },
+          { identifier: 'blacks' },
+          { identifier: 'temperature' },
+          { identifier: 'sharpness }'
+        ]
+      }
+    ],
+    flattenCategories: false
+  },
+})
+```
+
+## Localization
+
+
+You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default adjustment localisation lables
+
+```js
+{
+  ...,
+  "adjustment": {
+    "title": "Adjust",
+    "controls": {
+      "buttonReset": "Reset to default"
+    },
+    "categories": {
+      "basic": "Basic",
+      "refinements": "Refinements"
+    },
+    "items": {
+      "brightness": "Brightness",
+      "saturation": "Saturation",
+      "contrast": "Contrast",
+      "gamma": "Gamma",
+      "sharpness": "Sharpness",
+      "clarity": "Clarity",
+      "exposure": "Exposure",
+      "shadows": "Shadows",
+      "highlights": "Highlights",
+      "whites" : "Whites",
+      "blacks" : "Blacks",
+      "temperature" : "Temperature"
+    }
+  }
+}
+```
+
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+
