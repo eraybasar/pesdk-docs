@@ -1,0 +1,101 @@
+---
+layout: guides/content
+title: &title Text Design # title as shown in the menu and
+description: The Text Design Tool merges input text with typography, creating stunning designs for a multitude of use-cases.
+menuitem: *title
+order: 4
+platform: html5
+version: v5
+category:
+  - guide
+  - feature
+tags: &tags # tags that are necessary
+  - photo editor
+
+published: true # Either published or not
+---
+<!-- ![{{page.title}} tool]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg){: .center-image style="padding: 20px; max-height: 400px;"} -->
+
+{% capture image_desktop %}
+{{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}.jpg
+{% endcapture %}
+
+{% assign images = "" | split: "" | push: image_desktop %}
+{% include image_carousel.html images=images %}
+
+The Text Design Tool merges input text with typography, creating stunning designs for a multitude of use-cases. The tool lays out input text according to recipes crafted by professional designers upon a single tap. Furthermore, the creative can then be fine-tuned by choosing from 15 different text colors or by using the randomize functionality that shuffles the fonts, alignments and decorations. It’s even possible to create a mask that lets the background image shine through.
+
+# Specifying the available text design
+
+This example shows the default text design tool configuration.
+In order to enable or disable specific text design layouts, simply pass the `items` option to the text design tool controls. The items will be displyed in the order mentioned by the configuration.
+
+```js
+const editor = new PhotoEditorSDKUI({
+  textdesign: {
+    items: [
+      { identifier: "imgly_text_design_blocks" },
+      { identifier: "imgly_text_design_rotated" },
+      { identifier: "imgly_text_design_blocks_light" },
+      { identifier: "imgly_text_design_equal_width" },
+      { identifier: "imgly_text_design_masked" },
+      { identifier: "imgly_text_design_celebrate" },
+      { identifier: "imgly_text_design_sunshine" },
+      { identifier: "imgly_text_design_masked_badge" },
+      { identifier: "imgly_text_design_blocks_condensed" },
+      { identifier: "imgly_text_design_celebrate_simple" },
+      { identifier: "imgly_text_design_equal_width_fat" },
+      { identifier: "imgly_text_design_watercolor" },
+      { identifier: "imgly_text_design_particles" },
+      { identifier: "imgly_text_design_masked_speech_bubble" },
+      { identifier: "imgly_text_design_masked_speech_bubble_comic" },
+      { identifier: "imgly_text_design_multiline" },
+    ]
+  },
+})
+```
+
+## Localization
+
+You can override all the labels used in text design tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default text design localisation lables
+
+```json
+  "textdesign": {
+    "title": "Text Design",
+    "controls": {
+      "buttonNew": "New Text Design",
+      "buttonShuffle": "Shuffle Text Design",
+      "selectColor": "Text Color",
+      "tabColor": "Color",
+      "tabShuffle": "Shuffle"
+    },
+    "canvasControls": {
+      "placeholderText": "Write Something",
+      "buttonSave": "Done",
+      "buttonClose": "Schließen",
+      "inputText": "Text Input"
+    },
+    "canvasActions": {
+      "buttonEdit": "Edit",
+      "buttonInvert": "Text as Mask",
+      "buttonDelete": "Delete",
+      "buttonBringToFront": "Move to top",
+      "buttonDuplicate": "Duplicate"
+    },
+    "history": {
+      "add": "Text design",
+      "edit": "Text design edit",
+      "resize": "Text design resize",
+      "position": "Text design position",
+      "color": "Text design color",
+      "shuffle": "Text design shuffle",
+      "invert": "Text design invert",
+      "padding": "Text design padding",
+      "order": "Text design order",
+      "delete": "Text design delete"
+    }
+  }
+
+```
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
