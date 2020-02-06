@@ -32,22 +32,18 @@ published: true # Either published or not
 {% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_dark | push: image_basic_light %}
 {% include image_carousel.html images=images %}
 
-Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows and clarity.
+Our Adjustment tool is our swiss army knife for image optimization. It offers essential functions like brightness and contrast, while allowing more expert users to fine tune highlights, shadows, sharpness and clarity.
 
-# Specifying the available adjustments
+## Specifying the available adjustments
 
-This example shows the default adjustment configuration.
-In order to enable or disable specific adjustments, simply pass the `categories` option to the adjustments controls. The items will be displyed in the order mentioned by the configuration.
-If `categories: [{ identifier: 'basic' }]` is given without any items, editor will include all the existing basic adjustments under that category
-If `flattenCategories` is set to true, all enabled adjustments will be shown in the top-level of the adjust selection tool, which effectively hides the categories
+In order to enable or disable specific adjustments, simply pass the `categories` option to the adjustment tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default adjustment categories and items.
 
----
 ```js
 const editor = new PhotoEditorSDKUI({
   adjustment: {
     categories: [
       {
-        identifier: 'basic',
+        identifier: 'basics',
         items: [
           { identifier: 'brightness' },
           { identifier: 'saturation' },
@@ -74,39 +70,71 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
-## Localization
+## Flattening of categories
 
-
-You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default adjustment localisation lables
+If `flattenCategories` is set to true, all enabled adjustments will be shown in the top-level of the adjustment tool, which effectively hides the categories.
 
 ```js
-{
+const editor = new PhotoEditorSDKUI({
+  adjustment: {
+    flattenCategories: true
+  }
+})
+```
+
+## Including all the items from a category
+
+If a existing category identifier is specified without any items, editor will include all the existing adjustments under `basics` category.
+
+```js
+const editor = new PhotoEditorSDKUI({
+  adjustment: {
+    categories: [{
+      identifier: 'basics'
+    }],
+  },
+})
+```
+
+## Localization
+
+You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default adjustment localisation lables
+
+```js
+new PhotoEditorSDKUI({
   ...,
-  "adjustment": {
-    "title": "Adjust",
-    "controls": {
-      "buttonReset": "Reset to default"
-    },
-    "categories": {
-      "basic": "Basic",
-      "refinements": "Refinements"
-    },
-    "items": {
-      "brightness": "Brightness",
-      "saturation": "Saturation",
-      "contrast": "Contrast",
-      "gamma": "Gamma",
-      "sharpness": "Sharpness",
-      "clarity": "Clarity",
-      "exposure": "Exposure",
-      "shadows": "Shadows",
-      "highlights": "Highlights",
-      "whites" : "Whites",
-      "blacks" : "Blacks",
-      "temperature" : "Temperature"
+  custom: {
+    languages: {
+      en: {
+        ...,
+        adjustment: {
+          title: 'Adjust',
+          controls: {
+            buttonReset: 'Reset to default',
+          },
+          categories: {
+            basics: 'Basic',
+            refinements: 'Refinements',
+          },
+          items: {
+            brightness: 'Brightness',
+            saturation: 'Saturation',
+            contrast: 'Contrast',
+            gamma: 'Gamma',
+            sharpness: 'Sharpness',
+            clarity: 'Clarity',
+            exposure: 'Exposure',
+            shadows: 'Shadows',
+            highlights: 'Highlights',
+            whites: 'Whites',
+            blacks: 'Blacks',
+            temperature: 'Temperature',
+          },
+        }
     }
   }
-}
+})
+
 ```
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
