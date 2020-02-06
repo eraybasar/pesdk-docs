@@ -4,7 +4,7 @@ title: &title Events
 description: Understanding how users engage with a product is critical to every business. Learn how to track your user's interactions with the PhotoEditor SDK for HTML5.
 
 menuitem: *title
-order: 0
+order: 2
 platform: html5
 version: v5
 category:
@@ -31,10 +31,14 @@ editor.on(UIEvent.EXPORT, (result) => {
 })
 ```
 
-there are four main `UIEvents` available
-1. UIEvent.EXPORT = 'export' will be fired when an image is exported
-1. UIEvent.CLOSE = 'close', will be fired when the close button on editor UI is clicked
-1. UIEvent.HISTORY_CHANGE = 'historyChange', will be fired when history changes
-1. UIEvent.EDITOR_READY = 'editorReady', will be fired at the beginning when editor is ready
+There are four main `UIEvents` available
 
-See the Configuration documentation for available UIEvent
+```js
+enum UIEvent {
+  EXPORT = 'export', // will be fired when an image is exported
+  CLOSE = 'close', // will be fired when the close button on editor UI is clicked
+  HISTORY_CHANGE = 'historyChange', // will be fired when history changes
+  EDITOR_READY = 'editorReady', // will be fired at the beginning when editor is ready
+}
+```
+
