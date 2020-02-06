@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Demos # title as shown in the menu and
 description: For a straightforward integration of the PhotoEditor SDK, see our set of example integrations for various frameworks like React Native, Ionic or Cordova.
 menuitem: Demos
-order: 4
+order: 5
 platform: html5
 version: v5
 category:
@@ -38,7 +38,8 @@ All example intergrations repositories are tagged with the suffix `-demo`. In ge
  Currently, we are providing example integrations for:
 
   * [React](https://github.com/imgly/pesdk-react-demo)
+  * [Angular](https://github.com/imgly/pesdk-angular-demo)
+  * [Vue](https://github.com/imgly/pesdk-vue-demo)
 
-Coming up soon will be the example integrations for other frameworks like `Angular`, `Vue`, `Rails`
 
 We are also providing the corresponding codesandbox demos in our quickstart section [here]({{ site.baseurl }}/quickstarts), if you want to learn to integrate the SDK yourself.
