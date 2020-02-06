@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Serialization # title as shown in the menu and
 description: The PhotoEditor SDK for HTML5 provides an option for serialization and deserialization, allowing your users to save and revise their work anytime.
 menuitem: *title
-order: 0
+order: 4
 platform: html5
 version: v5
 category:
