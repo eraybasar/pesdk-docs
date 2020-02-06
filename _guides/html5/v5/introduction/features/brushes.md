@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Brush # title as shown in the menu and
 description: The Brush Engine of the PhotoEditor SDK for HTML5 is optimized for touch screen interaction and supports various brush strokes, thicknesses, and colors.
 menuitem: *title
-order: 7
+order: 9
 platform: html5
 version: v5
 category:
@@ -22,14 +22,11 @@ published: true # Either published or not
 {% capture image_advanced_light %}
 {{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/advanced-light/{{page.title | downcase}}.png
 {% endcapture %}
-{% capture image_basic_dark %}
-{{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/basic-dark/{{page.title | downcase}}.png
-{% endcapture %}
 {% capture image_basic_light %}
 {{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/basic-light/{{page.title | downcase}}.png
 {% endcapture %}
 
-{% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_dark | push: image_basic_light %}
+{% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_light %}
 {% include image_carousel.html images=images %}
 
 The highly efficient brush engine of the PhotoEditor SDK is optimized for touch screen interaction and supports different brush strokes that can be edited in terms of thickness and color.
@@ -40,3 +37,39 @@ The highly efficient brush engine of the PhotoEditor SDK is optimized for touch 
 
 Please note that the thickness is relative to the shortest edge of your image. If your image is 200x500 pixels and the brush thickness is 0.05, the final thickness on the image will be
 `200 * 0.05 = 10 pixels`.
+
+## Localization
+
+
+You can override all the labels used in brush tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default brush localisation lables
+
+```js
+new PhotoEditorSDKUI({
+  ...,
+  custom: {
+    languages: {
+      en: {
+        ...,
+        brush: {
+          title: 'Brush',
+          controls: {
+            sliderSize: 'Brush Size',
+            sliderHardness: 'Brush Hardness',
+            selectColor: 'Brush Color',
+            tabSize: 'Size',
+            tabHardness: 'Hardness',
+            tabColor: 'Color',
+          },
+          history: {
+            brushStroke: 'Brush Stroke',
+          },
+        }
+      }
+    }
+  }
+})
+  
+```
+
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
