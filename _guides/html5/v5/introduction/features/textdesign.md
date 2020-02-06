@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Text Design # title as shown in the menu and
 description: The Text Design Tool merges input text with typography, creating stunning designs for a multitude of use-cases.
 menuitem: *title
-order: 4
+order: 6
 platform: html5
 version: v5
 category:
@@ -34,10 +34,10 @@ published: true # Either published or not
 
 The Text Design Tool merges input text with typography, creating stunning designs for a multitude of use-cases. The tool lays out input text according to recipes crafted by professional designers upon a single tap. Furthermore, the creative can then be fine-tuned by choosing from 15 different text colors or by using the randomize functionality that shuffles the fonts, alignments and decorations. It’s even possible to create a mask that lets the background image shine through.
 
-# Specifying the available text design
+## Specifying the available text design
 
 This example shows the default text design tool configuration.
-In order to enable or disable specific text design layouts, simply pass the `items` option to the text design tool controls. The items will be displyed in the order mentioned by the configuration.
+In order to enable or disable specific text design layouts, simply pass the `items` option to the text design tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default text design items.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -66,44 +66,55 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in text design tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default text design localisation lables
+You can override all the labels used in text design tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default text design localisation lables.
 
-```json
-  "textdesign": {
-    "title": "Text Design",
-    "controls": {
-      "buttonNew": "New Text Design",
-      "buttonShuffle": "Shuffle Text Design",
-      "selectColor": "Text Color",
-      "tabColor": "Color",
-      "tabShuffle": "Shuffle"
-    },
-    "canvasControls": {
-      "placeholderText": "Write Something",
-      "buttonSave": "Done",
-      "buttonClose": "Schließen",
-      "inputText": "Text Input"
-    },
-    "canvasActions": {
-      "buttonEdit": "Edit",
-      "buttonInvert": "Text as Mask",
-      "buttonDelete": "Delete",
-      "buttonBringToFront": "Move to top",
-      "buttonDuplicate": "Duplicate"
-    },
-    "history": {
-      "add": "Text design",
-      "edit": "Text design edit",
-      "resize": "Text design resize",
-      "position": "Text design position",
-      "color": "Text design color",
-      "shuffle": "Text design shuffle",
-      "invert": "Text design invert",
-      "padding": "Text design padding",
-      "order": "Text design order",
-      "delete": "Text design delete"
+```js
+new PhotoEditorSDKUI({
+  ...,
+  custom: {
+    languages: {
+      en: {
+        ...,
+        textdesign: {
+          title: 'Text Design',
+          controls: {
+            buttonNew: 'New Text Design',
+            buttonShuffle: 'Shuffle Text Design',
+            selectColor: 'Text Color',
+            tabColor: 'Color',
+            tabShuffle: 'Shuffle',
+          },
+          canvasControls: {
+            placeholderText: 'Write Something',
+            buttonSave: 'Done',
+            buttonClose: 'Schließen',
+            inputText: 'Text Input',
+          },
+          canvasActions: {
+            buttonEdit: 'Edit',
+            buttonInvert: 'Text as Mask',
+            buttonDelete: 'Delete',
+            buttonBringToFront: 'Move to top',
+            buttonDuplicate: 'Duplicate',
+          },
+          history: {
+            add: 'Text design',
+            edit: 'Text design edit',
+            resize: 'Text design resize',
+            position: 'Text design position',
+            color: 'Text design color',
+            shuffle: 'Text design shuffle',
+            invert: 'Text design invert',
+            padding: 'Text design padding',
+            order: 'Text design order',
+            delete: 'Text design delete',
+          },
+        }
+      }
     }
   }
+})
+ 
 
 ```
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}

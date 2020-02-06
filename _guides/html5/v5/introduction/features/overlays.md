@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Overlays # title as shown in the menu and
 
 menuitem: *title
-order: 8
+order: 10
 platform: html5
 version: v5
 category:
@@ -31,11 +31,11 @@ published: true # Either published or not
 {% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_dark | push: image_basic_light %}
 {% include image_carousel.html images=images %}
 
+Overlays are an easy, yet powerful way to create stunning effects. To put it simply, overlays are images put on top of the input image. We provide several blend modes, that determine how exactly the overlay is applied. Each mode has its own characteristics and will add a unique flavor to the final composition. Supported asset formats are jpeg and png.
 
 ## Specifying the available overlays
 
-This example shows the default overlay configuration.
-In order to enable or disable specific overlay, simply pass the `items` option to the overlay controls. The items will be displyed in the order mentioned by the configuration.
+In order to enable or disable specific overlay, simply pass the `items` option to the overlay tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default overlay items.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -75,9 +75,9 @@ const editor = new PhotoEditorSDKUI({
       {
         identifier: "my_overlay",
         name: 'Custom Overlay',
-        defaultBlenMode: 'normal',
-        overlayURI: '' ,// // path to the overlay image, relative to the overlay asset directory
-        thumbnailURI: '' // // path to the thumbnail, relative to the overlay asset directory
+        defaultBlendMode: 'normal',
+        overlayURI: '' ,// path to the overlay image, relative to the overlay asset directory
+        thumbnailURI: '' // path to the thumbnail, relative to the overlay asset directory
       },
     ]
   },
@@ -93,46 +93,55 @@ Available blend modes are `normal`, `overlay`, `hardLight`, `softLight`, `multip
 
 You can override all the labels used in overlay tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default overlay localisation lables
 
-```json
-"overlay": {
-    "title": "Overlays",
-    "controls": {
-      "buttonReset": "Reset to default",
-      "sliderOpacity": "Overlay Opacity",
-      "carouselBlendMode": "Overlay Blend mode",
-      "blendModeNormal": "Normal",
-      "blendModeOverlay": "Overlay",
-      "blendModeHardLight": "Hard Light",
-      "blendModeSoftLight": "Soft Light",
-      "blendModeMultiply": "Multiply",
-      "blendModeDarken": "Darken",
-      "blendModeLighten": "Lighten",
-      "blendModeScreen": "Screen",
-      "blendModeColorBurn": "Color Burn",
-      "tabOpacity": "Opacity",
-      "tabBlendMode": "Blend Mode"
-    },
-    "items": {
-      "imgly_overlay_bokeh": "Bokeh",
-      "imgly_overlay_chop": "Chop",
-      "imgly_overlay_clouds": "Clouds",
-      "imgly_overlay_golden": "Golden",
-      "imgly_overlay_grain": "Grain",
-      "imgly_overlay_hearts": "Hearts",
-      "imgly_overlay_lightleak1": "Light Leak 1",
-      "imgly_overlay_lightleak2": "Light Leak 2",
-      "imgly_overlay_metal": "Metal",
-      "imgly_overlay_mosaic": "Mosaic",
-      "imgly_overlay_painting": "Painting",
-      "imgly_overlay_paper": "Paper",
-      "imgly_overlay_rain": "Rain",
-      "imgly_overlay_vintage": "Vintage",
-      "imgly_overlay_wall1": "Wall",
-      "imgly_overlay_wall2": "Wall 2",
-      "imgly_overlay_wood": "Wood"
+```js
+new PhotoEditorSDKUI({
+  ...,
+  custom: {
+    languages: {
+      en: {
+        ...,
+        overlay: {
+          title: 'Overlays',
+          controls: {
+            buttonReset: 'Reset to default',
+            sliderOpacity: 'Overlay Opacity',
+            carouselBlendMode: 'Overlay Blend mode',
+            blendModeNormal: 'Normal',
+            blendModeOverlay: 'Overlay',
+            blendModeHardLight: 'Hard Light',
+            blendModeSoftLight: 'Soft Light',
+            blendModeMultiply: 'Multiply',
+            blendModeDarken: 'Darken',
+            blendModeLighten: 'Lighten',
+            blendModeScreen: 'Screen',
+            blendModeColorBurn: 'Color Burn',
+            tabOpacity: 'Opacity',
+            tabBlendMode: 'Blend Mode',
+          },
+          items: {
+            imgly_overlay_bokeh: 'Bokeh',
+            imgly_overlay_chop: 'Chop',
+            imgly_overlay_clouds: 'Clouds',
+            imgly_overlay_golden: 'Golden',
+            imgly_overlay_grain: 'Grain',
+            imgly_overlay_hearts: 'Hearts',
+            imgly_overlay_lightleak1: 'Light Leak 1',
+            imgly_overlay_lightleak2: 'Light Leak 2',
+            imgly_overlay_metal: 'Metal',
+            imgly_overlay_mosaic: 'Mosaic',
+            imgly_overlay_painting: 'Painting',
+            imgly_overlay_paper: 'Paper',
+            imgly_overlay_rain: 'Rain',
+            imgly_overlay_vintage: 'Vintage',
+            imgly_overlay_wall1: 'Wall',
+            imgly_overlay_wall2: 'Wall 2',
+            imgly_overlay_wood: 'Wood',
+          },
+        }
+      }
     }
   }
-}
+})
 ```
 
 {% comment %}

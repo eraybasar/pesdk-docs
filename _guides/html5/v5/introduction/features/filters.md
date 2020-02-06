@@ -37,18 +37,14 @@ Filters determine the mood and atmosphere of pictures and help convey the right 
 
 ## Specifying the available filters
 
-This example shows the default filter configuration.
-In order to enable or disable specific filters, simply pass the `categories` option to the filter controls. The items will be displyed in the order mentioned by the configuration.
-If `categories: [{ identifier: 'imgly_filter_category_duotone' }]` is given without any items, editor will include all the existing `imgly_filter_category_duotone` filters  
-If `flattenCategories` is set to true, all enabled adjustments will be shown in the top-level of the filter selection tool, which effectively hides the categories
+In order to enable or disable specific filters, simply pass the `categories` option to the filter tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default filter categories and items.
 
----
 ```js
 const editor = new PhotoEditorSDKUI({
   filter: {
     categories: [
       {
-        identifier: 'basic',
+        identifier: 'imgly_filter_category_duotone',
         items: [
           { identifier: "imgly_duotone_desert" },
           { identifier: "imgly_duotone_peach" },
@@ -157,6 +153,33 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
+
+## Flattening of categories
+
+If `flattenCategories` is set to true, all enabled filters will be shown in the top-level of the filter selection tool, which effectively hides the categories.
+
+```js
+const editor = new PhotoEditorSDKUI({
+  filter: {
+    flattenCategories: true
+  }
+})
+```
+
+## Including all the items from a category
+
+If a existing category identifier is specified without any items, editor will include all the existing filters under `imgly_filter_category_duotone` category.
+
+```js
+const editor = new PhotoEditorSDKUI({
+  filter: {
+    categories: [{
+      identifier: 'imgly_filter_category_duotone'
+    }],
+  },
+})
+```
+
 ## Adding Custom Filters
 
 We use a technology called Lookup Tables (LUTs) in order to add new filters to our SDK.
@@ -170,7 +193,7 @@ If you want to create a new filter, you'll need to [download]({{ site.baseurl }}
 
 > __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you need to save your LUT as a PNG file.
 
-You can add new filters to the existing categories, or create new categories using same configuration interface as above
+You can add new filters to the existing categories, or create new categories using same configuration interface as above.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -208,154 +231,107 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in filter tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default filter localisation lables
+You can override all the labels used in filter tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default filter localisation lables.
 
-```json
-{
-...,
- "filter": {
-    "title": "Filters",
-    "controls": {
-      "buttonReset": "Reset Filter",
-      "sliderIntensity": "Filter Intensity"
-    },
-    "items": {
-      "imgly_filter_category_duotone": "DuoTone",
-      "imgly_filter_category_bw": "B & W",
-      "imgly_filter_category_vintage": "Vintage",
-      "imgly_filter_category_smooth": "Smooth",
-      "imgly_filter_category_cold": "Cold",
-      "imgly_filter_category_warm": "Warm",
-      "imgly_filter_category_legacy": "Legacy",
-      "imgly_lut_celsius": "Inferno",
-      "imgly_lut_chest": "Chestnut",
-      "imgly_lut_fixie": "Fixie",
-      "imgly_lut_fridge": "Fridge",
-      "imgly_lut_front": "Sunny 70s",
-      "imgly_lut_k2": "Flat Black",
-      "imgly_lut_mellow": "Mellow",
-      "imgly_lut_sin": "Hard Stuff",
-      "imgly_lut_texas": "Oldtimer",
-      "imgly_lut_ad1920": "1920 A.D.",
-      "imgly_lut_ancient": "Ancient",
-      "imgly_lut_bleached": "Kalmen",
-      "imgly_lut_bleachedblue": "Joran",
-      "imgly_lut_blues": "Polaroid",
-      "imgly_lut_blueshadows": "Zephyr",
-      "imgly_lut_breeze": "Levante",
-      "imgly_lut_bw": "Greyed",
-      "imgly_lut_classic": "Classic",
-      "imgly_lut_colorful": "Colorful",
-      "imgly_lut_cool": "Snappy",
-      "imgly_lut_cottoncandy": "Candy",
-      "imgly_lut_creamy": "Creamy",
-      "imgly_lut_eighties": "Low Fire",
-      "imgly_lut_elder": "Colla",
-      "imgly_lut_evening": "Sunrise",
-      "imgly_lut_fall": "Moss",
-      "imgly_lut_food": "Food",
-      "imgly_lut_glam": "Glam",
-      "imgly_lut_gobblin": "Gobblin",
-      "imgly_lut_highcarb": "High Carb",
-      "imgly_lut_highcontrast": "Hicon",
-      "imgly_lut_k1": "K1",
-      "imgly_lut_k6": "K6",
-      "imgly_lut_kdynamic": "Pebble",
-      "imgly_lut_keen": "Keen",
-      "imgly_lut_lenin": "Lemon",
-      "imgly_lut_litho": "Litho",
-      "imgly_lut_lomo": "Lomo",
-      "imgly_lut_lomo100": "Lomo 100",
-      "imgly_lut_lucid": "Lucid",
-      "imgly_lut_neat": "Neat",
-      "imgly_lut_nogreen": "Pumpkin",
-      "imgly_lut_orchid": "Solanus",
-      "imgly_lut_pale": "Pale",
-      "imgly_lut_pitched": "Pitched",
-      "imgly_lut_plate": "Weathered",
-      "imgly_lut_pola669": "Green Gap",
-      "imgly_lut_polasx": "Pola SX",
-      "imgly_lut_pro400": "Pro 400",
-      "imgly_lut_quozi": "Quozi",
-      "imgly_lut_sepiahigh": "Sepia",
-      "imgly_lut_settled": "Settled",
-      "imgly_lut_seventies": "Seventies",
-      "imgly_lut_soft": "Soft",
-      "imgly_lut_steel": "Steel",
-      "imgly_lut_summer": "Summer",
-      "imgly_lut_sunset": "Golden",
-      "imgly_lut_tender": "Tender",
-      "imgly_lut_twilight": "Twilight",
-      "imgly_lut_winter": "Softy",
-      "imgly_lut_x400": "Dusty",
-      "imgly_duotone_desert": "Desert",
-      "imgly_duotone_peach": "Peach",
-      "imgly_duotone_clash": "Clash",
-      "imgly_duotone_plum": "Plum",
-      "imgly_duotone_breezy": "Breezy",
-      "imgly_duotone_deepblue": "Deep Blue",
-      "imgly_duotone_frog": "Frog",
-      "imgly_duotone_sunset": "Sunset"
+```js
+
+new PhotoEditorSDKUI({
+  ...,
+  custom: {
+    languages: {
+      en: {
+        ...,
+        filter: {
+          title: 'Filters',
+          controls: {
+            buttonReset: 'Reset Filter',
+            sliderIntensity: 'Filter Intensity',
+          },
+          categories: {
+            imgly_filter_category_duotone: 'DuoTone',
+            imgly_filter_category_bw: 'B & W',
+            imgly_filter_category_vintage: 'Vintage',
+            imgly_filter_category_smooth: 'Smooth',
+            imgly_filter_category_cold: 'Cold',
+            imgly_filter_category_warm: 'Warm',
+            imgly_filter_category_legacy: 'Legacy',
+          },
+          items: {
+            imgly_lut_celsius: 'Inferno',
+            imgly_lut_chest: 'Chestnut',
+            imgly_lut_fixie: 'Fixie',
+            imgly_lut_fridge: 'Fridge',
+            imgly_lut_front: 'Sunny 70s',
+            imgly_lut_k2: 'Flat Black',
+            imgly_lut_mellow: 'Mellow',
+            imgly_lut_sin: 'Hard Stuff',
+            imgly_lut_texas: 'Oldtimer',
+            imgly_lut_ad1920: '1920 A.D.',
+            imgly_lut_ancient: 'Ancient',
+            imgly_lut_bleached: 'Kalmen',
+            imgly_lut_bleachedblue: 'Joran',
+            imgly_lut_blues: 'Polaroid',
+            imgly_lut_blueshadows: 'Zephyr',
+            imgly_lut_breeze: 'Levante',
+            imgly_lut_bw: 'Greyed',
+            imgly_lut_classic: 'Classic',
+            imgly_lut_colorful: 'Colorful',
+            imgly_lut_cool: 'Snappy',
+            imgly_lut_cottoncandy: 'Candy',
+            imgly_lut_creamy: 'Creamy',
+            imgly_lut_eighties: 'Low Fire',
+            imgly_lut_elder: 'Colla',
+            imgly_lut_evening: 'Sunrise',
+            imgly_lut_fall: 'Moss',
+            imgly_lut_food: 'Food',
+            imgly_lut_glam: 'Glam',
+            imgly_lut_gobblin: 'Gobblin',
+            imgly_lut_highcarb: 'High Carb',
+            imgly_lut_highcontrast: 'Hicon',
+            imgly_lut_k1: 'K1',
+            imgly_lut_k6: 'K6',
+            imgly_lut_kdynamic: 'Pebble',
+            imgly_lut_keen: 'Keen',
+            imgly_lut_lenin: 'Lemon',
+            imgly_lut_litho: 'Litho',
+            imgly_lut_lomo: 'Lomo',
+            imgly_lut_lomo100: 'Lomo 100',
+            imgly_lut_lucid: 'Lucid',
+            imgly_lut_neat: 'Neat',
+            imgly_lut_nogreen: 'Pumpkin',
+            imgly_lut_orchid: 'Solanus',
+            imgly_lut_pale: 'Pale',
+            imgly_lut_pitched: 'Pitched',
+            imgly_lut_plate: 'Weathered',
+            imgly_lut_pola669: 'Green Gap',
+            imgly_lut_polasx: 'Pola SX',
+            imgly_lut_pro400: 'Pro 400',
+            imgly_lut_quozi: 'Quozi',
+            imgly_lut_sepiahigh: 'Sepia',
+            imgly_lut_settled: 'Settled',
+            imgly_lut_seventies: 'Seventies',
+            imgly_lut_soft: 'Soft',
+            imgly_lut_steel: 'Steel',
+            imgly_lut_summer: 'Summer',
+            imgly_lut_sunset: 'Golden',
+            imgly_lut_tender: 'Tender',
+            imgly_lut_twilight: 'Twilight',
+            imgly_lut_winter: 'Softy',
+            imgly_lut_x400: 'Dusty',
+            imgly_duotone_desert: 'Desert',
+            imgly_duotone_peach: 'Peach',
+            imgly_duotone_clash: 'Clash',
+            imgly_duotone_plum: 'Plum',
+            imgly_duotone_breezy: 'Breezy',
+            imgly_duotone_deepblue: 'Deep Blue',
+            imgly_duotone_frog: 'Frog',
+            imgly_duotone_sunset: 'Sunset',
+          },
+        }
+      }
     }
   }
-}
+})
 ```
-
-
-{% comment %}
-## Interactive Example
-
-Try the conceps above in the interactive editor below. You can edit the source code and see the results by clicking on the 'reload' button.
-
-{% capture code %}
-window.onload = function () {
-        PhotoEditorSDK.Loaders.ImageLoader.load('{{ site.baseurl }}/assets/images/shared/test.png')
-          .then((image) => {
-            let container = document.getElementById('editor')
-            let options = {
-              container: container,
-              license: PESDK_LICENSE_STRING,
-              editor: {
-                image: image,
-                controlsOptions: {
-                  filter: {
-                    categories: [
-                      {
-                        identifier: 'my_category',
-                        defaultName: 'My Category',
-                        filters: [
-                          {
-                            identifier: 'my_custom_lut',
-                            defaultName: 'Custom LUT',
-                            lutImage: 'filters/imgly_lut_bleachedblue_5_5_128.png'
-                          },
-                          {
-                            identifier: 'my_other_custom_lut',
-                            defaultName: 'Other Custom LUT',
-                            lutImage: 'filters/imgly_lut_blues_5_5_128.png'
-                          },
-                          {
-                            identifier: 'my_third_custom_lut',
-                            defaultName: 'Third Custom LUT',
-                            lutImage: 'filters/imgly_lut_orchid_5_5_128.png'
-                          }
-                        ]
-                      }
-                    ],
-                    replaceCategories: true,
-                    availableFilters: ['my_custom_lut', 'my_third_custom_lut']
-                  }
-                }
-              },
-              assets: {
-                baseUrl: PESDK_ASSETS_URL
-              }
-            }
-            let editor = new PhotoEditorSDK.UI.DesktopUI(options)
-        })
-      }
-{% endcapture %}
-{% capture identifier %}{{page.title}}-{{page.version}}-EXAMPLE-01{% endcapture %}
-{% include pesdk_html5_editor.html code=code identifier=identifier %}
-
-{% endcomment %}
+{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
+{% include multilingual_code_block.html snippets=snippets identifier=identifier %}

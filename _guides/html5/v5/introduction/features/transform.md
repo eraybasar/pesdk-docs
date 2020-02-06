@@ -37,14 +37,10 @@ Our transform tool unifies cropping, resizing, flipping and rotation operations 
 <!--The tool is implemented in the `TransformToolController` class and can be customized using the [`TransformToolControllerOptions`]({{ site.baseurl }}/apidocs/{{page.platform}}/{{page.version}}/Classes/TransformToolControllerOptions.html) as described in the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) section. By modifying these options, you may customize the available transform actions and crop aspect ratios by adding or removing `CropAspect` and `TransformAction` objects from or to the corresponding arrays. All sliders and buttons can be customized as well. In order to disable free cropping and force the use of one of the available aspect ratios, set the `allowFreeCrop` property to `true`.-->
 
 
-# Specifying the available transformation ratios
+## Specifying the available transformation ratios
 
-This example shows the default transform tool configuration.
-In order to enable or disable specific crop ratios, simply pass the `categories` option to the transform tool configuration. The items will be displyed in the order mentioned by the configuration.
-If `categories: [{ identifier: 'imgly_transforms_common' }]` is given without any items, editor will include all the existing `imgly_transforms_common` crop ratios
-If `flattenCategories` is set to true, all enabled transform ratios will be shown in the top-level of the adjust selection tool, which effectively hides the categories
+In order to enable or disable specific crop ratios, simply pass the `categories` option to the transform tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default transform categories and ratios.
 
----
 ```js
 const editor = new PhotoEditorSDKUI({
   transform: {
@@ -72,6 +68,31 @@ const editor = new PhotoEditorSDKUI({
   },
 })
 ```
+## Including all the items from a category
+
+If a existing category identifier is specified without any items, editor will include all the existing crop ratios under `imgly_transforms_common` category.
+
+```js
+const editor = new PhotoEditorSDKUI({
+  transform: {
+    categories: [{
+      identifier: 'imgly_transforms_common',
+    }],
+  },
+})
+```
+
+## Flattening of categories
+
+If `flattenCategories` is set to true, all enabled crop ratios will be shown in the top-level of the transform tool, which effectively hides the categories.
+
+```js
+const editor = new PhotoEditorSDKUI({
+  transform: {
+    flattenCategories: true
+  }
+})
+```
 
 ## Configuration Options
 
@@ -92,7 +113,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Adding custom crop ratios
 
-You can add new crop ratios to the existing categories, or create new categories using same configuration interface as above
+You can add new crop ratios to the existing categories, or create new categories using same configuration interface.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -103,9 +124,9 @@ const editor = new PhotoEditorSDKUI({
         identifier: 'imgly_transforms_instagram',
         items: [{
           identifier: "imgly_transform_instagram_story",
-          name: 'Story',
+          name: 'Insta Story',
           thumbnailURI: '', //
-          ratio: 5 / 4,
+          ratio: 9 / 16,
           forceDimensions: false, // false by default
           lockDimensions: false, // false by default
         }]
@@ -138,53 +159,56 @@ the new resolution, they can simply check the "Lock Resolution" checkbox before 
 set an initial value for this lock with the ratio's `lockDimensions` property.
 
 Using the `forceDimensions` option of each ratio, you can enable or disable the user's ability to change 
-the resolution entirely. Due to backwards compatibility reasons, `forceDimensions` has a
-default value of `true` if the `dimensions` property is set, so you need to actively set it to 
-`false` if you are looking to make the suggested dimensions user-editable.
-
+the resolution entirely.
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS0{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 ## Localization
 
-You can override all the labels used in transform tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default transform localisation lables
+You can override all the labels used in transform tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration). Here are the default transform localisation lables.
 
----
-```json
-{
-  
-  "transform": {
-    "title": "Transform",
-    "controls": {
-      "buttonReset": "Reset to default",
-      "checkboxKeepResolution": "Keep Resolution",
-      "inputCropSize": "Crop Size",
-      "inputHeight": "h",
-      "inputWidth": "w",
-      "tabFlipAndRotate": "Flip & Rotate",
-      "tabResolution": "Resolution",
-      "tabCropSize": "Crop Size",
-      "selectFlipRatio": "Flip Crop Ratio"
-    },
-    "categories": {
-      "imgly_transforms_common": "Common Crops",
-      "imgly_transforms_facebook": "Facebook"
-    },
-    "items": {
-      "imgly_transform_common_custom": "Custom",
-      "imgly_transform_common_square": "Square",
-      "imgly_transform_common_4": "4:3",
-      "imgly_transform_common_16": "16:9",
-      "imgly_transform_facebook_profile": "Profile Pic",
-      "imgly_transform_facebook_ad": "Ad",
-      "imgly_transform_facebook_post": "Post",
-      "imgly_transform_facebook_cover": "Cover"
+```js
+new PhotoEditorSDKUI({
+  ...,
+  custom: {
+    languages: {
+      en: {
+        ...,
+        transform: {
+          title: 'Transform',
+          controls: {
+            buttonReset: 'Reset to default',
+            checkboxKeepResolution: 'Keep Resolution',
+            inputCropSize: 'Crop Size',
+            inputHeight: 'h',
+            inputWidth: 'w',
+            tabFlipAndRotate: 'Flip & Rotate',
+            tabResolution: 'Resolution',
+            tabCropSize: 'Crop Size',
+            selectFlipRatio: 'Flip Crop Ratio',
+          },
+          categories: {
+            imgly_transforms_common: 'Common Crops',
+            imgly_transforms_facebook: 'Facebook',
+          },
+          items: {
+            imgly_transform_common_custom: 'Custom',
+            imgly_transform_common_square: 'Square',
+            imgly_transform_common_4: '4:3',
+            imgly_transform_common_16: '16:9',
+            imgly_transform_facebook_profile: 'Profile Pic',
+            imgly_transform_facebook_ad: 'Ad',
+            imgly_transform_facebook_post: 'Post',
+            imgly_transform_facebook_cover: 'Cover',
+          },
+        }  
+      }
     }
   }
-}
-```
+})
 
+```
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS03{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}

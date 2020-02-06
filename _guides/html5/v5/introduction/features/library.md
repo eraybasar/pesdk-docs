@@ -32,13 +32,10 @@ published: true # Either published or not
 
 With our library control, users can upload their own pictures, take photo with their webcam or pick from one of our selected photos. As a developer, you can also make use of our API to provide your own set of photos that the user can pick from.
 
-# Specifying a custom library provider
-
-## Building your own provider
+## Specifying a custom library provider
 
 The Provider class is the data manager for our library feature. Extend this class in order to load data from an external source or provide a fixed set of images. Your custom provider needs to implement two categories: `getCategories` and `searchImages(query)` which will be invoked by our UI. Please note that these methods are asynchronous and must return a Promise.
 
----
 
 ```js
 import { LibraryProvider, LibraryCategory, LibraryImage } from 'photoeditorsdk'
@@ -115,7 +112,7 @@ class MyProvider extends LibraryProvider {
 
 The `LibraryCategory` class takes three options: `name` of type `string`, `coverImageUrl` of type `string` and `coverImage` of type `string`.
 
-The `LibraryImage` class takes 7 options, of which two are mandatory: `category` that should point to the corresponding `LibraryCategory` instance and `rawUrl` that should point to the full-sized image. Additional options are: `title`, `thumbUrl` (all of type `string`) and `thumbImage` of type ImageElement.
+The `LibraryImage` class takes seven options, of which two are mandatory: `category` that should point to the corresponding `LibraryCategory` instance and `rawUrl` that should point to the full-sized image. Additional options are: `title`, `thumbUrl` (all of type `string`) and `thumbImage` of type ImageElement.
 
 ## Passing the provider to the control
 
@@ -125,7 +122,6 @@ In order to make the UI use your provider, simply pass it as the `provider` opti
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-06{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
----
 ```js
 const editor = new PhotoEditorSDKUI({
   library: {
@@ -141,7 +137,6 @@ const editor = new PhotoEditorSDKUI({
 
 By default, your users are able to take photos using their webcam or upload their own photos using a file picker. In order to disable these features, simply set the `enableWebcam` or the `enableUpload` (which also includes the webcam) to `false`.
 
----
 ```js
 const editor = new PhotoEditorSDKUI({
   library: {
@@ -154,22 +149,29 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in library tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default library localisation lables
+You can override all the labels used in library tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default library localisation lables.
 
 ```js
-{
+new PhotoEditorSDKUI({
   ...,
-  "library": {
-    "title": "Library",
-    "controls": {
-      "buttonUpload": "Upload Image",
-      "buttonWebcamOpen": "Open Webcam",
-      "buttonWebcamClose": "Close Webcam",
-      "placeholderSearch": "Search Library",
-      "noResults": "No Results"
+  custom: {
+    languages: {
+      en: {
+        ...,
+        library: {
+          title: 'Library',
+          controls: {
+            buttonUpload: 'Upload Image',
+            buttonWebcamOpen: 'Open Webcam',
+            buttonWebcamClose: 'Close Webcam',
+            placeholderSearch: 'Search Library',
+            noResults: 'No Results',
+          },
+        }
+      }
     }
   }
-}
+})
 ```
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-03{% endcapture %}
