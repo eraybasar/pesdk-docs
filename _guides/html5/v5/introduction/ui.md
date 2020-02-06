@@ -2,7 +2,7 @@
 layout: guides/content
 title: &title UI
 description: A quick guide on how to easily get started with the PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities.
-order: 3
+order: 0
 menuitem: UI
 platform: html5
 version: v5
@@ -15,11 +15,13 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
+![UIs]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/uis.jpg){: .center-image style="padding: 20px; max-height: 400px;"}
+
 We offer two different UI systems to our customers for the HTML5 platform, the BasicUI and the AdvancedUI.
 
 ## BasicUI
 
-The BasicUI features a responsive design, so it works on all screen sizes.
+The BasicUI features a responsive design. It works on all screen sizes.
 
 ## AdvancedUI
 
