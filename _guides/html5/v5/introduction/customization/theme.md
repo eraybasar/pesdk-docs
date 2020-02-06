@@ -1,10 +1,10 @@
 ---
 layout: guides/content
-title: &title Color Palettes
+title: &title Theme
 description: Learn how easily customize the color palettes of individual tools in the PhotoEditor SDK for HTML5.
 
 menuitem: *title
-order: 1
+order: 0
 platform: html5
 version: v5
 category:
@@ -15,17 +15,23 @@ tags: &tags # tags that are necessary
 
 published: true # Either published or not
 ---
+{% capture theme_dark %}
+{{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/theme/dark.png
+{% endcapture %}
+{% capture theme_light %}
+{{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/theme/light.png
+{% endcapture %}
 
+{% assign images = "" | split: "" | push: theme_dark | push: theme_light %}
+{% include image_carousel.html images=images %}
 
-![Color Palette]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/color_palette.png){: .center-image style="padding: 20px; max-height: 400px;"}
-
-One of the striking features of the major rewrite is theme cutomization. Our PhotoEditorSDK comes with two themes `light` and `dark`. Defaults to `dark` . The color palette consists of 10 default colors out of the box, from which a theme is created for the UI.
+Our PhotoEditorSDK UI comes with two themes `light` and `dark`. Defaults to `dark` . The color palette consists of 10 default colors out of the box, from which a theme is created for the UI.
 To make the integration of PhotoEditorSDK in your app seamless, the theme customisations can be done on three levels.
 
-## Color Customization
+## Colors
 You could just change the `primary` to get the primary color overall as accent color in the UI. 
 
-Here the color values can be  `web colors`, `hex`, `rgb()` or `rgba()` in string format
+Here the color values can be `web colors`, `hex`, `rgb()` or `rgba()` in string format.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -57,39 +63,19 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
-Here is the list of all colors you can customize. To understand the sections, you can refer to the [Naming Convention]() that we have in place
+Here is the list of all colors you can customize. Refer to the [nomenclature][nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
 
 ```js
-  shape: {
-    /**
-     * Border Radius for small sized components
-     * Color Selection, Checkbox
-     */
-    radiusSmall: 2,
-    /**
-     * Border Radius for medium sized components
-     * Button, Tooltip, Cards, Dropdown, Color Picker, Input
-     */
-    radiusMedium: 4,
-    /**
-     * Border Radius for large sized components
-     * Modal
-     */
-    radiusLarge: 4,
-  },
-  typography: {
-    fontFamily: 'Fira Sans',
-    provider: 'google',
-  },
-   /** Base Colors */
+{
+  /** Base Colors */
   /** Overall background color. This color is used if not overriden by a component */
   background: '#000000',
   /** Overall foreground color. This color is used if not overriden by a component */
   foreground: '#FFFFFF',
-  primary: '#365afc',
-  warning: '#ffba5c',
-  error: '#c2393a',
-  success: '#39c26c',
+  primary: '#365AFC',
+  warning: '#FFBA5C',
+  error: '#C2393A',
+  success: '#39C26C',
   focusOutlineColor: 'rgba(255, 255, 255, 0.12)',
   /** Portals */
   modal: {
@@ -103,11 +89,12 @@ Here is the list of all colors you can customize. To understand the sections, yo
     foreground: 'rgba(255, 255, 255, 0.90)',
   },
   colorPicker: {
+    inputBorderColor: '#424242',
     listBackground: '#333333',
     listShadow: `0 12px 17px 2px rgba(0,0,0,0.14),
       0 5px 22px 4px rgba(0,0,0,0.12),
       0 7px 8px -4px rgba(0,0,0,0.20)`,
-    controls: '#ffffff',
+    controls: '#FFFFFF',
   },
   dropdown: {
     background: 'transparent',
@@ -119,10 +106,11 @@ Here is the list of all colors you can customize. To understand the sections, yo
     listBorder: '#333333',
     listForeground: 'rgba(255, 255, 255, 0.60)',
     /**
-     * According to material design
-     * shadows are applied for dark theme
-     * they don't really work for light theme
-     */
+    * According to material design
+    * shadows are applied for dark theme
+    * they don't really work well with light theme,
+    * so they are customizable based on your design choices
+    */
     listShadow: `0 12px 17px 2px rgba(0,0,0,0.14),
       0 5px 22px 4px rgba(0,0,0,0.12),
       0 7px 8px -4px rgba(0,0,0,0.20)`,
@@ -135,10 +123,10 @@ Here is the list of all colors you can customize. To understand the sections, yo
   /** Button colors in different states and variations */
   button: {
     borderColor: '#333333',
-    hoverBackground,
+    hoverBackground: 'rgba(255, 255, 255, 0.08)',
     hoverForeground: 'rgba(255, 255, 255, 0.60)',
-    activeForeground: primary,
-    activeBackground,
+    activeForeground: '#365AFC',
+    activeBackground: 'rgba(89, 121, 252, 0.20)',
     primaryBackground: '#242424',
     primaryForeground: 'rgba(255, 255, 255, 0.90)',
     secondaryBackground: 'transparent',
@@ -146,28 +134,22 @@ Here is the list of all colors you can customize. To understand the sections, yo
   },
   checkbox: {
     background: '#333333',
-    foreground,
-    hoverBackground,
-    activeForeground: foreground,
-    activeBackground: primary,
+    foreground: '#FFFFFF',
+    hoverBackground: 'rgba(255, 255, 255, 0.08)',
+    activeForeground: '#FFFFFF',
+    activeBackground: '#365AFC',
   },
   card: {
     background: '#333333',
     foreground: 'rgba(255, 255, 255, 0.90)',
     borderColor: 'transparent',
-    hoverBackground,
-    activeBorderColor: primary,
-    activeBackground,
+    hoverBackground: 'rgba(255, 255, 255, 0.08)',
+    activeBorderColor: '#365AFC',
+    activeBackground: 'rgba(89, 121, 252, 0.20)',
     /** card in PhotoEditorSDK always has a label */
     labelBackground: 'linear-gradient(transparent, rgba(0, 0, 0, 0.6))',
     labelForeground: 'rgba(255, 255, 255, 0.90)',
     disabledBackground: 'rgba(0, 0, 0, 0.3)',
-  },
-  /** relevant only for Basic UI **/
-  tab: {
-    titleForeground: 'rgba(255, 255, 255, 0.60)',
-    activeBorderColor: primary,
-    activeForeground: 'rgba(255, 255, 255, 0.90)',
   },
   textInput: {
     foreground: 'rgba(255, 255, 255, 0.90)',
@@ -177,16 +159,16 @@ Here is the list of all colors you can customize. To understand the sections, yo
   },
   slider: {
     trackColor: 'rgba(255, 255, 255, 0.4)',
-    activeTrackColor: primary,
+    activeTrackColor: '#365AFC',
     thumbBackground: '#171717',
-    thumbBorderColor: primary,
+    thumbBorderColor: '#365AFC',
   },
-   /** App sections */
+  /** App sections */
   toolbar: {
     foreground: 'rgba(255, 255, 255, 0.90)',
     background: '#242424',
-    activeBackground,
-    activeForeground: primary,
+    activeBackground: 'rgba(89, 121, 252, 0.20)',
+    activeForeground: '#365AFC',
     borderColor: 'transparent',
   },
   toolControlBar: {
@@ -197,29 +179,36 @@ Here is the list of all colors you can customize. To understand the sections, yo
     titleForeground: 'rgba(255, 255, 255, 0.60)',
     labelForeground: 'rgba(255, 255, 255, 0.60)',
   },
-  canvasActionBar: {
+  mainCanvasActionBar: {
     background: 'linear-gradient(0deg, transparent 0%,  rgba(0, 0, 0, 0.6) 98%)',
     foreground: 'rgba(255, 255, 255, 0.90)',
     buttonForeground: 'rgba(255, 255, 255, 0.60)',
     buttonBackground: 'transparent',
   },
-  spriteActionBar: {
+  canvasActionBar: {
     background: '#424242',
     foreground: 'rgba(255, 255, 255, 0.90)',
     separator: 'rgba(255, 255, 255, 0.38)',
   },
-  canvasContainer: {
+  canvas: {
     background: '#0B0B0B',
     controlsOutline: 'rgba(255, 255, 255, 0.5)',
-    controls: '#ffffff',
+    controls: '#FFFFFF',
     cropBackdrop: 'rgba(0, 0, 0, 0.5)',
   },
+  /** relevant only for Basic UI **/
+  tab: {
+    titleForeground: 'rgba(255, 255, 255, 0.60)',
+    activeBorderColor: '#365AFC',
+    activeForeground: 'rgba(255, 255, 255, 0.90)',
+  },
+}
 
 ```
 
 ## Typography
 
-you can customize the font that you load for the PhotoEditorSDK, 
+you can customize the font that you load for the PhotoEditorSDK.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -232,7 +221,9 @@ const editor = new PhotoEditorSDKUI({
           fontFamily: '',
           format: 'ttf',
           provider: 'file',
-          skipLoading: false // Most users load font while initialising their app, In that case, you can choose to skip loading it again
+          // Most users load font while initialising their app,
+          // In that case, you can choose to skip loading it again
+          skipLoading: false
         }
       }
     }
@@ -240,11 +231,30 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
-Moreover, you can also load font from `Google Fonts`
+Moreover, you can load font from `Google Fonts`.
+
+```js
+const editor = new PhotoEditorSDKUI({
+  theme: 'light', 
+  custom: {
+    themes: {
+      light: {
+        typography: {
+          provider: 'google',
+          fontFamily: 'Quicksand',
+          // Most users load font while initialising their app
+          // In that case, you can choose to skip loading it again
+          skipLoading: false
+        }
+      }
+    }
+  }
+})
+```
 
 ## Shape
 
-Border radius is one of the important part of any design system. To make the PhotoEditorSDK similar to your design system, you can configure `shape`
+Border radius is one of the important part of any design system. To make the PhotoEditorSDKUI shape similar to your design system, you can configure `shape` object in theme.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -253,11 +263,20 @@ const editor = new PhotoEditorSDKUI({
     themes: {
       dark: {
         shape: {
-          /** Border Radius for small sized components, Color Selection, Checkbox **/
+          /**
+            * Border Radius for small sized components,
+            * Color Selection, Checkbox
+            **/
           radiusSmall: 2,
-          /** Border Radius for small sized components, Button, Tooltip, Cards, Dropdown, Color Picker, Input **/
+          /**
+            * Border Radius for medium sized components,
+            * Button, Tooltip, Cards, Dropdown, Color Picker, Input
+            **/
           radiusMedium: 4,
-          /** Border Radius for small sized components, Modal **/
+          /**
+            * Border Radius for large sized components,
+            * Modal
+            **/
           radiusLarge: 4,
         }
       }
