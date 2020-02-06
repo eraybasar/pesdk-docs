@@ -17,37 +17,48 @@ published: true # Either published or not
 ---
 
 
-You can easily configure the editor to disable specific tools, hide buttons etc. by adding properties
-to the `options` object passed to the UI:
+You can easily configure the editor to disable specific tools, hide buttons, change components etc. by adding a configuration object to the `PhotoEditorSDKUI`.
 
----
+Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
 
-  * `layout` - The layout that should be loaded, default to `advanced`. Available are `advanced`, `basic`
-  * `container` HTMLDivElement - The element the editor should be rendered to
-  * `language` String - The UI language. Defaults to `en`. Available are `en` and `de`
-  * `theme` String - Defines the theme that should be used to style the user interface. Defaults to `dark`. Available are `dark` and `light`
-  * `image` String or HTMLImageElement - The image that should be loaded and displayed initially
-  * `order` - rendering `toolControlBar` to right, relevant only for AdvancedUI, defaults to `default`. Available are `default` and `reverse` 
-  * `assetBaseUrl` String - The base URL for all assets. Should be the absolute path to your `assets` directory, defaults to `assets`
+```js
+const editor = new PhotoEditorSDKUI({
+    layout: 'advanced',
+    container: '..',
+  },
+})
+```
+
+  * `layout` - The layout that should be rendered by editor. Defaults to `advanced`. Available are `advanced`, `basic`. Refer to the [UI documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/ui) for more information.
+  * `container` DOMElement - The element the editor should be rendered to.
+  * `language` String - The UI language. Defaults to `en`. Available are `en` and `de`.
+  * `order` - String - Should the `toolControlBar` be rendered on right, relevant only for AdvancedUI. Defaults to `default`. Available are `default` and `reverse`.
+  * `theme` String - Defines the theme that should be used to style the user interface. Defaults to `dark`. Available are `dark` and `light`.
+  * `image` data-url or ImageElement - The image that should be loaded and displayed initially.
+  
+  * `assetBaseUrl` String - The base URL for all assets. Should be the absolute path to your `assets` directory. Defaults to `assets`.
 
   * `engine` Object
-    * `license` String - The PESDK license. If no license (or an invalid license) is provided engine will render a watermark over the preview and export output
-    * `crossOrigin` - Sets the global crossOrigin loading mode. Values: `anonymous`, `use-credentials` or `none`
-    * `downscaleOptions` Object - Images whose sizes exceed these megapixel limits will be downscaled by the engine
-      * `maxMegaPixels` Object - Specifies the maximum amount of megapixels per device type
-        * `desktop` Number - Defaults to 10
-        * `mobile` Number - Defaults to 5
-      * `maxDimensions` Object - Specifies max height or width for the image
+    * `license` String - The PESDK license. If no license (or an invalid license) is provided engine will render a watermark over the preview and export output. Refer to the [pricing plans](https://account.photoeditorsdk.com/pricing/) for more information.
+    * `crossOrigin` - Sets the global crossOrigin loading mode. Defaults to `anonymous`. Available are `anonymous`, `use-credentials` or `none`
+    * `downscaleOptions` Object - Images whose sizes exceed these megapixel limits will be downscaled by the engine.
+      * `maxMegaPixels` Object - Specifies the maximum amount of megapixels per device type.
+        * `desktop` Number - Defaults to 10.
+        * `mobile` Number - Defaults to 5.
+      * `maxDimensions` Object - Specifies max height or width for the image.
         * `height` Number
         * `width` Number
   
+
   * `displayResizeWarning` Boolean - Should a message be displayed when the image has been scaled down for performance reasons. Defaults to `true`.
   * `enableZoom` Boolean - Should the image be zoomable? Defaults to `true`
-  * `tools` Array - The enabled tools in the order they are mentioned, Can be grouped in arrays which will be displayed with separators. Available are: `transform`, `filter`, `adjustments`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`
-  * `defaultTool` String - The tool that is initially loaded. Defaults to `filter`
-  * `mainCanvasActions` Array - Defines all allowed actions for the main screen that are displayed in the given order as buttons on the canvasBar. Available are to `undo`, `redo`, `export`, `close`, `undefined`, if `undefined` is given, based on the array index of `undefined` editor will leave that place empty
-  * `snapping` Object - Options that control the snapping behaviour of sprites
-    * `position` Object - Snapping options for positioning sprites
+  * `mainCanvasActions` Array - Defines all allowed actions for the main screen that are displayed in the given order as buttons on the `mainCanvasActionBar`. Available are to `undo`, `redo`, `export`, `close`, `undefined`. If `undefined` is given, based on the array index of `undefined` editor will leave that place empty.
+  
+  * `tools` Array - The enabled tools in the order they are mentioned, Can be grouped in arrays which will be displayed with separators. Available are: `transform`, `filter`, `adjustments`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`.
+  * `defaultTool` String - The tool that is initially loaded. Defaults to `filter`.
+  
+  * `snapping` Object - Options that control the snapping behaviour of sprites.
+    * `position` Object - Snapping options for positioning sprites.
       * `enabled` Boolean - Whether sprites should snap to specific positions during pan interactions. Defaults to `true`
       * `threshold` Number - This threshold defines the distance of a pan gesture where snapping at a snap point occurs (value in pixels). Defaults to `20`
       * `snapToHorizontalCenter` Boolean - If enabled a sprite's center snaps to the horizontal line through the center of the edited image. Defaults to `true`
@@ -60,6 +71,7 @@ to the `options` object passed to the UI:
       * `enabled` Boolean - Whether sprites should snap to specific orientations during rotation interactions. Defaults to `true`
       * `threshold` Number - This threshold defines the arc length of a rotation gesture where snapping at a snap angle occurs (value in pixels). Defaults to `20`
       * `angles` Number - Enabled snapping angles in degrees for rotating a sprite. The rotation angle is defined clockwise. Defaults to `[0, 45, 90, 135, 180, 225, 270, 315]`
+  
   * `export` Object - Export configuration if the editor supports image editing
     * `image` Object - Image export configuration if the editor supports image editing
       * `format` String - The mime type of the exported image. Defaults to `image/png`. Available formats vary by browser.
@@ -67,37 +79,21 @@ to the `options` object passed to the UI:
       * `quality` Number - The compression quality to use when creating the output image with a lossy file format, Defaults to 0.8
       * `enableDownload` Boolean - Should a export download the image?. Defaults to `true`
 
-  * `library` Object - Configuration options for tool library Refer to the [library]({{ site.baseurl }}/quickstartsguides/html5/v4/features/library) documentation more options.
-  * `filter` Object - Configuration options for tool filter. Refer to the [filter]({{ site.baseurl }}/quickstartsguides/html5/v4/features/filters) documentation for available categories and their items.
-  * `focus` Object - Configuration options for tool focus. Refer to the [focus]({{ site.baseurl }}/quickstartsguides/html5/v4/features/focus) documentation for available items.
-  * `adjustment` Object - Configuration options for tool adjustment. Refer to the [adjustment]({{ site.baseurl }}/quickstartsguides/html5/v4/features/adjustment) documentation for available categories and their items.
-  * `overlay` Object - Configuration options for tool overlay. Refer to the [overlay]({{ site.baseurl }}/quickstartsguides/html5/v4/features/overlays) documentation for available items.
-  * `frame` Object - Configuration options for tool frame. Refer to the [frame]({{ site.baseurl }}/quickstartsguides/html5/v4/features/frames) documentation for available items.
-  * `sticker` Object - Configuration options for tool sticker. Refer to the [sticker]({{ site.baseurl }}/quickstartsguides/html5/v4/features/stickers) documentation for available categories and their items.
-  * `text` Object - Configuration options for tool text. Refer to the [text]({{ site.baseurl }}/quickstartsguides/html5/v4/features/text) documentation for available items.
-  * `textdesign` Object - Configuration options for tool textdesign. Refer to the [textdesign]({{ site.baseurl }}/quickstartsguides/html5/v4/features/textdesign) documentation for available items.
-  * `transform` Object - Configuration options for tool transform. Refer to the [transform]({{ site.baseurl }}/quickstartsguides/html5/v4/features/transform) documentation for available categories and their items.
+  * `library` Object - Configuration options for library tool. Refer to the [library]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/library) documentation more options.
+  * `filter` Object - Configuration options for filter tool. Refer to the [filter]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/filters) documentation for available categories and their items.
+  * `focus` Object - Configuration options for focus tool. Refer to the [focus]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/focus) documentation for available items.
+  * `adjustment` Object - Configuration options for adjustment tool. Refer to the [adjustment]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/adjustment) documentation for available categories and their items.
+  * `overlay` Object - Configuration options for overlay tool. Refer to the [overlay]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/overlays) documentation for available items.
+  * `frame` Object - Configuration options for frame tool. Refer to the [frame]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/frames) documentation for available items.
+  * `sticker` Object - Configuration options for sticker tool. Refer to the [sticker]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/stickers) documentation for available categories and their items.
+  * `text` Object - Configuration options for text tool. Refer to the [text]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/text) documentation for available items.
+  * `textdesign` Object - Configuration options for textdesign tool. Refer to the [textdesign]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/textdesign) documentation for available items.
+  * `transform` Object - Configuration options for transform tool. Refer to the [transform]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/transform) documentation for available categories and their items.
 
   * `custom` Object - Customization options. For a detailed overview refer to the [customizations]()
-    * `languages` Object - Language labeling options to change the user interface appearance. This allows to alter predefined existing theme presents or to create new themes which can be enabled when their corresponding key (name), for example: { de: { filter: { controls: { buttonReset: 'Zurücksetzen' } } } }
-    * `theme` Object - Theming options to change the user interface appearance. This allows to alter predefined existing theme presents or to create new themes which can be enabled when their corresponding key (name), for example:  { dark: { toolControlBar: { border: '#FFFFFF' } } }
-    * `components` Object - Custom react components that will be rendered instead of current components
-      * `categoryCard` React Component - categoryCard will have following props to be taken care of `image`, `label`, `isActive`, `onClick` (the user will just have to place it on the element you want to react to) and `key` (react component key)
-      * `itemCard` React Component - itemCard will have following props to be taken care of `image`, `label`, `isActive`, `onClick` (the user will just have to place it on the element you want to react to) and `key` (react component key)
-      * `toolbarItem` React Component - toolbarItem will have following props to be taken care of `icon`, `label`, `isActive`, `onClick` (the user will just have to place it on the element you want to react to) and `key` (react component key)
-      * `loader` React Component - loader will have following props to be taken care of `show`
-      * `buttons` Object - each button will have following props to be taken care of `icon`, `label`, `isDisabled`, `onClick` (the user will just have to place it on the element you want to react to) and `key` (react component key)
-        * `canvasUndo` React Component
-        * `canvasRedo` React Component
-        * `canvasExport` React Component
-        * `canvasClose` React Component
-        * `canvasActionEdit` React Component
-        * `canvasActionBringToFront` React Component
-        * `canvasActionDuplicate` React Component
-        * `canvasActionDelete` React Component
-        * `canvasActionInvert` React Component
-        * `canvasActionFlip` React Component
+    * `languages` Object - Language labeling options to change the user interface appearance. This allows to alter predefined existing theme presets or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [localization documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/localization) for more customizations.
+    * `theme` Object - Theming options to change the user interface appearance. This allows to alter predefined existing theme presents or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [theme documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/theme) for more customizations.
+    * `components` Object - Custom react components that will be rendered instead of current components.  Refer to the [component customizations]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/component-customization) for more information.
 
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
-{% include multilingual_tabbed_block.html snippets=snippets identifier=identifier %}
