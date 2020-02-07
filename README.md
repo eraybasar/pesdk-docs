@@ -14,7 +14,7 @@ $ bundle install --path=vendor
 To build the site:
 
 ```sh
-$ bundle exec jekyll build
+$ bundle exec jekyll build --config _config.yml,_config_dev.yml
 ```
 
 And launch it with:
