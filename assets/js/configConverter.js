@@ -4,67 +4,6 @@
 
 let clipboard;
 
-var desktopUIConfig = {
-    license: null,                  //string
-    container: null,                //DOMElement
-    language: null,                 //string
-    logLevel: null,                 //string - ['trace','info','warn','error','log']
-    responsive: null,               //boolean
-    preloader: null,                //boolean
-    crossOrigin: null,              //String?  [anonymous,use-credentials,none]
-    assets: {                       //Object
-        baseUrl: null,              //String
-        resolver: null              //Function
-    },
-    editor: {
-        image: null,                //Image? (URL maybe)
-        pixelRatio: null,           //Number
-        preferredRenderer: null,    //String
-        forceCrop: null,            //Boolean
-        transparent: null,          //Boolean
-        clearColor:null,            //Array, String or PhotoEditorSDK.Color
-        displayCloseButton:null,    //Boolean
-        displayResizeMessage:null,  //Boolean
-        maxMegaPixels:{             //Object
-            desktop:null,           //Number
-            mobile:null             //Number
-        },
-        enableDrag: null,           //Boolean
-        enableZoom: null,           //Boolean
-        enablePositionSnapping:null,//Boolean
-        enableRotationSnapping:null,//Boolean
-        enableExport:null,          //Boolean
-        smoothDownscaling:null,     //Boolean
-        tools: null,                //Array - [transform, filter, adjustments, focus, text, textdesign, sticker, brush, frame, overlay]
-        defaultControl: null,       //String
-        controlsOrder: null,        //Array - [library, transform, filter, adjustments, focus, text, textdesign, sticker, brush, frame, overlay]
-        operationsOrder: null,      //Array
-        controlsOptions: null,      //Object
-        snappingOptions: {          //Object
-            position: {             //Object
-                threshold: null,    //number
-                padding: {          //Object
-                    left: null,     //Number
-                    right: null,    //Number
-                    top: null,      //Number
-                    bottom: null,   //Number
-                }
-            },
-            rotation: {
-                angels: null,       //Array - [0, 45, 90, 135, 180, 225, 270, 315]
-                threshold: null     //Number
-            }
-        },
-        export: {                   //Object
-            format: null,           //String
-            type: null,             //PhotoEditorSDK.RenderType
-            download: null,         //Boolean
-            fileBasename: null,     //String
-            quality: null           //number
-        }
-    }            
-}
-
 function getNewConfigFromDesktopConfig(desktopobj){
     return {
         container: getElementOfObject('container', desktopobj),
@@ -96,7 +35,30 @@ function getNewConfigFromDesktopConfig(desktopobj){
         },
         engine: {
             license: getStringOfObject('license', desktopobj),
-            crossOrigin: getStringOfObject('crossOrign',desktopobj), //Convert None to ''
+            crossOrigin: getStringOfObject('crossOrign',desktopobj), //Convert None to ''?
+        },
+    }
+}
+
+function getNewConfigFromReactConfig(reactobj){
+    return {
+        container: getElementOfObject('container', reactobj),
+        image: getElementOfObject('image',getObjectOfObject('editor',reactobj)),
+        language: getStringOfObject('language', reactobj),
+        assetBaseUrl: getStringOfObject('baseUrl',getObjectOfObject('assets',reactobj)),
+        displayResizeWarning: getBooleanOfObject('displayResizeMessage',getObjectOfObject('editor',reactobj)),
+        tools: getElementOfObject('tools',getObjectOfObject('editor',reactobj)),
+        enableZoom: getBooleanOfObject('enableZoom',getObjectOfObject('editor',reactobj)),
+        export: {
+            image: {
+                exportType: getElementOfObject('type',getObjectOfObject('export',getObjectOfObject('editor',reactobj))),
+                format: getElementOfObject('format',getObjectOfObject('export',getObjectOfObject('editor',reactobj))),
+                enableDownload: getBooleanOfObject('download',getObjectOfObject('export',getObjectOfObject('editor',reactobj))),
+            },
+        },
+        engine: {
+            license: getStringOfObject('license', reactobj),
+            crossOrigin: getStringOfObject('crossOrign',reactobj), 
         },
     }
 }
@@ -209,15 +171,26 @@ function createNewObject(object){
 
 function configToNewConfig(oldConfig){
     let output = ''
+    let desktopUIString = null
+    let reactUIString = null
     try{
-        let desktopUIString =  oldConfig.replace(/(\r\n|\n|\r)/gm, "").match(/PhotoEditorSDK.UI.DesktopUI\(\{.+\}\)/g)[0].split("(")[1]
-        if(desktopUIString){
-            let desktopobj = JSON.parse(JSON.stringify(desktopUIString.substring(0,desktopUIString.length-1)))
-            output = getNewConfigFromDesktopConfig(desktopobj)
-        }
+        desktopUIString =  oldConfig.replace(/(\r\n|\n|\r)/gm, "").match(/PhotoEditorSDK.UI.DesktopUI\(\{.+\}\)/g)[0].split("(")[1]
+    }catch(e){}
+    try{
+        reactUIString =  oldConfig.replace(/(\r\n|\n|\r)/gm, "").match(/PhotoEditorSDK.UI.ReactUI\(\{.+\}\)/g)[0].split("(")[1]
+    }catch(e){}
+        
+    if(desktopUIString != null){
+        let desktopobj = JSON.parse(JSON.stringify(desktopUIString.substring(0,desktopUIString.length-1)))
+        output = getNewConfigFromDesktopConfig(desktopobj)
         return createNewObject(filterObjects(output));
-    }catch(e){
-        console.log(e)
+    }
+    else if(reactUIString != null){
+        let reactobj = JSON.parse(JSON.stringify(reactUIString.substring(0,reactUIString.length-1)))
+        output = getNewConfigFromDesktopConfig(reactobj)
+        return createNewObject(filterObjects(output))
+    }
+    else{
         return '<h1>Unvaild Config</h1><br/>Please make sure that your old Configuration is valid'
     }
 }
@@ -233,7 +206,6 @@ function convertConfig(textarea) {
     clipboard = convertedConfig;
 	writeConfig(convertedConfig);
 }
-
 
 function copyToClipboard(){
     navigator.clipboard.writeText(clipboard)

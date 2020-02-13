@@ -36,7 +36,6 @@ Please make sure you are using a modern browser.
                   },
                 },
               },
-              },
               logLevel: 'trace',
               language: 'de',
               assets: {
