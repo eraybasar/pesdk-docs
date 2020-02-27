@@ -72,7 +72,7 @@
                 <a class="nav-group-task-link" href="../Classes/IMGLY/Error.html">– Error</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Common.html#/s:14PhotoEditorSDK5PESDKC">PESDK</a>
+                <a class="nav-group-task-link" href="../Common.html#/c:@M@PhotoEditorSDK@objc(cs)PESDK">PESDK</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Photo.html">Photo</a>
@@ -1233,6 +1233,9 @@
                 <a class="nav-group-task-link" href="../Extensions/Notification/Name.html">– Name</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/Result">Result</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIDevice.html">UIDevice</a>
               </li>
               <li class="nav-group-task">
@@ -1981,13 +1984,182 @@ sprite model if it is found, <code>nil</code> otherwise.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Serialization"></a>
+                <a name="//apple_ref/swift/Section/Serialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Serialization"></a>
+                  <h3 class="section-name"><p>Serialization</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8ImglyKit14PhotoEditModelV0C9EditorSDKE10serialized4with16includeImageData10Foundation0L0VSgAD0C0C_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/serialized(with:includeImageData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8ImglyKit14PhotoEditModelV0C9EditorSDKE10serialized4with16includeImageData10Foundation0L0VSgAD0C0C_SbtF">serialized(with:includeImageData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Serializes this model into a storable representation by encoding all currently applied tools.</p>
+
+<p>If the model contains embedded personal assets they will be sourced from <code>AssetCatalog.shared</code> and downloaded if necessary.
+If possible use <code>serialized(with photo: Photo, includeImageData: Bool, assetCatalog: AssetCatalog, assetManager: AssetManager)</code>
+instead and provide the <code><a href="../Classes/AssetManager.html">AssetManager</a></code> so that cached data can be used if available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">serialized</span><span class="p">(</span><span class="n">with</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Classes/Photo.html">Photo</a></span><span class="p">,</span> <span class="nv">includeImageData</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>photo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A photo that this serialization references. This is needed to preserve certain
+aspect ratios.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>includeImageData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to also include the image data as a base64 encoded JPEG in the
+serialized model.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The serialized model as bytes or nil, if the serialization failed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8ImglyKit14PhotoEditModelV0C9EditorSDKE10serialized4with16includeImageData12assetCatalog0M7Manager10Foundation0L0VSgAD0C0C_SbAA05AssetN0CAA0qO0CtF"></a>
+                    <a name="//apple_ref/swift/Method/serialized(with:includeImageData:assetCatalog:assetManager:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8ImglyKit14PhotoEditModelV0C9EditorSDKE10serialized4with16includeImageData12assetCatalog0M7Manager10Foundation0L0VSgAD0C0C_SbAA05AssetN0CAA0qO0CtF">serialized(with:includeImageData:assetCatalog:assetManager:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Serializes this model into a storable representation by encoding all currently applied tools.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">serialized</span><span class="p">(</span><span class="n">with</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Classes/Photo.html">Photo</a></span><span class="p">,</span> <span class="nv">includeImageData</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">assetCatalog</span><span class="p">:</span> <span class="kt"><a href="../Classes/AssetCatalog.html">AssetCatalog</a></span><span class="p">,</span> <span class="nv">assetManager</span><span class="p">:</span> <span class="kt"><a href="../Classes/AssetManager.html">AssetManager</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>photo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A photo that this serialization references. This is needed to preserve certain
+aspect ratios.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>includeImageData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to also include the image data as a base64 encoded JPEG in the
+serialized model.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetCatalog</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/AssetCatalog.html">AssetCatalog</a></code> that is used to find personal assets that need to be embedded in the serialization.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetManager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/AssetManager.html">AssetManager</a></code> that is used to find personal asset data that needs to be embedded in the serialization.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The serialized model as bytes or nil, if the serialization failed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-02-13)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-02-27)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
