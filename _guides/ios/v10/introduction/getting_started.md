@@ -155,7 +155,7 @@ cameraViewController.dataCompletionBlock = { [unowned cameraViewController] data
   cameraViewController.present(photoEditViewController, animated: true, completion: nil)
 }
 
-cameraViewController.completionBlock = { image, _ in
+cameraViewController.completionBlock = { [unowned cameraViewController] image, _ in
   guard let image = image else {
     return
   }
