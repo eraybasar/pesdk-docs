@@ -136,7 +136,7 @@ imglyConfig {
     }
 }
 
-// Do your Android Configurations... ex.
+// Do your Android Configurations...
 android {
     /* Set the compile SDK and the Build SDK min. at SDK 29 or grater.
      * We can't provide support for Bugs, that are the result of older SDK versions.
