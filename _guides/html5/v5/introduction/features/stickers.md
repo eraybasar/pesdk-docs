@@ -236,7 +236,7 @@ const editor = new PhotoEditorSDKUI({
       {
         identifier: 'some_category',
         name: 'Some Category',
-        thumbnailURI: '', //
+        thumbnailURI: '',
         items: [
           {
             identifier: 'custom_sticker',
@@ -301,7 +301,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in sticker tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default sticker localisation lables
+You can override all the labels used in sticker tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default sticker localization lables
 
 ```js
 new PhotoEditorSDKUI({

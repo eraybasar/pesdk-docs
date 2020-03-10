@@ -166,7 +166,7 @@ the resolution entirely.
 
 ## Localization
 
-You can override all the labels used in transform tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration). Here are the default transform localisation lables.
+You can override all the labels used in transform tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration). Here are the default transform localization lables.
 
 ```js
 new PhotoEditorSDKUI({

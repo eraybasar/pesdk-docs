@@ -26,7 +26,7 @@ published: true # Either published or not
 {% include image_carousel.html images=images %}
 
 Our PhotoEditorSDK UI comes with two themes `light` and `dark`. Defaults to `dark` . The color palette consists of 10 default colors out of the box, from which a theme is created for the UI.
-To make the integration of PhotoEditorSDK in your app seamless, the theme customisations can be done on three levels.
+To make the integration of PhotoEditorSDK in your app seamless, the theme customizations can be done on three levels.
 
 ## Colors
 You could just change the `primary` to get the primary color overall as accent color in the UI. 
@@ -63,7 +63,7 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
-Here is the list of all colors you can customize. Refer to the [nomenclature][nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
+Here is the list of all colors you can customize. Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
 
 ```js
 {

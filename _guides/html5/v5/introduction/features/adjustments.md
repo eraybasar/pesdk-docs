@@ -61,7 +61,7 @@ const editor = new PhotoEditorSDKUI({
           { identifier: 'whites' },
           { identifier: 'blacks' },
           { identifier: 'temperature' },
-          { identifier: 'sharpness }'
+          { identifier: 'sharpness' }
         ]
       }
     ],
@@ -72,7 +72,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Flattening of categories
 
-If `flattenCategories` is set to true, all enabled adjustments will be shown in the top-level of the adjustment tool, which effectively hides the categories.
+If `flattenCategories` is set to true, all enabled adjustment will be shown in the top-level of the adjustment tool, which effectively hides the categories.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -84,7 +84,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Including all the items from a category
 
-If a existing category identifier is specified without any items, editor will include all the existing adjustments under `basics` category.
+If a existing category identifier is specified without any items, editor will include all the existing adjustment under `basics` category.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -98,7 +98,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default adjustment localisation lables
+You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default adjustment localization lables
 
 ```js
 new PhotoEditorSDKUI({

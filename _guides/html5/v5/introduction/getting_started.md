@@ -51,8 +51,8 @@ Afterwards, you will be left with the following folder structure
 
 The package contains three folders that you need to integrate to your project.
 1. `assets` folder: It contains all assets required for the PhotoEditor, this includes for example assets for *frames*, *stickers* and the *ui*.
-1. `cjs` folder: It contains all commonjs bundle for the PhotoEditor SDK UI, will be loaded for older browser versions.
-1. `esm` folder: It contains all modularized bundle for the PhotoEditor SDK UI, will be loaded for supported browser version.
+1. `cjs` folder: It contains the PhotoEditor SDK UI bundled as commonjs modules, will be loaded for older browser versions.
+1. `esm` folder: It contains the PhotoEditor SDK UI bundled as ECMAScript modules, will be loaded for supported modern browser versions.
 
 ## Integration
 

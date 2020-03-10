@@ -28,4 +28,4 @@ editor.export(true) // you can specify, if you want to download the image, this 
   })
 ```
 
-The export format (e.g. DataURL or Image) and file format (e.g. PNG or JPEG) can be specified using the editor configuration. See the Configuration documentation for available [`ExportFormats`](configuration page link) and [`ImageFormats`](ImageFormats link). When exporting using the `DATAURL` format, you can pass the resulting Data URL to a server, decode it there and write it to a file.
+The export format (e.g. DataURL or Image) and file format (e.g. PNG or JPEG) can be specified using the editor configuration. See the Configuration documentation for available [`ExportFormats`](configuration page link) and [`ImageFormats`](ImageFormats link). When exporting using the `data-url` format, you can pass the resulting Data URL to a server, decode it there and write it to a file.

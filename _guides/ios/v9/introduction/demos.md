@@ -29,7 +29,7 @@ For code examples take a look at the {% include guides/ios/demo-repository.md %}
 ## Example Integrations
 
 Check out our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and Native SDKs.
-All example integrations repositories are tagged with the suffix `-demo`. In general, these examples are a good place to start with:
+All example integration repositories are tagged with the suffix `-demo`. In general, these examples are a good place to start with:
 
  * Quickly testing out our SDK without the need to write code
  * Tinker with the code to understand how it works and

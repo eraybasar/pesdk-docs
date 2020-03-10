@@ -29,7 +29,7 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
-  * `layout` - The layout that should be rendered by editor. Defaults to `advanced`. Available are `advanced`, `basic`. Refer to the [UI documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/ui) for more information.
+  * `layout` - The layout that should be rendered by the editor. Defaults to `advanced`. Available are `advanced`, `basic`. Refer to the [UI documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/ui) for more information.
   * `container` DOMElement - The element the editor should be rendered to.
   * `language` String - The UI language. Defaults to `en`. Available are `en` and `de`.
   * `order` - String - Should the `toolControlBar` be rendered on right, relevant only for AdvancedUI. Defaults to `default`. Available are `default` and `reverse`.
@@ -46,15 +46,15 @@ const editor = new PhotoEditorSDKUI({
         * `desktop` Number - Defaults to 10.
         * `mobile` Number - Defaults to 5.
       * `maxDimensions` Object - Specifies max height or width for the image.
-        * `height` Number
-        * `width` Number
+        * `height` Number - Defaults to height of given image
+        * `width` Number - Defaults to width of given image
   
 
   * `displayResizeWarning` Boolean - Should a message be displayed when the image has been scaled down for performance reasons. Defaults to `true`.
   * `enableZoom` Boolean - Should the image be zoomable? Defaults to `true`
-  * `mainCanvasActions` Array - Defines all allowed actions for the main screen that are displayed in the given order as buttons on the `mainCanvasActionBar`. Available are to `undo`, `redo`, `export`, `close`, `undefined`. If `undefined` is given, based on the array index of `undefined` editor will leave that place empty.
+  * `mainCanvasActions` Array - Defines all allowed actions for the main screen that are displayed in the given order as buttons on the `mainCanvasActionBar`. Available are to `undo`, `redo`, `export`, `close`, undefined. If undefined is given, based on the array index of undefined, the editor will leave that place empty.
   
-  * `tools` Array - The enabled tools in the order they are mentioned, Can be grouped in arrays which will be displayed with separators. Available are: `transform`, `filter`, `adjustments`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`.
+  * `tools` Array - The enabled tools in the order they are mentioned, Can be grouped in arrays which will be displayed with separators. Available are: `transform`, `filter`, `adjustment`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`.
   * `defaultTool` String - The tool that is initially loaded. Defaults to `filter`.
   
   * `snapping` Object - Options that control the snapping behaviour of sprites.
@@ -63,20 +63,20 @@ const editor = new PhotoEditorSDKUI({
       * `threshold` Number - This threshold defines the distance of a pan gesture where snapping at a snap point occurs (value in pixels). Defaults to `20`
       * `snapToHorizontalCenter` Boolean - If enabled a sprite's center snaps to the horizontal line through the center of the edited image. Defaults to `true`
       * `snapToVerticalCenter` Boolean - If enabled a sprite's center snaps to the vertical line through the center of the edited image. Defaults to `true`
-      * `snapToLeft` Number or null - The left side of a sprite's bounding box snaps to a vertical line which is shifted by this value rom the left side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
-      * `snapToRight` Number or null - The right side of a sprite's bounding box snaps to a vertical line which is shifted by this value rom the right side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
-      * `snapToTop` Number or null - The top side of a sprite's bounding box snaps to a vertical line which is shifted by this value rom the top side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
-      * `snapToBottom` Number or null - The bottom side of a sprite's bounding box snaps to a vertical line which is shifted by this value rom the bottom side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
-    * `rotation` Object - Snapping options for rotating sprites
+      * `snapToLeft` Number or null - The left side of a sprite's bounding box snaps to a vertical line which is shifted by this value from the left side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
+      * `snapToRight` Number or null - The right side of a sprite's bounding box snaps to a vertical line which is shifted by this value from the right side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
+      * `snapToTop` Number or null - The top side of a sprite's bounding box snaps to a vertical line which is shifted by this value from the top side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
+      * `snapToBottom` Number or null - The bottom side of a sprite's bounding box snaps to a vertical line which is shifted by this value from the bottom side of the edited image towards its center. This value is measured in normalized coordinates relative to the smaller side of the edited image.  If this value is explicitly set to `null` this snapping line is disabled. Defaults to `0.1`
+    * `rotation` Object - Snapping options for rotating sprites.
       * `enabled` Boolean - Whether sprites should snap to specific orientations during rotation interactions. Defaults to `true`
       * `threshold` Number - This threshold defines the arc length of a rotation gesture where snapping at a snap angle occurs (value in pixels). Defaults to `20`
       * `angles` Number - Enabled snapping angles in degrees for rotating a sprite. The rotation angle is defined clockwise. Defaults to `[0, 45, 90, 135, 180, 225, 270, 315]`
   
-  * `export` Object - Export configuration if the editor supports image editing
-    * `image` Object - Image export configuration if the editor supports image editing
-      * `format` String - The mime type of the exported image. Defaults to `image/png`. Available formats vary by browser.
+  * `export` Object - Export configuration.
+    * `image` Object - Image export configuration.
+      * `format` String - The MIME type of the exported image. Defaults to `image/png`. Available formats vary by browser.
       * `exportType` PhotoEditorSDK.RenderType - Specifies the export type (image or data url)
-      * `quality` Number - The compression quality to use when creating the output image with a lossy file format, Defaults to 0.8
+      * `quality` Number - The compression quality to use when creating the output image with a lossy file format, Defaults to 0.9
       * `enableDownload` Boolean - Should a export download the image?. Defaults to `true`
 
   * `library` Object - Configuration options for library tool. Refer to the [library]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/library) documentation more options.
@@ -90,10 +90,10 @@ const editor = new PhotoEditorSDKUI({
   * `textdesign` Object - Configuration options for textdesign tool. Refer to the [textdesign]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/textdesign) documentation for available items.
   * `transform` Object - Configuration options for transform tool. Refer to the [transform]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/transform) documentation for available categories and their items.
 
-  * `custom` Object - Customization options. For a detailed overview refer to the [customizations]()
+  * `custom` Object - Customization options.
     * `languages` Object - Language labeling options to change the user interface appearance. This allows to alter predefined existing theme presets or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [localization documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/localization) for more customizations.
     * `theme` Object - Theming options to change the user interface appearance. This allows to alter predefined existing theme presents or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [theme documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/theme) for more customizations.
-    * `components` Object - Custom react components that will be rendered instead of current components.  Refer to the [component customizations]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/component-customization) for more information.
+    * `components` Object - Custom react components that will be rendered instead of current components. Refer to the [component customizations]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/component) for more information.
 
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}

@@ -87,11 +87,11 @@ const editor = new PhotoEditorSDKUI({
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-Available blend modes are `normal`, `overlay`, `hardLight`, `softLight`, `multiply`, `darken`, `lighten`, `screen` and `colorBurn`.
+Available blend modes are `normal`, `overlay`, `hardlight`, `softlight`, `multiply`, `darken`, `lighten`, `screen` and `colorburn`.
 
 ## Localization
 
-You can override all the labels used in overlay tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default overlay localisation lables
+You can override all the labels used in overlay tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default overlay localization lables
 
 ```js
 new PhotoEditorSDKUI({

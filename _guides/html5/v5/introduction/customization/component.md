@@ -22,9 +22,9 @@ This is the most exciting feature for the major release. Not only you can custom
 the following are the customizable components. Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
 
 ## Category Card
-This will replace the category cards in the `toolControlBar`. Available only in `Advanced UI`
+This will replace the category cards in the `toolControlBar`. Available only in `AdvancedUI`
 
-The React component Props `image`, `label`, `isActive`, `onClick` has be handled for this customization. Since this is all part of a big theme you can use the `theme` props like you would use it in any themable Styled Components.
+The React component Props `image`, `label`, `isActive`, `onClick` has be handled for this customization. Since this is all part of a big theme you can use the `theme` props like you would use it in any themable `styled-components`.
 
 ```jsx
 const CardStyles = styled.button`
@@ -68,7 +68,7 @@ const editor = new PhotoEditorSDKUI({
 
 ```
 ## Item Card
-This will replace the item cards in the `toolControlBar`. Available only in `Advanced UI`.
+This will replace the item cards in the `toolControlBar`. Available only in `AdvancedUI`.
 
 The React component Props `image`, `label`, `isActive`, `onClick` has be handled for this customization.
 
@@ -115,7 +115,7 @@ const editor = new PhotoEditorSDKUI({
 
 ```
 ## ToolbarItem
-This will replace the icons in the `toolbar`. Available only in `Advanced UI`.
+This will replace the icons in the `toolbar`. Available only in `AdvancedUI`.
 
 The React component Props `icon`, `label`, `isActive`, `onClick` has be handled for this customization. You can choose to use the default icons or replace them with your own icons.
 
@@ -165,7 +165,7 @@ const editor = new PhotoEditorSDKUI({
 
 ```
 ## Loader
-This will replace the initial loading screen. Available in both `Advanced UI` and `Basic UI`.
+This will replace the initial loading screen. Available in both `AdvancedUI` and `Basic UI`.
 
 The React component Props `show` has be handled for this customization.
 
@@ -209,7 +209,7 @@ const editor = new PhotoEditorSDKUI({
 
 ```
 ## Buttons
-This will replace the listed buttons in the PhotoEditorSDKUI. Available in both `Advanced UI` and `Basic UI`.
+This will replace the listed buttons in the PhotoEditorSDKUI. Available in both `AdvancedUI` and `Basic UI`.
 
 The React component Props `icon`, `label`, `isDisabled` and `onClick` has be handled for this customization. Since this is all part of a big theme you can use the `theme` props like you would use it in any themable Styled Components.
 you can choose to use, buttons as button and label, only button, only label, the possiblities are endless.
