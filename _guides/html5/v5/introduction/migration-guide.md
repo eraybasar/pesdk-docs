@@ -18,32 +18,32 @@ published: true # Either published or not
 
 This is a reference for upgrading your site from PhotoEditorSDK v4 to v5. While there's a lot covered here, you probably won't need to do everything for your site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v5!
 
-## Update dependancies
+## Update dependencies
 
-You need to update your package.json to use the latest version of `phototeditorsdk`.
+You need to update your `package.json` file in order to use the latest version of `phototeditorsdk`.
 
-```json
+```diff
 {
   "dependencies": {
-    "photoeditorsdk": "~5.0.0"
+-    "photoeditorsdk": "^4.20.0"
++    "photoeditorsdk": "~5.0.0"
   }
 }
 ```
 
-Update React Version, React version was was increased from `react@^15.0.0` to `react@^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependancy `styled-components@^4.4.0`
-
+Update the React Version, It was was increased from `react@^15.0.0` to `react@^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
 
 ## Handling breaking changes
 ### Updating imports
-```js
+```diff
 - import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
 - import Styles from 'photoeditorsdk/css/PhotoEditorSDK.UI.DesktopUI.css'
 + import { PhotoEditorSDKUI } from 'photoeditorsdk'
 
 ```
 
-if you are directly rendering the react component
-```js
+if you are directly rendering the React component
+```diff
 - import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
 + import { PhotoEditorSDKUIComponent } from 'photoeditorsdk'
 ```
@@ -51,22 +51,22 @@ if you are directly rendering the react component
 
 ### Updating configuration
 
-While we tried to minimize the number of breaking changes and make it backward compatible as much as possible, we believe that some breaking changes in the configuration were required. However, to make the migration easier we have written some mapper scripts, input your configuration or localization here and get the configuration or localization for v5.
+While we tried to minimize the number of breaking changes and make it backward compatible as much as possible, we believe that some breaking changes in the configuration were required. However, to make the migration easier we have written some mapper scripts, input your v4 configuration or localization here and get the configuration or localization for v5 automatically generated.
 
-```js
+```diff
 - const editor = new PhotoEditorUI(config)
 + const editor = new PhotoEditorSDKUI(config)
 
 ```
 
-if you are directly rendering the react component
+if you are directly rendering the React component
 
-```js
+```diff
 - <PhotoEditorUI.ReactComponent {...this.config} />
 + <PhotoEditorSDKUIComponent {...this.config} />
 ```
 
-Although the mapper maps your old configuration to the new one, we highly recommend you to go and check the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) documentation. There's whole lot of new configurations and customizations are available.
+Although the mapper maps your old configuration to the new one, we highly recommend you to go and check the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) documentation. There's a whole lot of new configurations and customizations are available.
 
 ### Handling events
 
@@ -81,7 +81,7 @@ Renaming UI events. Some of the previously supported events are now deprecated. 
 })
 ```
 
-if you are directly rendering the react component, handling of the event is done the same way.
+if you are directly rendering the React component, handling of the event is done the same way.
 
 ```js
 public componentDidMount() {

@@ -33,7 +33,7 @@ published: true # Either published or not
 {% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_dark | push: image_basic_light %}
 {% include image_carousel.html images=images %}
 
-Filters determine the mood and atmosphere of pictures and help convey the right message for your creative. The PhotoEditor SDK ships with over 50 handcrafted filters covering all state of the art style- and mood settings that can even be previewed in camera mode. Furthermore, the API of the PhotoEditor SDK enables you to expand the filter library with your own set of custom filters and define your unique visual language. Custom filters can easily be created by anyone using LUTs (Lookup Tables) from popular apps like Photoshop, GIMP or Lightroom.
+Filters determine the mood and atmosphere of pictures and help convey the right message for your creative. The PhotoEditor SDK ships with over 50 handcrafted filters covering all state of the art style- and mood settings. Furthermore, the API of the PhotoEditor SDK enables you to expand the filter library with your own set of custom filters and define your unique visual language. Custom filters can easily be created by anyone using LUTs (Lookup Tables) from popular apps like Photoshop, GIMP or Lightroom.
 
 ## Specifying the available filters
 
@@ -168,7 +168,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Including all the items from a category
 
-If a existing category identifier is specified without any items, editor will include all the existing filters under `imgly_filter_category_duotone` category.
+If a existing category identifier is specified without any items, the editor will include all the existing filter items of the category as shown for the `imgly_filter_category_duotone` category in the following example.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -193,20 +193,20 @@ If you want to create a new filter, you'll need to [download]({{ site.baseurl }}
 
 > __WARNING:__ As any compression artifacts in the edited LUT could lead to distorted results when applying the filter, you need to save your LUT as a PNG file.
 
-You can add new filters to the existing categories, or create new categories using same configuration interface as above.
+You can add new filters to the existing categories, or create new categories using the same configuration interface as above.
 
 ```js
 const editor = new PhotoEditorSDKUI({
   filter: {
     categories: [
-      ...,
+      // ...,
       { identifier: 'imgly_filter_category_warm' },
       {
         identifier: 'my-new-filter-category',
         name: 'New Cool',
         thumbnailURI: '' // path to the thumbail, relative to the filter asset directory
         items: [
-          ...,
+          //...,
           {
             identifier: 'my-new-filter-item',
             lutURI: '' // path to the lut image, relative to the filter asset directory
@@ -231,7 +231,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in filter tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default filter localisation lables.
+You can override all the labels used in filter tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default filter localization lables.
 
 ```js
 

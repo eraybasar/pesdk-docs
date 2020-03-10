@@ -32,7 +32,7 @@ published: true # Either published or not
 {% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_dark | push: image_basic_light %}
 {% include image_carousel.html images=images %}
 
-The Text Design Tool merges input text with typography, creating stunning designs for a multitude of use-cases. The tool lays out input text according to recipes crafted by professional designers upon a single tap. Furthermore, the creative can then be fine-tuned by choosing from 15 different text colors or by using the randomize functionality that shuffles the fonts, alignments and decorations. It’s even possible to create a mask that lets the background image shine through.
+The text design tool merges input text with typography, creating stunning designs for a multitude of use-cases. The tool lays out input text according to recipes crafted by professional designers upon a single tap. Furthermore, the creative can then be fine-tuned by choosing from 15 different text colors or by using the randomize functionality that shuffles the fonts, alignments and decorations. It’s even possible to create a mask that lets the background image shine through.
 
 ## Specifying the available text design
 
@@ -66,15 +66,15 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in text design tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default text design localisation lables.
+You can override all the labels used in text design tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default text design localization lables.
 
 ```js
 new PhotoEditorSDKUI({
-  ...,
+  //...,
   custom: {
     languages: {
       en: {
-        ...,
+        //...,
         textdesign: {
           title: 'Text Design',
           controls: {

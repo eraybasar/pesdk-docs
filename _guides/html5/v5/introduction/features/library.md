@@ -34,7 +34,7 @@ With our library control, users can upload their own pictures, take photo with t
 
 ## Specifying a custom library provider
 
-The Provider class is the data manager for our library feature. Extend this class in order to load data from an external source or provide a fixed set of images. Your custom provider needs to implement two categories: `getCategories` and `searchImages(query)` which will be invoked by our UI. Please note that these methods are asynchronous and must return a Promise.
+The provider class is the data manager for our library feature. Extend this class in order to load data from an external source or provide a fixed set of images. Your custom provider needs to implement two categories: `getCategories` and `searchImages(query)` which will be invoked by our UI. Please note that these methods are asynchronous and must return a Promise.
 
 
 ```js
@@ -149,7 +149,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in library tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default library localisation lables.
+You can override all the labels used in library tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default library localization lables.
 
 ```js
 new PhotoEditorSDKUI({

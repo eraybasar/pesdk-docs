@@ -15,4 +15,4 @@ order: 4
 title: Add a new Button
 ---
 
-It is not possible to add any additional buttons to our PhotoEditor SDK. 
+Some buttons are customizable. Refer to the [component customizations]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/component) for more information.
