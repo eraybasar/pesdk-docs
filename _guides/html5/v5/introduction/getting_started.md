@@ -29,16 +29,39 @@ __Note:__ Since we're working with the latest web technologies, all code samples
 ECMAScript 6 standard. If you're using an older ECMAScript / JavaScript standard, please use
 [Babel](http://babeljs.io/) to compile the examples to ES5.
 
-## What you need
+## Let's get started!
 
-First, download the [latest release](https://github.com/imgly/pesdk-html5-build/releases/latest) from our public GitHub repository and extract it.
-Afterwards, you will be left with the following folder structure
+We will be using use [parcel-js](https://parceljs.org/) for simplicity.
+
+##### Create a project
+
+- Start a new project in an empty directory by running `npm init`.
+- A `package.json` file will be created, with minimal information about the project.
+
+##### Installing peer dependencies
+
+PhotoEditor SDK needs following peer dependencies:
+  1. React >= 16.3
+  1. React DOM >= 16.3
+  1. Styled Components >= 4.4
+
+
+- Run `npm install --save react@^16.3 react-dom@^16.3 styled-components@^4.4` to include them in the project.
+
+
+##### Installing PhotoEditor SDK
+
+- Run `npm install photoeditorsdk@~5.0.0`.
+
+You will be left with following structure in your `node_modules/photoeditorsdk/`
 
 ```bash
 ├── assets
-│   ├── brushes
 │   ├── adjustment
+│   ├── colorpicker
+│   ├── controls
 │   ├── filter
+│   ├── focus
 │   ├── font
 │   ├── frame
 │   ├── overlay
@@ -50,68 +73,72 @@ Afterwards, you will be left with the following folder structure
 ```
 
 The package contains three folders that you need to integrate to your project.
-1. `assets` folder: It contains all assets required for the PhotoEditor, this includes for example assets for *frames*, *stickers* and the *ui*.
-1. `cjs` folder: It contains the PhotoEditor SDK UI bundled as commonjs modules, will be loaded for older browser versions.
-1. `esm` folder: It contains the PhotoEditor SDK UI bundled as ECMAScript modules, will be loaded for supported modern browser versions.
+1. `assets`: It contains all assets required for the PhotoEditor, this includes for example assets for *frames*, *stickers* and the *ui*.
+1. `cjs`: It contains the PhotoEditor SDK UI bundled as commonjs modules, will be loaded for older browser versions.
+1. `esm`: It contains the PhotoEditor SDK UI bundled as ECMAScript modules, will be loaded for supported modern browser versions.
 
-## Integration
+- Create a `dist` folder.
+- Copy the `assets` from `node_modules/photoeditorsdk` to `dist`.
 
-Copy the folders `assets`, `esm`, `cjs`, `index.js` and `index.esm.js` into your project.
+##### Adding a container for PhotoEditorSDK
 
-Then include the SDK and the UI JavaScript files as well as the CSS files inside your `<head>` tag:
-
-
+- Create a `index.html` in the root of the project.
 ```html
-<head>
-  <!-- Depending on your browser load esm, cjs or umd bundles  -->
-  <!-- Peer Dependencies for the SDK UI -->
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script crossOrigin src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/4.3.1/styled-components-macro.esm.js"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  </body>
+  </html>
+```
+- Create a `<div>` tag as a container for the editor. The editor will adapt its size according to the dimensions of the container. For the sake of simplicity, specify the dimensions using inline styles.
 
-  <!-- PhotoEditor SDK-->
-  <script src="js/index.esm.js"></script>
-
-</head>
+```diff
+<body>
++   <div id="editor" style="width: 100vw; height: 100vh;"></div>
+</body>
 ```
 
-If your browser doesn't support any of the bundles. You can use [Parcel](https://parceljs.org/) to compile and watch the `index.html` file
+##### Initialize the editor
 
-{% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
-{% include multilingual_code_block.html snippets=snippets identifier=identifier %}
+- Finally, in order to initialize the editor, instantiate the UI using JavaScript. Create a `index.js` in the root of the project.
 
-Now, create a `<div>` tag as a container for the editor. The editor will adapt its size according to the dimensions of the container.
-For the sake of simplicity, specify the dimensions using inline styles:
+```js
+import { UIEvent, PhotoEditorSDKUI } from 'photoeditorsdk'
+import imagePath from './example.png' // image path to be loaded
 
-```html
-  <div role="main" id="editor" style="width: 100vw; height: 100vh;"></div>
-```
-
-Finally, in order to initialize the editor, instantiate the UI using JavaScript. Add the following code right below our containing `<div>` element:
-
-
-```html
-<script>
-  window.onload = function () {
-    var image = new Image()
-    image.onload = function () {
-        var container = document.getElementById('editor')
-        var editor = new PhotoEditorSDKUI({
-          container: container,
-          image: image
-        // Please replace this with your license: https://www.photoeditorsdk.com/dashboard/subscriptions
-        engine: {
-          license: '{"owner":"Imgly Inc.","version":"2.1", ...}',
-          crossOrigin: 'Anonymous'
-        },
-        assetBaseUrl: 'assets/',
-      })
-    }
-    // image.crossOrigin = 'Anonymous'  // Setup CORS accordingly if needed
-    image.src = './example.jpg'
+window.onload = () => {
+  const image = new Image()
+  image.onload = function () {
+    const editor = new PhotoEditorSDKUI({
+      container: document.getElementById("editor"),
+      image: image,
+      engine: {
+        license: ""
+      }
+    })
+    editor.on(UIEvent.EDITOR_READY, () => {
+      console.log('PhotoEditor SDK for Web is ready!')
+    })
   }
-</script>
+  image.crossOrigin = 'Anonymous'  // Setup CORS accordingly if needed
+  image.src = imagePath
+}
+
 ```
+
+- Include the `index.js` script in our html file
+
+```diff
+<body>
+  <div id="editor" style="width: 100vw; height: 100vh;"></div>
++   <script src="./index.js"></script>
+</body>
+```
+
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-02{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
@@ -129,53 +156,13 @@ Please follow the instructions on how to properly configure CORS <a href="{{site
 </div>
 
 ## Ready to go!
-This was all that is necessary to get the PhotoEditor SDK up and running. For simplicity here is the whole source code of  the *html* file:
+This is all that is necessary to get the PhotoEditor SDK up and running. Now all you have to do is launch a webserver.
 
+- run `npx parcel index.html`
+- now open `http://localhost:1234/` in your browser
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- Depending on your browser load esm, cjs or umd bundles  -->
-  <!-- Peer Dependencies for the SDK UI -->
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
-
-  <!-- PhotoEditor SDK-->
-  <script src="./index.js"></script>
-
-</head>
-
-  <body>
-    <div role="main" id="editor" style="width: 100vw; height: 100vh;"></div>
-    <script>
-      window.onload = function () {
-        const image = new Image()
-        image.onload = function () {
-          const container = document.getElementById('editor')
-          const editor = new PhotoEditorSDKUI({
-            container: container,
-            image: image,
-            // Please replace this with your license: https://www.photoeditorsdk.com/dashboard/subscriptions
-            engine: {
-              license: '{"owner":"Imgly Inc.","version":"2.1", ...}',
-              crossOrigin: 'Anonymous'
-            },
-            assetBaseUrl: 'assets/',
-          })
-        }
-        // image.crossOrigin = 'Anonymous'  // Setup CORS accordingly if needed
-        image.src = './example.jpg'
-      }
-    </script>
-  </body>
-</html>
-```
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-03{% endcapture %}
-
-Launch your favorite webserver and enjoy our editor. If you don't know which webserver to use, give `npx parcel index.html` a try.
 
 
 In any case, you can find a working demo integration [here](https://www.photoeditorsdk.com).
@@ -185,3 +172,5 @@ In any case, you can find a working demo integration [here](https://www.photoedi
 This guide shows you how to integrate our editor into your own application. If you run into any error messages or other problems during this process or should you have further questions about the editor itself, then please take a look at our [FAQ]({{site.baseurl}}/guides/html5/v5/introduction/faq/overview) page, which offers answers to the most common questions and errors you might run into.
 
 If the [FAQ]({{site.baseurl}}/guides/html5/v5/introduction/faq/overview) page doesn't answer your questions, please [contact us](https://support.photoeditorsdk.com) and we will be more than happy to help!
+
+Moreover, if you are looking for examples with other JavaScript frameworks, visit the [demo]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/demos) listing page.
