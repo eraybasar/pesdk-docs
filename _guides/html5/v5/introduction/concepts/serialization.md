@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Serialization # title as shown in the menu and
-description: The PhotoEditor SDK for HTML5 provides an option for serialization and deserialization, allowing your users to save and revise their work anytime.
+description: PhotoEditor SDK for HTML5 provides an option for serialization and deserialization, allowing your users to save and revise their work anytime.
 menuitem: *title
 order: 4
 platform: html5
@@ -27,7 +27,7 @@ The serialization schema is specified
 In order to serialize the editor state, simply call `serialize()` on the Editor instance:
 
 ```js
-editor.serialize({ image: true })
+editor.serialize({ image: true }) // Default { image: false }
   .then((state) => {
     console.log('Editor state:', state)
   }).catch((err) => {
@@ -38,7 +38,7 @@ editor.serialize({ image: true })
 This will serialize the editor state and write the result to the console.
 
 The `image` option specifies whether or not the input image should be serialized as well. Enabling
-this (which is the default) will highly increase the size of the resulting object.
+this will highly increase the size of the resulting object.
 
 ## Deserialization
 

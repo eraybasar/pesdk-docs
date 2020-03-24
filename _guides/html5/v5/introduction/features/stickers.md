@@ -274,7 +274,7 @@ const sticker = {
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-It is also possible to easily override this property for the default stickers that are shipped with the PhotoEditor SDK using the editor configuration.
+It is also possible to easily override this property for the default stickers that are shipped with PhotoEditor SDK using the editor configuration.
 The following example does this for our square shape, which allows it to now be resized to any arbitrary rectangle:
 
 ```js

@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Migration Guide
-description: The PhotoEditor SDK for HTML5 can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires.
+description: PhotoEditor SDK for HTML5 can easily be tailored to meet your business needs. Learn how to swiftly create the editor your use-case requires.
 
 menuitem: *title
 order: 4

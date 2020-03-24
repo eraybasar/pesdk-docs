@@ -16,7 +16,7 @@ published: true # Either published or not
 ---
 
 
-The UI of the PhotoEditor SDK (PESDK) was visually & conceptually revised taking specific usability and platform guidelines into account. This has created an even more consistent and intuitive UI than before.
+The UI of PhotoEditor SDK (PESDK) was visually & conceptually revised taking specific usability and platform guidelines into account. This has created an even more consistent and intuitive UI than before.
 
 The component, color and font system has been completely improved offering customers a more dynamic, extensive and modifiable product. The UI can now be integrated even better into existing systems, thus creating a seamless transition from the PESDK UI to the rest of the UI. End users are thus offered an even better and more holistic experience.
 
