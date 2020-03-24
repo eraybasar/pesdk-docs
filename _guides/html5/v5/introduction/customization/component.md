@@ -165,7 +165,7 @@ const editor = new PhotoEditorSDKUI({
 
 ```
 ## Loader
-This will replace the initial loading screen. Available in both `AdvancedUI` and `Basic UI`.
+This will replace the initial loading screen. Available in both `AdvancedUI` and `BasicUI`.
 
 The React component Props `show` has be handled for this customization.
 
@@ -208,8 +208,9 @@ const editor = new PhotoEditorSDKUI({
 })
 
 ```
+
 ## Buttons
-This will replace the listed buttons in the PhotoEditorSDKUI. Available in both `AdvancedUI` and `Basic UI`.
+This will replace the listed buttons in the PhotoEditor SDK UI. Available in both `AdvancedUI` and `BasicUI`.
 
 The React component Props `icon`, `label`, `isDisabled` and `onClick` has be handled for this customization. Since this is all part of a big theme you can use the `theme` props like you would use it in any themable Styled Components.
 you can choose to use, buttons as button and label, only button, only label, the possiblities are endless.

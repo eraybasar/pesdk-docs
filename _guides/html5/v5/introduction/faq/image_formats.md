@@ -19,4 +19,4 @@ For stickers, frames and overlays as well as uploaded files, the supported file 
 a good and up-to-date list of supported file formats on [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).
 Basically, the best formats to use are JPEG and PNG.
 
-Due to browser limitations, PhotoEditorSDK for HTML5 can only export to JPEG and PNG.
+Due to browser limitations, PhotoEditor SDK for HTML5 can only export to JPEG and PNG.

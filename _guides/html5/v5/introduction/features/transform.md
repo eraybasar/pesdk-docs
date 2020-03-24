@@ -70,7 +70,7 @@ const editor = new PhotoEditorSDKUI({
 ```
 ## Including all the items from a category
 
-If a existing category identifier is specified without any items, editor will include all the existing crop ratios under `imgly_transforms_common` category.
+If a existing category identifier is specified without any items, the editor will include all the existing crop ratios of the category as shown for the `imgly_transforms_common` category in the following example.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -121,9 +121,9 @@ const editor = new PhotoEditorSDKUI({
     categories: [
       ...,
       {
-        identifier: 'imgly_transforms_instagram',
+        identifier: 'custom_transforms_instagram',
         items: [{
-          identifier: "imgly_transform_instagram_story",
+          identifier: "custom_transform_instagram_story",
           name: 'Insta Story',
           thumbnailURI: '', //
           ratio: 9 / 16,
