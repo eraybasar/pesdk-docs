@@ -4,7 +4,7 @@ title: &title Filters # title as shown in the menu and
 description: The PhotoEditor SDK for HTML5 features more than 60 high-quality filters with lightning fast processing. Learn how to easily add your own custom filters.
 
 menuitem: *title
-order: 0
+order: 2
 platform: html5
 version: v5
 category:

@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Library # title as shown in the menu and
 
 menuitem: *title
-order: 4
+order: 5
 platform: html5
 version: v5
 category:

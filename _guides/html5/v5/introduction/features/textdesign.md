@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Text Design # title as shown in the menu and
 description: The Text Design Tool merges input text with typography, creating stunning designs for a multitude of use-cases.
 menuitem: *title
-order: 6
+order: 9
 platform: html5
 version: v5
 category:
