@@ -32,7 +32,7 @@ published: true # Either published or not
 {% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_dark | push: image_basic_light %}
 {% include image_carousel.html images=images %}
 
-A picture says more than a thousand words, however sometimes it still takes a few more. The robust text feature of the PhotoEditor SDK provides all necessary functions for quickly adding text to any picture. The corresponding font library can easily be exchanged or expanded.
+A picture says more than a thousand words, however sometimes it still takes a few more. The robust text feature of PhotoEditor SDK provides all necessary functions for quickly adding text to any picture. The corresponding font library can easily be exchanged or expanded.
 
 ## Specifying the available fonts
 

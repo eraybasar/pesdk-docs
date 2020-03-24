@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Getting Started
-description: A quick guide on how to easily get started with the PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities.
+description: A quick guide on how to easily get started with PhotoEditor SDK for HTML5. Your kick-off to delight your users with top-notch editing capabilities.
 order: 1
 menuitem: *title
 platform: html5
@@ -74,8 +74,8 @@ You will be left with following structure in your `node_modules/photoeditorsdk/`
 
 The package contains three folders that you need to integrate to your project.
 1. `assets`: It contains all assets required for the PhotoEditor, this includes for example assets for *frames*, *stickers* and the *ui*.
-1. `cjs`: It contains the PhotoEditor SDK UI bundled as commonjs modules, will be loaded for older browser versions.
-1. `esm`: It contains the PhotoEditor SDK UI bundled as ECMAScript modules, will be loaded for supported modern browser versions.
+1. `cjs`: It contains PhotoEditor SDK UI bundled as commonjs modules, will be loaded for older browser versions.
+1. `esm`: It contains PhotoEditor SDK UI bundled as ECMAScript modules, will be loaded for supported modern browser versions.
 
 - Create a `dist` folder.
 - Copy the `assets` from `node_modules/photoeditorsdk` to `dist`.
@@ -156,7 +156,7 @@ Please follow the instructions on how to properly configure CORS <a href="{{site
 </div>
 
 ## Ready to go!
-This is all that is necessary to get the PhotoEditor SDK up and running. Now all you have to do is launch a webserver.
+This is all that is necessary to get PhotoEditor SDK up and running. Now all you have to do is launch a webserver.
 
 - run `npx parcel index.html`
 - now open `http://localhost:1234/` in your browser

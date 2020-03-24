@@ -29,7 +29,7 @@ published: true # Either published or not
 {% assign images = "" | split: "" | push: image_advanced_dark | push: image_advanced_light | push: image_basic_light %}
 {% include image_carousel.html images=images %}
 
-The highly efficient brush engine of the PhotoEditor SDK is optimized for touch screen interaction and supports different brush strokes that can be edited in terms of thickness and color.
+The highly efficient brush engine of PhotoEditor SDK is optimized for touch screen interaction and supports different brush strokes that can be edited in terms of thickness and color.
 
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}

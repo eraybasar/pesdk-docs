@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title FAQ # title as shown in the menu and
-description: A collection of frequently asked questions for the PhotoEditor SDK for HTML5 including browser support, known CORS issues and supported file formats.
+description: A collection of frequently asked questions for PhotoEditor SDK for HTML5 including browser support, known CORS issues and supported file formats.
 menuitem: *title
 order: 5
 platform: html5

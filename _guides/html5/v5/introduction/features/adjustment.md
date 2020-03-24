@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Adjustment # title as shown in the menu and
-description: The Adjustment tool set of the PhotoEditor SDK for HTML5 offers essential and advanced editing functions like Brightness, Contrast, Saturation or Exposure.
+description: The Adjustment tool set of PhotoEditor SDK for HTML5 offers essential and advanced editing functions like Brightness, Contrast, Saturation or Exposure.
 menuitem: Adjustment
 order: 2
 platform: html5

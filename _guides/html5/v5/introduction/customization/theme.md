@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Theme
-description: Learn how easily customize the color palettes of individual tools in the PhotoEditor SDK for HTML5.
+description: Learn how easily customize the color palettes of individual tools in PhotoEditor SDK for HTML5.
 
 menuitem: *title
 order: 0
@@ -254,7 +254,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Shape
 
-Border radius is one of the important part of any design system. To make the PhotoEditor SDK UI shape similar to your design system, you can configure `shape` object in theme.
+Border radius is one of the important part of any design system. To make PhotoEditor SDK UI shape similar to your design system, you can configure `shape` object in theme.
 
 ```js
 const editor = new PhotoEditorSDKUI({
