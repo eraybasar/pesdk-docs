@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Overlays # title as shown in the menu and
 
 menuitem: *title
-order: 10
+order: 6
 platform: html5
 version: v5
 category:

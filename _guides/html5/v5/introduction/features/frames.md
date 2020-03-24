@@ -3,7 +3,7 @@ layout: guides/content
 title: &title Frames # title as shown in the menu and
 description: The PhotoEditor SDK for HTML5 provides a quick and easy way for adding frames to any creative. Learn how to add custom frame assets to the library.
 menuitem: *title
-order: 8
+order: 4
 platform: html5
 version: v5
 category:
