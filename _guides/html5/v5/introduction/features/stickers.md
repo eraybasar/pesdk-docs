@@ -151,7 +151,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Including all the items from a category
 
-If a existing category identifier is specified without any items, editor will include all the existing stickers under `imgly_sticker_category_emoticons` category.
+If a existing category identifier is specified without any items, the editor will include all the existing stickers items of the category as shown for the `imgly_sticker_category_emoticons` category in the following example.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -181,8 +181,8 @@ const editor = new PhotoEditorSDKUI({
             name: 'Custom Sticker',
             thumbnailURI: '', // path to the sticker, relative to the sticker asset directory
             stickerURI: '..', // path to the sticker, relative to the sticker asset directory
-            tintMode: 'none', // Possible: 'none', 'solid', 'colorized'
-            resizeMode: 'keepAspect'  // Possible: 'keepAspect', 'unrestricted'
+            tintMode: 'none', // Default: 'none', Other options: 'solid', 'colorized'
+            resizeMode: 'keepAspect'  // Default: 'keepAspect', Other options:: 'keepAspect', 'unrestricted'
           }
         ]
       }
@@ -197,7 +197,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Custom sticker upload by end users
 
-By default end users are able to upload their own images as custom stickers into the sticker tool of our editor using the "Upload" button (DesktopUI only). Once uploaded, they will all appear in a new category called "Custom" (localizable with the `pesdk.sticker.asset.imgly_sticker_custom` key). 
+By default end users are able to upload their own images as custom stickers into the sticker tool of our editor using the "Upload" button. Once uploaded, they will all appear in a new category called "Custom" (localizable with the `locale.sticker.categories.imgly_sticker_custom` key). 
 
 You can configure the tint mode of all of these custom stickers with the `sticker.customStickerTintMode` controls option. You can find more information
 on sticker tint modes in the [Enable color customization](#enable-color-customization) section.

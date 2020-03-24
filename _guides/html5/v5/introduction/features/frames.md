@@ -39,11 +39,11 @@ In order to enable or disable specific frames, simply pass the `items` option to
 const editor = new PhotoEditorSDKUI({
   frame: {
     items: [
+      { identifier: "imgly_frame_dia" },
       { identifier: "imgly_frame_art_decor" },
       { identifier: "imgly_frame_black_passepartout" },
-      { identifier: "imgly_frame_lowpoly_shadow" },
       { identifier: "imgly_frame_wood_passepartout" },
-      { identifier: "imgly_frame_dia" },
+      { identifier: "imgly_frame_lowpoly_shadow" },
     ]
   },
 })

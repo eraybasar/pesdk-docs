@@ -21,13 +21,13 @@ We offer two different UI systems to our customers for the HTML5 platform, the B
 
 ## BasicUI
 
-The BasicUI features a responsive design. It works on all screen sizes.
+The BasicUI takes a vertical layout approach to feature a responsive design. It works on all screen sizes.
 
 ## AdvancedUI
 
-The DesktopUI is the more advanced version with a better overview of tools and controls. AdvancedUI is not supported on mobile devices.
+The AdvancedUI is the more advanced version takes a more horizontal layout approach, which provides a better overview of tools and their controls. AdvancedUI is not supported on mobile devices.
 
-However to get both usibility and responsiveness you can load AdvancedUI on larger screens and Basic UI on smaller screens.
+However, to get both usability and responsiveness you can load AdvancedUI on larger screens and BasicUI on smaller screens.
 
 
 Both UIs are built with [React](https://reactjs.org) and [Styled Components](https://styled-components.com/)

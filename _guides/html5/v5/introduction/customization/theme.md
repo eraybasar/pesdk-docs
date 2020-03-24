@@ -25,8 +25,8 @@ published: true # Either published or not
 {% assign images = "" | split: "" | push: theme_dark | push: theme_light %}
 {% include image_carousel.html images=images %}
 
-Our PhotoEditorSDK UI comes with two themes `light` and `dark`. Defaults to `dark` . The color palette consists of 10 default colors out of the box, from which a theme is created for the UI.
-To make the integration of PhotoEditorSDK in your app seamless, the theme customizations can be done on three levels.
+Our PhotoEditor SDK UI comes with two themes `light` and `dark`. Defaults to `dark` . The color palette consists of 10 default colors out of the box, from which a theme is created for the UI.
+To make the integration of PhotoEditor SDK in your app seamless, the theme customizations can be done on three levels.
 
 ## Colors
 You could just change the `primary` to get the primary color overall as accent color in the UI. 
@@ -146,7 +146,7 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     hoverBackground: 'rgba(255, 255, 255, 0.08)',
     activeBorderColor: '#365AFC',
     activeBackground: 'rgba(89, 121, 252, 0.20)',
-    /** card in PhotoEditorSDK always has a label */
+    /** card in PhotoEditor SDK always has a label */
     labelBackground: 'linear-gradient(transparent, rgba(0, 0, 0, 0.6))',
     labelForeground: 'rgba(255, 255, 255, 0.90)',
     disabledBackground: 'rgba(0, 0, 0, 0.3)',
@@ -196,7 +196,7 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     controls: '#FFFFFF',
     cropBackdrop: 'rgba(0, 0, 0, 0.5)',
   },
-  /** relevant only for Basic UI **/
+  /** Relevant only for BasicUI **/
   tab: {
     titleForeground: 'rgba(255, 255, 255, 0.60)',
     activeBorderColor: '#365AFC',
@@ -254,7 +254,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Shape
 
-Border radius is one of the important part of any design system. To make the PhotoEditorSDKUI shape similar to your design system, you can configure `shape` object in theme.
+Border radius is one of the important part of any design system. To make the PhotoEditor SDK UI shape similar to your design system, you can configure `shape` object in theme.
 
 ```js
 const editor = new PhotoEditorSDKUI({

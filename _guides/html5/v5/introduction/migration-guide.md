@@ -16,7 +16,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-This is a reference for upgrading your site from PhotoEditorSDK v4 to v5. While there's a lot covered here, you probably won't need to do everything for your site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v5!
+This is a reference for upgrading your site from PhotoEditor SDK v4 to v5. While there's a lot covered here, you probably won't need to do everything for your site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v5!
 
 ## Update dependencies
 
@@ -31,7 +31,7 @@ You need to update your `package.json` file in order to use the latest version o
 }
 ```
 
-Update the React Version, It was was increased from `react@^15.0.0` to `react@^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
+Update the React nad React DOM Version, It was was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
 
 ## Handling breaking changes
 ### Updating imports
@@ -66,7 +66,7 @@ if you are directly rendering the React component
 + <PhotoEditorSDKUIComponent {...this.config} />
 ```
 
-Although the mapper maps your old configuration to the new one, we highly recommend you to go and check the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) documentation. There's a whole lot of new configurations and customizations are available.
+Although the mapper maps your old configuration to the new one, we highly recommend you to go and check the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) documentation. There are now a lot of new configurations and customizations available.
 
 ### Handling events
 
@@ -81,7 +81,7 @@ Renaming UI events. Some of the previously supported events are now deprecated. 
 })
 ```
 
-if you are directly rendering the React component, handling of the event is done the same way.
+If you are directly rendering the React component, handling of the event is done the same way.
 
 ```js
 public componentDidMount() {

@@ -34,7 +34,7 @@ const editor = new PhotoEditorSDKUI({
   * `language` String - The UI language. Defaults to `en`. Available are `en` and `de`.
   * `order` - String - Should the `toolControlBar` be rendered on right, relevant only for AdvancedUI. Defaults to `default`. Available are `default` and `reverse`.
   * `theme` String - Defines the theme that should be used to style the user interface. Defaults to `dark`. Available are `dark` and `light`.
-  * `image` data-url or ImageElement - The image that should be loaded and displayed initially.
+  * `image` `data-url` or ImageElement - The image that should be loaded and displayed initially.
   
   * `assetBaseUrl` String - The base URL for all assets. Should be the absolute path to your `assets` directory. Defaults to `assets`.
 
@@ -75,9 +75,9 @@ const editor = new PhotoEditorSDKUI({
   * `export` Object - Export configuration.
     * `image` Object - Image export configuration.
       * `format` String - The MIME type of the exported image. Defaults to `image/png`. Available formats vary by browser.
-      * `exportType` PhotoEditorSDK.RenderType - Specifies the export type (image or data url)
+      * `exportType` `image` or `data-url` - Specifies the export type.
       * `quality` Number - The compression quality to use when creating the output image with a lossy file format, Defaults to 0.9
-      * `enableDownload` Boolean - Should a export download the image?. Defaults to `true`
+      * `enableDownload` Boolean - Should a export download the image in the specified format?. Defaults to `true`
 
   * `library` Object - Configuration options for library tool. Refer to the [library]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/library) documentation more options.
   * `filter` Object - Configuration options for filter tool. Refer to the [filter]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/filters) documentation for available categories and their items.
