@@ -28,6 +28,7 @@ We drew inspirations from the surrounding tools we love. Like [Visual Studio Cod
 * `Toolbar`: This is the main navigation element of the UI and allows you to select the different tools of the SDK.
 * `Tool control bar`: The control bar contains all related controls for editing the selected tool.
 * `Canvas`: The canvas displays the edited image.
+* `Main canvas action bar`: Main canvas actions listed on top.
 
 ![Sections]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/convention/advancedui-sections.png){: .center-image style="margin: 20px;" }
 ![Sections]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/convention/basicui-sections.png){: .center-image style="margin: 20px;" }

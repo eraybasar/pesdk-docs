@@ -158,8 +158,8 @@ Please follow the instructions on how to properly configure CORS <a href="{{site
 ## Ready to go!
 This is all that is necessary to get PhotoEditor SDK up and running. Now all you have to do is launch a webserver.
 
-- run `npx parcel index.html`
-- now open `http://localhost:1234/` in your browser
+- Run `npx parcel index.html`.
+- Now open `http://localhost:1234/` in your browser.
 
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-03{% endcapture %}

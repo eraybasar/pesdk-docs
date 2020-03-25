@@ -17,7 +17,7 @@ status: draft
 ---
 
 
-Wether you just want to learn to use PhotoEditor SDK or just see what can be build with it, we are providing some example integrations.
+Whether you just want to learn to use PhotoEditor SDK or just see what can be build with it, we are providing some example integrations.
 
 ## Support for Demos
 
@@ -31,8 +31,8 @@ Checkout our GitHub Repositories [here](https://github.com/imgly/) for up to dat
 All example intergrations repositories are tagged with the suffix `-demo`. In general these examples are a good starting place to:
 
  * Quickly test out our SDK without the need to write code
- * Tinker with the code to understand how it works and
- * Starting templates for specific web frameworks.
+ * Tinker with the code to understand how it works
+ * And starting templates for specific web frameworks
 
 
  Currently, we are providing example integrations for:
@@ -41,4 +41,4 @@ All example intergrations repositories are tagged with the suffix `-demo`. In ge
   * [Angular](https://github.com/imgly/pesdk-angular-demo)
   * [Vue](https://github.com/imgly/pesdk-wrapper-vuejs)
 
-We are also providing a codesandbox demo for react, visit the [codesandbox](https://codesandbox.io/s/lively-wind-e24p5) to play around with PhotoEditor SDK without going through all the installation process
+We are also providing a codesandbox demo for react, visit the [codesandbox](https://codesandbox.io/s/lively-wind-e24p5) to play around with PhotoEditor SDK without going through all the installation process.

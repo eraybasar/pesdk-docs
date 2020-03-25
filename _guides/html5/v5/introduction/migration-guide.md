@@ -18,7 +18,7 @@ published: true # Either published or not
 
 This is a reference for upgrading your site from PhotoEditor SDK v4 to v5. While there's a lot covered here, you probably won't need to do everything for your site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v5!
 
-We will be supporting two UIs as before but we are now moving away from the terminology DesktopUI and React UI, instead now they are called AdvancedUI and BasicUI. Refer to the [UIs]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/ui) documentation for more information.
+We will be supporting two UIs as before, but we are now moving away from the terminology DesktopUI and React UI, instead now they are called AdvancedUI and BasicUI. Refer to the [UIs]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/ui) documentation for more information.
 
 ## Update dependencies
 
@@ -63,7 +63,7 @@ If you are directly rendering a React component
 
 While we tried to minimize the number of breaking changes and make it backward compatible as much as possible, we believe that some breaking changes in the configuration were required.
 
-However, to make the migration easier we have written some mapper scripts, input your v4 configuration or localization here and get the configuration or localization for v5 automatically generated.
+However, to make the migration easier we have written some mapper scripts, input your v4 configuration here and get the configuration or localization for v5 automatically generated.
 
 You can use our converter [here]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/converter/config).
 
@@ -94,15 +94,14 @@ Renaming UI events. Some of the previously supported events are now deprecated. 
 
 ```
 
-If you are directly rendering the React component, handling of the event is done in the same way.
+If you are directly rendering the React component, handling of the event is done in the similar way.
 
 ```diff
 +  import { UIEvent } from 'photoeditorsdk'
 
 public componentDidMount() {
--  const ui = this.pesdk.current.ui
+  const ui = this.pesdk.current.ui
 -  ui.on(PhotoEditorUI.Events.EDITOR_READY, () => {
-+  const ui = this.pesdk.current
 +  ui.on(UIEvent.EDITOR_READY, () => {
 
 }

@@ -17,9 +17,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-Changing icons is a subset of component customization.
-
-You can use following strategies to change the icons in PhotoEditor SDK.
+Changing icons is a subset of component customization. You can use following strategies to change the icons in PhotoEditor SDK.
 
 ## Toolbar Item Icons
 
@@ -121,13 +119,17 @@ const editor = new PhotoEditorSDKUI({
 ```
 
 Here's a list of all the customizable buttons:
-* `canvasUndo`
-* `canvasRedo`
-* `canvasExport`
-* `canvasClose`
+* `mainCanvasActionUndo`
+* `mainCanvasActionRedo`
+* `mainCanvasActionExport`
+* `mainCanvasActionClose`
 * `canvasActionEdit`
 * `canvasActionBringToFront`
 * `canvasActionDuplicate`
 * `canvasActionDelete`
 * `canvasActionInvert`
 * `canvasActionFlip`
+* `transformActionFlipHorizontal`
+* `transformActionFlipVertical`
+* `transformActionRotateClockwise`
+* `transformActionRotateAntiClockwise`
