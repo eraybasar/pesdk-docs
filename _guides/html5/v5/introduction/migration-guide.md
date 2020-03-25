@@ -18,6 +18,8 @@ published: true # Either published or not
 
 This is a reference for upgrading your site from PhotoEditor SDK v4 to v5. While there's a lot covered here, you probably won't need to do everything for your site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v5!
 
+We will be supporting two UIs as before but we are now moving away from the terminology DesktopUI and React UI, instead now they are called AdvancedUI and BasicUI. Refer to the [UIs]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/ui) documentation for more information.
+
 ## Update dependencies
 
 You need to update your `package.json` file in order to use the latest version of `phototeditorsdk`.
@@ -29,7 +31,7 @@ You need to update your `package.json` file in order to use the latest version o
   }
 ```
 
-Update the React nad React DOM Version, It was was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
+Update the React and React DOM Version, It was was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
 
 
 ```diff
@@ -84,23 +86,25 @@ Although the mapper maps your old configuration to the new one, we highly recomm
 
 Renaming UI events. Some of the previously supported events are now deprecated. Refer to the [events]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/concepts/events) documentation for more information.
 
-```js
-+ import { UIEvent } from 'photoeditorsdk'
+```diff
++  import { UIEvent } from 'photoeditorsdk'
 
-- editor.on(PhotoEditorUI.Events.EDITOR_READY, () => {
-+ editor.on(UIEvent.EDITOR_READY, () => {
+-  editor.on(PhotoEditorUI.Events.EDITOR_READY, () => {
++  editor.on(UIEvent.EDITOR_READY, () => {
 
-})
 ```
 
-If you are directly rendering the React component, handling of the event is done the same way.
+If you are directly rendering the React component, handling of the event is done in the same way.
 
-```js
+```diff
++  import { UIEvent } from 'photoeditorsdk'
+
 public componentDidMount() {
-  const ui = this.pesdk.current.ui
-  ui.on(PhotoEditorUI.Events.EDITOR_READY, () => {
+-  const ui = this.pesdk.current.ui
+-  ui.on(PhotoEditorUI.Events.EDITOR_READY, () => {
++  const ui = this.pesdk.current
++  ui.on(UIEvent.EDITOR_READY, () => {
 
-  })
 }
 ```
 
