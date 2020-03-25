@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title Config Converter - DesktopUI
+title: &title Config Converter
 description: Convert the old config to the new config
 
 platform: html5

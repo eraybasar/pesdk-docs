@@ -53,6 +53,8 @@ if you are directly rendering the react component
 
 You can use our [Converter]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/converter/config).
 
+You can use our [Language Converter]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/converter/language).
+
 While we tried to minimize the number of breaking changes and make it backward compatible as much as possible, we believe that some breaking changes in the configuration were required. However, to make the migration easier we have written some mapper scripts, input your configuration or localization here and get the configuration or localization for v5.
 
 ```js
