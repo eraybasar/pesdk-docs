@@ -23,16 +23,24 @@ This is a reference for upgrading your site from PhotoEditor SDK v4 to v5. While
 You need to update your `package.json` file in order to use the latest version of `phototeditorsdk`.
 
 ```diff
-{
   "dependencies": {
 -    "photoeditorsdk": "^4.20.0"
 +    "photoeditorsdk": "~5.0.0"
   }
-}
 ```
 
 Update the React nad React DOM Version, It was was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
 
+
+```diff
+  "dependencies": {
+-    "react": "^15.0.0"
+-    "react-dom": "^15.0.0"
++    "react": "^16.3.0"
++    "react-dom": "^16.3.0"
++    "styled-components": "^4.4.0"
+  }
+```
 ## Handling breaking changes
 ### Updating imports
 ```diff
@@ -42,7 +50,7 @@ Update the React nad React DOM Version, It was was increased from `^15.0.0` to `
 
 ```
 
-if you are directly rendering the React component
+If you are directly rendering a React component
 ```diff
 - import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
 + import { PhotoEditorSDKUIComponent } from 'photoeditorsdk'
@@ -51,7 +59,11 @@ if you are directly rendering the React component
 
 ### Updating configuration
 
-While we tried to minimize the number of breaking changes and make it backward compatible as much as possible, we believe that some breaking changes in the configuration were required. However, to make the migration easier we have written some mapper scripts, input your v4 configuration or localization here and get the configuration or localization for v5 automatically generated.
+While we tried to minimize the number of breaking changes and make it backward compatible as much as possible, we believe that some breaking changes in the configuration were required.
+
+However, to make the migration easier we have written some mapper scripts, input your v4 configuration or localization here and get the configuration or localization for v5 automatically generated.
+
+You can use our converter [here]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/converter/config).
 
 ```diff
 - const editor = new PhotoEditorUI(config)
@@ -62,8 +74,8 @@ While we tried to minimize the number of breaking changes and make it backward c
 if you are directly rendering the React component
 
 ```diff
-- <PhotoEditorUI.ReactComponent {...this.config} />
-+ <PhotoEditorSDKUIComponent {...this.config} />
+- <PhotoEditorUI.ReactComponent {...config} />
++ <PhotoEditorSDKUIComponent {...config} />
 ```
 
 Although the mapper maps your old configuration to the new one, we highly recommend you to go and check the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) documentation. There are now a lot of new configurations and customizations available.
