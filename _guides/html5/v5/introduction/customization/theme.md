@@ -219,18 +219,18 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
 
 ## Typography
 
-you can customize the font that you load for the PhotoEditorSDK.
+you can customize the font that you load for the PhotoEditor SDK for any theme.
 
 ```js
 const editor = new PhotoEditorSDKUI({
-  theme: 'light', 
+  theme: 'dark', 
   custom: {
     themes: {
-      light: {
+      dark: {
         typography: {
-          fontURI: '../' // font path reltive to font assets
-          fontFamily: '',
-          format: 'ttf',
+          fontURI: './fonts/imgly_font_aleo_bold.woff', // font path relative to font assets
+          fontFamily: 'Aleo',
+          format: 'woff',
           provider: 'file',
           // Most users load font while initialising their app,
           // In that case, you can choose to skip loading it again
