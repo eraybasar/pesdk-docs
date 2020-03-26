@@ -19,7 +19,7 @@ published: true # Either published or not
 
 You can easily configure the editor to disable specific tools, hide buttons, change components etc. by adding a configuration object to the `PhotoEditorSDKUI`.
 
-Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
+Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/concepts/nomenclature) to understand the naming convention.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -79,20 +79,20 @@ const editor = new PhotoEditorSDKUI({
       * `quality` Number - The compression quality to use when creating the output image with a lossy file format, Defaults to 0.9
       * `enableDownload` Boolean - Should a export download the image in the specified format?. Defaults to `true`
 
-  * `library` Object - Configuration options for library tool. Refer to the [library]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/library) documentation more options.
-  * `filter` Object - Configuration options for filter tool. Refer to the [filter]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/filters) documentation for available categories and their items.
-  * `focus` Object - Configuration options for focus tool. Refer to the [focus]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/focus) documentation for available items.
-  * `adjustment` Object - Configuration options for adjustment tool. Refer to the [adjustment]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/adjustment) documentation for available categories and their items.
-  * `overlay` Object - Configuration options for overlay tool. Refer to the [overlay]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/overlays) documentation for available items.
-  * `frame` Object - Configuration options for frame tool. Refer to the [frame]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/frames) documentation for available items.
-  * `sticker` Object - Configuration options for sticker tool. Refer to the [sticker]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/stickers) documentation for available categories and their items.
-  * `text` Object - Configuration options for text tool. Refer to the [text]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/text) documentation for available items.
-  * `textdesign` Object - Configuration options for textdesign tool. Refer to the [textdesign]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/textdesign) documentation for available items.
-  * `transform` Object - Configuration options for transform tool. Refer to the [transform]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/features/transform) documentation for available categories and their items.
+  * `library` Object - Configuration options for library tool. Refer to the [library]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/library) documentation more options.
+  * `filter` Object - Configuration options for filter tool. Refer to the [filter]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/filters) documentation for available categories and their items.
+  * `focus` Object - Configuration options for focus tool. Refer to the [focus]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/focus) documentation for available items.
+  * `adjustment` Object - Configuration options for adjustment tool. Refer to the [adjustment]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/adjustment) documentation for available categories and their items.
+  * `overlay` Object - Configuration options for overlay tool. Refer to the [overlay]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/overlays) documentation for available items.
+  * `frame` Object - Configuration options for frame tool. Refer to the [frame]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/frames) documentation for available items.
+  * `sticker` Object - Configuration options for sticker tool. Refer to the [sticker]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/stickers) documentation for available categories and their items.
+  * `text` Object - Configuration options for text tool. Refer to the [text]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/text) documentation for available items.
+  * `textdesign` Object - Configuration options for textdesign tool. Refer to the [textdesign]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/textdesign) documentation for available items.
+  * `transform` Object - Configuration options for transform tool. Refer to the [transform]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/features/transform) documentation for available categories and their items.
 
   * `custom` Object - Customization options.
-    * `languages` Object - Language labeling options to change the user interface appearance. This allows to alter predefined existing theme presets or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [localization documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/localization) for more customizations.
-    * `theme` Object - Theming options to change the user interface appearance. This allows to alter predefined existing theme presents or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [theme documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/theme) for more customizations.
+    * `languages` Object - Language labeling options to change the user interface appearance. This allows to alter predefined existing theme presets or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [localization documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/customization/localization) for more customizations.
+    * `theme` Object - Theming options to change the user interface appearance. This allows to alter predefined existing theme presents or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [theme documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/customization/theme) for more customizations.
     * `components` Object - Custom react components that will be rendered instead of current components. Refer to the [component customizations]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/component) for more information.
 
 

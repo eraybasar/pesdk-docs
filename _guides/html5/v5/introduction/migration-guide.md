@@ -65,7 +65,7 @@ While we tried to minimize the number of breaking changes and make it backward c
 
 However, to make the migration easier we have written some mapper scripts, input your v4 configuration here and get the configuration or localization for v5 automatically generated.
 
-You can use our converter [here]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/converter/config).
+You can use our converter [here]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/converter/config).
 
 ```diff
 - const editor = new PhotoEditorUI(config)
@@ -84,7 +84,7 @@ Although the mapper maps your old configuration to the new one, we highly recomm
 
 ### Handling events
 
-Renaming UI events. Some of the previously supported events are now deprecated. Refer to the [events]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/concepts/events) documentation for more information.
+Renaming UI events. Some of the previously supported events are now deprecated. Refer to the [events]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/events) documentation for more information.
 
 ```diff
 +  import { UIEvent } from 'photoeditorsdk'

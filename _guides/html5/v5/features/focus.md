@@ -54,7 +54,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in focus tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization). Here are the default focus localization labels.
+You can override all the labels used in focus tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization). Here are the default focus localization labels.
 
 ```js
 new PhotoEditorSDKUI({
