@@ -51,9 +51,9 @@ Enter the DesktopUI or ReactUI config in the input box and the converter will pr
 
 <div class="documentation__disclaimer">
 <h4 id="cors">Warning</h4> 
-  Please check the structure of your old configuration and the correctness of the generated configuration.<br/> 
-  If anything is wrong, please contact the support<br/>
-  Please make sure you are using a modern browser.
+  1. Please check the structure of your old configuration and the correctness of the generated configuration.<br/> 
+  2. If anything is wrong, please contact the support.<br/>
+  3. Please make sure you are using a modern browser.
 </div>
 
 <script> window.onload = () => convertConfig(document.getElementById('configarea')) </script>
