@@ -80,7 +80,7 @@ The package contains three folders that you need to integrate to your project.
 - Create a `dist` folder.
 - Copy the `assets` from `node_modules/photoeditorsdk` to `dist`.
 
-##### Adding a container for PhotoEditorSDK
+##### Adding a container for PhotoEditor SDK
 
 - Create a `index.html` in the root of the project.
 ```html
