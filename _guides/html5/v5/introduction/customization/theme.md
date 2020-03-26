@@ -94,7 +94,7 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     listShadow: `0 12px 17px 2px rgba(0,0,0,0.14),
       0 5px 22px 4px rgba(0,0,0,0.12),
       0 7px 8px -4px rgba(0,0,0,0.20)`,
-    controls: '#FFFFFF',
+    controlsColor: '#FFFFFF',
   },
   dropdown: {
     background: 'transparent',
@@ -123,77 +123,88 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
   /** Button colors in different states and variations */
   button: {
     borderColor: '#333333',
-    hoverBackground: 'rgba(255, 255, 255, 0.08)',
-    hoverForeground: 'rgba(255, 255, 255, 0.60)',
     activeForeground: '#365AFC',
     activeBackground: 'rgba(89, 121, 252, 0.20)',
     primaryBackground: '#242424',
     primaryForeground: 'rgba(255, 255, 255, 0.90)',
     secondaryBackground: 'transparent',
     secondaryForeground: 'rgba(255, 255, 255, 0.60)',
+    hoverOverlayColor: 'rgba(255, 255, 255, 0.08)',
+    inactiveOverlayColor: 'rgba(0, 0, 0, 0.3)'
   },
   checkbox: {
     background: '#333333',
     foreground: '#FFFFFF',
-    hoverBackground: 'rgba(255, 255, 255, 0.08)',
     activeForeground: '#FFFFFF',
     activeBackground: '#365AFC',
+    inactiveOpacity: '0.3',
+    hoverOpacity: '0.8'
   },
   card: {
     background: '#333333',
     foreground: 'rgba(255, 255, 255, 0.90)',
     borderColor: 'transparent',
-    hoverBackground: 'rgba(255, 255, 255, 0.08)',
     activeBorderColor: '#365AFC',
-    activeBackground: 'rgba(89, 121, 252, 0.20)',
+    activeOverlayColor: 'rgba(89, 121, 252, 0.20)',
     /** card in PhotoEditor SDK always has a label */
     labelBackground: 'linear-gradient(transparent, rgba(0, 0, 0, 0.6))',
     labelForeground: 'rgba(255, 255, 255, 0.90)',
-    disabledBackground: 'rgba(0, 0, 0, 0.3)',
+    inactiveOverlayColor: 'rgba(0, 0, 0, 0.3)',
+    hoverOverlayColor: 'rgba(255, 255, 255, 0.08)'
   },
   textInput: {
     foreground: 'rgba(255, 255, 255, 0.90)',
-    hoverColor: 'rgba(255, 255, 255, 0.40)',
+    hoverBorderColor: 'rgba(255, 255, 255, 0.40)',
     background: 'transparent',
     borderColor: '#333333',
+    inactiveOpacity: '0.3',
   },
   slider: {
     trackColor: 'rgba(255, 255, 255, 0.4)',
     activeTrackColor: '#365AFC',
     thumbBackground: '#171717',
     thumbBorderColor: '#365AFC',
+    inactiveOpacity: '0.3',
+    hoverOpacity: '0.7',
+  },
+  selectColor: {
+    activeBorderColor: '#365AFC',
+    inactiveOpacity: '0.3',
   },
   /** App sections */
   toolbar: {
     foreground: 'rgba(255, 255, 255, 0.90)',
     background: '#242424',
-    activeBackground: 'rgba(89, 121, 252, 0.20)',
+    activeBackground: 'transparent',
     activeForeground: '#365AFC',
     borderColor: 'transparent',
   },
   toolControlBar: {
-    // opaque '#171717' color with 90% opacity
     background: 'rgba(23, 23, 23, 0.9)',
+    /* Border between toolbar and toolControlBar */
     borderColor: 'transparent',
-    separator: '#333333',
+    separatorColor: '#333333',
     titleForeground: 'rgba(255, 255, 255, 0.60)',
-    labelForeground: 'rgba(255, 255, 255, 0.60)',
+    inputLabelForeground: 'rgba(255, 255, 255, 0.60)',
+    inputLabelInactiveOpacity: '0.3',
   },
   mainCanvasActionBar: {
     background: 'linear-gradient(0deg, transparent 0%,  rgba(0, 0, 0, 0.6) 98%)',
     foreground: 'rgba(255, 255, 255, 0.90)',
     buttonForeground: 'rgba(255, 255, 255, 0.60)',
     buttonBackground: 'transparent',
+    /** border between mancanvsActionBar and canvas container */
+    borderColor: 'transparent',
   },
   canvasActionBar: {
     background: '#424242',
     foreground: 'rgba(255, 255, 255, 0.90)',
-    separator: 'rgba(255, 255, 255, 0.38)',
+    separatorColor: 'rgba(255, 255, 255, 0.38)',
   },
   canvas: {
     background: '#0B0B0B',
     controlsOutline: 'rgba(255, 255, 255, 0.5)',
-    controls: '#FFFFFF',
+    controlsColor: '#FFFFFF',
     cropBackdrop: 'rgba(0, 0, 0, 0.5)',
   },
   /** Relevant only for BasicUI **/
