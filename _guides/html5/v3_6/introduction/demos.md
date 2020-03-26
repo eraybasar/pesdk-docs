@@ -21,7 +21,7 @@ Wether you just want to learn to use the PhotoEditor SDK or just see what can be
 
 ## Example Integrations
 
-Checkout our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and Native SDKs. 
+Checkout our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and native SDKs. 
 All example intergrations repositories are tagged with the suffix `-demo`. In general these examples are a good starting place to:
 
  * Quickly test out our SDK without the need to write code
