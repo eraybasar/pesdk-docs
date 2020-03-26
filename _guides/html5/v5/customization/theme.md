@@ -63,7 +63,7 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
-Here is the list of all colors you can customize. Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
+Here is the list of all colors you can customize. Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/concepts/nomenclature) to understand the naming convention.
 
 ```js
 {

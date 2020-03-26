@@ -17,9 +17,9 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-This is the most exciting feature for the major release. Not only you can customize the [colors and fonts]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/theme), you could simply provide a React Component and it will be rendered instead of PhotoEditoSDK default Component.
+This is the most exciting feature for the major release. Not only you can customize the [colors and fonts]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/customization/theme), you could simply provide a React Component and it will be rendered instead of PhotoEditoSDK default Component.
 
-the following are the customizable components. Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/concepts/nomenclature) to understand the naming convention.
+the following are the customizable components. Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/concepts/nomenclature) to understand the naming convention.
 
 ## Category Card
 This will replace the category cards in the `toolControlBar`. Available only in `AdvancedUI`

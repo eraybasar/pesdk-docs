@@ -98,7 +98,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Localization
 
-You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default adjustment localization lables
+You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization), below are the default adjustment localization lables
 
 ```js
 new PhotoEditorSDKUI({
