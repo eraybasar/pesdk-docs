@@ -15,7 +15,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-{% assign faqPages = site.guides | where: "version", "v5" | where: "faq", true | where: "platform", "html5" | sort: "order" %}
+{% assign faqPages = site.guides | where: "version", "v5_rc_3" | where: "faq", true | where: "platform", "html5" | sort: "order" %}
 
 {% assign general = faqPages | where: "faq-category", "general" %}
 {% assign errors = faqPages | where: "faq-category", "errors" %}
