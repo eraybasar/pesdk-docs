@@ -22,4 +22,4 @@ To download your license file, log into your [dashboard](https://account.photoed
 <h4>How do I get a license file?</h4>
 There are two options to obtain a fully-featured license file for PhotoEditor SDK:
 1. You can start a 30-days free trial with just a few clicks <a href="https://account.photoeditorsdk.com/signup/">here</a>. Please note that PhotoEditor SDK will stop working after the license has expired.
-2. You can reach out to our Sales Team and purchase a license. To contact our Sales Team click <a href="https://photoeditorsdk.com/pricing/">here</a>.
+2. You can reach out to our Sales Team and purchase a license. To contact our Sales Team click <a href="https://account.photoeditorsdk.com/pricing/">here</a>.
