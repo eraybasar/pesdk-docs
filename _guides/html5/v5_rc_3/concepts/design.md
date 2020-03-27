@@ -33,6 +33,7 @@ The new color system can now be displayed as a dark or light theme. In addition,
 
 ## UI controls structure
 In the course of refactoring, we have standardized the UI structure and arrangement of the individual features. UI controls are now displayed according to their context to generate a minimalistic and clearer overall picture.
+![UI controls structure]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/design/ui-controls-structure.png){: .center-image style="padding: 20px; max-height: 400px;" }
 
 ## Clarity before brevity
 It was also very important for us to map all UI elements within the PhotoEditor SDK as clear and understandable as possible in order to create a user-friendly UI that can be used intuitively and easily by end-users. We have therefore decided to replace abstract and misinterpreted icons with labels, and to add labels to other functions to make them easier to understand.
