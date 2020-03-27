@@ -18,7 +18,7 @@ published: true # Either published or not
 
 This is a reference for upgrading your site from PhotoEditor SDK v4 to v5. While there's a lot covered here, you probably won't need to do everything for your site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v5!
 
-We will be supporting two UIs as before, but we are now moving away from the terminology DesktopUI and React UI, instead now they are called AdvancedUI and BasicUI. Refer to the [UIs]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/ui) documentation for more information.
+We will be supporting two UIs as before, but we are now moving away from the terminology DesktopUI and ReactUI, instead now they are called AdvancedUI and BasicUI. Refer to the [UIs]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/ui) documentation for more information.
 
 ## Update dependencies
 
@@ -31,7 +31,7 @@ You need to update your `package.json` file in order to use the latest version o
   }
 ```
 
-Update the React and React DOM Version, It was was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
+Update the React and React DOM Version. It was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
 
 
 ```diff
@@ -53,6 +53,7 @@ Update the React and React DOM Version, It was was increased from `^15.0.0` to `
 ```
 
 If you are directly rendering a React component
+
 ```diff
 - import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
 + import { PhotoEditorSDKUIComponent } from 'photoeditorsdk'
@@ -73,7 +74,7 @@ You can use our converter [here]({{ site.baseurl }}/guides/{{page.platform}}/{{p
 
 ```
 
-if you are directly rendering the React component
+If you are directly rendering the React component
 
 ```diff
 - <PhotoEditorUI.ReactComponent {...config} />
