@@ -22,7 +22,7 @@ You can easily configure the editor to disable specific tools, hide buttons, cha
 Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/concepts/nomenclature) to understand the naming convention.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
     license: '<your_license_key>',
     layout: 'advanced',
     container: '#editor',

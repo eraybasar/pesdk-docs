@@ -22,7 +22,7 @@ International web applications have international users. That's why our editor s
 We have localization available already in English (EN) and German (DE) and you can easily switch languages by adding the `language` String (Defaults to `en`) property to the configuration object passed to the UI.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   language: 'en' // 'en' or 'de'
 })
 ```
@@ -33,7 +33,7 @@ You can change the text of a button or label by adding the component key with a 
 The language objects should have the same structure as our default languages. You'll find the English language object at the bottom of the page. 
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   language: 'en',
   custom: {
     languages: {
@@ -55,7 +55,7 @@ You can also use the localization feature to simply change the button text with 
 Changing the export button to say `Save` instead of `Export`:
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
  custom: {
     languages: {
       en: {
@@ -75,7 +75,7 @@ PhotoEditor SDK provides a configuration support for multiple language. You can 
 import nl from './nl'
 import es from './es'
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
  custom: {
    language: 'en', // change the language key here, based on which language has to be loaded
     languages: {

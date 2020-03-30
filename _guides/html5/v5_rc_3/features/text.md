@@ -39,7 +39,7 @@ A picture says more than a thousand words, however sometimes it still takes a fe
 In order to enable or disable specific fonts, simply pass the `fonts` option to the text tool configuration. The fonts will be displayed in the order mentioned by the configuration. Here is the list of default fonts.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   text: {
     fonts: [
       { identifier: "imgly_font_open_sans_bold" },
@@ -79,7 +79,7 @@ Due to the lack of support for font measurement and precise layouting, the SDK r
 You can simply add system fonts by specifying their font family, which you would also use in CSS, add the variation's `provider` option and set it to `file`. We recommend adding the web fonts as `woff` files, which have the widest browser support.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   text: {
     fonts: [
       ...,
@@ -109,7 +109,7 @@ const editor = new PhotoEditorSDKUI({
 The `fonts` option also allows you to add custom fonts from Google Fonts. To do this, add the variation's `provider` option and set it to `google`. This will cause the UI to pre-load the font from Google Fonts.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   text: {
     fonts: [
       ...,
@@ -132,7 +132,7 @@ const editor = new PhotoEditorSDKUI({
 You can override all the labels used in text tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization), below are the default text localization lables.
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   //...,
   custom: {
     languages: {

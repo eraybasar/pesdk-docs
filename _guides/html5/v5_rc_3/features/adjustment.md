@@ -39,7 +39,7 @@ Our Adjustment tool is our swiss army knife for image optimization. It offers es
 In order to enable or disable specific adjustments, simply pass the `categories` option to the adjustment tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default adjustment categories and items.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   adjustment: {
     categories: [
       {
@@ -75,7 +75,7 @@ const editor = new PhotoEditorSDKUI({
 If `flattenCategories` is set to true, all enabled adjustment will be shown in the top-level of the adjustment tool, which effectively hides the categories. Relevant only for AdvancedUI.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   adjustment: {
     flattenCategories: true
   }
@@ -87,7 +87,7 @@ const editor = new PhotoEditorSDKUI({
 If a existing category identifier is specified without any items, editor will include all the existing adjustment under `basics` category.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   adjustment: {
     categories: [{
       identifier: 'basics'
@@ -101,7 +101,7 @@ const editor = new PhotoEditorSDKUI({
 You can override all the labels used in adjustment tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization), below are the default adjustment localization lables
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   // ...,
   custom: {
     languages: {
