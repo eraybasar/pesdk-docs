@@ -101,7 +101,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Flattening of categories
 
-If `flattenCategories` is set to true, all enabled crop ratios will be shown in the top-level of the transform tool, which effectively hides the categories.
+If `flattenCategories` is set to true, all enabled crop ratios will be shown in the top-level of the transform tool, which effectively hides the categories.  Relevant only for AdvancedUI.
 
 ```js
 const editor = new PhotoEditorSDKUI({
