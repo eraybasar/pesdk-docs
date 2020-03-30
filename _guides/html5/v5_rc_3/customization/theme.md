@@ -244,6 +244,10 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     activeBorderColor: '#365AFC',
     activeForeground: 'rgba(255, 255, 255, 0.90)',
   },
+  snapping: {
+    positionGuideColor: 'red',
+    rotationGuideColor: '#0ff',
+  }
 }
 
 ```
