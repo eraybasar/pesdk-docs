@@ -52,15 +52,32 @@ const editor = new PhotoEditorSDKUI({
           { "identifier": "imgly_transform_common_square" },
           { "identifier": "imgly_transform_common_4" },
           { "identifier": "imgly_transform_common_16" },
+          { "identifier": "imgly_transform_common_3" },
+          { "identifier": "imgly_transform_common_9" },
         ]
       },
       {
         identifier: 'imgly_transforms_facebook',
         items: [
           { "identifier": "imgly_transform_facebook_profile" },
-          { "identifier": "imgly_transform_facebook_ad" },
+          { "identifier": "imgly_transform_facebook_title" },
           { "identifier": "imgly_transform_facebook_post" },
-          { "identifier": "imgly_transform_facebook_cover" }
+        ]
+      },
+      {
+        identifier: 'imgly_transforms_instagram',
+        items: [
+          { "identifier": "imgly_transform_instagram_story" },
+          { "identifier": "imgly_transform_instagram_landscape" },
+          { "identifier": "imgly_transform_instagram_portrait" },
+          { "identifier": "imgly_transform_instagram_square" },
+        ]
+      }, {
+        identifier: 'imgly_transforms_twitter',
+        items: [
+          { "identifier": "imgly_transform_twitter_profile" },
+          { "identifier": "imgly_transform_twitter_title" },
+          { "identifier": "imgly_transform_twitter_post" },
         ]
       }
     ],
@@ -191,16 +208,26 @@ new PhotoEditorSDKUI({
           categories: {
             imgly_transforms_common: 'Common Crops',
             imgly_transforms_facebook: 'Facebook',
+            imgly_transforms_twitter: 'Twitter',
+            imgly_transforms_instagram: 'Instagram',
           },
           items: {
             imgly_transform_common_custom: 'Custom',
             imgly_transform_common_square: 'Square',
             imgly_transform_common_4: '4:3',
             imgly_transform_common_16: '16:9',
-            imgly_transform_facebook_profile: 'Profile Pic',
-            imgly_transform_facebook_ad: 'Ad',
+            imgly_transform_common_3: '3:4',
+            imgly_transform_common_9: '9:16',
+            imgly_transform_facebook_profile: 'Profile',
+            imgly_transform_facebook_title: 'Titel',
             imgly_transform_facebook_post: 'Post',
-            imgly_transform_facebook_cover: 'Cover',
+            imgly_transform_instagram_story: 'Story',
+            imgly_transform_instagram_landscape: 'Landcape',
+            imgly_transform_instagram_portrait: 'Portrait',
+            imgly_transform_instagram_square: 'Square',
+            imgly_transform_twitter_profile: 'Profile',
+            imgly_transform_twitter_title: 'Title',
+            imgly_transform_twitter_post: 'Post',
           },
         }  
       }
