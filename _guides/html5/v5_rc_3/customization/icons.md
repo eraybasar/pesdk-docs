@@ -23,7 +23,7 @@ Changing icons is a subset of component customization. You can use following str
 
 The `ToolbarItem` customization provides you a way to replace the default component toolbar item component. Available only for AdvancedUI. 
 
-The React component Props `icon`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization. To use your icons you can discard the `icon` prop and replace it with your own icon.
+The React component will receive the following props: `icon`, `label`, `isActive`, `onClick`, `tool`. To use your icons you can discard the `icon` prop and replace it with your own icon.
 
 
 ```js
@@ -86,7 +86,7 @@ const editor = new PhotoEditorSDKUI({
 ## Buttons
 This will replace the listed buttons in PhotoEditor SDK UI. Available in both `AdvancedUI` and `BasicUI`.
 
-The React component Props `icon`, `label`, `isDisabled` and `onClick` has be handled for this customization. Since this is all part of a big theme you can use the `theme` props like you would use it in any themable Styled Components.
+The React component will receive the following props: `icon`, `label`, `isDisabled` and `onClick`. Since this is all part of a big theme you can use the `theme` props like you would use it in any themable Styled Components.
 you can choose to use, buttons as button and label, only button, only label, the possiblities are endless.
 
 ```js

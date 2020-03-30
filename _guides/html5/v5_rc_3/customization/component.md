@@ -24,7 +24,7 @@ the following are the customizable components. Refer to the [nomenclature]({{ si
 ## Category Card in AdvancedUI 
 This will replace the category cards in the `toolControlBar`.
 
-The React component Props `image`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization. Since these components are all part of a theme context you can use the `theme` props like you would use it in any themable `styled-components`.
+The React component will receive the following props: `image`, `label`, `isActive`, `tool` and `onClick`. Since these components are all part of a theme context you can use the `theme` props like you would use it in any themable `styled-components`.
 
 ```jsx
 const CardStyles = styled.button`
@@ -70,7 +70,7 @@ const editor = new PhotoEditorSDKUI({
 ## Item Card in AdvancedUI 
 This will replace the item cards in the `toolControlBar`. Available only in `AdvancedUI`.
 
-The React component Props `image`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization.
+The React component will receive the following props: `image`, `label`, `isActive`, `onClick`, `tool`.
 
 ```js
 const CardStyles = styled.button`
@@ -117,7 +117,7 @@ const editor = new PhotoEditorSDKUI({
 ## Toolbar Item in AdvancedUI
 This will replace the icons in the `toolbar`. Available only in `AdvancedUI`.
 
-The React component Props `icon`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization. You can choose to use the default icons or replace them with your own icons.
+The React component will receive the following props: `icon`, `label`, `isActive`, `onClick`, `tool`. You can choose to use the default icons or replace them with your own icons.
 
 ```js
 
@@ -167,7 +167,7 @@ const editor = new PhotoEditorSDKUI({
 ## Loader
 This will replace the initial loading screen. Available in both `AdvancedUI` and `BasicUI`.
 
-The React component Props `show` has be handled for this customization.
+The React component will receive the following props: `show`.
 
 ```js
 
