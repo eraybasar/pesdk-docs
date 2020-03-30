@@ -40,7 +40,7 @@ In order to enable or disable specific stickers, simply pass the `categories` op
 
 ```js
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   sticker: {
     categories: [
       {
@@ -142,7 +142,7 @@ const editor = new PhotoEditorSDKUI({
 If `flattenCategories` is set to true, all enabled stickers will be shown in the top-level of the sticker selection tool, which effectively hides the categories.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   sticker: {
     flattenCategories: true
   }
@@ -154,7 +154,7 @@ const editor = new PhotoEditorSDKUI({
 If a existing category identifier is specified without any items, the editor will include all the existing stickers items of the category as shown for the `imgly_sticker_category_emoticons` category in the following example.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   sticker: {
     categories: [{
       identifier: 'imgly_sticker_category_emoticons'
@@ -168,7 +168,7 @@ const editor = new PhotoEditorSDKUI({
 You can add new stickers to the existing categories, or create new categories using same configuration interface as above.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   sticker: {
     categories: [
       {
@@ -208,7 +208,7 @@ by quite a lot.
 If you don't want the custom sticker upload feature to be enabled, you can simply disable it by setting the `sticker.enableCustomUpload` controls option to `false`.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   sticker: {
     enableCustomUpload: false, // true is the default
     customStickerTintMode: 'colorized' // 'none' is the default
@@ -230,7 +230,7 @@ Here is an example of the different tint modes (from left to right: `none`, `sol
 ![TintModes]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/{{page.title | downcase}}/sticker-tint-modes.jpg){: .center-image style="padding: 20px; max-height: 400px;"}
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   sticker: {
     categories: [
       {
@@ -278,7 +278,7 @@ It is also possible to easily override this property for the default stickers th
 The following example does this for our square shape, which allows it to now be resized to any arbitrary rectangle:
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   sticker: {
     categories: [
       {
@@ -304,7 +304,7 @@ const editor = new PhotoEditorSDKUI({
 You can override all the labels used in sticker tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization), below are the default sticker localization lables
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   ...,
   custom: {
     languages: {

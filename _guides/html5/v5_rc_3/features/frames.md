@@ -36,7 +36,7 @@ Good frames might not save bad paintings, however they may very well complete an
 In order to enable or disable specific frames, simply pass the `items` option to the frame tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default frame items.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   frame: {
     items: [
       { identifier: "imgly_frame_dia" },
@@ -71,7 +71,7 @@ The left and right group consist of a stretched border texture, and a start and 
 The code to create such a frame and pass it to the editor looks like this:
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   frame: {
     items: [
       ...,
@@ -124,7 +124,7 @@ const editor = new PhotoEditorSDKUI({
 You can override all the labels used in frames tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization), below are the default frames localization lables
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   // ...,
   custom: {
     languages: {

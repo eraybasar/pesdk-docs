@@ -34,7 +34,7 @@ You could just change the `primary` to get the primary color overall as accent c
 Here the color values can be `web colors`, `hex`, `rgb()` or `rgba()` in string format.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   theme: 'light', 
   custom: {
     themes: {
@@ -49,7 +49,7 @@ const editor = new PhotoEditorSDKUI({
 Additionally, the both UIs allows you to easily and individually customize each one of these colors for each section on the UI that uses them.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   theme: 'light', 
   custom: {
     themes: {
@@ -257,7 +257,7 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
 you can customize the font that you load for the PhotoEditor SDK for any theme.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   theme: 'dark', 
   custom: {
     themes: {
@@ -280,7 +280,7 @@ const editor = new PhotoEditorSDKUI({
 Moreover, you can load font from `Google Fonts`.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   theme: 'light', 
   custom: {
     themes: {
@@ -303,7 +303,7 @@ const editor = new PhotoEditorSDKUI({
 Border radius is one of the important part of any design system. To make PhotoEditor SDK UI shape similar to your design system, you can configure `shape` object in theme.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   theme: 'dark', 
   custom: {
     themes: {

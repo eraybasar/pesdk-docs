@@ -70,7 +70,7 @@ You can use our converter [here]({{ site.baseurl }}/guides/{{page.platform}}/{{p
 
 ```diff
 - const editor = new PhotoEditorUI(config)
-+ const editor = new PhotoEditorSDKUI(config)
++ const editor = await PhotoEditorSDKUI.init(config)
 
 ```
 

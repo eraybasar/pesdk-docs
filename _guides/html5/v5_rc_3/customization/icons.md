@@ -73,7 +73,7 @@ const ToolbarItem = ({ label, isActive, onClick, tool }) => {
   )
 }
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   custom: {
     components: {
       advancedUIToolbarItem: ToolbarItem
@@ -115,7 +115,7 @@ const Redo = ({ isDisabled, onClick, icon, label }) => (
   </Button>
 )
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   custom: {
     components: {
       buttons: {

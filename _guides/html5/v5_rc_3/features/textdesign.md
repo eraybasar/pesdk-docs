@@ -40,7 +40,7 @@ This example shows the default text design tool configuration.
 In order to enable or disable specific text design layouts, simply pass the `items` option to the text design tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default text design items.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   textdesign: {
     items: [
       { identifier: "imgly_text_design_blocks" },
@@ -69,7 +69,7 @@ const editor = new PhotoEditorSDKUI({
 You can override all the labels used in text design tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization), below are the default text design localization lables.
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   //...,
   custom: {
     languages: {

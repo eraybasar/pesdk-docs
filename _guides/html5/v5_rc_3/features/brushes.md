@@ -44,7 +44,7 @@ Please note that the thickness is relative to the shortest edge of your image. I
 You can override all the labels used in brush tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization), below are the default brush localization lables
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   ...,
   custom: {
     languages: {

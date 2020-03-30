@@ -123,7 +123,7 @@ In order to make the UI use your provider, simply pass it as the `provider` opti
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   library: {
     provider: MyProvider,
   }
@@ -138,7 +138,7 @@ const editor = new PhotoEditorSDKUI({
 By default, your users are able to take photos using their webcam or upload their own photos using a file picker. In order to disable these features, simply set the `enableWebcam` or the `enableUpload` (which also includes the webcam) to `false`.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   library: {
     enableWebcam: false, // Disables the webcam
     enableUpload: false // Disables the upload
@@ -152,7 +152,7 @@ const editor = new PhotoEditorSDKUI({
 You can override all the labels used in library tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/customization/localization), below are the default library localization lables.
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   // ...,
   custom: {
     languages: {

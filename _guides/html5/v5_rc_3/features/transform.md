@@ -42,7 +42,7 @@ Our transform tool unifies cropping, resizing, flipping and rotation operations 
 In order to enable or disable specific crop ratios, simply pass the `categories` option to the transform tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default transform categories and ratios.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   transform: {
     categories: [
       {
@@ -90,7 +90,7 @@ const editor = new PhotoEditorSDKUI({
 If a existing category identifier is specified without any items, the editor will include all the existing crop ratios of the category as shown for the `imgly_transforms_common` category in the following example.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   transform: {
     categories: [{
       identifier: 'imgly_transforms_common',
@@ -104,7 +104,7 @@ const editor = new PhotoEditorSDKUI({
 If `flattenCategories` is set to true, all enabled crop ratios will be shown in the top-level of the transform tool, which effectively hides the categories.  Relevant only for AdvancedUI.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   transform: {
     flattenCategories: true
   }
@@ -116,7 +116,7 @@ const editor = new PhotoEditorSDKUI({
 The transform user interface can be configured with the following options:
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   transform: {
     enableRotation: false, // true by default
     enableFlip: false // true by default
@@ -133,7 +133,7 @@ const editor = new PhotoEditorSDKUI({
 You can add new crop ratios to the existing categories, or create new categories using same configuration interface.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   transform: {
     categories: [
       ...,
@@ -186,7 +186,7 @@ the resolution entirely.
 You can override all the labels used in transform tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration). Here are the default transform localization lables.
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   ...,
   custom: {
     languages: {

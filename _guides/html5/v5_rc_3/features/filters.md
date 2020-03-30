@@ -40,7 +40,7 @@ Filters determine the mood and atmosphere of pictures and help convey the right 
 In order to enable or disable specific filters, simply pass the `categories` option to the filter tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default filter categories and items.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   filter: {
     categories: [
       {
@@ -159,7 +159,7 @@ const editor = new PhotoEditorSDKUI({
 If `flattenCategories` is set to true, all enabled filters will be shown in the top-level of the filter selection tool, which effectively hides the categories.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   filter: {
     flattenCategories: true
   }
@@ -171,7 +171,7 @@ const editor = new PhotoEditorSDKUI({
 If a existing category identifier is specified without any items, the editor will include all the existing filter items of the category as shown for the `imgly_filter_category_duotone` category in the following example.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   filter: {
     categories: [{
       identifier: 'imgly_filter_category_duotone'
@@ -196,7 +196,7 @@ If you want to create a new filter, you'll need to [download]({{ site.baseurl }}
 You can add new filters to the existing categories, or create new categories using the same configuration interface as above.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   filter: {
     categories: [
       // ...,
@@ -235,7 +235,7 @@ You can override all the labels used in filter tool using the `custom.languages`
 
 ```js
 
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   ...,
   custom: {
     languages: {

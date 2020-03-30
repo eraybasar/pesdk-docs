@@ -38,7 +38,7 @@ Overlays are an easy, yet powerful way to create stunning effects. To put it sim
 In order to enable or disable specific overlay, simply pass the `items` option to the overlay tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default overlay items.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   overlay: {
     items: [
       { identifier: "imgly_overlay_golden" },
@@ -68,7 +68,7 @@ const editor = new PhotoEditorSDKUI({
 You can add new overlays to the existing list of items using same configuration interface as above
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   overlay: {
     items: [
       // ...,
@@ -94,7 +94,7 @@ Available blend modes are `normal`, `overlay`, `hardlight`, `softlight`, `multip
 You can override all the labels used in overlay tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration), below are the default overlay localization lables
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   // ...,
   custom: {
     languages: {

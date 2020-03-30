@@ -58,7 +58,7 @@ const CategoryCard = ({ image, label, isActive, onClick }) => {
   )
 }
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   custom: {
     components: {
       advancedUICategoryCard: CategoryCard
@@ -105,7 +105,7 @@ const ItemCard = ({ image, label, isActive, onClick }) => {
   )
 }
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   custom: {
     components: {
       advancedUIItemCard: ItemCard
@@ -155,7 +155,7 @@ const ToolbarItem = ({ icon, label, isActive, onClick }) => {
   )
 }
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   custom: {
     components: {
       advancedUIToolbarItem: ToolbarItem
@@ -199,7 +199,7 @@ const Loader = ({ show }) => {
   return <Backdrop className={show ? 'show' : ''}><LoaderStyles>Loading ...</LoaderStyles></Backdrop>
 }
 
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   custom: {
     components: {
       loader: Loader

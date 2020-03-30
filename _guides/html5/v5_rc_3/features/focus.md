@@ -39,7 +39,7 @@ The focus tool allows your users to add a radial or linear blur to their images 
 In order to enable or disable specific focus modes, simply pass the `items` option to the focus tool configuration. The items will be displayed in the order mentioned by the configuration. Here is the list of default focus modes.
 
 ```js
-const editor = new PhotoEditorSDKUI({
+const editor = await PhotoEditorSDKUI.init({
   ...,
   focus: {
     items: [
@@ -57,7 +57,7 @@ const editor = new PhotoEditorSDKUI({
 You can override all the labels used in focus tool using the `custom.languages` object in [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization). Here are the default focus localization labels.
 
 ```js
-new PhotoEditorSDKUI({
+await PhotoEditorSDKUI.init({
   // ...,
   custom: {
     languages: {
