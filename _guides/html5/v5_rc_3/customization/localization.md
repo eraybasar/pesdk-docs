@@ -19,7 +19,8 @@ published: true # Either published or not
 International web applications have international users. That's why our editor supports localization.
 
 ## Changing UI language
- We have localization available already in English (EN) and German (DE) and you can easily switch languages by adding the `language` String (Defaults to `en`).
+We have localization available already in English (EN) and German (DE) and you can easily switch languages by adding the `language` String (Defaults to `en`) property to the configuration object passed to the UI.
+
 ```js
 const editor = new PhotoEditorSDKUI({
   language: 'en' // 'en' or 'de'
@@ -28,7 +29,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Changing labels for existing languages
 
-To add custom labels to our UI, you can pass them using the `config.custom.languages` object.
+You can change the text of a button or label by adding the component key with a new text to the `config.custom.languages` object
 The language objects should have the same structure as our default languages. You'll find the English language object at the bottom of the page. 
 
 ```js
