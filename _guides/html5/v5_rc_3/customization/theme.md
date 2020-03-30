@@ -76,7 +76,6 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
   warning: '#FFBA5C',
   error: '#C2393A',
   success: '#39C26C',
-  focusOutlineColor: 'rgba(255, 255, 255, 0.12)',
   /** Portals */
   modal: {
     background: '#424242',
@@ -91,6 +90,12 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
   colorPicker: {
     inputBorderColor: '#424242',
     listBackground: '#333333',
+     /**
+    * According to material design
+    * shadows are applied for dark theme
+    * they don't really work well with light theme,
+    * so they are customizable based on your design choices
+    */
     listShadow: `0 12px 17px 2px rgba(0,0,0,0.14),
       0 5px 22px 4px rgba(0,0,0,0.12),
       0 7px 8px -4px rgba(0,0,0,0.20)`,
@@ -99,11 +104,10 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
   dropdown: {
     background: 'transparent',
     foreground: 'rgba(255, 255, 255, 0.90)',
-    hoverColor: 'rgba(255, 255, 255, 0.60)',
     borderColor: '#333333',
     caretColor: 'rgba(255, 255, 255, 0.38)',
     listBackground: '#333333',
-    listBorder: '#333333',
+    listBorderColor: '#333333',
     listForeground: 'rgba(255, 255, 255, 0.60)',
     /**
     * According to material design
@@ -114,6 +118,9 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     listShadow: `0 12px 17px 2px rgba(0,0,0,0.14),
       0 5px 22px 4px rgba(0,0,0,0.12),
       0 7px 8px -4px rgba(0,0,0,0.20)`,
+    hoverBorderColor: 'rgba(255, 255, 255, 0.60)',
+    listItemHoverBackground: '#424242',
+    inactiveOpacity: '0.3',
   },
   /** Components */
   /** Scrollbar handle color, track color is transparent */
@@ -121,16 +128,33 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     handleColor: 'rgba(255, 255, 255, 0.2)',
   },
   /** Button colors in different states and variations */
+  /** Concept of button nomenclature comes from material design https://material.io/components/buttons/ */
   button: {
-    borderColor: '#333333',
+    /** High Emphasis button - primary variant e.g.: Export button */
+    containedPrimaryBackground: '#365AFC',
+    containedPrimaryForeground: 'rgba(255, 255, 255, 0.90)',
+
+    /** Medium Emphasis button - primary variant e.g.: New Text, Text Design, Upload on toolControlBar */
+    outlinedPrimaryBackground: '#242424',
+    outlinedPrimaryForeground: 'rgba(255, 255, 255, 0.90)',
+
+   /** Medium Emphasis button - secondary variant e.g.: Remove Filter, Overlay, Shuffle Text Design */
+    outlinedSecondaryBackground: 'transparent',
+    outlinedSecondaryForeground: 'rgba(255, 255, 255, 0.90)',
+
+    outlinedInactiveOverlayColor: 'rgba(0, 0, 0, 0.3)',
+    outlinedBorderColor: '#333333',
+
+    /** Low Emphasis button - primary variant e.g.: primary button in modal */
+    textPrimaryForeground: '#365AFC',
+    /** Low Emphasis button - secondary variant e.g.: secondary button in modal, undo, redo, Carousel navigators, alignment buttons */
+    textSecondaryForeground: 'rgba(255, 255, 255, 0.90)',
+
+    textInactiveOpacity: '0.5',
+
     activeForeground: '#365AFC',
-    activeBackground: 'rgba(89, 121, 252, 0.20)',
-    primaryBackground: '#242424',
-    primaryForeground: 'rgba(255, 255, 255, 0.90)',
-    secondaryBackground: 'transparent',
-    secondaryForeground: 'rgba(255, 255, 255, 0.60)',
+
     hoverOverlayColor: 'rgba(255, 255, 255, 0.08)',
-    inactiveOverlayColor: 'rgba(0, 0, 0, 0.3)'
   },
   checkbox: {
     background: '#333333',
@@ -143,10 +167,9 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
   card: {
     background: '#333333',
     foreground: 'rgba(255, 255, 255, 0.90)',
-    borderColor: 'transparent',
     activeBorderColor: '#365AFC',
     activeOverlayColor: 'rgba(89, 121, 252, 0.20)',
-    /** card in PhotoEditor SDK always has a label */
+    /** card in PhotoEditor SDK almost always has a label */
     labelBackground: 'linear-gradient(transparent, rgba(0, 0, 0, 0.6))',
     labelForeground: 'rgba(255, 255, 255, 0.90)',
     inactiveOverlayColor: 'rgba(0, 0, 0, 0.3)',
@@ -167,6 +190,7 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     inactiveOpacity: '0.3',
     hoverOpacity: '0.7',
   },
+  /** Color selection list item component **/
   selectColor: {
     activeBorderColor: '#365AFC',
     inactiveOpacity: '0.3',
@@ -183,22 +207,22 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     background: 'rgba(23, 23, 23, 0.9)',
     /* Border between toolbar and toolControlBar */
     borderColor: 'transparent',
+    /** Separators between different sections in toolControlbar **/
     separatorColor: '#333333',
-    titleForeground: 'rgba(255, 255, 255, 0.60)',
+    titleForeground: 'rgba(255, 255, 255, 0.60)', // Relevant only for AdvancedUI
     inputLabelForeground: 'rgba(255, 255, 255, 0.60)',
     inputLabelInactiveOpacity: '0.3',
   },
   mainCanvasActionBar: {
     background: 'linear-gradient(0deg, transparent 0%,  rgba(0, 0, 0, 0.6) 98%)',
     foreground: 'rgba(255, 255, 255, 0.90)',
-    buttonForeground: 'rgba(255, 255, 255, 0.60)',
-    buttonBackground: 'transparent',
-    /** border between mancanvsActionBar and canvas container */
+    /** border between maincanvsActionBar and canvas container */
     borderColor: 'transparent',
   },
   canvasActionBar: {
     background: '#424242',
     foreground: 'rgba(255, 255, 255, 0.90)',
+    /** separator between canvas action buttons */
     separatorColor: 'rgba(255, 255, 255, 0.38)',
   },
   canvas: {
@@ -207,9 +231,16 @@ Here is the list of all colors you can customize. Refer to the [nomenclature]({{
     controlsColor: '#FFFFFF',
     cropBackdrop: 'rgba(0, 0, 0, 0.5)',
   },
+   webcam: {
+    backdrop: 'rgba(0, 0, 0, 0.3)',
+    background: '#FBFBFB',
+    floatButton: '#FFFFFF',
+  },
   /** Relevant only for BasicUI **/
-  tab: {
-    titleForeground: 'rgba(255, 255, 255, 0.60)',
+  tabTitle: {
+    foreground: 'rgba(255, 255, 255, 0.60)',
+    background: 'transparent',
+    activeBackground: 'transparent',
     activeBorderColor: '#365AFC',
     activeForeground: 'rgba(255, 255, 255, 0.90)',
   },
@@ -232,7 +263,7 @@ const editor = new PhotoEditorSDKUI({
           fontFamily: 'Aleo',
           format: 'woff',
           provider: 'file',
-          // Most users load font while initialising their app,
+          // Most users load font while initializing their app,
           // In that case, you can choose to skip loading it again
           skipLoading: false
         }
@@ -253,7 +284,7 @@ const editor = new PhotoEditorSDKUI({
         typography: {
           provider: 'google',
           fontFamily: 'Quicksand',
-          // Most users load font while initialising their app
+          // Most users load font while initializing their app
           // In that case, you can choose to skip loading it again
           skipLoading: false
         }

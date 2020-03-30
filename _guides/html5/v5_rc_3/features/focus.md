@@ -58,11 +58,11 @@ You can override all the labels used in focus tool using the `custom.languages` 
 
 ```js
 new PhotoEditorSDKUI({
-  ...,
+  // ...,
   custom: {
     languages: {
       en: {
-        ...,
+        // ...,
         focus: {
           title: 'Focus',
           controls: {

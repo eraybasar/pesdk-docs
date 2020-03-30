@@ -23,23 +23,24 @@ Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase
 
 ```js
 const editor = new PhotoEditorSDKUI({
+    license: '<your_license_key>',
     layout: 'advanced',
-    container: '..',
+    container: '#editor',
   },
 })
 ```
 
+  * `license` String - The PhotoEditor SDK license. If no license (or an invalid license) is provided engine will render a watermark over the preview and export output. Refer to the [pricing plans](https://account.photoeditorsdk.com/pricing/) for more information.
   * `layout` - The layout that should be rendered by the editor. Defaults to `advanced`. Available are `advanced`, `basic`. Refer to the [UI documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/ui) for more information.
-  * `container` DOMElement - The element the editor should be rendered to.
+  * `container` DOMElement or Element Id - The element the editor should be rendered to.
   * `language` String - The UI language. Defaults to `en`. Available are `en` and `de`.
   * `order` - String - Should the `toolControlBar` be rendered on right, relevant only for AdvancedUI. Defaults to `default`. Available are `default` and `reverse`.
   * `theme` String - Defines the theme that should be used to style the user interface. Defaults to `dark`. Available are `dark` and `light`.
-  * `image` `data-url` or ImageElement - The image that should be loaded and displayed initially.
+  * `image` `data-url` or ImageElement or path to the image relative to assets directory - The image that should be loaded and displayed initially.
   
   * `assetBaseUrl` String - The base URL for all assets. Should be the absolute path to your `assets` directory. Defaults to `assets`.
 
   * `engine` Object
-    * `license` String - The PESDK license. If no license (or an invalid license) is provided engine will render a watermark over the preview and export output. Refer to the [pricing plans](https://account.photoeditorsdk.com/pricing/) for more information.
     * `crossOrigin` - Sets the global crossOrigin loading mode. Defaults to `anonymous`. Available are `anonymous`, `use-credentials` or `none`
     * `downscaleOptions` Object - Images whose sizes exceed these megapixel limits will be downscaled by the engine.
       * `maxMegaPixels` Object - Specifies the maximum amount of megapixels per device type.
@@ -51,11 +52,12 @@ const editor = new PhotoEditorSDKUI({
   
 
   * `displayResizeWarning` Boolean - Should a message be displayed when the image has been scaled down for performance reasons. Defaults to `true`.
+  * `displayCloseWarning` Boolean - Should a message be displayed when Photoeditor SDK is exited with close event. Defaults to `true`.
   * `enableZoom` Boolean - Should the image be zoomable? Defaults to `true`
   * `mainCanvasActions` Array - Defines all allowed actions for the main screen that are displayed in the given order as buttons on the `mainCanvasActionBar`. Available are to `undo`, `redo`, `export`, `close`, undefined. If undefined is given, based on the array index of undefined, the editor will leave that place empty.
   
   * `tools` Array - The enabled tools in the order they are mentioned, Can be grouped in arrays which will be displayed with separators. Available are: `transform`, `filter`, `adjustment`, `focus`, `text`, `textdesign`, `sticker`, `brush`, `frame` and `overlay`.
-  * `defaultTool` String - The tool that is initially loaded. Defaults to `filter`.
+  * `defaultTool` String - The tool that is initially loaded, relevant only for AdvancedUI. Defaults to `filter`.
   
   * `snapping` Object - Options that control the snapping behaviour of sprites.
     * `position` Object - Snapping options for positioning sprites.
@@ -94,6 +96,6 @@ const editor = new PhotoEditorSDKUI({
     * `languages` Object - Language labeling options to change the user interface appearance. This allows to alter predefined existing theme presets or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [localization documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/customization/localization) for more customizations.
     * `theme` Object - Theming options to change the user interface appearance. This allows to alter predefined existing theme presents or to create new themes which can be enabled when their corresponding key is configured.  Refer to the [theme documentation]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/customization/theme) for more customizations.
     * `components` Object - Custom react components that will be rendered instead of current components. Refer to the [component customizations]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/component) for more information.
-
+    * `measurements` Object - Custom measurements for existing components. Refer to the [measurements customizations]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/customization/measurements) for more information.
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}

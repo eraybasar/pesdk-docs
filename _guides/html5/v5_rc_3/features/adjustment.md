@@ -72,7 +72,7 @@ const editor = new PhotoEditorSDKUI({
 
 ## Flattening of categories
 
-If `flattenCategories` is set to true, all enabled adjustment will be shown in the top-level of the adjustment tool, which effectively hides the categories.
+If `flattenCategories` is set to true, all enabled adjustment will be shown in the top-level of the adjustment tool, which effectively hides the categories. Relevant only for AdvancedUI.
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -102,11 +102,11 @@ You can override all the labels used in adjustment tool using the `custom.langua
 
 ```js
 new PhotoEditorSDKUI({
-  ...,
+  // ...,
   custom: {
     languages: {
       en: {
-        ...,
+        // ...,
         adjustment: {
           title: 'Adjust',
           controls: {
