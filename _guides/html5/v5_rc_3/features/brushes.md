@@ -53,9 +53,11 @@ new PhotoEditorSDKUI({
         brush: {
           title: 'Brush',
           controls: {
+            // Relevant for AdvancedUI
             sliderSize: 'Brush Size',
             sliderHardness: 'Brush Hardness',
             selectColor: 'Brush Color',
+            // Relevant for BasicUI
             tabSize: 'Size',
             tabHardness: 'Hardness',
             tabColor: 'Color',

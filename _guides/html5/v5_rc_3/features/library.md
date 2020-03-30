@@ -110,9 +110,9 @@ class MyProvider extends LibraryProvider {
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-The `LibraryCategory` class takes three options: `name` of type `string`, `coverImageUrl` of type `string` and `coverImage` of type `string`.
+The `LibraryCategory` class takes three attributes: `name` of type `string`, `coverImageUrl` of type `string` and `coverImage` of type `string`.
 
-The `LibraryImage` class takes seven options, of which two are mandatory: `category` that should point to the corresponding `LibraryCategory` instance and `rawUrl` that should point to the full-sized image. Additional options are: `title`, `thumbUrl` (all of type `string`) and `thumbImage` of type ImageElement.
+The `LibraryImage` class takes seven attributes, of which two are mandatory: `category` that should point to the corresponding `LibraryCategory` instance and `rawUrl` that should point to the full-sized image. Additional options are: `title`, `thumbUrl` (all of type `string`) and `thumbImage` of type ImageElement.
 
 ## Passing the provider to the control
 
@@ -141,7 +141,7 @@ By default, your users are able to take photos using their webcam or upload thei
 const editor = new PhotoEditorSDKUI({
   library: {
     enableWebcam: false, // Disables the webcam
-    enableUpload: false // Disables the upload AND the webcam
+    enableUpload: false // Disables the upload
   }
 })
 ```
@@ -153,11 +153,11 @@ You can override all the labels used in library tool using the `custom.languages
 
 ```js
 new PhotoEditorSDKUI({
-  ...,
+  // ...,
   custom: {
     languages: {
       en: {
-        ...,
+        // ...,
         library: {
           title: 'Library',
           controls: {

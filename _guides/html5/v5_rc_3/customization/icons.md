@@ -5,7 +5,7 @@ title: &title Changing Icons
 description: PhotoEditor SDK for HTML5 can be customized easily. Learn how to quickly set up your editor in the proper language for your target audience.
 
 menuitem: *title
-order: 2
+order: 3
 platform: html5
 version: v5_rc_3
 category:
@@ -21,13 +21,15 @@ Changing icons is a subset of component customization. You can use following str
 
 ## Toolbar Item Icons
 
-The `ToolbarItem` customization provides you a way to replace the default component toolbar item component. 
+The `ToolbarItem` customization provides you a way to replace the default component toolbar item component. Available only for AdvancedUI. 
 
-The React component Props `icon`, `label`, `isActive`, `onClick` has be handled for this customization. To use your icons you can discard the `icon` prop and replace it with your own icon.
+The React component Props `icon`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization. To use your icons you can discard the `icon` prop and replace it with your own icon.
 
 
 ```js
-import buttonIcon from '../path to the icon'
+import { Tool } from 'photoeditorsdk'
+import textIcon from '../path to the icon'
+import stickerIcon from '../path to the icon'
 
 const ToolbarItemStyles = styled.li`
   height: 48px;
@@ -52,11 +54,19 @@ const RelativeDiv = styled.div`
   position: relative;
 `
 
-const ToolbarItem = ({ label, isActive, onClick }) => {
+const ToolbarItem = ({ label, isActive, onClick, tool }) => {
+  const getIcon = () => {
+    if (Tool.STICKER === tool) {
+      return <img src={stickerIcon} />
+    } else if (Tool.TEXT === tool) {
+      return <img src={textIcon} />
+    }
+    return icon
+  }
   return (
     <RelativeDiv>
       <ToolbarItemStyles className={isActive ? 'active' : ''} onClick={onClick}>
-        <img src={buttonIcon} />
+        {getIcon()}
       </ToolbarItemStyles>
       {isActive && <Label>{label}</Label>}
     </RelativeDiv>
@@ -66,7 +76,7 @@ const ToolbarItem = ({ label, isActive, onClick }) => {
 const editor = new PhotoEditorSDKUI({
   custom: {
     components: {
-      toolbarItem: ToolbarItem
+      advancedUIToolbarItem: ToolbarItem
     }
   }
 })
@@ -109,8 +119,8 @@ const editor = new PhotoEditorSDKUI({
   custom: {
     components: {
       buttons: {
-        canvasUndo: Undo,
-        canvasRedo: Redo,
+        mainCanvasActionUndo: Undo,
+        mainCanvasActionRedo: Redo,
       }
     }
   }

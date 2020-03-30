@@ -179,10 +179,12 @@ new PhotoEditorSDKUI({
           title: 'Transform',
           controls: {
             buttonReset: 'Reset to default',
-            checkboxKeepResolution: 'Keep Resolution',
-            inputCropSize: 'Crop Size',
             inputHeight: 'h',
             inputWidth: 'w',
+            // Relevant for AdvancedUI
+            checkboxKeepResolution: 'Keep Resolution',
+            inputCropSize: 'Crop Size',
+            // Relevant for BasicUI
             tabFlipAndRotate: 'Flip & Rotate',
             tabResolution: 'Resolution',
             tabCropSize: 'Crop Size',

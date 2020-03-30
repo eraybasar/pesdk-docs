@@ -204,7 +204,7 @@ const editor = new PhotoEditorSDKUI({
       {
         identifier: 'my-new-filter-category',
         name: 'New Cool',
-        thumbnailURI: '' // path to the thumbail, relative to the filter asset directory
+        thumbnailURI: '' // path to the thumbnail, relative to the filter asset directory
         items: [
           //...,
           {

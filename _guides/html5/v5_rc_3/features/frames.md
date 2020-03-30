@@ -125,30 +125,32 @@ You can override all the labels used in frames tool using the `custom.languages`
 
 ```js
 new PhotoEditorSDKUI({
-  ...,
+  // ...,
   custom: {
     languages: {
       en: {
-        ...,
-          frame: {
-            title: 'Frames',
-            controls: {
-              buttonReset: 'Reset Frame',
-              sliderOpacity: 'Frame Opacity',
-              sliderSize: 'Frame Size',
-              selectColor: 'Frame Color',
-              tabColor: 'Color',
-              tabOpacity: 'Opacity',
-              tabSize: 'Size',
-            },
-            items: {
-              imgly_frame_dia: 'Dia',
-              imgly_frame_art_decor: 'Art Decor',
-              imgly_frame_black_passepartout: 'Black',
-              imgly_frame_lowpoly_shadow: 'Low Poly',
-              imgly_frame_wood_passepartout: 'Wood',
-            },
-          }
+        // ...,
+        frame: {
+          title: 'Frames',
+          controls: {
+            buttonReset: 'Reset Frame',
+            // Relevant for AdvancedUI
+            sliderOpacity: 'Frame Opacity',
+            sliderSize: 'Frame Size',
+            selectColor: 'Frame Color',
+            // Relevant for BasicUI
+            tabColor: 'Color',
+            tabOpacity: 'Opacity',
+            tabSize: 'Size',
+          },
+          items: {
+            imgly_frame_dia: 'Dia',
+            imgly_frame_art_decor: 'Art Decor',
+            imgly_frame_black_passepartout: 'Black',
+            imgly_frame_lowpoly_shadow: 'Low Poly',
+            imgly_frame_wood_passepartout: 'Wood',
+          },
+        }
       }
     }
   }

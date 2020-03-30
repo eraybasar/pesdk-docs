@@ -21,10 +21,10 @@ This is the most exciting feature for the major release. Not only you can custom
 
 the following are the customizable components. Refer to the [nomenclature]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/concepts/nomenclature) to understand the naming convention.
 
-## Category Card
-This will replace the category cards in the `toolControlBar`. Available only in `AdvancedUI`
+## Category Card in AdvancedUI 
+This will replace the category cards in the `toolControlBar`.
 
-The React component Props `image`, `label`, `isActive`, `onClick` has be handled for this customization. Since this is all part of a big theme you can use the `theme` props like you would use it in any themable `styled-components`.
+The React component Props `image`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization. Since these components are all part of a theme context you can use the `theme` props like you would use it in any themable `styled-components`.
 
 ```jsx
 const CardStyles = styled.button`
@@ -61,16 +61,16 @@ const CategoryCard = ({ image, label, isActive, onClick }) => {
 const editor = new PhotoEditorSDKUI({
   custom: {
     components: {
-      categoryCard: CategoryCard
+      advancedUICategoryCard: CategoryCard
     }
   }
 })
 
 ```
-## Item Card
+## Item Card in AdvancedUI 
 This will replace the item cards in the `toolControlBar`. Available only in `AdvancedUI`.
 
-The React component Props `image`, `label`, `isActive`, `onClick` has be handled for this customization.
+The React component Props `image`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization.
 
 ```js
 const CardStyles = styled.button`
@@ -108,16 +108,16 @@ const ItemCard = ({ image, label, isActive, onClick }) => {
 const editor = new PhotoEditorSDKUI({
   custom: {
     components: {
-      itemCard: ItemCard
+      advancedUIItemCard: ItemCard
     }
   }
 })
 
 ```
-## ToolbarItem
+## Toolbar Item in AdvancedUI
 This will replace the icons in the `toolbar`. Available only in `AdvancedUI`.
 
-The React component Props `icon`, `label`, `isActive`, `onClick` has be handled for this customization. You can choose to use the default icons or replace them with your own icons.
+The React component Props `icon`, `label`, `isActive`, `onClick`, `tool` has be handled for this customization. You can choose to use the default icons or replace them with your own icons.
 
 ```js
 
@@ -158,7 +158,7 @@ const ToolbarItem = ({ icon, label, isActive, onClick }) => {
 const editor = new PhotoEditorSDKUI({
   custom: {
     components: {
-      toolbarItem: ToolbarItem
+      advancedUIToolbarItem: ToolbarItem
     }
   }
 })

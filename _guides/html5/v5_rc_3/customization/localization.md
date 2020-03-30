@@ -16,9 +16,20 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-International web applications have international users. That's why our editor is already available in English (EN) and German (DE) and you can easily switch languages by adding the `language` String (Defaults to `en`) property to the `configuration` object passed to the UI. Check the [configuration]({{ site.baseurl }}/guides/{{page.platform | downcase }}/{{page.version | downcase}}/introduction/configuration) for further information. To add custom languages to our UI, you can pass them using the `config.custom.languages` object. The `language` option
-specifies the language that the UI should use.
+International web applications have international users. That's why our editor supports localization.
 
+## Changing UI language
+ We have localization available already in English (EN) and German (DE) and you can easily switch languages by adding the `language` String (Defaults to `en`).
+```js
+const editor = new PhotoEditorSDKUI({
+  language: 'en' // 'en' or 'de'
+})
+```
+
+## Changing labels for existing languages
+
+To add custom labels to our UI, you can pass them using the `config.custom.languages` object.
+The language objects should have the same structure as our default languages. You'll find the English language object at the bottom of the page. 
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -34,14 +45,13 @@ const editor = new PhotoEditorSDKUI({
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
-The language objects should have the same structure as our default languages. You'll find the English language object at the bottom of the page. 
 
 ## Changing only what needs changing
 
 You can also use the localization feature to simply change the button text with any word (can be the same language). In this case you don't even have to supply the entire language object. It is enough to overwrite the words you want to change. 
 
 ### Example
-Changing the export button to say "Save" instead of "Export":
+Changing the export button to say `Save` instead of `Export`:
 
 ```js
 const editor = new PhotoEditorSDKUI({
@@ -57,6 +67,32 @@ const editor = new PhotoEditorSDKUI({
 })
 ```
 
+## Adding a custom language
+
+PhotoEditor SDK provides a configuration support for multiple language. You can define labels in multiple languages and add them to configuration.
+```js
+import nl from './nl'
+import es from './es'
+
+const editor = new PhotoEditorSDKUI({
+ custom: {
+   language: 'en', // change the language key here, based on which language has to be loaded
+    languages: {
+      en: {
+        mainCanvasActions: {
+          buttonExport: 'Save'
+        }
+      },
+      nl: nl,
+      es: es,
+    }
+  }
+})
+```
+
+Again, in this case you don't even have to supply the entire language object. It is enough to define the words you want to change. For the rest of the labels, it leans on the fallback langauge i.e., English.
+
+
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
 
@@ -64,7 +100,7 @@ const editor = new PhotoEditorSDKUI({
 
 ```js
 {
-  common: {
+   common: {
     error: 'Error',
     warning: 'Warning',
     color: {
@@ -108,7 +144,8 @@ const editor = new PhotoEditorSDKUI({
   },
   errorModals: {
     imageLoading: {
-      body: 'Failed to load image. This can have multiple reasons, e.g. the file is corrupted or the file type is not supported',
+      body:
+        'Failed to load image. This can have multiple reasons, e.g. the file is corrupted or the file type is not supported',
       buttonYes: 'Reload',
     },
     rendering: {
@@ -143,6 +180,11 @@ const editor = new PhotoEditorSDKUI({
       buttonYes: 'Discard changes',
       buttonNo: 'Keep Changes',
     },
+    unsavedChanges: {
+      body: 'You have unsaved changes. Are you sure you want to exit?',
+      buttonYes: 'Exit without saving',
+      buttonNo: 'Cancel',
+    },
   },
   library: {
     title: 'Library',
@@ -157,7 +199,7 @@ const editor = new PhotoEditorSDKUI({
   filter: {
     title: 'Filters',
     controls: {
-      buttonReset: 'Reset Filter',
+      buttonReset: 'Remove Filter',
       sliderIntensity: 'Filter Intensity',
     },
     categories: {
@@ -244,7 +286,7 @@ const editor = new PhotoEditorSDKUI({
   adjustment: {
     title: 'Adjust',
     controls: {
-      buttonReset: 'Reset to default',
+      buttonReset: 'Reset Adjustment',
     },
     categories: {
       basics: 'Basic',
@@ -268,7 +310,7 @@ const editor = new PhotoEditorSDKUI({
   focus: {
     title: 'Focus',
     controls: {
-      buttonReset: 'Reset to default',
+      buttonReset: 'Remove Focus',
       sliderIntensity: 'Focus Intensity',
     },
     items: {
@@ -285,7 +327,7 @@ const editor = new PhotoEditorSDKUI({
   overlay: {
     title: 'Overlays',
     controls: {
-      buttonReset: 'Reset to default',
+      buttonReset: 'Remove Overlay',
       sliderOpacity: 'Overlay Opacity',
       carouselBlendMode: 'Overlay Blend mode',
       blendModeNormal: 'Normal',
@@ -332,6 +374,7 @@ const editor = new PhotoEditorSDKUI({
     categories: {
       imgly_sticker_emoticons: 'Emoticons',
       imgly_sticker_shapes: 'Shapes',
+      imgly_sticker_custom: 'Custom',
     },
     items: {
       imgly_sticker_emoticons_alien: 'Alien',
@@ -417,7 +460,7 @@ const editor = new PhotoEditorSDKUI({
     },
     canvasActions: {
       buttonDelete: 'Delete',
-      buttonBringToFront: 'Move to top',
+      buttonBringToFront: 'Move to front',
       buttonDuplicate: 'Duplicate',
       buttonFlipHorizontal: 'Flip',
       buttonFlipVertical: 'Flip',
@@ -438,7 +481,7 @@ const editor = new PhotoEditorSDKUI({
     controls: {
       buttonNew: 'New Text',
       dropdownFontFamily: 'Font Family',
-      dropdownFontStyle: 'Font Style',
+      textFontSize: 'Font Size',
       selectAlignment: 'Alignment',
       selectFontColor: 'Font Color',
       selectBackgroundColor: 'Background Color',
@@ -447,18 +490,18 @@ const editor = new PhotoEditorSDKUI({
       tabBgColor: 'Bg Color',
       tabAlignment: 'Alignment',
       tabLineHeight: 'Line Height',
-      tabFontStyle: 'Font Style',
+      tabFontSize: 'Font Size',
     },
     canvasControls: {
       placeholderText: 'Write Something',
       buttonSave: 'Done',
-      buttonClose: 'Close',
+      buttonClose: 'Cancel',
       inputText: 'Text Input',
     },
     canvasActions: {
       buttonEdit: 'Edit',
       buttonDelete: 'Delete',
-      buttonBringToFront: 'Move to top',
+      buttonBringToFront: 'Move to front',
       buttonDuplicate: 'Duplicate',
     },
     history: {
@@ -481,7 +524,7 @@ const editor = new PhotoEditorSDKUI({
     title: 'Text Design',
     controls: {
       buttonNew: 'New Text Design',
-      buttonShuffle: 'Shuffle Text Design',
+      buttonShuffle: 'Shuffle Layout',
       selectColor: 'Text Color',
       tabColor: 'Color',
       tabShuffle: 'Shuffle',
@@ -494,9 +537,9 @@ const editor = new PhotoEditorSDKUI({
     },
     canvasActions: {
       buttonEdit: 'Edit',
-      buttonInvert: 'Text as Mask',
+      buttonInvert: 'Invert',
       buttonDelete: 'Delete',
-      buttonBringToFront: 'Move to top',
+      buttonBringToFront: 'Move to front',
       buttonDuplicate: 'Duplicate',
     },
     history: {
@@ -515,7 +558,7 @@ const editor = new PhotoEditorSDKUI({
   frame: {
     title: 'Frames',
     controls: {
-      buttonReset: 'Reset Frame',
+      buttonReset: 'Remove Frame',
       sliderOpacity: 'Frame Opacity',
       sliderSize: 'Frame Size',
       selectColor: 'Frame Color',
@@ -534,6 +577,7 @@ const editor = new PhotoEditorSDKUI({
   brush: {
     title: 'Brush',
     controls: {
+      buttonReset: 'Remove Brush',
       sliderSize: 'Brush Size',
       sliderHardness: 'Brush Hardness',
       selectColor: 'Brush Color',
@@ -571,6 +615,12 @@ const editor = new PhotoEditorSDKUI({
       imgly_transform_facebook_ad: 'Ad',
       imgly_transform_facebook_post: 'Post',
       imgly_transform_facebook_cover: 'Cover',
+    },
+    transformActions: {
+      buttonFlipHorizontal: 'Flip Horizontal',
+      buttonFlipVertical: 'Flip Vertical',
+      buttonRotateClockwise: 'Rotate Clockwise',
+      buttonRotateAntiClockwise: 'Rotate Anticlockwise',
     },
   },
 }

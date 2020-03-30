@@ -71,7 +71,7 @@ You can add new overlays to the existing list of items using same configuration 
 const editor = new PhotoEditorSDKUI({
   overlay: {
     items: [
-      ...,
+      // ...,
       {
         identifier: "my_overlay",
         name: 'Custom Overlay',
@@ -95,11 +95,11 @@ You can override all the labels used in overlay tool using the `custom.languages
 
 ```js
 new PhotoEditorSDKUI({
-  ...,
+  // ...,
   custom: {
     languages: {
       en: {
-        ...,
+        // ...,
         overlay: {
           title: 'Overlays',
           controls: {

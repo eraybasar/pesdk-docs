@@ -179,7 +179,7 @@ const editor = new PhotoEditorSDKUI({
           {
             identifier: 'custom_sticker',
             name: 'Custom Sticker',
-            thumbnailURI: '', // path to the sticker, relative to the sticker asset directory
+            thumbnailURI: '', // path to the thumbnail, relative to the sticker asset directory
             stickerURI: '..', // path to the sticker, relative to the sticker asset directory
             tintMode: 'none', // Default: 'none', Other options: 'solid', 'colorized'
             resizeMode: 'keepAspect'  // Default: 'keepAspect', Other options:: 'keepAspect', 'unrestricted'
@@ -241,8 +241,8 @@ const editor = new PhotoEditorSDKUI({
           {
             identifier: 'custom_sticker',
             name: 'Custom Sticker',
-            thumbnailURI: '..',
-            stickerURI: '..',
+            thumbnailURI: '..', // path to the thumbnail, relative to the sticker asset directory
+            stickerURI: '..', // path to the sticker, relative to the sticker asset directory
             tintMode: 'colorized', // 'none', 'solid', 'colorized'
           }
         ]
@@ -265,8 +265,8 @@ by setting its `resizeMode` property to `unrestricted`
 const sticker = {
   identifier: 'custom_sticker',
   name: 'Custom Sticker',
-  thumbnailURI: '..',
-  stickerURI: '..',
+  thumbnailURI: '..', // path to the thumbnail, relative to the sticker asset directory
+  stickerURI: '..', // path to the sticker, relative to the sticker asset directory
   tintMode: 'colorized', // 'none', 'solid', 'colorized'
   resizeMode: 'unrestricted'// Possible: 'keepAspect', 'unrestricted'
 }
@@ -286,7 +286,7 @@ const editor = new PhotoEditorSDKUI({
         items: [
           {
             identifier: 'imgly_sticker_shapes_badge_01',
-            resizeMode: 'keepAspect'
+            resizeMode: 'unrestricted'
           }
         ]
       }
@@ -314,8 +314,10 @@ new PhotoEditorSDKUI({
           title: 'Stickers',
           controls: {
             buttonUpload: 'Upload Sticker',
+            // Relevant for AdvancedUI
             sliderOpacity: 'Sticker Opacity',
             selectColor: 'Sticker Color',
+            // Relevant for BasicUI
             tabColor: 'Color',
             tabOpacity: 'Opacity',
           },
@@ -324,6 +326,7 @@ new PhotoEditorSDKUI({
             imgly_sticker_shapes: 'Shapes',
           },
           items: {
+            // In the UI, sticker assets are not displayed with labels, but these lables are important for Accessibility
             imgly_sticker_emoticons_alien: 'Alien',
             imgly_sticker_emoticons_angel: 'Angel',
             imgly_sticker_emoticons_angry: 'Angry',

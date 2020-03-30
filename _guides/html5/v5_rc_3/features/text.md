@@ -108,7 +108,6 @@ const editor = new PhotoEditorSDKUI({
 
 The `fonts` option also allows you to add custom fonts from Google Fonts. To do this, add the variation's `provider` option and set it to `google`. This will cause the UI to pre-load the font from Google Fonts.
 
----
 ```js
 const editor = new PhotoEditorSDKUI({
   text: {
@@ -118,11 +117,6 @@ const editor = new PhotoEditorSDKUI({
         identifier: 'google-roboto',
         fontFamily: 'Roboto',
         fontWeight: '400',
-        textMetrics: {
-          unitsPerEm: 2048,
-          ascender: 1919,
-          descender: -409,
-        },
         provider: 'google',
       }
     ]
@@ -148,12 +142,14 @@ new PhotoEditorSDKUI({
             title: 'Text',
             controls: {
               buttonNew: 'New Text',
+              // Relevant for AdvancedUI
               dropdownFontFamily: 'Font Family',
               dropdownFontStyle: 'Font Style',
               selectAlignment: 'Alignment',
               selectFontColor: 'Font Color',
               selectBackgroundColor: 'Background Color',
               sliderLineSpacing: 'Line Spacing',
+               // Relevant for BasicUI
               tabColor: 'Color',
               tabBgColor: 'Bg Color',
               tabAlignment: 'Alignment',
