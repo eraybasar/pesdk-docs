@@ -2,7 +2,7 @@
 layout: guides/content
 title: &title Measurements
 
-description: PhotoEditor SDK for HTML5 can be customized easily. Learn how to quickly set up your editor in the proper language for your target audience.
+description: Learn how to align the editor with your current application.
 
 menuitem: *title
 order: 4
@@ -17,7 +17,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-Adding a custom component is sometimes not enough for the editor to be seamless with your app. That's why PhotoEditor SDK UI provides options for measurements configuration.
+To integrate the PhotoEditor SDK UI seamlessly into your application we provide the option to change the height and width of the different components 
 
 Following are the available customizations:
 
