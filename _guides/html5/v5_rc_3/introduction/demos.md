@@ -27,21 +27,17 @@ Please keep this in mind when making the decision what language or framework you
 
 ## Example Integrations
 
-<!-- Checkout our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and native SDKs.
-All example intergrations repositories are tagged with the suffix `-demo`. -->
-
-Check out our demo. In general this example is a good starting place to:
+Checkout our GitHub Repositories [here](https://github.com/imgly/) for up to date example integrations of our HTML and native SDKs.
+All example intergrations repositories are tagged with the suffix `-demo`. In general these examples are a good starting place to:
 
  * Quickly test out our SDK without the need to write code
  * Tinker with the code to understand how it works
  * And starting templates for specific web frameworks
 
-<!-- 
  Currently, we are providing example integrations for:
 
   * [React](https://github.com/imgly/pesdk-react-demo)
   * [Angular](https://github.com/imgly/pesdk-angular-demo)
   * [Vue](https://github.com/imgly/pesdk-wrapper-vuejs)
--->
 
-Currently, We are providing a codesandbox demo for react, visit the [codesandbox](https://codesandbox.io/s/lively-wind-e24p5) to play around with PhotoEditor SDK without going through all the installation process.
+We are also providing a codesandbox demo for react, visit the [codesandbox](https://codesandbox.io/s/lively-wind-e24p5) to play around with PhotoEditor SDK without going through all the installation process.

@@ -47,7 +47,7 @@ React and React DOM are already insalled using Create React App.
 
 ##### Installing PhotoEditor SDK
 
-- Run `npm install photoeditorsdk@5.0.0-rc-3`.
+- Run `npm install --save photoeditorsdk@5.0.0-rc-3`.
 
 You will be left with following structure in your `node_modules/photoeditorsdk/`
 
@@ -78,26 +78,29 @@ The package contains three folders that you need to integrate to your project.
 ##### Creating an Editor component
 
 ```js
-import React from 'react'
 import { UIEvent, PhotoEditorSDKUI } from 'photoeditorsdk'
 
-class PhotoEditorSDK extends React.Component {
+export class PhotoEditorSDK extends React.Component {
   componentDidMount() {
     this.initEditor()
   }
   async initEditor() {
     const editor = await PhotoEditorSDKUI.init({
       container: '#editor',
-      image: 'example.png', // Image url or Image path relative to assets folder
-      license: '<your_license_key>'
+      image: '../example.jpg', // Image url or Image path relative to assets folder
+      license: ''
     })
     console.log('PhotoEditorSDK for Web is ready!')
+    editor.on(UIEvent.EXPORT, (imageSrc) => {
+      console.log('Exported ', imageSrc)
+    })
   }
 
   render() {
-    <div id="editor" style="width: 100vw; height: 100vh;" />
+    return (<div role="PhotoEditor SDK" id="editor" style={{ width: '100vw', height: '100vh' }} />)
   }
 }
+
 ```
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-02{% endcapture %}

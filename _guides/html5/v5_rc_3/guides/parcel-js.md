@@ -38,7 +38,7 @@ PhotoEditor SDK needs following peer dependencies:
 
 ##### Installing PhotoEditor SDK
 
-- Run `npm install photoeditorsdk@5.0.0-rc-3`.
+- Run `npm install --save photoeditorsdk@5.0.0-rc-3`.
 
 You will be left with following structure in your `node_modules/photoeditorsdk/`
 
@@ -85,7 +85,7 @@ The package contains three folders that you need to integrate to your project.
 
 ```diff
 <body>
-+   <div id="editor" style="width: 100vw; height: 100vh;"></div>
++   <div role="PhotoEditor SDK" id="editor" style="width: 100vw; height: 100vh;"></div>
 </body>
 ```
 
@@ -113,7 +113,7 @@ PhotoEditorSDKUI.init({
 
 ```diff
 <body>
-  <div id="editor" style="width: 100vw; height: 100vh;"></div>
+  <div role="PhotoEditor SDK" id="editor" style="width: 100vw; height: 100vh;"></div>
 +   <script src="./index.js"></script>
 </body>
 ```
