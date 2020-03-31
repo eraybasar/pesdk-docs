@@ -83,6 +83,15 @@ If you are directly rendering the React component
 
 Although the mapper maps your old configuration to the new one, we highly recommend you to go and check the [configuration]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/introduction/configuration) documentation. There are now a lot of new configurations and customizations available.
 
+
+### Updating custom language files
+
+In order to simplify the migration here, too, we have written also some mapper scripts. Enter your v4 custom language file here and get the configuration or localization for v5 automatically generated.
+
+You can use our converter for [desktop files]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/converter/desktop-language) or [react files]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/converter/react-language).
+
+We highly recommend you to go and check the [localization]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/localization) documentation. 
+
 ### Handling events
 
 Renaming UI events. Some of the previously supported events are now deprecated. Refer to the [events]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/concepts/events) documentation for more information.
