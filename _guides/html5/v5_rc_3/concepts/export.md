@@ -21,9 +21,9 @@ To export the resulting image as an `Image` object or as a data url, you can use
 ```js
 editor.export({
    // you can specify the export configuration, this will override the configuration in config
-  format: 'image/png', // Possible values: `image/png`, `image/jpeg`
-  exportType: 'image', // Possible values: `image` or `data-url`
-  quality: 0.9,
+  format: 'image/png', 
+  exportType: 'image', 
+  quality:,
   enableDownload: true
 }) /
   .then((image) => {
