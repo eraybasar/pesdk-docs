@@ -19,13 +19,7 @@ published: true # Either published or not
 To export the resulting image as an `Image` object or as a data url, you can use the export method:
 
 ```js
-editor.export({
-   // you can specify the export configuration, this will override the configuration in config
-  format: 'image/png', 
-  exportType: 'image', 
-  quality:,
-  enableDownload: true
-}) /
+editor.export(true) // you can specify, if you want to download the image, this will override the enabelDownload in config
   .then((image) => {
     document.body.appendChild(image)
   })
@@ -34,4 +28,4 @@ editor.export({
   })
 ```
 
-When exporting using the `data-url` format, you can pass the resulting Data URL to a server, decode it there and write it to a file.
+The export format (e.g. `data-url` or Image) and file format (e.g. PNG or JPEG) can be specified using the editor configuration. When exporting using the `data-url` format, you can pass the resulting Data URL to a server, decode it there and write it to a file.
