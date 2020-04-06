@@ -31,4 +31,4 @@ The values will accept the pixel amount as a `number`
 * `mainCanvasActionBar`: Customizations for Main canvas action bar in both UIs.
   * `height`: Changes the height of main canvas action bar.
 * `canvas`: Customization for the Canvas
-  * `marginTop`: This value can be used in combination with an opaque `mainCanvasActionBar.background` color to prevent canvas elements to be hidden behind the MainCanvasActionBar
+  * `marginTop`: This value can be used in combination with an opaque `mainCanvasActionBar.background` color to prevent canvas elements to be hidden behind the Main canvas action bar
