@@ -17,18 +17,42 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-To integrate the PhotoEditor SDK UI seamlessly into your application we provide the option to change the height and width of the different components 
+To integrate the PhotoEditor SDK UI seamlessly into your application we provide the option to change the height and width of the different components
 
 Following are the available customizations:
 
-The values will accept the pixel amount as a `number` 
+The values will accept the pixel amount as a `number`
 
-* `advancedUIToolbar`: Customizations for Advanced UI toolbar.
-  * `width`: Changes the width of Advanced UI toolbar.
-* `basicUIToolbar`: Customizations for Basic UI toolbar.
-  * `openHeight`: Changes the height of Basic UI toolbar, in when a tool is selected.
-  * `closeHeight`: Changes the height of Basic UI toolbar, in when no tool is selected.
-* `mainCanvasActionBar`: Customizations for Main canvas action bar in both UIs.
-  * `height`: Changes the height of main canvas action bar.
-* `canvas`: Customization for the Canvas
-  * `marginTop`: This value can be used in combination with an opaque `mainCanvasActionBar.background` color to prevent canvas elements to be hidden behind the Main canvas action bar
+- `advancedUIToolbar`: Customizations for Advanced UI toolbar.
+  - `width`: Changes the width of Advanced UI toolbar.
+- `basicUIToolbar`: Customizations for Basic UI toolbar.
+  - `openHeight`: Changes the height of Basic UI toolbar, in when a tool is selected.
+  - `closeHeight`: Changes the height of Basic UI toolbar, in when no tool is selected.
+- `mainCanvasActionBar`: Customizations for Main canvas action bar in both UIs.
+  - `height`: Changes the height of main canvas action bar.
+- `canvas`: Customization for the Canvas
+  - `marginTop`: This value can be used in combination with an opaque `mainCanvasActionBar.background` color to prevent canvas elements to be hidden behind the Main canvas action bar
+
+### Use an opaque color for the main canvas action bar
+
+```js
+const editor = await PhotoEditorSDKUI.init({
+  custom: {
+    themes: {
+      dark: {
+        mainCanvasActionBar: {
+          background: "#365afc",
+        },
+      },
+    },
+    measurements: {
+      mainCanvasActionBar: {
+        height: 48,
+      },
+      canvas: {
+        marginTop: 48,
+      },
+    },
+  },
+});
+```
