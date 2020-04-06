@@ -40,4 +40,4 @@ All example intergrations repositories are tagged with the suffix `-demo`. In ge
   * [Angular](https://github.com/imgly/pesdk-angular-demo)
   * [Vue](https://github.com/imgly/pesdk-wrapper-vuejs)
 
-We are also providing a codesandbox demo for react, visit the [codesandbox](https://codesandbox.io/s/lively-wind-e24p5) to play around with PhotoEditor SDK without going through all the installation process.
+We are also providing a codesandbox demo for react, visit the [codesandbox](https://codesandbox.io/s/lively-wind-e24p5) to play around with PhotoEditor SDK without going through all the installation process. If you are into typescript and want to levarage the typings we provide, you can play around with the [typescript demo](https://codesandbox.io/s/white-snowflake-9qtwj).
