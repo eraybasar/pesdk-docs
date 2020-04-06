@@ -84,7 +84,7 @@ PESDKConfiguration *configuration = [[PESDKConfiguration alloc] initWithBuilder:
 
 ## Appearance proxies
 
-The theming itself makes heavy use of `UIAppearance` proxies. The defined colors are applied to most UI elements via `UIAppearance` proxies during the initialization of a `CameraViewController` or a `PhotoEditViewController`. If you need to use `UIAppearance` proxies yourself you need to issue your calls after the initialization of a `CameraViewController` or a `PhotoEditViewController` in order to override the properties set by the theming.
+The theming itself makes heavy use of `UIAppearance` proxies. The defined colors are applied to most UI elements via `UIAppearance` proxies during the initialization of a `CameraViewController` or a `PhotoEditViewController`. If you need to use `UIAppearance` proxies yourself you need to issue your calls after the initialization of a `CameraViewController` or a `PhotoEditViewController` in order to override the properties set by the theming. You can also issue your appearance proxy calls in the `appearanceProxyConfigurationClosure` which will be run at the right moment and is part of the `Configuration`.
 
 
 ## Configuration precedence
@@ -96,6 +96,6 @@ The following image annotates the most common configuration members.
 Please note that the background color of the toolbar,
 which sits at the bottom, is set through a property of the `PhotoEditViewController` or by `theme.toolbarBackgroundColor`.
 
-Modifying UI elements via [closures]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/introduction#using-the-closures) takes precedence over the configuration of the theme or the custom use of `UIAppearance` proxies. 
+Modifying UI elements via [closures]({{ site.baseurl }}/guides/{{page.platform}}/{{page.version}}/customization/introduction#using-the-closures) takes precedence over the configuration of the theme or the custom use of `UIAppearance` proxies.
 
 ![Common members]({{ site.baseurl }}/assets/images/guides/{{page.platform}}/{{page.version}}/commonMembers.jpg)
