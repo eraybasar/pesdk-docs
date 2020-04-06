@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_8%2Fdocsets%2FPhotoEditorSDK%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_9%2Fdocsets%2FPhotoEditorSDK%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -1487,10 +1487,10 @@
                 </div>
               </div>
             <p>A <code>Theme</code> defines the overall color scheme of all UI elements of the SDK and allows for convenient customization at a single place.
-The defined colors are applied to most UI elements via <code>UIAppearance</code> proxies during the initialization of a <code><a href="../Classes/CameraViewController.html">CameraViewController</a></code> or a <code><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></code>.
+The defined colors are applied to most UI elements via <code>UIAppearance</code> proxies during the initialization of a <code><a href="../Classes/CameraViewController.html">CameraViewController</a></code> or a <code><a href="../Classes/MediaEditViewController.html">MediaEditViewController</a></code>.
 Additionally, these colors and other properties of UI elements can be customized and overriden by modifying its properties directly, by using the configuration
-closures defined by a <code><a href="../Classes/Configuration.html">Configuration</a></code>, or by using custom calls to <code>UIAppearance</code> proxies after a <code><a href="../Classes/CameraViewController.html">CameraViewController</a></code> or a <code><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></code> has been
-initialized.</p>
+closures defined by a <code><a href="../Classes/Configuration.html">Configuration</a></code>, or by using custom calls to <code>UIAppearance</code> proxies that should be issued in the <code>appearanceProxyConfigurationClosure</code> which is part of the <code><a href="../Classes/Configuration.html">Configuration</a></code>
+or manually after a <code><a href="../Classes/CameraViewController.html">CameraViewController</a></code> or a <code><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></code> has been initialized and before it becomes part of the view hierarchy.</p>
 
           </div>
         </section>
@@ -1631,7 +1631,7 @@ initialized.</p>
                       <div class="abstract">
                         <p>The highlight tint color, e.g., used for buttons in the <code><a href="../Classes/CameraViewController.html">CameraViewController</a></code>, the outline of selected menu items, the sliders&rsquo; thumb outline
 and filled track, and selected fonts in the <code><a href="../Classes/PhotoEditViewController.html">PhotoEditViewController</a></code>.
-Defaults to nil where the system&rsquo;s <code>tintColor</code> is used.</p>
+If <code>nil</code> the default system&rsquo;s <code>tintColor</code> is used.</p>
 
                       </div>
                       <div class="declaration">
@@ -1639,6 +1639,90 @@ Defaults to nil where the system&rsquo;s <code>tintColor</code> is used.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tintColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8ImglyKit5ThemeV22rotationSnapGuideColorSo7UIColorCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/rotationSnapGuideColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8ImglyKit5ThemeV22rotationSnapGuideColorSo7UIColorCSgvp">rotationSnapGuideColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The color of the rotation snap guides.
+If <code>nil</code> the default value of <code><a href="../Classes/SnapGuideView.html#/c:@M@ImglyKit@objc(cs)PESDKSnapGuideView(py)guideColor">SnapGuideView.guideColor</a></code> is used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rotationSnapGuideColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8ImglyKit5ThemeV22positionSnapGuideColorSo7UIColorCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/positionSnapGuideColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8ImglyKit5ThemeV22positionSnapGuideColorSo7UIColorCSgvp">positionSnapGuideColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The color of the position snap guides.
+If <code>nil</code> the default value of <code><a href="../Classes/SnapGuideView.html#/c:@M@ImglyKit@objc(cs)PESDKSnapGuideView(py)guideColor">SnapGuideView.guideColor</a></code> is used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">positionSnapGuideColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8ImglyKit5ThemeV25boundingBoxSnapGuideColorSo7UIColorCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/boundingBoxSnapGuideColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8ImglyKit5ThemeV25boundingBoxSnapGuideColorSo7UIColorCSgvp">boundingBoxSnapGuideColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The color of the sprite&rsquo;s content bounding box when positional snapping occurs.
+If <code>nil</code> the default value of <code><a href="../Classes/SnapGuideView.html#/c:@M@ImglyKit@objc(cs)PESDKSnapGuideView(py)guideColor">SnapGuideView.guideColor</a></code> is used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">boundingBoxSnapGuideColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1802,7 +1886,7 @@ Defaults to nil where the system&rsquo;s <code>tintColor</code> is used.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-03-25)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-04-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

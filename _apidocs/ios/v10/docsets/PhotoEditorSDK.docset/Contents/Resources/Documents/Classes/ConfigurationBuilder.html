@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_8%2Fdocsets%2FPhotoEditorSDK%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_9%2Fdocsets%2FPhotoEditorSDK%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -1558,6 +1558,64 @@ This property should only be used if you are using Objective-C.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:8ImglyKit20ConfigurationBuilderC015appearanceProxyC7ClosureyAA5ThemeVcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/appearanceProxyConfigurationClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8ImglyKit20ConfigurationBuilderC015appearanceProxyC7ClosureyAA5ThemeVcSgvp">appearanceProxyConfigurationClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This closure is called after the theme was applied via <code>UIAppearance</code> proxies during the initialization of a <code><a href="../Classes/CameraViewController.html">CameraViewController</a></code> or a <code><a href="../Classes/MediaEditViewController.html">MediaEditViewController</a></code>.
+It is intended to run custom calls to <code>UIAppearance</code> proxies. The immutable active theme is passed to this closure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">appearanceProxyConfigurationClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Structs/Theme.html">Theme</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ImglyKit@objc(cs)PESDKConfigurationBuilder(py)appearanceProxyConfigurationClosure"></a>
+                    <a name="//apple_ref/swift/Property/_objCAppearanceProxyConfigurationClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKConfigurationBuilder(py)appearanceProxyConfigurationClosure">_objCAppearanceProxyConfigurationClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This closure is called after the theme was applied via <code>UIAppearance</code> proxies during the initialization of a <code><a href="../Classes/CameraViewController.html">CameraViewController</a></code> or a <code><a href="../Classes/MediaEditViewController.html">MediaEditViewController</a></code>.
+It is intended to run custom calls to <code>UIAppearance</code> proxies. The immutable active theme is passed to this closure.
+This property should only be used if you are using Objective-C and it will only be called if the corresponding Swift closure <code><a href="../Classes/ConfigurationBuilder.html#/s:8ImglyKit20ConfigurationBuilderC015appearanceProxyC7ClosureyAA5ThemeVcSgvp">appearanceProxyConfigurationClosure</a></code> is <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(appearanceProxyConfigurationClosure)</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">_objCAppearanceProxyConfigurationClosure</span><span class="p">:</span> <span class="p">((</span><span class="n"><a href="../Classes/_ObjCTheme.html">_ObjCTheme</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@ImglyKit@objc(cs)PESDKConfigurationBuilder(py)assetCatalog"></a>
                     <a name="//apple_ref/swift/Property/assetCatalog" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKConfigurationBuilder(py)assetCatalog">assetCatalog</a>
@@ -2356,7 +2414,7 @@ This property should only be used if you are using Objective-C.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-03-25)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-04-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

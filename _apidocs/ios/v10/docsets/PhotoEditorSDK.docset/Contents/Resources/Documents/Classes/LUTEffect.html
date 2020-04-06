@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_8%2Fdocsets%2FPhotoEditorSDK%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdocs%2Ephotoeditorsdk%2Ecom%2Fapidocs%2Fios%2Fv10_9%2Fdocsets%2FPhotoEditorSDK%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -1532,6 +1532,60 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)horizontalTileCount"></a>
+                    <a name="//apple_ref/swift/Property/horizontalTileCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)horizontalTileCount">horizontalTileCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of horizontal tiles in the LUT image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">horizontalTileCount</span><span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)verticalTileCount"></a>
+                    <a name="//apple_ref/swift/Property/verticalTileCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)verticalTileCount">verticalTileCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of vertical tiles in the LUT image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verticalTileCount</span><span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -1560,6 +1614,12 @@
                       <div class="abstract">
                         <p>Creates an effect that uses the LUT at url <code><a href="../Classes/LUTEffect.html#/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)lutURL">lutURL</a></code> to generate the color cube data for
 the filter.</p>
+
+<p>The tile configuration is parsed from the <code><a href="../Classes/LUTEffect.html#/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)lutURL">lutURL</a></code> filename that matches the scheme:
+<code>*_horizontalTileCount_verticalTileCount_resolution*</code>, e.g. a
+filename that contains <code>_5_5_128</code> would create a LUT configuration with 5x5
+tiles and expect a image resolution of 128^2 pixels. If the tile configuration cannot be parsed
+it defaults to a 8x8 512^2 LUT configuration.</p>
 
                       </div>
                       <div class="declaration">
@@ -1623,6 +1683,111 @@ the filter.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(im)initWithIdentifier:lutURL:displayName:horizontalTileCount:verticalTileCount:"></a>
+                    <a name="//apple_ref/swift/Method/init(identifier:lutURL:displayName:horizontalTileCount:verticalTileCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(im)initWithIdentifier:lutURL:displayName:horizontalTileCount:verticalTileCount:">init(identifier:lutURL:displayName:horizontalTileCount:verticalTileCount:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an effect that uses the LUT at url <code><a href="../Classes/LUTEffect.html#/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)lutURL">lutURL</a></code> to generate the color cube data for
+the filter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+ <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+ <span class="nv">lutURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?,</span>
+ <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+ <span class="nv">horizontalTileCount</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">,</span>
+ <span class="nv">verticalTileCount</span><span class="p">:</span> <span class="kt">UInt</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An identifier that uniquely identifies the effect.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lutURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL of the lut image that should be used to generate a color cube.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>displayName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name that is displayed to the user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>horizontalTileCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of horizontal tiles in the LUT image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>verticalTileCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of vertical tiles in the LUT image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A newly initialized <code>LUTEffect</code> object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)newEffectFilter"></a>
                     <a name="//apple_ref/swift/Property/newEffectFilter" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@ImglyKit@objc(cs)PESDKLUTEffect(py)newEffectFilter">newEffectFilter</a>
@@ -1655,7 +1820,7 @@ the filter.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-03-25)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.photoeditorsdk.com" target="_blank" rel="external">img.ly GmbH</a>. All rights reserved. (Last updated: 2020-04-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
