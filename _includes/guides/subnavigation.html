@@ -16,7 +16,7 @@
       {% if platform and version %}
         {% include documentation/picker.html platform=platform version=version %}
         {% capture api_url %}{{site.baseurl}}/guides/{{platform}}/{{version}}/resources/apidocs{% endcapture %}
-        {% if platform == 'html5' and version == 'v5_rc_3' %}
+        {% if platform == 'html5' and version == 'v5' %}
         {% else %}
           {% include documentation/gray_button.html title="API Docs" link=api_url %}
         {% endif %}
