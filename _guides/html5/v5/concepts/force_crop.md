@@ -26,8 +26,8 @@ var editor = new PhotoEditorSDKUI({
       {
         identifier: 'imgly_transforms_common',
         items: [
-          { identifier: 'imgly_transform_common_4-3' },
-          { identifier: 'imgly_transform_common_16-9' }
+          { identifier: 'imgly_transform_common_4' },
+          { identifier: 'imgly_transform_common_16' }
         ]
       }
     }
