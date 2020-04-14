@@ -31,7 +31,7 @@ You need to update your `package.json` file in order to use the latest version o
   }
 ```
 
-Update the React and React DOM Version. It was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@^4.4.0`
+Update the React and React DOM Version. It was increased from `^15.0.0` to `^16.3.0`. This allows us to rely on the Context API. It also needs to have a new peer dependency `styled-components@4.4.0`
 
 
 ```diff

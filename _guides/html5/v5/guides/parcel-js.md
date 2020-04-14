@@ -1,7 +1,7 @@
 ---
 layout: guides/content
 title: &title Getting Started - Parcel JS
-description: Getting srted integration tutorial
+description: Getting started integration tutorial
 
 platform: html5
 version: v5
@@ -14,11 +14,9 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-
-
 ## Let's get started!
 
-We will be using use [parcel-js](https://parceljs.org/) for simplicity.
+We will be using [parcel-js](https://parceljs.org/) for simplicity.
 
 ##### Create a project
 
@@ -28,17 +26,16 @@ We will be using use [parcel-js](https://parceljs.org/) for simplicity.
 ##### Installing peer dependencies
 
 PhotoEditor SDK needs following peer dependencies:
-  1. React >= 16.3
-  1. React DOM >= 16.3
-  1. Styled Components >= 4.4
 
+1. React >= 16.3
+2. React DOM >= 16.3
+3. Styled Components >= 4.4
 
-- Run `npm install --save react@^16.3 react-dom@^16.3 styled-components@^4.4` to include them in the project.
-
+- Run `npm install --save react@16.3 react-dom@16.3 styled-components@4.4` to include them in the project.
 
 ##### Installing PhotoEditor SDK
 
-- Run `npm install --save photoeditorsdk@^5.0.0`.
+- Run `npm install --save photoeditorsdk@5.0.0`.
 
 You will be left with following structure in your `node_modules/photoeditorsdk/`
 
@@ -60,7 +57,8 @@ You will be left with following structure in your `node_modules/photoeditorsdk/`
 ```
 
 The package contains three folders that you need to integrate to your project.
-1. `assets`: It contains all assets required for the PhotoEditor, this includes for example assets for *frames*, *stickers* and the *ui*.
+
+1. `assets`: It contains all assets required for the PhotoEditor, this includes for example assets for _frames_, _stickers_ and the _ui_.
 1. `cjs`: It contains PhotoEditor SDK UI bundled as commonjs modules, will be loaded for older browser versions.
 1. `esm`: It contains PhotoEditor SDK UI bundled as ECMAScript modules, will be loaded for supported modern browser versions.
 
@@ -70,17 +68,18 @@ The package contains three folders that you need to integrate to your project.
 ##### Adding a container for PhotoEditor SDK
 
 - Create a `index.html` in the root of the project.
+
 ```html
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
-  </body>
-  </html>
+  <body></body>
+</html>
 ```
+
 - Create a `<div>` tag as a container for the editor. The editor will adapt its size according to the dimensions of the container. For the sake of simplicity, specify the dimensions using inline styles.
 
 ```diff
@@ -94,19 +93,18 @@ The package contains three folders that you need to integrate to your project.
 - Finally, in order to initialize the editor, instantiate the UI using JavaScript. Create a `index.js` in the root of the project.
 
 ```js
-import { UIEvent, PhotoEditorSDKUI } from 'photoeditorsdk'
+import { UIEvent, PhotoEditorSDKUI } from "photoeditorsdk";
 
 PhotoEditorSDKUI.init({
-  container: '#editor',
-  image: 'example.png', // Image url or Image path relative to assets directory
-  license: '<your_license_key>'
+  container: "#editor",
+  image: "example.png", // Image url or Image path relative to assets directory
+  license: "<your_license_key>",
 }).then((editor) => {
-  console.log('PhotoEditorSDK for Web is ready!')
+  console.log("PhotoEditorSDK for Web is ready!");
   editor.on(UIEvent.CLOSE, () => {
-    console.log('closed')
-  })
-})
-
+    console.log("closed");
+  });
+});
 ```
 
 - Include the `index.js` script in our html file
@@ -117,7 +115,6 @@ PhotoEditorSDKUI.init({
 +   <script src="./index.js"></script>
 </body>
 ```
-
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-02{% endcapture %}
 {% include multilingual_code_block.html snippets=snippets identifier=identifier %}
@@ -135,6 +132,7 @@ Please follow the instructions on how to properly configure CORS <a href="{{site
 </div>
 
 ## Ready to go!
+
 This is all that is necessary to get PhotoEditor SDK up and running. Now all you have to do is launch a webserver.
 
 - Run `npx parcel index.html`.
@@ -145,4 +143,3 @@ Note: (npx comes with npm 5.2+ and higher, see [instructions for older npm versi
 There you have it. PhotoEditor SDK for the Web is ready to use. Refer to the [configuration documentaion]({{site.baseurl}}/guides/html5/v5/introduction/configuration) for more configuration options.
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-03{% endcapture %}
-
