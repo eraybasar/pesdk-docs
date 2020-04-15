@@ -270,6 +270,14 @@ Launch your favorite webserver and enjoy our editor. If you don't know which web
 
 In any case, you can find a working demo integration [here](https://www.photoeditorsdk.com).
 
+Check out following guides for more examples.
+
+1. [React JS]({{site.baseurl}}/guides/html5/v4/guides/react)
+2. [Vue JS]({{site.baseurl}}/guides/html5/v4/guides/vuejs)
+3. [Angular JS]({{site.baseurl}}/guides/html5/v4/guides/angular)
+4. [Rails]({{site.baseurl}}/guides/html5/v4/guides/rails)
+5. [Ruby Gem]({{site.baseurl}}/guides/html5/v4/guides/ruby_gem)
+
 ## Questions ?
 
 This guide shows you how to integrate our editor into your own application. If you run into any error messages or other problems during this process or should you have further questions about the editor itself, then please take a look at our [FAQ]({{site.baseurl}}/guides/html5/v4/introduction/faq/overview) page, which offers answers to the most common questions and errors you might run into.

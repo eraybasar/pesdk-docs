@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title Getting Started - React JS
+title: &title Getting Started - Angular JS
 description: Getting started integration tutorial
 
 platform: html5
@@ -16,23 +16,21 @@ published: true # Either published or not
 
 ## Let's get started!
 
-We will be using [create-react-app](https://create-react-app.dev/docs/getting-started/) for simplicity.
+We will be using [angular cli](https://cli.angular.io/) for simplicity.
 
 ##### Create a project
 
-- Start a new project with `create-react-app`
+- Start a new project by following the `angular cli` prompts
 
 ```bash
 
-npx create-react-app my-app
+ng new my-app
 cd my-app
-npm run start
+ng serve
 
 ```
 
-Note: (npx comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))
-
-- Then open `http://localhost:3000/` to see your app.
+- Then open `http://localhost:4200/` to see your app.
 
 ##### Installing peer dependencies
 
@@ -42,9 +40,9 @@ PhotoEditor SDK needs following peer dependencies:
 2. React DOM >= 16.3
 3. Styled Components >= 4.4
 
-React and React DOM are already insalled using Create React App.
-
-- Run `npm install --save styled-components@4.4` to include Styled Components in the project.
+- Run `npm install --save react@16.3 react-dom@16.3 styled-components@4.4` to include them in the project.
+- Run `npm install --save-dev @types/react@16.3 @types/react-dom@16.3` to include the types in the project.
+- Add `"allowSyntheticDefaultImports": true` to the `compilerOptions` in `tsconfig.json` in order to compile React.
 
 ##### Installing PhotoEditor SDK
 
@@ -75,39 +73,83 @@ The package contains three folders that you need to integrate to your project.
 1. `cjs`: It contains PhotoEditor SDK UI bundled as commonjs modules, will be loaded for older browser versions.
 1. `esm`: It contains PhotoEditor SDK UI bundled as ECMAScript modules, will be loaded for supported modern browser versions.
 
-- Copy the `assets` from `node_modules/photoeditorsdk` to `public`.
+- Copy the contents from `node_modules/photoeditorsdk/assets` to `src/assets/photoeditorsdk`.
 
 ##### Creating an Editor component
 
-```js
-import { UIEvent, PhotoEditorSDKUI } from "photoeditorsdk";
+Use the `angular cli` to generate the scaffold for your editor component.
 
-export class PhotoEditorSDK extends React.Component {
-  componentDidMount() {
-    this.initEditor();
-  }
-  async initEditor() {
-    const editor = await PhotoEditorSDKUI.init({
-      container: "#editor",
-      image: "../example.jpg", // Image url or Image path relative to assets folder
-      license: "",
-    });
-    console.log("PhotoEditorSDK for Web is ready!");
-    editor.on(UIEvent.EXPORT, (imageSrc) => {
-      console.log("Exported ", imageSrc);
-    });
-  }
+```bash
+ng generate component photo-editor
+```
 
-  render() {
-    return (
-      <div
-        role="PhotoEditor SDK"
-        id="editor"
-        style={{ width: "100vw", height: "100vh" }}
-      />
-    );
+###### photo-editor.component.html
+
+```html
+<div #psdkContainer style="width: 100vw; height: 100vh;"></div>
+```
+
+###### photo-editor.component.ts
+
+```ts
+import { Component, AfterViewInit, ViewChild, Input } from "@angular/core";
+import { PhotoEditorSDKUI } from "photoeditorsdk";
+
+/* React Magic */
+import * as React from "react";
+import * as ReactDom from "react-dom";
+
+declare global {
+  interface Window {
+    React: any;
+    ReactDom: any;
   }
 }
+
+window.React = window.React || React;
+window.ReactDom = window.ReactDom || ReactDom;
+
+const license = "";
+
+@Component({
+  selector: "app-photo-editor",
+  templateUrl: "./photo-editor.component.html",
+})
+export class PhotoEditorComponent implements AfterViewInit {
+  constructor() {}
+
+  @Input() src: string;
+  @ViewChild("psdkContainer", { static: false }) container;
+
+  editor;
+
+  ngAfterViewInit() {
+    this.instantiateEditor();
+  }
+
+  async instantiateEditor() {
+    try {
+      this.editor = await PhotoEditorSDKUI.init({
+        license,
+        container: this.container.nativeElement,
+        image: this.src,
+        assetBaseUrl: "/assets/photoeditorsdk",
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+}
+```
+
+##### Add the component to the app
+
+###### app.component.html
+
+```html
+<app-photo-editor
+  src="https://static.photoeditorsdk.com/libraries/unsplash/raw/PZAxzN5DPkc.jpg"
+></app-photo-editor>
 ```
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-02{% endcapture %}

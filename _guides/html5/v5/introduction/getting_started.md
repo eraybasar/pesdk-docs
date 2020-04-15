@@ -47,6 +47,9 @@ Check out following guides for more examples.
 
 1. [Parcel JS]({{site.baseurl}}/guides/html5/v5/guides/parcel-js)
 2. [React JS]({{site.baseurl}}/guides/html5/v5/guides/react-js)
+3. [Vue JS]({{site.baseurl}}/guides/html5/v5/guides/vue-js)
+4. [Angular JS]({{site.baseurl}}/guides/html5/v5/guides/angular-js)
+5. [Rails]({{site.baseurl}}/guides/html5/v5/guides/rails)
 
 ## Questions ?
 

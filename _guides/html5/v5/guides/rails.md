@@ -1,6 +1,6 @@
 ---
 layout: guides/content
-title: &title Getting Started - React JS
+title: &title Getting Started - Rails
 description: Getting started integration tutorial
 
 platform: html5
@@ -16,21 +16,17 @@ published: true # Either published or not
 
 ## Let's get started!
 
-We will be using [create-react-app](https://create-react-app.dev/docs/getting-started/) for simplicity.
+We will be using [rails](https://guides.rubyonrails.org/getting_started.html) for simplicity.
 
 ##### Create a project
 
-- Start a new project with `create-react-app`
+- Start a new project by following the `rails` prompts
 
 ```bash
-
-npx create-react-app my-app
+rails new my-app
 cd my-app
-npm run start
-
+rails s
 ```
-
-Note: (npx comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))
 
 - Then open `http://localhost:3000/` to see your app.
 
@@ -42,13 +38,11 @@ PhotoEditor SDK needs following peer dependencies:
 2. React DOM >= 16.3
 3. Styled Components >= 4.4
 
-React and React DOM are already insalled using Create React App.
-
-- Run `npm install --save styled-components@4.4` to include Styled Components in the project.
+- Run `yarn add react@16.3 react-dom@16.3 styled-components@4.4` to include them in the project.
 
 ##### Installing PhotoEditor SDK
 
-- Run `npm install --save photoeditorsdk@5.0.0`.
+- Run `yarn add photoeditorsdk@5.0.0`.
 
 You will be left with following structure in your `node_modules/photoeditorsdk/`
 
@@ -79,35 +73,38 @@ The package contains three folders that you need to integrate to your project.
 
 ##### Creating an Editor component
 
+Use the `rails` to generate the scaffold for your controller.
+
+```bash
+rails generate controller home index
+```
+
+Then file can be accessed with `http://localhost:3000/home/index`.
+
+###### `app/views/home/index.html.erb`
+
+```html
+<!-- PESDK Demo Integration -->
+<div
+  id="pesdk"
+  style="width: 100vmin; height: 75vmin; padding: 0px; margin: 0px"
+></div>
+```
+
+###### `app/javascript/packs/application.js`
+
 ```js
-import { UIEvent, PhotoEditorSDKUI } from "photoeditorsdk";
+...
+import { PhotoEditorSDKUI } from 'photoeditorsdk'
 
-export class PhotoEditorSDK extends React.Component {
-  componentDidMount() {
-    this.initEditor();
-  }
-  async initEditor() {
-    const editor = await PhotoEditorSDKUI.init({
-      container: "#editor",
-      image: "../example.jpg", // Image url or Image path relative to assets folder
-      license: "",
-    });
-    console.log("PhotoEditorSDK for Web is ready!");
-    editor.on(UIEvent.EXPORT, (imageSrc) => {
-      console.log("Exported ", imageSrc);
-    });
-  }
-
-  render() {
-    return (
-      <div
-        role="PhotoEditor SDK"
-        id="editor"
-        style={{ width: "100vw", height: "100vh" }}
-      />
-    );
-  }
+window.onload = function () {
+  PhotoEditorSDKUI.init({
+    license: 'license-string', // <-- Please replace this with the content of your license file. The JSON-object must be in string format.
+    container: '#pesdk',
+    image: './example.jpg'
+  })
 }
+...
 ```
 
 {% capture identifier %}{{page.title}}-{{page.version}}-ANALYTICS-02{% endcapture %}
