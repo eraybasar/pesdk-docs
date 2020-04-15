@@ -17,6 +17,6 @@ published: true
 
 # Getting Started with Angular JS
 
-We created a [demo repository](https://github.com/imgly/pesdk-angular-demo), that uses our [Angular demo](https://github.com/imgly/pesdk-angular-demo) to integrate the PhotoEditor SDK into an Angular JS application.
+We created a [demo repository](https://github.com/imgly/pesdk-angular-demo/pesdk-v5) that showcases how you can integrate the PhotoEditor SDK into an Angular JS application.
 
->**WARNING**: The repository is not meant as a fully fledged React plugin, but as a base for further development instead. See the [Angular demo repository](https://github.com/imgly/pesdk-angular-demo) for more details on how to implement a full plugin for your use case.
+An in-depth guide can be found here [Getting Started - Angular JS]({{site.baseurl}}/guides/html5/v5/guides/angular-js)
