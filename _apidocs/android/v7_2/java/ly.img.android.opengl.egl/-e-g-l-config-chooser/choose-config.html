@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EGLConfigChooser.chooseConfig - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="index.html">EGLConfigChooser</a>&nbsp;/&nbsp;<a href="./choose-config.html">chooseConfig</a><br/>
+<br/>
+<h1>chooseConfig</h1>
+<code><span class="keyword">fun </span><span class="identifier">chooseConfig</span><span class="symbol">(</span><span class="identifier">egl</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGL10</span><span class="symbol">, </span><span class="identifier">display</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLDisplay</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EGLConfig</span></code>
+<p>Choose a configuration from the list. Implementors typically implement this method by calling EGL10#eglChooseConfig and iterating through the results. Please consult the EGL specification available from The Khronos Group to learn how to call eglChooseConfig.</p>
+<h3>Parameters</h3>
+<p><a name="egl"></a>
+<code>egl</code> - <span class="identifier">EGL10</span><span class="symbol">:</span> the EGL10 for the current display.</p>
+<p><a name="display"></a>
+<code>display</code> - <span class="identifier">EGLDisplay</span><span class="symbol">:</span> the current display.</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">EGLConfig</span><span class="symbol">:</span> the chosen configuration.</p>
+</BODY>
+</HTML>

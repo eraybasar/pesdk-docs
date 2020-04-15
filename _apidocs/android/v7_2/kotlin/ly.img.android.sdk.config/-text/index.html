@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Text - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.sdk.config</a>&nbsp;/&nbsp;<a href="./index.html">Text</a><br/>
+<br/>
+<h1>Text</h1>
+<code><span class="keyword">class </span><span class="identifier">Text</span></code>
+<p>Configuration options for <code>Tool.TEXT</code>.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Text</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Configuration options for <code>Tool.TEXT</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="actions.html">actions</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">actions</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-text-action/index.html"><span class="identifier">TextAction</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all allowed actions for the text tool menu. Only buttons for allowed actions are
+visible and shown in the given order.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="background-colors.html">backgroundColors</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">backgroundColors</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-palette/index.html"><span class="identifier">ColorPalette</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all available colors that can be applied to the background.
+The color pipette is always added.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="canvas-actions.html">canvasActions</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">canvasActions</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-sticker-canvas-action/index.html"><span class="identifier">StickerCanvasAction</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all allowed actions for the text tool that are displayed as overlay buttons on
+the canvas.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="default-text-color.html">defaultTextColor</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">defaultTextColor</span><span class="symbol">: </span><a href="../-color/index.html"><span class="identifier">Color</span></a><span class="symbol">?</span></code>
+<p>Defines the default text color for newly created text.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="fonts.html">fonts</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fonts</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-font-element/index.html"><span class="identifier">FontElement</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all available fonts.
+New items can be mixed and matched with existing ones.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="text-colors.html">textColors</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">textColors</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-palette/index.html"><span class="identifier">ColorPalette</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all available colors that can be applied to the text.
+The color pipette is always added.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="apply-on.html">applyOn</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">applyOn</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.sdk.config.Text$applyOn(ly.img.android.pesdk.backend.model.state.manager.SettingsList)/settingsList">settingsList</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings-list/index.html"><span class="identifier">SettingsList</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

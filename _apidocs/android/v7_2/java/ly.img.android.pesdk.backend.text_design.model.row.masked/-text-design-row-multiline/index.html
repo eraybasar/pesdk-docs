@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TextDesignRowMultiline - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.text_design.model.row.masked</a>&nbsp;/&nbsp;<a href="./index.html">TextDesignRowMultiline</a><br/>
+<br/>
+<h1>TextDesignRowMultiline</h1>
+<code><span class="keyword">class </span><span class="identifier">TextDesignRowMultiline</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-text-design-row-masked/index.html"><span class="identifier">TextDesignRowMasked</span></a></code>
+<p></p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TextDesignRowMultiline</span><span class="symbol">(</span><span class="identifier">words</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.type/-words/index.html"><span class="identifier">Words</span></a><span class="symbol">, </span><span class="identifier">width</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">attributes</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model.config/-text-design-attributes/index.html"><span class="identifier">TextDesignAttributes</span></a><span class="symbol">, </span><span class="identifier">image</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">, </span><span class="identifier">imageInsets</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier">capInsets</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">, </span><span class="identifier">backgroundColor</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">centerOffset</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">sizeToFitContent</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">, </span><span class="identifier">textScaleFactor</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">minimumHeight</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">, </span><span class="identifier">centeredVertically</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="calculate-layout-elements.html">calculateLayoutElements</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">calculateLayoutElements</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.util.List</span><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">&gt;</span></code>
+<p>This method creates and returns all the <code>TextDesignElement</code>s in this row based on the passed
+<code>size.width</code>. It must not rely on the height because this has not been calculated - in fact
+the height has to be derived from the width within this method. That means that this method
+should update <code>size.height</code> to a height that it needs to draw its contents into.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-centered-vertically.html">getCenteredVertically</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCenteredVertically</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-center-offset.html">getCenterOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCenterOffset</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-minimum-height.html">getMinimumHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMinimumHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-size-to-fit-content.html">getSizeToFitContent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSizeToFitContent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-text-scale-factor.html">getTextScaleFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTextScaleFactor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-centered-vertically.html">setCenteredVertically</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCenteredVertically</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-center-offset.html">setCenterOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCenterOffset</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-minimum-height.html">setMinimumHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMinimumHeight</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-size-to-fit-content.html">setSizeToFitContent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSizeToFitContent</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-text-scale-factor.html">setTextScaleFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTextScaleFactor</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="text-bounds-of-element.html">textBoundsOfElement</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">textBoundsOfElement</span><span class="symbol">(</span><span class="identifier">layoutElement</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">float</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="text-frame.html">textFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">textFrame</span><span class="symbol">(</span><span class="identifier">element</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.text_design.model/-text-design-element/index.html"><span class="identifier">TextDesignElement</span></a><span class="symbol">, </span><span class="identifier">fontSize</span><span class="symbol">:</span>&nbsp;<span class="identifier">float</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="text-style-for-font.html">textStyleForFont</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">textStyleForFont</span><span class="symbol">(</span><span class="identifier">font</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-font-asset/index.html"><span class="identifier">FontAsset</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

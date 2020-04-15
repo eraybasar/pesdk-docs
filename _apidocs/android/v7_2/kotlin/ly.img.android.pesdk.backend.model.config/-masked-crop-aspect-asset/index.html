@@ -1,0 +1,185 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MaskedCropAspectAsset - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.config</a>&nbsp;/&nbsp;<a href="./index.html">MaskedCropAspectAsset</a><br/>
+<br/>
+<h1>MaskedCropAspectAsset</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">MaskedCropAspectAsset</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a></code>
+<p>The MaskedCropAspectAsset instance should be added by calling `addAsset` of the `AssetConfig`. After that you can apply it directly by calling `setAspect(cropAspectAsset)` of the `TransformSettings`. To make this configuration available to the end user, you also have to add a `CropMaskItem()` with the same id.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MaskedCropAspectAsset</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Float)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Float)/cropWidth">cropWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Float)/cropHeight">cropHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Float)/fixedSize">fixedSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Float)/exportMask">exportMask</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Float)/maskColor">maskColor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(kotlin.String, kotlin.Int, kotlin.Int, kotlin.Boolean, kotlin.Boolean, kotlin.Int, kotlin.Float)/cornerRadius">cornerRadius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">MaskedCropAspectAsset</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.MaskedCropAspectAsset$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/-f-r-e-e_-c-r-o-p.html">FREE_CROP</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">FREE_CROP</span><span class="symbol">: </span><a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/-f-r-e-e_-c-r-o-p_-i-d.html">FREE_CROP_ID</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">FREE_CROP_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/-m-a-s-k_-c-r-o-p_-i-d.html">MASK_CROP_ID</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">MASK_CROP_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/-r-e-s-e-t_-c-r-o-p_-i-d.html">RESET_CROP_ID</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">RESET_CROP_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/get-aspect.html">getAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAspect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html"><span class="identifier">BigDecimal</span></a><span class="symbol">!</span></code>
+<p>Get Aspect the ration or #CropAspectAsset.CUSTOM_ASPECT if it is custom aspect mode.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/get-config-type.html">getConfigType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfigType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-abstract-asset/index.html"><span class="identifier">AbstractAsset</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/get-crop-height.html">getCropHeight</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCropHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/get-crop-mask-color.html">getCropMaskColor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCropMaskColor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Get Color of the crop mask.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/get-crop-mask-corner-radius.html">getCropMaskCornerRadius</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCropMaskCornerRadius</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Get the crop mask corner radius.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/get-crop-width.html">getCropWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCropWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/has-equal-aspect.html">hasEqualAspect</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasEqualAspect</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.CropAspectAsset$hasEqualAspect(ly.img.android.pesdk.backend.model.config.CropAspectAsset)/o">o</span><span class="symbol">:</span>&nbsp;<a href="../-crop-aspect-asset/index.html"><span class="identifier">CropAspectAsset</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/has-specific-size.html">hasSpecificSize</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasSpecificSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/is-free-crop.html">isFreeCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isFreeCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/is-has-fixed-size.html">isHasFixedSize</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isHasFixedSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/is-masked-crop.html">isMaskedCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isMaskedCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/should-export-crop-mask.html">shouldExportCropMask</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">shouldExportCropMask</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Get export value of the crop mask export.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-crop-aspect-asset/write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.CropAspectAsset$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.config.CropAspectAsset$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,284 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DataSourceListAdapter - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.adapter</a>&nbsp;/&nbsp;<a href="./index.html">DataSourceListAdapter</a><br/>
+<br/>
+<h1>DataSourceListAdapter</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DataSourceListAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.utils/-data-source-array-list/-callback/index.html"><span class="identifier">DataSourceArrayList.Callback</span></a></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-data-source-view-holder/index.html">DataSourceViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">DataSourceViewHolder</span><span class="symbol">&lt;</span><span class="identifier">ITEM</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier">ASYNC_DATA</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-hierarchy-data-source-id-item-list/index.html">HierarchyDataSourceIdItemList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HierarchyDataSourceIdItemList</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-multi-view/index.html">MultiView</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MultiView</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RelativeLayout</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-multi-view-holder/index.html">MultiViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">MultiViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">OnClickListener</span><span class="symbol">, </span><span class="identifier">OnSetSelectionListener</span><span class="symbol">, </span><span class="identifier">OnTouchListener</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-on-item-click-listener/index.html">OnItemClickListener</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnItemClickListener</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DataSourceListAdapter</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="before-list-item-removed.html">beforeListItemRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">beforeListItemRemoved</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$beforeListItemRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$beforeListItemRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="before-list-items-removed.html">beforeListItemsRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">beforeListItemsRemoved</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$beforeListItemsRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$beforeListItemsRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/from">from</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$beforeListItemsRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/to">to</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="calculate-remaining-space.html">calculateRemainingSpace</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateRemainingSpace</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="calculate-space-items.html">calculateSpaceItems</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateSpaceItems</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="dispatch-on-item-click.html">dispatchOnItemClick</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispatchOnItemClick</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$dispatchOnItemClick(ly.img.android.pesdk.ui.adapter.DataSourceInterface)/entity">entity</span><span class="symbol">:</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispatchOnItemClick</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$dispatchOnItemClick(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-data.html">getData</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getData</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-entity-at.html">getEntityAt</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getEntityAt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$getEntityAt(kotlin.Int)/i">i</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-flavor-at.html">getFlavorAt</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFlavorAt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$getFlavorAt(kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-holder-by-id.html">getHolderById</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getHolderById</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$getHolderById(kotlin.Int)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-multi-view-holder/index.html"><span class="identifier">DataSourceListAdapter.MultiViewHolder</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-position.html">getPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$getPosition(ly.img.android.pesdk.ui.adapter.DataSourceInterface)/item">item</span><span class="symbol">:</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-selected-position.html">getSelectedPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSelectedPosition</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-visible-content-size.html">getVisibleContentSize</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getVisibleContentSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="invalidate-item.html">invalidateItem</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">invalidateItem</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$invalidateItem(ly.img.android.pesdk.ui.adapter.DataSourceInterface)/item">item</span><span class="symbol">:</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-invalid.html">listInvalid</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">listInvalid</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listInvalid(kotlin.collections.MutableList((kotlin.Any)))/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-item-added.html">listItemAdded</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">listItemAdded</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemAdded(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemAdded(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-item-changed.html">listItemChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">listItemChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemChanged(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemChanged(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-item-removed.html">listItemRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">listItemRemoved</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-items-added.html">listItemsAdded</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">listItemsAdded</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemsAdded(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemsAdded(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/from">from</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemsAdded(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/to">to</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-items-removed.html">listItemsRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">listItemsRemoved</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemsRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemsRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/from">from</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$listItemsRemoved(kotlin.collections.MutableList((kotlin.Any)), kotlin.Int, kotlin.Int)/to">to</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached-to-recycler-view.html">onAttachedToRecyclerView</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onAttachedToRecyclerView</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onAttachedToRecyclerView(RecyclerView)/recyclerView">recyclerView</span><span class="symbol">:</span>&nbsp;<span class="identifier">RecyclerView</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onBindViewHolder(ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.MultiViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-multi-view-holder/index.html"><span class="identifier">DataSourceListAdapter.MultiViewHolder</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onBindViewHolder(ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.MultiViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onBindViewHolder(ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.MultiViewHolder, kotlin.Int, kotlin.collections.MutableList((kotlin.Any)))/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-multi-view-holder/index.html"><span class="identifier">DataSourceListAdapter.MultiViewHolder</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onBindViewHolder(ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.MultiViewHolder, kotlin.Int, kotlin.collections.MutableList((kotlin.Any)))/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onBindViewHolder(ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.MultiViewHolder, kotlin.Int, kotlin.collections.MutableList((kotlin.Any)))/payloads">payloads</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onCreateViewHolder(ViewGroup, kotlin.Int)/viewGroup">viewGroup</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewGroup</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onCreateViewHolder(ViewGroup, kotlin.Int)/i">i</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-multi-view-holder/index.html"><span class="identifier">DataSourceListAdapter.MultiViewHolder</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached-from-recycler-view.html">onDetachedFromRecyclerView</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onDetachedFromRecyclerView</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onDetachedFromRecyclerView(RecyclerView)/recyclerView">recyclerView</span><span class="symbol">:</span>&nbsp;<span class="identifier">RecyclerView</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-view-attached-to-window.html">onViewAttachedToWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onViewAttachedToWindow</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$onViewAttachedToWindow(ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.MultiViewHolder)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-multi-view-holder/index.html"><span class="identifier">DataSourceListAdapter.MultiViewHolder</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="open-folder-which-includes.html">openFolderWhichIncludes</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">openFolderWhichIncludes</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$openFolderWhichIncludes(ly.img.android.pesdk.ui.panels.item.AbstractIdItem)/item">item</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-data.html">setData</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setData</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setData(java.util.ArrayList((ly.img.android.pesdk.ui.adapter.DataSourceInterface)), kotlin.Boolean)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setData(java.util.ArrayList((ly.img.android.pesdk.ui.adapter.DataSourceInterface)), kotlin.Boolean)/displayFolder">displayFolder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setData</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setData(java.util.ArrayList((ly.img.android.pesdk.ui.adapter.DataSourceInterface)))/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-on-item-click-listener.html">setOnItemClickListener</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setOnItemClickListener</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setOnItemClickListener(ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.OnItemClickListener((ly.img.android.pesdk.ui.adapter.DataSourceInterface)))/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-selection.html">setSelection</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSelection</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setSelection(ly.img.android.pesdk.ui.adapter.DataSourceInterface)/item">item</span><span class="symbol">:</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSelection</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setSelection(ly.img.android.pesdk.ui.adapter.DataSourceInterface, kotlin.Boolean)/item">item</span><span class="symbol">:</span>&nbsp;<a href="../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setSelection(ly.img.android.pesdk.ui.adapter.DataSourceInterface, kotlin.Boolean)/openFolder">openFolder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-use-vertical-layout.html">setUseVerticalLayout</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setUseVerticalLayout</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.adapter.DataSourceListAdapter$setUseVerticalLayout(kotlin.Boolean)/useVerticalLayout">useVerticalLayout</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

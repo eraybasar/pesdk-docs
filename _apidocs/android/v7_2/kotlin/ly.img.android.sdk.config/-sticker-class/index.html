@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StickerClass - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.sdk.config</a>&nbsp;/&nbsp;<a href="./index.html">StickerClass</a><br/>
+<br/>
+<h1>StickerClass</h1>
+<code><span class="keyword">class </span><span class="identifier">StickerClass</span></code>
+<p>Configuration options for <code>Tool.STICKER</code>.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">StickerClass</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Configuration options for <code>Tool.STICKER</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="actions.html">actions</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">actions</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-sticker-action/index.html"><span class="identifier">StickerAction</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all allowed actions for the sticker tool menu. Only buttons for allowed actions
+are visible and shown in the given order.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="canvas-actions.html">canvasActions</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">canvasActions</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-sticker-canvas-action/index.html"><span class="identifier">StickerCanvasAction</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all allowed actions for the sticker tool that are displayed as overlay buttons on
+the canvas.
+Only buttons for allowed actions are visible.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="categories.html">categories</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">categories</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-sticker-category-class/index.html"><span class="identifier">StickerCategoryClass</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all available stickers. Each sticker must be assigned to a category.
+New items and categories can be mixed and matched with existing ones.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="colors.html">colors</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">colors</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-palette/index.html"><span class="identifier">ColorPalette</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Defines all available colors that can be applied to stickers with a <code>tintMode</code> other than
+<code>TintMode.NONE</code>.
+The color pipette is always added.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="default-personal-sticker-tint-mode.html">defaultPersonalStickerTintMode</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">defaultPersonalStickerTintMode</span><span class="symbol">: </span><a href="../-tint-mode/index.html"><span class="identifier">TintMode</span></a><span class="symbol">?</span></code>
+<p>The default tint mode for personal stickers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="personal-stickers.html">personalStickers</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">personalStickers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code>
+<p>If enabled the user can create personal stickers from the device's photo library. A
+button is added as first item
+in the menu in front of the sticker categories which modally presents an image selection
+dialog for personal sticker creation.
+Personal stickers will be added to a personal sticker category with the identifier
+<code>"imgly_sticker_category_personal"</code> which
+will be added between the button and the regular sticker categories if it does not exist.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="apply-on.html">applyOn</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">applyOn</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.sdk.config.StickerClass$applyOn(ly.img.android.pesdk.backend.model.state.manager.SettingsList)/settingsList">settingsList</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings-list/index.html"><span class="identifier">SettingsList</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

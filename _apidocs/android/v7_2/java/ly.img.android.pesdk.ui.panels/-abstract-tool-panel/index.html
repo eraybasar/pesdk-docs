@@ -1,0 +1,508 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractToolPanel - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels</a>&nbsp;/&nbsp;<a href="./index.html">AbstractToolPanel</a><br/>
+<br/>
+<h1>AbstractToolPanel</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractToolPanel</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-tool-view/index.html">ToolView</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">class </span><span class="identifier">ToolView</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RelativeLayout</span><span class="symbol">, </span><span class="identifier">OnInflateFinishedListener</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AbstractToolPanel</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="attach.html">attach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier">parentView</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewGroup</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">View</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="call-attached.html">callAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">callAttached</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-exit-animator.html">createExitAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createExitAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-show-animator.html">createShowAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createShowAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="detach.html">detach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">detach</span><span class="symbol">(</span><span class="identifier">revertChanges</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="equals.html">equals</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier">o</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Object</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="feature.html">feature</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">feature</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Feature</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-activity.html">getActivity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getActivity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.ui.activity/-img-ly-activity/index.html"><span class="identifier">ImgLyActivity</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-config.html">getConfig</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.AssetConfig</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-history-level.html">getHistoryLevel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHistoryLevel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-history-settings.html">getHistorySettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHistorySettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.Class</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-history-state.html">getHistoryState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHistoryState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.HistoryState</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layout-resource.html">getLayoutResource</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLayoutResource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-panel-view.html">getPanelView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPanelView</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">View</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="hash-code.html">hashCode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-acceptable.html">isAcceptable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isAcceptable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-attached.html">isAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-cancelable.html">isCancelable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isCancelable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-inited.html">isInited</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInited</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-ready.html">isReady</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isReady</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Called on attached the View.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-before-detach.html">onBeforeDetach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBeforeDetach</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">, </span><span class="identifier">revertChanges</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<p>Called before the View will detached. It is possible that this method will not call. Use #onDetached() instated to clear critical allocations.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detach.html">onDetach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetach</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Called after View would detached.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="redo-local-state.html">redoLocalState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">redoLocalState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="refresh.html">refresh</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">refresh</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="revert-changes.html">revertChanges</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">revertChanges</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="revert-to-initial-state.html">revertToInitialState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">revertToInitialState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="save-end-state.html">saveEndState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveEndState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="save-initial-state.html">saveInitialState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveInitialState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="save-local-state.html">saveLocalState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveLocalState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="setup-history.html">setupHistory</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setupHistory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="undo-local-state.html">undoLocalState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">undoLocalState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-stage-overlapping.html">updateStageOverlapping</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateStageOverlapping</span><span class="symbol">(</span><span class="identifier">bottomScreenPos</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-a-n-i-m-a-t-i-o-n_-d-u-r-a-t-i-o-n.html">ANIMATION_DURATION</a></p>
+</td>
+<td>
+<code><span class="identifier">ANIMATION_DURATION</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="history-settings.html">historySettings</a></p>
+</td>
+<td>
+<code><span class="identifier">historySettings</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="parent-view.html">parentView</a></p>
+</td>
+<td>
+<code><span class="identifier">parentView</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="tool-history-level.html">toolHistoryLevel</a></p>
+</td>
+<td>
+<code><span class="identifier">toolHistoryLevel</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="tool-view.html">toolView</a></p>
+</td>
+<td>
+<code><span class="identifier">toolView</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ui-density.html">uiDensity</a></p>
+</td>
+<td>
+<code><span class="identifier">uiDensity</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-adjustment-tool-panel/index.html">AdjustmentToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">AdjustmentToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-adjust-option/index.html"><span class="identifier">AdjustOption</span></a><span class="symbol">&gt;</span></code>
+<p>Tool view to control brightness getSettingsModel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-brush-tool-panel/index.html">BrushToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BrushToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.utils/-time-out/-callback/index.html"><span class="identifier">TimeOut.Callback</span></a><span class="symbol">&lt;</span><span class="identifier">ly.img.android.pesdk.ui.panels.BrushToolPanel.TIMER</span><span class="symbol">&gt;</span></code>
+<p>Tool view to control image mirroring and rotation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-color-option-tool-panel/index.html">ColorOptionToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ColorOptionToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-color-item/index.html"><span class="identifier">ColorItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets.colorpicker/-color-picker-view/-on-color-changed/index.html"><span class="identifier">ColorPickerView.OnColorChanged</span></a></code>
+<p>Tool view to select crop aspect</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-filter-tool-panel/index.html">FilterToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FilterToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code>
+<p>Tool view to select a image filter</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-focus-tool-panel/index.html">FocusToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FocusToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-focus-option/index.html"><span class="identifier">FocusOption</span></a><span class="symbol">&gt;</span></code>
+<p>Tool view to control contrast getSettingsModel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-frame-option-tool-panel/index.html">FrameOptionToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FrameOptionToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-frame-tool-panel/index.html">FrameToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FrameToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-frame-item/index.html"><span class="identifier">FrameItem</span></a><span class="symbol">&gt;</span></code>
+<p>Tool view to select crop aspect</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-menu-tool-panel/index.html">MenuToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MenuToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-tool-item/index.html"><span class="identifier">ToolItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-overlay-tool-panel/index.html">OverlayToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">OverlayToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code>
+<p>Tool view to select a image filter</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-sticker-option-tool-panel/index.html">StickerOptionToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">StickerOptionToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-seek-slider/-on-seek-bar-change-listener/index.html"><span class="identifier">SeekSlider.OnSeekBarChangeListener</span></a></code>
+<p>Tool view a Stickers</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-sticker-tool-panel/index.html">StickerToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">StickerToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.utils/-data-source-array-list/-callback/index.html"><span class="identifier">DataSourceArrayList.Callback</span></a></code>
+<p>Tool view a Stickers</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-option-tool-panel/index.html">TextDesignOptionToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextDesignOptionToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a></code>
+<p>Tool view to add and control Text-Stickers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-design-tool-panel/index.html">TextDesignToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextDesignToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><span class="identifier">OnGlobalLayoutListener</span><span class="symbol">, </span><span class="identifier">OnEditorActionListener</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-font-option-tool-panel/index.html">TextFontOptionToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextFontOptionToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-font-item/index.html"><span class="identifier">FontItem</span></a><span class="symbol">&gt;</span></code>
+<p>Tool view to select crop aspect</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-option-tool-panel/index.html">TextOptionToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextOptionToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-option-item/index.html"><span class="identifier">OptionItem</span></a><span class="symbol">&gt;</span></code>
+<p>Tool view to add and control Text-Stickers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-text-tool-panel/index.html">TextToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TextToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><span class="identifier">OnGlobalLayoutListener</span><span class="symbol">, </span><span class="identifier">OnEditorActionListener</span></code>
+<p>Tool view to add and control Text-Stickers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-transform-tool-panel/index.html">TransformToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TransformToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">OnClickListener</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.widgets/-adjust-slider/-adjust-bar-change-listener/index.html"><span class="identifier">AdjustSlider.AdjustBarChangeListener</span></a></code>
+<p>Tool view to select crop aspect</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-video-trim-tool-panel/index.html">VideoTrimToolPanel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">VideoTrimToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractToolPanel</span></a></code>
+<p>Tool view to select a image filter</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,276 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Camera - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.acs</a>&nbsp;/&nbsp;<a href="./index.html">Camera</a><br/>
+<br/>
+<h1>Camera</h1>
+<code><span class="keyword">class </span><span class="identifier">Camera</span></code>
+<p>Complex Camera Wrapper, for simple Camera use</p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-auto-focus-callback/index.html">AutoFocusCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">AutoFocusCallback</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-camera-state/index.html">CameraState</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CameraState</span></code>
+<p>Current Camera state object</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-on-state-change-listener/index.html">OnStateChangeListener</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnStateChangeListener</span></code>
+<p>Camera state change Interface</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-picture-callback/index.html">PictureCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">PictureCallback</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PictureCallback</span></code>
+<p>Abstract picture callback</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-size/index.html">Size</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Size</span></code>
+<p>Size model</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-camera-angle-correction.html">getCameraAngleCorrection</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">getCameraAngleCorrection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-camera-facing.html">getCameraFacing</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCameraFacing</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.acs.constants/-camera-facing/index.html"><span class="identifier">CameraFacing</span></a></code>
+<p>Get the current camera facing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-camera-orientation.html">getCameraOrientation</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">getCameraOrientation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<p>Get camera cameraOrientation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-current-exif-orientation.html">getCurrentExifOrientation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCurrentExifOrientation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-flash-mode.html">getFlashMode</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">getFlashMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.acs.constants/-flash-mode/index.html"><span class="identifier">FlashMode</span></a></code>
+<p>Get the current FlashMode</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-instance.html">getInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Camera</span></a></code>
+<p>Get a singleton Camera Instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-preview-size.html">getPreviewSize</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">getPreviewSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-size/index.html"><span class="identifier">Camera.Size</span></a></code>
+<p>Get Preview Size</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state.html">getState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-camera-state/index.html"><span class="identifier">Camera.CameraState</span></a></code>
+<p>Get the State of the current Camera getSettingsModel. This is a singleton</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="has-scene-mode.html">hasSceneMode</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">hasSceneMode</span><span class="symbol">(</span><span class="identifier">mode</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Check if the current state has scene mode is available.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="is-available.html">isAvailable</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">isAvailable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Check if min. 1 Camera is available.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="is-front.html">isFront</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFront</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Check if Camera is Front Camera</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="is-preview-flipped.html">isPreviewFlipped</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isPreviewFlipped</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-auto-focus-callback.html">setAutoFocusCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAutoFocusCallback</span><span class="symbol">(</span><span class="identifier">autoFocusCallback</span><span class="symbol">:</span>&nbsp;<a href="-auto-focus-callback/index.html"><span class="identifier">Camera.AutoFocusCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-camera-facing.html">setCameraFacing</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">setCameraFacing</span><span class="symbol">(</span><span class="identifier">cameraFacing</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs.constants/-camera-facing/index.html"><span class="identifier">CameraFacing</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.acs.constants/-camera-facing/index.html"><span class="identifier">CameraFacing</span></a></code>
+<p>Try to set a Camera Facing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-flash-mode.html">setFlashMode</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">setFlashMode</span><span class="symbol">(</span><span class="identifier">mode</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs.constants/-flash-mode/index.html"><span class="identifier">FlashMode</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.acs.constants/-flash-mode/index.html"><span class="identifier">FlashMode</span></a></code>
+<p>Try to set a flash mode and take a fallback mode if not supported by current Camera.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-focus.html">setFocus</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">setFocus</span><span class="symbol">(</span><span class="identifier">focusAreas</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">&lt;</span><span class="identifier">Area</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>* Set Camera FOCUS.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-location-provider.html">setLocationProvider</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setLocationProvider</span><span class="symbol">(</span><span class="identifier">locationProvider</span><span class="symbol">:</span>&nbsp;<a href="../-g-p-s-location-provider/index.html"><span class="identifier">GPSLocationProvider</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-on-state-change-listener.html">setOnStateChangeListener</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setOnStateChangeListener</span><span class="symbol">(</span><span class="identifier">onStateChangeListener</span><span class="symbol">:</span>&nbsp;<a href="-on-state-change-listener/index.html"><span class="identifier">Camera.OnStateChangeListener</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Set a listener to catch any getSettingsModel state changes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-scene-mode.html">setSceneMode</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">setSceneMode</span><span class="symbol">(</span><span class="identifier">mode</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs.constants/-scene-mode/index.html"><span class="identifier">SceneMode</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.acs.constants/-scene-mode/index.html"><span class="identifier">SceneMode</span></a></code>
+<p>Try to set a Scene mode and take a fallback mode if not supported by current Camera.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-surface.html">setSurface</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">setSurface</span><span class="symbol">(</span><span class="identifier">surfaceTexture</span><span class="symbol">:</span>&nbsp;<span class="identifier">SurfaceTexture</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Set Preview Texture</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="start-preview.html">startPreview</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">startPreview</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Start the Camera Preview, this is async and will begin if the surface are set.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="stop-preview.html">stopPreview</a></p>
+</td>
+<td>
+<code><span class="keyword">synchronized</span> <span class="keyword">fun </span><span class="identifier">stopPreview</span><span class="symbol">(</span><span class="identifier">release</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Stop the Camera Preview and releaseGlContext the surface.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="take-picture.html">takePicture</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">takePicture</span><span class="symbol">(</span><span class="identifier">callback</span><span class="symbol">:</span>&nbsp;<a href="../-camera-view/-capture-callback/index.html"><span class="identifier">CameraView.CaptureCallback</span></a><span class="symbol">, </span><span class="identifier">outputPath</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>* Take a Picture</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="preview-callback.html">previewCallback</a></p>
+</td>
+<td>
+<code><span class="identifier">previewCallback</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

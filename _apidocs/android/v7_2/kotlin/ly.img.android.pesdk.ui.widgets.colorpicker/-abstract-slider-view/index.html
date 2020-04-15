@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractSliderView - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.widgets.colorpicker</a>&nbsp;/&nbsp;<a href="./index.html">AbstractSliderView</a><br/>
+<br/>
+<h1>AbstractSliderView</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractSliderView</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">View</span></code>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AbstractSliderView</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$<init>(Context)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractSliderView</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$<init>(Context, AttributeSet)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$<init>(Context, AttributeSet)/attrs">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">AbstractSliderView</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$<init>(Context, AttributeSet, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$<init>(Context, AttributeSet, kotlin.Int)/attrs">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$<init>(Context, AttributeSet, kotlin.Int)/defStyleAttr">defStyleAttr</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="color-range.html">colorRange</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">colorRange</span><span class="symbol">: </span><span class="identifier">RectF</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="density.html">density</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">density</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finder-bitmap.html">finderBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">finderBitmap</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stage.html">stage</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">stage</span><span class="symbol">: </span><span class="identifier">RectF</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="draw-finder.html">drawFinder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">drawFinder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$drawFinder(Canvas, kotlin.Float)/canvas">canvas</span><span class="symbol">:</span>&nbsp;<span class="identifier">Canvas</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$drawFinder(Canvas, kotlin.Float)/progress">progress</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-progress-change.html">onProgressChange</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onProgressChange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$onProgressChange(kotlin.Float)/progress">progress</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-size-changed.html">onSizeChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onSizeChanged</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/w">w</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/h">h</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/oldw">oldw</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$onSizeChanged(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int)/oldh">oldh</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-touch-event.html">onTouchEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onTouchEvent</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.ui.widgets.colorpicker.AbstractSliderView$onTouchEvent(MotionEvent)/event">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">MotionEvent</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-alpha-view/index.html">AlphaView</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AlphaView</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractSliderView</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-hue-view/index.html">HueView</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HueView</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AbstractSliderView</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

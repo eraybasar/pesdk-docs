@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IOUtils.copy - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="index.html">IOUtils</a>&nbsp;/&nbsp;<a href="./copy.html">copy</a><br/>
+<br/>
+<h1>copy</h1>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<p>Copy bytes from an <code>InputStream</code> to an <code>OutputStream</code>. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedInputStream</code>. </p>
+<p> Large streams (over 2GB) will return a bytes copied value of <code>-1</code> after the copy has completed since the correct number of bytes cannot be returned as an int. For large streams use the <code>copyLarge(InputStream, OutputStream)</code> method.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.InputStream</span><span class="symbol">:</span> the <code>InputStream</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><a name="ArithmeticException"></a>
+<code>ArithmeticException</code> - if the byte count is too large</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">int</span><span class="symbol">:</span> the number of bytes copied</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Copy bytes from an <code>InputStream</code> to chars on a <code>Writer</code> using the default character encoding of the platform. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedInputStream</code>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStreamReader.html">InputStreamReader</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.InputStream</span><span class="symbol">:</span> the <code>InputStream</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.InputStream</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">, </span><span class="identifier">encoding</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Copy bytes from an <code>InputStream</code> to chars on a <code>Writer</code> using the specified character encoding. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedInputStream</code>. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStreamReader.html">InputStreamReader</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.InputStream</span><span class="symbol">:</span> the <code>InputStream</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Reader</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Writer</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code>
+<p>Copy chars from a <code>Reader</code> to a <code>Writer</code>. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedReader</code>. </p>
+<p> Large streams (over 2GB) will return a chars copied value of <code>-1</code> after the copy has completed since the correct number of chars cannot be returned as an int. For large streams use the <code>copyLarge(Reader, Writer)</code> method.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.Reader</span><span class="symbol">:</span> the <code>Reader</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.Writer</span><span class="symbol">:</span> the <code>Writer</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><a name="ArithmeticException"></a>
+<code>ArithmeticException</code> - if the character count is too large</p>
+<p><strong>Return</strong><br/>
+<span class="identifier">int</span><span class="symbol">:</span> the number of characters copied</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Reader</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Copy chars from a <code>Reader</code> to bytes on an <code>OutputStream</code> using the default character encoding of the platform, and calling flush. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedReader</code>. </p>
+<p> Due to the implementation of OutputStreamWriter, this method performs a flush. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html">OutputStreamWriter</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.Reader</span><span class="symbol">:</span> the <code>Reader</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">copy</span><span class="symbol">(</span><span class="identifier">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.Reader</span><span class="symbol">, </span><span class="identifier">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.io.OutputStream</span><span class="symbol">, </span><span class="identifier">encoding</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Copy chars from a <code>Reader</code> to bytes on an <code>OutputStream</code> using the specified character encoding, and calling flush. </p>
+<p> This method buffers the input internally, so there is no need to use a <code>BufferedReader</code>. </p>
+<p> Character encoding names can be found at <a href="http://www.iana.org/assignments/character-sets">IANA</a>. </p>
+<p> Due to the implementation of OutputStreamWriter, this method performs a flush. </p>
+<p> This method uses <code><a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html">OutputStreamWriter</a></code>.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <span class="identifier">java.io.Reader</span><span class="symbol">:</span> the <code>Reader</code> to read from</p>
+<p><a name="output"></a>
+<code>output</code> - <span class="identifier">java.io.OutputStream</span><span class="symbol">:</span> the <code>OutputStream</code> to write to</p>
+<p><a name="encoding"></a>
+<code>encoding</code> - <span class="identifier">java.lang.String</span><span class="symbol">:</span> the encoding to use, null means platform default</p>
+<h3>Exceptions</h3>
+<p><a name="NullPointerException"></a>
+<code>NullPointerException</code> - if the input or output is null</p>
+<p><a name="IOException"></a>
+<code>IOException</code> - if an I/O error occurs</p>
+<p><strong>Since</strong><br/>
+Commons IO 1.1</p>
+</BODY>
+</HTML>

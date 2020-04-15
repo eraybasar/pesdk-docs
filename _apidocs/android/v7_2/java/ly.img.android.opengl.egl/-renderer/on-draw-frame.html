@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Renderer.onDrawFrame - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="index.html">Renderer</a>&nbsp;/&nbsp;<a href="./on-draw-frame.html">onDrawFrame</a><br/>
+<br/>
+<h1>onDrawFrame</h1>
+<code><span class="keyword">fun </span><span class="identifier">onDrawFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Called to draw the current frame. </p>
+<p> This method is responsible for drawing the current frame. </p>
+<p> The implementation of this method typically looks like this: </p>
+<pre><code>
+      void onDrawFrame(GL10 gl) {
+          gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
+          //... other gl calls to render the scene ...
+      }
+      </code></pre>
+</BODY>
+</HTML>

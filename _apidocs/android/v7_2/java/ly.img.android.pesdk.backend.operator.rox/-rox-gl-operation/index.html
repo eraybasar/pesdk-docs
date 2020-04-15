@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RoxGlOperation - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.rox</a>&nbsp;/&nbsp;<a href="./index.html">RoxGlOperation</a><br/>
+<br/>
+<h1>RoxGlOperation</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">RoxGlOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-rox-operation/index.html"><span class="identifier">RoxOperation</span></a></code>
+<p>Abstract Operation</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RoxGlOperation</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="do-operation.html">doOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier">requested</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-requested/index.html"><span class="identifier">Requested</span></a><span class="symbol">, </span><span class="identifier">result</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-result-i/index.html"><span class="identifier">ResultI</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier">requested</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-requested/index.html"><span class="identifier">Requested</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-setup.html">glSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="setup.html">setup</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-rox-adjust-operation/index.html">RoxAdjustOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxAdjustOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-clarity-operation/index.html">RoxClarityOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxClarityOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-crop-mask-operation/index.html">RoxCropMaskOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxCropMaskOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-filter-operation/index.html">RoxFilterOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxFilterOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-focus-operation/index.html">RoxFocusOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxFocusOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-layer-combine-operation/index.html">RoxLayerCombineOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxLayerCombineOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-load-operation/index.html">RoxLoadOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxLoadOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-save-operation/index.html">RoxSaveOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxSaveOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-screen-operation/index.html">RoxScreenOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxScreenOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-sharpness-operation/index.html">RoxSharpnessOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxSharpnessOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>image Filter Operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-rox-transform-operation/index.html">RoxTransformOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxTransformOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxGlOperation</span></a></code>
+<p>Chunk Operator to show preview result in the editor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

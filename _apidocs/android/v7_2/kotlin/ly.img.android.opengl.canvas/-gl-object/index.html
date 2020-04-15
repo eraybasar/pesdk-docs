@@ -1,0 +1,288 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlObject - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.canvas</a>&nbsp;/&nbsp;<a href="./index.html">GlObject</a><br/>
+<br/>
+<h1>GlObject</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlObject</span></code>
+<p></p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlObject</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="free-up.html">freeUp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">freeUp</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$freeUp(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-rebound.html">onRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-release.html">onRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="queue-destroy.html">queueDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$queueDestroy(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="queue-rebound.html">queueRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="rebound-gl-context.html">reboundGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reboundGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="release-gl-context.html">releaseGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">releaseGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="create-gl-context.html">createGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createGlContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject.Companion$createGlContext(ly.img.android.opengl.GlThreadRunner)/glThreadRunner">glThreadRunner</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl/-gl-thread-runner/index.html"><span class="identifier">GlThreadRunner</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destroy-gl-context.html">destroyGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">destroyGlContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject.Companion$destroyGlContext(kotlin.Boolean)/releaseFinally">releaseFinally</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="free-memory.html">freeMemory</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">freeMemory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-delete-buffer.html">glDeleteBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">glDeleteBuffer</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject.Companion$glDeleteBuffer(kotlin.Int)/handle">handle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-gen-buffer.html">glGenBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">glGenBuffer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-is-out-of-memory.html">glIsOutOfMemory</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">glIsOutOfMemory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="run-with-gl-context.html">runWithGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">runWithGlContext</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject.Companion$runWithGlContext(java.lang.Runnable)/runnable">runnable</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Runnable.html"><span class="identifier">Runnable</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="try-gl-allocate.html">tryGlAllocate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">tryGlAllocate</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject.Companion$tryGlAllocate(kotlin.Function0((kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-gl-abstract-shader/index.html">GlAbstractShader</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlAbstractShader</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-blit/index.html">GlBlit</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlBlit</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-clear-scissor/index.html">GlClearScissor</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlClearScissor</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-layer-shape/index.html">GlLayerShape</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlLayerShape</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.operator.preview/-gl-operation/index.html">GlOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-particles/index.html">GlParticles</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlParticles</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-program/index.html">GlProgram</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlProgram</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-gl-shape/index.html">GlShape</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GlShape</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.textures/-gl-source-tile-texture/index.html">GlSourceTileTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlSourceTileTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.textures/-gl-texture/index.html">GlTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GlTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.textures/-gl-virtual-mip-map-texture/index.html">GlVirtualMipMapTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlVirtualMipMapTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.operator.rox/-rox-operation/index.html">RoxOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">RoxOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-state-handler-bindable/index.html"><span class="identifier">StateHandlerBindable</span></a></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.operator.rox/-rox-operator/index.html">RoxOperator</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RoxOperator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GlObject</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.operator.rox/-rox-operation/-callback/index.html"><span class="identifier">RoxOperation.Callback</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

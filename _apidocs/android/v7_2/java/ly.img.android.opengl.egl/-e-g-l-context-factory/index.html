@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EGLContextFactory - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="./index.html">EGLContextFactory</a><br/>
+<br/>
+<h1>EGLContextFactory</h1>
+<code><span class="keyword">interface </span><span class="identifier">EGLContextFactory</span></code>
+<p>An interface for customizing the eglCreateContext and eglDestroyContext calls. </p>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="create-context.html">createContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createContext</span><span class="symbol">(</span><span class="identifier">egl</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGL10</span><span class="symbol">, </span><span class="identifier">display</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLDisplay</span><span class="symbol">, </span><span class="identifier">eglConfig</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLConfig</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EGLContext</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destroy-context.html">destroyContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">destroyContext</span><span class="symbol">(</span><span class="identifier">egl</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGL10</span><span class="symbol">, </span><span class="identifier">display</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLDisplay</span><span class="symbol">, </span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">EGLContext</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-context-factory/index.html">ContextFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ContextFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">EGLContextFactory</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

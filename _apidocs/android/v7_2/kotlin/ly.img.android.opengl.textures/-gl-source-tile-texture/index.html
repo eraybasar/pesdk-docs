@@ -1,0 +1,274 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlSourceTileTexture - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.textures</a>&nbsp;/&nbsp;<a href="./index.html">GlSourceTileTexture</a><br/>
+<br/>
+<h1>GlSourceTileTexture</h1>
+<code><span class="keyword">class </span><span class="identifier">GlSourceTileTexture</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.opengl.canvas/-gl-object/index.html"><span class="identifier">GlObject</span></a></code>
+<p></p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GlSourceTileTexture</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="call-on-update-event.html">callOnUpdateEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">callOnUpdateEvent</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.utils/-thread-utils/-main-thread-runnable/index.html"><span class="identifier">ThreadUtils.MainThreadRunnable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="height.html">height</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="load-image-buffer-in-max-size.html">loadImageBufferInMaxSize</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">loadImageBufferInMaxSize</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.utils/-thread-utils/-replace-thread-runnable/index.html"><span class="identifier">ThreadUtils.ReplaceThreadRunnable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="load-sharp-tile.html">loadSharpTile</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">loadSharpTile</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.utils/-thread-utils/-replace-thread-runnable/index.html"><span class="identifier">ThreadUtils.ReplaceThreadRunnable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-update.html">onUpdate</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">onUpdate</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-presentation-time-in-nanoseconds.html">getPresentationTimeInNanoseconds</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPresentationTimeInNanoseconds</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-source.html">hasSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="load-buffered-texture.html">loadBufferedTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loadBufferedTexture</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$loadBufferedTexture(ly.img.android.pesdk.backend.model.chunk.MultiRect, ly.img.android.opengl.textures.GlFrameBufferTexture, kotlin.Boolean)/chunkRect">chunkRect</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$loadBufferedTexture(ly.img.android.pesdk.backend.model.chunk.MultiRect, ly.img.android.opengl.textures.GlFrameBufferTexture, kotlin.Boolean)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="../-gl-frame-buffer-texture/index.html"><span class="identifier">GlFrameBufferTexture</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$loadBufferedTexture(ly.img.android.pesdk.backend.model.chunk.MultiRect, ly.img.android.opengl.textures.GlFrameBufferTexture, kotlin.Boolean)/isExport">isExport</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-release.html">onRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pause-video-and-audio.html">pauseVideoAndAudio</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pauseVideoAndAudio</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="seek-start.html">seekStart</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">seekStart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="seek-stop.html">seekStop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">seekStop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="seek-to.html">seekTo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">seekTo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$seekTo(kotlin.Long)/startAtUs">startAtUs</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-source.html">setSource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$setSource(ly.img.android.pesdk.backend.decoder.ImageSource)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-image-source/index.html"><span class="identifier">ImageSource</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$setSource(ly.img.android.pesdk.backend.decoder.VideoSource)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-video-source/index.html"><span class="identifier">VideoSource</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-time-range.html">setTimeRange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTimeRange</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$setTimeRange(kotlin.Long, kotlin.Long)/minFrameTimeInNanoseconds">minFrameTimeInNanoseconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$setTimeRange(kotlin.Long, kotlin.Long)/maxFrameTimeInNanoseconds">maxFrameTimeInNanoseconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-video-and-audio-frame.html">setVideoAndAudioFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setVideoAndAudioFrame</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$setVideoAndAudioFrame(kotlin.Long, kotlin.Boolean)/atNanosecond">atNanosecond</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$setVideoAndAudioFrame(kotlin.Long, kotlin.Boolean)/isPlaying">isPlaying</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-frame-by-frame-mode.html">startFrameByFrameMode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startFrameByFrameMode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.textures.GlSourceTileTexture$startFrameByFrameMode(kotlin.Long)/startAtNanoseconds">startAtNanoseconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-stream-mode.html">startStreamMode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startStreamMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-video.html">startVideo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startVideo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stop-video.html">stopVideo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stopVideo</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stop-video-and-audio-decoding.html">stopVideoAndAudioDecoding</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stopVideoAndAudioDecoding</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="wait-for-next-frame.html">waitForNextFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">waitForNextFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/finalize.html">finalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">finalize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/free-up.html">freeUp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">freeUp</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$freeUp(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/on-rebound.html">onRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/queue-destroy.html">queueDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.opengl.canvas.GlObject$queueDestroy(kotlin.Boolean)/sync">sync</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/queue-rebound.html">queueRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueRebound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/rebound-gl-context.html">reboundGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reboundGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.canvas/-gl-object/release-gl-context.html">releaseGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">releaseGlContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,185 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GLSurfaceView - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl.egl</a>&nbsp;/&nbsp;<a href="./index.html">GLSurfaceView</a><br/>
+<br/>
+<h1>GLSurfaceView</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GLSurfaceView</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-setup-init/index.html">SetupInit</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SetupInit</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GLSurfaceView</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">GLSurfaceView</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">, </span><span class="identifier">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">GLSurfaceView</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">, </span><span class="identifier">attrs</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">, </span><span class="identifier">defStyleAttr</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-show-state.html">getShowState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getShowState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateObservable</span><span class="symbol">&lt;</span><span class="identifier">java.lang.Enum</span><span class="symbol">&lt;</span><span class="identifier">?</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-ui-density.html">getUiDensity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUiDensity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="gl-setup.html">glSetup</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">glSetup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-attached.html">isAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached-to-u-i.html">onAttachedToUI</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttachedToUI</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached-to-window.html">onAttachedToWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttachedToWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached-from-u-i.html">onDetachedFromUI</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetachedFromUI</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached-from-window.html">onDetachedFromWindow</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetachedFromWindow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-draw-gl.html">onDrawGl</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDrawGl</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-pause-event.html">onPauseEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPauseEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume-event.html">onResumeEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResumeEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="queue-event.html">queueEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queueEvent</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Runnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">queueEvent</span><span class="symbol">(</span><span class="identifier">r</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier">force</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-attached.html">setAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAttached</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-show-state.html">setShowState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setShowState</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateObservable</span><span class="symbol">&lt;</span><span class="identifier">java.lang.Enum</span><span class="symbol">&lt;</span><span class="identifier">?</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-state-handler.html">setStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setStateHandler</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-ui-density.html">setUiDensity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUiDensity</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">NonExistentClass</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.views.abstracts/-img-ly-u-i-surface-view/index.html">ImgLyUISurfaceView</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ImgLyUISurfaceView</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GLSurfaceView</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.backend.views/-u-i-overlay-drawer/index.html"><span class="identifier">UIOverlayDrawer</span></a></code>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

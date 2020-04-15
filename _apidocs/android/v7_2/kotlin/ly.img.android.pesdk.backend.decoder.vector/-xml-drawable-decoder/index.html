@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>XmlDrawableDecoder - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.decoder.vector</a>&nbsp;/&nbsp;<a href="./index.html">XmlDrawableDecoder</a><br/>
+<br/>
+<h1>XmlDrawableDecoder</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">XmlDrawableDecoder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.decoder/-vector-decoder/index.html"><span class="identifier">VectorDecoder</span></a></code>
+<p></p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">XmlDrawableDecoder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$<init>(Resources, kotlin.Int)/resources">resources</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$<init>(Resources, kotlin.Int)/resourceId">resourceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">XmlDrawableDecoder</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$<init>(Resources, Uri)/resources">resources</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$<init>(Resources, Uri)/uri">uri</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="compat-get-drawable.html">compatGetDrawable</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">compatGetDrawable</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$compatGetDrawable(kotlin.Int)/resourceId">resourceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Drawable</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create.html">create</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$create(Resources, kotlin.Int, Resources.Theme)/res">res</span><span class="symbol">:</span>&nbsp;<span class="identifier">Resources</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$create(Resources, kotlin.Int, Resources.Theme)/resId">resId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$create(Resources, kotlin.Int, Resources.Theme)/theme">theme</span><span class="symbol">:</span>&nbsp;<span class="identifier">Theme</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">VectorDrawableCompat</span><span class="symbol">!</span></code>
+<p>Create a VectorDrawableCompat object.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="decode-as-bitmap.html">decodeAsBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">decodeAsBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$decodeAsBitmap(kotlin.Int, kotlin.Int, RectF, ly.img.android.pesdk.backend.model.constant.DrawableState)/boundsWidth">boundsWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$decodeAsBitmap(kotlin.Int, kotlin.Int, RectF, ly.img.android.pesdk.backend.model.constant.DrawableState)/boundsHeight">boundsHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$decodeAsBitmap(kotlin.Int, kotlin.Int, RectF, ly.img.android.pesdk.backend.model.constant.DrawableState)/slice">slice</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$decodeAsBitmap(kotlin.Int, kotlin.Int, RectF, ly.img.android.pesdk.backend.model.constant.DrawableState)/state">state</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-drawable-state/index.html"><span class="identifier">DrawableState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="decode-size.html">decodeSize</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">decodeSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model/-image-size/index.html"><span class="identifier">ImageSize</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="free-up-drawable-cache.html">freeUpDrawableCache</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">freeUpDrawableCache</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.vector.XmlDrawableDecoder$freeUpDrawableCache(Drawable)/drawable">drawable</span><span class="symbol">:</span>&nbsp;<span class="identifier">Drawable</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-drawable.html">getDrawable</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDrawable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Drawable</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-stateful.html">isStateful</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isStateful</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="recycle.html">recycle</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">recycle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.decoder/-vector-decoder/calculate-image-slice.html">calculateImageSlice</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">calculateImageSlice</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$calculateImageSlice(RectF, RectF)/bounds">bounds</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$calculateImageSlice(RectF, RectF)/region">region</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.decoder/-vector-decoder/get-bitmap.html">getBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.Int)/bounds">bounds</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.Int)/sampleSize">sampleSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.Int, ly.img.android.pesdk.backend.model.constant.DrawableState)/slice">slice</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-multi-rect/index.html"><span class="identifier">MultiRect</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.Int, ly.img.android.pesdk.backend.model.constant.DrawableState)/sampleSize">sampleSize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(ly.img.android.pesdk.backend.model.chunk.MultiRect, kotlin.Int, ly.img.android.pesdk.backend.model.constant.DrawableState)/state">state</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-drawable-state/index.html"><span class="identifier">DrawableState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/boundsWidth">boundsWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/boundsHeight">boundsHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/fitIntoBounds">fitIntoBounds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(kotlin.Int, kotlin.Int, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.DrawableState)/state">state</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-drawable-state/index.html"><span class="identifier">DrawableState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBitmap</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(RectF, RectF)/bounds">bounds</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.decoder.VectorDecoder$getBitmap(RectF, RectF)/region">region</span><span class="symbol">:</span>&nbsp;<span class="identifier">RectF</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Bitmap</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.decoder/-vector-decoder/is-vector.html">isVector</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isVector</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

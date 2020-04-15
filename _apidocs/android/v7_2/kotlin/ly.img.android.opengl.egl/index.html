@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ly.img.android.opengl.egl - </title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="./index.html">ly.img.android.opengl.egl</a><br/>
+<br/>
+<h2>Package ly.img.android.opengl.egl</h2>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-context-factory/index.html">ContextFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ContextFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-e-g-l-context-factory/index.html"><span class="identifier">EGLContextFactory</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-g-l-config-chooser/index.html">EGLConfigChooser</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">EGLConfigChooser</span></code>
+<p>An interface for choosing an EGLConfig configuration from a list of potential configurations. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-g-l-context-factory/index.html">EGLContextFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">EGLContextFactory</span></code>
+<p>An interface for customizing the eglCreateContext and eglDestroyContext calls. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-l-surface-view/index.html">GLSurfaceView</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">GLSurfaceView</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-g-l-thread/index.html">GLThread</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GLThread</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../ly.img.android.pesdk.utils/-terminable-thread/index.html"><span class="identifier">TerminableThread</span></a><span class="symbol">, </span><a href="../ly.img.android.opengl/-gl-thread-runner/index.html"><span class="identifier">GlThreadRunner</span></a></code>
+<p>A generic GL Thread. Takes care of initializing EGL and GL. Delegates
+to a Renderer instance to do the actual drawing. Can be configured to
+render continuously or on request.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-renderer/index.html">Renderer</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Renderer</span></code>
+<p>A generic renderer interface. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

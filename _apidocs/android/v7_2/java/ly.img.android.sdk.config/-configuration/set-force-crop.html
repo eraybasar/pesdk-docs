@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Configuration.setForceCrop - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.sdk.config</a>&nbsp;/&nbsp;<a href="index.html">Configuration</a>&nbsp;/&nbsp;<a href="./set-force-crop.html">setForceCrop</a><br/>
+<br/>
+<h1>setForceCrop</h1>
+<code><span class="identifier">@&lt;?&gt;</span> <span class="keyword">fun </span><span class="identifier">setForceCrop</span><span class="symbol">(</span><span class="identifier">@Nullable</span> <span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>When set to <code>true</code>, the user is forced to crop the asset to one of the allowed crop
+ratios in
+<code>transform.items</code> before being able to use other features of the editor.
+The transform tool will only be presented if the image does not already fit one of the
+allowed
+aspect ratios. It will be presented automatically, if the user changes the orientation of
+the asset
+and the result does not match an allowed aspect ratio.</p>
+<p>This property has no effect unless <code>transform.allowFreeCrop</code> is set to <code>false</code> or <code>null</code>.</p>
+</BODY>
+</HTML>

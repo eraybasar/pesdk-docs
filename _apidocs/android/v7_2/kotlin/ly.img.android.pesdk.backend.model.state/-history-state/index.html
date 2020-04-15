@@ -1,0 +1,176 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HistoryState - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.state</a>&nbsp;/&nbsp;<a href="./index.html">HistoryState</a><br/>
+<br/>
+<h1>HistoryState</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HistoryState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-state/index.html"><span class="identifier">ImglyState</span></a></code>
+<p></p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-event/index.html">Event</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Event</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-history-manager/index.html">HistoryManager</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HistoryManager</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-save-state/index.html">SaveState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">SaveState</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-save-state-list/index.html">SaveStateList</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">SaveStateList</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="-save-state/index.html"><span class="identifier">HistoryState.SaveState</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">HistoryState</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="create-history-manager.html">createHistoryManager</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createHistoryManager</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$createHistoryManager(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/toolHistoryLevel">toolHistoryLevel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$createHistoryManager(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/historySettings">historySettings</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="-history-manager/index.html"><span class="identifier">HistoryState.HistoryManager</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-current-state.html">getCurrentState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCurrentState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$getCurrentState(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-save-state/index.html"><span class="identifier">HistoryState.SaveState</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-next-sate.html">getNextSate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getNextSate</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$getNextSate(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-save-state/index.html"><span class="identifier">HistoryState.SaveState</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-position.html">getPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPosition</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$getPosition(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-prev-sate.html">getPrevSate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPrevSate</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$getPrevSate(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-save-state/index.html"><span class="identifier">HistoryState.SaveState</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state-at.html">getStateAt</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStateAt</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$getStateAt(kotlin.Int, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$getStateAt(kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-save-state/index.html"><span class="identifier">HistoryState.SaveState</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-redo-state.html">hasRedoState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasRedoState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$hasRedoState(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-undo-state.html">hasUndoState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasUndoState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$hasUndoState(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="redo.html">redo</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">redo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$redo(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-all.html">removeAll</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">removeAll</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$removeAll(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="revert-to-initial.html">revertToInitial</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">revertToInitial</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$revertToInitial(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="save.html">save</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">save</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$save(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$save(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/settingsClasses">settingsClasses</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="save-initial-state.html">saveInitialState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveInitialState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$saveInitialState(java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))), ly.img.android.pesdk.backend.model.state.manager.Settings.SaveState)/settingsClass">settingsClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$saveInitialState(java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))), ly.img.android.pesdk.backend.model.state.manager.Settings.SaveState)/saveState">saveState</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-save-state/index.html"><span class="identifier">Settings.SaveState</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="undo.html">undo</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">undo</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$undo(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update.html">update</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">update</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$update(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$update(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/settingsClasses">settingsClasses</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-missing-states.html">updateMissingStates</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateMissingStates</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$updateMissingStates(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="ly.img.android.pesdk.backend.model.state.HistoryState$updateMissingStates(kotlin.Int, kotlin.Array((java.lang.Class((ly.img.android.pesdk.backend.model.state.manager.Settings((kotlin.Enum((kotlin.Enum(()))))))))))/settingsClasses">settingsClasses</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/index.html"><span class="identifier">Settings</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><span class="identifier">Enum</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,235 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CameraState - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.model.state</a>&nbsp;/&nbsp;<a href="./index.html">CameraState</a><br/>
+<br/>
+<h1>CameraState</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CameraState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/index.html"><span class="identifier">ImglySettings</span></a></code>
+<p></p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-event/index.html">Event</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Event</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">CameraState</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">CameraState</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.CameraState$<init>(Parcel)/in">in</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-c-r-e-a-t-o-r.html">CREATOR</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CREATOR</span><span class="symbol">: </span><span class="identifier">Creator</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/change-marker-list.html">changeMarkerList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">changeMarkerList</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/has-revertible-values.html">hasRevertibleValues</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">hasRevertibleValues</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-settings/-s-t-a-t-e_-r-e-v-e-r-t-e-d.html">STATE_REVERTED</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">STATE_REVERTED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="describe-contents.html">describeContents</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">describeContents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-camera-facing.html">getCameraFacing</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCameraFacing</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.acs.constants/-camera-facing/index.html"><span class="identifier">CameraFacing</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-flash-mode.html">getFlashMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFlashMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.acs.constants/-flash-mode/index.html"><span class="identifier">FlashMode</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="has-non-defaults.html">hasNonDefaults</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasNonDefaults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-h-d-r-on.html">isHDROn</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isHDROn</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-filter-panel-close.html">notifyFilterPanelClose</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyFilterPanelClose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-filter-panel-open.html">notifyFilterPanelOpen</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyFilterPanelOpen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-is-ready.html">notifyIsReady</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyIsReady</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-photo-roll-canceled.html">notifyPhotoRollCanceled</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyPhotoRollCanceled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-photo-roll-open.html">notifyPhotoRollOpen</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyPhotoRollOpen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-picture-take.html">notifyPictureTake</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyPictureTake</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="notify-picture-taken.html">notifyPictureTaken</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">notifyPictureTaken</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-camera-facing.html">setCameraFacing</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setCameraFacing</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.CameraState$setCameraFacing(ly.img.android.acs.constants.CameraFacing)/cameraFacing">cameraFacing</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs.constants/-camera-facing/index.html"><span class="identifier">CameraFacing</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-flash-mode.html">setFlashMode</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFlashMode</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.CameraState$setFlashMode(ly.img.android.acs.constants.FlashMode)/flashMode">flashMode</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.acs.constants/-flash-mode/index.html"><span class="identifier">FlashMode</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-is-h-d-r-on.html">setIsHDROn</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setIsHDROn</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.CameraState$setIsHDROn(kotlin.Boolean)/isHDR">isHDR</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write-to-parcel.html">writeToParcel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">writeToParcel</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.CameraState$writeToParcel(Parcel, kotlin.Int)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">Parcel</span><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.CameraState$writeToParcel(Parcel, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/create-value-dump.html">createValueDump</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createValueDump</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/is-allowed-with-licensed.html">isAllowedWithLicensed</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isAllowedWithLicensed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/restore-value-dump.html">restoreValueDump</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">restoreValueDump</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$restoreValueDump(kotlin.Array((kotlin.Any)))/dump">dump</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html">value</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">value</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/persistent">persistent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/revertStrategy">revertStrategy</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-revert-strategy/index.html"><span class="identifier">RevertStrategy</span></a>&nbsp;<span class="symbol">=</span>&nbsp;RevertStrategy.PRIMITIVE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/isHasChangesMarker">isHasChangesMarker</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.Array((kotlin.String)))/callOnChange">callOnChange</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/-value/index.html"><span class="identifier">ImglySettings.Value</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">value</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/persistent">persistent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/revertStrategy">revertStrategy</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.constant/-revert-strategy/index.html"><span class="identifier">RevertStrategy</span></a>&nbsp;<span class="symbol">=</span>&nbsp;RevertStrategy.PRIMITIVE<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/isHasChangesMarker">isHasChangesMarker</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ly.img.android.pesdk.backend.model.state.manager.ImglySettings$value(ly.img.android.pesdk.backend.model.state.manager.ImglySettings.value.T, kotlin.Boolean, ly.img.android.pesdk.backend.model.constant.RevertStrategy, kotlin.Boolean, kotlin.String)/callOnChange">callOnChange</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/-value/index.html"><span class="identifier">ImglySettings.Value</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.backend.model.state.manager/-imgly-settings/value.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

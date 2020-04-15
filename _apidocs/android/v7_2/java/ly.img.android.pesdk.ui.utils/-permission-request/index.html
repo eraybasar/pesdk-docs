@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PermissionRequest - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.utils</a>&nbsp;/&nbsp;<a href="./index.html">PermissionRequest</a><br/>
+<br/>
+<h1>PermissionRequest</h1>
+<code><span class="keyword">class </span><span class="identifier">PermissionRequest</span></code>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-response/index.html">Response</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Response</span></code>
+<p>Callback Interface</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="get-permission.html">getPermission</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getPermission</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.activity/-img-ly-intent/-result-delegator/index.html"><span class="identifier">ImgLyIntent.ResultDelegator</span></a><span class="symbol">, </span><span class="identifier">permissions</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">response</span><span class="symbol">:</span>&nbsp;<a href="-response/index.html"><span class="identifier">PermissionRequest.Response</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getPermission</span><span class="symbol">(</span><span class="identifier">delegator</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.activity/-img-ly-intent/-result-delegator/index.html"><span class="identifier">ImgLyIntent.ResultDelegator</span></a><span class="symbol">, </span><span class="identifier">permissions</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">response</span><span class="symbol">:</span>&nbsp;<a href="-response/index.html"><span class="identifier">PermissionRequest.Response</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Request Android Permissions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="has-all-permission.html">hasAllPermission</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">hasAllPermission</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">permissions</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code>
+<p>Check if the user has granted the permissions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-request-permissions-result.html">onRequestPermissionsResult</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">onRequestPermissionsResult</span><span class="symbol">(</span><span class="identifier">requestCode</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">permissions</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.String</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">grantResults</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">int</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Must bee called by Activity.onRequestPermissionsResult</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-n-e-e-d-e-d_-e-d-i-t-o-r_-p-e-r-m-i-s-s-i-o-n-s.html">NEEDED_EDITOR_PERMISSIONS</a></p>
+</td>
+<td>
+<code><span class="identifier">NEEDED_EDITOR_PERMISSIONS</span></code>
+<p>Permissions needed for the Editor Activity</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-n-e-e-d-e-d_-p-r-e-v-i-e-w_-p-e-r-m-i-s-s-i-o-n-s.html">NEEDED_PREVIEW_PERMISSIONS</a></p>
+</td>
+<td>
+<code><span class="identifier">NEEDED_PREVIEW_PERMISSIONS</span></code>
+<p>Permissions needed for the Preview Activity</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-n-e-e-d-e-d_-p-r-e-v-i-e-w_-p-e-r-m-i-s-s-i-o-n-s_-a-n-d_-c-o-a-r-s-e_-l-o-c-a-t-i-o-n.html">NEEDED_PREVIEW_PERMISSIONS_AND_COARSE_LOCATION</a></p>
+</td>
+<td>
+<code><span class="identifier">NEEDED_PREVIEW_PERMISSIONS_AND_COARSE_LOCATION</span></code>
+<p>Permissions needed for the Preview Activity + ACCESS_COARSE_LOCATION</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-n-e-e-d-e-d_-p-r-e-v-i-e-w_-p-e-r-m-i-s-s-i-o-n-s_-a-n-d_-f-i-n-e_-l-o-c-a-t-i-o-n.html">NEEDED_PREVIEW_PERMISSIONS_AND_FINE_LOCATION</a></p>
+</td>
+<td>
+<code><span class="identifier">NEEDED_PREVIEW_PERMISSIONS_AND_FINE_LOCATION</span></code>
+<p>Permissions needed for the Preview Activity + ACCESS_FINE_LOCATION</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

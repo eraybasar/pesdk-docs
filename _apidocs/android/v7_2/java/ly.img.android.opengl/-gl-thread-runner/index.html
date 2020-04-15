@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlThreadRunner - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.opengl</a>&nbsp;/&nbsp;<a href="./index.html">GlThreadRunner</a><br/>
+<br/>
+<h1>GlThreadRunner</h1>
+<code><span class="keyword">interface </span><span class="identifier">GlThreadRunner</span></code>
+<p></p>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="free-memory.html">freeMemory</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">freeMemory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-egl-context.html">getEglContext</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getEglContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="queue-destroy.html">queueDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">queueDestroy</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">, </span><span class="identifier">sync</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="queue-rebound.html">queueRebound</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">queueRebound</span><span class="symbol">(</span><span class="identifier">obj</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="run-with-gl-context.html">runWithGlContext</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">runWithGlContext</span><span class="symbol">(</span><span class="identifier">runnable</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Runnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.opengl.egl/-g-l-thread/index.html">GLThread</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GLThread</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.utils/-terminable-thread/index.html"><span class="identifier">TerminableThread</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">GlThreadRunner</span></a></code>
+<p>A generic GL Thread. Takes care of initializing EGL and GL. Delegates
+to a Renderer instance to do the actual drawing. Can be configured to
+render continuously or on request.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

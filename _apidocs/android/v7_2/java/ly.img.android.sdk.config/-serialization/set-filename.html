@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Serialization.setFilename - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.sdk.config</a>&nbsp;/&nbsp;<a href="index.html">Serialization</a>&nbsp;/&nbsp;<a href="./set-filename.html">setFilename</a><br/>
+<br/>
+<h1>setFilename</h1>
+<code><span class="identifier">@&lt;?&gt;</span> <span class="keyword">fun </span><span class="identifier">setFilename</span><span class="symbol">(</span><span class="identifier">@Nullable</span> <span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The filename for the exported serialization data if the <code>exportType</code> is
+<code>SerializationExportType.FILE_URL</code>.
+The filename extension for JSON will be automatically added.
+It can be an absolute path or file URL or a relative path.
+If some relative path is chosen it will be created in a temporary system directory and
+overwritten
+if the corresponding file already exists. If the value is <code>null</code> an new temporary file
+will be
+created for every export based on the filename for the exported image or video data.</p>
+</BODY>
+</HTML>

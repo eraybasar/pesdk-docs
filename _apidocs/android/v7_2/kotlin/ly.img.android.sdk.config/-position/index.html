@@ -1,0 +1,146 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Position - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.sdk.config</a>&nbsp;/&nbsp;<a href="./index.html">Position</a><br/>
+<br/>
+<h1>Position</h1>
+<code><span class="keyword">class </span><span class="identifier">Position</span></code>
+<p>Snapping options for positioning sprites.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Position</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Snapping options for positioning sprites.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="enabled.html">enabled</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">enabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code>
+<p>Whether sprites should snap to specific positions during pan interactions.
+This switch enables or disables position snapping.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="snap-to-bottom.html">snapToBottom</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">snapToBottom</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">?</span></code>
+<p>The bottom side of a sprite's bounding box snaps to a horizontal line which is shifted
+from the bottom side of the edited image towards its center by this value. The value is
+measured in normalized
+coordinates relative to the smaller side of the edited image.
+If this value is explicitly set to <code>null</code> this snapping line is disabled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="snap-to-horizontal-center.html">snapToHorizontalCenter</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">snapToHorizontalCenter</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code>
+<p>If enabled a sprite's center snaps to the horizontal line through the center of the
+edited image.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="snap-to-left.html">snapToLeft</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">snapToLeft</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">?</span></code>
+<p>The left side of a sprite's bounding box snaps to a vertical line which is shifted
+from the left side of the edited image towards its center by this value. The value is
+measured in normalized
+coordinates relative to the smaller side of the edited image.
+If this value is explicitly set to <code>null</code> this snapping line is disabled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="snap-to-right.html">snapToRight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">snapToRight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">?</span></code>
+<p>The right side of a sprite's bounding box snaps to a vertical line which is shifted
+from the right side of the edited image towards its center by this value. The value is
+measured in normalized
+coordinates relative to the smaller side of the edited image.
+If this value is explicitly set to <code>null</code> this snapping line is disabled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="snap-to-top.html">snapToTop</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">snapToTop</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">?</span></code>
+<p>The top side of a sprite's bounding box snaps to a horizontal line which is shifted
+from the top side of the edited image towards its center by this value. The value is
+measured in normalized
+coordinates relative to the smaller side of the edited image.
+If this value is explicitly set to <code>null</code> this snapping line is disabled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="snap-to-vertical-center.html">snapToVerticalCenter</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">snapToVerticalCenter</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code>
+<p>If enabled a sprite's center snaps to the vertical line through the center of the edited
+image.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="threshold.html">threshold</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">threshold</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">?</span></code>
+<p>This threshold defines the distance of a pan gesture where snapping at a snap point
+occurs.
+It is measured in points.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html">andRecycle</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, )/b">b</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.backend.model.chunk/and-recycle.html#A"><span class="identifier">A</span></a><span class="symbol">.</span><span class="identifier">andRecycle</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.backend.model.chunk$andRecycle(ly.img.android.pesdk.backend.model.chunk.andRecycle.A, ly.img.android.pesdk.backend.model.chunk.Recyclable)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.chunk/-recyclable/index.html"><span class="identifier">Recyclable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html">loopAsLongNotNull</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">.</span><span class="identifier">loopAsLongNotNull</span><span class="symbol">(</span><span class="identifier" id="ly.img.android.pesdk.kotlin_extension$loopAsLongNotNull(ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, kotlin.Function1((ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T, ly.img.android.pesdk.kotlin_extension.loopAsLongNotNull.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">it</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.kotlin_extension/loop-as-long-not-null.html#T"><span class="identifier">T</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,312 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RoxOperation - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.backend.operator.rox</a>&nbsp;/&nbsp;<a href="./index.html">RoxOperation</a><br/>
+<br/>
+<h1>RoxOperation</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">RoxOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.opengl.canvas.GlObject</span><span class="symbol">, </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandlerBindable</span></code>
+<p>Abstract Operation</p>
+<h3>Types</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-callback/index.html">Callback</a></p>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">interface </span><span class="identifier">Callback</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-setup-init/index.html">SetupInit</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SetupInit</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RoxOperation</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="do-operation.html">doOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">doOperation</span><span class="symbol">(</span><span class="identifier">requested</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-requested/index.html"><span class="identifier">Requested</span></a><span class="symbol">, </span><span class="identifier">result</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-result-i/index.html"><span class="identifier">ResultI</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="flag-as-dirty.html">flagAsDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">flagAsDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-cache.html">getCache</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.operator.rox.models/-request-result/index.html"><span class="identifier">RequestResult</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-cached-request.html">getCachedRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCachedRequest</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.operator.rox.models/-request/index.html"><span class="identifier">Request</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-can-cache.html">getCanCache</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCanCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-estimated-memory-consumption-factor.html">getEstimatedMemoryConsumptionFactor</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getEstimatedMemoryConsumptionFactor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-necessary-memory.html">getNecessaryMemory</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNecessaryMemory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">float</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-next-export-operation.html">getNextExportOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNextExportOperation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RoxOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-next-operation.html">getNextOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNextOperation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RoxOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-state-handler.html">getStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStateHandler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-ui-density.html">getUiDensity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUiDensity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-dirty.html">isDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isDirty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-dirty-for.html">isDirtyFor</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isDirtyFor</span><span class="symbol">(</span><span class="identifier">requested</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-requested/index.html"><span class="identifier">Requested</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-headless-rendered.html">isHeadlessRendered</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isHeadlessRendered</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="last.html">last</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">last</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RoxOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="last-at-export.html">lastAtExport</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lastAtExport</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RoxOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-release.html">onRelease</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRelease</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render.html">render</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier">requested</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-requested/index.html"><span class="identifier">Requested</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.operator.rox.models/-result-i/index.html"><span class="identifier">ResultI</span></a></code>
+<p>Start the Operation</p>
+<code><span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="identifier">isPreview</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="request-source-answer.html">requestSourceAnswer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestSourceAnswer</span><span class="symbol">(</span><span class="identifier">requestI</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-request-i/index.html"><span class="identifier">RequestI</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ly.img.android.pesdk.backend.operator.rox.models/-source-result-i/index.html"><span class="identifier">SourceResultI</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="request-source-as-bitmap.html">requestSourceAsBitmap</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestSourceAsBitmap</span><span class="symbol">(</span><span class="identifier">requestI</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-request-i/index.html"><span class="identifier">RequestI</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NonExistentClass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="request-source-as-texture.html">requestSourceAsTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestSourceAsTexture</span><span class="symbol">(</span><span class="identifier">requestI</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-request-i/index.html"><span class="identifier">RequestI</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">requestSourceAsTexture</span><span class="symbol">(</span><span class="identifier">dependOn</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-requested/index.html"><span class="identifier">Requested</span></a><span class="symbol">, </span><span class="identifier">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">? super ly.img.android.pesdk.backend.operator.rox.models.RequestI</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-cache.html">setCache</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCache</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-request-result/index.html"><span class="identifier">RequestResult</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-cached-request.html">setCachedRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCachedRequest</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-request/index.html"><span class="identifier">Request</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-callback.html">setCallback</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCallback</span><span class="symbol">(</span><span class="identifier">callback</span><span class="symbol">:</span>&nbsp;<a href="-callback/index.html"><span class="identifier">RoxOperation.Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-can-cache.html">setCanCache</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCanCache</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-dirty.html">setDirty</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDirty</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-headless-rendered.html">setHeadlessRendered</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setHeadlessRendered</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-next-export-operation.html">setNextExportOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setNextExportOperation</span><span class="symbol">(</span><span class="identifier">nextExportOperation</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxOperation</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-next-operation.html">setNextOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setNextOperation</span><span class="symbol">(</span><span class="identifier">nextOperation</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxOperation</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-state-handler.html">setStateHandler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setStateHandler</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="setup.html">setup</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source-texture-as-requested.html">sourceTextureAsRequested</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sourceTextureAsRequested</span><span class="symbol">(</span><span class="identifier">dependOn</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.operator.rox.models/-requested/index.html"><span class="identifier">Requested</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ly.img.android.opengl.textures.GlTexture</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-string.html">toString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="state-handler.html">stateHandler</a></p>
+</td>
+<td>
+<code><span class="identifier">stateHandler</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="../-rox-gl-operation/index.html">RoxGlOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">RoxGlOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RoxOperation</span></a></code>
+<p>Abstract Operation</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

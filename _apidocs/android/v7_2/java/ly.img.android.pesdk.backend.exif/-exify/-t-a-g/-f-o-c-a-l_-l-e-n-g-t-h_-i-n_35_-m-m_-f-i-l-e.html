@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Exify.TAG.FOCAL_LENGTH_IN_35_MM_FILE - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.backend.exif</a>&nbsp;/&nbsp;<a href="../index.html">Exify</a>&nbsp;/&nbsp;<a href="index.html">TAG</a>&nbsp;/&nbsp;<a href="./-f-o-c-a-l_-l-e-n-g-t-h_-i-n_35_-m-m_-f-i-l-e.html">FOCAL_LENGTH_IN_35_MM_FILE</a><br/>
+<br/>
+<h1>FOCAL_LENGTH_IN_35_MM_FILE</h1>
+<code><span class="identifier">FOCAL_LENGTH_IN_35_MM_FILE</span></code>
+<p>Value is unsigned int. This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. Exif 2.2 tag, usually not present, it can be calculated by: </p>
+ <pre><code>
+          CCDWidth = ( PixelXDimension * FocalplaneUnits / FocalplaneXRes );
+          FocalLengthIn35mmFilm = ( FocalLength / CCDWidth * 36 + 0.5 );
+          </code></pre>
+</BODY>
+</HTML>

@@ -1,0 +1,382 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Configuration - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.sdk.config</a>&nbsp;/&nbsp;<a href="./index.html">Configuration</a><br/>
+<br/>
+<h1>Configuration</h1>
+<code><span class="keyword">class </span><span class="identifier">Configuration</span></code>
+<p>Configuration options and asset definitions for image and video editing tasks.</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Configuration</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Configuration options and asset definitions for image and video editing tasks.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="apply-on.html">applyOn</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">applyOn</span><span class="symbol">(</span><span class="identifier">settingsList</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.SettingsList</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-adjustment.html">getAdjustment</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAdjustment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-adjustment/index.html"><span class="identifier">Adjustment</span></a></code>
+<p>Configuration options for <code>Tool.ADJUSTMENT</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-brush.html">getBrush</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getBrush</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-brush/index.html"><span class="identifier">Brush</span></a></code>
+<p>Configuration options for <code>Tool.BRUSH</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-custom.html">getCustom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCustom</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-custom/index.html"><span class="identifier">Custom</span></a></code>
+<p>Customization options.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-enable-zoom.html">getEnableZoom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getEnableZoom</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Boolean</span></code>
+<p>Controls if the user can zoom the preview image.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-export.html">getExport</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getExport</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-export/index.html"><span class="identifier">Export</span></a></code>
+<p>Export configuration options.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-filter.html">getFilter</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFilter</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-filter-class/index.html"><span class="identifier">FilterClass</span></a></code>
+<p>Configuration options for <code>Tool.FILTER</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-focus.html">getFocus</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFocus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-focus/index.html"><span class="identifier">Focus</span></a></code>
+<p>Configuration options for <code>Tool.FOCUS</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-force-crop.html">getForceCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getForceCrop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Boolean</span></code>
+<p>When set to <code>true</code>, the user is forced to crop the asset to one of the allowed crop
+ratios in
+<code>transform.items</code> before being able to use other features of the editor.
+The transform tool will only be presented if the image does not already fit one of the
+allowed
+aspect ratios. It will be presented automatically, if the user changes the orientation of
+the asset
+and the result does not match an allowed aspect ratio.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-frame.html">getFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-frame-class/index.html"><span class="identifier">FrameClass</span></a></code>
+<p>Configuration options for <code>Tool.FRAME</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-main-canvas-actions.html">getMainCanvasActions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMainCanvasActions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-main-canvas-action/index.html"><span class="identifier">MainCanvasAction</span></a><span class="symbol">&gt;</span></code>
+<p>Defines all allowed actions for the main screen that are displayed as overlay buttons on
+the canvas.
+Only buttons for allowed actions are visible.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-overlay.html">getOverlay</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOverlay</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-overlay-class/index.html"><span class="identifier">OverlayClass</span></a></code>
+<p>Configuration options for <code>Tool.OVERLAY</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-snapping.html">getSnapping</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSnapping</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-snapping/index.html"><span class="identifier">Snapping</span></a></code>
+<p>Global snapping options for all sprites, e.g., stickers, texts, and text designs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sticker.html">getSticker</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSticker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-sticker-class/index.html"><span class="identifier">StickerClass</span></a></code>
+<p>Configuration options for <code>Tool.STICKER</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-text.html">getText</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getText</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-text/index.html"><span class="identifier">Text</span></a></code>
+<p>Configuration options for <code>Tool.TEXT</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-textdesign.html">getTextdesign</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTextdesign</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-textdesign/index.html"><span class="identifier">Textdesign</span></a></code>
+<p>Configuration options for <code>Tool.TEXT_DESIGN</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-theme.html">getTheme</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTheme</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.String</span></code>
+<p>Defines the theme that should be used to style the user interface.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-tools.html">getTools</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTools</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-tool/index.html"><span class="identifier">Tool</span></a><span class="symbol">&gt;</span></code>
+<p>The menu items (or tools) to display in the main menu.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-transform.html">getTransform</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTransform</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-transform/index.html"><span class="identifier">Transform</span></a></code>
+<p>Configuration options for <code>Tool.TRANSFORM</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-adjustment.html">setAdjustment</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAdjustment</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-adjustment/index.html"><span class="identifier">Adjustment</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.ADJUSTMENT</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-brush.html">setBrush</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setBrush</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-brush/index.html"><span class="identifier">Brush</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.BRUSH</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-custom.html">setCustom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setCustom</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-custom/index.html"><span class="identifier">Custom</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Customization options.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-enable-zoom.html">setEnableZoom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setEnableZoom</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Controls if the user can zoom the preview image.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-export.html">setExport</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setExport</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-export/index.html"><span class="identifier">Export</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Export configuration options.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-filter.html">setFilter</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setFilter</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-filter-class/index.html"><span class="identifier">FilterClass</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.FILTER</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-focus.html">setFocus</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setFocus</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-focus/index.html"><span class="identifier">Focus</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.FOCUS</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-force-crop.html">setForceCrop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setForceCrop</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.Boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>When set to <code>true</code>, the user is forced to crop the asset to one of the allowed crop
+ratios in
+<code>transform.items</code> before being able to use other features of the editor.
+The transform tool will only be presented if the image does not already fit one of the
+allowed
+aspect ratios. It will be presented automatically, if the user changes the orientation of
+the asset
+and the result does not match an allowed aspect ratio.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-frame.html">setFrame</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setFrame</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-frame-class/index.html"><span class="identifier">FrameClass</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.FRAME</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-main-canvas-actions.html">setMainCanvasActions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setMainCanvasActions</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-main-canvas-action/index.html"><span class="identifier">MainCanvasAction</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Defines all allowed actions for the main screen that are displayed as overlay buttons on
+the canvas.
+Only buttons for allowed actions are visible.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-overlay.html">setOverlay</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setOverlay</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-overlay-class/index.html"><span class="identifier">OverlayClass</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.OVERLAY</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-snapping.html">setSnapping</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSnapping</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-snapping/index.html"><span class="identifier">Snapping</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Global snapping options for all sprites, e.g., stickers, texts, and text designs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-sticker.html">setSticker</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSticker</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-sticker-class/index.html"><span class="identifier">StickerClass</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.STICKER</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-text.html">setText</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setText</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-text/index.html"><span class="identifier">Text</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.TEXT</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-textdesign.html">setTextdesign</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTextdesign</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-textdesign/index.html"><span class="identifier">Textdesign</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.TEXT_DESIGN</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-theme.html">setTheme</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTheme</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Defines the theme that should be used to style the user interface.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-tools.html">setTools</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTools</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><a href="../-tool/index.html"><span class="identifier">Tool</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>The menu items (or tools) to display in the main menu.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-transform.html">setTransform</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTransform</span><span class="symbol">(</span><span class="identifier">p</span><span class="symbol">:</span>&nbsp;<a href="../-transform/index.html"><span class="identifier">Transform</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code>
+<p>Configuration options for <code>Tool.TRANSFORM</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

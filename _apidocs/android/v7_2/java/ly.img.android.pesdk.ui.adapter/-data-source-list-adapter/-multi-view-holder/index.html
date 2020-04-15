@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DataSourceListAdapter.MultiViewHolder - </title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ly.img.android.pesdk.ui.adapter</a>&nbsp;/&nbsp;<a href="../index.html">DataSourceListAdapter</a>&nbsp;/&nbsp;<a href="./index.html">MultiViewHolder</a><br/>
+<br/>
+<h1>MultiViewHolder</h1>
+<code><span class="keyword">protected</span> <span class="keyword">class </span><span class="identifier">MultiViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">OnClickListener</span><span class="symbol">, </span><span class="identifier">ly.img.android.pesdk.ui.adapter.DataSourceListAdapter.OnSetSelectionListener</span><span class="symbol">, </span><span class="identifier">OnTouchListener</span></code>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="bind.html">bind</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier">entity</span><span class="symbol">:</span>&nbsp;<a href="../../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">, </span><span class="identifier">flavor</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.lang.String</span><span class="symbol">, </span><span class="identifier">selected</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="bind-async-data.html">bindAsyncData</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">ITEM</span><span class="symbol">, </span><span class="identifier">ASYNC_DATA</span><span class="symbol">&gt;</span> <span class="identifier">bindAsyncData</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">ASYNC_DATA</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="dispatch-invalidation.html">dispatchInvalidation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchInvalidation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="dispatch-selection.html">dispatchSelection</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispatchSelection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="generate-bind-data-async.html">generateBindDataAsync</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">generateBindDataAsync</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">java.lang.Object</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-entity.html">getEntity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getEntity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-id.html">getId</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-view-holder.html">getViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getViewHolder</span><span class="symbol">(</span><span class="identifier">entity</span><span class="symbol">:</span>&nbsp;<a href="../../-data-source-interface/index.html"><span class="identifier">DataSourceInterface</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-data-source-view-holder/index.html"><span class="identifier">DataSourceListAdapter.DataSourceViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-click.html">onClick</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onClick</span><span class="symbol">(</span><span class="identifier">v</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-touch.html">onTouch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onTouch</span><span class="symbol">(</span><span class="identifier">v</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">, </span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">MotionEvent</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-selection-state.html">setSelectionState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSelectionState</span><span class="symbol">(</span><span class="identifier">selected</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="multi-type.html">multiType</a></p>
+</td>
+<td>
+<code><span class="identifier">multiType</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

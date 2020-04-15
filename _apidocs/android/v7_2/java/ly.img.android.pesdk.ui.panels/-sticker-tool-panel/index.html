@@ -1,0 +1,183 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StickerToolPanel - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">ly.img.android.pesdk.ui.panels</a>&nbsp;/&nbsp;<a href="./index.html">StickerToolPanel</a><br/>
+<br/>
+<h1>StickerToolPanel</h1>
+<code><span class="keyword">class </span><span class="identifier">StickerToolPanel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-tool-panel/index.html"><span class="identifier">AbstractToolPanel</span></a><span class="symbol">, </span><a href="../../ly.img.android.pesdk.ui.adapter/-data-source-list-adapter/-on-item-click-listener/index.html"><span class="identifier">DataSourceListAdapter.OnItemClickListener</span></a><span class="symbol">&lt;</span><a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../ly.img.android.pesdk.utils/-data-source-array-list/-callback/index.html"><span class="identifier">DataSourceArrayList.Callback</span></a></code>
+<p>Tool view a Stickers</p>
+<h3>Constructors</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">StickerToolPanel</span><span class="symbol">(</span><span class="identifier">stateHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">ly.img.android.pesdk.backend.model.state.manager.StateHandler</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="attach-sticker.html">attachSticker</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">attachSticker</span><span class="symbol">(</span><span class="identifier">config</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-image-sticker-asset/index.html"><span class="identifier">ImageStickerAsset</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="before-list-item-removed.html">beforeListItemRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">beforeListItemRemoved</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">, </span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="before-list-items-removed.html">beforeListItemsRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">beforeListItemsRemoved</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">, </span><span class="identifier">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">to</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="choose-sticker.html">chooseSticker</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">chooseSticker</span><span class="symbol">(</span><span class="identifier">imageStickerAsset</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.backend.model.config/-image-sticker-asset/index.html"><span class="identifier">ImageStickerAsset</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-exit-animator.html">createExitAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createExitAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-show-animator.html">createShowAnimator</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createShowAnimator</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Animator</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-history-settings.html">getHistorySettings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHistorySettings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">kotlin.Array</span><span class="symbol">&lt;</span><span class="identifier">java.lang.Class</span><span class="symbol">&lt;</span><span class="identifier">? extends ly.img.android.pesdk.backend.model.state.manager.Settings</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-layout-resource.html">getLayoutResource</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLayoutResource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-invalid.html">listInvalid</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listInvalid</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-item-added.html">listItemAdded</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listItemAdded</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">, </span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-item-changed.html">listItemChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listItemChanged</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">, </span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-item-removed.html">listItemRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listItemRemoved</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">, </span><span class="identifier">index</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-items-added.html">listItemsAdded</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listItemsAdded</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">, </span><span class="identifier">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">to</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="list-items-removed.html">listItemsRemoved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listItemsRemoved</span><span class="symbol">(</span><span class="identifier">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">java.util.List</span><span class="symbol">, </span><span class="identifier">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">, </span><span class="identifier">to</span><span class="symbol">:</span>&nbsp;<span class="identifier">int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attached.html">onAttached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttached</span><span class="symbol">(</span><span class="identifier">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-before-detach.html">onBeforeDetach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBeforeDetach</span><span class="symbol">(</span><span class="identifier">panelView</span><span class="symbol">:</span>&nbsp;<span class="identifier">View</span><span class="symbol">, </span><span class="identifier">revertChanges</span><span class="symbol">:</span>&nbsp;<span class="identifier">boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">int</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-detached.html">onDetached</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDetached</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-item-click.html">onItemClick</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onItemClick</span><span class="symbol">(</span><span class="identifier">entity</span><span class="symbol">:</span>&nbsp;<a href="../../ly.img.android.pesdk.ui.panels.item/-abstract-id-item/index.html"><span class="identifier">AbstractIdItem</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="use-gallery-upload-action.html">useGalleryUploadAction</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">useGalleryUploadAction</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">void</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Other members</h3>
+<table class="navBarContent">
+<tbody>
+<tr>
+<td>
+<p><a href="-s-t-i-c-k-e-r_-p-i-c-k-e-r_-i-n-t-e-n-t.html">STICKER_PICKER_INTENT</a></p>
+</td>
+<td>
+<code><span class="identifier">STICKER_PICKER_INTENT</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-o-o-l_-i-d.html">TOOL_ID</a></p>
+</td>
+<td>
+<code><span class="identifier">TOOL_ID</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
