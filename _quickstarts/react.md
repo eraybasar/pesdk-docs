@@ -16,6 +16,6 @@ published: true
 
 # Getting Started with React
 
-We created a [demo repository](https://github.com/imgly/pesdk-react-demo/pesdk-v5) that showcases how you can integrate the PhotoEditor SDK into a React application.
+We created a [demo repository](https://github.com/imgly/pesdk-react-demo/tree/master/pesdk-v5) that showcases how you can integrate the PhotoEditor SDK into a React application.
 
 An in-depth guide can be found here [Getting Started - React JS]({{site.baseurl}}/guides/html5/v5/guides/react-js)

@@ -16,6 +16,6 @@ published: true
 
 # Getting Started with Ruby on Rails
 
-We created a [demo repository](https://github.com/imgly/pesdk-rails-demo/pesdk-v5) that showcases how you can integrate the PhotoEditor SDK into an Ruby on Rails application.
+We created a [demo repository](https://github.com/imgly/pesdk-rails-demo/tree/master/pesdk-v5) that showcases how you can integrate the PhotoEditor SDK into an Ruby on Rails application.
 
 An in-depth guide can be found here [Getting Started - Rails]({{site.baseurl}}/guides/html5/v5/guides/rails)

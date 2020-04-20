@@ -17,6 +17,6 @@ published: true
 
 # Getting Started with Vue.js
 
-We created a [demo repository](https://github.com/imgly/pesdk-wrapper-vuejs/pesdk-v5) that showcases how you can integrate the PhotoEditor SDK into a Vue.js application.
+We created a [demo repository](https://github.com/imgly/pesdk-wrapper-vuejs/tree/master/pesdk-v5) that showcases how you can integrate the PhotoEditor SDK into a Vue.js application.
 
 An in-depth guide can be found here [Getting Started - Vue JS]({{site.baseurl}}/guides/html5/v5/guides/vue-js)
