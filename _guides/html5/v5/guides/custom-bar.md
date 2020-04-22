@@ -14,7 +14,7 @@ tags: &tags # tags that are necessary
 published: true # Either published or not
 ---
 
-The editor is absolutely position and it provides handlers for `export` and `close` funtions in main canvas action bar.
+The editor provides handlers for `export` and `close` functions in the main canvas action bar.
 We can make use of this to create a custom main canvas action bar.
 
 Let's start with a design template such as this.
@@ -22,7 +22,7 @@ Let's start with a design template such as this.
 ![UIs]({{ site.baseurl }}/assets/images/guides/{{page.platform | downcase }}/{{page.version | downcase}}/img.png){: .center-image style="padding: 20px; max-height: 400px;"}
 
 
-As we can see that some parts of main canvas action bar is situated at the bottom of the page.
+As we can see that some parts of main canvas action bar are situated at the bottom of the page.
 - Init the editor
 
 ```jsx
@@ -82,7 +82,7 @@ const editor = await PhotoEditorSDKUI.init({
 })
 ```
 
-- As the editor is absolutely position, we can position some other element absolutely in the same container and style them the way we want them to look like. To make sure there is no cards or toolbaricons behind our custom absolutely positioned div. We can provide a bottom margin to both toolbar and tool control bar.
+- As the editor is positioned absolute, we can position some other element absolutely in the same container and style them the way we want them to look like. To make sure there is no cards or toolbaricons behind our custom absolutely positioned div. We can provide a bottom margin to both toolbar and tool control bar.
 
 ```diff
 import { PhotoEditorSDKUI, CanvasAction } from 'photoeditorsdk'
